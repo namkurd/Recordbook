@@ -1,0 +1,3888 @@
+{
+ "version": 1,
+ "league": "DTF Club",
+ "records": [
+  {
+   "id": "most-championships",
+   "name": "Most Championships",
+   "category": "Seasons & Playoffs",
+   "source": "seeded",
+   "metric": null,
+   "direction": null,
+   "value": "3",
+   "value_num": 3.0,
+   "when": "'11/'14/'19;'18/'21/'22",
+   "holder": "Ryan;Ben",
+   "holders": [
+    "Ryan",
+    "Ben"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "updated": "2026-11-02"
+  },
+  {
+   "id": "most-championship-appearances",
+   "name": "Most Championship Appearances",
+   "category": "Seasons & Playoffs",
+   "source": "seeded",
+   "metric": null,
+   "direction": null,
+   "value": "6",
+   "value_num": 6.0,
+   "when": "'11/'14/'17/'19/'20/'21",
+   "holder": "Ryan",
+   "holders": [
+    "Ryan"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "updated": "2026-11-02"
+  },
+  {
+   "id": "most-championship-losses",
+   "name": "Most Championship Losses",
+   "category": "Seasons & Playoffs",
+   "source": "seeded",
+   "metric": null,
+   "direction": null,
+   "value": "3",
+   "value_num": 3.0,
+   "when": "'17/'20/'21;'14/'16/'24;'12/'13/'25",
+   "holder": "Ryan;Ben;Steven",
+   "holders": [
+    "Ryan",
+    "Ben",
+    "Steven"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "updated": "2026-11-02"
+  },
+  {
+   "id": "most-consecutive-championship-appearances",
+   "name": "Most Consecutive Championship Appearances",
+   "category": "Seasons & Playoffs",
+   "source": "seeded",
+   "metric": null,
+   "direction": null,
+   "value": "3",
+   "value_num": 3.0,
+   "when": "2019-2021",
+   "holder": "Ryan",
+   "holders": [
+    "Ryan"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "updated": "2026-11-02"
+  },
+  {
+   "id": "most-playoff-appearances",
+   "name": "Most Playoff Appearances",
+   "category": "Seasons & Playoffs",
+   "source": "seeded",
+   "metric": null,
+   "direction": null,
+   "value": "9",
+   "value_num": 9.0,
+   "when": "'11/'12/'14/'16/'17/'19/'20/'21/'23",
+   "holder": "Ryan",
+   "holders": [
+    "Ryan"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": true,
+   "needs_definition": null,
+   "engine_gap": null,
+   "updated": "2026-11-02"
+  },
+  {
+   "id": "most-consecutive-playoff-appearances",
+   "name": "Most Consecutive Playoff Appearances",
+   "category": "Seasons & Playoffs",
+   "source": "seeded",
+   "metric": null,
+   "direction": null,
+   "value": "3",
+   "value_num": 3.0,
+   "when": "'12-'14; '16-'18; '19-'21; '20-'22",
+   "holder": "Steven;Ben;Ryan;Ben",
+   "holders": [
+    "Steven",
+    "Ben",
+    "Ryan",
+    "Ben"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": true,
+   "needs_definition": null,
+   "engine_gap": null,
+   "updated": "2026-11-02"
+  },
+  {
+   "id": "longest-playoff-drought",
+   "name": "Longest Playoff Drought",
+   "category": "Seasons & Playoffs",
+   "source": "seeded",
+   "metric": null,
+   "direction": null,
+   "value": "8",
+   "value_num": 8.0,
+   "when": "2013 - 2020",
+   "holder": "Ankit",
+   "holders": [
+    "Ankit"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "updated": "2026-11-02"
+  },
+  {
+   "id": "most-sackos",
+   "name": "Most Sackos",
+   "category": "Seasons & Playoffs",
+   "source": "seeded",
+   "metric": null,
+   "direction": null,
+   "value": "4",
+   "value_num": 4.0,
+   "when": "'13/'15/'18/'22",
+   "holder": "Ankit",
+   "holders": [
+    "Ankit"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "updated": "2026-11-02"
+  },
+  {
+   "id": "most-1-seeds",
+   "name": "Most #1 Seeds",
+   "category": "Seasons & Playoffs",
+   "source": "seeded",
+   "metric": null,
+   "direction": null,
+   "value": "5",
+   "value_num": 5.0,
+   "when": "'11/'12/'16/'19/'21",
+   "holder": "Ryan",
+   "holders": [
+    "Ryan"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": true,
+   "needs_definition": null,
+   "engine_gap": null,
+   "updated": "2026-11-02"
+  },
+  {
+   "id": "most-top-scoring-seasons",
+   "name": "Most Top Scoring Seasons",
+   "category": "Seasons & Playoffs",
+   "source": "seeded",
+   "metric": null,
+   "direction": null,
+   "value": "4",
+   "value_num": 4.0,
+   "when": "'16/'20/'21/'23",
+   "holder": "Ryan",
+   "holders": [
+    "Ryan"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": true,
+   "needs_definition": null,
+   "engine_gap": null,
+   "updated": "2026-11-02"
+  },
+  {
+   "id": "most-bottom-scoring-seasons",
+   "name": "Most Bottom Scoring Seasons",
+   "category": "Seasons & Playoffs",
+   "source": "seeded",
+   "metric": null,
+   "direction": null,
+   "value": "2",
+   "value_num": 2.0,
+   "when": "'13/'16;'15/'19;'17/'20;'24/'25",
+   "holder": "Haan;Ben;Joe;Ryan",
+   "holders": [
+    "Haan",
+    "Ben",
+    "Joe",
+    "Ryan"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": true,
+   "needs_definition": null,
+   "engine_gap": null,
+   "updated": "2026-11-02"
+  },
+  {
+   "id": "most-top-scoring-weeks-all-time",
+   "name": "Most Top Scoring Weeks (All-Time)",
+   "category": "Seasons & Playoffs",
+   "source": "seeded",
+   "metric": null,
+   "direction": null,
+   "value": "27",
+   "value_num": 27.0,
+   "when": "All-Time",
+   "holder": "Steven",
+   "holders": [
+    "Steven"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": true,
+   "needs_definition": null,
+   "engine_gap": null,
+   "updated": "2026-11-02"
+  },
+  {
+   "id": "most-bottom-scoring-weeks-all-time",
+   "name": "Most Bottom Scoring Weeks (All-Time)",
+   "category": "Seasons & Playoffs",
+   "source": "seeded",
+   "metric": null,
+   "direction": null,
+   "value": "22",
+   "value_num": 22.0,
+   "when": "All-Time",
+   "holder": "Joe",
+   "holders": [
+    "Joe"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": true,
+   "needs_definition": null,
+   "engine_gap": null,
+   "updated": "2026-11-02"
+  },
+  {
+   "id": "winning-streak",
+   "name": "Winning Streak",
+   "category": "Seasons & Playoffs",
+   "source": "computed",
+   "metric": "win_streak",
+   "direction": "max",
+   "value": "22",
+   "value_num": 22.0,
+   "when": "Week 13 2021 - Week 17 2022",
+   "holder": "Ben",
+   "holders": [
+    "Ben"
+   ],
+   "league_level": false,
+   "team": "No Endz No Winz;Maison Champ Ernaud",
+   "notes": [
+    "#2: 16, 2017-2018 Tommy"
+   ],
+   "evidence": [],
+   "replay": {
+    "season": 2021,
+    "week": 13,
+    "rid": 2,
+    "opp_rid": 8,
+    "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=13.2.8&season=2021"
+   },
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": true,
+   "needs_definition": null,
+   "engine_gap": null,
+   "updated": "2026-11-02",
+   "leaderboard": [
+    {
+     "value": "22",
+     "holder": "Ben",
+     "when": "Week 13 2021 - Week 17 2022",
+     "replay": {
+      "season": 2021,
+      "week": 13,
+      "rid": 2,
+      "opp_rid": 8,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=13.2.8&season=2021"
+     }
+    },
+    {
+     "value": "12",
+     "holder": "Steven",
+     "when": "Week 11 2025 - Week 5 2026",
+     "replay": {
+      "season": 2025,
+      "week": 11,
+      "rid": 7,
+      "opp_rid": 3,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=11.7.3&season=2025"
+     }
+    },
+    {
+     "value": "8",
+     "holder": "Ryan",
+     "when": "Week 1 2023 - Week 8 2023",
+     "replay": {
+      "season": 2023,
+      "week": 1,
+      "rid": 10,
+      "opp_rid": 1,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=1.10.1&season=2023"
+     }
+    },
+    {
+     "value": "8",
+     "holder": "Ben",
+     "when": "Week 9 2024 - Week 16 2024",
+     "replay": {
+      "season": 2024,
+      "week": 9,
+      "rid": 2,
+      "opp_rid": 7,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=9.2.7&season=2024"
+     }
+    },
+    {
+     "value": "8",
+     "holder": "Joe",
+     "when": "Week 1 2025 - Week 8 2025",
+     "replay": {
+      "season": 2025,
+      "week": 1,
+      "rid": 5,
+      "opp_rid": 8,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=1.5.8&season=2025"
+     }
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "losing-streak",
+   "name": "Losing Streak",
+   "category": "Seasons & Playoffs",
+   "source": "computed",
+   "metric": "loss_streak",
+   "direction": "max",
+   "value": "13",
+   "value_num": 13,
+   "when": "Week 11 2024 - Week 6 2025",
+   "holder": "Ryan",
+   "holders": [
+    "Ryan"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [
+    "#2: 11, 2018-2019 Steven"
+   ],
+   "evidence": [],
+   "replay": {
+    "season": 2024,
+    "week": 11,
+    "rid": 10,
+    "opp_rid": 2,
+    "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=11.10.2&season=2024"
+   },
+   "previous": {
+    "value": "12",
+    "holder": "Tommy",
+    "when": "Week 16 2021 - Week 10 2022",
+    "team": "Austin's Powers/Worst Team Ever?",
+    "evidence": [
+     "https://imgur.com/a/OT2yzxS"
+    ],
+    "replaced_on": "2026-11-02",
+    "replaced_by": "Ryan",
+    "reconciled": true
+   },
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": true,
+   "needs_definition": null,
+   "engine_gap": null,
+   "updated": "2026-11-02",
+   "leaderboard": [
+    {
+     "value": "13",
+     "holder": "Ryan",
+     "when": "Week 11 2024 - Week 6 2025",
+     "replay": {
+      "season": 2024,
+      "week": 11,
+      "rid": 10,
+      "opp_rid": 2,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=11.10.2&season=2024"
+     }
+    },
+    {
+     "value": "12",
+     "holder": "Tommy",
+     "when": "Week 16 2021 - Week 10 2022",
+     "replay": {
+      "season": 2021,
+      "week": 16,
+      "rid": 9,
+      "opp_rid": 5,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=16.9.5&season=2021"
+     }
+    },
+    {
+     "value": "9",
+     "holder": "Ankit",
+     "when": "Week 13 2021 - Week 4 2022",
+     "replay": {
+      "season": 2021,
+      "week": 13,
+      "rid": 8,
+      "opp_rid": 2,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=13.8.2&season=2021"
+     }
+    },
+    {
+     "value": "9",
+     "holder": "Steven",
+     "when": "Week 15 2021 - Week 6 2022",
+     "replay": {
+      "season": 2021,
+      "week": 15,
+      "rid": 7,
+      "opp_rid": 2,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=15.7.2&season=2021"
+     }
+    },
+    {
+     "value": "9",
+     "holder": "Tommy",
+     "when": "Week 2 2023 - Week 10 2023",
+     "replay": {
+      "season": 2023,
+      "week": 2,
+      "rid": 9,
+      "opp_rid": 2,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=2.9.2&season=2023"
+     }
+    }
+   ]
+  },
+  {
+   "id": "most-highest-points-against-seasons",
+   "name": "Most Highest Points Against Seasons",
+   "category": "Seasons & Playoffs",
+   "source": "seeded",
+   "metric": null,
+   "direction": null,
+   "value": "3",
+   "value_num": 3.0,
+   "when": "'14/'19/'20",
+   "holder": "Joe",
+   "holders": [
+    "Joe"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "updated": "2026-11-02"
+  },
+  {
+   "id": "most-consecutive-500-or-better-seasons",
+   "name": "Most Consecutive .500 or Better Seasons",
+   "category": "Seasons & Playoffs",
+   "source": "seeded",
+   "metric": null,
+   "direction": null,
+   "value": "6",
+   "value_num": 6.0,
+   "when": "2013 - 2018",
+   "holder": "Ben",
+   "holders": [
+    "Ben"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "updated": "2026-11-02"
+  },
+  {
+   "id": "most-consecutive-losing-seasons",
+   "name": "Most Consecutive Losing Seasons",
+   "category": "Seasons & Playoffs",
+   "source": "seeded",
+   "metric": null,
+   "direction": null,
+   "value": "5",
+   "value_num": 5.0,
+   "when": "2019 - 2023",
+   "holder": "Tommy",
+   "holders": [
+    "Tommy"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "updated": "2026-11-02"
+  },
+  {
+   "id": "total-wins-regular-season",
+   "name": "Total Wins (Regular Season)",
+   "category": "Team Seasons",
+   "source": "computed",
+   "metric": "reg_wins",
+   "direction": "max",
+   "value": "15",
+   "value_num": 15.0,
+   "when": "2022",
+   "holder": "Ben",
+   "holders": [
+    "Ben"
+   ],
+   "league_level": false,
+   "team": "Maison Champ Ernaud",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": true,
+   "needs_definition": null,
+   "engine_gap": null,
+   "updated": "2026-11-02",
+   "leaderboard": [
+    {
+     "value": "15",
+     "holder": "Ben",
+     "when": "2022",
+     "replay": null
+    },
+    {
+     "value": "14",
+     "holder": "Tommy",
+     "when": "2018",
+     "replay": null
+    },
+    {
+     "value": "12",
+     "holder": "Ben",
+     "when": "2014",
+     "replay": null
+    },
+    {
+     "value": "12",
+     "holder": "Aidan",
+     "when": "2022",
+     "replay": null
+    },
+    {
+     "value": "12",
+     "holder": "Steven",
+     "when": "2025",
+     "replay": null
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "total-wins-incl-playoffs",
+   "name": "Total Wins (incl. Playoffs)",
+   "category": "Team Seasons",
+   "source": "seeded",
+   "metric": null,
+   "direction": null,
+   "value": "17",
+   "value_num": 17.0,
+   "when": "2022",
+   "holder": "Ben",
+   "holders": [
+    "Ben"
+   ],
+   "league_level": false,
+   "team": "Maison Champ Ernaud",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": true,
+   "needs_definition": null,
+   "engine_gap": null,
+   "updated": "2026-11-02"
+  },
+  {
+   "id": "most-dominant-offensive-season",
+   "name": "Most Dominant Offensive Season",
+   "category": "Team Seasons",
+   "source": "computed",
+   "metric": "pf_plus",
+   "direction": "max",
+   "value": "122.8",
+   "value_num": 122.8,
+   "when": "2018",
+   "holder": "Tommy",
+   "holders": [
+    "Tommy"
+   ],
+   "league_level": false,
+   "team": "Mahomes Where My Heart Is",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "updated": "2026-11-02",
+   "leaderboard": [
+    {
+     "value": "122.8",
+     "holder": "Tommy",
+     "when": "2018",
+     "replay": null
+    },
+    {
+     "value": "120.2",
+     "holder": "Steven",
+     "when": "2025",
+     "replay": null
+    },
+    {
+     "value": "118.7",
+     "holder": "Ben",
+     "when": "2024",
+     "replay": null
+    },
+    {
+     "value": "117.8",
+     "holder": "Steven",
+     "when": "2017",
+     "replay": null
+    },
+    {
+     "value": "115.4",
+     "holder": "Ryan",
+     "when": "2021",
+     "replay": null
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "most-dominant-defensive-season",
+   "name": "Most Dominant Defensive Season",
+   "category": "Team Seasons",
+   "source": "computed",
+   "metric": "pa_plus",
+   "direction": "min",
+   "value": "87.1",
+   "value_num": 87.1,
+   "when": "2018",
+   "holder": "Oleg",
+   "holders": [
+    "Oleg"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": {
+    "value": "87.7",
+    "holder": "Ben",
+    "when": "2022",
+    "team": "Maison Champ Ernaud",
+    "evidence": [],
+    "replaced_on": "2026-11-02",
+    "replaced_by": "Oleg",
+    "reconciled": true
+   },
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "updated": "2026-11-02",
+   "leaderboard": [
+    {
+     "value": "87.1",
+     "holder": "Oleg",
+     "when": "2018",
+     "replay": null
+    },
+    {
+     "value": "87.7",
+     "holder": "Ben",
+     "when": "2022",
+     "replay": null
+    },
+    {
+     "value": "88.3",
+     "holder": "Ben",
+     "when": "2021",
+     "replay": null
+    },
+    {
+     "value": "89.7",
+     "holder": "Jake",
+     "when": "2017",
+     "replay": null
+    },
+    {
+     "value": "91.0",
+     "holder": "Aidan",
+     "when": "2019",
+     "replay": null
+    }
+   ]
+  },
+  {
+   "id": "most-futile-offensive-season",
+   "name": "Most Futile Offensive Season",
+   "category": "Team Seasons",
+   "source": "computed",
+   "metric": "pf_plus",
+   "direction": "min",
+   "value": "87.1",
+   "value_num": 87.1,
+   "when": "2017",
+   "holder": "Joe",
+   "holders": [
+    "Joe"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "updated": "2026-11-02",
+   "leaderboard": [
+    {
+     "value": "87.1",
+     "holder": "Joe",
+     "when": "2017",
+     "replay": null
+    },
+    {
+     "value": "87.2",
+     "holder": "Ryan",
+     "when": "2024",
+     "replay": null
+    },
+    {
+     "value": "87.8",
+     "holder": "Haan",
+     "when": "2016",
+     "replay": null
+    },
+    {
+     "value": "88.0",
+     "holder": "Ryan",
+     "when": "2025",
+     "replay": null
+    },
+    {
+     "value": "88.4",
+     "holder": "Aidan",
+     "when": "2018",
+     "replay": null
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "most-cursed-defensive-season",
+   "name": "Most Cursed Defensive Season",
+   "category": "Team Seasons",
+   "source": "computed",
+   "metric": "pa_plus",
+   "direction": "max",
+   "value": "112.8",
+   "value_num": 112.8,
+   "when": "2019",
+   "holder": "Joe",
+   "holders": [
+    "Joe"
+   ],
+   "league_level": false,
+   "team": "King Slayer",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "updated": "2026-11-02",
+   "leaderboard": [
+    {
+     "value": "112.8",
+     "holder": "Joe",
+     "when": "2019",
+     "replay": null
+    },
+    {
+     "value": "112.8",
+     "holder": "Joe",
+     "when": "2020",
+     "replay": null
+    },
+    {
+     "value": "112.6",
+     "holder": "Joe",
+     "when": "2014",
+     "replay": null
+    },
+    {
+     "value": "111.6",
+     "holder": "Haan",
+     "when": "2017",
+     "replay": null
+    },
+    {
+     "value": "111.5",
+     "holder": "Ankit",
+     "when": "2018",
+     "replay": null
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "most-points-season",
+   "name": "Most Points (Season)",
+   "category": "Team Seasons",
+   "source": "computed",
+   "metric": "season_pf",
+   "direction": "max",
+   "value": "2674",
+   "value_num": 2674.0,
+   "when": "2025",
+   "holder": "Steven",
+   "holders": [
+    "Steven"
+   ],
+   "league_level": false,
+   "team": "No Country for Old Men",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": true,
+   "needs_definition": null,
+   "engine_gap": null,
+   "updated": "2026-11-02",
+   "leaderboard": [
+    {
+     "value": "2674",
+     "holder": "Steven",
+     "when": "2025",
+     "replay": null
+    },
+    {
+     "value": "2406",
+     "holder": "Ben",
+     "when": "2024",
+     "replay": null
+    },
+    {
+     "value": "2388",
+     "holder": "Joe",
+     "when": "2025",
+     "replay": null
+    },
+    {
+     "value": "2383",
+     "holder": "Aidan",
+     "when": "2025",
+     "replay": null
+    },
+    {
+     "value": "2332",
+     "holder": "Ankit",
+     "when": "2025",
+     "replay": null
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "most-points-against-season",
+   "name": "Most Points Against (Season)",
+   "category": "Team Seasons",
+   "source": "computed",
+   "metric": "season_pa",
+   "direction": "max",
+   "value": "2336",
+   "value_num": 2336.0,
+   "when": "2025",
+   "holder": "Ryan",
+   "holders": [
+    "Ryan"
+   ],
+   "league_level": false,
+   "team": "Covet thy Nabers Flowers",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": true,
+   "needs_definition": null,
+   "engine_gap": null,
+   "updated": "2026-11-02",
+   "leaderboard": [
+    {
+     "value": "2336",
+     "holder": "Ryan",
+     "when": "2025",
+     "replay": null
+    },
+    {
+     "value": "2301",
+     "holder": "Alex",
+     "when": "2025",
+     "replay": null
+    },
+    {
+     "value": "2261",
+     "holder": "Jake",
+     "when": "2025",
+     "replay": null
+    },
+    {
+     "value": "2256",
+     "holder": "Ankit",
+     "when": "2025",
+     "replay": null
+    },
+    {
+     "value": "2245",
+     "holder": "Ben",
+     "when": "2025",
+     "replay": null
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "fewest-points-season",
+   "name": "Fewest Points (Season)",
+   "category": "Team Seasons",
+   "source": "computed",
+   "metric": "season_pf",
+   "direction": "min",
+   "value": "1132",
+   "value_num": 1132.0,
+   "when": "2017",
+   "holder": "Joe",
+   "holders": [
+    "Joe"
+   ],
+   "league_level": false,
+   "team": "Dez Pacito",
+   "notes": [],
+   "evidence": [
+    "https://imgur.com/a/uL0jo"
+   ],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": true,
+   "needs_definition": null,
+   "engine_gap": null,
+   "updated": "2026-11-02",
+   "leaderboard": [
+    {
+     "value": "1132",
+     "holder": "Joe",
+     "when": "2017",
+     "replay": null
+    },
+    {
+     "value": "1159",
+     "holder": "Oleg",
+     "when": "2017",
+     "replay": null
+    },
+    {
+     "value": "1162",
+     "holder": "Haan",
+     "when": "2016",
+     "replay": null
+    },
+    {
+     "value": "1182",
+     "holder": "Ben",
+     "when": "2015",
+     "replay": null
+    },
+    {
+     "value": "1197",
+     "holder": "Aidan",
+     "when": "2016",
+     "replay": null
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "best-rumble",
+   "name": "Best Rumble %",
+   "category": "Team Seasons",
+   "source": "seeded",
+   "metric": "rumble_pct",
+   "direction": "max",
+   "value": "88%",
+   "value_num": 88.0,
+   "when": "2018",
+   "holder": "Tommy",
+   "holders": [
+    "Tommy"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "updated": "2026-11-02",
+   "leaderboard": [
+    {
+     "value": "81%",
+     "holder": "Ben",
+     "when": "2022",
+     "replay": null
+    },
+    {
+     "value": "78%",
+     "holder": "Steven",
+     "when": "2025",
+     "replay": null
+    },
+    {
+     "value": "75%",
+     "holder": "Ben",
+     "when": "2024",
+     "replay": null
+    },
+    {
+     "value": "72%",
+     "holder": "Aidan",
+     "when": "2022",
+     "replay": null
+    },
+    {
+     "value": "70%",
+     "holder": "Ryan",
+     "when": "2021",
+     "replay": null
+    }
+   ]
+  },
+  {
+   "id": "worst-rumble",
+   "name": "Worst Rumble %",
+   "category": "Team Seasons",
+   "source": "seeded",
+   "metric": "rumble_pct",
+   "direction": "min",
+   "value": "21%",
+   "value_num": 21.0,
+   "when": "2023",
+   "holder": "Tommy",
+   "holders": [
+    "Tommy"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "updated": "2026-11-02",
+   "leaderboard": [
+    {
+     "value": "22%",
+     "holder": "Tommy",
+     "when": "2023",
+     "replay": null
+    },
+    {
+     "value": "22%",
+     "holder": "Ryan",
+     "when": "2025",
+     "replay": null
+    },
+    {
+     "value": "26%",
+     "holder": "Tommy",
+     "when": "2022",
+     "replay": null
+    },
+    {
+     "value": "27%",
+     "holder": "Ryan",
+     "when": "2024",
+     "replay": null
+    },
+    {
+     "value": "33%",
+     "holder": "Steven",
+     "when": "2022",
+     "replay": null
+    }
+   ]
+  },
+  {
+   "id": "best-record-vs-field",
+   "name": "Best Record vs. Field",
+   "category": "Team Seasons",
+   "source": "computed",
+   "metric": "field_pct",
+   "direction": "max",
+   "value": "101-25 (80.2%)",
+   "value_num": 101.0,
+   "when": "2014",
+   "holder": "Ben",
+   "holders": [
+    "Ben"
+   ],
+   "league_level": false,
+   "team": "Hash Tagging Stashers",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "updated": "2026-11-02",
+   "leaderboard": [
+    {
+     "value": "101-25 (80.2%)",
+     "holder": "Ben",
+     "when": "2014",
+     "replay": null
+    },
+    {
+     "value": "104-31 (77.0%)",
+     "holder": "Ben",
+     "when": "2024",
+     "replay": null
+    },
+    {
+     "value": "96-30 (76.2%)",
+     "holder": "Tommy",
+     "when": "2018",
+     "replay": null
+    },
+    {
+     "value": "102-33 (75.6%)",
+     "holder": "Steven",
+     "when": "2025",
+     "replay": null
+    },
+    {
+     "value": "93-33 (73.8%)",
+     "holder": "Steven",
+     "when": "2017",
+     "replay": null
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "worst-record-vs-field",
+   "name": "Worst Record vs. Field",
+   "category": "Team Seasons",
+   "source": "computed",
+   "metric": "field_pct",
+   "direction": "min",
+   "value": "33-102 (24.4%)",
+   "value_num": 33.0,
+   "when": "2025",
+   "holder": "Ryan",
+   "holders": [
+    "Ryan"
+   ],
+   "league_level": false,
+   "team": "Covet Thy Nabers Flowers",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "updated": "2026-11-02",
+   "leaderboard": [
+    {
+     "value": "33-102 (24.4%)",
+     "holder": "Ryan",
+     "when": "2025",
+     "replay": null
+    },
+    {
+     "value": "35-100 (25.9%)",
+     "holder": "Ryan",
+     "when": "2024",
+     "replay": null
+    },
+    {
+     "value": "33-93 (26.2%)",
+     "holder": "Haan",
+     "when": "2016",
+     "replay": null
+    },
+    {
+     "value": "36-90 (28.6%)",
+     "holder": "Steven",
+     "when": "2016",
+     "replay": null
+    },
+    {
+     "value": "39-96 (28.9%)",
+     "holder": "Tommy",
+     "when": "2023",
+     "replay": null
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "most-composite-wins-in-a-season",
+   "name": "Most Composite Wins in a Season",
+   "category": "Team Seasons",
+   "source": "seeded",
+   "metric": null,
+   "direction": null,
+   "value": "26",
+   "value_num": 26.0,
+   "when": "2014",
+   "holder": "Ben",
+   "holders": [
+    "Ben"
+   ],
+   "league_level": false,
+   "team": "Hash Tagging Stashers",
+   "notes": [],
+   "evidence": [
+    "https://imgur.com/a/K09no"
+   ],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": true,
+   "needs_definition": "Formula for 'composite wins' not confirmed.",
+   "engine_gap": null,
+   "updated": "2026-11-02"
+  },
+  {
+   "id": "fewest-composite-wins-in-a-season",
+   "name": "Fewest Composite Wins in a Season",
+   "category": "Team Seasons",
+   "source": "seeded",
+   "metric": null,
+   "direction": null,
+   "value": "5",
+   "value_num": 5.0,
+   "when": "2023, 2022",
+   "holder": "Tommy, Tommy",
+   "holders": [
+    "Tommy",
+    "Tommy"
+   ],
+   "league_level": false,
+   "team": "Worst Team Ever?",
+   "notes": [],
+   "evidence": [
+    "https://imgur.com/a/ZjWpD"
+   ],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": true,
+   "needs_definition": "Formula for 'composite wins' not confirmed.",
+   "engine_gap": null,
+   "updated": "2026-11-02"
+  },
+  {
+   "id": "most-top-scoring-weeks-season",
+   "name": "Most Top Scoring Weeks (Season)",
+   "category": "Team Seasons",
+   "source": "computed",
+   "metric": "top_weeks",
+   "direction": "max",
+   "value": "6",
+   "value_num": 6.0,
+   "when": "2024, 2025",
+   "holder": "Ben, Steven",
+   "holders": [
+    "Ben",
+    "Steven"
+   ],
+   "league_level": false,
+   "team": "Resident Evil, No Country for Old Men",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": true,
+   "needs_definition": null,
+   "engine_gap": null,
+   "updated": "2026-11-02",
+   "leaderboard": [
+    {
+     "value": "6",
+     "holder": "Ben",
+     "when": "2024",
+     "replay": null
+    },
+    {
+     "value": "6",
+     "holder": "Steven",
+     "when": "2025",
+     "replay": null
+    },
+    {
+     "value": "4",
+     "holder": "Ankit",
+     "when": "2021",
+     "replay": null
+    },
+    {
+     "value": "4",
+     "holder": "Aidan",
+     "when": "2022",
+     "replay": null
+    },
+    {
+     "value": "3",
+     "holder": "Ryan",
+     "when": "2021",
+     "replay": null
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "most-bottom-scoring-weeks-season",
+   "name": "Most Bottom Scoring Weeks (Season)",
+   "category": "Team Seasons",
+   "source": "computed",
+   "metric": "bottom_weeks",
+   "direction": "max",
+   "value": "5",
+   "value_num": 5.0,
+   "when": "2025, 2024, 2019",
+   "holder": "Alex, Ryan, Ben",
+   "holders": [
+    "Alex",
+    "Ryan",
+    "Ben"
+   ],
+   "league_level": false,
+   "team": "Double Dippers, Like Father Like Son, A Series of Un4nettate Events",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": true,
+   "needs_definition": null,
+   "engine_gap": null,
+   "updated": "2026-11-02",
+   "leaderboard": [
+    {
+     "value": "5",
+     "holder": "Ryan",
+     "when": "2024",
+     "replay": null
+    },
+    {
+     "value": "5",
+     "holder": "Alex",
+     "when": "2025",
+     "replay": null
+    },
+    {
+     "value": "4",
+     "holder": "Steven",
+     "when": "2022",
+     "replay": null
+    },
+    {
+     "value": "4",
+     "holder": "Aidan",
+     "when": "2024",
+     "replay": null
+    },
+    {
+     "value": "3",
+     "holder": "Ben",
+     "when": "2023",
+     "replay": null
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "most-consecutive-top-scoring-weeks",
+   "name": "Most Consecutive Top Scoring Weeks",
+   "category": "Team Seasons",
+   "source": "seeded",
+   "metric": "top_streak",
+   "direction": "max",
+   "value": "4",
+   "value_num": 4.0,
+   "when": "Week 4 2017 - Week 7 2017",
+   "holder": "Steven",
+   "holders": [
+    "Steven"
+   ],
+   "league_level": false,
+   "team": "The People Digg It",
+   "notes": [],
+   "evidence": [
+    "https://imgur.com/a/chS7HHP"
+   ],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": true,
+   "needs_definition": null,
+   "engine_gap": null,
+   "updated": "2026-11-02",
+   "leaderboard": [
+    {
+     "value": "3",
+     "holder": "Ankit",
+     "when": "Week 7 2021 - Week 9 2021",
+     "replay": {
+      "season": 2021,
+      "week": 7,
+      "rid": 8,
+      "opp_rid": 9,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=7.8.9&season=2021"
+     }
+    },
+    {
+     "value": "3",
+     "holder": "Aidan",
+     "when": "Week 1 2022 - Week 3 2022",
+     "replay": {
+      "season": 2022,
+      "week": 1,
+      "rid": 1,
+      "opp_rid": 6,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=1.1.6&season=2022"
+     }
+    },
+    {
+     "value": "3",
+     "holder": "Ankit",
+     "when": "Week 5 2022 - Week 7 2022",
+     "replay": {
+      "season": 2022,
+      "week": 5,
+      "rid": 8,
+      "opp_rid": 10,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=5.8.10&season=2022"
+     }
+    },
+    {
+     "value": "2",
+     "holder": "Tommy",
+     "when": "Week 12 2021 - Week 13 2021",
+     "replay": {
+      "season": 2021,
+      "week": 12,
+      "rid": 9,
+      "opp_rid": 3,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=12.9.3&season=2021"
+     }
+    },
+    {
+     "value": "2",
+     "holder": "Joe",
+     "when": "Week 14 2021 - Week 15 2021",
+     "replay": {
+      "season": 2021,
+      "week": 14,
+      "rid": 5,
+      "opp_rid": 3,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=14.5.3&season=2021"
+     }
+    }
+   ]
+  },
+  {
+   "id": "most-consecutive-bottom-scoring-weeks",
+   "name": "Most Consecutive Bottom Scoring Weeks",
+   "category": "Team Seasons",
+   "source": "computed",
+   "metric": "bottom_streak",
+   "direction": "max",
+   "value": "3",
+   "value_num": 3.0,
+   "when": "Week 2-4 2024, Week 8-10 2019",
+   "holder": "Aidan, Ben",
+   "holders": [
+    "Aidan",
+    "Ben"
+   ],
+   "league_level": false,
+   "team": "Mr. Downside, A Series of Un4nettate Events",
+   "notes": [],
+   "evidence": [],
+   "replay": {
+    "season": 2024,
+    "week": 2,
+    "rid": 1,
+    "opp_rid": 8,
+    "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=2.1.8&season=2024"
+   },
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": true,
+   "needs_definition": null,
+   "engine_gap": null,
+   "updated": "2026-11-02",
+   "leaderboard": [
+    {
+     "value": "3",
+     "holder": "Aidan",
+     "when": "Week 2 2024 - Week 4 2024",
+     "replay": {
+      "season": 2024,
+      "week": 2,
+      "rid": 1,
+      "opp_rid": 8,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=2.1.8&season=2024"
+     }
+    },
+    {
+     "value": "2",
+     "holder": "Steven",
+     "when": "Week 3 2022 - Week 4 2022",
+     "replay": {
+      "season": 2022,
+      "week": 3,
+      "rid": 7,
+      "opp_rid": 4,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=3.7.4&season=2022"
+     }
+    },
+    {
+     "value": "2",
+     "holder": "Joe",
+     "when": "Week 4 2023 - Week 5 2023",
+     "replay": {
+      "season": 2023,
+      "week": 4,
+      "rid": 5,
+      "opp_rid": 10,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=4.5.10&season=2023"
+     }
+    },
+    {
+     "value": "2",
+     "holder": "Alex",
+     "when": "Week 14 2023 - Week 15 2023",
+     "replay": {
+      "season": 2023,
+      "week": 14,
+      "rid": 6,
+      "opp_rid": 2,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=14.6.2&season=2023"
+     }
+    },
+    {
+     "value": "2",
+     "holder": "Ryan",
+     "when": "Week 14 2024 - Week 15 2024",
+     "replay": {
+      "season": 2024,
+      "week": 14,
+      "rid": 10,
+      "opp_rid": 1,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=14.10.1&season=2024"
+     }
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "most-points-to-not-make-playoffs",
+   "name": "Most Points to Not Make Playoffs",
+   "category": "Team Seasons",
+   "source": "computed",
+   "metric": "pts_missed_playoffs",
+   "direction": "max",
+   "value": "2173",
+   "value_num": 2173.0,
+   "when": "2025",
+   "holder": "Ben",
+   "holders": [
+    "Ben"
+   ],
+   "league_level": false,
+   "team": "Glass Slipper Toe Tappers",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "updated": "2026-11-02",
+   "leaderboard": [
+    {
+     "value": "2173",
+     "holder": "Ben",
+     "when": "2025",
+     "replay": null
+    },
+    {
+     "value": "2114",
+     "holder": "Christian",
+     "when": "2025",
+     "replay": null
+    },
+    {
+     "value": "2058",
+     "holder": "Jake",
+     "when": "2025",
+     "replay": null
+    },
+    {
+     "value": "2014",
+     "holder": "Alex",
+     "when": "2025",
+     "replay": null
+    },
+    {
+     "value": "1985",
+     "holder": "Jake",
+     "when": "2024",
+     "replay": null
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "fewest-points-to-make-playoffs",
+   "name": "Fewest Points to Make Playoffs",
+   "category": "Team Seasons",
+   "source": "computed",
+   "metric": "pts_made_playoffs",
+   "direction": "min",
+   "value": "1283",
+   "value_num": 1283.0,
+   "when": "2015",
+   "holder": "Jake",
+   "holders": [
+    "Jake"
+   ],
+   "league_level": false,
+   "team": "Through the Wire",
+   "notes": [],
+   "evidence": [
+    "https://imgur.com/a/MinTY2a"
+   ],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "updated": "2026-11-02",
+   "leaderboard": [
+    {
+     "value": "1284",
+     "holder": "Jake",
+     "when": "2015",
+     "replay": null
+    },
+    {
+     "value": "1296",
+     "holder": "Haan",
+     "when": "2019",
+     "replay": null
+    },
+    {
+     "value": "1319",
+     "holder": "Steven",
+     "when": "2013",
+     "replay": null
+    },
+    {
+     "value": "1326",
+     "holder": "Oleg",
+     "when": "2018",
+     "replay": null
+    },
+    {
+     "value": "1345",
+     "holder": "Ben",
+     "when": "2016",
+     "replay": null
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "most-points-game",
+   "name": "Most Points (Game)",
+   "category": "Games & Weeks",
+   "source": "computed",
+   "metric": "game_pts",
+   "direction": "max",
+   "value": "243.51 (164% of League Average)",
+   "value_num": 243.51,
+   "when": "Week 8 - 2025",
+   "holder": "Joe",
+   "holders": [
+    "Joe"
+   ],
+   "league_level": false,
+   "team": "Beats by Blay",
+   "notes": [],
+   "evidence": [
+    "https://imgur.com/a/SX4qDPG",
+    "https://imgur.com/EuwnrYO",
+    "https://imgur.com/aBRegYG"
+   ],
+   "replay": {
+    "season": 2025,
+    "week": 8,
+    "rid": 5,
+    "opp_rid": 3,
+    "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=8.5.3&season=2025"
+   },
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": "most-points-game-era-adjusted",
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "updated": "2026-11-02",
+   "leaderboard": [
+    {
+     "value": "243.51 (164% of League Average)",
+     "holder": "Joe",
+     "when": "Week 8 - 2025",
+     "replay": {
+      "season": 2025,
+      "week": 8,
+      "rid": 5,
+      "opp_rid": 3,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=8.5.3&season=2025"
+     }
+    },
+    {
+     "value": "228.67 (154% of League Average)",
+     "holder": "Steven",
+     "when": "Week 4 - 2025",
+     "replay": {
+      "season": 2025,
+      "week": 4,
+      "rid": 7,
+      "opp_rid": 4,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=4.7.4&season=2025"
+     }
+    },
+    {
+     "value": "227.38 (153% of League Average)",
+     "holder": "Steven",
+     "when": "Week 12 - 2025",
+     "replay": {
+      "season": 2025,
+      "week": 12,
+      "rid": 7,
+      "opp_rid": 9,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=12.7.9&season=2025"
+     }
+    },
+    {
+     "value": "226.54 (168% of League Average)",
+     "holder": "Ben",
+     "when": "Week 14 - 2024",
+     "replay": {
+      "season": 2024,
+      "week": 14,
+      "rid": 2,
+      "opp_rid": 4,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=14.2.4&season=2024"
+     }
+    },
+    {
+     "value": "225.02 (152% of League Average)",
+     "holder": "Steven",
+     "when": "Week 16 - 2025",
+     "replay": {
+      "season": 2025,
+      "week": 16,
+      "rid": 7,
+      "opp_rid": 10,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=16.7.10&season=2025"
+     }
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "most-points-game-era-adjusted",
+   "name": "Most Points (Game, Era Adjusted)",
+   "category": "Games & Weeks",
+   "source": "computed",
+   "metric": "game_pts_adj",
+   "direction": "max",
+   "value": "203.7 (179.43% of League Average)",
+   "value_num": 203.7,
+   "when": "Week 11 - 2021",
+   "holder": "Ryan",
+   "holders": [
+    "Ryan"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": {
+    "season": 2021,
+    "week": 11,
+    "rid": 10,
+    "opp_rid": 5,
+    "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=11.10.5&season=2021"
+   },
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "updated": "2026-11-02",
+   "leaderboard": [
+    {
+     "value": "203.65 (179.38% of League Average)",
+     "holder": "Ryan",
+     "when": "Week 11 - 2021",
+     "replay": {
+      "season": 2021,
+      "week": 11,
+      "rid": 10,
+      "opp_rid": 5,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=11.10.5&season=2021"
+     }
+    },
+    {
+     "value": "221.04 (171.47% of League Average)",
+     "holder": "Steven",
+     "when": "Week 8 - 2022",
+     "replay": {
+      "season": 2022,
+      "week": 8,
+      "rid": 7,
+      "opp_rid": 9,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=8.7.9&season=2022"
+     }
+    },
+    {
+     "value": "226.54 (167.55% of League Average)",
+     "holder": "Ben",
+     "when": "Week 14 - 2024",
+     "replay": {
+      "season": 2024,
+      "week": 14,
+      "rid": 2,
+      "opp_rid": 4,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=14.2.4&season=2024"
+     }
+    },
+    {
+     "value": "187.76 (165.38% of League Average)",
+     "holder": "Ryan",
+     "when": "Week 5 - 2021",
+     "replay": {
+      "season": 2021,
+      "week": 5,
+      "rid": 10,
+      "opp_rid": 4,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=5.10.4&season=2021"
+     }
+    },
+    {
+     "value": "243.51 (164.18% of League Average)",
+     "holder": "Joe",
+     "when": "Week 8 - 2025",
+     "replay": {
+      "season": 2025,
+      "week": 8,
+      "rid": 5,
+      "opp_rid": 3,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=8.5.3&season=2025"
+     }
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "fewest-points-game",
+   "name": "Fewest Points (Game)",
+   "category": "Games & Weeks",
+   "source": "seeded",
+   "metric": "game_pts",
+   "direction": "min",
+   "value": "40.9 (44.7% of League Average)",
+   "value_num": 40.9,
+   "when": "Week 3 - 2017",
+   "holder": "Aidan",
+   "holders": [
+    "Aidan"
+   ],
+   "league_level": false,
+   "team": "Marshawn of the Dead",
+   "notes": [],
+   "evidence": [
+    "https://imgur.com/a/sAQ8t"
+   ],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": "fewest-points-game-era-adjusted",
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "updated": "2026-11-02",
+   "leaderboard": [
+    {
+     "value": "53.28 (47% of League Average)",
+     "holder": "Aidan",
+     "when": "Week 1 - 2021",
+     "replay": {
+      "season": 2021,
+      "week": 1,
+      "rid": 1,
+      "opp_rid": 2,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=1.1.2&season=2021"
+     }
+    },
+    {
+     "value": "58.51 (52% of League Average)",
+     "holder": "Jake",
+     "when": "Week 15 - 2021",
+     "replay": {
+      "season": 2021,
+      "week": 15,
+      "rid": 3,
+      "opp_rid": 6,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=15.3.6&season=2021"
+     }
+    },
+    {
+     "value": "63.84 (56% of League Average)",
+     "holder": "Oleg",
+     "when": "Week 10 - 2021",
+     "replay": {
+      "season": 2021,
+      "week": 10,
+      "rid": 6,
+      "opp_rid": 8,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=10.6.8&season=2021"
+     }
+    },
+    {
+     "value": "70.09 (53% of League Average)",
+     "holder": "Ben",
+     "when": "Week 1 - 2023",
+     "replay": {
+      "season": 2023,
+      "week": 1,
+      "rid": 2,
+      "opp_rid": 7,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=1.2.7&season=2023"
+     }
+    },
+    {
+     "value": "71.59 (48% of League Average)",
+     "holder": "Jake",
+     "when": "Week 2 - 2026",
+     "replay": {
+      "season": 2026,
+      "week": 2,
+      "rid": 3,
+      "opp_rid": 12,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=2.3.12"
+     }
+    }
+   ]
+  },
+  {
+   "id": "fewest-points-game-era-adjusted",
+   "name": "Fewest Points (Game, Era Adjusted)",
+   "category": "Games & Weeks",
+   "source": "seeded",
+   "metric": "game_pts_adj",
+   "direction": "min",
+   "value": "40.9 (44.7% of League Average)",
+   "value_num": 40.9,
+   "when": "Week 3 - 2017",
+   "holder": "Aidan",
+   "holders": [
+    "Aidan"
+   ],
+   "league_level": false,
+   "team": "Marshawn of the Dead",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "updated": "2026-11-02",
+   "leaderboard": [
+    {
+     "value": "53.28 (46.93% of League Average)",
+     "holder": "Aidan",
+     "when": "Week 1 - 2021",
+     "replay": {
+      "season": 2021,
+      "week": 1,
+      "rid": 1,
+      "opp_rid": 2,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=1.1.2&season=2021"
+     }
+    },
+    {
+     "value": "71.59 (48.33% of League Average)",
+     "holder": "Jake",
+     "when": "Week 2 - 2026",
+     "replay": {
+      "season": 2026,
+      "week": 2,
+      "rid": 3,
+      "opp_rid": 12,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=2.3.12"
+     }
+    },
+    {
+     "value": "73.06 (49.26% of League Average)",
+     "holder": "Alex",
+     "when": "Week 7 - 2025",
+     "replay": {
+      "season": 2025,
+      "week": 7,
+      "rid": 6,
+      "opp_rid": 9,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=7.6.9&season=2025"
+     }
+    },
+    {
+     "value": "58.51 (51.54% of League Average)",
+     "holder": "Jake",
+     "when": "Week 15 - 2021",
+     "replay": {
+      "season": 2021,
+      "week": 15,
+      "rid": 3,
+      "opp_rid": 6,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=15.3.6&season=2021"
+     }
+    },
+    {
+     "value": "77.04 (51.94% of League Average)",
+     "holder": "Jake",
+     "when": "Week 11 - 2025",
+     "replay": {
+      "season": 2025,
+      "week": 11,
+      "rid": 3,
+      "opp_rid": 7,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=11.3.7&season=2025"
+     }
+    }
+   ]
+  },
+  {
+   "id": "most-points-on-bench",
+   "name": "Most Points on Bench",
+   "category": "Games & Weeks",
+   "source": "seeded",
+   "metric": null,
+   "direction": null,
+   "value": "177.2",
+   "value_num": 177.2,
+   "when": "Week 16 - 2023",
+   "holder": "Jake",
+   "holders": [
+    "Jake"
+   ],
+   "league_level": false,
+   "team": "We are TuAnon (Expect Us)",
+   "notes": [],
+   "evidence": [
+    "https://i.imgur.com/a0SwfI9.png",
+    "https://imgur.com/a/CiZKKKs"
+   ],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": "Needs per-player starter/bench points (Sleeper matchups).",
+   "updated": "2026-11-02"
+  },
+  {
+   "id": "largest-margin-of-victory",
+   "name": "Largest Margin of Victory",
+   "category": "Games & Weeks",
+   "source": "computed",
+   "metric": "margin",
+   "direction": "max",
+   "value": "146.95",
+   "value_num": 146.95,
+   "when": "Week 2 - 2026",
+   "holder": "Stephanie over Jake",
+   "holders": [
+    "Stephanie"
+   ],
+   "league_level": false,
+   "team": "Lady Greyhounds",
+   "notes": [
+    "243.51 vs 128.65"
+   ],
+   "evidence": [],
+   "replay": {
+    "season": 2026,
+    "week": 2,
+    "rid": 12,
+    "opp_rid": 3,
+    "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=2.12.3"
+   },
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "updated": "2026-11-02",
+   "leaderboard": [
+    {
+     "value": "146.95",
+     "holder": "Stephanie over Jake",
+     "when": "Week 2 - 2026",
+     "replay": {
+      "season": 2026,
+      "week": 2,
+      "rid": 12,
+      "opp_rid": 3,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=2.12.3"
+     }
+    },
+    {
+     "value": "126.32",
+     "holder": "Steven over Jake",
+     "when": "Week 11 - 2025",
+     "replay": {
+      "season": 2025,
+      "week": 11,
+      "rid": 7,
+      "opp_rid": 3,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=11.7.3&season=2025"
+     }
+    },
+    {
+     "value": "114.86",
+     "holder": "Joe over Jake",
+     "when": "Week 8 - 2025",
+     "replay": {
+      "season": 2025,
+      "week": 8,
+      "rid": 5,
+      "opp_rid": 3,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=8.5.3&season=2025"
+     }
+    },
+    {
+     "value": "102.25",
+     "holder": "Ryan over Joe",
+     "when": "Week 11 - 2021",
+     "replay": {
+      "season": 2021,
+      "week": 11,
+      "rid": 10,
+      "opp_rid": 5,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=11.10.5&season=2021"
+     }
+    },
+    {
+     "value": "100.28",
+     "holder": "Steven over Jake",
+     "when": "Week 3 - 2026",
+     "replay": {
+      "season": 2026,
+      "week": 3,
+      "rid": 7,
+      "opp_rid": 3,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=3.7.3"
+     }
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "smallest-margin-of-victory",
+   "name": "Smallest Margin of Victory",
+   "category": "Games & Weeks",
+   "source": "computed",
+   "metric": "margin",
+   "direction": "min",
+   "value": "0.06",
+   "value_num": 0.06,
+   "when": "Week 12 - 2025",
+   "holder": "Ankit vs Jake",
+   "holders": [
+    "Ankit"
+   ],
+   "league_level": false,
+   "team": "3Piece: Fountain of Youth",
+   "notes": [
+    "138.15 vs 138.09",
+    "#2: Ryan vs Steven week 15 2014, .08"
+   ],
+   "evidence": [],
+   "replay": {
+    "season": 2025,
+    "week": 12,
+    "rid": 8,
+    "opp_rid": 3,
+    "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=12.8.3&season=2025"
+   },
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "updated": "2026-11-02",
+   "leaderboard": [
+    {
+     "value": "0.06",
+     "holder": "Ankit over Jake",
+     "when": "Week 12 - 2025",
+     "replay": {
+      "season": 2025,
+      "week": 12,
+      "rid": 8,
+      "opp_rid": 3,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=12.8.3&season=2025"
+     }
+    },
+    {
+     "value": "0.16",
+     "holder": "Oleg over Steven",
+     "when": "Week 17 - 2021",
+     "replay": {
+      "season": 2021,
+      "week": 17,
+      "rid": 6,
+      "opp_rid": 7,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=17.6.7&season=2021"
+     }
+    },
+    {
+     "value": "0.18",
+     "holder": "Ryan over Ankit",
+     "when": "Week 9 - 2024",
+     "replay": {
+      "season": 2024,
+      "week": 9,
+      "rid": 10,
+      "opp_rid": 8,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=9.10.8&season=2024"
+     }
+    },
+    {
+     "value": "0.29",
+     "holder": "Aidan over Ankit",
+     "when": "Week 5 - 2021",
+     "replay": {
+      "season": 2021,
+      "week": 5,
+      "rid": 1,
+      "opp_rid": 8,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=5.1.8&season=2021"
+     }
+    },
+    {
+     "value": "0.52",
+     "holder": "Haan over Ankit",
+     "when": "Week 1 - 2024",
+     "replay": {
+      "season": 2024,
+      "week": 1,
+      "rid": 4,
+      "opp_rid": 8,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=1.4.8&season=2024"
+     }
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "smallest-margin-of-rumble-win-victory",
+   "name": "Smallest Margin of Rumble Win Victory",
+   "category": "Games & Weeks",
+   "source": "seeded",
+   "metric": null,
+   "direction": null,
+   "value": "0.01",
+   "value_num": 0.01,
+   "when": "Week 14 - 2024",
+   "holder": "Joe over Jake",
+   "holders": [
+    "Joe"
+   ],
+   "league_level": false,
+   "team": "Touchdune Messiah",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "updated": "2026-11-02"
+  },
+  {
+   "id": "largest-multiple-of-opponents-score",
+   "name": "Largest Multiple of Opponents Score",
+   "category": "Games & Weeks",
+   "source": "computed",
+   "metric": "multiple",
+   "direction": "max",
+   "value": "3.05x",
+   "value_num": 3.05,
+   "when": "Week 2 - 2026",
+   "holder": "Stephanie over Jake",
+   "holders": [
+    "Stephanie"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [
+    "203.36 vs 77.04"
+   ],
+   "evidence": [],
+   "replay": {
+    "season": 2026,
+    "week": 2,
+    "rid": 12,
+    "opp_rid": 3,
+    "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=2.12.3"
+   },
+   "previous": {
+    "value": "2.64x",
+    "holder": "Steven over Jake",
+    "when": "Week 11 - 2025",
+    "team": "No Country for Old Men",
+    "evidence": [],
+    "replaced_on": "2026-11-02",
+    "replaced_by": "Stephanie over Jake",
+    "reconciled": true
+   },
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "updated": "2026-11-02",
+   "leaderboard": [
+    {
+     "value": "3.05x",
+     "holder": "Stephanie over Jake",
+     "when": "Week 2 - 2026",
+     "replay": {
+      "season": 2026,
+      "week": 2,
+      "rid": 12,
+      "opp_rid": 3,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=2.12.3"
+     }
+    },
+    {
+     "value": "2.64x",
+     "holder": "Steven over Jake",
+     "when": "Week 11 - 2025",
+     "replay": {
+      "season": 2025,
+      "week": 11,
+      "rid": 7,
+      "opp_rid": 3,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=11.7.3&season=2025"
+     }
+    },
+    {
+     "value": "2.58x",
+     "holder": "Ben over Aidan",
+     "when": "Week 1 - 2021",
+     "replay": {
+      "season": 2021,
+      "week": 1,
+      "rid": 2,
+      "opp_rid": 1,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=1.2.1&season=2021"
+     }
+    },
+    {
+     "value": "2.37x",
+     "holder": "Tommy over Ben",
+     "when": "Week 11 - 2023",
+     "replay": {
+      "season": 2023,
+      "week": 11,
+      "rid": 9,
+      "opp_rid": 2,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=11.9.2&season=2023"
+     }
+    },
+    {
+     "value": "2.11x",
+     "holder": "Christian over Alex",
+     "when": "Week 7 - 2025",
+     "replay": {
+      "season": 2025,
+      "week": 7,
+      "rid": 9,
+      "opp_rid": 6,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=7.9.6&season=2025"
+     }
+    }
+   ]
+  },
+  {
+   "id": "fewest-points-in-a-win",
+   "name": "Fewest Points in a Win",
+   "category": "Games & Weeks",
+   "source": "seeded",
+   "metric": "win_pts",
+   "direction": "min",
+   "value": "61.2",
+   "value_num": 61.2,
+   "when": "Week 5 - 2016",
+   "holder": "Tommy",
+   "holders": [
+    "Tommy"
+   ],
+   "league_level": false,
+   "team": "League Champion",
+   "notes": [],
+   "evidence": [
+    "https://imgur.com/a/o7tFZ"
+   ],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "updated": "2026-11-02",
+   "leaderboard": [
+    {
+     "value": "86.18",
+     "holder": "Tommy over Haan",
+     "when": "Week 15 - 2021",
+     "replay": {
+      "season": 2021,
+      "week": 15,
+      "rid": 9,
+      "opp_rid": 4,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=15.9.4&season=2021"
+     }
+    },
+    {
+     "value": "86.42",
+     "holder": "Aidan over Steven",
+     "when": "Week 14 - 2022",
+     "replay": {
+      "season": 2022,
+      "week": 14,
+      "rid": 1,
+      "opp_rid": 7,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=14.1.7&season=2022"
+     }
+    },
+    {
+     "value": "86.46",
+     "holder": "Steven over Ben",
+     "when": "Week 1 - 2023",
+     "replay": {
+      "season": 2023,
+      "week": 1,
+      "rid": 7,
+      "opp_rid": 2,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=1.7.2&season=2023"
+     }
+    },
+    {
+     "value": "87.82",
+     "holder": "Jake over Tommy",
+     "when": "Week 3 - 2021",
+     "replay": {
+      "season": 2021,
+      "week": 3,
+      "rid": 3,
+      "opp_rid": 9,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=3.3.9&season=2021"
+     }
+    },
+    {
+     "value": "89.40",
+     "holder": "Aidan over Tommy",
+     "when": "Week 17 - 2023",
+     "replay": {
+      "season": 2023,
+      "week": 17,
+      "rid": 1,
+      "opp_rid": 9,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=17.1.9&season=2023"
+     }
+    }
+   ]
+  },
+  {
+   "id": "most-points-in-a-loss",
+   "name": "Most Points in a Loss",
+   "category": "Games & Weeks",
+   "source": "computed",
+   "metric": "loss_pts",
+   "direction": "max",
+   "value": "188.25",
+   "value_num": 188.25,
+   "when": "Week 6 - 2025",
+   "holder": "Alex",
+   "holders": [
+    "Alex"
+   ],
+   "league_level": false,
+   "team": "Double Dippers",
+   "notes": [
+    "#2: 165, Week 12 2023 Aidan Hyrule of Law"
+   ],
+   "evidence": [],
+   "replay": {
+    "season": 2025,
+    "week": 6,
+    "rid": 6,
+    "opp_rid": 7,
+    "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=6.6.7&season=2025"
+   },
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "updated": "2026-11-02",
+   "leaderboard": [
+    {
+     "value": "188.25",
+     "holder": "Alex",
+     "when": "Week 6 - 2025",
+     "replay": {
+      "season": 2025,
+      "week": 6,
+      "rid": 6,
+      "opp_rid": 7,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=6.6.7&season=2025"
+     }
+    },
+    {
+     "value": "182.69",
+     "holder": "Ryan",
+     "when": "Week 5 - 2026",
+     "replay": {
+      "season": 2026,
+      "week": 5,
+      "rid": 10,
+      "opp_rid": 7,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=5.10.7"
+     }
+    },
+    {
+     "value": "179.84",
+     "holder": "Joe",
+     "when": "Week 10 - 2025",
+     "replay": {
+      "season": 2025,
+      "week": 10,
+      "rid": 5,
+      "opp_rid": 6,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=10.5.6&season=2025"
+     }
+    },
+    {
+     "value": "176.82",
+     "holder": "Ryan",
+     "when": "Week 16 - 2025",
+     "replay": {
+      "season": 2025,
+      "week": 16,
+      "rid": 10,
+      "opp_rid": 7,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=16.10.7&season=2025"
+     }
+    },
+    {
+     "value": "176.18",
+     "holder": "Alex",
+     "when": "Week 6 - 2026",
+     "replay": {
+      "season": 2026,
+      "week": 6,
+      "rid": 6,
+      "opp_rid": 3,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=6.6.3"
+     }
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "highest-scoring-week-league",
+   "name": "Highest Scoring Week (League)",
+   "category": "Games & Weeks",
+   "source": "computed",
+   "metric": "league_week",
+   "direction": "max",
+   "value": "160 (107.8% of League Average)",
+   "value_num": 160.0,
+   "when": "Week 15 - 2025",
+   "holder": "DTFClub",
+   "holders": [
+    "DTFClub"
+   ],
+   "league_level": true,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": "highest-scoring-week-league-era-adjusted",
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "updated": "2026-11-02",
+   "leaderboard": [
+    {
+     "value": "160.0 (107.9% of League Average)",
+     "holder": "DTFClub",
+     "when": "Week 15 - 2025",
+     "replay": null
+    },
+    {
+     "value": "157.8 (106.4% of League Average)",
+     "holder": "DTFClub",
+     "when": "Week 5 - 2025",
+     "replay": null
+    },
+    {
+     "value": "157.6 (106.3% of League Average)",
+     "holder": "DTFClub",
+     "when": "Week 4 - 2025",
+     "replay": null
+    },
+    {
+     "value": "156.1 (105.4% of League Average)",
+     "holder": "DTFClub",
+     "when": "Week 5 - 2026",
+     "replay": null
+    },
+    {
+     "value": "156.1 (105.4% of League Average)",
+     "holder": "DTFClub",
+     "when": "Week 1 - 2026",
+     "replay": null
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "highest-scoring-week-league-era-adjusted",
+   "name": "Highest Scoring Week (League, Era Adjusted)",
+   "category": "Games & Weeks",
+   "source": "computed",
+   "metric": "league_week_adj",
+   "direction": "max",
+   "value": "134.9 (118.9% of League Average)",
+   "value_num": 134.9,
+   "when": "Week 5 - 2021",
+   "holder": "DTFClub",
+   "holders": [
+    "DTFClub"
+   ],
+   "league_level": true,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "updated": "2026-11-02",
+   "leaderboard": [
+    {
+     "value": "118.8% of League Average",
+     "holder": "DTFClub",
+     "when": "Week 5 - 2021",
+     "replay": null
+    },
+    {
+     "value": "111.7% of League Average",
+     "holder": "DTFClub",
+     "when": "Week 8 - 2022",
+     "replay": null
+    },
+    {
+     "value": "111.3% of League Average",
+     "holder": "DTFClub",
+     "when": "Week 6 - 2021",
+     "replay": null
+    },
+    {
+     "value": "110.2% of League Average",
+     "holder": "DTFClub",
+     "when": "Week 8 - 2023",
+     "replay": null
+    },
+    {
+     "value": "109.9% of League Average",
+     "holder": "DTFClub",
+     "when": "Week 3 - 2023",
+     "replay": null
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "lowest-scoring-week-league",
+   "name": "Lowest Scoring Week (League)",
+   "category": "Games & Weeks",
+   "source": "seeded",
+   "metric": "league_week",
+   "direction": "min",
+   "value": "79.2 (83.3% of League Average)",
+   "value_num": 79.2,
+   "when": "Week 11 - 2015",
+   "holder": "DTFClub",
+   "holders": [
+    "DTFClub"
+   ],
+   "league_level": true,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": "lowest-scoring-week-league-era-adjusted",
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "updated": "2026-11-02",
+   "leaderboard": [
+    {
+     "value": "96.0 (84.6% of League Average)",
+     "holder": "DTFClub",
+     "when": "Week 15 - 2021",
+     "replay": null
+    },
+    {
+     "value": "98.2 (86.5% of League Average)",
+     "holder": "DTFClub",
+     "when": "Week 9 - 2021",
+     "replay": null
+    },
+    {
+     "value": "98.3 (86.6% of League Average)",
+     "holder": "DTFClub",
+     "when": "Week 10 - 2021",
+     "replay": null
+    },
+    {
+     "value": "106.9 (94.2% of League Average)",
+     "holder": "DTFClub",
+     "when": "Week 12 - 2021",
+     "replay": null
+    },
+    {
+     "value": "108.3 (95.4% of League Average)",
+     "holder": "DTFClub",
+     "when": "Week 8 - 2021",
+     "replay": null
+    }
+   ]
+  },
+  {
+   "id": "lowest-scoring-week-league-era-adjusted",
+   "name": "Lowest Scoring Week (League, Era Adjusted)",
+   "category": "Games & Weeks",
+   "source": "seeded",
+   "metric": "league_week_adj",
+   "direction": "min",
+   "value": "79.2 (83.3% of League Average)",
+   "value_num": 79.2,
+   "when": "Week 11 - 2015",
+   "holder": "DTFClub",
+   "holders": [
+    "DTFClub"
+   ],
+   "league_level": true,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "updated": "2026-11-02",
+   "leaderboard": [
+    {
+     "value": "84.6% of League Average",
+     "holder": "DTFClub",
+     "when": "Week 15 - 2021",
+     "replay": null
+    },
+    {
+     "value": "85.3% of League Average",
+     "holder": "DTFClub",
+     "when": "Week 1 - 2023",
+     "replay": null
+    },
+    {
+     "value": "86.5% of League Average",
+     "holder": "DTFClub",
+     "when": "Week 9 - 2021",
+     "replay": null
+    },
+    {
+     "value": "86.6% of League Average",
+     "holder": "DTFClub",
+     "when": "Week 10 - 2021",
+     "replay": null
+    },
+    {
+     "value": "86.9% of League Average",
+     "holder": "DTFClub",
+     "when": "Week 6 - 2022",
+     "replay": null
+    }
+   ]
+  },
+  {
+   "id": "luckiest-season-h2h-field",
+   "name": "Luckiest Season (H2H% - Field%)",
+   "category": "Games & Weeks",
+   "source": "computed",
+   "metric": "luck",
+   "direction": "max",
+   "value": "+38.5%",
+   "value_num": 38.5,
+   "when": "2022",
+   "holder": "Ben",
+   "holders": [
+    "Ben"
+   ],
+   "league_level": false,
+   "team": "Maison Champ Ernaud",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "updated": "2026-11-02",
+   "leaderboard": [
+    {
+     "value": "+38.5%",
+     "holder": "Ben",
+     "when": "2022",
+     "replay": null
+    },
+    {
+     "value": "+23.8%",
+     "holder": "Tommy",
+     "when": "2018",
+     "replay": null
+    },
+    {
+     "value": "+20.6%",
+     "holder": "Steven",
+     "when": "2020",
+     "replay": null
+    },
+    {
+     "value": "+19.8%",
+     "holder": "Joe",
+     "when": "2018",
+     "replay": null
+    },
+    {
+     "value": "+18.3%",
+     "holder": "Ben",
+     "when": "2015",
+     "replay": null
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "unluckiest-season-h2h-field",
+   "name": "Unluckiest Season (H2H% - Field%)",
+   "category": "Games & Weeks",
+   "source": "computed",
+   "metric": "luck",
+   "direction": "min",
+   "value": "-38.1%",
+   "value_num": -38.1,
+   "when": "2018",
+   "holder": "Ankit",
+   "holders": [
+    "Ankit"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "updated": "2026-11-02",
+   "leaderboard": [
+    {
+     "value": "-38.1%",
+     "holder": "Ankit",
+     "when": "2018",
+     "replay": null
+    },
+    {
+     "value": "-25.4%",
+     "holder": "Haan",
+     "when": "2017",
+     "replay": null
+    },
+    {
+     "value": "-25.2%",
+     "holder": "Tommy",
+     "when": "2022",
+     "replay": null
+    },
+    {
+     "value": "-24.6%",
+     "holder": "Joe",
+     "when": "2020",
+     "replay": null
+    },
+    {
+     "value": "-23.0%",
+     "holder": "Steven",
+     "when": "2019",
+     "replay": null
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "most-points-on-a-saturday",
+   "name": "Most Points on a Saturday",
+   "category": "Games & Weeks",
+   "source": "seeded",
+   "metric": null,
+   "direction": null,
+   "value": "109.88",
+   "value_num": 109.88,
+   "when": "Week 17 - 2024",
+   "holder": "Alex",
+   "holders": [
+    "Alex"
+   ],
+   "league_level": false,
+   "team": "Jazz Hands Team",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": "Needs NFL kickoff times.",
+   "updated": "2026-11-02"
+  },
+  {
+   "id": "highest-projected-point-total",
+   "name": "Highest Projected Point Total",
+   "category": "Projections & NFL Clock",
+   "source": "seeded",
+   "metric": null,
+   "direction": null,
+   "value": "172.05 (15% above league average score)",
+   "value_num": 172.05,
+   "when": "Week 13 - 2025",
+   "holder": "Steven",
+   "holders": [
+    "Steven"
+   ],
+   "league_level": false,
+   "team": "No Country for Old Men",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": "Needs stored projection snapshots.",
+   "updated": "2026-11-02"
+  },
+  {
+   "id": "highest-projected-point-total-era-adjusted",
+   "name": "Highest Projected Point Total (Era Adjusted)",
+   "category": "Projections & NFL Clock",
+   "source": "seeded",
+   "metric": null,
+   "direction": null,
+   "value": "159.81 (18% above league average score)",
+   "value_num": 159.81,
+   "when": "Week 14 - 2024",
+   "holder": "Ben",
+   "holders": [
+    "Ben"
+   ],
+   "league_level": false,
+   "team": "Resident Evil",
+   "notes": [
+    "#2: 154.51 Week 5 2022 Joe Wins of Winter",
+    "#3: 141.2 Week 13 2021 Ankit The Leviathan"
+   ],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": "Needs stored projection snapshots.",
+   "updated": "2026-11-02"
+  },
+  {
+   "id": "most-0-0-s-in-a-win",
+   "name": "Most 0.0's in a Win",
+   "category": "Projections & NFL Clock",
+   "source": "seeded",
+   "metric": null,
+   "direction": null,
+   "value": "2; Gesicki, John Brown",
+   "value_num": 2.0,
+   "when": "Week 5 - 2020",
+   "holder": "Aidan",
+   "holders": [
+    "Aidan"
+   ],
+   "league_level": false,
+   "team": "SARS and Scrubs",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": "Needs per-player points.",
+   "updated": "2026-11-02"
+  },
+  {
+   "id": "highest-points-scored-by-1-player",
+   "name": "Highest % Points Scored by 1 Player",
+   "category": "Projections & NFL Clock",
+   "source": "seeded",
+   "metric": null,
+   "direction": null,
+   "value": "41.5%; Derrick Henry",
+   "value_num": 41.5,
+   "when": "Week 6 - 2020",
+   "holder": "Ryan",
+   "holders": [
+    "Ryan"
+   ],
+   "league_level": false,
+   "team": "New Year New Ship",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": "Needs per-player points.",
+   "updated": "2026-11-02"
+  },
+  {
+   "id": "fewest-total-league-points-on-thursday-night",
+   "name": "Fewest Total League Points on Thursday Night",
+   "category": "Projections & NFL Clock",
+   "source": "seeded",
+   "metric": null,
+   "direction": null,
+   "value": "20",
+   "value_num": 20.0,
+   "when": "Week 10 - 2022 Panthers vs Texans",
+   "holder": "DTFClub",
+   "holders": [
+    "DTFClub"
+   ],
+   "league_level": true,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": "Needs NFL kickoff times + per-player points.",
+   "updated": "2026-11-02"
+  },
+  {
+   "id": "largest-monday-night-deficit-overcome",
+   "name": "Largest Monday Night Deficit Overcome",
+   "category": "Projections & NFL Clock",
+   "source": "seeded",
+   "metric": null,
+   "direction": null,
+   "value": "52.55",
+   "value_num": 52.55,
+   "when": "Week 6 - 2021",
+   "holder": "Haan",
+   "holders": [
+    "Haan"
+   ],
+   "league_level": false,
+   "team": "King Haan",
+   "notes": [],
+   "evidence": [
+    "https://imgur.com/a/h1xHu7o"
+   ],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": "Candidate for Rumble Central wp_timeline.",
+   "updated": "2026-11-02"
+  },
+  {
+   "id": "most-shotguns-in-a-season-league",
+   "name": "Most Shotguns in a Season (League)",
+   "category": "Trades & FAB",
+   "source": "seeded",
+   "metric": null,
+   "direction": null,
+   "value": "17",
+   "value_num": 17.0,
+   "when": "2025",
+   "holder": "DTFClub",
+   "holders": [
+    "DTFClub"
+   ],
+   "league_level": true,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": "'Shotgun' not defined; source of the count unknown.",
+   "engine_gap": null,
+   "updated": "2026-11-02"
+  },
+  {
+   "id": "most-trades-in-24hrs",
+   "name": "Most Trades in 24hrs",
+   "category": "Trades & FAB",
+   "source": "seeded",
+   "metric": null,
+   "direction": null,
+   "value": "3",
+   "value_num": 3.0,
+   "when": "Week 5 2024, Week 7 2025",
+   "holder": "Joe, Alex",
+   "holders": [
+    "Joe",
+    "Alex"
+   ],
+   "league_level": false,
+   "team": "Project 2025, Double Dippers",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": true,
+   "needs_definition": null,
+   "engine_gap": null,
+   "updated": "2026-11-02"
+  },
+  {
+   "id": "most-non-fab-trades-in-a-season-league",
+   "name": "Most non-FAB Trades in a Season (League)",
+   "category": "Trades & FAB",
+   "source": "seeded",
+   "metric": null,
+   "direction": null,
+   "value": "17",
+   "value_num": 17.0,
+   "when": "2024 & 2020",
+   "holder": "DTFClub",
+   "holders": [
+    "DTFClub"
+   ],
+   "league_level": true,
+   "team": "",
+   "notes": [],
+   "evidence": [
+    "https://imgur.com/a/qzLpr"
+   ],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": true,
+   "needs_definition": null,
+   "engine_gap": null,
+   "updated": "2026-11-02"
+  },
+  {
+   "id": "most-trades-in-a-season-league",
+   "name": "Most Trades in a Season (League)",
+   "category": "Trades & FAB",
+   "source": "seeded",
+   "metric": null,
+   "direction": null,
+   "value": "27",
+   "value_num": 27.0,
+   "when": "2024 & 2022",
+   "holder": "DTFClub",
+   "holders": [
+    "DTFClub"
+   ],
+   "league_level": true,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": true,
+   "needs_definition": null,
+   "engine_gap": null,
+   "updated": "2026-11-02"
+  },
+  {
+   "id": "most-non-fab-trades-in-a-season-team",
+   "name": "Most non-FAB Trades in a Season (Team)",
+   "category": "Trades & FAB",
+   "source": "seeded",
+   "metric": null,
+   "direction": null,
+   "value": "7 (+1 veto)",
+   "value_num": 7.0,
+   "when": "2017",
+   "holder": "Ankit",
+   "holders": [
+    "Ankit"
+   ],
+   "league_level": false,
+   "team": "Kingsmen: Molon Labe",
+   "notes": [],
+   "evidence": [
+    "https://imgur.com/a/qzLpr"
+   ],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": true,
+   "needs_definition": null,
+   "engine_gap": null,
+   "updated": "2026-11-02"
+  },
+  {
+   "id": "most-trades-in-a-season-team",
+   "name": "Most Trades in a Season (Team)",
+   "category": "Trades & FAB",
+   "source": "seeded",
+   "metric": null,
+   "direction": null,
+   "value": "12",
+   "value_num": 12.0,
+   "when": "2022",
+   "holder": "Steven",
+   "holders": [
+    "Steven"
+   ],
+   "league_level": false,
+   "team": "The Goodell Boys",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": true,
+   "needs_definition": null,
+   "engine_gap": null,
+   "updated": "2026-11-02"
+  },
+  {
+   "id": "most-teams-to-make-a-trade",
+   "name": "Most Teams to Make a Trade",
+   "category": "Trades & FAB",
+   "source": "seeded",
+   "metric": null,
+   "direction": null,
+   "value": "10",
+   "value_num": 10.0,
+   "when": "2018, 2025",
+   "holder": "DTFClub",
+   "holders": [
+    "DTFClub"
+   ],
+   "league_level": true,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": true,
+   "needs_definition": null,
+   "engine_gap": null,
+   "updated": "2026-11-02"
+  },
+  {
+   "id": "most-fab-owned-at-one-time",
+   "name": "Most FAB owned at one time",
+   "category": "Trades & FAB",
+   "source": "seeded",
+   "metric": null,
+   "direction": null,
+   "value": "$205",
+   "value_num": 205.0,
+   "when": "Week 1 - 2025",
+   "holder": "Ryan",
+   "holders": [
+    "Ryan"
+   ],
+   "league_level": false,
+   "team": "Like Father Like Son",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": true,
+   "needs_definition": null,
+   "engine_gap": null,
+   "updated": "2026-11-02"
+  },
+  {
+   "id": "largest-fab-overbid",
+   "name": "Largest FAB Overbid",
+   "category": "Trades & FAB",
+   "source": "seeded",
+   "metric": null,
+   "direction": null,
+   "value": "$131 ($194 total bid)",
+   "value_num": 131.0,
+   "when": "Week 5 - 2022",
+   "holder": "Ankit - George Pickens",
+   "holders": [
+    "Ankit"
+   ],
+   "league_level": false,
+   "team": "ATTAAAAACK!",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "updated": "2026-11-02"
+  },
+  {
+   "id": "best-fab-bid-lowest-over-next-bid",
+   "name": "Best FAB Bid (Lowest % over next bid)",
+   "category": "Trades & FAB",
+   "source": "seeded",
+   "metric": null,
+   "direction": null,
+   "value": "0%; $149",
+   "value_num": 0.0,
+   "when": "Week 3 - 2023",
+   "holder": "Joe - De'Von Achane",
+   "holders": [
+    "Joe"
+   ],
+   "league_level": false,
+   "team": "The Liberal Elite",
+   "notes": [],
+   "evidence": [
+    "https://imgur.com/MuqUoMK"
+   ],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "updated": "2026-11-02"
+  },
+  {
+   "id": "most-fab-in-a-trade",
+   "name": "Most FAB in a trade",
+   "category": "Trades & FAB",
+   "source": "seeded",
+   "metric": null,
+   "direction": null,
+   "value": "$121",
+   "value_num": 121.0,
+   "when": "Week 11 - 2021",
+   "holder": "Steven & Ankit",
+   "holders": [
+    "Steven",
+    "Ankit"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "updated": "2026-11-02"
+  },
+  {
+   "id": "earliest-fab-bankruptcy",
+   "name": "Earliest FAB Bankruptcy",
+   "category": "Trades & FAB",
+   "source": "seeded",
+   "metric": null,
+   "direction": null,
+   "value": "Week 2",
+   "value_num": 2.0,
+   "when": "2020",
+   "holder": "Oleg",
+   "holders": [
+    "Oleg"
+   ],
+   "league_level": false,
+   "team": "Christian's Dirty Landry",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "updated": "2026-11-02"
+  },
+  {
+   "id": "fastest-trade-acceptance-to-player-start",
+   "name": "Fastest Trade Acceptance to Player Start",
+   "category": "Trades & FAB",
+   "source": "seeded",
+   "metric": null,
+   "direction": null,
+   "value": "8 minutes; Keelan Cole",
+   "value_num": 8.0,
+   "when": "Week 3 Thursday Night - 2020",
+   "holder": "Ben",
+   "holders": [
+    "Ben"
+   ],
+   "league_level": false,
+   "team": "Can. Did. Kamara",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": "Needs trade timestamps + kickoff times.",
+   "updated": "2026-11-02"
+  }
+ ]
+}
