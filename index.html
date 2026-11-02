@@ -318,6 +318,7 @@ function openDrawer(id){
   var acts="";if(r.replay&&r.replay.url)acts+='<a class="btn" href="'+esc(r.replay.url)+'" target="_blank" rel="noopener">▶ Watch in Rumble Central</a> ';
   (r.evidence||[]).forEach(function(u,i){acts+='<a class="btn sec" href="'+esc(u)+'" target="_blank" rel="noopener">📷 Proof'+((r.evidence.length>1)?" "+(i+1):"")+"</a> "});
   if(acts)h+='<div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap">'+acts+"</div>";
+  if(r.definition)h+='<h4>How it\'s measured</h4><div>'+esc(r.definition)+"</div>";
   var fl=[];if(r.needs_definition)fl.push("⚠ "+r.needs_definition);if(r.engine_gap)fl.push("Not auto-updated yet: "+r.engine_gap);if(r.size_sensitive)fl.push("Raw count depends on 10- vs 12-team seasons.");if(r.status==="provisional")fl.push("Provisional until the season ends.");
   if(fl.length)h+='<h4>Notes</h4><ul class="plain">'+fl.map(function(x){return"<li>"+esc(x)+"</li>"}).join("")+"</ul>";
   if(r.previous)h+='<h4>Previous record</h4><div>'+esc(r.previous.value)+" — "+esc(r.previous.holder)+(r.previous.team?" ("+esc(r.previous.team)+")":"")+", "+esc(r.previous.when)+'<div class="muted">'+(r.previous.reconciled?"Replaced "+esc(r.previous.replaced_on)+" after checking against Sleeper data":"Broken "+esc(r.previous.replaced_on)+" by "+esc(r.previous.replaced_by))+"</div></div>";
@@ -393,7 +394,7 @@ function applyEdit(doc,logText,r,v,isNew){
   return{records:JSON.stringify(doc,null,1)+"\n",log:logText.replace(/\n?$/,"\n")+JSON.stringify(entry)+"\n",entry:entry}}
 function save(r,v,isNew,tries){
   tries=tries||0;status("Saving…");$("f-save")&&($("f-save").disabled=true);var out,head,treeBase;
-  gh("/git/ref/heads/"+REPO.branch).then(function(ref){head=ref.object.sha;return gh("/git/commits/"+head)}).then(function(c){treeBase=c.tree.sha;
+  gh("").then(function(info){REPO.branch=info.default_branch;return gh("/git/ref/heads/"+REPO.branch)}).then(function(ref){head=ref.object.sha;return gh("/git/commits/"+head)}).then(function(c){treeBase=c.tree.sha;
     return Promise.all([gh("/contents/data/records.json?ref="+head),gh("/contents/data/changelog.jsonl?ref="+head)])}).then(function(f){
     var doc=JSON.parse(b64d(f[0].content));out=applyEdit(doc,b64d(f[1].content),r,v,isNew);
     return Promise.all([gh("/git/blobs",{method:"POST",body:{content:out.records,encoding:"utf-8"}}),gh("/git/blobs",{method:"POST",body:{content:out.log,encoding:"utf-8"}})])}).then(function(b){

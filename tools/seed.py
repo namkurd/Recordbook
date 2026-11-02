@@ -14,6 +14,7 @@ METRIC = {
  "Best Record vs. Field": ("field_pct", "max"), "Worst Record vs. Field": ("field_pct", "min"),
  "Total Wins (Regular Season)": ("reg_wins", "max"),
  "Luckiest Season (H2H% - Field%)": ("luck", "max"), "Unluckiest Season (H2H% - Field%)": ("luck", "min"),
+ "Most Composite Wins in a Season": ("composite", "max"), "Fewest Composite Wins in a Season": ("composite", "min"),
  "Best Rumble %": ("rumble_pct", "max"), "Worst Rumble %": ("rumble_pct", "min"),
  "Most Top Scoring Weeks (Season)": ("top_weeks", "max"), "Most Bottom Scoring Weeks (Season)": ("bottom_weeks", "max"),
  "Most Consecutive Top Scoring Weeks": ("top_streak", "max"), "Most Consecutive Bottom Scoring Weeks": ("bottom_streak", "max"),
@@ -31,15 +32,27 @@ ERA_PAIRS = {"Most Points (Game)": "Most Points (Game, Era Adjusted)", "Fewest P
  "Highest Scoring Week (League)": "Highest Scoring Week (League, Era Adjusted)", "Lowest Scoring Week (League)": "Lowest Scoring Week (League, Era Adjusted)"}
 # rows whose raw count/total depends on 10 vs 12 teams or the length of the season
 SIZE_SENSITIVE = re.compile(r"Top Scoring Weeks|Bottom Scoring Weeks|Composite|Trades|Teams to Make|FAB owned|Top Scoring Seasons|Bottom Scoring Seasons|#1 Seeds|Playoff Appearances|Points \(Season\)|Points Against \(Season\)|Fewest Points \(Season\)|Winning Streak|Losing Streak|Total Wins")
-NEEDS_DEFINITION = {"Most Composite Wins in a Season": "Formula for 'composite wins' not confirmed.",
-                    "Fewest Composite Wins in a Season": "Formula for 'composite wins' not confirmed.",
-                    "Most Shotguns in a Season (League)": "'Shotgun' not defined; source of the count unknown."}
+NEEDS_DEFINITION = {}
+DEFINITION = {
+ "Most Composite Wins in a Season": "Each week a manager earns a win for winning their matchup and another for scoring in the top half of all scores that week (top 5 of 10 teams, top 6 of 12).",
+ "Fewest Composite Wins in a Season": "Each week a manager earns a win for winning their matchup and another for scoring in the top half of all scores that week.",
+ "Most Shotguns in a Season (League)": "A score of 0 or less from a non-defense starter who was not ruled out before the 2nd half, or ruled out but didn't play in the 2nd half.",
+ "Most Dominant Offensive Season": "PF+: a team's points scored as a % of that season's league average (100 = average), like OPS+.",
+ "Most Futile Offensive Season": "PF+: a team's points scored as a % of that season's league average (100 = average).",
+ "Most Dominant Defensive Season": "PA+: points against as a % of that season's league average. Lower is better.",
+ "Most Cursed Defensive Season": "PA+: points against as a % of that season's league average. Higher is worse.",
+ "Most Points (Game, Era Adjusted)": "Score as a % of that season's average team score.", "Fewest Points (Game, Era Adjusted)": "Score as a % of that season's average team score.",
+ "Highest Scoring Week (League, Era Adjusted)": "The week's average team score as a % of that season's average.", "Lowest Scoring Week (League, Era Adjusted)": "The week's average team score as a % of that season's average.",
+ "Best Rumble %": "Rumbles earned out of the maximum possible in the regular season (9 per matchup win + 1 per team outscored each week).",
+ "Luckiest Season (H2H% - Field%)": "Head-to-head win % minus record-vs-the-field %.",
+}
 SOURCE_HINT = {  # rows the engine can't compute yet and why
  "Most Points on Bench": "Needs per-player starter/bench points (Sleeper matchups).", "Most Points on a Saturday": "Needs NFL kickoff times.",
  "Highest Projected Point Total": "Needs stored projection snapshots.", "Highest Projected Point Total (Era Adjusted)": "Needs stored projection snapshots.",
  "Most 0.0's in a Win": "Needs per-player points.", "Highest % Points Scored by 1 Player": "Needs per-player points.",
  "Fewest Total League Points on Thursday Night": "Needs NFL kickoff times + per-player points.", "Largest Monday Night Deficit Overcome": "Candidate for Rumble Central wp_timeline.",
  "Fastest Trade Acceptance to Player Start": "Needs trade timestamps + kickoff times.",
+ "Most Shotguns in a Season (League)": "Needs per-player points plus game-day inactive/ruled-out status for every starter.",
 }
 
 def slug(s): return re.sub(r"[^a-z0-9]+", "-", s.lower()).strip("-")
@@ -66,7 +79,7 @@ for cat, n in zip(CATS, SIZES):
           "replay": None, "previous": None, "ties": [], "locked": False, "status": "active",
           "era_pair": slug(ERA_PAIRS[name]) if name in ERA_PAIRS else None,
           "size_sensitive": bool(SIZE_SENSITIVE.search(name)),
-          "needs_definition": NEEDS_DEFINITION.get(name), "engine_gap": SOURCE_HINT.get(name),
+          "needs_definition": NEEDS_DEFINITION.get(name), "definition": DEFINITION.get(name), "engine_gap": SOURCE_HINT.get(name),
           "updated": "2026-11-02"})
 json.dump({"version": 1, "league": "DTF Club", "records": recs}, open("data/records.json", "w"), indent=1, ensure_ascii=False)
 open("data/changelog.jsonl", "w").write(json.dumps({"ts": "2026-11-02T00:00:00Z", "record": "*", "cause": "seed:sheet",

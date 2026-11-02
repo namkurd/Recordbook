@@ -29,6 +29,7 @@
    "era_pair": null,
    "size_sensitive": false,
    "needs_definition": null,
+   "definition": null,
    "engine_gap": null,
    "updated": "2026-11-02"
   },
@@ -58,6 +59,7 @@
    "era_pair": null,
    "size_sensitive": false,
    "needs_definition": null,
+   "definition": null,
    "engine_gap": null,
    "updated": "2026-11-02"
   },
@@ -89,6 +91,7 @@
    "era_pair": null,
    "size_sensitive": false,
    "needs_definition": null,
+   "definition": null,
    "engine_gap": null,
    "updated": "2026-11-02"
   },
@@ -118,6 +121,7 @@
    "era_pair": null,
    "size_sensitive": false,
    "needs_definition": null,
+   "definition": null,
    "engine_gap": null,
    "updated": "2026-11-02"
   },
@@ -147,6 +151,7 @@
    "era_pair": null,
    "size_sensitive": true,
    "needs_definition": null,
+   "definition": null,
    "engine_gap": null,
    "updated": "2026-11-02"
   },
@@ -179,6 +184,7 @@
    "era_pair": null,
    "size_sensitive": true,
    "needs_definition": null,
+   "definition": null,
    "engine_gap": null,
    "updated": "2026-11-02"
   },
@@ -208,6 +214,7 @@
    "era_pair": null,
    "size_sensitive": false,
    "needs_definition": null,
+   "definition": null,
    "engine_gap": null,
    "updated": "2026-11-02"
   },
@@ -237,6 +244,7 @@
    "era_pair": null,
    "size_sensitive": false,
    "needs_definition": null,
+   "definition": null,
    "engine_gap": null,
    "updated": "2026-11-02"
   },
@@ -266,6 +274,7 @@
    "era_pair": null,
    "size_sensitive": true,
    "needs_definition": null,
+   "definition": null,
    "engine_gap": null,
    "updated": "2026-11-02"
   },
@@ -295,6 +304,7 @@
    "era_pair": null,
    "size_sensitive": true,
    "needs_definition": null,
+   "definition": null,
    "engine_gap": null,
    "updated": "2026-11-02"
   },
@@ -327,6 +337,7 @@
    "era_pair": null,
    "size_sensitive": true,
    "needs_definition": null,
+   "definition": null,
    "engine_gap": null,
    "updated": "2026-11-02"
   },
@@ -356,6 +367,7 @@
    "era_pair": null,
    "size_sensitive": true,
    "needs_definition": null,
+   "definition": null,
    "engine_gap": null,
    "updated": "2026-11-02"
   },
@@ -385,6 +397,7 @@
    "era_pair": null,
    "size_sensitive": true,
    "needs_definition": null,
+   "definition": null,
    "engine_gap": null,
    "updated": "2026-11-02"
   },
@@ -422,6 +435,7 @@
    "era_pair": null,
    "size_sensitive": true,
    "needs_definition": null,
+   "definition": null,
    "engine_gap": null,
    "updated": "2026-11-02",
    "leaderboard": [
@@ -533,6 +547,7 @@
    "era_pair": null,
    "size_sensitive": true,
    "needs_definition": null,
+   "definition": null,
    "engine_gap": null,
    "updated": "2026-11-02",
    "leaderboard": [
@@ -624,6 +639,7 @@
    "era_pair": null,
    "size_sensitive": false,
    "needs_definition": null,
+   "definition": null,
    "engine_gap": null,
    "updated": "2026-11-02"
   },
@@ -653,6 +669,7 @@
    "era_pair": null,
    "size_sensitive": false,
    "needs_definition": null,
+   "definition": null,
    "engine_gap": null,
    "updated": "2026-11-02"
   },
@@ -682,6 +699,7 @@
    "era_pair": null,
    "size_sensitive": false,
    "needs_definition": null,
+   "definition": null,
    "engine_gap": null,
    "updated": "2026-11-02"
   },
@@ -711,6 +729,7 @@
    "era_pair": null,
    "size_sensitive": true,
    "needs_definition": null,
+   "definition": null,
    "engine_gap": null,
    "updated": "2026-11-02",
    "leaderboard": [
@@ -773,6 +792,7 @@
    "era_pair": null,
    "size_sensitive": true,
    "needs_definition": null,
+   "definition": null,
    "engine_gap": null,
    "updated": "2026-11-02"
   },
@@ -802,6 +822,7 @@
    "era_pair": null,
    "size_sensitive": false,
    "needs_definition": null,
+   "definition": "PF+: a team's points scored as a % of that season's league average (100 = average), like OPS+.",
    "engine_gap": null,
    "updated": "2026-11-02",
    "leaderboard": [
@@ -873,6 +894,7 @@
    "era_pair": null,
    "size_sensitive": false,
    "needs_definition": null,
+   "definition": "PA+: points against as a % of that season's league average. Lower is better.",
    "engine_gap": null,
    "updated": "2026-11-02",
    "leaderboard": [
@@ -934,6 +956,7 @@
    "era_pair": null,
    "size_sensitive": false,
    "needs_definition": null,
+   "definition": "PF+: a team's points scored as a % of that season's league average (100 = average).",
    "engine_gap": null,
    "updated": "2026-11-02",
    "leaderboard": [
@@ -996,6 +1019,7 @@
    "era_pair": null,
    "size_sensitive": false,
    "needs_definition": null,
+   "definition": "PA+: points against as a % of that season's league average. Higher is worse.",
    "engine_gap": null,
    "updated": "2026-11-02",
    "leaderboard": [
@@ -1058,6 +1082,7 @@
    "era_pair": null,
    "size_sensitive": true,
    "needs_definition": null,
+   "definition": null,
    "engine_gap": null,
    "updated": "2026-11-02",
    "leaderboard": [
@@ -1120,6 +1145,7 @@
    "era_pair": null,
    "size_sensitive": true,
    "needs_definition": null,
+   "definition": null,
    "engine_gap": null,
    "updated": "2026-11-02",
    "leaderboard": [
@@ -1184,6 +1210,7 @@
    "era_pair": null,
    "size_sensitive": true,
    "needs_definition": null,
+   "definition": null,
    "engine_gap": null,
    "updated": "2026-11-02",
    "leaderboard": [
@@ -1246,6 +1273,7 @@
    "era_pair": null,
    "size_sensitive": false,
    "needs_definition": null,
+   "definition": "Rumbles earned out of the maximum possible in the regular season (9 per matchup win + 1 per team outscored each week).",
    "engine_gap": null,
    "updated": "2026-11-02",
    "leaderboard": [
@@ -1307,6 +1335,7 @@
    "era_pair": null,
    "size_sensitive": false,
    "needs_definition": null,
+   "definition": null,
    "engine_gap": null,
    "updated": "2026-11-02",
    "leaderboard": [
@@ -1368,6 +1397,7 @@
    "era_pair": null,
    "size_sensitive": false,
    "needs_definition": null,
+   "definition": null,
    "engine_gap": null,
    "updated": "2026-11-02",
    "leaderboard": [
@@ -1430,6 +1460,7 @@
    "era_pair": null,
    "size_sensitive": false,
    "needs_definition": null,
+   "definition": null,
    "engine_gap": null,
    "updated": "2026-11-02",
    "leaderboard": [
@@ -1471,8 +1502,8 @@
    "name": "Most Composite Wins in a Season",
    "category": "Team Seasons",
    "source": "seeded",
-   "metric": null,
-   "direction": null,
+   "metric": "composite",
+   "direction": "max",
    "value": "26",
    "value_num": 26.0,
    "when": "2014",
@@ -1493,17 +1524,50 @@
    "status": "active",
    "era_pair": null,
    "size_sensitive": true,
-   "needs_definition": "Formula for 'composite wins' not confirmed.",
+   "needs_definition": null,
+   "definition": "Each week a manager earns a win for winning their matchup and another for scoring in the top half of all scores that week (top 5 of 10 teams, top 6 of 12).",
    "engine_gap": null,
-   "updated": "2026-11-02"
+   "updated": "2026-11-02",
+   "leaderboard": [
+    {
+     "value": "24",
+     "holder": "Ben",
+     "when": "2022",
+     "replay": null
+    },
+    {
+     "value": "24",
+     "holder": "Steven",
+     "when": "2025",
+     "replay": null
+    },
+    {
+     "value": "23",
+     "holder": "Ben",
+     "when": "2024",
+     "replay": null
+    },
+    {
+     "value": "22",
+     "holder": "Ryan",
+     "when": "2021",
+     "replay": null
+    },
+    {
+     "value": "22",
+     "holder": "Aidan",
+     "when": "2022",
+     "replay": null
+    }
+   ]
   },
   {
    "id": "fewest-composite-wins-in-a-season",
    "name": "Fewest Composite Wins in a Season",
    "category": "Team Seasons",
-   "source": "seeded",
-   "metric": null,
-   "direction": null,
+   "source": "computed",
+   "metric": "composite",
+   "direction": "min",
    "value": "5",
    "value_num": 5.0,
    "when": "2023, 2022",
@@ -1520,14 +1584,54 @@
    ],
    "replay": null,
    "previous": null,
-   "ties": [],
+   "ties": [
+    {
+     "holder": "Ryan",
+     "when": "2025",
+     "replay": null
+    }
+   ],
    "locked": false,
    "status": "active",
    "era_pair": null,
    "size_sensitive": true,
-   "needs_definition": "Formula for 'composite wins' not confirmed.",
+   "needs_definition": null,
+   "definition": "Each week a manager earns a win for winning their matchup and another for scoring in the top half of all scores that week.",
    "engine_gap": null,
-   "updated": "2026-11-02"
+   "updated": "2026-11-02",
+   "leaderboard": [
+    {
+     "value": "5",
+     "holder": "Ryan",
+     "when": "2025",
+     "replay": null
+    },
+    {
+     "value": "5",
+     "holder": "Tommy",
+     "when": "2023",
+     "replay": null
+    },
+    {
+     "value": "5",
+     "holder": "Tommy",
+     "when": "2022",
+     "replay": null
+    },
+    {
+     "value": "6",
+     "holder": "Ryan",
+     "when": "2024",
+     "replay": null
+    },
+    {
+     "value": "9",
+     "holder": "Steven",
+     "when": "2022",
+     "replay": null
+    }
+   ],
+   "verified": true
   },
   {
    "id": "most-top-scoring-weeks-season",
@@ -1556,6 +1660,7 @@
    "era_pair": null,
    "size_sensitive": true,
    "needs_definition": null,
+   "definition": null,
    "engine_gap": null,
    "updated": "2026-11-02",
    "leaderboard": [
@@ -1620,6 +1725,7 @@
    "era_pair": null,
    "size_sensitive": true,
    "needs_definition": null,
+   "definition": null,
    "engine_gap": null,
    "updated": "2026-11-02",
    "leaderboard": [
@@ -1684,6 +1790,7 @@
    "era_pair": null,
    "size_sensitive": true,
    "needs_definition": null,
+   "definition": null,
    "engine_gap": null,
    "updated": "2026-11-02",
    "leaderboard": [
@@ -1782,6 +1889,7 @@
    "era_pair": null,
    "size_sensitive": true,
    "needs_definition": null,
+   "definition": null,
    "engine_gap": null,
    "updated": "2026-11-02",
    "leaderboard": [
@@ -1874,6 +1982,7 @@
    "era_pair": null,
    "size_sensitive": false,
    "needs_definition": null,
+   "definition": null,
    "engine_gap": null,
    "updated": "2026-11-02",
    "leaderboard": [
@@ -1938,6 +2047,7 @@
    "era_pair": null,
    "size_sensitive": false,
    "needs_definition": null,
+   "definition": null,
    "engine_gap": null,
    "updated": "2026-11-02",
    "leaderboard": [
@@ -2010,6 +2120,7 @@
    "era_pair": "most-points-game-era-adjusted",
    "size_sensitive": false,
    "needs_definition": null,
+   "definition": null,
    "engine_gap": null,
    "updated": "2026-11-02",
    "leaderboard": [
@@ -2108,6 +2219,7 @@
    "era_pair": null,
    "size_sensitive": false,
    "needs_definition": null,
+   "definition": "Score as a % of that season's average team score.",
    "engine_gap": null,
    "updated": "2026-11-02",
    "leaderboard": [
@@ -2202,6 +2314,7 @@
    "era_pair": "fewest-points-game-era-adjusted",
    "size_sensitive": false,
    "needs_definition": null,
+   "definition": null,
    "engine_gap": null,
    "updated": "2026-11-02",
    "leaderboard": [
@@ -2293,6 +2406,7 @@
    "era_pair": null,
    "size_sensitive": false,
    "needs_definition": null,
+   "definition": "Score as a % of that season's average team score.",
    "engine_gap": null,
    "updated": "2026-11-02",
    "leaderboard": [
@@ -2387,6 +2501,7 @@
    "era_pair": null,
    "size_sensitive": false,
    "needs_definition": null,
+   "definition": null,
    "engine_gap": "Needs per-player starter/bench points (Sleeper matchups).",
    "updated": "2026-11-02"
   },
@@ -2424,6 +2539,7 @@
    "era_pair": null,
    "size_sensitive": false,
    "needs_definition": null,
+   "definition": null,
    "engine_gap": null,
    "updated": "2026-11-02",
    "leaderboard": [
@@ -2525,6 +2641,7 @@
    "era_pair": null,
    "size_sensitive": false,
    "needs_definition": null,
+   "definition": null,
    "engine_gap": null,
    "updated": "2026-11-02",
    "leaderboard": [
@@ -2617,6 +2734,7 @@
    "era_pair": null,
    "size_sensitive": false,
    "needs_definition": null,
+   "definition": null,
    "engine_gap": null,
    "updated": "2026-11-02"
   },
@@ -2663,6 +2781,7 @@
    "era_pair": null,
    "size_sensitive": false,
    "needs_definition": null,
+   "definition": null,
    "engine_gap": null,
    "updated": "2026-11-02",
    "leaderboard": [
@@ -2756,6 +2875,7 @@
    "era_pair": null,
    "size_sensitive": false,
    "needs_definition": null,
+   "definition": null,
    "engine_gap": null,
    "updated": "2026-11-02",
    "leaderboard": [
@@ -2855,6 +2975,7 @@
    "era_pair": null,
    "size_sensitive": false,
    "needs_definition": null,
+   "definition": null,
    "engine_gap": null,
    "updated": "2026-11-02",
    "leaderboard": [
@@ -2947,6 +3068,7 @@
    "era_pair": "highest-scoring-week-league-era-adjusted",
    "size_sensitive": false,
    "needs_definition": null,
+   "definition": null,
    "engine_gap": null,
    "updated": "2026-11-02",
    "leaderboard": [
@@ -3009,6 +3131,7 @@
    "era_pair": null,
    "size_sensitive": false,
    "needs_definition": null,
+   "definition": "The week's average team score as a % of that season's average.",
    "engine_gap": null,
    "updated": "2026-11-02",
    "leaderboard": [
@@ -3071,6 +3194,7 @@
    "era_pair": "lowest-scoring-week-league-era-adjusted",
    "size_sensitive": false,
    "needs_definition": null,
+   "definition": null,
    "engine_gap": null,
    "updated": "2026-11-02",
    "leaderboard": [
@@ -3132,6 +3256,7 @@
    "era_pair": null,
    "size_sensitive": false,
    "needs_definition": null,
+   "definition": "The week's average team score as a % of that season's average.",
    "engine_gap": null,
    "updated": "2026-11-02",
    "leaderboard": [
@@ -3193,6 +3318,7 @@
    "era_pair": null,
    "size_sensitive": false,
    "needs_definition": null,
+   "definition": "Head-to-head win % minus record-vs-the-field %.",
    "engine_gap": null,
    "updated": "2026-11-02",
    "leaderboard": [
@@ -3255,6 +3381,7 @@
    "era_pair": null,
    "size_sensitive": false,
    "needs_definition": null,
+   "definition": null,
    "engine_gap": null,
    "updated": "2026-11-02",
    "leaderboard": [
@@ -3317,6 +3444,7 @@
    "era_pair": null,
    "size_sensitive": false,
    "needs_definition": null,
+   "definition": null,
    "engine_gap": "Needs NFL kickoff times.",
    "updated": "2026-11-02"
   },
@@ -3346,6 +3474,7 @@
    "era_pair": null,
    "size_sensitive": false,
    "needs_definition": null,
+   "definition": null,
    "engine_gap": "Needs stored projection snapshots.",
    "updated": "2026-11-02"
   },
@@ -3378,6 +3507,7 @@
    "era_pair": null,
    "size_sensitive": false,
    "needs_definition": null,
+   "definition": null,
    "engine_gap": "Needs stored projection snapshots.",
    "updated": "2026-11-02"
   },
@@ -3407,6 +3537,7 @@
    "era_pair": null,
    "size_sensitive": false,
    "needs_definition": null,
+   "definition": null,
    "engine_gap": "Needs per-player points.",
    "updated": "2026-11-02"
   },
@@ -3436,6 +3567,7 @@
    "era_pair": null,
    "size_sensitive": false,
    "needs_definition": null,
+   "definition": null,
    "engine_gap": "Needs per-player points.",
    "updated": "2026-11-02"
   },
@@ -3465,6 +3597,7 @@
    "era_pair": null,
    "size_sensitive": false,
    "needs_definition": null,
+   "definition": null,
    "engine_gap": "Needs NFL kickoff times + per-player points.",
    "updated": "2026-11-02"
   },
@@ -3496,6 +3629,7 @@
    "era_pair": null,
    "size_sensitive": false,
    "needs_definition": null,
+   "definition": null,
    "engine_gap": "Candidate for Rumble Central wp_timeline.",
    "updated": "2026-11-02"
   },
@@ -3524,8 +3658,9 @@
    "status": "active",
    "era_pair": null,
    "size_sensitive": false,
-   "needs_definition": "'Shotgun' not defined; source of the count unknown.",
-   "engine_gap": null,
+   "needs_definition": null,
+   "definition": "A score of 0 or less from a non-defense starter who was not ruled out before the 2nd half, or ruled out but didn't play in the 2nd half.",
+   "engine_gap": "Needs per-player points plus game-day inactive/ruled-out status for every starter.",
    "updated": "2026-11-02"
   },
   {
@@ -3555,6 +3690,7 @@
    "era_pair": null,
    "size_sensitive": true,
    "needs_definition": null,
+   "definition": null,
    "engine_gap": null,
    "updated": "2026-11-02"
   },
@@ -3586,6 +3722,7 @@
    "era_pair": null,
    "size_sensitive": true,
    "needs_definition": null,
+   "definition": null,
    "engine_gap": null,
    "updated": "2026-11-02"
   },
@@ -3615,6 +3752,7 @@
    "era_pair": null,
    "size_sensitive": true,
    "needs_definition": null,
+   "definition": null,
    "engine_gap": null,
    "updated": "2026-11-02"
   },
@@ -3646,6 +3784,7 @@
    "era_pair": null,
    "size_sensitive": true,
    "needs_definition": null,
+   "definition": null,
    "engine_gap": null,
    "updated": "2026-11-02"
   },
@@ -3675,6 +3814,7 @@
    "era_pair": null,
    "size_sensitive": true,
    "needs_definition": null,
+   "definition": null,
    "engine_gap": null,
    "updated": "2026-11-02"
   },
@@ -3704,6 +3844,7 @@
    "era_pair": null,
    "size_sensitive": true,
    "needs_definition": null,
+   "definition": null,
    "engine_gap": null,
    "updated": "2026-11-02"
   },
@@ -3733,6 +3874,7 @@
    "era_pair": null,
    "size_sensitive": true,
    "needs_definition": null,
+   "definition": null,
    "engine_gap": null,
    "updated": "2026-11-02"
   },
@@ -3762,6 +3904,7 @@
    "era_pair": null,
    "size_sensitive": false,
    "needs_definition": null,
+   "definition": null,
    "engine_gap": null,
    "updated": "2026-11-02"
   },
@@ -3793,6 +3936,7 @@
    "era_pair": null,
    "size_sensitive": false,
    "needs_definition": null,
+   "definition": null,
    "engine_gap": null,
    "updated": "2026-11-02"
   },
@@ -3823,6 +3967,7 @@
    "era_pair": null,
    "size_sensitive": false,
    "needs_definition": null,
+   "definition": null,
    "engine_gap": null,
    "updated": "2026-11-02"
   },
@@ -3852,6 +3997,7 @@
    "era_pair": null,
    "size_sensitive": false,
    "needs_definition": null,
+   "definition": null,
    "engine_gap": null,
    "updated": "2026-11-02"
   },
@@ -3881,6 +4027,7 @@
    "era_pair": null,
    "size_sensitive": false,
    "needs_definition": null,
+   "definition": null,
    "engine_gap": "Needs trade timestamps + kickoff times.",
    "updated": "2026-11-02"
   }

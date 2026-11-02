@@ -81,16 +81,15 @@ def main():
         elif same:
             hit = [c for c in cands if abs(c["value"] - sn) <= slack]
             if r["source"] == "seeded": r["source"] = "computed"; r["verified"] = True
-            first = hit[0]
-            if not r.get("replay"): r["replay"] = replay(m, first, d.cur)
+            mine = [c for c in hit if set(c["holders"]) & set(r["holders"])] or hit[:1]
+            if not r.get("replay"): r["replay"] = replay(m, mine[0], d.cur)
             known = {r["holder"]} | set(r["holders"]) | {t["holder"] for t in r["ties"]}
-            for c in hit[1:]:
+            for c in hit:
                 h = holder_text(m, c)
                 if all(x not in known for x in c["holders"]) and h not in known:
                     t = {"holder": h, "when": when(m, c), "replay": replay(m, c, d.cur)}
-                    if not any(t["when"] == x["when"] and t["holder"] == x["holder"] for x in r["ties"]) and when(m, c) != r["when"]:
-                        r["ties"].append(t); known.add(h)
-                        log.append({"ts": now, "record": r["id"], "name": r["name"], "cause": "auto:tie", "new": t, "note": "Tied the record."})
+                    r["ties"].append(t); known.add(h); known.update(c["holders"])
+                    log.append({"ts": now, "record": r["id"], "name": r["name"], "cause": "auto:tie", "new": t, "note": "Tied the record."})
     if not DRY:
         json.dump(doc, open(f"{ROOT}/data/records.json", "w"), indent=1, ensure_ascii=False)
         with open(f"{ROOT}/data/changelog.jsonl", "a") as f:

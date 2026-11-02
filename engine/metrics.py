@@ -87,6 +87,13 @@ def loss_streak(d): return _streaks(d, lambda g: not g["win"])
 def top_streak(d): return [c for c in _streaks(d, lambda g: g["outscored"] == g["n"] - 1, d.reg)]
 def bottom_streak(d): return [c for c in _streaks(d, lambda g: g["outscored"] == 0, d.reg)]
 
+def composite(d):
+    """A 'composite win' each week for a H2H win AND a second one for scoring in the top half of the league that week."""
+    by = collections.defaultdict(int)
+    for g in d.reg:
+        if g["season"] in d.done: by[(g["season"], g["m"])] += int(g["win"]) + int(g["outscored"] >= g["n"] / 2)
+    return [_c(v, m, y) for (y, m), v in by.items()]
+
 def rumble_pct(d):
     out = []; by = collections.defaultdict(lambda: [0, 0])
     for g in d.reg:
@@ -96,4 +103,4 @@ def rumble_pct(d):
 SEASON_ALL = {"season_pf", "season_pa", "pf_plus", "pa_plus", "field_pct", "reg_wins", "luck", "pts_missed_playoffs", "pts_made_playoffs"}
 REGISTRY = {k: v for k, v in globals().items() if callable(v) and k in {
     "season_pf","season_pa","pf_plus","pa_plus","field_pct","reg_wins","luck","pts_missed_playoffs","pts_made_playoffs","game_pts","game_pts_adj",
-    "margin","multiple","win_pts","loss_pts","league_week","league_week_adj","top_weeks","bottom_weeks","win_streak","loss_streak","top_streak","bottom_streak","rumble_pct"}}
+    "margin","multiple","win_pts","loss_pts","league_week","league_week_adj","top_weeks","bottom_weeks","win_streak","loss_streak","top_streak","bottom_streak","rumble_pct","composite"}}
