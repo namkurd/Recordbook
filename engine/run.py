@@ -7,6 +7,8 @@ sys.path.insert(0, os.path.dirname(__file__))
 from load import load
 import metrics as M
 import cards as CARDS
+import seasons as SE
+import market as MK
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 RC_BASE = os.environ.get("RC_BASE", "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html")
@@ -23,6 +25,7 @@ def stored_num(r):
 
 def fmt(metric, c, d):
     v = c["value"]
+    if metric in MK.FORMAT: return MK.FORMAT[metric](v)
     if metric in ("season_pf", "season_pa", "pts_missed_playoffs", "pts_made_playoffs"): return f"{v:.0f}"
     if metric in ("pf_plus", "pa_plus"): return f"{v:.1f}"
     if metric == "field_pct": return f'{c["detail"]} ({v}%)'
@@ -37,11 +40,13 @@ def fmt(metric, c, d):
     return str(int(v)) if float(v).is_integer() else str(v)
 
 def when(metric, c):
+    if c.get("when"): return c["when"]
     if metric in ("win_streak", "loss_streak", "top_streak", "bottom_streak"): return c["detail"]
     if c["week"] is not None: return f'Week {c["week"]} - {c["season"]}'
     return str(c["season"])
 
 def holder_text(metric, c):
+    if c.get("holder_text"): return c["holder_text"]
     m = re.search(r"over (\S+)", c["detail"])
     if metric in ("margin", "multiple", "win_pts") and m: return f'{c["holders"][0]} over {m.group(1)}'
     return " & ".join(c["holders"]) if c["holders"] != ["DTFClub"] else "DTFClub"
@@ -56,6 +61,10 @@ now = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"
 
 def main():
     d = M.Data(load()); d.done_all = {int(y) for y in d.raw["seasons"] if int(y) < d.cur}
+    LEDGER = SE.make(d)
+    for k, fn in LEDGER.items(): M.REGISTRY[k] = (lambda f: (lambda _d: f()))(fn)
+    for k, fn in MK.REG.items(): M.REGISTRY[k] = fn
+    OWNED = set(MK.REG) - {"trades_league_season", "trades_team_season"} | {"trader_best", "trader_worst"}
     doc = json.load(open(f"{ROOT}/data/records.json")); log = []
     for r in doc["records"]:
         if not r["metric"]: continue
@@ -65,7 +74,39 @@ def main():
         cands.sort(key=lambda c: (c["value"], -c["season"], -(c["week"] or 0)), reverse=rev)
         best = cands[0]; sn = stored_num(r); tol = TOL.get(m, 0.006 if r["value_num"] and r["value_num"] > 500 else 0.0051)
         r["leaderboard"] = [{"value": fmt(m, c, d), "holder": holder_text(m, c), "when": when(m, c), "replay": replay(m, c, d.cur)} for c in cands[:5]]
+        if m in OWNED:
+            best = cands[0]; top_c = sorted([c for c in cands if abs(c["value"] - best["value"]) < 1e-9], key=lambda c: (c["season"], c["week"] or 0))
+            new = {"value": fmt(m, best, d), "holder": "; ".join(holder_text(m, c) for c in top_c), "when": "; ".join(when(m, c) for c in top_c), "team": ""}
+            hs = []
+            for c in top_c: hs += [h for h in c["holders"] if h not in hs]
+            r["detail"] = top_c[0].get("card"); r["replay"] = replay(m, top_c[0], d.cur)
+            if r["locked"]: continue
+            old = snapshot(r)
+            if not r["value"]: kind, note = "auto:new", "Added to the book."
+            elif abs((r["value_num"] or 0) - best["value"]) > 1e-9:
+                worse = (best["value"] < r["value_num"]) if rev else (best["value"] > r["value_num"])
+                kind, note = ("auto:reconcile", "Data changed; value recomputed.") if worse else ("auto:break", "Record broken.")
+            elif hs != r["holders"] or new["when"] != r["when"]:
+                kind, note = "auto:tie" if set(hs) > set(r["holders"]) else "auto:reconcile", "Holders updated."
+            else:
+                kind = None
+                if new["holder"] != r["holder"]: r["holder"] = new["holder"]      # wording only: no change-log entry
+            if kind:
+                if kind == "auto:break": r["previous"] = dict(old, replaced_on=now[:10], replaced_by=new["holder"])
+                r.update(new, value_num=best["value"], holders=hs, ties=[], source="computed", verified=True, updated=now[:10], league_level=hs == ["DTFClub"])
+                log.append({"ts": now, "record": r["id"], "name": r["name"], "cause": kind, "old": old if r["value"] and old.get("value") else None, "new": new, "note": note})
+            continue
         if sn is None: continue
+        if m in SE.COMPLETE and not r["locked"] and abs(best["value"] - r["value_num"]) < 1e-9:
+            top_c = sorted([c for c in cands if c["value"] == best["value"]], key=lambda c: (c["season"], c["holders"][0]))
+            want = {h for c in top_c for h in c["holders"]}; have = set(r["holders"]) | {t["holder"] for t in r["ties"]}
+            if want != have:
+                old = snapshot(r); new = {"value": r["value"], "holder": ";".join(h for c in top_c for h in c["holders"]), "when": "; ".join(when(m, c) for c in top_c), "team": ""}
+                r["previous"] = dict(old, replaced_on=now[:10], replaced_by=new["holder"], reconciled=True)
+                r.update(new, holders=[h for c in top_c for h in c["holders"]], ties=[], source="computed", verified=True, updated=now[:10])
+                log.append({"ts": now, "record": r["id"], "name": r["name"], "cause": "auto:reconcile", "old": old, "new": new,
+                            "note": "Season ledger from Sleeper data lists different holders than the sheet; data wins."})
+                continue
         better = best["value"] > sn + tol + (0.5 if m in ("season_pf", "season_pa", "pts_missed_playoffs", "pts_made_playoffs") else 0) if rev else best["value"] < sn - tol - (0.5 if m in ("season_pf", "season_pa", "pts_missed_playoffs", "pts_made_playoffs") else 0)
         slack = tol + (0.5 if m in ("season_pf", "season_pa", "pts_missed_playoffs", "pts_made_playoffs") else 0)
         same = abs(best["value"] - sn) <= slack

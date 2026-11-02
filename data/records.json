@@ -6,9 +6,9 @@
    "id": "most-championships",
    "name": "Most Championships",
    "category": "Seasons & Playoffs",
-   "source": "seeded",
-   "metric": null,
-   "direction": null,
+   "source": "computed",
+   "metric": "titles",
+   "direction": "max",
    "value": "3",
    "value_num": 3.0,
    "when": "'11/'14/'19;'18/'21/'22",
@@ -31,15 +31,48 @@
    "needs_definition": null,
    "definition": null,
    "engine_gap": null,
-   "updated": "2026-11-02"
+   "updated": "2026-11-02",
+   "leaderboard": [
+    {
+     "value": "3",
+     "holder": "Ryan",
+     "when": "'11/'14/'19",
+     "replay": null
+    },
+    {
+     "value": "3",
+     "holder": "Ben",
+     "when": "'18/'21/'22",
+     "replay": null
+    },
+    {
+     "value": "2",
+     "holder": "Tommy",
+     "when": "'15/'17",
+     "replay": null
+    },
+    {
+     "value": "2",
+     "holder": "Haan",
+     "when": "'20/'25",
+     "replay": null
+    },
+    {
+     "value": "1",
+     "holder": "Oleg",
+     "when": "'13",
+     "replay": null
+    }
+   ],
+   "verified": true
   },
   {
    "id": "most-championship-appearances",
    "name": "Most Championship Appearances",
    "category": "Seasons & Playoffs",
-   "source": "seeded",
-   "metric": null,
-   "direction": null,
+   "source": "computed",
+   "metric": "finals",
+   "direction": "max",
    "value": "6",
    "value_num": 6.0,
    "when": "'11/'14/'17/'19/'20/'21",
@@ -61,22 +94,54 @@
    "needs_definition": null,
    "definition": null,
    "engine_gap": null,
-   "updated": "2026-11-02"
+   "updated": "2026-11-02",
+   "leaderboard": [
+    {
+     "value": "6",
+     "holder": "Ryan",
+     "when": "'11/'14/'17/'19/'20/'21",
+     "replay": null
+    },
+    {
+     "value": "5",
+     "holder": "Ben",
+     "when": "'14/'16/'18/'21/'22",
+     "replay": null
+    },
+    {
+     "value": "3",
+     "holder": "Steven",
+     "when": "'12/'13/'25",
+     "replay": null
+    },
+    {
+     "value": "2",
+     "holder": "Tommy",
+     "when": "'15/'17",
+     "replay": null
+    },
+    {
+     "value": "2",
+     "holder": "Jake",
+     "when": "'16/'19",
+     "replay": null
+    }
+   ],
+   "verified": true
   },
   {
    "id": "most-championship-losses",
    "name": "Most Championship Losses",
    "category": "Seasons & Playoffs",
-   "source": "seeded",
-   "metric": null,
-   "direction": null,
+   "source": "computed",
+   "metric": "final_losses",
+   "direction": "max",
    "value": "3",
    "value_num": 3.0,
-   "when": "'17/'20/'21;'14/'16/'24;'12/'13/'25",
-   "holder": "Ryan;Ben;Steven",
+   "when": "'17/'20/'21; '12/'13/'25",
+   "holder": "Ryan;Steven",
    "holders": [
     "Ryan",
-    "Ben",
     "Steven"
    ],
    "league_level": false,
@@ -84,7 +149,16 @@
    "notes": [],
    "evidence": [],
    "replay": null,
-   "previous": null,
+   "previous": {
+    "value": "3",
+    "holder": "Ryan;Ben;Steven",
+    "when": "'17/'20/'21;'14/'16/'24;'12/'13/'25",
+    "team": "",
+    "evidence": [],
+    "replaced_on": "2026-11-02",
+    "replaced_by": "Ryan;Steven",
+    "reconciled": true
+   },
    "ties": [],
    "locked": false,
    "status": "active",
@@ -93,15 +167,48 @@
    "needs_definition": null,
    "definition": null,
    "engine_gap": null,
-   "updated": "2026-11-02"
+   "updated": "2026-11-02",
+   "leaderboard": [
+    {
+     "value": "3",
+     "holder": "Ryan",
+     "when": "'17/'20/'21",
+     "replay": null
+    },
+    {
+     "value": "3",
+     "holder": "Steven",
+     "when": "'12/'13/'25",
+     "replay": null
+    },
+    {
+     "value": "2",
+     "holder": "Ben",
+     "when": "'14/'16",
+     "replay": null
+    },
+    {
+     "value": "2",
+     "holder": "Joe",
+     "when": "'18/'23",
+     "replay": null
+    },
+    {
+     "value": "2",
+     "holder": "Aidan",
+     "when": "'22/'24",
+     "replay": null
+    }
+   ],
+   "verified": true
   },
   {
    "id": "most-consecutive-championship-appearances",
    "name": "Most Consecutive Championship Appearances",
    "category": "Seasons & Playoffs",
-   "source": "seeded",
-   "metric": null,
-   "direction": null,
+   "source": "computed",
+   "metric": "final_streak",
+   "direction": "max",
    "value": "3",
    "value_num": 3.0,
    "when": "2019-2021",
@@ -123,15 +230,48 @@
    "needs_definition": null,
    "definition": null,
    "engine_gap": null,
-   "updated": "2026-11-02"
+   "updated": "2026-11-02",
+   "leaderboard": [
+    {
+     "value": "3",
+     "holder": "Ryan",
+     "when": "2019-2021",
+     "replay": null
+    },
+    {
+     "value": "2",
+     "holder": "Steven",
+     "when": "2012-2013",
+     "replay": null
+    },
+    {
+     "value": "2",
+     "holder": "Ben",
+     "when": "2021-2022",
+     "replay": null
+    },
+    {
+     "value": "1",
+     "holder": "Alex",
+     "when": "2011",
+     "replay": null
+    },
+    {
+     "value": "1",
+     "holder": "Ryan",
+     "when": "2011",
+     "replay": null
+    }
+   ],
+   "verified": true
   },
   {
    "id": "most-playoff-appearances",
    "name": "Most Playoff Appearances",
    "category": "Seasons & Playoffs",
-   "source": "seeded",
-   "metric": null,
-   "direction": null,
+   "source": "computed",
+   "metric": "playoff_apps",
+   "direction": "max",
    "value": "9",
    "value_num": 9.0,
    "when": "'11/'12/'14/'16/'17/'19/'20/'21/'23",
@@ -153,31 +293,74 @@
    "needs_definition": null,
    "definition": null,
    "engine_gap": null,
-   "updated": "2026-11-02"
+   "updated": "2026-11-02",
+   "leaderboard": [
+    {
+     "value": "9",
+     "holder": "Ryan",
+     "when": "'11/'12/'14/'16/'17/'19/'20/'21/'23",
+     "replay": null
+    },
+    {
+     "value": "8",
+     "holder": "Ben",
+     "when": "'14/'16/'17/'18/'20/'21/'22/'24",
+     "replay": null
+    },
+    {
+     "value": "7",
+     "holder": "Steven",
+     "when": "'12/'13/'14/'17/'20/'23/'25",
+     "replay": null
+    },
+    {
+     "value": "6",
+     "holder": "Joe",
+     "when": "'13/'16/'18/'23/'24/'25",
+     "replay": null
+    },
+    {
+     "value": "6",
+     "holder": "Haan",
+     "when": "'15/'19/'20/'22/'24/'25",
+     "replay": null
+    }
+   ],
+   "verified": true
   },
   {
    "id": "most-consecutive-playoff-appearances",
    "name": "Most Consecutive Playoff Appearances",
    "category": "Seasons & Playoffs",
-   "source": "seeded",
-   "metric": null,
-   "direction": null,
+   "source": "computed",
+   "metric": "playoff_streak",
+   "direction": "max",
    "value": "3",
    "value_num": 3.0,
-   "when": "'12-'14; '16-'18; '19-'21; '20-'22",
-   "holder": "Steven;Ben;Ryan;Ben",
+   "when": "2012-2014; 2016-2018; 2019-2021; 2020-2022; 2023-2025",
+   "holder": "Steven;Ben;Ryan;Ben;Joe",
    "holders": [
     "Steven",
     "Ben",
     "Ryan",
-    "Ben"
+    "Ben",
+    "Joe"
    ],
    "league_level": false,
    "team": "",
    "notes": [],
    "evidence": [],
    "replay": null,
-   "previous": null,
+   "previous": {
+    "value": "3",
+    "holder": "Steven;Ben;Ryan;Ben",
+    "when": "'12-'14; '16-'18; '19-'21; '20-'22",
+    "team": "",
+    "evidence": [],
+    "replaced_on": "2026-11-02",
+    "replaced_by": "Steven;Ben;Ryan;Ben;Joe",
+    "reconciled": true
+   },
    "ties": [],
    "locked": false,
    "status": "active",
@@ -186,15 +369,48 @@
    "needs_definition": null,
    "definition": null,
    "engine_gap": null,
-   "updated": "2026-11-02"
+   "updated": "2026-11-02",
+   "leaderboard": [
+    {
+     "value": "3",
+     "holder": "Steven",
+     "when": "2012-2014",
+     "replay": null
+    },
+    {
+     "value": "3",
+     "holder": "Ben",
+     "when": "2016-2018",
+     "replay": null
+    },
+    {
+     "value": "3",
+     "holder": "Ryan",
+     "when": "2019-2021",
+     "replay": null
+    },
+    {
+     "value": "3",
+     "holder": "Ben",
+     "when": "2020-2022",
+     "replay": null
+    },
+    {
+     "value": "3",
+     "holder": "Joe",
+     "when": "2023-2025",
+     "replay": null
+    }
+   ],
+   "verified": true
   },
   {
    "id": "longest-playoff-drought",
    "name": "Longest Playoff Drought",
    "category": "Seasons & Playoffs",
-   "source": "seeded",
-   "metric": null,
-   "direction": null,
+   "source": "computed",
+   "metric": "drought",
+   "direction": "max",
    "value": "8",
    "value_num": 8.0,
    "when": "2013 - 2020",
@@ -216,15 +432,48 @@
    "needs_definition": null,
    "definition": null,
    "engine_gap": null,
-   "updated": "2026-11-02"
+   "updated": "2026-11-02",
+   "leaderboard": [
+    {
+     "value": "8",
+     "holder": "Ankit",
+     "when": "2013-2020",
+     "replay": null
+    },
+    {
+     "value": "5",
+     "holder": "Tommy",
+     "when": "2019-2023",
+     "replay": null
+    },
+    {
+     "value": "4",
+     "holder": "Joe",
+     "when": "2019-2022",
+     "replay": null
+    },
+    {
+     "value": "3",
+     "holder": "Aidan",
+     "when": "2016-2018",
+     "replay": null
+    },
+    {
+     "value": "3",
+     "holder": "Haan",
+     "when": "2016-2018",
+     "replay": null
+    }
+   ],
+   "verified": true
   },
   {
    "id": "most-sackos",
    "name": "Most Sackos",
    "category": "Seasons & Playoffs",
-   "source": "seeded",
-   "metric": null,
-   "direction": null,
+   "source": "computed",
+   "metric": "sackos",
+   "direction": "max",
    "value": "4",
    "value_num": 4.0,
    "when": "'13/'15/'18/'22",
@@ -246,15 +495,48 @@
    "needs_definition": null,
    "definition": null,
    "engine_gap": null,
-   "updated": "2026-11-02"
+   "updated": "2026-11-02",
+   "leaderboard": [
+    {
+     "value": "4",
+     "holder": "Ankit",
+     "when": "'13/'15/'18/'22",
+     "replay": null
+    },
+    {
+     "value": "2",
+     "holder": "Haan",
+     "when": "'16/'17",
+     "replay": null
+    },
+    {
+     "value": "2",
+     "holder": "Steven",
+     "when": "'19/'21",
+     "replay": null
+    },
+    {
+     "value": "1",
+     "holder": "John",
+     "when": "'14",
+     "replay": null
+    },
+    {
+     "value": "1",
+     "holder": "Joe",
+     "when": "'20",
+     "replay": null
+    }
+   ],
+   "verified": true
   },
   {
    "id": "most-1-seeds",
    "name": "Most #1 Seeds",
    "category": "Seasons & Playoffs",
-   "source": "seeded",
-   "metric": null,
-   "direction": null,
+   "source": "computed",
+   "metric": "seed1",
+   "direction": "max",
    "value": "5",
    "value_num": 5.0,
    "when": "'11/'12/'16/'19/'21",
@@ -276,15 +558,36 @@
    "needs_definition": null,
    "definition": null,
    "engine_gap": null,
-   "updated": "2026-11-02"
+   "updated": "2026-11-02",
+   "leaderboard": [
+    {
+     "value": "5",
+     "holder": "Ryan",
+     "when": "'11/'12/'16/'19/'21",
+     "replay": null
+    },
+    {
+     "value": "2",
+     "holder": "Ben",
+     "when": "'22/'24",
+     "replay": null
+    },
+    {
+     "value": "2",
+     "holder": "Steven",
+     "when": "'23/'25",
+     "replay": null
+    }
+   ],
+   "verified": true
   },
   {
    "id": "most-top-scoring-seasons",
    "name": "Most Top Scoring Seasons",
    "category": "Seasons & Playoffs",
-   "source": "seeded",
-   "metric": null,
-   "direction": null,
+   "source": "computed",
+   "metric": "top_pf_seasons",
+   "direction": "max",
    "value": "4",
    "value_num": 4.0,
    "when": "'16/'20/'21/'23",
@@ -306,15 +609,48 @@
    "needs_definition": null,
    "definition": null,
    "engine_gap": null,
-   "updated": "2026-11-02"
+   "updated": "2026-11-02",
+   "leaderboard": [
+    {
+     "value": "4",
+     "holder": "Ryan",
+     "when": "'16/'20/'21/'23",
+     "replay": null
+    },
+    {
+     "value": "2",
+     "holder": "Tommy",
+     "when": "'15/'18",
+     "replay": null
+    },
+    {
+     "value": "2",
+     "holder": "Ben",
+     "when": "'14/'24",
+     "replay": null
+    },
+    {
+     "value": "2",
+     "holder": "Steven",
+     "when": "'17/'25",
+     "replay": null
+    },
+    {
+     "value": "1",
+     "holder": "Alex",
+     "when": "'13",
+     "replay": null
+    }
+   ],
+   "verified": true
   },
   {
    "id": "most-bottom-scoring-seasons",
    "name": "Most Bottom Scoring Seasons",
    "category": "Seasons & Playoffs",
-   "source": "seeded",
-   "metric": null,
-   "direction": null,
+   "source": "computed",
+   "metric": "bottom_pf_seasons",
+   "direction": "max",
    "value": "2",
    "value_num": 2.0,
    "when": "'13/'16;'15/'19;'17/'20;'24/'25",
@@ -339,7 +675,40 @@
    "needs_definition": null,
    "definition": null,
    "engine_gap": null,
-   "updated": "2026-11-02"
+   "updated": "2026-11-02",
+   "leaderboard": [
+    {
+     "value": "2",
+     "holder": "Haan",
+     "when": "'13/'16",
+     "replay": null
+    },
+    {
+     "value": "2",
+     "holder": "Ben",
+     "when": "'15/'19",
+     "replay": null
+    },
+    {
+     "value": "2",
+     "holder": "Joe",
+     "when": "'17/'20",
+     "replay": null
+    },
+    {
+     "value": "2",
+     "holder": "Ryan",
+     "when": "'24/'25",
+     "replay": null
+    },
+    {
+     "value": "1",
+     "holder": "Oleg",
+     "when": "'14",
+     "replay": null
+    }
+   ],
+   "verified": true
   },
   {
    "id": "most-top-scoring-weeks-all-time",
@@ -617,9 +986,9 @@
    "id": "most-highest-points-against-seasons",
    "name": "Most Highest Points Against Seasons",
    "category": "Seasons & Playoffs",
-   "source": "seeded",
-   "metric": null,
-   "direction": null,
+   "source": "computed",
+   "metric": "high_pa_seasons",
+   "direction": "max",
    "value": "3",
    "value_num": 3.0,
    "when": "'14/'19/'20",
@@ -641,15 +1010,48 @@
    "needs_definition": null,
    "definition": null,
    "engine_gap": null,
-   "updated": "2026-11-02"
+   "updated": "2026-11-02",
+   "leaderboard": [
+    {
+     "value": "3",
+     "holder": "Joe",
+     "when": "'14/'19/'20",
+     "replay": null
+    },
+    {
+     "value": "2",
+     "holder": "Oleg",
+     "when": "'13/'16",
+     "replay": null
+    },
+    {
+     "value": "2",
+     "holder": "Ankit",
+     "when": "'15/'18",
+     "replay": null
+    },
+    {
+     "value": "2",
+     "holder": "Tommy",
+     "when": "'22/'23",
+     "replay": null
+    },
+    {
+     "value": "2",
+     "holder": "Jake",
+     "when": "'21/'24",
+     "replay": null
+    }
+   ],
+   "verified": true
   },
   {
    "id": "most-consecutive-500-or-better-seasons",
    "name": "Most Consecutive .500 or Better Seasons",
    "category": "Seasons & Playoffs",
-   "source": "seeded",
-   "metric": null,
-   "direction": null,
+   "source": "computed",
+   "metric": "winning_streak_seasons",
+   "direction": "max",
    "value": "6",
    "value_num": 6.0,
    "when": "2013 - 2018",
@@ -671,15 +1073,48 @@
    "needs_definition": null,
    "definition": null,
    "engine_gap": null,
-   "updated": "2026-11-02"
+   "updated": "2026-11-02",
+   "leaderboard": [
+    {
+     "value": "6",
+     "holder": "Ben",
+     "when": "2013-2018",
+     "replay": null
+    },
+    {
+     "value": "4",
+     "holder": "Jake",
+     "when": "2013-2016",
+     "replay": null
+    },
+    {
+     "value": "4",
+     "holder": "Tommy",
+     "when": "2015-2018",
+     "replay": null
+    },
+    {
+     "value": "4",
+     "holder": "Aidan",
+     "when": "2019-2022",
+     "replay": null
+    },
+    {
+     "value": "3",
+     "holder": "Steven",
+     "when": "2013-2015",
+     "replay": null
+    }
+   ],
+   "verified": true
   },
   {
    "id": "most-consecutive-losing-seasons",
    "name": "Most Consecutive Losing Seasons",
    "category": "Seasons & Playoffs",
-   "source": "seeded",
-   "metric": null,
-   "direction": null,
+   "source": "computed",
+   "metric": "losing_streak_seasons",
+   "direction": "max",
    "value": "5",
    "value_num": 5.0,
    "when": "2019 - 2023",
@@ -701,7 +1136,40 @@
    "needs_definition": null,
    "definition": null,
    "engine_gap": null,
-   "updated": "2026-11-02"
+   "updated": "2026-11-02",
+   "leaderboard": [
+    {
+     "value": "5",
+     "holder": "Tommy",
+     "when": "2019-2023",
+     "replay": null
+    },
+    {
+     "value": "4",
+     "holder": "Joe",
+     "when": "2019-2022",
+     "replay": null
+    },
+    {
+     "value": "3",
+     "holder": "Aidan",
+     "when": "2016-2018",
+     "replay": null
+    },
+    {
+     "value": "3",
+     "holder": "Haan",
+     "when": "2016-2018",
+     "replay": null
+    },
+    {
+     "value": "2",
+     "holder": "Haan",
+     "when": "2013-2014",
+     "replay": null
+    }
+   ],
+   "verified": true
   },
   {
    "id": "total-wins-regular-season",
@@ -4880,39 +5348,9 @@
    ]
   },
   {
-   "id": "most-shotguns-in-a-season-league",
-   "name": "Most Shotguns in a Season (League)",
-   "category": "Trades & FAB",
-   "source": "seeded",
-   "metric": null,
-   "direction": null,
-   "value": "17",
-   "value_num": 17.0,
-   "when": "2025",
-   "holder": "DTFClub",
-   "holders": [
-    "DTFClub"
-   ],
-   "league_level": true,
-   "team": "",
-   "notes": [],
-   "evidence": [],
-   "replay": null,
-   "previous": null,
-   "ties": [],
-   "locked": false,
-   "status": "active",
-   "era_pair": null,
-   "size_sensitive": false,
-   "needs_definition": null,
-   "definition": "A score of 0 or less from a non-defense starter who was not ruled out before the 2nd half, or ruled out but didn't play in the 2nd half.",
-   "engine_gap": "Needs per-player points plus game-day inactive/ruled-out status for every starter.",
-   "updated": "2026-11-02"
-  },
-  {
    "id": "most-trades-in-24hrs",
    "name": "Most Trades in 24hrs",
-   "category": "Trades & FAB",
+   "category": "Trades",
    "source": "seeded",
    "metric": null,
    "direction": null,
@@ -4943,10 +5381,10 @@
   {
    "id": "most-non-fab-trades-in-a-season-league",
    "name": "Most non-FAB Trades in a Season (League)",
-   "category": "Trades & FAB",
-   "source": "seeded",
-   "metric": null,
-   "direction": null,
+   "category": "Trades",
+   "source": "computed",
+   "metric": "trades_league_season",
+   "direction": "max",
    "value": "17",
    "value_num": 17.0,
    "when": "2024 & 2020",
@@ -4970,12 +5408,45 @@
    "needs_definition": null,
    "definition": null,
    "engine_gap": null,
-   "updated": "2026-11-02"
+   "updated": "2026-11-02",
+   "leaderboard": [
+    {
+     "value": "17",
+     "holder": "DTFClub",
+     "when": "2024",
+     "replay": null
+    },
+    {
+     "value": "16",
+     "holder": "DTFClub",
+     "when": "2022",
+     "replay": null
+    },
+    {
+     "value": "15",
+     "holder": "DTFClub",
+     "when": "2025",
+     "replay": null
+    },
+    {
+     "value": "9",
+     "holder": "DTFClub",
+     "when": "2023",
+     "replay": null
+    },
+    {
+     "value": "8",
+     "holder": "DTFClub",
+     "when": "2021",
+     "replay": null
+    }
+   ],
+   "verified": true
   },
   {
    "id": "most-trades-in-a-season-league",
    "name": "Most Trades in a Season (League)",
-   "category": "Trades & FAB",
+   "category": "Trades",
    "source": "seeded",
    "metric": null,
    "direction": null,
@@ -5005,10 +5476,10 @@
   {
    "id": "most-non-fab-trades-in-a-season-team",
    "name": "Most non-FAB Trades in a Season (Team)",
-   "category": "Trades & FAB",
-   "source": "seeded",
-   "metric": null,
-   "direction": null,
+   "category": "Trades",
+   "source": "computed",
+   "metric": "trades_team_season",
+   "direction": "max",
    "value": "7 (+1 veto)",
    "value_num": 7.0,
    "when": "2017",
@@ -5024,7 +5495,23 @@
    ],
    "replay": null,
    "previous": null,
-   "ties": [],
+   "ties": [
+    {
+     "holder": "Alex",
+     "when": "2022",
+     "replay": null
+    },
+    {
+     "holder": "Joe",
+     "when": "2022",
+     "replay": null
+    },
+    {
+     "holder": "Christian",
+     "when": "2024",
+     "replay": null
+    }
+   ],
    "locked": false,
    "status": "active",
    "era_pair": null,
@@ -5032,12 +5519,45 @@
    "needs_definition": null,
    "definition": null,
    "engine_gap": null,
-   "updated": "2026-11-02"
+   "updated": "2026-11-02",
+   "leaderboard": [
+    {
+     "value": "7",
+     "holder": "Alex",
+     "when": "2022",
+     "replay": null
+    },
+    {
+     "value": "7",
+     "holder": "Joe",
+     "when": "2022",
+     "replay": null
+    },
+    {
+     "value": "7",
+     "holder": "Christian",
+     "when": "2024",
+     "replay": null
+    },
+    {
+     "value": "6",
+     "holder": "Joe",
+     "when": "2024",
+     "replay": null
+    },
+    {
+     "value": "6",
+     "holder": "Ankit",
+     "when": "2024",
+     "replay": null
+    }
+   ],
+   "verified": true
   },
   {
    "id": "most-trades-in-a-season-team",
    "name": "Most Trades in a Season (Team)",
-   "category": "Trades & FAB",
+   "category": "Trades",
    "source": "seeded",
    "metric": null,
    "direction": null,
@@ -5067,7 +5587,7 @@
   {
    "id": "most-teams-to-make-a-trade",
    "name": "Most Teams to Make a Trade",
-   "category": "Trades & FAB",
+   "category": "Trades",
    "source": "seeded",
    "metric": null,
    "direction": null,
@@ -5095,9 +5615,1009 @@
    "updated": "2026-11-02"
   },
   {
+   "id": "most-fab-in-a-trade",
+   "name": "Most FAB in a trade",
+   "category": "Trades",
+   "source": "seeded",
+   "metric": null,
+   "direction": null,
+   "value": "$121",
+   "value_num": 121.0,
+   "when": "Week 11 - 2021",
+   "holder": "Steven & Ankit",
+   "holders": [
+    "Steven",
+    "Ankit"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "definition": null,
+   "engine_gap": null,
+   "updated": "2026-11-02"
+  },
+  {
+   "id": "fastest-trade-acceptance-to-player-start",
+   "name": "Fastest Trade Acceptance to Player Start",
+   "category": "Trades",
+   "source": "seeded",
+   "metric": null,
+   "direction": null,
+   "value": "8 minutes; Keelan Cole",
+   "value_num": 8.0,
+   "when": "Week 3 Thursday Night - 2020",
+   "holder": "Ben",
+   "holders": [
+    "Ben"
+   ],
+   "league_level": false,
+   "team": "Can. Did. Kamara",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "definition": null,
+   "engine_gap": "Needs trade timestamps + kickoff times.",
+   "updated": "2026-11-02"
+  },
+  {
+   "id": "best-trade-par-swing",
+   "name": "Best Trade (PAR Swing)",
+   "category": "Trades",
+   "source": "computed",
+   "metric": "trade_net",
+   "direction": "max",
+   "value": "+239.9 PAR",
+   "value_num": 239.9,
+   "when": "Week 3 - 2024",
+   "holder": "Aidan over Christian",
+   "holders": [
+    "Aidan"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "definition": "The biggest gap between the two sides' PAR gained from a trade, measured from the trade to today. Counts trades since 2021 (the first Sleeper season). PAR = points above replacement: how many more points the player's lineup got than a replacement-level player at the position would have.",
+   "updated": "2026-11-02",
+   "leaderboard": [
+    {
+     "value": "+239.9 PAR",
+     "holder": "Aidan over Christian",
+     "when": "Week 3 - 2024",
+     "replay": null
+    },
+    {
+     "value": "+226.9 PAR",
+     "holder": "Aidan over Joe",
+     "when": "Week 2 - 2021",
+     "replay": null
+    },
+    {
+     "value": "+221.2 PAR",
+     "holder": "Tommy over Ankit",
+     "when": "Week 5 - 2023",
+     "replay": null
+    },
+    {
+     "value": "+198.2 PAR",
+     "holder": "Steven over Ankit",
+     "when": "Week 8 - 2024",
+     "replay": null
+    },
+    {
+     "value": "+173.6 PAR",
+     "holder": "Jake over Ben",
+     "when": "Week 10 - 2022",
+     "replay": null
+    }
+   ],
+   "detail": {
+    "kind": "trade",
+    "title": "Trade · Week 3, 2024",
+    "blocks": [
+     {
+      "head": "Aidan",
+      "chip": "WON",
+      "rows": [
+       [
+        "Got",
+        "RB Joe Mixon (44.6), K Brandon Aubrey (2.0)"
+       ],
+       [
+        "Gave",
+        "RB Nick Chubb (12.5), WR Brandon Aiyuk (32.1), K Jake Moody (2.0)"
+       ],
+       [
+        "Value in / out",
+        "46.6 / 46.6"
+       ],
+       [
+        "PAR since",
+        "+133.0"
+       ]
+      ]
+     },
+     {
+      "head": "Christian",
+      "chip": null,
+      "rows": [
+       [
+        "Got",
+        "RB Nick Chubb (12.5), WR Brandon Aiyuk (32.1), K Jake Moody (2.0)"
+       ],
+       [
+        "Gave",
+        "RB Joe Mixon (44.6), K Brandon Aubrey (2.0)"
+       ],
+       [
+        "Value in / out",
+        "46.6 / 46.6"
+       ],
+       [
+        "PAR since",
+        "-106.9"
+       ]
+      ]
+     }
+    ]
+   },
+   "verified": true
+  },
+  {
+   "id": "most-par-gained-in-one-trade",
+   "name": "Most PAR Gained in One Trade",
+   "category": "Trades",
+   "source": "computed",
+   "metric": "trade_best_side",
+   "direction": "max",
+   "value": "+201.3 PAR",
+   "value_num": 201.3,
+   "when": "Week 2 - 2021",
+   "holder": "Aidan over Joe",
+   "holders": [
+    "Aidan"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "definition": "The most PAR one team has gained from a single trade. Counts trades since 2021 (the first Sleeper season).",
+   "updated": "2026-11-02",
+   "leaderboard": [
+    {
+     "value": "+201.3 PAR",
+     "holder": "Aidan over Joe",
+     "when": "Week 2 - 2021",
+     "replay": null
+    },
+    {
+     "value": "+133.0 PAR",
+     "holder": "Aidan over Christian",
+     "when": "Week 3 - 2024",
+     "replay": null
+    },
+    {
+     "value": "+124.5 PAR",
+     "holder": "Steven over Ankit",
+     "when": "Week 8 - 2024",
+     "replay": null
+    },
+    {
+     "value": "+120.1 PAR",
+     "holder": "Joe over Ben",
+     "when": "Week 10 - 2022",
+     "replay": null
+    },
+    {
+     "value": "+97.9 PAR",
+     "holder": "Aidan over Tommy",
+     "when": "Week 2 - 2022",
+     "replay": null
+    }
+   ],
+   "detail": {
+    "kind": "trade",
+    "title": "Trade · Week 2, 2021",
+    "blocks": [
+     {
+      "head": "Aidan",
+      "chip": "WON",
+      "rows": [
+       [
+        "Got",
+        "QB Justin Herbert (13.0)"
+       ],
+       [
+        "Gave",
+        "RB Jamaal Williams (16.7)"
+       ],
+       [
+        "Value in / out",
+        "13.0 / 16.7"
+       ],
+       [
+        "PAR since",
+        "+201.3"
+       ]
+      ]
+     },
+     {
+      "head": "Joe",
+      "chip": null,
+      "rows": [
+       [
+        "Got",
+        "RB Jamaal Williams (16.7)"
+       ],
+       [
+        "Gave",
+        "QB Justin Herbert (13.0)"
+       ],
+       [
+        "Value in / out",
+        "16.7 / 13.0"
+       ],
+       [
+        "PAR since",
+        "-25.6"
+       ]
+      ]
+     }
+    ]
+   },
+   "verified": true
+  },
+  {
+   "id": "most-par-lost-in-one-trade",
+   "name": "Most PAR Lost in One Trade",
+   "category": "Trades",
+   "source": "computed",
+   "metric": "trade_worst_side",
+   "direction": "min",
+   "value": "-141.2 PAR",
+   "value_num": -141.2,
+   "when": "Week 5 - 2023",
+   "holder": "Ankit (vs Tommy)",
+   "holders": [
+    "Ankit"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "definition": "The most PAR one team has lost in a single trade (the worst trade ever made). Counts trades since 2021 (the first Sleeper season).",
+   "updated": "2026-11-02",
+   "leaderboard": [
+    {
+     "value": "-141.2 PAR",
+     "holder": "Ankit (vs Tommy)",
+     "when": "Week 5 - 2023",
+     "replay": null
+    },
+    {
+     "value": "-106.9 PAR",
+     "holder": "Christian (vs Aidan)",
+     "when": "Week 3 - 2024",
+     "replay": null
+    },
+    {
+     "value": "-103.5 PAR",
+     "holder": "Ben (vs Jake)",
+     "when": "Week 10 - 2022",
+     "replay": null
+    },
+    {
+     "value": "-73.7 PAR",
+     "holder": "Ankit (vs Steven)",
+     "when": "Week 8 - 2024",
+     "replay": null
+    },
+    {
+     "value": "-72.6 PAR",
+     "holder": "Ryan (vs Aidan)",
+     "when": "Week 1 - 2025",
+     "replay": null
+    }
+   ],
+   "detail": {
+    "kind": "trade",
+    "title": "Trade · Week 5, 2023",
+    "blocks": [
+     {
+      "head": "Ankit",
+      "chip": null,
+      "rows": [
+       [
+        "Got",
+        "QB Baker Mayfield (15.4), RB Tony Pollard (57.7)"
+       ],
+       [
+        "Gave",
+        "RB Joe Mixon (26.9), WR Calvin Ridley (26.9), QB Brock Purdy (30.8)"
+       ],
+       [
+        "Value in / out",
+        "73.1 / 84.6"
+       ],
+       [
+        "PAR since",
+        "-141.2"
+       ]
+      ]
+     },
+     {
+      "head": "Tommy",
+      "chip": "WON",
+      "rows": [
+       [
+        "Got",
+        "RB Joe Mixon (26.9), WR Calvin Ridley (26.9), QB Brock Purdy (30.8)"
+       ],
+       [
+        "Gave",
+        "QB Baker Mayfield (15.4), RB Tony Pollard (57.7)"
+       ],
+       [
+        "Value in / out",
+        "84.6 / 73.1"
+       ],
+       [
+        "PAR since",
+        "+80.0"
+       ]
+      ]
+     }
+    ]
+   },
+   "verified": true
+  },
+  {
+   "id": "biggest-trade-day-heist-value",
+   "name": "Biggest Trade-Day Heist (Value)",
+   "category": "Trades",
+   "source": "computed",
+   "metric": "trade_value_gap",
+   "direction": "max",
+   "value": "27.6 pts",
+   "value_num": 27.6,
+   "when": "Week 8 - 2024",
+   "holder": "Steven over Ankit",
+   "holders": [
+    "Steven"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "definition": "The largest gap in trade-chart value between what a team got and what it gave, on the day of the trade. Counts trades since 2021 (the first Sleeper season).",
+   "updated": "2026-11-02",
+   "leaderboard": [
+    {
+     "value": "27.6 pts",
+     "holder": "Steven over Ankit",
+     "when": "Week 8 - 2024",
+     "replay": null
+    },
+    {
+     "value": "25.9 pts",
+     "holder": "Alex over Jake",
+     "when": "Week 7 - 2023",
+     "replay": null
+    },
+    {
+     "value": "25.0 pts",
+     "holder": "Jake over Ben",
+     "when": "Week 11 - 2024",
+     "replay": null
+    },
+    {
+     "value": "23.2 pts",
+     "holder": "Ben over Christian",
+     "when": "Week 11 - 2024",
+     "replay": null
+    },
+    {
+     "value": "23.2 pts",
+     "holder": "Steven over Ankit",
+     "when": "Week 11 - 2024",
+     "replay": null
+    }
+   ],
+   "detail": {
+    "kind": "trade",
+    "title": "Trade · Week 8, 2024",
+    "blocks": [
+     {
+      "head": "Steven",
+      "chip": "WON",
+      "rows": [
+       [
+        "Got",
+        "WR Davante Adams (42.9), WR Calvin Ridley (12.5)"
+       ],
+       [
+        "Gave",
+        "RB Christian McCaffrey (27.8)"
+       ],
+       [
+        "Value in / out",
+        "55.4 / 27.8"
+       ],
+       [
+        "PAR since",
+        "+124.5"
+       ]
+      ]
+     },
+     {
+      "head": "Ankit",
+      "chip": null,
+      "rows": [
+       [
+        "Got",
+        "RB Christian McCaffrey (27.8)"
+       ],
+       [
+        "Gave",
+        "WR Davante Adams (42.9), WR Calvin Ridley (12.5)"
+       ],
+       [
+        "Value in / out",
+        "27.8 / 55.4"
+       ],
+       [
+        "PAR since",
+        "-73.7"
+       ]
+      ]
+     }
+    ]
+   },
+   "verified": true
+  },
+  {
+   "id": "biggest-blockbuster-total-value",
+   "name": "Biggest Blockbuster (Total Value)",
+   "category": "Trades",
+   "source": "computed",
+   "metric": "trade_blockbuster",
+   "direction": "max",
+   "value": "235.7",
+   "value_num": 235.7,
+   "when": "Week 7 - 2023",
+   "holder": "Jake & Alex",
+   "holders": [
+    "Jake",
+    "Alex"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "definition": "The highest combined trade-chart value of all assets in one trade. Counts trades since 2021 (the first Sleeper season).",
+   "updated": "2026-11-02",
+   "leaderboard": [
+    {
+     "value": "235.7",
+     "holder": "Jake & Alex",
+     "when": "Week 7 - 2023",
+     "replay": null
+    },
+    {
+     "value": "205.4",
+     "holder": "Ben & Christian",
+     "when": "Week 11 - 2024",
+     "replay": null
+    },
+    {
+     "value": "164.4",
+     "holder": "Ben & Jake",
+     "when": "Week 11 - 2024",
+     "replay": null
+    },
+    {
+     "value": "157.7",
+     "holder": "Ankit & Tommy",
+     "when": "Week 5 - 2023",
+     "replay": null
+    },
+    {
+     "value": "136.8",
+     "holder": "Alex & Steven",
+     "when": "Week 2 - 2022",
+     "replay": null
+    }
+   ],
+   "detail": {
+    "kind": "trade",
+    "title": "Trade · Week 7, 2023",
+    "blocks": [
+     {
+      "head": "Jake",
+      "chip": null,
+      "rows": [
+       [
+        "Got",
+        "QB Josh Allen (92.3), TE Luke Musgrave (9.6), DEF Washington Commanders (3.0)"
+       ],
+       [
+        "Gave",
+        "QB Geno Smith (23.1), WR Adam Thielen (32.7), RB Austin Ekeler (75.0)"
+       ],
+       [
+        "Value in / out",
+        "104.9 / 130.8"
+       ],
+       [
+        "PAR since",
+        "+25.9"
+       ]
+      ]
+     },
+     {
+      "head": "Alex",
+      "chip": null,
+      "rows": [
+       [
+        "Got",
+        "QB Geno Smith (23.1), WR Adam Thielen (32.7), RB Austin Ekeler (75.0)"
+       ],
+       [
+        "Gave",
+        "QB Josh Allen (92.3), TE Luke Musgrave (9.6), DEF Washington Commanders (3.0)"
+       ],
+       [
+        "Value in / out",
+        "130.8 / 104.9"
+       ],
+       [
+        "PAR since",
+        "+21.0"
+       ]
+      ]
+     }
+    ]
+   },
+   "verified": true
+  },
+  {
+   "id": "most-players-in-one-trade",
+   "name": "Most Players in One Trade",
+   "category": "Trades",
+   "source": "computed",
+   "metric": "trade_assets",
+   "direction": "max",
+   "value": "6 players",
+   "value_num": 6,
+   "when": "Week 2 - 2022; Week 10 - 2022; Week 7 - 2023",
+   "holder": "Alex & Steven; Ben & Jake; Jake & Alex",
+   "holders": [
+    "Alex",
+    "Steven",
+    "Ben",
+    "Jake"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "definition": "The most players changing hands in one trade. Counts trades since 2021 (the first Sleeper season).",
+   "updated": "2026-11-02",
+   "leaderboard": [
+    {
+     "value": "6 players",
+     "holder": "Alex & Steven",
+     "when": "Week 2 - 2022",
+     "replay": null
+    },
+    {
+     "value": "6 players",
+     "holder": "Ben & Jake",
+     "when": "Week 10 - 2022",
+     "replay": null
+    },
+    {
+     "value": "6 players",
+     "holder": "Jake & Alex",
+     "when": "Week 7 - 2023",
+     "replay": null
+    },
+    {
+     "value": "5 players",
+     "holder": "Ankit & Tommy",
+     "when": "Week 5 - 2023",
+     "replay": null
+    },
+    {
+     "value": "5 players",
+     "holder": "Aidan & Christian",
+     "when": "Week 3 - 2024",
+     "replay": null
+    }
+   ],
+   "detail": {
+    "kind": "trade",
+    "title": "Trade · Week 2, 2022",
+    "blocks": [
+     {
+      "head": "Alex",
+      "chip": null,
+      "rows": [
+       [
+        "Got",
+        "WR Michael Thomas (26.7), WR Tyreek Hill (30.0), RB David Montgomery (17.8)"
+       ],
+       [
+        "Gave",
+        "RB Christian McCaffrey (38.9), WR DJ Chark (6.7), RB Travis Etienne (16.7)"
+       ],
+       [
+        "Value in / out",
+        "74.5 / 62.3"
+       ],
+       [
+        "PAR since",
+        "-46.4"
+       ]
+      ]
+     },
+     {
+      "head": "Steven",
+      "chip": null,
+      "rows": [
+       [
+        "Got",
+        "RB Christian McCaffrey (38.9), WR DJ Chark (6.7), RB Travis Etienne (16.7)"
+       ],
+       [
+        "Gave",
+        "WR Michael Thomas (26.7), WR Tyreek Hill (30.0), RB David Montgomery (17.8)"
+       ],
+       [
+        "Value in / out",
+        "62.3 / 74.5"
+       ],
+       [
+        "PAR since",
+        "+5.5"
+       ]
+      ]
+     }
+    ]
+   },
+   "verified": true
+  },
+  {
+   "id": "most-trades-career",
+   "name": "Most Trades (Career)",
+   "category": "Trades",
+   "source": "computed",
+   "metric": "trades_career",
+   "direction": "max",
+   "value": "32 trades",
+   "value_num": 32,
+   "when": "2021-",
+   "holder": "Joe",
+   "holders": [
+    "Joe"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "definition": "Most trades made by one manager. Counts trades since 2021 (the first Sleeper season).",
+   "updated": "2026-11-02",
+   "leaderboard": [
+    {
+     "value": "32 trades",
+     "holder": "Joe",
+     "when": "2021-",
+     "replay": null
+    },
+    {
+     "value": "21 trades",
+     "holder": "Alex",
+     "when": "2021-",
+     "replay": null
+    },
+    {
+     "value": "19 trades",
+     "holder": "Ankit",
+     "when": "2021-",
+     "replay": null
+    },
+    {
+     "value": "17 trades",
+     "holder": "Ben",
+     "when": "2021-",
+     "replay": null
+    },
+    {
+     "value": "14 trades",
+     "holder": "Aidan",
+     "when": "2021-",
+     "replay": null
+    }
+   ],
+   "detail": null,
+   "verified": true
+  },
+  {
+   "id": "most-trades-with-one-partner",
+   "name": "Most Trades with One Partner",
+   "category": "Trades",
+   "source": "computed",
+   "metric": "trades_partner",
+   "direction": "max",
+   "value": "7 trades",
+   "value_num": 7,
+   "when": "2021-",
+   "holder": "Ankit & Joe",
+   "holders": [
+    "Ankit",
+    "Joe"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "definition": "Most trades between the same two managers. Counts trades since 2021 (the first Sleeper season).",
+   "updated": "2026-11-02",
+   "leaderboard": [
+    {
+     "value": "7 trades",
+     "holder": "Ankit & Joe",
+     "when": "2021-",
+     "replay": null
+    },
+    {
+     "value": "5 trades",
+     "holder": "Alex & Ankit",
+     "when": "2021-",
+     "replay": null
+    },
+    {
+     "value": "5 trades",
+     "holder": "Alex & Ben",
+     "when": "2021-",
+     "replay": null
+    },
+    {
+     "value": "5 trades",
+     "holder": "Christian & Joe",
+     "when": "2021-",
+     "replay": null
+    },
+    {
+     "value": "4 trades",
+     "holder": "Ben & Jake",
+     "when": "2021-",
+     "replay": null
+    }
+   ],
+   "detail": null,
+   "verified": true
+  },
+  {
+   "id": "best-trader-career-par",
+   "name": "Best Trader (Career PAR)",
+   "category": "Trades",
+   "source": "computed",
+   "metric": "trader_best",
+   "direction": "max",
+   "value": "+593.0 PAR",
+   "value_num": 593.0,
+   "when": "14 trades, 2021-",
+   "holder": "Aidan",
+   "holders": [
+    "Aidan"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "definition": "Total PAR gained across every trade a manager has made (at least 3 trades). Counts trades since 2021 (the first Sleeper season).",
+   "updated": "2026-11-02",
+   "leaderboard": [
+    {
+     "value": "+593.0 PAR",
+     "holder": "Aidan",
+     "when": "14 trades, 2021-",
+     "replay": null
+    },
+    {
+     "value": "+397.9 PAR",
+     "holder": "Joe",
+     "when": "32 trades, 2021-",
+     "replay": null
+    },
+    {
+     "value": "+257.1 PAR",
+     "holder": "Steven",
+     "when": "13 trades, 2021-",
+     "replay": null
+    },
+    {
+     "value": "+47.8 PAR",
+     "holder": "Jake",
+     "when": "8 trades, 2021-",
+     "replay": null
+    },
+    {
+     "value": "+3.6 PAR",
+     "holder": "Tommy",
+     "when": "4 trades, 2021-",
+     "replay": null
+    }
+   ],
+   "detail": null,
+   "verified": true
+  },
+  {
+   "id": "worst-trader-career-par",
+   "name": "Worst Trader (Career PAR)",
+   "category": "Trades",
+   "source": "computed",
+   "metric": "trader_worst",
+   "direction": "min",
+   "value": "-169.1 PAR",
+   "value_num": -169.1,
+   "when": "10 trades, 2021-",
+   "holder": "Christian",
+   "holders": [
+    "Christian"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "definition": "Total PAR lost across every trade a manager has made (at least 3 trades). Counts trades since 2021 (the first Sleeper season).",
+   "updated": "2026-11-02",
+   "leaderboard": [
+    {
+     "value": "-169.1 PAR",
+     "holder": "Christian",
+     "when": "10 trades, 2021-",
+     "replay": null
+    },
+    {
+     "value": "-104.4 PAR",
+     "holder": "Ben",
+     "when": "17 trades, 2021-",
+     "replay": null
+    },
+    {
+     "value": "-77.0 PAR",
+     "holder": "Ankit",
+     "when": "18 trades, 2021-",
+     "replay": null
+    },
+    {
+     "value": "-70.1 PAR",
+     "holder": "Alex",
+     "when": "20 trades, 2021-",
+     "replay": null
+    },
+    {
+     "value": "+3.6 PAR",
+     "holder": "Tommy",
+     "when": "4 trades, 2021-",
+     "replay": null
+    }
+   ],
+   "detail": null,
+   "verified": true
+  },
+  {
    "id": "most-fab-owned-at-one-time",
    "name": "Most FAB owned at one time",
-   "category": "Trades & FAB",
+   "category": "FAB & Waivers",
    "source": "seeded",
    "metric": null,
    "direction": null,
@@ -5127,7 +6647,7 @@
   {
    "id": "largest-fab-overbid",
    "name": "Largest FAB Overbid",
-   "category": "Trades & FAB",
+   "category": "FAB & Waivers",
    "source": "seeded",
    "metric": null,
    "direction": null,
@@ -5157,7 +6677,7 @@
   {
    "id": "best-fab-bid-lowest-over-next-bid",
    "name": "Best FAB Bid (Lowest % over next bid)",
-   "category": "Trades & FAB",
+   "category": "FAB & Waivers",
    "source": "seeded",
    "metric": null,
    "direction": null,
@@ -5187,40 +6707,9 @@
    "updated": "2026-11-02"
   },
   {
-   "id": "most-fab-in-a-trade",
-   "name": "Most FAB in a trade",
-   "category": "Trades & FAB",
-   "source": "seeded",
-   "metric": null,
-   "direction": null,
-   "value": "$121",
-   "value_num": 121.0,
-   "when": "Week 11 - 2021",
-   "holder": "Steven & Ankit",
-   "holders": [
-    "Steven",
-    "Ankit"
-   ],
-   "league_level": false,
-   "team": "",
-   "notes": [],
-   "evidence": [],
-   "replay": null,
-   "previous": null,
-   "ties": [],
-   "locked": false,
-   "status": "active",
-   "era_pair": null,
-   "size_sensitive": false,
-   "needs_definition": null,
-   "definition": null,
-   "engine_gap": null,
-   "updated": "2026-11-02"
-  },
-  {
    "id": "earliest-fab-bankruptcy",
    "name": "Earliest FAB Bankruptcy",
-   "category": "Trades & FAB",
+   "category": "FAB & Waivers",
    "source": "seeded",
    "metric": null,
    "direction": null,
@@ -5248,21 +6737,21 @@
    "updated": "2026-11-02"
   },
   {
-   "id": "fastest-trade-acceptance-to-player-start",
-   "name": "Fastest Trade Acceptance to Player Start",
-   "category": "Trades & FAB",
-   "source": "seeded",
-   "metric": null,
-   "direction": null,
-   "value": "8 minutes; Keelan Cole",
-   "value_num": 8.0,
-   "when": "Week 3 Thursday Night - 2020",
-   "holder": "Ben",
+   "id": "best-fab-pickup-par",
+   "name": "Best FAB Pickup (PAR)",
+   "category": "FAB & Waivers",
+   "source": "computed",
+   "metric": "fab_best_par",
+   "direction": "max",
+   "value": "+129.8 PAR",
+   "value_num": 129.8,
+   "when": "Week 1 - 2023",
+   "holder": "Ankit — Kyren Williams",
    "holders": [
-    "Ben"
+    "Ankit"
    ],
    "league_level": false,
-   "team": "Can. Did. Kamara",
+   "team": "",
    "notes": [],
    "evidence": [],
    "replay": null,
@@ -5273,9 +6762,2023 @@
    "era_pair": null,
    "size_sensitive": false,
    "needs_definition": null,
-   "definition": null,
-   "engine_gap": "Needs trade timestamps + kickoff times.",
+   "engine_gap": null,
+   "definition": "The waiver claim that produced the most PAR in the claiming team's starting lineups. Counts trades since 2021 (the first Sleeper season). PAR = points above replacement: how many more points the player's lineup got than a replacement-level player at the position would have.",
+   "updated": "2026-11-02",
+   "leaderboard": [
+    {
+     "value": "+129.8 PAR",
+     "holder": "Ankit — Kyren Williams",
+     "when": "Week 1 - 2023",
+     "replay": null
+    },
+    {
+     "value": "+118.2 PAR",
+     "holder": "Steven — Matthew Stafford",
+     "when": "Week 4 - 2025",
+     "replay": null
+    },
+    {
+     "value": "+83.4 PAR",
+     "holder": "Haan — Sam LaPorta",
+     "when": "Week 1 - 2023",
+     "replay": null
+    },
+    {
+     "value": "+74.7 PAR",
+     "holder": "Aidan — Kenneth Walker III",
+     "when": "Week 4 - 2022",
+     "replay": null
+    },
+    {
+     "value": "+73.9 PAR",
+     "holder": "Aidan — Seattle Seahawks",
+     "when": "Week 6 - 2025",
+     "replay": null
+    }
+   ],
+   "detail": {
+    "kind": "pickup",
+    "title": "Pickup · Week 1, 2023",
+    "blocks": [
+     {
+      "head": "Ankit",
+      "chip": null,
+      "rows": [
+       [
+        "Pickup",
+        "Kyren Williams (RB)"
+       ],
+       [
+        "Winning bid",
+        "$55"
+       ],
+       [
+        "Points above replacement",
+        "+129.8 started · +92.6 rostered"
+       ],
+       [
+        "Weeks started / benched",
+        "11 / 5"
+       ],
+       [
+        "Outcome",
+        "Kept"
+       ]
+      ]
+     }
+    ]
+   },
+   "verified": true
+  },
+  {
+   "id": "best-free-agent-pickup-par",
+   "name": "Best Free-Agent Pickup (PAR)",
+   "category": "FAB & Waivers",
+   "source": "computed",
+   "metric": "fab_best_fa",
+   "direction": "max",
+   "value": "+71.5 PAR",
+   "value_num": 71.5,
+   "when": "Week 2 - 2021",
+   "holder": "Tommy — Cordarrelle Patterson",
+   "holders": [
+    "Tommy"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "definition": "The best $0 free-agent add by PAR in the starting lineups.",
+   "updated": "2026-11-02",
+   "leaderboard": [
+    {
+     "value": "+71.5 PAR",
+     "holder": "Tommy — Cordarrelle Patterson",
+     "when": "Week 2 - 2021",
+     "replay": null
+    },
+    {
+     "value": "+54.8 PAR",
+     "holder": "Jake — Jason Myers",
+     "when": "Week 9 - 2025",
+     "replay": null
+    },
+    {
+     "value": "+47.7 PAR",
+     "holder": "Jake — Kyle Pitts Sr.",
+     "when": "Week 8 - 2025",
+     "replay": null
+    },
+    {
+     "value": "+36.9 PAR",
+     "holder": "Aidan — Sam Howell",
+     "when": "Week 1 - 2023",
+     "replay": null
+    },
+    {
+     "value": "+34.7 PAR",
+     "holder": "Jake — Zay Jones",
+     "when": "Week 9 - 2022",
+     "replay": null
+    }
+   ],
+   "detail": {
+    "kind": "pickup",
+    "title": "Pickup · Week 2, 2021",
+    "blocks": [
+     {
+      "head": "Tommy",
+      "chip": null,
+      "rows": [
+       [
+        "Pickup",
+        "Cordarrelle Patterson (RB)"
+       ],
+       [
+        "Winning bid",
+        "$0"
+       ],
+       [
+        "Points above replacement",
+        "+71.5 started · +88.7 rostered"
+       ],
+       [
+        "Weeks started / benched",
+        "10 / 4"
+       ],
+       [
+        "Outcome",
+        "Kept"
+       ]
+      ]
+     }
+    ]
+   },
+   "verified": true
+  },
+  {
+   "id": "most-expensive-fab-claim",
+   "name": "Most Expensive FAB Claim",
+   "category": "FAB & Waivers",
+   "source": "computed",
+   "metric": "fab_bid",
+   "direction": "max",
+   "value": "$194",
+   "value_num": 194,
+   "when": "Week 4 - 2022",
+   "holder": "Ankit — George Pickens",
+   "holders": [
+    "Ankit"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "definition": "The largest winning FAB bid.",
+   "updated": "2026-11-02",
+   "leaderboard": [
+    {
+     "value": "$194",
+     "holder": "Ankit — George Pickens",
+     "when": "Week 4 - 2022",
+     "replay": null
+    },
+    {
+     "value": "$183",
+     "holder": "Ben — Jerome Ford",
+     "when": "Week 2 - 2023",
+     "replay": null
+    },
+    {
+     "value": "$174",
+     "holder": "Haan — Tyrone Tracy Jr.",
+     "when": "Week 8 - 2025",
+     "replay": null
+    },
+    {
+     "value": "$150",
+     "holder": "Jake — Braelon Allen",
+     "when": "Week 3 - 2026",
+     "replay": null
+    },
+    {
+     "value": "$149",
+     "holder": "Joe — De'Von Achane",
+     "when": "Week 3 - 2023",
+     "replay": null
+    }
+   ],
+   "detail": {
+    "kind": "pickup",
+    "title": "Pickup · Week 4, 2022",
+    "blocks": [
+     {
+      "head": "Ankit",
+      "chip": null,
+      "rows": [
+       [
+        "Pickup",
+        "George Pickens (WR)"
+       ],
+       [
+        "Winning bid",
+        "$194"
+       ],
+       [
+        "Points above replacement",
+        "-20.2 started · +0.3 rostered"
+       ],
+       [
+        "Weeks started / benched",
+        "7 / 4"
+       ],
+       [
+        "Outcome",
+        "Kept"
+       ]
+      ]
+     }
+    ]
+   },
+   "verified": true
+  },
+  {
+   "id": "worst-fab-pickup-40-bids",
+   "name": "Worst FAB Pickup ($40+ Bids)",
+   "category": "FAB & Waivers",
+   "source": "computed",
+   "metric": "fab_worst",
+   "direction": "min",
+   "value": "-20.2 PAR",
+   "value_num": -20.2,
+   "when": "Week 4 - 2022",
+   "holder": "Ankit — George Pickens",
+   "holders": [
+    "Ankit"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "definition": "The lowest PAR from a claim that cost $40 or more.",
+   "updated": "2026-11-02",
+   "leaderboard": [
+    {
+     "value": "-20.2 PAR",
+     "holder": "Ankit — George Pickens",
+     "when": "Week 4 - 2022",
+     "replay": null
+    },
+    {
+     "value": "-12.4 PAR",
+     "holder": "Tommy — Dawson Knox",
+     "when": "Week 11 - 2022",
+     "replay": null
+    },
+    {
+     "value": "-12.0 PAR",
+     "holder": "Alex — Joshua Kelley",
+     "when": "Week 1 - 2023",
+     "replay": null
+    },
+    {
+     "value": "-7.9 PAR",
+     "holder": "Jake — Kenyan Drake",
+     "when": "Week 6 - 2022",
+     "replay": null
+    },
+    {
+     "value": "-7.4 PAR",
+     "holder": "Jake — Harold Fannin Jr.",
+     "when": "Week 1 - 2025",
+     "replay": null
+    }
+   ],
+   "detail": {
+    "kind": "pickup",
+    "title": "Pickup · Week 4, 2022",
+    "blocks": [
+     {
+      "head": "Ankit",
+      "chip": null,
+      "rows": [
+       [
+        "Pickup",
+        "George Pickens (WR)"
+       ],
+       [
+        "Winning bid",
+        "$194"
+       ],
+       [
+        "Points above replacement",
+        "-20.2 started · +0.3 rostered"
+       ],
+       [
+        "Weeks started / benched",
+        "7 / 4"
+       ],
+       [
+        "Outcome",
+        "Kept"
+       ]
+      ]
+     }
+    ]
+   },
+   "verified": true
+  },
+  {
+   "id": "best-fab-value-par-per",
+   "name": "Best FAB Value (PAR per $)",
+   "category": "FAB & Waivers",
+   "source": "computed",
+   "metric": "fab_value",
+   "direction": "max",
+   "value": "7.88 PAR per $",
+   "value_num": 7.88,
+   "when": "Week 4 - 2025",
+   "holder": "Steven — Matthew Stafford",
+   "holders": [
+    "Steven"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "definition": "Most PAR per FAB dollar on a claim costing $10 or more.",
+   "updated": "2026-11-02",
+   "leaderboard": [
+    {
+     "value": "7.88 PAR per $",
+     "holder": "Steven — Matthew Stafford",
+     "when": "Week 4 - 2025",
+     "replay": null
+    },
+    {
+     "value": "4.93 PAR per $",
+     "holder": "Aidan — Seattle Seahawks",
+     "when": "Week 6 - 2025",
+     "replay": null
+    },
+    {
+     "value": "3.43 PAR per $",
+     "holder": "Ben — Michael Wilson",
+     "when": "Week 11 - 2025",
+     "replay": null
+    },
+    {
+     "value": "2.92 PAR per $",
+     "holder": "Ryan — New England Patriots",
+     "when": "Week 8 - 2021",
+     "replay": null
+    },
+    {
+     "value": "2.52 PAR per $",
+     "holder": "Tommy — Tyler Lockett",
+     "when": "Week 2 - 2022",
+     "replay": null
+    }
+   ],
+   "detail": {
+    "kind": "pickup",
+    "title": "Pickup · Week 4, 2025",
+    "blocks": [
+     {
+      "head": "Steven",
+      "chip": null,
+      "rows": [
+       [
+        "Pickup",
+        "Matthew Stafford (QB)"
+       ],
+       [
+        "Winning bid",
+        "$15"
+       ],
+       [
+        "Points above replacement",
+        "+118.2 started · +118.2 rostered"
+       ],
+       [
+        "Weeks started / benched",
+        "13 / 1"
+       ],
+       [
+        "Outcome",
+        "Kept"
+       ]
+      ]
+     }
+    ]
+   },
+   "verified": true
+  },
+  {
+   "id": "most-fab-spent-in-a-season",
+   "name": "Most FAB Spent in a Season",
+   "category": "FAB & Waivers",
+   "source": "computed",
+   "metric": "fab_spent",
+   "direction": "max",
+   "value": "$463",
+   "value_num": 463,
+   "when": "2022",
+   "holder": "Ankit",
+   "holders": [
+    "Ankit"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "definition": "The most FAB dollars spent on winning bids in one season.",
+   "updated": "2026-11-02",
+   "leaderboard": [
+    {
+     "value": "$463",
+     "holder": "Ankit",
+     "when": "2022",
+     "replay": null
+    },
+    {
+     "value": "$349",
+     "holder": "Ankit",
+     "when": "2021",
+     "replay": null
+    },
+    {
+     "value": "$271",
+     "holder": "Ankit",
+     "when": "2023",
+     "replay": null
+    },
+    {
+     "value": "$243",
+     "holder": "Ankit",
+     "when": "2025",
+     "replay": null
+    },
+    {
+     "value": "$230",
+     "holder": "Ankit",
+     "when": "2024",
+     "replay": null
+    }
+   ],
+   "detail": null,
+   "verified": true
+  },
+  {
+   "id": "most-waiver-par-in-a-season",
+   "name": "Most Waiver PAR in a Season",
+   "category": "FAB & Waivers",
+   "source": "computed",
+   "metric": "fab_season_par",
+   "direction": "max",
+   "value": "+180.0 PAR",
+   "value_num": 180.0,
+   "when": "2023",
+   "holder": "Ankit",
+   "holders": [
+    "Ankit"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "definition": "The most PAR from a manager's waiver and free-agent pickups in one season.",
+   "updated": "2026-11-02",
+   "leaderboard": [
+    {
+     "value": "+180.0 PAR",
+     "holder": "Ankit",
+     "when": "2023",
+     "replay": null
+    },
+    {
+     "value": "+149.2 PAR",
+     "holder": "Steven",
+     "when": "2025",
+     "replay": null
+    },
+    {
+     "value": "+145.5 PAR",
+     "holder": "Haan",
+     "when": "2023",
+     "replay": null
+    },
+    {
+     "value": "+143.8 PAR",
+     "holder": "Tommy",
+     "when": "2021",
+     "replay": null
+    },
+    {
+     "value": "+142.7 PAR",
+     "holder": "Alex",
+     "when": "2024",
+     "replay": null
+    }
+   ],
+   "detail": null,
+   "verified": true
+  },
+  {
+   "id": "best-waiver-season-net-of-regret",
+   "name": "Best Waiver Season (Net of Regret)",
+   "category": "FAB & Waivers",
+   "source": "computed",
+   "metric": "fab_season_net",
+   "direction": "max",
+   "value": "+133.7 PAR",
+   "value_num": 133.7,
+   "when": "2023",
+   "holder": "Haan",
+   "holders": [
+    "Haan"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "definition": "Waiver PAR minus the PAR that dropped players later gave other managers.",
+   "updated": "2026-11-02",
+   "leaderboard": [
+    {
+     "value": "+133.7 PAR",
+     "holder": "Haan",
+     "when": "2023",
+     "replay": null
+    },
+    {
+     "value": "+129.9 PAR",
+     "holder": "Tommy",
+     "when": "2021",
+     "replay": null
+    },
+    {
+     "value": "+111.5 PAR",
+     "holder": "Aidan",
+     "when": "2023",
+     "replay": null
+    },
+    {
+     "value": "+106.5 PAR",
+     "holder": "Steven",
+     "when": "2025",
+     "replay": null
+    },
+    {
+     "value": "+100.3 PAR",
+     "holder": "Ankit",
+     "when": "2023",
+     "replay": null
+    }
+   ],
+   "detail": null,
+   "verified": true
+  },
+  {
+   "id": "most-difference-makers-in-a-season",
+   "name": "Most Difference-Makers in a Season",
+   "category": "FAB & Waivers",
+   "source": "computed",
+   "metric": "fab_season_hits",
+   "direction": "max",
+   "value": "3",
+   "value_num": 3,
+   "when": "2023; 2023; 2024",
+   "holder": "Aidan; Joe; Jake",
+   "holders": [
+    "Aidan",
+    "Joe",
+    "Jake"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "definition": "Pickups worth 25+ PAR in one season.",
+   "updated": "2026-11-02",
+   "leaderboard": [
+    {
+     "value": "3",
+     "holder": "Aidan",
+     "when": "2023",
+     "replay": null
+    },
+    {
+     "value": "3",
+     "holder": "Joe",
+     "when": "2023",
+     "replay": null
+    },
+    {
+     "value": "3",
+     "holder": "Jake",
+     "when": "2024",
+     "replay": null
+    },
+    {
+     "value": "2",
+     "holder": "Tommy",
+     "when": "2021",
+     "replay": null
+    },
+    {
+     "value": "2",
+     "holder": "Aidan",
+     "when": "2022",
+     "replay": null
+    }
+   ],
+   "detail": null,
+   "verified": true
+  },
+  {
+   "id": "most-pickups-in-a-season",
+   "name": "Most Pickups in a Season",
+   "category": "FAB & Waivers",
+   "source": "computed",
+   "metric": "fab_season_adds",
+   "direction": "max",
+   "value": "106",
+   "value_num": 106,
+   "when": "2021",
+   "holder": "Ankit",
+   "holders": [
+    "Ankit"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "definition": "The most claims and free-agent adds by one manager in a season.",
+   "updated": "2026-11-02",
+   "leaderboard": [
+    {
+     "value": "106",
+     "holder": "Ankit",
+     "when": "2021",
+     "replay": null
+    },
+    {
+     "value": "103",
+     "holder": "Joe",
+     "when": "2022",
+     "replay": null
+    },
+    {
+     "value": "84",
+     "holder": "Joe",
+     "when": "2021",
+     "replay": null
+    },
+    {
+     "value": "77",
+     "holder": "Ankit",
+     "when": "2022",
+     "replay": null
+    },
+    {
+     "value": "77",
+     "holder": "Joe",
+     "when": "2023",
+     "replay": null
+    }
+   ],
+   "detail": null,
+   "verified": true
+  },
+  {
+   "id": "biggest-drop-regret-one-player",
+   "name": "Biggest Drop Regret (One Player)",
+   "category": "FAB & Waivers",
+   "source": "computed",
+   "metric": "fab_regret_drop",
+   "direction": "max",
+   "value": "103.1 PAR",
+   "value_num": 103.1,
+   "when": "Week 4 - 2025",
+   "holder": "Alex — Matthew Stafford",
+   "holders": [
+    "Alex"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "definition": "A dropped player who went on to produce the most PAR in another manager's lineup.",
+   "updated": "2026-11-02",
+   "leaderboard": [
+    {
+     "value": "103.1 PAR",
+     "holder": "Alex — Matthew Stafford",
+     "when": "Week 4 - 2025",
+     "replay": null
+    },
+    {
+     "value": "73.9 PAR",
+     "holder": "Joe — Seattle Seahawks",
+     "when": "Week 5 - 2025",
+     "replay": null
+    },
+    {
+     "value": "71.5 PAR",
+     "holder": "Steven — Cordarrelle Patterson",
+     "when": "Week 1 - 2021",
+     "replay": null
+    },
+    {
+     "value": "65.5 PAR",
+     "holder": "Alex — Tyler Lockett",
+     "when": "Week 1 - 2022",
+     "replay": null
+    },
+    {
+     "value": "55.5 PAR",
+     "holder": "Ankit — New England Patriots",
+     "when": "Week 8 - 2021",
+     "replay": null
+    }
+   ],
+   "detail": {
+    "kind": "drop",
+    "title": "Drop · Week 4, 2025",
+    "blocks": [
+     {
+      "head": "Alex",
+      "chip": null,
+      "rows": [
+       [
+        "Dropped",
+        "Matthew Stafford (QB)"
+       ],
+       [
+        "Started PAR for others after the drop",
+        "+103.1"
+       ],
+       [
+        "Picked up by",
+        "Steven"
+       ]
+      ]
+     }
+    ]
+   },
+   "verified": true
+  },
+  {
+   "id": "most-regret-in-a-season",
+   "name": "Most Regret in a Season",
+   "category": "FAB & Waivers",
+   "source": "computed",
+   "metric": "fab_season_regret",
+   "direction": "max",
+   "value": "180.1 PAR",
+   "value_num": 180.1,
+   "when": "2025",
+   "holder": "Alex",
+   "holders": [
+    "Alex"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "definition": "The most PAR that a manager's dropped players produced for other managers in one season.",
+   "updated": "2026-11-02",
+   "leaderboard": [
+    {
+     "value": "180.1 PAR",
+     "holder": "Alex",
+     "when": "2025",
+     "replay": null
+    },
+    {
+     "value": "156.3 PAR",
+     "holder": "Ben",
+     "when": "2024",
+     "replay": null
+    },
+    {
+     "value": "155.8 PAR",
+     "holder": "Steven",
+     "when": "2021",
+     "replay": null
+    },
+    {
+     "value": "141.4 PAR",
+     "holder": "Ankit",
+     "when": "2021",
+     "replay": null
+    },
+    {
+     "value": "139.4 PAR",
+     "holder": "Joe",
+     "when": "2021",
+     "replay": null
+    }
+   ],
+   "detail": null,
+   "verified": true
+  },
+  {
+   "id": "most-shotguns-in-a-season-league",
+   "name": "Most Shotguns in a Season (League)",
+   "category": "Sit / Start",
+   "source": "seeded",
+   "metric": null,
+   "direction": null,
+   "value": "17",
+   "value_num": 17.0,
+   "when": "2025",
+   "holder": "DTFClub",
+   "holders": [
+    "DTFClub"
+   ],
+   "league_level": true,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "definition": "A score of 0 or less from a non-defense starter who was not ruled out before the 2nd half, or ruled out but didn't play in the 2nd half.",
+   "engine_gap": "Needs per-player points plus game-day inactive/ruled-out status for every starter.",
    "updated": "2026-11-02"
+  },
+  {
+   "id": "costliest-sit-start-miss",
+   "name": "Costliest Sit/Start Miss",
+   "category": "Sit / Start",
+   "source": "computed",
+   "metric": "sit_start_miss",
+   "direction": "max",
+   "value": "26.5 pts",
+   "value_num": 26.5,
+   "when": "Week 15 - 2025; Week 4 - 2026",
+   "holder": "Aidan — sat Dallas Goedert; Aidan — sat Emanuel Wilson",
+   "holders": [
+    "Aidan"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": {
+    "season": 2025,
+    "week": 15,
+    "rid": 1,
+    "opp_rid": 3,
+    "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=15.1.3&season=2025"
+   },
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "definition": "Started a player who scored below replacement while a bench player eligible for the same slot scored above replacement, and the call was a clear miss by pre-game projections. Points lost = the bench player's points minus the starter's.",
+   "updated": "2026-11-02",
+   "leaderboard": [
+    {
+     "value": "26.5 pts",
+     "holder": "Aidan — sat Dallas Goedert",
+     "when": "Week 15 - 2025",
+     "replay": {
+      "season": 2025,
+      "week": 15,
+      "rid": 1,
+      "opp_rid": 3,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=15.1.3&season=2025"
+     }
+    },
+    {
+     "value": "26.5 pts",
+     "holder": "Aidan — sat Emanuel Wilson",
+     "when": "Week 4 - 2026",
+     "replay": {
+      "season": 2026,
+      "week": 4,
+      "rid": 1,
+      "opp_rid": 4,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=4.1.4"
+     }
+    },
+    {
+     "value": "25.1 pts",
+     "holder": "Aidan — sat Michael Wilson",
+     "when": "Week 3 - 2026",
+     "replay": {
+      "season": 2026,
+      "week": 3,
+      "rid": 1,
+      "opp_rid": 2,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=3.1.2"
+     }
+    },
+    {
+     "value": "22.8 pts",
+     "holder": "Steven — sat Jameson Williams",
+     "when": "Week 1 - 2024",
+     "replay": {
+      "season": 2024,
+      "week": 1,
+      "rid": 7,
+      "opp_rid": 10,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=1.7.10&season=2024"
+     }
+    },
+    {
+     "value": "21.1 pts",
+     "holder": "Haan — sat Malik Nabers",
+     "when": "Week 15 - 2024",
+     "replay": {
+      "season": 2024,
+      "week": 15,
+      "rid": 4,
+      "opp_rid": 10,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=15.4.10&season=2024"
+     }
+    }
+   ],
+   "detail": {
+    "kind": "swap",
+    "title": "Miss · FLEX, Week 15, 2025",
+    "blocks": [
+     {
+      "head": "Aidan",
+      "chip": null,
+      "rows": [
+       [
+        "Started",
+        "Chris Rodriguez Jr. — 0.0 pts (proj 0.0)"
+       ],
+       [
+        "Benched",
+        "Dallas Goedert — 26.5 pts (proj 10.85)"
+       ],
+       [
+        "Matchup",
+        "132.00 vs 160.78 against Jake"
+       ]
+      ]
+     }
+    ]
+   },
+   "verified": true,
+   "cards": {
+    "season": 2025,
+    "week": 15,
+    "teams": [
+     {
+      "rid": 1,
+      "name": "Aidan",
+      "won": false,
+      "act": 132.0,
+      "rumbles": 0,
+      "vs_field": 0,
+      "season_rumbles": 174,
+      "w": 10,
+      "l": 5,
+      "players": [
+       {
+        "pos": "QB",
+        "name": "Jalen Hurts",
+        "pts": 24.65,
+        "epa": 18.86
+       },
+       {
+        "pos": "RB",
+        "name": "RJ Harvey",
+        "pts": 11.0,
+        "epa": -8.94
+       },
+       {
+        "pos": "RB",
+        "name": "Jahmyr Gibbs",
+        "pts": 9.3,
+        "epa": -6.45
+       },
+       {
+        "pos": "TE",
+        "name": "Travis Kelce",
+        "pts": 16.5,
+        "epa": 3.91
+       },
+       {
+        "pos": "RB",
+        "name": "Chris Rodriguez Jr.",
+        "pts": 0.0,
+        "epa": null
+       },
+       {
+        "pos": "WR",
+        "name": "Jauan Jennings",
+        "pts": 19.2,
+        "epa": 4.11
+       },
+       {
+        "pos": "WR",
+        "name": "CeeDee Lamb",
+        "pts": 19.1,
+        "epa": 5.92
+       },
+       {
+        "pos": "QB",
+        "name": "Dak Prescott",
+        "pts": 13.86,
+        "epa": 0.69
+       },
+       {
+        "pos": "K",
+        "name": "Chase McLaughlin",
+        "pts": 12.1,
+        "epa": 2.77
+       },
+       {
+        "pos": "DEF",
+        "name": "Seattle Seahawks",
+        "pts": 6.29,
+        "epa": 5.68
+       }
+      ],
+      "epa": 26.55
+     },
+     {
+      "rid": 3,
+      "name": "Jake",
+      "won": true,
+      "act": 160.78,
+      "rumbles": 15,
+      "vs_field": 6,
+      "season_rumbles": 119,
+      "w": 7,
+      "l": 8,
+      "players": [
+       {
+        "pos": "QB",
+        "name": "Lamar Jackson",
+        "pts": 14.3,
+        "epa": 1.33
+       },
+       {
+        "pos": "RB",
+        "name": "Jaylen Warren",
+        "pts": 9.88,
+        "epa": -3.49
+       },
+       {
+        "pos": "RB",
+        "name": "Omarion Hampton",
+        "pts": 10.0,
+        "epa": 0.5
+       },
+       {
+        "pos": "TE",
+        "name": "Kyle Pitts Sr.",
+        "pts": 48.1,
+        "epa": 13.5
+       },
+       {
+        "pos": "WR",
+        "name": "Ladd McConkey",
+        "pts": 4.0,
+        "epa": -3.01
+       },
+       {
+        "pos": "WR",
+        "name": "Tetairoa McMillan",
+        "pts": 5.0,
+        "epa": 1.3
+       },
+       {
+        "pos": "WR",
+        "name": "Puka Nacua",
+        "pts": 31.9,
+        "epa": 15.54
+       },
+       {
+        "pos": "QB",
+        "name": "Sam Darnold",
+        "pts": 12.79,
+        "epa": 3.97
+       },
+       {
+        "pos": "K",
+        "name": "Jason Myers",
+        "pts": 26.3,
+        "epa": 5.97
+       },
+       {
+        "pos": "DEF",
+        "name": "Dallas Cowboys",
+        "pts": -1.49,
+        "epa": -11.54
+       }
+      ],
+      "epa": 24.07
+     }
+    ]
+   }
+  },
+  {
+   "id": "best-sit-start-call",
+   "name": "Best Sit/Start Call",
+   "category": "Sit / Start",
+   "source": "computed",
+   "metric": "sit_start_call",
+   "direction": "max",
+   "value": "24.5 pts",
+   "value_num": 24.5,
+   "when": "Week 5 - 2026",
+   "holder": "Ankit — started Tyler Huntley",
+   "holders": [
+    "Ankit"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": {
+    "season": 2026,
+    "week": 5,
+    "rid": 8,
+    "opp_rid": 1,
+    "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=5.8.1"
+   },
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "definition": "A 'big-brain start': started the lower-projected player by 2+ points and won the swap. Points gained = the starter's points minus the benched player's.",
+   "updated": "2026-11-02",
+   "leaderboard": [
+    {
+     "value": "24.5 pts",
+     "holder": "Ankit — started Tyler Huntley",
+     "when": "Week 5 - 2026",
+     "replay": {
+      "season": 2026,
+      "week": 5,
+      "rid": 8,
+      "opp_rid": 1,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=5.8.1"
+     }
+    },
+    {
+     "value": "22.2 pts",
+     "holder": "Haan — started D'Andre Swift",
+     "when": "Week 6 - 2025",
+     "replay": {
+      "season": 2025,
+      "week": 6,
+      "rid": 4,
+      "opp_rid": 10,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=6.4.10&season=2025"
+     }
+    },
+    {
+     "value": "20.6 pts",
+     "holder": "Haan — started Tyrone Tracy Jr.",
+     "when": "Week 15 - 2025",
+     "replay": {
+      "season": 2025,
+      "week": 15,
+      "rid": 4,
+      "opp_rid": 9,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=15.4.9&season=2025"
+     }
+    },
+    {
+     "value": "17.2 pts",
+     "holder": "Haan — started D'Andre Swift",
+     "when": "Week 13 - 2025",
+     "replay": {
+      "season": 2025,
+      "week": 13,
+      "rid": 4,
+      "opp_rid": 2,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=13.4.2&season=2025"
+     }
+    },
+    {
+     "value": "16.9 pts",
+     "holder": "Haan — started Andy Dalton",
+     "when": "Week 3 - 2023",
+     "replay": {
+      "season": 2023,
+      "week": 3,
+      "rid": 4,
+      "opp_rid": 6,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=3.4.6&season=2023"
+     }
+    }
+   ],
+   "detail": {
+    "kind": "swap",
+    "title": "Call · SUPER_FLEX, Week 5, 2026",
+    "blocks": [
+     {
+      "head": "Ankit",
+      "chip": null,
+      "rows": [
+       [
+        "Started (right call)",
+        "Tyler Huntley — 26.1 pts (proj 10.34)"
+       ],
+       [
+        "Benched",
+        "Carnell Tate — 1.6 pts (proj 12.69)"
+       ],
+       [
+        "Matchup",
+        "171.82 vs 174.50 against Aidan"
+       ]
+      ]
+     }
+    ]
+   },
+   "verified": true,
+   "cards": {
+    "season": 2026,
+    "week": 5,
+    "teams": [
+     {
+      "rid": 8,
+      "name": "Ankit",
+      "won": false,
+      "act": 171.82,
+      "rumbles": 6,
+      "vs_field": 6,
+      "season_rumbles": 56,
+      "w": 3,
+      "l": 2,
+      "players": [
+       {
+        "pos": "RB",
+        "name": "Jahmyr Gibbs",
+        "pts": 42.2,
+        "epa": 6.07
+       },
+       {
+        "pos": "RB",
+        "name": "Chase Brown",
+        "pts": 8.0,
+        "epa": -7.73
+       },
+       {
+        "pos": "TE",
+        "name": "Dallas Goedert",
+        "pts": 11.3,
+        "epa": -0.41
+       },
+       {
+        "pos": "WR",
+        "name": "Davante Adams",
+        "pts": 23.1,
+        "epa": 3.71
+       },
+       {
+        "pos": "WR",
+        "name": "Chris Olave",
+        "pts": 10.6,
+        "epa": 3.02
+       },
+       {
+        "pos": "WR",
+        "name": "Parker Washington",
+        "pts": 31.34,
+        "epa": 10.04
+       },
+       {
+        "pos": "QB",
+        "name": "Tyson Bagent",
+        "pts": 1.68,
+        "epa": -9.34
+       },
+       {
+        "pos": "QB",
+        "name": "Tyler Huntley",
+        "pts": 26.09,
+        "epa": 4.97
+       },
+       {
+        "pos": "K",
+        "name": "Evan McPherson",
+        "pts": 7.0,
+        "epa": 0.35
+       },
+       {
+        "pos": "DEF",
+        "name": "Seattle Seahawks",
+        "pts": 10.51,
+        "epa": 6.49
+       }
+      ],
+      "epa": 17.17
+     },
+     {
+      "rid": 1,
+      "name": "Aidan",
+      "won": true,
+      "act": 174.5,
+      "rumbles": 17,
+      "vs_field": 8,
+      "season_rumbles": 27,
+      "w": 1,
+      "l": 4,
+      "players": [
+       {
+        "pos": "RB",
+        "name": "Cam Skattebo",
+        "pts": 9.1,
+        "epa": -1.2
+       },
+       {
+        "pos": "RB",
+        "name": "Emanuel Wilson",
+        "pts": 14.7,
+        "epa": -7.74
+       },
+       {
+        "pos": "TE",
+        "name": "George Kittle",
+        "pts": 6.9,
+        "epa": -2.38
+       },
+       {
+        "pos": "WR",
+        "name": "Michael Wilson",
+        "pts": 8.78,
+        "epa": -0.51
+       },
+       {
+        "pos": "WR",
+        "name": "Nico Collins",
+        "pts": 12.6,
+        "epa": 4.54
+       },
+       {
+        "pos": "TE",
+        "name": "Isaiah Likely",
+        "pts": 34.4,
+        "epa": 10.4
+       },
+       {
+        "pos": "QB",
+        "name": "Michael Penix Jr.",
+        "pts": 15.55,
+        "epa": 5.94
+       },
+       {
+        "pos": "QB",
+        "name": "Matthew Stafford",
+        "pts": 31.07,
+        "epa": 18.49
+       },
+       {
+        "pos": "K",
+        "name": "Spencer Shrader",
+        "pts": 22.3,
+        "epa": 5.88
+       },
+       {
+        "pos": "DEF",
+        "name": "Houston Texans",
+        "pts": 19.1,
+        "epa": 22.5
+       }
+      ],
+      "epa": 55.92
+     }
+    ]
+   }
+  },
+  {
+   "id": "worst-lineup-week-points-lost",
+   "name": "Worst Lineup Week (Points Lost)",
+   "category": "Sit / Start",
+   "source": "computed",
+   "metric": "worst_week",
+   "direction": "max",
+   "value": "40.0 pts",
+   "value_num": 40.0,
+   "when": "Week 14 - 2023",
+   "holder": "Ankit",
+   "holders": [
+    "Ankit"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": {
+    "season": 2023,
+    "week": 14,
+    "rid": 8,
+    "opp_rid": 7,
+    "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=14.8.7&season=2023"
+   },
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "definition": "The most points left on the bench in one week from clear lineup misses.",
+   "updated": "2026-11-02",
+   "leaderboard": [
+    {
+     "value": "40.0 pts",
+     "holder": "Ankit",
+     "when": "Week 14 - 2023",
+     "replay": {
+      "season": 2023,
+      "week": 14,
+      "rid": 8,
+      "opp_rid": 7,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=14.8.7&season=2023"
+     }
+    },
+    {
+     "value": "39.6 pts",
+     "holder": "Haan",
+     "when": "Week 15 - 2024",
+     "replay": {
+      "season": 2024,
+      "week": 15,
+      "rid": 4,
+      "opp_rid": 10,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=15.4.10&season=2024"
+     }
+    },
+    {
+     "value": "37.2 pts",
+     "holder": "Haan",
+     "when": "Week 1 - 2025",
+     "replay": {
+      "season": 2025,
+      "week": 1,
+      "rid": 4,
+      "opp_rid": 1,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=1.4.1&season=2025"
+     }
+    },
+    {
+     "value": "36.4 pts",
+     "holder": "Ryan",
+     "when": "Week 4 - 2026",
+     "replay": {
+      "season": 2026,
+      "week": 4,
+      "rid": 10,
+      "opp_rid": 8,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=4.10.8"
+     }
+    },
+    {
+     "value": "32.1 pts",
+     "holder": "Haan",
+     "when": "Week 12 - 2024",
+     "replay": {
+      "season": 2024,
+      "week": 12,
+      "rid": 4,
+      "opp_rid": 1,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=12.4.1&season=2024"
+     }
+    }
+   ],
+   "detail": null,
+   "verified": true,
+   "cards": {
+    "season": 2023,
+    "week": 14,
+    "teams": [
+     {
+      "rid": 8,
+      "name": "Ankit",
+      "won": false,
+      "act": 116.74,
+      "rumbles": 2,
+      "vs_field": 2,
+      "season_rumbles": 146,
+      "w": 8,
+      "l": 6,
+      "players": [
+       {
+        "pos": "QB",
+        "name": "Justin Fields",
+        "pts": 23.22,
+        "epa": 5.33
+       },
+       {
+        "pos": "RB",
+        "name": "Tony Pollard",
+        "pts": 16.6,
+        "epa": 0.1
+       },
+       {
+        "pos": "RB",
+        "name": "Kyren Williams",
+        "pts": 12.3,
+        "epa": -2.68
+       },
+       {
+        "pos": "WR",
+        "name": "DJ Moore",
+        "pts": 25.8,
+        "epa": 3.81
+       },
+       {
+        "pos": "WR",
+        "name": "Keenan Allen",
+        "pts": 12.8,
+        "epa": -4.78
+       },
+       {
+        "pos": "TE",
+        "name": "Gerald Everett",
+        "pts": 8.9,
+        "epa": -3.46
+       },
+       {
+        "pos": "WR",
+        "name": "Brandin Cooks",
+        "pts": 5.7,
+        "epa": 0.51
+       },
+       {
+        "pos": "QB",
+        "name": "Joshua Dobbs",
+        "pts": 2.12,
+        "epa": -14.52
+       },
+       {
+        "pos": "K",
+        "name": "Matt Gay",
+        "pts": -2.0,
+        "epa": -4.93
+       },
+       {
+        "pos": "DEF",
+        "name": "Cleveland Browns",
+        "pts": 11.3,
+        "epa": 13.94
+       }
+      ],
+      "epa": -6.68
+     },
+     {
+      "rid": 7,
+      "name": "Steven",
+      "won": true,
+      "act": 135.75,
+      "rumbles": 15,
+      "vs_field": 6,
+      "season_rumbles": 154,
+      "w": 9,
+      "l": 5,
+      "players": [
+       {
+        "pos": "QB",
+        "name": "Matthew Stafford",
+        "pts": 22.66,
+        "epa": 5.6
+       },
+       {
+        "pos": "RB",
+        "name": "Travis Etienne Jr.",
+        "pts": 16.2,
+        "epa": -2.25
+       },
+       {
+        "pos": "RB",
+        "name": "Christian McCaffrey",
+        "pts": 16.3,
+        "epa": 3.46
+       },
+       {
+        "pos": "WR",
+        "name": "Davante Adams",
+        "pts": 12.3,
+        "epa": -7.63
+       },
+       {
+        "pos": "WR",
+        "name": "Mike Evans",
+        "pts": 1.8,
+        "epa": -1.59
+       },
+       {
+        "pos": "TE",
+        "name": "Evan Engram",
+        "pts": 32.5,
+        "epa": 9.5
+       },
+       {
+        "pos": "RB",
+        "name": "Alexander Mattison",
+        "pts": 6.6,
+        "epa": 0.73
+       },
+       {
+        "pos": "QB",
+        "name": "Dak Prescott",
+        "pts": 16.44,
+        "epa": 1.57
+       },
+       {
+        "pos": "K",
+        "name": "Jason Sanders",
+        "pts": 8.1,
+        "epa": -2.07
+       },
+       {
+        "pos": "DEF",
+        "name": "Indianapolis Colts",
+        "pts": 2.85,
+        "epa": -4.14
+       }
+      ],
+      "epa": 3.19
+     }
+    ]
+   }
+  },
+  {
+   "id": "most-points-lost-to-lineup-misses-in-a-season",
+   "name": "Most Points Lost to Lineup Misses in a Season",
+   "category": "Sit / Start",
+   "source": "computed",
+   "metric": "season_bench",
+   "direction": "max",
+   "value": "31.7 pts",
+   "value_num": 31.7,
+   "when": "2024",
+   "holder": "Haan",
+   "holders": [
+    "Haan"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "definition": "Season total of points lost to clear lineup misses.",
+   "updated": "2026-11-02",
+   "leaderboard": [
+    {
+     "value": "31.7 pts",
+     "holder": "Haan",
+     "when": "2024",
+     "replay": null
+    },
+    {
+     "value": "30.6 pts",
+     "holder": "Steven",
+     "when": "2024",
+     "replay": null
+    },
+    {
+     "value": "26.5 pts",
+     "holder": "Aidan",
+     "when": "2025",
+     "replay": null
+    },
+    {
+     "value": "23.9 pts",
+     "holder": "Christian",
+     "when": "2024",
+     "replay": null
+    },
+    {
+     "value": "22.6 pts",
+     "holder": "Ankit",
+     "when": "2022",
+     "replay": null
+    }
+   ],
+   "detail": null,
+   "verified": true
+  },
+  {
+   "id": "most-wins-lost-to-lineup-misses-in-a-season",
+   "name": "Most Wins Lost to Lineup Misses in a Season",
+   "category": "Sit / Start",
+   "source": "computed",
+   "metric": "season_wins_lost",
+   "direction": "max",
+   "value": "1",
+   "value_num": 1,
+   "when": "2021; 2022; 2024",
+   "holder": "Haan; Jake; Alex",
+   "holders": [
+    "Haan",
+    "Jake",
+    "Alex"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "definition": "Losses that the week's clear misses were bigger than the margin of.",
+   "updated": "2026-11-02",
+   "leaderboard": [
+    {
+     "value": "1",
+     "holder": "Haan",
+     "when": "2021",
+     "replay": null
+    },
+    {
+     "value": "1",
+     "holder": "Jake",
+     "when": "2022",
+     "replay": null
+    },
+    {
+     "value": "1",
+     "holder": "Alex",
+     "when": "2024",
+     "replay": null
+    },
+    {
+     "value": "0",
+     "holder": "Aidan",
+     "when": "2021",
+     "replay": null
+    },
+    {
+     "value": "0",
+     "holder": "Ben",
+     "when": "2021",
+     "replay": null
+    }
+   ],
+   "detail": null,
+   "verified": true
+  },
+  {
+   "id": "most-rumbles-lost-to-lineup-misses-in-a-season",
+   "name": "Most Rumbles Lost to Lineup Misses in a Season",
+   "category": "Sit / Start",
+   "source": "computed",
+   "metric": "season_rumbles_lost",
+   "direction": "max",
+   "value": "12",
+   "value_num": 12,
+   "when": "2021",
+   "holder": "Haan",
+   "holders": [
+    "Haan"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "definition": "Rumbles that would have been earned with the right calls.",
+   "updated": "2026-11-02",
+   "leaderboard": [
+    {
+     "value": "12",
+     "holder": "Haan",
+     "when": "2021",
+     "replay": null
+    },
+    {
+     "value": "10",
+     "holder": "Jake",
+     "when": "2022",
+     "replay": null
+    },
+    {
+     "value": "10",
+     "holder": "Alex",
+     "when": "2024",
+     "replay": null
+    },
+    {
+     "value": "4",
+     "holder": "Joe",
+     "when": "2024",
+     "replay": null
+    },
+    {
+     "value": "3",
+     "holder": "Ankit",
+     "when": "2023",
+     "replay": null
+    }
+   ],
+   "detail": null,
+   "verified": true
+  },
+  {
+   "id": "most-big-brain-calls-in-a-season",
+   "name": "Most Big-Brain Calls in a Season",
+   "category": "Sit / Start",
+   "source": "computed",
+   "metric": "season_brain",
+   "direction": "max",
+   "value": "4",
+   "value_num": 4,
+   "when": "2025",
+   "holder": "Haan",
+   "holders": [
+    "Haan"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "definition": "Most winning sit/start calls (started the lower projection and won the swap) in one season.",
+   "updated": "2026-11-02",
+   "leaderboard": [
+    {
+     "value": "4",
+     "holder": "Haan",
+     "when": "2025",
+     "replay": null
+    },
+    {
+     "value": "3",
+     "holder": "Haan",
+     "when": "2023",
+     "replay": null
+    },
+    {
+     "value": "2",
+     "holder": "Joe",
+     "when": "2022",
+     "replay": null
+    },
+    {
+     "value": "2",
+     "holder": "Haan",
+     "when": "2024",
+     "replay": null
+    },
+    {
+     "value": "1",
+     "holder": "Jake",
+     "when": "2021",
+     "replay": null
+    }
+   ],
+   "detail": null,
+   "verified": true
   }
  ]
 }

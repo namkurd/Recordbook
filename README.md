@@ -33,5 +33,12 @@ python3 -m http.server   # then open http://localhost:8000
 ```
 `--baseline` marks changes as reconciliations against the old sheet (used once at launch).
 
+## What the engine computes
+- **Season-end counts** (`engine/seasons.py`): a manager-by-season ledger from 2013 on (final standings, playoff results, the podium, Sackos, #1 seeds from FAB-Management) plus a small hand-seeded set for 2011-12 and the 2013-20 #1 seeds, which exist only in the old sheet. Where the ledger and the sheet disagree, the ledger wins and the change log says so.
+- **Games and weeks, team seasons** (`engine/metrics.py`): from Rumble Central's weekly archive and the lifetime-record repo.
+- **Trades, FAB and sit/start** (`engine/market.py`): from SleeperTradeNodes (`data.json`: every trade with its PAR swing) and FAB-Management (`data.json`: pickups, drops and lineup decisions). These records start in 2021.
+
+`tools/add_records.py` is the one place new records are defined (idempotent). Adding a record = a row there + a function in `engine/`.
+
 ## Not auto-updated yet
-Trades/FAB, per-player records (bench points, 0.0s, % by one player), NFL-clock records (Saturday/Thursday/Monday), projections, season-end counts (titles, playoff appearances, seeds, Sackos) and Composite Wins. Each is tagged on its row; see `engine_gap` / `needs_definition` in `records.json`.
+Per-player records (bench points, 0.0s in a win, % of points from one player, Shotguns), NFL-clock records (Saturday/Thursday/Monday), projections, trade timing (24-hour trades, fastest acceptance), FAB balances (most FAB owned, overbid, bankruptcy, FAB in a trade) and the trade/lineup counts that include FAB-only trades. Their rows keep the sheet's value.

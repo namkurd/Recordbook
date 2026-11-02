@@ -2,7 +2,7 @@
 import re
 from load import fetch
 
-GAME_METRICS = {"game_pts", "game_pts_adj", "margin", "multiple", "win_pts", "loss_pts"}
+GAME_METRICS = {"game_pts", "game_pts_adj", "margin", "multiple", "win_pts", "loss_pts", "sit_start_miss", "sit_start_call", "worst_week"}
 EXTRA_IDS = {"most-points-on-a-saturday", "largest-monday-night-deficit-overcome"}   # seeded single-game records with a known week
 _cache = {}
 

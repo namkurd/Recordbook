@@ -1,5 +1,6 @@
 """One-time: turn the hand-kept sheet (tools/sheet.psv) into data/records.json. Re-running overwrites; never run after go-live."""
 import json, re, sys
+if "--force" not in sys.argv: sys.exit("seed.py overwrites data/records.json (and your edits). Re-run with --force only for a fresh start.")
 
 CATS = ["Seasons & Playoffs", "Team Seasons", "Games & Weeks", "Projections & NFL Clock", "Trades & FAB"]
 # row order in the sheet is the category order (counts: 18, 21, 18, 6, 13)
@@ -7,6 +8,20 @@ SIZES = [18, 21, 18, 6, 13]
 
 # sheet name -> (metric key engine computes, direction, unit)
 METRIC = {
+ "Most Championships": ("titles", "max"),
+ "Most Championship Appearances": ("finals", "max"),
+ "Most Championship Losses": ("final_losses", "max"),
+ "Most Consecutive Championship Appearances": ("final_streak", "max"),
+ "Most Playoff Appearances": ("playoff_apps", "max"),
+ "Most Consecutive Playoff Appearances": ("playoff_streak", "max"),
+ "Longest Playoff Drought": ("drought", "max"),
+ "Most Sackos": ("sackos", "max"),
+ "Most #1 Seeds": ("seed1", "max"),
+ "Most Top Scoring Seasons": ("top_pf_seasons", "max"),
+ "Most Bottom Scoring Seasons": ("bottom_pf_seasons", "max"),
+ "Most Highest Points Against Seasons": ("high_pa_seasons", "max"),
+ "Most Consecutive .500 or Better Seasons": ("winning_streak_seasons", "max"),
+ "Most Consecutive Losing Seasons": ("losing_streak_seasons", "max"),
  "Most Points (Season)": ("season_pf", "max"), "Most Points Against (Season)": ("season_pa", "max"),
  "Fewest Points (Season)": ("season_pf", "min"),
  "Most Dominant Offensive Season": ("pf_plus", "max"), "Most Futile Offensive Season": ("pf_plus", "min"),

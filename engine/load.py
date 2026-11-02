@@ -3,7 +3,9 @@ import json, os, urllib.request
 
 SRC = os.environ.get("RB_SRC")  # dir containing sleeperliverumbles/ and sleepersheet/ checkouts
 RAW = {"sleeperliverumbles": "https://raw.githubusercontent.com/namkurd/SleeperLiveRumbles/main/",
-       "sleepersheet": "https://raw.githubusercontent.com/namkurd/sleepersheet/main/"}
+       "sleepersheet": "https://raw.githubusercontent.com/namkurd/sleepersheet/main/",
+       "sleepertradenodes": "https://raw.githubusercontent.com/namkurd/SleeperTradeNodes/main/",
+       "fab-management": "https://raw.githubusercontent.com/namkurd/FAB-Management/main/"}
 
 def fetch(repo, path):
     if SRC:
@@ -35,4 +37,8 @@ def load():
                               "opp_pts": g["opponent_points"], "win": g["h2h_win"], "n": n,
                               "outscored": g["teams_outscored"], "rumbles": g["rumbles"],
                               "reg": str(wk) in d["weekly"] and wk <= n_reg})
-    return {"seasons": seasons, "playoffs": play, "games": games, "rosters": rosters, "current": cur}
+    extra = {}
+    for key, repo, path in (("nodes", "sleepertradenodes", "data.json"), ("fab", "fab-management", "data.json"), ("fab_po", "fab-management", "playoff_teams.json")):
+        try: extra[key] = fetch(repo, path)
+        except Exception as e: print("WARN could not load", repo, path, e); extra[key] = None
+    return {"seasons": seasons, "playoffs": play, "games": games, "rosters": rosters, "current": cur, **extra}
