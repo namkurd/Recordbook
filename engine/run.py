@@ -6,6 +6,7 @@ import json, os, re, sys, datetime
 sys.path.insert(0, os.path.dirname(__file__))
 from load import load
 import metrics as M
+import cards as CARDS
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 RC_BASE = os.environ.get("RC_BASE", "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html")
@@ -90,6 +91,8 @@ def main():
                     t = {"holder": h, "when": when(m, c), "replay": replay(m, c, d.cur)}
                     r["ties"].append(t); known.add(h); known.update(c["holders"])
                     log.append({"ts": now, "record": r["id"], "name": r["name"], "cause": "auto:tie", "new": t, "note": "Tied the record."})
+    n_cards = sum(1 for r in doc["records"] if CARDS.attach(d, r))
+    print(n_cards, "record(s) with a Rumble Card")
     if not DRY:
         json.dump(doc, open(f"{ROOT}/data/records.json", "w"), indent=1, ensure_ascii=False)
         with open(f"{ROOT}/data/changelog.jsonl", "a") as f:

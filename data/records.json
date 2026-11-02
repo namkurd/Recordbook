@@ -2101,11 +2101,7 @@
    "league_level": false,
    "team": "Beats by Blay",
    "notes": [],
-   "evidence": [
-    "https://imgur.com/a/SX4qDPG",
-    "https://imgur.com/EuwnrYO",
-    "https://imgur.com/aBRegYG"
-   ],
+   "evidence": [],
    "replay": {
     "season": 2025,
     "week": 8,
@@ -2185,7 +2181,166 @@
      }
     }
    ],
-   "verified": true
+   "verified": true,
+   "cards": {
+    "season": 2025,
+    "week": 8,
+    "teams": [
+     {
+      "rid": 5,
+      "name": "Joe",
+      "won": true,
+      "act": 243.51,
+      "rumbles": 18,
+      "vs_field": 9,
+      "season_rumbles": 127,
+      "w": 8,
+      "l": 0,
+      "players": [
+       {
+        "pos": "QB",
+        "name": "Justin Herbert",
+        "pts": 27.58,
+        "epa": 15.37
+       },
+       {
+        "pos": "RB",
+        "name": "Jonathan Taylor",
+        "pts": 39.9,
+        "epa": 12.47
+       },
+       {
+        "pos": "RB",
+        "name": "Saquon Barkley",
+        "pts": 35.4,
+        "epa": 8.09
+       },
+       {
+        "pos": "TE",
+        "name": "Tucker Kraft",
+        "pts": 34.8,
+        "epa": 11.57
+       },
+       {
+        "pos": "WR",
+        "name": "Troy Franklin",
+        "pts": 28.4,
+        "epa": 8.57
+       },
+       {
+        "pos": "WR",
+        "name": "Keenan Allen",
+        "pts": 10.4,
+        "epa": 7.35
+       },
+       {
+        "pos": "WR",
+        "name": "Tee Higgins",
+        "pts": 11.4,
+        "epa": 3.48
+       },
+       {
+        "pos": "QB",
+        "name": "Jordan Love",
+        "pts": 30.9,
+        "epa": 20.57
+       },
+       {
+        "pos": "K",
+        "name": "Ka'imi Fairbairn",
+        "pts": 15.4,
+        "epa": 1.27
+       },
+       {
+        "pos": "DEF",
+        "name": "Indianapolis Colts",
+        "pts": 9.33,
+        "epa": 5.77
+       }
+      ],
+      "epa": 94.52
+     },
+     {
+      "rid": 3,
+      "name": "Jake",
+      "won": false,
+      "act": 128.65,
+      "rumbles": 3,
+      "vs_field": 3,
+      "season_rumbles": 54,
+      "w": 3,
+      "l": 5,
+      "players": [
+       {
+        "pos": "QB",
+        "name": "Carson Wentz",
+        "pts": 7.41,
+        "epa": -12.74
+       },
+       {
+        "pos": "RB",
+        "name": "Jaylen Warren",
+        "pts": 10.8,
+        "epa": -2.85
+       },
+       {
+        "pos": "RB",
+        "name": "Chuba Hubbard",
+        "pts": 10.44,
+        "epa": -3.23
+       },
+       {
+        "pos": "TE",
+        "name": "Kyle Pitts Sr.",
+        "pts": 15.4,
+        "epa": -4.61
+       },
+       {
+        "pos": "WR",
+        "name": "Rome Odunze",
+        "pts": 21.9,
+        "epa": 5.75
+       },
+       {
+        "pos": "WR",
+        "name": "Ladd McConkey",
+        "pts": 22.3,
+        "epa": -0.75
+       },
+       {
+        "pos": "WR",
+        "name": "Tetairoa McMillan",
+        "pts": 20.4,
+        "epa": 4.76
+       },
+       {
+        "pos": "QB",
+        "name": "Tyler Huntley",
+        "pts": 18.44,
+        "epa": 8.55
+       },
+       {
+        "pos": "K",
+        "name": "Wil Lutz",
+        "pts": 9.2,
+        "epa": 1.24
+       },
+       {
+        "pos": "DEF",
+        "name": "Cincinnati Bengals",
+        "pts": -7.64,
+        "epa": -23.89
+       }
+      ],
+      "epa": -27.77
+     }
+    ]
+   },
+   "legacy_evidence": [
+    "https://imgur.com/a/SX4qDPG",
+    "https://imgur.com/EuwnrYO",
+    "https://imgur.com/aBRegYG"
+   ]
   },
   {
    "id": "most-points-game-era-adjusted",
@@ -2284,7 +2439,161 @@
      }
     }
    ],
-   "verified": true
+   "verified": true,
+   "cards": {
+    "season": 2021,
+    "week": 11,
+    "teams": [
+     {
+      "rid": 10,
+      "name": "Ryan",
+      "won": true,
+      "act": 203.65,
+      "rumbles": 18,
+      "vs_field": 9,
+      "season_rumbles": 134,
+      "w": 8,
+      "l": 3,
+      "players": [
+       {
+        "pos": "QB",
+        "name": "Aaron Rodgers",
+        "pts": 31.5,
+        "epa": 24.32
+       },
+       {
+        "pos": "RB",
+        "name": "Ezekiel Elliott",
+        "pts": 7.8,
+        "epa": -2.29
+       },
+       {
+        "pos": "RB",
+        "name": "Jonathan Taylor",
+        "pts": 50.9,
+        "epa": 12.88
+       },
+       {
+        "pos": "WR",
+        "name": "Justin Jefferson",
+        "pts": 32.2,
+        "epa": 16.15
+       },
+       {
+        "pos": "WR",
+        "name": "DJ Moore",
+        "pts": 13.25,
+        "epa": 2.91
+       },
+       {
+        "pos": "TE",
+        "name": "Mark Andrews",
+        "pts": 9.8,
+        "epa": 2.08
+       },
+       {
+        "pos": "WR",
+        "name": "Mike Williams",
+        "pts": 17.2,
+        "epa": 7.77
+       },
+       {
+        "pos": "WR",
+        "name": "Tee Higgins",
+        "pts": 2.0,
+        "epa": -0.02
+       },
+       {
+        "pos": "K",
+        "name": "Ryan Succop",
+        "pts": 13.0,
+        "epa": 1.12
+       },
+       {
+        "pos": "DEF",
+        "name": "New England Patriots",
+        "pts": 26.0,
+        "epa": 31.77
+       }
+      ],
+      "epa": 96.69
+     },
+     {
+      "rid": 5,
+      "name": "Joe",
+      "won": false,
+      "act": 101.4,
+      "rumbles": 3,
+      "vs_field": 3,
+      "season_rumbles": 59,
+      "w": 3,
+      "l": 8,
+      "players": [
+       {
+        "pos": "QB",
+        "name": "Patrick Mahomes",
+        "pts": 6.0,
+        "epa": -8.32
+       },
+       {
+        "pos": "RB",
+        "name": "David Montgomery",
+        "pts": 6.95,
+        "epa": -3.45
+       },
+       {
+        "pos": "RB",
+        "name": "Miles Sanders",
+        "pts": 7.4,
+        "epa": -5.39
+       },
+       {
+        "pos": "WR",
+        "name": "Davante Adams",
+        "pts": 26.75,
+        "epa": 11.88
+       },
+       {
+        "pos": "WR",
+        "name": "DK Metcalf",
+        "pts": 4.1,
+        "epa": -1.08
+       },
+       {
+        "pos": "TE",
+        "name": "T.J. Hockenson",
+        "pts": 6.35,
+        "epa": -0.66
+       },
+       {
+        "pos": "RB",
+        "name": "Josh Jacobs",
+        "pts": 6.85,
+        "epa": -2.76
+       },
+       {
+        "pos": "RB",
+        "name": "James Conner",
+        "pts": 16.9,
+        "epa": 0.3
+       },
+       {
+        "pos": "K",
+        "name": "Greg Joseph",
+        "pts": 9.1,
+        "epa": 0.81
+       },
+       {
+        "pos": "DEF",
+        "name": "San Francisco 49ers",
+        "pts": 11.0,
+        "epa": 4.29
+       }
+      ],
+      "epa": -4.38
+     }
+    ]
+   }
   },
   {
    "id": "fewest-points-game",
@@ -2604,7 +2913,161 @@
      }
     }
    ],
-   "verified": true
+   "verified": true,
+   "cards": {
+    "season": 2026,
+    "week": 2,
+    "teams": [
+     {
+      "rid": 12,
+      "name": "Stephanie",
+      "won": true,
+      "act": 218.54,
+      "rumbles": 19,
+      "vs_field": 10,
+      "season_rumbles": 19,
+      "w": 1,
+      "l": 1,
+      "players": [
+       {
+        "pos": "RB",
+        "name": "D'Andre Swift",
+        "pts": 15.4,
+        "epa": -4.26
+       },
+       {
+        "pos": "RB",
+        "name": "Christian McCaffrey",
+        "pts": 24.6,
+        "epa": 4.94
+       },
+       {
+        "pos": "TE",
+        "name": "Dalton Schultz",
+        "pts": 29.0,
+        "epa": 7.49
+       },
+       {
+        "pos": "RB",
+        "name": "Aaron Jones Sr.",
+        "pts": 12.0,
+        "epa": -2.35
+       },
+       {
+        "pos": "WR",
+        "name": "Jaylen Waddle",
+        "pts": 24.8,
+        "epa": 8.75
+       },
+       {
+        "pos": "WR",
+        "name": "Ja'Marr Chase",
+        "pts": 27.0,
+        "epa": 3.89
+       },
+       {
+        "pos": "QB",
+        "name": "Bryce Young",
+        "pts": 25.58,
+        "epa": 12.15
+       },
+       {
+        "pos": "QB",
+        "name": "Jared Goff",
+        "pts": 30.78,
+        "epa": 16.42
+       },
+       {
+        "pos": "K",
+        "name": "Eddy Pineiro",
+        "pts": 5.0,
+        "epa": 0.34
+       },
+       {
+        "pos": "DEF",
+        "name": "New England Patriots",
+        "pts": 24.38,
+        "epa": 23.83
+       }
+      ],
+      "epa": 71.21
+     },
+     {
+      "rid": 3,
+      "name": "Jake",
+      "won": false,
+      "act": 71.59,
+      "rumbles": 0,
+      "vs_field": 0,
+      "season_rumbles": 7,
+      "w": 0,
+      "l": 2,
+      "players": [
+       {
+        "pos": "RB",
+        "name": "Travis Etienne Jr.",
+        "pts": 7.6,
+        "epa": -0.07
+       },
+       {
+        "pos": "RB",
+        "name": "Javonte Williams",
+        "pts": 8.0,
+        "epa": -3.5
+       },
+       {
+        "pos": "TE",
+        "name": "Colston Loveland",
+        "pts": 1.3,
+        "epa": -1.51
+       },
+       {
+        "pos": "TE",
+        "name": "Colby Parkinson",
+        "pts": 4.0,
+        "epa": 1.42
+       },
+       {
+        "pos": "WR",
+        "name": "Jalen Coker",
+        "pts": 18.06,
+        "epa": 1.7
+       },
+       {
+        "pos": "WR",
+        "name": "Jayden Reed",
+        "pts": 1.4,
+        "epa": -0.1
+       },
+       {
+        "pos": "QB",
+        "name": "Drake Maye",
+        "pts": 8.67,
+        "epa": 0.52
+       },
+       {
+        "pos": "QB",
+        "name": "Trevor Lawrence",
+        "pts": 7.46,
+        "epa": -3.73
+       },
+       {
+        "pos": "K",
+        "name": "Tyler Loop",
+        "pts": 5.9,
+        "epa": -1.42
+       },
+       {
+        "pos": "DEF",
+        "name": "San Francisco 49ers",
+        "pts": 9.2,
+        "epa": 0.06
+       }
+      ],
+      "epa": -6.64
+     }
+    ]
+   }
   },
   {
    "id": "smallest-margin-of-victory",
@@ -2706,7 +3169,161 @@
      }
     }
    ],
-   "verified": true
+   "verified": true,
+   "cards": {
+    "season": 2025,
+    "week": 12,
+    "teams": [
+     {
+      "rid": 8,
+      "name": "Ankit",
+      "won": true,
+      "act": 138.15,
+      "rumbles": 15,
+      "vs_field": 6,
+      "season_rumbles": 141,
+      "w": 7,
+      "l": 5,
+      "players": [
+       {
+        "pos": "QB",
+        "name": "Joe Flacco",
+        "pts": 9.17,
+        "epa": -14.22
+       },
+       {
+        "pos": "RB",
+        "name": "TreVeyon Henderson",
+        "pts": 13.1,
+        "epa": 0.66
+       },
+       {
+        "pos": "RB",
+        "name": "Travis Etienne Jr.",
+        "pts": 21.1,
+        "epa": 0.91
+       },
+       {
+        "pos": "TE",
+        "name": "Tyler Warren",
+        "pts": 10.5,
+        "epa": 1.79
+       },
+       {
+        "pos": "RB",
+        "name": "Christian McCaffrey",
+        "pts": 30.2,
+        "epa": 0.56
+       },
+       {
+        "pos": "WR",
+        "name": "Emeka Egbuka",
+        "pts": 5.7,
+        "epa": -1.92
+       },
+       {
+        "pos": "WR",
+        "name": "Nico Collins",
+        "pts": 9.5,
+        "epa": 3.11
+       },
+       {
+        "pos": "QB",
+        "name": "Jacoby Brissett",
+        "pts": 20.38,
+        "epa": -6.43
+       },
+       {
+        "pos": "K",
+        "name": "Brandon Aubrey",
+        "pts": 6.2,
+        "epa": -2.68
+       },
+       {
+        "pos": "DEF",
+        "name": "New Orleans Saints",
+        "pts": 12.3,
+        "epa": 6.06
+       }
+      ],
+      "epa": -12.14
+     },
+     {
+      "rid": 3,
+      "name": "Jake",
+      "won": false,
+      "act": 138.09,
+      "rumbles": 5,
+      "vs_field": 5,
+      "season_rumbles": 87,
+      "w": 5,
+      "l": 7,
+      "players": [
+       {
+        "pos": "QB",
+        "name": "Caleb Williams",
+        "pts": 23.21,
+        "epa": 3.5
+       },
+       {
+        "pos": "RB",
+        "name": "Jaylen Warren",
+        "pts": 15.3,
+        "epa": 0.54
+       },
+       {
+        "pos": "RB",
+        "name": "Zonovan Knight",
+        "pts": 12.7,
+        "epa": -4.01
+       },
+       {
+        "pos": "TE",
+        "name": "Kyle Pitts Sr.",
+        "pts": 5.0,
+        "epa": -9.85
+       },
+       {
+        "pos": "WR",
+        "name": "Tetairoa McMillan",
+        "pts": 11.5,
+        "epa": -4.55
+       },
+       {
+        "pos": "WR",
+        "name": "Puka Nacua",
+        "pts": 19.2,
+        "epa": 3.27
+       },
+       {
+        "pos": "WR",
+        "name": "Rome Odunze",
+        "pts": 9.8,
+        "epa": 0.44
+       },
+       {
+        "pos": "QB",
+        "name": "Lamar Jackson",
+        "pts": 7.87,
+        "epa": -1.93
+       },
+       {
+        "pos": "K",
+        "name": "Jason Myers",
+        "pts": 14.3,
+        "epa": 1.84
+       },
+       {
+        "pos": "DEF",
+        "name": "Cleveland Browns",
+        "pts": 19.21,
+        "epa": 28.59
+       }
+      ],
+      "epa": 17.84
+     }
+    ]
+   }
   },
   {
    "id": "smallest-margin-of-rumble-win-victory",
@@ -2845,7 +3462,161 @@
       "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=7.9.6&season=2025"
      }
     }
-   ]
+   ],
+   "cards": {
+    "season": 2026,
+    "week": 2,
+    "teams": [
+     {
+      "rid": 12,
+      "name": "Stephanie",
+      "won": true,
+      "act": 218.54,
+      "rumbles": 19,
+      "vs_field": 10,
+      "season_rumbles": 19,
+      "w": 1,
+      "l": 1,
+      "players": [
+       {
+        "pos": "RB",
+        "name": "D'Andre Swift",
+        "pts": 15.4,
+        "epa": -4.26
+       },
+       {
+        "pos": "RB",
+        "name": "Christian McCaffrey",
+        "pts": 24.6,
+        "epa": 4.94
+       },
+       {
+        "pos": "TE",
+        "name": "Dalton Schultz",
+        "pts": 29.0,
+        "epa": 7.49
+       },
+       {
+        "pos": "RB",
+        "name": "Aaron Jones Sr.",
+        "pts": 12.0,
+        "epa": -2.35
+       },
+       {
+        "pos": "WR",
+        "name": "Jaylen Waddle",
+        "pts": 24.8,
+        "epa": 8.75
+       },
+       {
+        "pos": "WR",
+        "name": "Ja'Marr Chase",
+        "pts": 27.0,
+        "epa": 3.89
+       },
+       {
+        "pos": "QB",
+        "name": "Bryce Young",
+        "pts": 25.58,
+        "epa": 12.15
+       },
+       {
+        "pos": "QB",
+        "name": "Jared Goff",
+        "pts": 30.78,
+        "epa": 16.42
+       },
+       {
+        "pos": "K",
+        "name": "Eddy Pineiro",
+        "pts": 5.0,
+        "epa": 0.34
+       },
+       {
+        "pos": "DEF",
+        "name": "New England Patriots",
+        "pts": 24.38,
+        "epa": 23.83
+       }
+      ],
+      "epa": 71.21
+     },
+     {
+      "rid": 3,
+      "name": "Jake",
+      "won": false,
+      "act": 71.59,
+      "rumbles": 0,
+      "vs_field": 0,
+      "season_rumbles": 7,
+      "w": 0,
+      "l": 2,
+      "players": [
+       {
+        "pos": "RB",
+        "name": "Travis Etienne Jr.",
+        "pts": 7.6,
+        "epa": -0.07
+       },
+       {
+        "pos": "RB",
+        "name": "Javonte Williams",
+        "pts": 8.0,
+        "epa": -3.5
+       },
+       {
+        "pos": "TE",
+        "name": "Colston Loveland",
+        "pts": 1.3,
+        "epa": -1.51
+       },
+       {
+        "pos": "TE",
+        "name": "Colby Parkinson",
+        "pts": 4.0,
+        "epa": 1.42
+       },
+       {
+        "pos": "WR",
+        "name": "Jalen Coker",
+        "pts": 18.06,
+        "epa": 1.7
+       },
+       {
+        "pos": "WR",
+        "name": "Jayden Reed",
+        "pts": 1.4,
+        "epa": -0.1
+       },
+       {
+        "pos": "QB",
+        "name": "Drake Maye",
+        "pts": 8.67,
+        "epa": 0.52
+       },
+       {
+        "pos": "QB",
+        "name": "Trevor Lawrence",
+        "pts": 7.46,
+        "epa": -3.73
+       },
+       {
+        "pos": "K",
+        "name": "Tyler Loop",
+        "pts": 5.9,
+        "epa": -1.42
+       },
+       {
+        "pos": "DEF",
+        "name": "San Francisco 49ers",
+        "pts": 9.2,
+        "epa": 0.06
+       }
+      ],
+      "epa": -6.64
+     }
+    ]
+   }
   },
   {
    "id": "fewest-points-in-a-win",
@@ -3040,7 +3811,161 @@
      }
     }
    ],
-   "verified": true
+   "verified": true,
+   "cards": {
+    "season": 2025,
+    "week": 6,
+    "teams": [
+     {
+      "rid": 6,
+      "name": "Alex",
+      "won": false,
+      "act": 188.25,
+      "rumbles": 8,
+      "vs_field": 8,
+      "season_rumbles": 48,
+      "w": 3,
+      "l": 3,
+      "players": [
+       {
+        "pos": "QB",
+        "name": "Justin Fields",
+        "pts": 3.25,
+        "epa": -19.89
+       },
+       {
+        "pos": "RB",
+        "name": "TreVeyon Henderson",
+        "pts": 5.1,
+        "epa": -1.35
+       },
+       {
+        "pos": "RB",
+        "name": "Rico Dowdle",
+        "pts": 39.4,
+        "epa": 8.91
+       },
+       {
+        "pos": "TE",
+        "name": "Sam LaPorta",
+        "pts": 17.5,
+        "epa": 5.1
+       },
+       {
+        "pos": "RB",
+        "name": "Ashton Jeanty",
+        "pts": 18.1,
+        "epa": -5.02
+       },
+       {
+        "pos": "WR",
+        "name": "Brian Thomas Jr.",
+        "pts": 25.0,
+        "epa": 4.58
+       },
+       {
+        "pos": "WR",
+        "name": "Drake London",
+        "pts": 34.8,
+        "epa": 4.48
+       },
+       {
+        "pos": "QB",
+        "name": "Daniel Jones",
+        "pts": 24.83,
+        "epa": 5.65
+       },
+       {
+        "pos": "K",
+        "name": "Tyler Loop",
+        "pts": 3.7,
+        "epa": 0.49
+       },
+       {
+        "pos": "DEF",
+        "name": "Las Vegas Raiders",
+        "pts": 16.57,
+        "epa": 17.84
+       }
+      ],
+      "epa": 20.8
+     },
+     {
+      "rid": 7,
+      "name": "Steven",
+      "won": true,
+      "act": 200.11,
+      "rumbles": 18,
+      "vs_field": 9,
+      "season_rumbles": 77,
+      "w": 4,
+      "l": 2,
+      "players": [
+       {
+        "pos": "QB",
+        "name": "Matthew Stafford",
+        "pts": 10.14,
+        "epa": -1.16
+       },
+       {
+        "pos": "RB",
+        "name": "James Cook III",
+        "pts": 11.2,
+        "epa": 1.9
+       },
+       {
+        "pos": "RB",
+        "name": "Bijan Robinson",
+        "pts": 38.8,
+        "epa": 7.72
+       },
+       {
+        "pos": "TE",
+        "name": "Trey McBride",
+        "pts": 22.7,
+        "epa": 3.23
+       },
+       {
+        "pos": "WR",
+        "name": "Michael Pittman Jr.",
+        "pts": 5.0,
+        "epa": 1.41
+       },
+       {
+        "pos": "WR",
+        "name": "George Pickens",
+        "pts": 34.8,
+        "epa": 16.73
+       },
+       {
+        "pos": "WR",
+        "name": "Jaxon Smith-Njigba",
+        "pts": 31.7,
+        "epa": 8.15
+       },
+       {
+        "pos": "QB",
+        "name": "Patrick Mahomes",
+        "pts": 33.23,
+        "epa": 14.05
+       },
+       {
+        "pos": "K",
+        "name": "Harrison Butker",
+        "pts": 5.97,
+        "epa": -0.5
+       },
+       {
+        "pos": "DEF",
+        "name": "Los Angeles Chargers",
+        "pts": 6.57,
+        "epa": -5.1
+       }
+      ],
+      "epa": 46.43
+     }
+    ]
+   }
   },
   {
    "id": "highest-scoring-week-league",
@@ -3436,7 +4361,13 @@
    "team": "Jazz Hands Team",
    "notes": [],
    "evidence": [],
-   "replay": null,
+   "replay": {
+    "season": 2024,
+    "week": 17,
+    "rid": 6,
+    "opp_rid": 10,
+    "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=17.6.10&season=2024"
+   },
    "previous": null,
    "ties": [],
    "locked": false,
@@ -3446,7 +4377,161 @@
    "needs_definition": null,
    "definition": null,
    "engine_gap": "Needs NFL kickoff times.",
-   "updated": "2026-11-02"
+   "updated": "2026-11-02",
+   "cards": {
+    "season": 2024,
+    "week": 17,
+    "teams": [
+     {
+      "rid": 6,
+      "name": "Alex",
+      "won": true,
+      "act": 186.61,
+      "rumbles": 17,
+      "vs_field": 8,
+      "season_rumbles": 184,
+      "w": 10,
+      "l": 5,
+      "players": [
+       {
+        "pos": "QB",
+        "name": "Drake Maye",
+        "pts": 8.88,
+        "epa": -18.65
+       },
+       {
+        "pos": "RB",
+        "name": "De'Von Achane",
+        "pts": 5.8,
+        "epa": -7.19
+       },
+       {
+        "pos": "RB",
+        "name": "Josh Jacobs",
+        "pts": 10.9,
+        "epa": -4.7
+       },
+       {
+        "pos": "WR",
+        "name": "Puka Nacua",
+        "pts": 22.9,
+        "epa": 4.83
+       },
+       {
+        "pos": "WR",
+        "name": "Ladd McConkey",
+        "pts": 29.4,
+        "epa": 5.87
+       },
+       {
+        "pos": "TE",
+        "name": "Trey McBride",
+        "pts": 30.3,
+        "epa": 3.46
+       },
+       {
+        "pos": "WR",
+        "name": "Mike Evans",
+        "pts": 29.7,
+        "epa": 7.95
+       },
+       {
+        "pos": "QB",
+        "name": "Bryce Young",
+        "pts": 14.67,
+        "epa": -1.41
+       },
+       {
+        "pos": "K",
+        "name": "Cameron Dicker",
+        "pts": 18.4,
+        "epa": 1.77
+       },
+       {
+        "pos": "DEF",
+        "name": "Miami Dolphins",
+        "pts": 15.66,
+        "epa": 27.74
+       }
+      ],
+      "epa": 19.66
+     },
+     {
+      "rid": 10,
+      "name": "Ryan",
+      "won": false,
+      "act": 150.48,
+      "rumbles": 5,
+      "vs_field": 5,
+      "season_rumbles": 72,
+      "w": 4,
+      "l": 11,
+      "players": [
+       {
+        "pos": "QB",
+        "name": "C.J. Stroud",
+        "pts": 4.85,
+        "epa": -18.71
+       },
+       {
+        "pos": "RB",
+        "name": "Ameer Abdullah",
+        "pts": 17.7,
+        "epa": 7.46
+       },
+       {
+        "pos": "RB",
+        "name": "Breece Hall",
+        "pts": 6.3,
+        "epa": 0.01
+       },
+       {
+        "pos": "WR",
+        "name": "Jordan Addison",
+        "pts": 18.9,
+        "epa": 3.55
+       },
+       {
+        "pos": "WR",
+        "name": "Courtland Sutton",
+        "pts": 16.5,
+        "epa": 0.22
+       },
+       {
+        "pos": "TE",
+        "name": "Travis Kelce",
+        "pts": 22.4,
+        "epa": 3.28
+       },
+       {
+        "pos": "TE",
+        "name": "Brock Bowers",
+        "pts": 14.6,
+        "epa": 5.21
+       },
+       {
+        "pos": "QB",
+        "name": "Justin Herbert",
+        "pts": 24.44,
+        "epa": 22.26
+       },
+       {
+        "pos": "K",
+        "name": "Jake Elliott",
+        "pts": 11.1,
+        "epa": 0.58
+       },
+       {
+        "pos": "DEF",
+        "name": "Las Vegas Raiders",
+        "pts": 13.69,
+        "epa": 14.85
+       }
+      ],
+      "epa": 38.72
+     }
+    ]
+   }
   },
   {
    "id": "highest-projected-point-total",
@@ -3618,10 +4703,14 @@
    "league_level": false,
    "team": "King Haan",
    "notes": [],
-   "evidence": [
-    "https://imgur.com/a/h1xHu7o"
-   ],
-   "replay": null,
+   "evidence": [],
+   "replay": {
+    "season": 2021,
+    "week": 6,
+    "rid": 4,
+    "opp_rid": 9,
+    "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=6.4.9&season=2021"
+   },
    "previous": null,
    "ties": [],
    "locked": false,
@@ -3631,7 +4720,164 @@
    "needs_definition": null,
    "definition": null,
    "engine_gap": "Candidate for Rumble Central wp_timeline.",
-   "updated": "2026-11-02"
+   "updated": "2026-11-02",
+   "cards": {
+    "season": 2021,
+    "week": 6,
+    "teams": [
+     {
+      "rid": 4,
+      "name": "Haan",
+      "won": true,
+      "act": 150.07,
+      "rumbles": 17,
+      "vs_field": 8,
+      "season_rumbles": 66,
+      "w": 3,
+      "l": 3,
+      "players": [
+       {
+        "pos": "QB",
+        "name": "Josh Allen",
+        "pts": 27.22,
+        "epa": 8.79
+       },
+       {
+        "pos": "RB",
+        "name": "Derrick Henry",
+        "pts": 33.85,
+        "epa": 4.22
+       },
+       {
+        "pos": "RB",
+        "name": "Alex Collins",
+        "pts": 15.8,
+        "epa": 1.47
+       },
+       {
+        "pos": "WR",
+        "name": "Terry McLaurin",
+        "pts": 3.8,
+        "epa": -1.53
+       },
+       {
+        "pos": "WR",
+        "name": "Stefon Diggs",
+        "pts": 18.15,
+        "epa": 9.73
+       },
+       {
+        "pos": "TE",
+        "name": "Mike Gesicki",
+        "pts": 14.25,
+        "epa": 5.2
+       },
+       {
+        "pos": "WR",
+        "name": "Marquise Brown",
+        "pts": 3.5,
+        "epa": 0.67
+       },
+       {
+        "pos": "WR",
+        "name": "Laviska Shenault",
+        "pts": 7.4,
+        "epa": 1.34
+       },
+       {
+        "pos": "K",
+        "name": "Justin Tucker",
+        "pts": 13.1,
+        "epa": 2.95
+       },
+       {
+        "pos": "DEF",
+        "name": "Dallas Cowboys",
+        "pts": 13.0,
+        "epa": 0.63
+       }
+      ],
+      "epa": 33.48
+     },
+     {
+      "rid": 9,
+      "name": "Tommy",
+      "won": false,
+      "act": 123.4,
+      "rumbles": 3,
+      "vs_field": 3,
+      "season_rumbles": 28,
+      "w": 1,
+      "l": 5,
+      "players": [
+       {
+        "pos": "QB",
+        "name": "Dak Prescott",
+        "pts": 26.8,
+        "epa": 16.64
+       },
+       {
+        "pos": "RB",
+        "name": "Austin Ekeler",
+        "pts": 7.0,
+        "epa": -6.19
+       },
+       {
+        "pos": "RB",
+        "name": "Antonio Gibson",
+        "pts": 2.4,
+        "epa": -5.54
+       },
+       {
+        "pos": "WR",
+        "name": "Marvin Jones",
+        "pts": 18.75,
+        "epa": 8.53
+       },
+       {
+        "pos": "WR",
+        "name": "Odell Beckham Jr.",
+        "pts": 9.9,
+        "epa": 2.18
+       },
+       {
+        "pos": "TE",
+        "name": "Tyler Higbee",
+        "pts": 4.6,
+        "epa": 3.88
+       },
+       {
+        "pos": "RB",
+        "name": "Devontae Booker",
+        "pts": 7.9,
+        "epa": -4.7
+       },
+       {
+        "pos": "WR",
+        "name": "CeeDee Lamb",
+        "pts": 30.85,
+        "epa": 12.7
+       },
+       {
+        "pos": "K",
+        "name": "Harrison Butker",
+        "pts": 9.2,
+        "epa": 2.19
+       },
+       {
+        "pos": "DEF",
+        "name": "Tampa Bay Buccaneers",
+        "pts": 6.0,
+        "epa": -1.01
+       }
+      ],
+      "epa": 28.67
+     }
+    ]
+   },
+   "legacy_evidence": [
+    "https://imgur.com/a/h1xHu7o"
+   ]
   },
   {
    "id": "most-shotguns-in-a-season-league",
