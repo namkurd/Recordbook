@@ -163,7 +163,7 @@ aside.drawer.wide{width:min(780px,100%)}
 .rc-rum small{font-size:10.5px;color:var(--muted);white-space:nowrap}
 .rc-id{min-width:0}
 .rc-id b{font-size:15px}
-.rc-id small{display:block;font-size:11.5px;color:var(--muted)}
+.rc-id small{display:block;font-size:11.5px;color:var(--muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .rc-win{display:inline-block;margin-left:5px;font-size:9.5px;font-weight:800;letter-spacing:.05em;color:var(--accent-ink);background:var(--accent);border-radius:4px;padding:0 5px;vertical-align:1px}
 .rc-tot b{font-size:22px;font-weight:800;font-variant-numeric:tabular-nums}
 .rtab{width:100%;border-collapse:collapse;font-size:12.5px}
@@ -450,7 +450,7 @@ function rec(id){return S.recs.filter(function(r){return r.id===id})[0]}
 function detailHTML(x){return'<div class="fcards">'+x.blocks.map(function(b,i){return'<div class="fcard'+(b.chip?" win":"")+(x.blocks.length===1?" one":"")+'"><div class="fc-h">'+esc(b.head)+(b.chip?'<span class="fc-chip">'+esc(b.chip)+"</span>":"")+"</div><dl>"+b.rows.map(function(r){return"<dt>"+esc(r[0])+"</dt><dd>"+esc(r[1])+"</dd>"}).join("")+"</dl></div>"}).join("")+"</div>"}
 function cardHTML(c){
   var rows=c.players.map(function(p){return'<tr><td class="rn"><span class="pos pos-'+esc(p.pos)+'">'+esc(p.pos)+'</span><span class="nm" title="'+esc(p.name)+'">'+esc(p.name)+'</span></td><td>'+p.pts.toFixed(2)+"</td></tr>"}).join("");
-  return'<div class="rcard'+(c.won?" win":"")+'"><div class="rc-h"><div class="rc-rum" title="Rumbles earned that week"><b>'+c.rumbles+"</b><small>vs. Field "+c.vs_field+'</small></div><div class="rc-id"><b>'+esc(c.name)+"</b>"+(c.won?'<span class="rc-win">WINNER</span>':"")+"<small>season "+c.season_rumbles+" · H2H "+c.w+"-"+c.l+'</small></div><div class="rc-tot"><b>'+c.act.toFixed(2)+"</b></div></div>"+
+  return'<div class="rcard'+(c.won?" win":"")+'"><div class="rc-h"><div class="rc-rum" title="Rumbles earned that week"><b>'+c.rumbles+"</b><small>vs. Field "+c.vs_field+'</small></div><div class="rc-id"><b>'+esc(c.name)+"</b>"+(c.won?'<span class="rc-win">WINNER</span>':"")+(c.team?"<small>"+esc(c.team)+"</small>":"")+"<small>season "+c.season_rumbles+" · H2H "+c.w+"-"+c.l+'</small></div><div class="rc-tot"><b>'+c.act.toFixed(2)+"</b></div></div>"+
    '<table class="rtab"><thead><tr><th></th><th>Pts</th></tr></thead><tbody>'+rows+'</tbody><tfoot><tr><td class="rn">Starters</td><td>'+c.act.toFixed(2)+"</td></tr></tfoot></table></div>"}
 
 var lastFocus=null;

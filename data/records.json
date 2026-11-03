@@ -1186,7 +1186,7 @@
     "Haan"
    ],
    "league_level": false,
-   "team": "",
+   "team": "The Kiran Tor",
    "notes": [],
    "evidence": [],
    "replay": null,
@@ -1250,7 +1250,7 @@
     "Haan"
    ],
    "league_level": false,
-   "team": "",
+   "team": "The Kiran Tor",
    "notes": [],
    "evidence": [],
    "replay": null,
@@ -1314,7 +1314,7 @@
     "Ankit"
    ],
    "league_level": false,
-   "team": "",
+   "team": "Fields of Dreams",
    "notes": [],
    "evidence": [],
    "replay": null,
@@ -1378,7 +1378,7 @@
     "Haan"
    ],
    "league_level": false,
-   "team": "",
+   "team": "The Kiran Tor",
    "notes": [],
    "evidence": [],
    "replay": null,
@@ -2432,7 +2432,7 @@
     "Tommy"
    ],
    "league_level": false,
-   "team": "",
+   "team": "To Be Or Not To Be…Back",
    "notes": [],
    "evidence": [],
    "replay": null,
@@ -3297,6 +3297,7 @@
      {
       "rid": 5,
       "name": "Joe",
+      "team": "Beats By Blay 🎧🏆🎧",
       "won": true,
       "act": 243.51,
       "rumbles": 18,
@@ -3360,6 +3361,7 @@
      {
       "rid": 3,
       "name": "Jake",
+      "team": "Ladds, it's the DTF club",
       "won": false,
       "act": 128.65,
       "rumbles": 3,
@@ -3443,7 +3445,7 @@
     "Ryan"
    ],
    "league_level": false,
-   "team": "",
+   "team": "Winners At War",
    "notes": [],
    "evidence": [],
    "replay": {
@@ -3533,6 +3535,7 @@
      {
       "rid": 10,
       "name": "Ryan",
+      "team": "Winners At War",
       "won": true,
       "act": 203.65,
       "rumbles": 18,
@@ -3596,6 +3599,7 @@
      {
       "rid": 5,
       "name": "Joe",
+      "team": "Lamport’s Revenge",
       "won": false,
       "act": 101.4,
       "rumbles": 3,
@@ -3860,7 +3864,7 @@
     "Jake"
    ],
    "league_level": false,
-   "team": "",
+   "team": "We are TuAnon (Expect Us)",
    "notes": [],
    "evidence": [],
    "replay": {
@@ -4002,6 +4006,7 @@
      {
       "rid": 3,
       "name": "Jake",
+      "team": "We are TuAnon (Expect Us)",
       "won": false,
       "act": 130.96,
       "rumbles": 6,
@@ -4065,6 +4070,7 @@
      {
       "rid": 5,
       "name": "Joe",
+      "team": "The Liberal Elite",
       "won": true,
       "act": 156.95,
       "rumbles": 17,
@@ -4235,6 +4241,7 @@
      {
       "rid": 12,
       "name": "Stephanie",
+      "team": "The Lady Greyhounds",
       "won": true,
       "act": 218.54,
       "rumbles": 19,
@@ -4298,6 +4305,7 @@
      {
       "rid": 3,
       "name": "Jake",
+      "team": "12 Teams 1 Cup",
       "won": false,
       "act": 71.59,
       "rumbles": 0,
@@ -4469,6 +4477,7 @@
      {
       "rid": 8,
       "name": "Ankit",
+      "team": "Run CMC^3",
       "won": true,
       "act": 138.15,
       "rumbles": 15,
@@ -4532,6 +4541,7 @@
      {
       "rid": 3,
       "name": "Jake",
+      "team": "Ladds, it's the DTF club",
       "won": false,
       "act": 138.09,
       "rumbles": 5,
@@ -4640,7 +4650,7 @@
     "Stephanie"
    ],
    "league_level": false,
-   "team": "",
+   "team": "The Lady Greyhounds",
    "notes": [
     "203.36 vs 77.04"
    ],
@@ -4740,6 +4750,7 @@
      {
       "rid": 12,
       "name": "Stephanie",
+      "team": "The Lady Greyhounds",
       "won": true,
       "act": 218.54,
       "rumbles": 19,
@@ -4803,6 +4814,7 @@
      {
       "rid": 3,
       "name": "Jake",
+      "team": "12 Teams 1 Cup",
       "won": false,
       "act": 71.59,
       "rumbles": 0,
@@ -5067,6 +5079,7 @@
      {
       "rid": 6,
       "name": "Alex",
+      "team": "The Double Dippers",
       "won": false,
       "act": 188.25,
       "rumbles": 8,
@@ -5130,6 +5143,7 @@
      {
       "rid": 7,
       "name": "Steven",
+      "team": "No Country For Old Men",
       "won": true,
       "act": 200.11,
       "rumbles": 18,
@@ -5584,7 +5598,7 @@
     "Ryan"
    ],
    "league_level": false,
-   "team": "",
+   "team": "Mixed Lamb Rogan Josh",
    "notes": [],
    "evidence": [],
    "replay": {
@@ -5620,6 +5634,7 @@
      {
       "rid": 10,
       "name": "Ryan",
+      "team": "Mixed Lamb Rogan Josh",
       "won": true,
       "act": 164.68,
       "rumbles": 18,
@@ -5683,6 +5698,7 @@
      {
       "rid": 7,
       "name": "Steven",
+      "team": "The Goodell Boys Club",
       "won": false,
       "act": 153.3,
       "rumbles": 7,
@@ -5824,7 +5840,7 @@
     "Steven"
    ],
    "league_level": false,
-   "team": "",
+   "team": "No Country For Old Men",
    "notes": [],
    "evidence": [],
    "replay": {
@@ -5915,6 +5931,7 @@
      {
       "rid": 7,
       "name": "Steven",
+      "team": "No Country For Old Men",
       "won": true,
       "act": 176.34,
       "rumbles": 17,
@@ -5978,6 +5995,7 @@
      {
       "rid": 5,
       "name": "Joe",
+      "team": "Beats By Blay 🎧🏆🎧",
       "won": false,
       "act": 154.33,
       "rumbles": 5,
@@ -6056,7 +6074,7 @@
     "Joe"
    ],
    "league_level": false,
-   "team": "",
+   "team": "Beats By Blay 🎧🏆🎧",
    "notes": [],
    "evidence": [],
    "replay": {
@@ -6147,6 +6165,7 @@
      {
       "rid": 5,
       "name": "Joe",
+      "team": "Beats By Blay 🎧🏆🎧",
       "won": false,
       "act": 154.33,
       "rumbles": 5,
@@ -6210,6 +6229,7 @@
      {
       "rid": 7,
       "name": "Steven",
+      "team": "No Country For Old Men",
       "won": true,
       "act": 176.34,
       "rumbles": 17,
@@ -6380,6 +6400,7 @@
      {
       "rid": 2,
       "name": "Ben",
+      "team": "Maison Champ Ernaud",
       "won": true,
       "act": 97.46,
       "rumbles": 11,
@@ -6443,6 +6464,7 @@
      {
       "rid": 5,
       "name": "Joe",
+      "team": "The Wins of Winter",
       "won": false,
       "act": 91.72,
       "rumbles": 0,
@@ -6521,7 +6543,7 @@
     "Ben"
    ],
    "league_level": false,
-   "team": "",
+   "team": "Maison Champ Ernaud",
    "notes": [],
    "evidence": [],
    "replay": {
@@ -6612,6 +6634,7 @@
      {
       "rid": 2,
       "name": "Ben",
+      "team": "Maison Champ Ernaud",
       "won": true,
       "act": 97.46,
       "rumbles": 11,
@@ -6675,6 +6698,7 @@
      {
       "rid": 5,
       "name": "Joe",
+      "team": "The Wins of Winter",
       "won": false,
       "act": 91.72,
       "rumbles": 0,
@@ -6753,7 +6777,7 @@
     "Joe"
    ],
    "league_level": false,
-   "team": "",
+   "team": "Beats By Blay 🎧🏆🎧",
    "notes": [],
    "evidence": [],
    "replay": {
@@ -6844,6 +6868,7 @@
      {
       "rid": 5,
       "name": "Joe",
+      "team": "Beats By Blay 🎧🏆🎧",
       "won": true,
       "act": 243.51,
       "rumbles": 18,
@@ -6907,6 +6932,7 @@
      {
       "rid": 3,
       "name": "Jake",
+      "team": "Ladds, it's the DTF club",
       "won": false,
       "act": 128.65,
       "rumbles": 3,
@@ -6985,7 +7011,7 @@
     "Aidan"
    ],
    "league_level": false,
-   "team": "",
+   "team": "Smashnose Offense",
    "notes": [],
    "evidence": [],
    "replay": {
@@ -7076,6 +7102,7 @@
      {
       "rid": 1,
       "name": "Aidan",
+      "team": "Smashnose Offense",
       "won": false,
       "act": 53.28,
       "rumbles": 0,
@@ -7139,6 +7166,7 @@
      {
       "rid": 2,
       "name": "Ben",
+      "team": "No Endz No Winz",
       "won": true,
       "act": 137.21,
       "rumbles": 15,
@@ -7217,7 +7245,7 @@
     "Ankit"
    ],
    "league_level": false,
-   "team": "",
+   "team": "Fields of Dreams",
    "notes": [],
    "evidence": [],
    "replay": {
@@ -7308,6 +7336,7 @@
      {
       "rid": 8,
       "name": "Ankit",
+      "team": "Fields of Dreams",
       "won": true,
       "act": 135.78,
       "rumbles": 15,
@@ -7371,6 +7400,7 @@
      {
       "rid": 7,
       "name": "Steven",
+      "team": "Goodell Boys Club (HIM)",
       "won": false,
       "act": 123.11,
       "rumbles": 5,
@@ -7449,7 +7479,7 @@
     "Haan"
    ],
    "league_level": false,
-   "team": "",
+   "team": "King Haan",
    "notes": [],
    "evidence": [],
    "replay": {
@@ -7540,6 +7570,7 @@
      {
       "rid": 4,
       "name": "Haan",
+      "team": "King Haan",
       "won": true,
       "act": 150.07,
       "rumbles": 17,
@@ -7603,6 +7634,7 @@
      {
       "rid": 9,
       "name": "Tommy",
+      "team": "Austin's Powers",
       "won": false,
       "act": 123.4,
       "rumbles": 3,
@@ -7681,7 +7713,7 @@
     "Steven"
    ],
    "league_level": false,
-   "team": "",
+   "team": "No Country For Old Men",
    "notes": [],
    "evidence": [],
    "replay": {
@@ -7781,6 +7813,7 @@
      {
       "rid": 7,
       "name": "Steven",
+      "team": "No Country For Old Men",
       "won": true,
       "act": 227.38,
       "rumbles": 18,
@@ -7844,6 +7877,7 @@
      {
       "rid": 9,
       "name": "Christian",
+      "team": "Spider 3 Y Banana",
       "won": false,
       "act": 131.85,
       "rumbles": 4,
@@ -7922,7 +7956,7 @@
     "Ryan"
    ],
    "league_level": false,
-   "team": "",
+   "team": "Winners At War",
    "notes": [
     "#2: 154.51 Week 5 2022 Joe Wins of Winter",
     "#3: 141.2 Week 13 2021 Ankit The Leviathan"
@@ -8025,6 +8059,7 @@
      {
       "rid": 10,
       "name": "Ryan",
+      "team": "Winners At War",
       "won": false,
       "act": 123.77,
       "rumbles": 4,
@@ -8088,6 +8123,7 @@
      {
       "rid": 2,
       "name": "Ben",
+      "team": "No Endz No Winz",
       "won": true,
       "act": 138.97,
       "rumbles": 18,
@@ -8279,6 +8315,7 @@
      {
       "rid": 3,
       "name": "Jake",
+      "team": "We are TuAnon (Expect Us)",
       "won": true,
       "act": 123.58,
       "rumbles": 14,
@@ -8342,6 +8379,7 @@
      {
       "rid": 10,
       "name": "Ryan",
+      "team": "Former & Future GOAT",
       "won": false,
       "act": 109.76,
       "rumbles": 3,
@@ -8602,6 +8640,7 @@
      {
       "rid": 4,
       "name": "Haan",
+      "team": "King Haan",
       "won": true,
       "act": 150.07,
       "rumbles": 17,
@@ -8665,6 +8704,7 @@
      {
       "rid": 9,
       "name": "Tommy",
+      "team": "Austin's Powers",
       "won": false,
       "act": 123.4,
       "rumbles": 3,
@@ -9137,7 +9177,7 @@
     "Aidan"
    ],
    "league_level": false,
-   "team": "",
+   "team": "Statisticly Insignificant",
    "notes": [],
    "evidence": [],
    "replay": null,
@@ -9250,7 +9290,7 @@
     "Aidan"
    ],
    "league_level": false,
-   "team": "",
+   "team": "Smashnose Offense",
    "notes": [],
    "evidence": [],
    "replay": null,
@@ -9363,7 +9403,7 @@
     "Ankit"
    ],
    "league_level": false,
-   "team": "",
+   "team": "Fields of Dreams",
    "notes": [],
    "evidence": [],
    "replay": null,
@@ -9476,7 +9516,7 @@
     "Steven"
    ],
    "league_level": false,
-   "team": "",
+   "team": "110 Week. Stop the Count.",
    "notes": [],
    "evidence": [],
    "replay": null,
@@ -9819,7 +9859,7 @@
     "Joe"
    ],
    "league_level": false,
-   "team": "",
+   "team": "Lamport’s Revenge",
    "notes": [],
    "evidence": [],
    "replay": null,
@@ -9948,7 +9988,7 @@
     "Aidan"
    ],
    "league_level": false,
-   "team": "",
+   "team": "Smashnose Offense",
    "notes": [],
    "evidence": [],
    "replay": null,
@@ -10076,7 +10116,7 @@
     "Ankit"
    ],
    "league_level": false,
-   "team": "",
+   "team": "Fields of Dreams",
    "notes": [],
    "evidence": [],
    "replay": null,
@@ -10189,7 +10229,7 @@
     "Ankit"
    ],
    "league_level": false,
-   "team": "",
+   "team": "Fields of Dreams",
    "notes": [],
    "evidence": [],
    "replay": null,
@@ -10302,7 +10342,7 @@
     "Ankit"
    ],
    "league_level": false,
-   "team": "",
+   "team": "Behenchode",
    "notes": [],
    "evidence": [],
    "replay": null,
@@ -10537,7 +10577,7 @@
     "Ankit"
    ],
    "league_level": false,
-   "team": "",
+   "team": "Fields of Dreams",
    "notes": [],
    "evidence": [],
    "replay": null,
@@ -10632,7 +10672,7 @@
     "Tommy"
    ],
    "league_level": false,
-   "team": "",
+   "team": "Austin's Powers",
    "notes": [],
    "evidence": [],
    "replay": null,
@@ -10727,7 +10767,7 @@
     "Ankit"
    ],
    "league_level": false,
-   "team": "",
+   "team": "Behenchode",
    "notes": [],
    "evidence": [],
    "replay": null,
@@ -10822,7 +10862,7 @@
     "Ankit"
    ],
    "league_level": false,
-   "team": "",
+   "team": "Behenchode",
    "notes": [],
    "evidence": [],
    "replay": null,
@@ -10917,7 +10957,7 @@
     "Steven"
    ],
    "league_level": false,
-   "team": "",
+   "team": "No Country For Old Men",
    "notes": [],
    "evidence": [],
    "replay": null,
@@ -11012,7 +11052,7 @@
     "Ankit"
    ],
    "league_level": false,
-   "team": "",
+   "team": "Behenchode",
    "notes": [],
    "evidence": [],
    "replay": null,
@@ -11076,7 +11116,7 @@
     "Ankit"
    ],
    "league_level": false,
-   "team": "",
+   "team": "Fields of Dreams",
    "notes": [],
    "evidence": [],
    "replay": null,
@@ -11140,7 +11180,7 @@
     "Haan"
    ],
    "league_level": false,
-   "team": "",
+   "team": "Let Haan Szimmer",
    "notes": [],
    "evidence": [],
    "replay": null,
@@ -11270,7 +11310,7 @@
     "Ankit"
    ],
    "league_level": false,
-   "team": "",
+   "team": "The Leviathan",
    "notes": [],
    "evidence": [],
    "replay": null,
@@ -11334,7 +11374,7 @@
     "Alex"
    ],
    "league_level": false,
-   "team": "",
+   "team": "The Double Dippers",
    "notes": [],
    "evidence": [],
    "replay": null,
@@ -11421,7 +11461,7 @@
     "Alex"
    ],
    "league_level": false,
-   "team": "",
+   "team": "The Double Dippers",
    "notes": [],
    "evidence": [],
    "replay": null,
@@ -11485,7 +11525,7 @@
     "Ankit"
    ],
    "league_level": false,
-   "team": "",
+   "team": "Fields of Dreams",
    "notes": [],
    "evidence": [],
    "replay": null,
@@ -11549,7 +11589,7 @@
     "Alex"
    ],
    "league_level": false,
-   "team": "",
+   "team": "Jazz Hands Team",
    "notes": [],
    "evidence": [],
    "replay": null,
@@ -11799,6 +11839,7 @@
      {
       "rid": 1,
       "name": "Aidan",
+      "team": "Neon Jennings Evansgelion",
       "won": false,
       "act": 132.0,
       "rumbles": 0,
@@ -11862,6 +11903,7 @@
      {
       "rid": 3,
       "name": "Jake",
+      "team": "Ladds, it's the DTF club",
       "won": true,
       "act": 160.78,
       "rumbles": 15,
@@ -11940,7 +11982,7 @@
     "Ankit"
    ],
    "league_level": false,
-   "team": "",
+   "team": "diviNg to pYl on",
    "notes": [],
    "evidence": [],
    "replay": {
@@ -12054,6 +12096,7 @@
      {
       "rid": 8,
       "name": "Ankit",
+      "team": "diviNg to pYl on",
       "won": false,
       "act": 171.82,
       "rumbles": 6,
@@ -12117,6 +12160,7 @@
      {
       "rid": 1,
       "name": "Aidan",
+      "team": "Weak Stream & Low TE",
       "won": true,
       "act": 174.5,
       "rumbles": 17,
@@ -12195,7 +12239,7 @@
     "Ankit"
    ],
    "league_level": false,
-   "team": "",
+   "team": "Fields of Dreams",
    "notes": [],
    "evidence": [],
    "replay": {
@@ -12286,6 +12330,7 @@
      {
       "rid": 8,
       "name": "Ankit",
+      "team": "Fields of Dreams",
       "won": false,
       "act": 116.74,
       "rumbles": 2,
@@ -12349,6 +12394,7 @@
      {
       "rid": 7,
       "name": "Steven",
+      "team": "Goodell Boys Club (HIM)",
       "won": true,
       "act": 135.75,
       "rumbles": 15,
@@ -12427,7 +12473,7 @@
     "Haan"
    ],
    "league_level": false,
-   "team": "",
+   "team": "They Not Vike Us",
    "notes": [],
    "evidence": [],
    "replay": null,
@@ -12557,7 +12603,7 @@
     "Haan"
    ],
    "league_level": false,
-   "team": "",
+   "team": "King Haan",
    "notes": [],
    "evidence": [],
    "replay": null,
@@ -12621,7 +12667,7 @@
     "Haan"
    ],
    "league_level": false,
-   "team": "",
+   "team": "The Kiran Tor",
    "notes": [],
    "evidence": [],
    "replay": null,
@@ -12685,7 +12731,7 @@
     "Jake"
    ],
    "league_level": false,
-   "team": "",
+   "team": "Ladds, it's the DTF club",
    "notes": [],
    "evidence": [],
    "replay": null,
@@ -12749,7 +12795,7 @@
     "Joe"
    ],
    "league_level": false,
-   "team": "",
+   "team": "TouchDune Messiah",
    "notes": [],
    "evidence": [],
    "replay": {
@@ -12863,6 +12909,7 @@
      {
       "rid": 5,
       "name": "Joe",
+      "team": "TouchDune Messiah",
       "won": false,
       "act": 93.35,
       "rumbles": 3,
@@ -12926,6 +12973,7 @@
      {
       "rid": 2,
       "name": "Ben",
+      "team": "Resident Evil 🏆🏆😵☠️⚰️🪦🧟‍♂️🏆",
       "won": true,
       "act": 179.42,
       "rumbles": 18,
@@ -13004,7 +13052,7 @@
     "Tommy"
    ],
    "league_level": false,
-   "team": "",
+   "team": "To Be Or Not To Be…Back",
    "notes": [],
    "evidence": [],
    "replay": null,
@@ -13202,7 +13250,7 @@
     "Aidan"
    ],
    "league_level": false,
-   "team": "",
+   "team": "Smashnose Offense",
    "notes": [],
    "evidence": [],
    "replay": null,
@@ -13331,7 +13379,7 @@
     "Jake"
    ],
    "league_level": false,
-   "team": "",
+   "team": "Mike Davis' Quads",
    "notes": [],
    "evidence": [],
    "replay": null,
@@ -13426,7 +13474,7 @@
     "Kaitlyn"
    ],
    "league_level": false,
-   "team": "",
+   "team": "All-in on Allen",
    "notes": [],
    "evidence": [],
    "replay": null,
@@ -13521,7 +13569,7 @@
     "Jake"
    ],
    "league_level": false,
-   "team": "",
+   "team": "Mike Davis' Quads",
    "notes": [],
    "evidence": [],
    "replay": null,
@@ -13902,7 +13950,7 @@
     "Jake"
    ],
    "league_level": false,
-   "team": "",
+   "team": "Mike Davis' Quads",
    "notes": [],
    "evidence": [],
    "replay": null,
@@ -14092,7 +14140,7 @@
     "Steven"
    ],
    "league_level": false,
-   "team": "",
+   "team": "The State",
    "notes": [],
    "evidence": [],
    "replay": null,

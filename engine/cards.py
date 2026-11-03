@@ -29,7 +29,7 @@ def card(d, season, week, rid):
         nm, pos = e["names"].get(str(pid), [str(pid), ""])
         players.append({"pos": pos, "name": nm, "pts": pts})
     prior = [x for x in d.reg if x["season"] == season and x["rid"] == rid and x["week"] <= min(week, max(y["week"] for y in d.reg if y["season"] == season))]
-    return {"rid": rid, "name": g["m"], "won": bool(g["win"]), "act": g["pts"], "rumbles": g["rumbles"], "vs_field": g["outscored"],
+    return {"rid": rid, "name": g["m"], "team": (getattr(d, "teams", {}).get(season, {}) or {}).get(g["m"], ""), "won": bool(g["win"]), "act": g["pts"], "rumbles": g["rumbles"], "vs_field": g["outscored"],
             "season_rumbles": sum(x["rumbles"] for x in prior), "w": sum(1 for x in prior if x["win"]), "l": sum(1 for x in prior if not x["win"]),
             "players": players}
 

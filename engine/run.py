@@ -12,6 +12,7 @@ import market as MK
 import facts as F
 import moments as MO
 import extras as EX
+import teams as TM
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 RC_BASE = os.environ.get("RC_BASE", "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html")
@@ -69,6 +70,7 @@ now = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"
 
 def main():
     d = M.Data(load()); d.done_all = {int(y) for y in d.raw["seasons"] if int(y) < d.cur}
+    d.teams = TM.teams(d)
     LEDGER = SE.make(d)
     for k, fn in LEDGER.items(): M.REGISTRY[k] = (lambda f: (lambda _d: f()))(fn)
     for k, fn in MK.REG.items(): M.REGISTRY[k] = fn
@@ -151,6 +153,10 @@ def main():
                     t = {"holder": h, "when": when(m, c), "replay": replay(m, c, d.cur)}
                     r["ties"].append(t); known.add(h); known.update(c["holders"])
                     log.append({"ts": now, "record": r["id"], "name": r["name"], "cause": "auto:tie", "new": t, "note": "Tied the record."})
+    for r in doc["records"]:     # team name of a single-season, single-manager record (the sheet's own names are never overwritten)
+        ys = sorted({int(x) for x in re.findall(r"\b(20\d\d)\b", r.get("when") or "")})
+        if r.get("team") or r["locked"] or len(r["holders"]) != 1 or r["holders"][0] == "DTFClub" or len(ys) != 1 or ys[0] < 2021: continue
+        r["team"] = d.teams.get(ys[0], {}).get(r["holders"][0], "")
     n_cards = sum(1 for r in doc["records"] if CARDS.attach(d, r))
     print(n_cards, "record(s) with a Rumble Card")
     if not DRY:
