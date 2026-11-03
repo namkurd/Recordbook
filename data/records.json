@@ -252,13 +252,13 @@
     },
     {
      "value": "1",
-     "holder": "Alex",
+     "holder": "Ryan",
      "when": "2011",
      "replay": null
     },
     {
      "value": "1",
-     "holder": "Ryan",
+     "holder": "Alex",
      "when": "2011",
      "replay": null
     }
@@ -454,13 +454,13 @@
     },
     {
      "value": "3",
-     "holder": "Aidan",
+     "holder": "Haan",
      "when": "2016-2018",
      "replay": null
     },
     {
      "value": "3",
-     "holder": "Haan",
+     "holder": "Aidan",
      "when": "2016-2018",
      "replay": null
     }
@@ -1152,13 +1152,13 @@
     },
     {
      "value": "3",
-     "holder": "Aidan",
+     "holder": "Haan",
      "when": "2016-2018",
      "replay": null
     },
     {
      "value": "3",
-     "holder": "Haan",
+     "holder": "Aidan",
      "when": "2016-2018",
      "replay": null
     },
@@ -9970,7 +9970,7 @@
      "replay": null
     },
     {
-     "value": "+397.9 PAR",
+     "value": "+391.1 PAR",
      "holder": "Joe",
      "when": "32 trades, 2021-",
      "replay": null
@@ -10004,8 +10004,8 @@
    "source": "computed",
    "metric": "trader_worst",
    "direction": "min",
-   "value": "-169.1 PAR",
-   "value_num": -169.1,
+   "value": "-145.4 PAR",
+   "value_num": -145.4,
    "when": "10 trades, 2021-",
    "holder": "Christian",
    "holders": [
@@ -10025,30 +10025,30 @@
    "needs_definition": null,
    "engine_gap": null,
    "definition": "Total PAR lost across every trade a manager has made (at least 3 trades). Counts trades since 2021 (the first Sleeper season).",
-   "updated": "2026-11-02",
+   "updated": "2026-11-03",
    "leaderboard": [
     {
-     "value": "-169.1 PAR",
+     "value": "-145.4 PAR",
      "holder": "Christian",
      "when": "10 trades, 2021-",
      "replay": null
     },
     {
-     "value": "-104.4 PAR",
+     "value": "-99.3 PAR",
      "holder": "Ben",
      "when": "17 trades, 2021-",
      "replay": null
     },
     {
-     "value": "-77.0 PAR",
-     "holder": "Ankit",
-     "when": "18 trades, 2021-",
+     "value": "-78.4 PAR",
+     "holder": "Alex",
+     "when": "21 trades, 2021-",
      "replay": null
     },
     {
-     "value": "-70.1 PAR",
-     "holder": "Alex",
-     "when": "20 trades, 2021-",
+     "value": "-67.2 PAR",
+     "holder": "Ankit",
+     "when": "19 trades, 2021-",
      "replay": null
     },
     {
@@ -10957,9 +10957,9 @@
      "replay": null
     },
     {
-     "value": "2.52 PAR per $",
-     "holder": "Tommy — Tyler Lockett",
-     "when": "Week 2 - 2022",
+     "value": "2.81 PAR per $",
+     "holder": "Ryan — Kirk Cousins",
+     "when": "Week 2 - 2026",
      "replay": null
     }
    ],
@@ -11374,9 +11374,9 @@
      "replay": null
     },
     {
-     "value": "55.5 PAR",
-     "holder": "Ankit — New England Patriots",
-     "when": "Week 8 - 2021",
+     "value": "59.1 PAR",
+     "holder": "Jake — Kirk Cousins",
+     "when": "Week 1 - 2026",
      "replay": null
     }
    ],
@@ -12253,6 +12253,18 @@
      }
     },
     {
+     "value": "37.1 pts",
+     "holder": "Ankit",
+     "when": "Week 8 - 2026",
+     "replay": {
+      "season": 2026,
+      "week": 8,
+      "rid": 8,
+      "opp_rid": 3,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=8.8.3"
+     }
+    },
+    {
      "value": "36.4 pts",
      "holder": "Ryan",
      "when": "Week 4 - 2026",
@@ -12262,18 +12274,6 @@
       "rid": 10,
       "opp_rid": 8,
       "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=4.10.8"
-     }
-    },
-    {
-     "value": "32.1 pts",
-     "holder": "Haan",
-     "when": "Week 12 - 2024",
-     "replay": {
-      "season": 2024,
-      "week": 12,
-      "rid": 4,
-      "opp_rid": 1,
-      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=12.4.1&season=2024"
      }
     }
    ],
