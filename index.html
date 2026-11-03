@@ -129,6 +129,9 @@ ul.plain{list-style:none;padding:0;margin:0}
 ul.plain li{padding:6px 0;border-bottom:1px solid var(--line);font-size:13.5px}
 .btn{border:0;background:var(--accent);color:var(--accent-ink);padding:9px 16px;border-radius:8px;font-weight:600;min-height:38px;text-decoration:none;display:inline-block}
 .btn.sec{background:var(--surface2);color:var(--text)}
+.btn.danger{background:var(--bad);color:#fff}
+.btn.ghost{background:none;border:1px solid var(--bad);color:var(--bad)}
+.steps{margin:8px 0 0;padding-left:20px}.steps li{margin:7px 0;font-size:14px}.steps code{background:var(--surface2);padding:1px 6px;border-radius:5px;font-size:12.5px}
 form.edit label{display:block;font-size:11.5px;color:var(--muted);margin:10px 0 3px;text-transform:uppercase;letter-spacing:.05em}
 form.edit input[type=text],form.edit input[type=url],form.edit textarea,form.edit select{font:inherit;font-size:16px;color:var(--text);background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:8px 10px;width:100%}
 form.edit .two{display:grid;grid-template-columns:1fr 1fr;gap:10px}
@@ -412,10 +415,10 @@ function renderRecords(){
     h+='<section class="cat '+CATCLS[c]+(closed?" closed":"")+'"><h2 data-cat="'+esc(c)+'" tabindex="0" role="button" aria-expanded="'+!closed+'"><span class="car">▾</span>'+esc(c)+' <span class="n">'+rs.length+'</span></h2><div class="rows"><div class="colhd"><span>Record</span><span>Mark</span><span>Holder</span><span>When</span><span></span></div>'+rs.map(rowHTML).join("")+"</div></section>"});
   $("main").innerHTML=h;var ce=$("clrEmpty");if(ce)ce.onclick=clearAll}
 /* ---------- render change log ---------- */
-var CAUSE={"auto:break":"Record broken","auto:reconcile":"Corrected to Sleeper data","auto:tie":"Tied","auto:blocked":"Blocked by lock","seed:sheet":"Imported","manual:new":"Record broken (manual)","manual:correction":"Correction (manual)","manual:add":"Added (manual)"};
+var CAUSE={"auto:break":"Record broken","auto:reconcile":"Corrected to Sleeper data","auto:tie":"Tied","auto:blocked":"Blocked by lock","seed:sheet":"Imported","manual:new":"Record broken (manual)","manual:correction":"Correction (manual)","manual:add":"Added (manual)","manual:delete":"Deleted (manual)"};
 function chgHTML(e,showName){
   var nm=e.name?(showName?'<a href="?r='+esc(e.record)+'" data-open="'+esc(e.record)+'"><b>'+esc(e.name)+"</b></a><br>":""):"";
-  var body=e.old&&e.new?esc(e.old.value)+" ("+esc(e.old.holder)+') <span class="arrow">→</span> <b>'+esc(e.new.value)+"</b> ("+esc(e.new.holder)+", "+esc(e.new.when||"")+")":e.new?"<b>"+esc(e.new.value||e.new.holder||"")+"</b> "+esc(e.new.holder&&e.new.value?"("+e.new.holder+")":""):"";
+  var body=e.old&&!e.new?"<b>Deleted:</b> "+esc(e.old.value)+" ("+esc(e.old.holder)+")":e.old&&e.new?esc(e.old.value)+" ("+esc(e.old.holder)+') <span class="arrow">→</span> <b>'+esc(e.new.value)+"</b> ("+esc(e.new.holder)+", "+esc(e.new.when||"")+")":e.new?"<b>"+esc(e.new.value||e.new.holder||"")+"</b> "+esc(e.new.holder&&e.new.value?"("+e.new.holder+")":""):"";
   return '<div class="chg"><div class="d">'+esc((e.ts||"").slice(0,10))+'</div><div>'+nm+body+'<div class="why">'+esc(CAUSE[e.cause]||e.cause)+(e.note?" · "+esc(e.note):"")+"</div></div></div>"}
 function renderChanges(){
   var list=S.log.filter(function(e){if(e.record==="*")return true;var r=S.recs.filter(function(x){return x.id===e.record})[0];return !r||matches(r)});
@@ -478,9 +481,23 @@ $("dbody").addEventListener("click",function(e){var o=e.target.closest("[data-op
 
 /* ---------- edit mode (commits straight to GitHub) ---------- */
 function token(){return ls("rb-token")}
+function tokenHelp(){
+  $("dbody").innerHTML='<h3>Turn on edit mode</h3><div class="muted">You need a GitHub access token, once per browser. It lets this page save changes to the <b>'+esc(REPO.repo)+'</b> repo.</div>'+
+   '<ol class="steps"><li>Open <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">GitHub → New fine-grained token</a>.</li>'+
+   '<li><b>Token name:</b> <code>recordbook</code>. <b>Expiration:</b> pick up to 1 year.</li>'+
+   '<li><b>Resource owner:</b> <code>'+esc(REPO.owner)+'</code>. <b>Repository access:</b> choose <b>Only select repositories</b> and pick <code>'+esc(REPO.repo)+'</code>.</li>'+
+   '<li>Under <b>Permissions → Repository permissions</b>, set <b>Contents</b> to <code>Read and write</code>. Leave everything else alone.</li>'+
+   '<li>Click <b>Generate token</b> and copy it (it starts with <code>github_pat_</code>; GitHub shows it only once).</li>'+
+   '<li>Paste it below.</li></ol>'+
+   '<form class="edit" id="tf"><label for="tk">Token</label><input id="tk" type="password" autocomplete="off" placeholder="github_pat_…"><div style="margin-top:12px;display:flex;gap:8px"><button class="btn" type="submit">Save and start editing</button></div><div class="status" id="f-status" role="status"></div></form>'+
+   '<div class="muted" style="margin-top:14px;font-size:12.5px">The token stays in this browser only. To revoke it, delete it on GitHub (Settings → Developer settings → Fine-grained tokens).</div>';
+  $("drawer").classList.remove("wide");$("drawer").classList.add("on");$("scrim").classList.add("on");$("drawer").setAttribute("aria-hidden","false");
+  $("tf").onsubmit=function(e){e.preventDefault();var v=$("tk").value.trim();if(!/^(github_pat_|ghp_)/.test(v)){status("That doesn't look like a GitHub token. It should start with github_pat_.",1);return}
+    ls("rb-token",v);closeDrawer();toggleEdit()};
+  setTimeout(function(){$("tk").focus()},250)}
 function toggleEdit(){
   if(!S.edit){
-    var t=token();if(!t){t=prompt("Paste a GitHub fine-grained token with Contents: Read & write on "+REPO.owner+"/"+REPO.repo+".\nIt is kept in this browser only.");if(!t)return;ls("rb-token",t.trim())}
+    var t=token();if(!t){tokenHelp();return}
     S.edit=true}else{S.edit=false}
   $("editToggle").setAttribute("aria-pressed",S.edit);$("editToggle").classList.toggle("on",S.edit);$("editToggle").textContent=S.edit?"✎ Done":"✎ Edit";
   if(S.edit&&!$("addBtn")){var b=document.createElement("button");b.className="ibtn";b.id="addBtn";b.textContent="+ Add";b.onclick=function(){openAdd()};$("editToggle").before(b)}
@@ -496,7 +513,7 @@ function editForm(r){
    '<label for="f-kind">What kind of change?</label><select id="f-kind"><option value="correction">Correction — fix a typo or wrong data (no “previous record”)</option><option value="new">New record — it was broken (old mark becomes “previous”)</option></select>'+
    '<label for="f-note">Note for the change log</label><input id="f-note" type="text" placeholder="Optional">'+
    '<label class="chk"><input type="checkbox" id="f-lock" checked> Lock from automatic updates (recommended)</label>'+
-   '<div class="preview" id="f-prev"></div><div style="margin-top:12px;display:flex;gap:8px"><button class="btn" type="submit" id="f-save">Save to GitHub</button></div><div class="status" id="f-status" role="status"></div></form>'}
+   '<div class="preview" id="f-prev"></div><div style="margin-top:12px;display:flex;gap:8px"><button class="btn" type="submit" id="f-save">Save to GitHub</button><span style="flex:1"></span><button class="btn ghost" type="button" id="f-del">Delete record</button></div><div class="status" id="f-status" role="status"></div></form>'}
 function openAdd(){
   var r={id:"",name:"",category:CATS[0],value:"",holder:"",holders:[],when:"",team:"",evidence:[],notes:[],source:"manual",locked:true,ties:[]};S.sel=null;
   $("dbody").innerHTML='<h3>Add a record</h3><form class="edit" id="ef" autocomplete="off">'+field("f-name","Record name","")+'<label for="f-cat">Type</label><select id="f-cat">'+CATS.map(function(c){return"<option>"+esc(c)+"</option>"}).join("")+"</select>"+
@@ -511,7 +528,11 @@ function readForm(r,isNew){
   return{name:isNew?g("f-name"):r.name,category:isNew?g("f-cat"):r.category,value:g("f-value"),holder:g("f-holder"),when:g("f-when"),team:g("f-team"),replayUrl:g("f-replay"),evidence:lines("f-ev"),notes:lines("f-notes"),kind:g("f-kind")||"add",note:g("f-note"),lock:$("f-lock")?$("f-lock").checked:true}}
 function wireForm(r){
   var f=$("ef");f.oninput=function(){var v=readForm(r);$("f-prev").textContent="Change log: “"+(v.kind==="new"?"Record broken (manual)":"Correction (manual)")+" — "+r.value+" → "+v.value+" ("+v.holder+")”"+(v.kind==="new"?". “"+r.value+"” will show as the previous record.":"")};f.oninput();
-  f.onsubmit=function(e){e.preventDefault();save(r,readForm(r),false)}}
+  f.onsubmit=function(e){e.preventDefault();save(r,readForm(r),false)};
+  var del=$("f-del"),armed=0,tm;
+  del.onclick=function(){
+    if(!armed){armed=1;del.textContent="Tap again to delete for good";del.className="btn danger";clearTimeout(tm);tm=setTimeout(function(){armed=0;del.textContent="Delete record";del.className="btn ghost"},5000);return}
+    clearTimeout(tm);save(r,{del:true,note:($("f-note")||{}).value||""},false)}}
 function status(t,err){var s=$("f-status");if(s){s.textContent=t;s.className="status "+(err?"err":"ok")}}
 function slug(s){return s.toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"")}
 function num(s){var m=String(s).replace("+","").match(/(-?)\$?(\d[\d,]*\.?\d*)/);return m?parseFloat(m[1]+m[2].replace(/,/g,"")):null}
@@ -523,7 +544,11 @@ function gh(path,opt){opt=opt||{};return fetch("https://api.github.com/repos/"+R
 function b64d(s){return decodeURIComponent(escape(atob(s.replace(/\n/g,""))))}
 function applyEdit(doc,logText,r,v,isNew){
   var now=new Date().toISOString().replace(/\.\d+Z/,"Z"),today=now.slice(0,10),entry;
-  if(isNew){
+  if(v.del){
+    var dr=doc.records.filter(function(x){return x.id===r.id})[0];if(!dr)throw new Error("Record no longer exists");
+    doc.records=doc.records.filter(function(x){return x.id!==r.id});
+    entry={ts:now,record:dr.id,name:dr.name,cause:"manual:delete",old:{value:dr.value,holder:dr.holder,when:dr.when,team:dr.team},new:null,note:v.note||""}}
+  else if(isNew){
     var id=slug(v.name),n=2,base=id;while(doc.records.some(function(x){return x.id===id}))id=base+"-"+(n++);
     var nr={id:id,name:v.name,category:v.category,source:"manual",metric:null,direction:null,value:v.value,value_num:num(v.value),when:v.when,holder:v.holder,holders:splitHolders(v.holder),league_level:v.holder==="DTFClub",team:v.team,notes:[],evidence:v.evidence,replay:replayFrom(v.replayUrl),previous:null,ties:[],locked:true,status:"active",era_pair:null,size_sensitive:false,needs_definition:null,engine_gap:null,updated:today};
     doc.records.push(nr);entry={ts:now,record:id,name:v.name,cause:"manual:add",new:{value:v.value,holder:v.holder,when:v.when},note:v.note}}
@@ -544,7 +569,7 @@ function save(r,v,isNew,tries){
     return gh("/git/commits",{method:"POST",body:{message:"record book: "+(out.entry.name||"edit")+" ("+out.entry.cause+")",tree:t.sha,parents:[head]}})}).then(function(c){
     return gh("/git/refs/heads/"+REPO.branch,{method:"PATCH",body:{sha:c.sha}})}).then(function(){
     status("Saved. The live page updates in about a minute.");S.log.unshift(out.entry);
-    var doc2=JSON.parse(out.records);S.recs=doc2.records;render();setTimeout(function(){openDrawer(out.entry.record)},300)}).catch(function(e){
+    var doc2=JSON.parse(out.records);S.recs=doc2.records;render();setTimeout(function(){if(v.del)closeDrawer();else openDrawer(out.entry.record)},300)}).catch(function(e){
     if(/422|409/.test(e.message)&&tries<2)return save(r,v,isNew,tries+1);
     $("f-save")&&($("f-save").disabled=false);status(/401|403|404/.test(e.message)?"GitHub refused the token ("+e.message+"). Check it has Contents: Read & write on "+REPO.owner+"/"+REPO.repo+".":"Save failed: "+e.message,1);
     if(/401/.test(e.message))ls("rb-token",null)})}
