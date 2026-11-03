@@ -18,7 +18,7 @@ A living version of the hand-kept record book. Static page (GitHub Pages) + a we
 Rules: a better mark takes over and the old one becomes the **previous record** (tooltip). An equal mark from a different holder is added as a **tie**. A **locked** record is never touched by the engine; if the engine finds a better mark it logs `auto:blocked` instead. Where Sleeper data disagrees with the sheet, the data wins and the change log says so (`auto:reconcile`).
 
 ## Rumble Cards
-For single-game records since 2021 the details view shows the full Rumble Card (both teams' starters, points, EPA, Rumbles) rebuilt from Rumble Central's `epa_weekly.json` and `rumbles_history.json`, instead of cached screenshots. The engine rebuilds them on every run (`engine/cards.py`). Older screenshots are kept in `legacy_evidence` and still shown for records the archive can't reproduce (pre-2021 games, bench points, transactions).
+For single-game records since 2021 the details view shows the full Rumble Card (both teams' starters, points, Rumbles) rebuilt from Rumble Central's `epa_weekly.json` and `rumbles_history.json`, instead of cached screenshots. The engine rebuilds them on every run (`engine/cards.py`). Older screenshots are kept in `legacy_evidence` and still shown for records the archive can't reproduce (pre-2021 games, bench points, transactions).
 
 ## Replay links
 `https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=<week>.<roster>.<opponent roster>[&season=YYYY]` – set `RC_BASE` in the workflow if that URL ever changes. Only single-matchup records from 2021 on get one.

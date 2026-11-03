@@ -1,4 +1,4 @@
-"""Rebuild Rumble Central's full Rumble Card (both teams' starters, points, EPA, Rumbles) for a matchup since 2021."""
+"""Rebuild Rumble Central's full Rumble Card (both teams' starters, points, Rumbles) for a matchup since 2021."""
 import re
 from load import fetch
 
@@ -23,17 +23,14 @@ def card(d, season, week, rid):
     if not g or not e: return None
     lineup = (e["lineups"].get(str(week)) or {}).get(str(rid))
     if not lineup: return None
-    epa = (e["weeks"].get(str(week)) or {})
-    players, tot = [], 0.0
+    players = []
     for pid, pts in lineup:
         nm, pos = e["names"].get(str(pid), [str(pid), ""])
-        ev = epa.get(str(pid)); ev = ev[0] if ev else None
-        if ev is not None: tot += ev
-        players.append({"pos": pos, "name": nm, "pts": pts, "epa": None if ev is None else round(ev, 2)})
+        players.append({"pos": pos, "name": nm, "pts": pts})
     prior = [x for x in d.reg if x["season"] == season and x["rid"] == rid and x["week"] <= min(week, max(y["week"] for y in d.reg if y["season"] == season))]
     return {"rid": rid, "name": g["m"], "won": bool(g["win"]), "act": g["pts"], "rumbles": g["rumbles"], "vs_field": g["outscored"],
             "season_rumbles": sum(x["rumbles"] for x in prior), "w": sum(1 for x in prior if x["win"]), "l": sum(1 for x in prior if not x["win"]),
-            "players": players, "epa": round(tot, 2) if any(p["epa"] is not None for p in players) else None}
+            "players": players}
 
 def attach(d, rec):
     """Set rec['cards'] (or drop it). Returns True if a card was produced."""

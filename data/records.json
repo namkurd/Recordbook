@@ -252,13 +252,13 @@
     },
     {
      "value": "1",
-     "holder": "Alex",
+     "holder": "Ryan",
      "when": "2011",
      "replay": null
     },
     {
      "value": "1",
-     "holder": "Ryan",
+     "holder": "Alex",
      "when": "2011",
      "replay": null
     }
@@ -2668,65 +2668,54 @@
        {
         "pos": "QB",
         "name": "Justin Herbert",
-        "pts": 27.58,
-        "epa": 15.37
+        "pts": 27.58
        },
        {
         "pos": "RB",
         "name": "Jonathan Taylor",
-        "pts": 39.9,
-        "epa": 12.47
+        "pts": 39.9
        },
        {
         "pos": "RB",
         "name": "Saquon Barkley",
-        "pts": 35.4,
-        "epa": 8.09
+        "pts": 35.4
        },
        {
         "pos": "TE",
         "name": "Tucker Kraft",
-        "pts": 34.8,
-        "epa": 11.57
+        "pts": 34.8
        },
        {
         "pos": "WR",
         "name": "Troy Franklin",
-        "pts": 28.4,
-        "epa": 8.57
+        "pts": 28.4
        },
        {
         "pos": "WR",
         "name": "Keenan Allen",
-        "pts": 10.4,
-        "epa": 7.35
+        "pts": 10.4
        },
        {
         "pos": "WR",
         "name": "Tee Higgins",
-        "pts": 11.4,
-        "epa": 3.48
+        "pts": 11.4
        },
        {
         "pos": "QB",
         "name": "Jordan Love",
-        "pts": 30.9,
-        "epa": 20.57
+        "pts": 30.9
        },
        {
         "pos": "K",
         "name": "Ka'imi Fairbairn",
-        "pts": 15.4,
-        "epa": 1.27
+        "pts": 15.4
        },
        {
         "pos": "DEF",
         "name": "Indianapolis Colts",
-        "pts": 9.33,
-        "epa": 5.77
+        "pts": 9.33
        }
-      ],
-      "epa": 94.52
+      ]
      },
      {
       "rid": 3,
@@ -2742,65 +2731,54 @@
        {
         "pos": "QB",
         "name": "Carson Wentz",
-        "pts": 7.41,
-        "epa": -12.74
+        "pts": 7.41
        },
        {
         "pos": "RB",
         "name": "Jaylen Warren",
-        "pts": 10.8,
-        "epa": -2.85
+        "pts": 10.8
        },
        {
         "pos": "RB",
         "name": "Chuba Hubbard",
-        "pts": 10.44,
-        "epa": -3.23
+        "pts": 10.44
        },
        {
         "pos": "TE",
         "name": "Kyle Pitts Sr.",
-        "pts": 15.4,
-        "epa": -4.61
+        "pts": 15.4
        },
        {
         "pos": "WR",
         "name": "Rome Odunze",
-        "pts": 21.9,
-        "epa": 5.75
+        "pts": 21.9
        },
        {
         "pos": "WR",
         "name": "Ladd McConkey",
-        "pts": 22.3,
-        "epa": -0.75
+        "pts": 22.3
        },
        {
         "pos": "WR",
         "name": "Tetairoa McMillan",
-        "pts": 20.4,
-        "epa": 4.76
+        "pts": 20.4
        },
        {
         "pos": "QB",
         "name": "Tyler Huntley",
-        "pts": 18.44,
-        "epa": 8.55
+        "pts": 18.44
        },
        {
         "pos": "K",
         "name": "Wil Lutz",
-        "pts": 9.2,
-        "epa": 1.24
+        "pts": 9.2
        },
        {
         "pos": "DEF",
         "name": "Cincinnati Bengals",
-        "pts": -7.64,
-        "epa": -23.89
+        "pts": -7.64
        }
-      ],
-      "epa": -27.77
+      ]
      }
     ]
    },
@@ -2926,65 +2904,54 @@
        {
         "pos": "QB",
         "name": "Aaron Rodgers",
-        "pts": 31.5,
-        "epa": 24.32
+        "pts": 31.5
        },
        {
         "pos": "RB",
         "name": "Ezekiel Elliott",
-        "pts": 7.8,
-        "epa": -2.29
+        "pts": 7.8
        },
        {
         "pos": "RB",
         "name": "Jonathan Taylor",
-        "pts": 50.9,
-        "epa": 12.88
+        "pts": 50.9
        },
        {
         "pos": "WR",
         "name": "Justin Jefferson",
-        "pts": 32.2,
-        "epa": 16.15
+        "pts": 32.2
        },
        {
         "pos": "WR",
         "name": "DJ Moore",
-        "pts": 13.25,
-        "epa": 2.91
+        "pts": 13.25
        },
        {
         "pos": "TE",
         "name": "Mark Andrews",
-        "pts": 9.8,
-        "epa": 2.08
+        "pts": 9.8
        },
        {
         "pos": "WR",
         "name": "Mike Williams",
-        "pts": 17.2,
-        "epa": 7.77
+        "pts": 17.2
        },
        {
         "pos": "WR",
         "name": "Tee Higgins",
-        "pts": 2.0,
-        "epa": -0.02
+        "pts": 2.0
        },
        {
         "pos": "K",
         "name": "Ryan Succop",
-        "pts": 13.0,
-        "epa": 1.12
+        "pts": 13.0
        },
        {
         "pos": "DEF",
         "name": "New England Patriots",
-        "pts": 26.0,
-        "epa": 31.77
+        "pts": 26.0
        }
-      ],
-      "epa": 96.69
+      ]
      },
      {
       "rid": 5,
@@ -3000,65 +2967,54 @@
        {
         "pos": "QB",
         "name": "Patrick Mahomes",
-        "pts": 6.0,
-        "epa": -8.32
+        "pts": 6.0
        },
        {
         "pos": "RB",
         "name": "David Montgomery",
-        "pts": 6.95,
-        "epa": -3.45
+        "pts": 6.95
        },
        {
         "pos": "RB",
         "name": "Miles Sanders",
-        "pts": 7.4,
-        "epa": -5.39
+        "pts": 7.4
        },
        {
         "pos": "WR",
         "name": "Davante Adams",
-        "pts": 26.75,
-        "epa": 11.88
+        "pts": 26.75
        },
        {
         "pos": "WR",
         "name": "DK Metcalf",
-        "pts": 4.1,
-        "epa": -1.08
+        "pts": 4.1
        },
        {
         "pos": "TE",
         "name": "T.J. Hockenson",
-        "pts": 6.35,
-        "epa": -0.66
+        "pts": 6.35
        },
        {
         "pos": "RB",
         "name": "Josh Jacobs",
-        "pts": 6.85,
-        "epa": -2.76
+        "pts": 6.85
        },
        {
         "pos": "RB",
         "name": "James Conner",
-        "pts": 16.9,
-        "epa": 0.3
+        "pts": 16.9
        },
        {
         "pos": "K",
         "name": "Greg Joseph",
-        "pts": 9.1,
-        "epa": 0.81
+        "pts": 9.1
        },
        {
         "pos": "DEF",
         "name": "San Francisco 49ers",
-        "pts": 11.0,
-        "epa": 4.29
+        "pts": 11.0
        }
-      ],
-      "epa": -4.38
+      ]
      }
     ]
    }
@@ -3400,65 +3356,54 @@
        {
         "pos": "RB",
         "name": "D'Andre Swift",
-        "pts": 15.4,
-        "epa": -4.26
+        "pts": 15.4
        },
        {
         "pos": "RB",
         "name": "Christian McCaffrey",
-        "pts": 24.6,
-        "epa": 4.94
+        "pts": 24.6
        },
        {
         "pos": "TE",
         "name": "Dalton Schultz",
-        "pts": 29.0,
-        "epa": 7.49
+        "pts": 29.0
        },
        {
         "pos": "RB",
         "name": "Aaron Jones Sr.",
-        "pts": 12.0,
-        "epa": -2.35
+        "pts": 12.0
        },
        {
         "pos": "WR",
         "name": "Jaylen Waddle",
-        "pts": 24.8,
-        "epa": 8.75
+        "pts": 24.8
        },
        {
         "pos": "WR",
         "name": "Ja'Marr Chase",
-        "pts": 27.0,
-        "epa": 3.89
+        "pts": 27.0
        },
        {
         "pos": "QB",
         "name": "Bryce Young",
-        "pts": 25.58,
-        "epa": 12.15
+        "pts": 25.58
        },
        {
         "pos": "QB",
         "name": "Jared Goff",
-        "pts": 30.78,
-        "epa": 16.42
+        "pts": 30.78
        },
        {
         "pos": "K",
         "name": "Eddy Pineiro",
-        "pts": 5.0,
-        "epa": 0.34
+        "pts": 5.0
        },
        {
         "pos": "DEF",
         "name": "New England Patriots",
-        "pts": 24.38,
-        "epa": 23.83
+        "pts": 24.38
        }
-      ],
-      "epa": 71.21
+      ]
      },
      {
       "rid": 3,
@@ -3474,65 +3419,54 @@
        {
         "pos": "RB",
         "name": "Travis Etienne Jr.",
-        "pts": 7.6,
-        "epa": -0.07
+        "pts": 7.6
        },
        {
         "pos": "RB",
         "name": "Javonte Williams",
-        "pts": 8.0,
-        "epa": -3.5
+        "pts": 8.0
        },
        {
         "pos": "TE",
         "name": "Colston Loveland",
-        "pts": 1.3,
-        "epa": -1.51
+        "pts": 1.3
        },
        {
         "pos": "TE",
         "name": "Colby Parkinson",
-        "pts": 4.0,
-        "epa": 1.42
+        "pts": 4.0
        },
        {
         "pos": "WR",
         "name": "Jalen Coker",
-        "pts": 18.06,
-        "epa": 1.7
+        "pts": 18.06
        },
        {
         "pos": "WR",
         "name": "Jayden Reed",
-        "pts": 1.4,
-        "epa": -0.1
+        "pts": 1.4
        },
        {
         "pos": "QB",
         "name": "Drake Maye",
-        "pts": 8.67,
-        "epa": 0.52
+        "pts": 8.67
        },
        {
         "pos": "QB",
         "name": "Trevor Lawrence",
-        "pts": 7.46,
-        "epa": -3.73
+        "pts": 7.46
        },
        {
         "pos": "K",
         "name": "Tyler Loop",
-        "pts": 5.9,
-        "epa": -1.42
+        "pts": 5.9
        },
        {
         "pos": "DEF",
         "name": "San Francisco 49ers",
-        "pts": 9.2,
-        "epa": 0.06
+        "pts": 9.2
        }
-      ],
-      "epa": -6.64
+      ]
      }
     ]
    }
@@ -3656,65 +3590,54 @@
        {
         "pos": "QB",
         "name": "Joe Flacco",
-        "pts": 9.17,
-        "epa": -14.22
+        "pts": 9.17
        },
        {
         "pos": "RB",
         "name": "TreVeyon Henderson",
-        "pts": 13.1,
-        "epa": 0.66
+        "pts": 13.1
        },
        {
         "pos": "RB",
         "name": "Travis Etienne Jr.",
-        "pts": 21.1,
-        "epa": 0.91
+        "pts": 21.1
        },
        {
         "pos": "TE",
         "name": "Tyler Warren",
-        "pts": 10.5,
-        "epa": 1.79
+        "pts": 10.5
        },
        {
         "pos": "RB",
         "name": "Christian McCaffrey",
-        "pts": 30.2,
-        "epa": 0.56
+        "pts": 30.2
        },
        {
         "pos": "WR",
         "name": "Emeka Egbuka",
-        "pts": 5.7,
-        "epa": -1.92
+        "pts": 5.7
        },
        {
         "pos": "WR",
         "name": "Nico Collins",
-        "pts": 9.5,
-        "epa": 3.11
+        "pts": 9.5
        },
        {
         "pos": "QB",
         "name": "Jacoby Brissett",
-        "pts": 20.38,
-        "epa": -6.43
+        "pts": 20.38
        },
        {
         "pos": "K",
         "name": "Brandon Aubrey",
-        "pts": 6.2,
-        "epa": -2.68
+        "pts": 6.2
        },
        {
         "pos": "DEF",
         "name": "New Orleans Saints",
-        "pts": 12.3,
-        "epa": 6.06
+        "pts": 12.3
        }
-      ],
-      "epa": -12.14
+      ]
      },
      {
       "rid": 3,
@@ -3730,65 +3653,54 @@
        {
         "pos": "QB",
         "name": "Caleb Williams",
-        "pts": 23.21,
-        "epa": 3.5
+        "pts": 23.21
        },
        {
         "pos": "RB",
         "name": "Jaylen Warren",
-        "pts": 15.3,
-        "epa": 0.54
+        "pts": 15.3
        },
        {
         "pos": "RB",
         "name": "Zonovan Knight",
-        "pts": 12.7,
-        "epa": -4.01
+        "pts": 12.7
        },
        {
         "pos": "TE",
         "name": "Kyle Pitts Sr.",
-        "pts": 5.0,
-        "epa": -9.85
+        "pts": 5.0
        },
        {
         "pos": "WR",
         "name": "Tetairoa McMillan",
-        "pts": 11.5,
-        "epa": -4.55
+        "pts": 11.5
        },
        {
         "pos": "WR",
         "name": "Puka Nacua",
-        "pts": 19.2,
-        "epa": 3.27
+        "pts": 19.2
        },
        {
         "pos": "WR",
         "name": "Rome Odunze",
-        "pts": 9.8,
-        "epa": 0.44
+        "pts": 9.8
        },
        {
         "pos": "QB",
         "name": "Lamar Jackson",
-        "pts": 7.87,
-        "epa": -1.93
+        "pts": 7.87
        },
        {
         "pos": "K",
         "name": "Jason Myers",
-        "pts": 14.3,
-        "epa": 1.84
+        "pts": 14.3
        },
        {
         "pos": "DEF",
         "name": "Cleveland Browns",
-        "pts": 19.21,
-        "epa": 28.59
+        "pts": 19.21
        }
-      ],
-      "epa": 17.84
+      ]
      }
     ]
    }
@@ -3949,65 +3861,54 @@
        {
         "pos": "RB",
         "name": "D'Andre Swift",
-        "pts": 15.4,
-        "epa": -4.26
+        "pts": 15.4
        },
        {
         "pos": "RB",
         "name": "Christian McCaffrey",
-        "pts": 24.6,
-        "epa": 4.94
+        "pts": 24.6
        },
        {
         "pos": "TE",
         "name": "Dalton Schultz",
-        "pts": 29.0,
-        "epa": 7.49
+        "pts": 29.0
        },
        {
         "pos": "RB",
         "name": "Aaron Jones Sr.",
-        "pts": 12.0,
-        "epa": -2.35
+        "pts": 12.0
        },
        {
         "pos": "WR",
         "name": "Jaylen Waddle",
-        "pts": 24.8,
-        "epa": 8.75
+        "pts": 24.8
        },
        {
         "pos": "WR",
         "name": "Ja'Marr Chase",
-        "pts": 27.0,
-        "epa": 3.89
+        "pts": 27.0
        },
        {
         "pos": "QB",
         "name": "Bryce Young",
-        "pts": 25.58,
-        "epa": 12.15
+        "pts": 25.58
        },
        {
         "pos": "QB",
         "name": "Jared Goff",
-        "pts": 30.78,
-        "epa": 16.42
+        "pts": 30.78
        },
        {
         "pos": "K",
         "name": "Eddy Pineiro",
-        "pts": 5.0,
-        "epa": 0.34
+        "pts": 5.0
        },
        {
         "pos": "DEF",
         "name": "New England Patriots",
-        "pts": 24.38,
-        "epa": 23.83
+        "pts": 24.38
        }
-      ],
-      "epa": 71.21
+      ]
      },
      {
       "rid": 3,
@@ -4023,65 +3924,54 @@
        {
         "pos": "RB",
         "name": "Travis Etienne Jr.",
-        "pts": 7.6,
-        "epa": -0.07
+        "pts": 7.6
        },
        {
         "pos": "RB",
         "name": "Javonte Williams",
-        "pts": 8.0,
-        "epa": -3.5
+        "pts": 8.0
        },
        {
         "pos": "TE",
         "name": "Colston Loveland",
-        "pts": 1.3,
-        "epa": -1.51
+        "pts": 1.3
        },
        {
         "pos": "TE",
         "name": "Colby Parkinson",
-        "pts": 4.0,
-        "epa": 1.42
+        "pts": 4.0
        },
        {
         "pos": "WR",
         "name": "Jalen Coker",
-        "pts": 18.06,
-        "epa": 1.7
+        "pts": 18.06
        },
        {
         "pos": "WR",
         "name": "Jayden Reed",
-        "pts": 1.4,
-        "epa": -0.1
+        "pts": 1.4
        },
        {
         "pos": "QB",
         "name": "Drake Maye",
-        "pts": 8.67,
-        "epa": 0.52
+        "pts": 8.67
        },
        {
         "pos": "QB",
         "name": "Trevor Lawrence",
-        "pts": 7.46,
-        "epa": -3.73
+        "pts": 7.46
        },
        {
         "pos": "K",
         "name": "Tyler Loop",
-        "pts": 5.9,
-        "epa": -1.42
+        "pts": 5.9
        },
        {
         "pos": "DEF",
         "name": "San Francisco 49ers",
-        "pts": 9.2,
-        "epa": 0.06
+        "pts": 9.2
        }
-      ],
-      "epa": -6.64
+      ]
      }
     ]
    }
@@ -4298,65 +4188,54 @@
        {
         "pos": "QB",
         "name": "Justin Fields",
-        "pts": 3.25,
-        "epa": -19.89
+        "pts": 3.25
        },
        {
         "pos": "RB",
         "name": "TreVeyon Henderson",
-        "pts": 5.1,
-        "epa": -1.35
+        "pts": 5.1
        },
        {
         "pos": "RB",
         "name": "Rico Dowdle",
-        "pts": 39.4,
-        "epa": 8.91
+        "pts": 39.4
        },
        {
         "pos": "TE",
         "name": "Sam LaPorta",
-        "pts": 17.5,
-        "epa": 5.1
+        "pts": 17.5
        },
        {
         "pos": "RB",
         "name": "Ashton Jeanty",
-        "pts": 18.1,
-        "epa": -5.02
+        "pts": 18.1
        },
        {
         "pos": "WR",
         "name": "Brian Thomas Jr.",
-        "pts": 25.0,
-        "epa": 4.58
+        "pts": 25.0
        },
        {
         "pos": "WR",
         "name": "Drake London",
-        "pts": 34.8,
-        "epa": 4.48
+        "pts": 34.8
        },
        {
         "pos": "QB",
         "name": "Daniel Jones",
-        "pts": 24.83,
-        "epa": 5.65
+        "pts": 24.83
        },
        {
         "pos": "K",
         "name": "Tyler Loop",
-        "pts": 3.7,
-        "epa": 0.49
+        "pts": 3.7
        },
        {
         "pos": "DEF",
         "name": "Las Vegas Raiders",
-        "pts": 16.57,
-        "epa": 17.84
+        "pts": 16.57
        }
-      ],
-      "epa": 20.8
+      ]
      },
      {
       "rid": 7,
@@ -4372,65 +4251,54 @@
        {
         "pos": "QB",
         "name": "Matthew Stafford",
-        "pts": 10.14,
-        "epa": -1.16
+        "pts": 10.14
        },
        {
         "pos": "RB",
         "name": "James Cook III",
-        "pts": 11.2,
-        "epa": 1.9
+        "pts": 11.2
        },
        {
         "pos": "RB",
         "name": "Bijan Robinson",
-        "pts": 38.8,
-        "epa": 7.72
+        "pts": 38.8
        },
        {
         "pos": "TE",
         "name": "Trey McBride",
-        "pts": 22.7,
-        "epa": 3.23
+        "pts": 22.7
        },
        {
         "pos": "WR",
         "name": "Michael Pittman Jr.",
-        "pts": 5.0,
-        "epa": 1.41
+        "pts": 5.0
        },
        {
         "pos": "WR",
         "name": "George Pickens",
-        "pts": 34.8,
-        "epa": 16.73
+        "pts": 34.8
        },
        {
         "pos": "WR",
         "name": "Jaxon Smith-Njigba",
-        "pts": 31.7,
-        "epa": 8.15
+        "pts": 31.7
        },
        {
         "pos": "QB",
         "name": "Patrick Mahomes",
-        "pts": 33.23,
-        "epa": 14.05
+        "pts": 33.23
        },
        {
         "pos": "K",
         "name": "Harrison Butker",
-        "pts": 5.97,
-        "epa": -0.5
+        "pts": 5.97
        },
        {
         "pos": "DEF",
         "name": "Los Angeles Chargers",
-        "pts": 6.57,
-        "epa": -5.1
+        "pts": 6.57
        }
-      ],
-      "epa": 46.43
+      ]
      }
     ]
    }
@@ -4864,65 +4732,54 @@
        {
         "pos": "QB",
         "name": "Drake Maye",
-        "pts": 8.88,
-        "epa": -18.65
+        "pts": 8.88
        },
        {
         "pos": "RB",
         "name": "De'Von Achane",
-        "pts": 5.8,
-        "epa": -7.19
+        "pts": 5.8
        },
        {
         "pos": "RB",
         "name": "Josh Jacobs",
-        "pts": 10.9,
-        "epa": -4.7
+        "pts": 10.9
        },
        {
         "pos": "WR",
         "name": "Puka Nacua",
-        "pts": 22.9,
-        "epa": 4.83
+        "pts": 22.9
        },
        {
         "pos": "WR",
         "name": "Ladd McConkey",
-        "pts": 29.4,
-        "epa": 5.87
+        "pts": 29.4
        },
        {
         "pos": "TE",
         "name": "Trey McBride",
-        "pts": 30.3,
-        "epa": 3.46
+        "pts": 30.3
        },
        {
         "pos": "WR",
         "name": "Mike Evans",
-        "pts": 29.7,
-        "epa": 7.95
+        "pts": 29.7
        },
        {
         "pos": "QB",
         "name": "Bryce Young",
-        "pts": 14.67,
-        "epa": -1.41
+        "pts": 14.67
        },
        {
         "pos": "K",
         "name": "Cameron Dicker",
-        "pts": 18.4,
-        "epa": 1.77
+        "pts": 18.4
        },
        {
         "pos": "DEF",
         "name": "Miami Dolphins",
-        "pts": 15.66,
-        "epa": 27.74
+        "pts": 15.66
        }
-      ],
-      "epa": 19.66
+      ]
      },
      {
       "rid": 10,
@@ -4938,65 +4795,54 @@
        {
         "pos": "QB",
         "name": "C.J. Stroud",
-        "pts": 4.85,
-        "epa": -18.71
+        "pts": 4.85
        },
        {
         "pos": "RB",
         "name": "Ameer Abdullah",
-        "pts": 17.7,
-        "epa": 7.46
+        "pts": 17.7
        },
        {
         "pos": "RB",
         "name": "Breece Hall",
-        "pts": 6.3,
-        "epa": 0.01
+        "pts": 6.3
        },
        {
         "pos": "WR",
         "name": "Jordan Addison",
-        "pts": 18.9,
-        "epa": 3.55
+        "pts": 18.9
        },
        {
         "pos": "WR",
         "name": "Courtland Sutton",
-        "pts": 16.5,
-        "epa": 0.22
+        "pts": 16.5
        },
        {
         "pos": "TE",
         "name": "Travis Kelce",
-        "pts": 22.4,
-        "epa": 3.28
+        "pts": 22.4
        },
        {
         "pos": "TE",
         "name": "Brock Bowers",
-        "pts": 14.6,
-        "epa": 5.21
+        "pts": 14.6
        },
        {
         "pos": "QB",
         "name": "Justin Herbert",
-        "pts": 24.44,
-        "epa": 22.26
+        "pts": 24.44
        },
        {
         "pos": "K",
         "name": "Jake Elliott",
-        "pts": 11.1,
-        "epa": 0.58
+        "pts": 11.1
        },
        {
         "pos": "DEF",
         "name": "Las Vegas Raiders",
-        "pts": 13.69,
-        "epa": 14.85
+        "pts": 13.69
        }
-      ],
-      "epa": 38.72
+      ]
      }
     ]
    }
@@ -5207,65 +5053,54 @@
        {
         "pos": "QB",
         "name": "Josh Allen",
-        "pts": 27.22,
-        "epa": 8.79
+        "pts": 27.22
        },
        {
         "pos": "RB",
         "name": "Derrick Henry",
-        "pts": 33.85,
-        "epa": 4.22
+        "pts": 33.85
        },
        {
         "pos": "RB",
         "name": "Alex Collins",
-        "pts": 15.8,
-        "epa": 1.47
+        "pts": 15.8
        },
        {
         "pos": "WR",
         "name": "Terry McLaurin",
-        "pts": 3.8,
-        "epa": -1.53
+        "pts": 3.8
        },
        {
         "pos": "WR",
         "name": "Stefon Diggs",
-        "pts": 18.15,
-        "epa": 9.73
+        "pts": 18.15
        },
        {
         "pos": "TE",
         "name": "Mike Gesicki",
-        "pts": 14.25,
-        "epa": 5.2
+        "pts": 14.25
        },
        {
         "pos": "WR",
         "name": "Marquise Brown",
-        "pts": 3.5,
-        "epa": 0.67
+        "pts": 3.5
        },
        {
         "pos": "WR",
         "name": "Laviska Shenault",
-        "pts": 7.4,
-        "epa": 1.34
+        "pts": 7.4
        },
        {
         "pos": "K",
         "name": "Justin Tucker",
-        "pts": 13.1,
-        "epa": 2.95
+        "pts": 13.1
        },
        {
         "pos": "DEF",
         "name": "Dallas Cowboys",
-        "pts": 13.0,
-        "epa": 0.63
+        "pts": 13.0
        }
-      ],
-      "epa": 33.48
+      ]
      },
      {
       "rid": 9,
@@ -5281,65 +5116,54 @@
        {
         "pos": "QB",
         "name": "Dak Prescott",
-        "pts": 26.8,
-        "epa": 16.64
+        "pts": 26.8
        },
        {
         "pos": "RB",
         "name": "Austin Ekeler",
-        "pts": 7.0,
-        "epa": -6.19
+        "pts": 7.0
        },
        {
         "pos": "RB",
         "name": "Antonio Gibson",
-        "pts": 2.4,
-        "epa": -5.54
+        "pts": 2.4
        },
        {
         "pos": "WR",
         "name": "Marvin Jones",
-        "pts": 18.75,
-        "epa": 8.53
+        "pts": 18.75
        },
        {
         "pos": "WR",
         "name": "Odell Beckham Jr.",
-        "pts": 9.9,
-        "epa": 2.18
+        "pts": 9.9
        },
        {
         "pos": "TE",
         "name": "Tyler Higbee",
-        "pts": 4.6,
-        "epa": 3.88
+        "pts": 4.6
        },
        {
         "pos": "RB",
         "name": "Devontae Booker",
-        "pts": 7.9,
-        "epa": -4.7
+        "pts": 7.9
        },
        {
         "pos": "WR",
         "name": "CeeDee Lamb",
-        "pts": 30.85,
-        "epa": 12.7
+        "pts": 30.85
        },
        {
         "pos": "K",
         "name": "Harrison Butker",
-        "pts": 9.2,
-        "epa": 2.19
+        "pts": 9.2
        },
        {
         "pos": "DEF",
         "name": "Tampa Bay Buccaneers",
-        "pts": 6.0,
-        "epa": -1.01
+        "pts": 6.0
        }
-      ],
-      "epa": 28.67
+      ]
      }
     ]
    },
@@ -7854,65 +7678,54 @@
        {
         "pos": "QB",
         "name": "Jalen Hurts",
-        "pts": 24.65,
-        "epa": 18.86
+        "pts": 24.65
        },
        {
         "pos": "RB",
         "name": "RJ Harvey",
-        "pts": 11.0,
-        "epa": -8.94
+        "pts": 11.0
        },
        {
         "pos": "RB",
         "name": "Jahmyr Gibbs",
-        "pts": 9.3,
-        "epa": -6.45
+        "pts": 9.3
        },
        {
         "pos": "TE",
         "name": "Travis Kelce",
-        "pts": 16.5,
-        "epa": 3.91
+        "pts": 16.5
        },
        {
         "pos": "RB",
         "name": "Chris Rodriguez Jr.",
-        "pts": 0.0,
-        "epa": null
+        "pts": 0.0
        },
        {
         "pos": "WR",
         "name": "Jauan Jennings",
-        "pts": 19.2,
-        "epa": 4.11
+        "pts": 19.2
        },
        {
         "pos": "WR",
         "name": "CeeDee Lamb",
-        "pts": 19.1,
-        "epa": 5.92
+        "pts": 19.1
        },
        {
         "pos": "QB",
         "name": "Dak Prescott",
-        "pts": 13.86,
-        "epa": 0.69
+        "pts": 13.86
        },
        {
         "pos": "K",
         "name": "Chase McLaughlin",
-        "pts": 12.1,
-        "epa": 2.77
+        "pts": 12.1
        },
        {
         "pos": "DEF",
         "name": "Seattle Seahawks",
-        "pts": 6.29,
-        "epa": 5.68
+        "pts": 6.29
        }
-      ],
-      "epa": 26.55
+      ]
      },
      {
       "rid": 3,
@@ -7928,65 +7741,54 @@
        {
         "pos": "QB",
         "name": "Lamar Jackson",
-        "pts": 14.3,
-        "epa": 1.33
+        "pts": 14.3
        },
        {
         "pos": "RB",
         "name": "Jaylen Warren",
-        "pts": 9.88,
-        "epa": -3.49
+        "pts": 9.88
        },
        {
         "pos": "RB",
         "name": "Omarion Hampton",
-        "pts": 10.0,
-        "epa": 0.5
+        "pts": 10.0
        },
        {
         "pos": "TE",
         "name": "Kyle Pitts Sr.",
-        "pts": 48.1,
-        "epa": 13.5
+        "pts": 48.1
        },
        {
         "pos": "WR",
         "name": "Ladd McConkey",
-        "pts": 4.0,
-        "epa": -3.01
+        "pts": 4.0
        },
        {
         "pos": "WR",
         "name": "Tetairoa McMillan",
-        "pts": 5.0,
-        "epa": 1.3
+        "pts": 5.0
        },
        {
         "pos": "WR",
         "name": "Puka Nacua",
-        "pts": 31.9,
-        "epa": 15.54
+        "pts": 31.9
        },
        {
         "pos": "QB",
         "name": "Sam Darnold",
-        "pts": 12.79,
-        "epa": 3.97
+        "pts": 12.79
        },
        {
         "pos": "K",
         "name": "Jason Myers",
-        "pts": 26.3,
-        "epa": 5.97
+        "pts": 26.3
        },
        {
         "pos": "DEF",
         "name": "Dallas Cowboys",
-        "pts": -1.49,
-        "epa": -11.54
+        "pts": -1.49
        }
-      ],
-      "epa": 24.07
+      ]
      }
     ]
    }
@@ -8131,65 +7933,54 @@
        {
         "pos": "RB",
         "name": "Jahmyr Gibbs",
-        "pts": 42.2,
-        "epa": 6.07
+        "pts": 42.2
        },
        {
         "pos": "RB",
         "name": "Chase Brown",
-        "pts": 8.0,
-        "epa": -7.73
+        "pts": 8.0
        },
        {
         "pos": "TE",
         "name": "Dallas Goedert",
-        "pts": 11.3,
-        "epa": -0.41
+        "pts": 11.3
        },
        {
         "pos": "WR",
         "name": "Davante Adams",
-        "pts": 23.1,
-        "epa": 3.71
+        "pts": 23.1
        },
        {
         "pos": "WR",
         "name": "Chris Olave",
-        "pts": 10.6,
-        "epa": 3.02
+        "pts": 10.6
        },
        {
         "pos": "WR",
         "name": "Parker Washington",
-        "pts": 31.34,
-        "epa": 10.04
+        "pts": 31.34
        },
        {
         "pos": "QB",
         "name": "Tyson Bagent",
-        "pts": 1.68,
-        "epa": -9.34
+        "pts": 1.68
        },
        {
         "pos": "QB",
         "name": "Tyler Huntley",
-        "pts": 26.09,
-        "epa": 4.97
+        "pts": 26.09
        },
        {
         "pos": "K",
         "name": "Evan McPherson",
-        "pts": 7.0,
-        "epa": 0.35
+        "pts": 7.0
        },
        {
         "pos": "DEF",
         "name": "Seattle Seahawks",
-        "pts": 10.51,
-        "epa": 6.49
+        "pts": 10.51
        }
-      ],
-      "epa": 17.17
+      ]
      },
      {
       "rid": 1,
@@ -8205,65 +7996,54 @@
        {
         "pos": "RB",
         "name": "Cam Skattebo",
-        "pts": 9.1,
-        "epa": -1.2
+        "pts": 9.1
        },
        {
         "pos": "RB",
         "name": "Emanuel Wilson",
-        "pts": 14.7,
-        "epa": -7.74
+        "pts": 14.7
        },
        {
         "pos": "TE",
         "name": "George Kittle",
-        "pts": 6.9,
-        "epa": -2.38
+        "pts": 6.9
        },
        {
         "pos": "WR",
         "name": "Michael Wilson",
-        "pts": 8.78,
-        "epa": -0.51
+        "pts": 8.78
        },
        {
         "pos": "WR",
         "name": "Nico Collins",
-        "pts": 12.6,
-        "epa": 4.54
+        "pts": 12.6
        },
        {
         "pos": "TE",
         "name": "Isaiah Likely",
-        "pts": 34.4,
-        "epa": 10.4
+        "pts": 34.4
        },
        {
         "pos": "QB",
         "name": "Michael Penix Jr.",
-        "pts": 15.55,
-        "epa": 5.94
+        "pts": 15.55
        },
        {
         "pos": "QB",
         "name": "Matthew Stafford",
-        "pts": 31.07,
-        "epa": 18.49
+        "pts": 31.07
        },
        {
         "pos": "K",
         "name": "Spencer Shrader",
-        "pts": 22.3,
-        "epa": 5.88
+        "pts": 22.3
        },
        {
         "pos": "DEF",
         "name": "Houston Texans",
-        "pts": 19.1,
-        "epa": 22.5
+        "pts": 19.1
        }
-      ],
-      "epa": 55.92
+      ]
      }
     ]
    }
@@ -8385,65 +8165,54 @@
        {
         "pos": "QB",
         "name": "Justin Fields",
-        "pts": 23.22,
-        "epa": 5.33
+        "pts": 23.22
        },
        {
         "pos": "RB",
         "name": "Tony Pollard",
-        "pts": 16.6,
-        "epa": 0.1
+        "pts": 16.6
        },
        {
         "pos": "RB",
         "name": "Kyren Williams",
-        "pts": 12.3,
-        "epa": -2.68
+        "pts": 12.3
        },
        {
         "pos": "WR",
         "name": "DJ Moore",
-        "pts": 25.8,
-        "epa": 3.81
+        "pts": 25.8
        },
        {
         "pos": "WR",
         "name": "Keenan Allen",
-        "pts": 12.8,
-        "epa": -4.78
+        "pts": 12.8
        },
        {
         "pos": "TE",
         "name": "Gerald Everett",
-        "pts": 8.9,
-        "epa": -3.46
+        "pts": 8.9
        },
        {
         "pos": "WR",
         "name": "Brandin Cooks",
-        "pts": 5.7,
-        "epa": 0.51
+        "pts": 5.7
        },
        {
         "pos": "QB",
         "name": "Joshua Dobbs",
-        "pts": 2.12,
-        "epa": -14.52
+        "pts": 2.12
        },
        {
         "pos": "K",
         "name": "Matt Gay",
-        "pts": -2.0,
-        "epa": -4.93
+        "pts": -2.0
        },
        {
         "pos": "DEF",
         "name": "Cleveland Browns",
-        "pts": 11.3,
-        "epa": 13.94
+        "pts": 11.3
        }
-      ],
-      "epa": -6.68
+      ]
      },
      {
       "rid": 7,
@@ -8459,65 +8228,54 @@
        {
         "pos": "QB",
         "name": "Matthew Stafford",
-        "pts": 22.66,
-        "epa": 5.6
+        "pts": 22.66
        },
        {
         "pos": "RB",
         "name": "Travis Etienne Jr.",
-        "pts": 16.2,
-        "epa": -2.25
+        "pts": 16.2
        },
        {
         "pos": "RB",
         "name": "Christian McCaffrey",
-        "pts": 16.3,
-        "epa": 3.46
+        "pts": 16.3
        },
        {
         "pos": "WR",
         "name": "Davante Adams",
-        "pts": 12.3,
-        "epa": -7.63
+        "pts": 12.3
        },
        {
         "pos": "WR",
         "name": "Mike Evans",
-        "pts": 1.8,
-        "epa": -1.59
+        "pts": 1.8
        },
        {
         "pos": "TE",
         "name": "Evan Engram",
-        "pts": 32.5,
-        "epa": 9.5
+        "pts": 32.5
        },
        {
         "pos": "RB",
         "name": "Alexander Mattison",
-        "pts": 6.6,
-        "epa": 0.73
+        "pts": 6.6
        },
        {
         "pos": "QB",
         "name": "Dak Prescott",
-        "pts": 16.44,
-        "epa": 1.57
+        "pts": 16.44
        },
        {
         "pos": "K",
         "name": "Jason Sanders",
-        "pts": 8.1,
-        "epa": -2.07
+        "pts": 8.1
        },
        {
         "pos": "DEF",
         "name": "Indianapolis Colts",
-        "pts": 2.85,
-        "epa": -4.14
+        "pts": 2.85
        }
-      ],
-      "epa": 3.19
+      ]
      }
     ]
    }

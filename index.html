@@ -171,7 +171,6 @@ aside.drawer.wide{width:min(780px,100%)}
 .rtab tfoot td{font-weight:700;border-top:2px solid var(--line)}
 .rtab .pos{flex:none;min-width:2.5em;text-align:center;font-size:9.5px;font-weight:700;color:#fff;border-radius:4px;padding:1px 0;letter-spacing:.02em}
 .pos-QB{background:#dc2626}.pos-RB{background:#16a34a}.pos-WR{background:#2563eb}.pos-TE{background:#eab308;color:#1a1d24!important}.pos-K{background:#9333ea}.pos-DEF{background:#8b4513}
-.ep-p{color:var(--good)}.ep-n{color:var(--bad)}
 @media (max-width:760px){.rcards{grid-template-columns:1fr}}
 @media (prefers-reduced-motion:reduce){aside.drawer,.scrim,section.cat>h2 .car{transition:none}}
 /* ---- phone ---- */
@@ -223,6 +222,7 @@ aside.drawer.wide{width:min(780px,100%)}
     <input type="search" id="q" placeholder="Search records, managers…" aria-label="Search records" enterkeyhint="search">
     <button class="dd" data-dd="type" aria-haspopup="true" aria-expanded="false">Type <span class="cnt" hidden></span><span class="car">▾</span></button>
     <button class="dd" data-dd="mgr" aria-haspopup="true" aria-expanded="false">Manager <span class="cnt" hidden></span><span class="car">▾</span></button>
+    <button class="dd" data-dd="era" aria-haspopup="true" aria-expanded="false">Era <span class="cnt" hidden></span><span class="car">▾</span></button>
     <button class="dd" data-dd="show" aria-haspopup="true" aria-expanded="false">More <span class="cnt" hidden></span><span class="car">▾</span></button>
     <button class="dd" id="ddAll" data-dd="all" aria-haspopup="true" aria-expanded="false">Filters <span class="cnt" hidden></span></button>
     <span class="tot" id="tot" role="status"></span>
@@ -248,18 +248,41 @@ aside.drawer.wide{width:min(780px,100%)}
 var REPO={owner:"namkurd",repo:"recordbook",branch:"main"};
 var CATS=["Seasons & Playoffs","Team Seasons","Games & Weeks","Projections & NFL Clock","Trades","FAB & Waivers","Sit / Start"];
 var CATVAR={"Seasons & Playoffs":"--c0","Team Seasons":"--c1","Games & Weeks":"--c2","Projections & NFL Clock":"--c3","Trades":"--c4","FAB & Waivers":"--c5","Sit / Start":"--c6"};
-var S={recs:[],log:[],q:"",cats:new Set(),mgrs:new Set(),opts:new Set(),sort:null,closed:new Set(),view:"records",edit:false,sel:null};
+var S={eras:new Set(),recs:[],log:[],q:"",cats:new Set(),mgrs:new Set(),opts:new Set(),sort:null,closed:new Set(),view:"records",edit:false,sel:null};
 var $=function(i){return document.getElementById(i)};
 function esc(s){return String(s==null?"":s).replace(/[&<>"']/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]})}
 function ls(k,v){try{if(v===undefined)return localStorage.getItem(k);if(v===null)localStorage.removeItem(k);else localStorage.setItem(k,v)}catch(e){return null}}
 
 /* ---------- load ---------- */
 function getJSON(u){return fetch(u,{cache:"no-store"}).then(function(r){if(!r.ok)throw new Error(u+" "+r.status);return r.text()})}
-Promise.all([getJSON("data/records.json"),getJSON("data/changelog.jsonl").catch(function(){return ""})]).then(function(a){
-  var d=JSON.parse(a[0]);S.recs=d.records;S.meta=d;
+Promise.all([getJSON("data/records.json"),getJSON("data/changelog.jsonl").catch(function(){return ""}),getJSON("data/eras.json").catch(function(){return "{}"})]).then(function(a){
+  ERAS=(JSON.parse(a[2]).seasons)||{};var d=JSON.parse(a[0]);S.recs=d.records;S.meta=d;
   S.log=a[1].split("\n").filter(Boolean).map(function(l){try{return JSON.parse(l)}catch(e){return null}}).filter(Boolean).reverse();
   fromURL();init();render();
 }).catch(function(e){$("sub").textContent="Couldn't load the data ("+e.message+"). If you opened this file directly, serve it over http(s).";});
+
+/* ---------- eras: which league format each season had ---------- */
+var ERAS={};
+var ERALABEL={t10:"10 teams",t12:"12 teams",ppr:"PPR",nppr:"No PPR",sf:"Superflex"};
+function seasonsOf(r){
+  if(r._ss)return r._ss;var txt=[r.when||""].concat((r.ties||[]).map(function(t){return t.when||""})).join(" ; "),out={},all=Object.keys(ERAS).map(Number),last=Math.max.apply(null,all.concat([2026]));
+  if(/all-time/i.test(txt)){all.forEach(function(y){out[y]=1})}
+  else{
+    var m,re=/(20\d\d)\s*[-–]\s*(20\d\d)/g;while((m=re.exec(txt))){for(var y=+m[1];y<=+m[2];y++)out[y]=1}
+    re=/'(\d\d)\s*[-–]\s*'(\d\d)/g;while((m=re.exec(txt))){var a=+m[1],b=+m[2];a+=a<=30?2000:1900;b+=b<=30?2000:1900;for(y=a;y<=b;y++)out[y]=1}
+    re=/(20\d\d)\s*[-–]\s*(?=$|[;,])/g;while((m=re.exec(txt))){for(y=+m[1];y<=last;y++)out[y]=1}
+    re=/\b(20\d\d)\b/g;while((m=re.exec(txt)))out[+m[1]]=1;
+    re=/'(\d\d)\b/g;while((m=re.exec(txt))){var yy=+m[1];out[yy+(yy<=30?2000:1900)]=1}
+  }
+  return r._ss=Object.keys(out).map(Number).sort()}
+function eraTags(y){var e=ERAS[y];if(!e)return[];var t=["t"+e.teams,e.ppr];if(e.superflex)t.push("sf");return t}
+function eraMatch(r){
+  var sel={t:[],p:[],q:[]};S.eras.forEach(function(k){(k[0]==="t"?sel.t:k==="ppr"||k==="nppr"?sel.p:sel.q).push(k)});
+  if(!sel.t.length&&!sel.p.length&&!sel.q.length)return true;
+  return seasonsOf(r).some(function(y){var tg=eraTags(y);if(!tg.length)return false;
+    return(!sel.t.length||sel.t.some(function(k){return tg.indexOf(k)>=0}))&&(!sel.p.length||sel.p.some(function(k){return tg.indexOf(k)>=0}))&&(!sel.q.length||tg.indexOf("sf")>=0)})}
+function eraLine(r){var ss=seasonsOf(r);if(!ss.length)return"";var first=eraTags(ss[0]).join("|");if(!ss.every(function(y){return eraTags(y).join("|")===first}))return"";
+  return eraTags(ss[0]).map(function(k){return ERALABEL[k]}).join(" · ")}
 
 /* ---------- helpers ---------- */
 function allHolders(r){var h=(r.holders||[]).slice();(r.ties||[]).forEach(function(t){h.push(t.holder)});return h}
@@ -274,31 +297,35 @@ function matches(r){
   if(S.opts.has("recent")&&!recent(r))return false;
   var src=["computed","seeded","manual"].filter(function(k){return S.opts.has(k)});if(src.length&&src.indexOf(r.source)<0)return false;
   if(S.opts.has("replay")&&!(r.replay&&r.replay.url))return false;
+  if(S.eras.size&&!eraMatch(r))return false;
   if(S.q){var hay=(r.name+" "+r.value+" "+r.holder+" "+(r.team||"")+" "+r.when+" "+(r.ties||[]).map(function(t){return t.holder}).join(" ")).toLowerCase();if(!S.q.toLowerCase().split(/\s+/).every(function(w){return hay.indexOf(w)>=0}))return false}
   return true}
 
 /* ---------- URL state ---------- */
-function fromURL(){var p=new URLSearchParams(location.search);S.q=p.get("q")||"";(p.get("type")||"").split("|").filter(Boolean).forEach(function(x){S.cats.add(x)});(p.get("mgr")||"").split("|").filter(Boolean).forEach(function(x){S.mgrs.add(x)});(p.get("show")||"").split("|").filter(Boolean).forEach(function(x){S.opts.add(x)});if(p.get("view")==="changes")S.view="changes";S.focus=p.get("r")}
-function toURL(){var p=new URLSearchParams();if(S.q)p.set("q",S.q);if(S.cats.size)p.set("type",[...S.cats].join("|"));if(S.mgrs.size)p.set("mgr",[...S.mgrs].join("|"));if(S.opts.size)p.set("show",[...S.opts].join("|"));if(S.view==="changes")p.set("view","changes");if(S.sel)p.set("r",S.sel);var s=p.toString();try{history.replaceState(null,"",location.pathname+(s?"?"+s:""))}catch(e){}}
+function fromURL(){var p=new URLSearchParams(location.search);S.q=p.get("q")||"";(p.get("type")||"").split("|").filter(Boolean).forEach(function(x){S.cats.add(x)});(p.get("mgr")||"").split("|").filter(Boolean).forEach(function(x){S.mgrs.add(x)});(p.get("show")||"").split("|").filter(Boolean).forEach(function(x){S.opts.add(x)});(p.get("era")||"").split("|").filter(Boolean).forEach(function(x){S.eras.add(x)});if(p.get("view")==="changes")S.view="changes";S.focus=p.get("r")}
+function toURL(){var p=new URLSearchParams();if(S.q)p.set("q",S.q);if(S.cats.size)p.set("type",[...S.cats].join("|"));if(S.mgrs.size)p.set("mgr",[...S.mgrs].join("|"));if(S.opts.size)p.set("show",[...S.opts].join("|"));if(S.eras.size)p.set("era",[...S.eras].join("|"));if(S.view==="changes")p.set("view","changes");if(S.sel)p.set("r",S.sel);var s=p.toString();try{history.replaceState(null,"",location.pathname+(s?"?"+s:""))}catch(e){}}
 
 /* ---------- filters: slim bar + dropdowns (one bottom sheet on phones) ---------- */
 var OPTLABEL={recent:"Recently changed",raw:"Raw only",adj:"Era-adjusted only",computed:"Computed",seeded:"Seeded",manual:"Manual",replay:"Has replay"};
 function countWith(fn){var keep={cats:S.cats,mgrs:S.mgrs,opts:S.opts};return S.recs.filter(fn).length}
 function opt(kind,key,label,checked,n,sw,radio){
-  return'<label class="opt"><input type="'+(radio?"radio":"checkbox")+'" name="'+kind+(radio?"-era":"")+'" data-k="'+kind+'" data-v="'+esc(key)+'"'+(checked?" checked":"")+">"+(sw?'<span class="sw" style="background:var('+sw+')"></span>':"")+"<span>"+esc(label)+"</span>"+(n!=null?'<span class="n">'+n+"</span>":"")+"</label>"}
+  return'<label class="opt"><input type="'+(radio?"radio":"checkbox")+'" name="'+kind+(radio?"-r":"")+'" data-k="'+kind+'" data-v="'+esc(key)+'"'+(checked?" checked":"")+">"+(sw?'<span class="sw" style="background:var('+sw+')"></span>':"")+"<span>"+esc(label)+"</span>"+(n!=null?'<span class="n">'+n+"</span>":"")+"</label>"}
 function panelHTML(which){
   var h="";
   if(which==="type"||which==="all"){h+="<h5>Type of record</h5>"+CATS.map(function(c){return opt("cat",c,c,S.cats.has(c),S.recs.filter(function(r){return r.category===c}).length,CATVAR[c]+"h")}).join("")}
   if(which==="mgr"||which==="all"){h+="<h5>Held by</h5><div class='mgrid'>"+mgrList().map(function(x){return opt("mgr",x[0],x[0],S.mgrs.has(x[0]),x[1])}).join("")+"</div>"}
+  if(which==="era"||which==="all"){h+="<h5>Teams</h5>"+opt("era","t10","10 teams (2011-2025)",S.eras.has("t10"),null)+opt("era","t12","12 teams (2026-)",S.eras.has("t12"),null)+
+      "<h5>Scoring</h5>"+opt("era","nppr","No PPR (2011-2021)",S.eras.has("nppr"),null)+opt("era","ppr","PPR (2022-)",S.eras.has("ppr"),null)+
+      "<h5>Lineup</h5>"+opt("era","sf","Superflex (2023-)",S.eras.has("sf"),null)}
   if(which==="show"||which==="all"){
     var era=S.opts.has("raw")?"raw":S.opts.has("adj")?"adj":"both";
-    h+="<h5>Scores</h5>"+opt("era","both","Raw and era-adjusted",era==="both",null,0,1)+opt("era","raw","Raw only",era==="raw",null,0,1)+opt("era","adj","Era-adjusted only",era==="adj",null,0,1)+
+    h+="<h5>Scores</h5>"+opt("score","both","Raw and era-adjusted",era==="both",null,0,1)+opt("score","raw","Raw only",era==="raw",null,0,1)+opt("score","adj","Era-adjusted only",era==="adj",null,0,1)+
       "<h5>Source</h5>"+["computed","seeded","manual"].map(function(k){return opt("opt",k,OPTLABEL[k],S.opts.has(k))}).join("")+
       "<h5>Other</h5>"+["recent","replay"].map(function(k){return opt("opt",k,OPTLABEL[k],S.opts.has(k))}).join("")}
   return h}
 var panelFor=null,panelBtn=null;
 function openPanel(which,btn){
-  panelFor=which;panelBtn=btn;$("ptitle").textContent={type:"Type of record",mgr:"Manager",show:"More filters",all:"Filters"}[which];
+  panelFor=which;panelBtn=btn;$("ptitle").textContent={type:"Type of record",mgr:"Manager",era:"Era",show:"More filters",all:"Filters"}[which];
   $("pbody").innerHTML=panelHTML(which);$("panel").classList.add("on");$("pscrim").classList.add("on");
   document.querySelectorAll(".dd").forEach(function(b){b.setAttribute("aria-expanded",b===btn)});
   var mobile=matchMedia("(max-width:700px)").matches;
@@ -310,24 +337,25 @@ function applyPanel(e){
   var t=e.target;if(!t.dataset||!t.dataset.k)return;var k=t.dataset.k,v=t.dataset.v;
   if(k==="cat")t.checked?S.cats.add(v):S.cats.delete(v);
   else if(k==="mgr")t.checked?S.mgrs.add(v):S.mgrs.delete(v);
-  else if(k==="era"){S.opts.delete("raw");S.opts.delete("adj");if(v!=="both")S.opts.add(v)}
+  else if(k==="era")t.checked?S.eras.add(v):S.eras.delete(v);
+  else if(k==="score"){S.opts.delete("raw");S.opts.delete("adj");if(v!=="both")S.opts.add(v)}
   else t.checked?S.opts.add(v):S.opts.delete(v);
   render();updPanelCount()}
 function activeChips(){
-  var out=[];S.cats.forEach(function(c){out.push(["cat",c,c])});S.mgrs.forEach(function(m){out.push(["mgr",m,m])});S.opts.forEach(function(o){out.push(["opt",o,OPTLABEL[o]||o])});return out}
+  var out=[];S.cats.forEach(function(c){out.push(["cat",c,c])});S.eras.forEach(function(e){out.push(["era",e,ERALABEL[e]||e])});S.mgrs.forEach(function(m){out.push(["mgr",m,m])});S.opts.forEach(function(o){out.push(["opt",o,OPTLABEL[o]||o])});return out}
 function buildBar(){
-  var set={type:S.cats.size,mgr:S.mgrs.size,show:S.opts.size};set.all=set.type+set.mgr+set.show;
+  var set={type:S.cats.size,mgr:S.mgrs.size,era:S.eras.size,show:S.opts.size};set.all=set.type+set.mgr+set.era+set.show;
   document.querySelectorAll(".dd").forEach(function(b){var n=set[b.dataset.dd],c=b.querySelector(".cnt");c.hidden=!n;c.textContent=n||"";b.classList.toggle("has",!!n)});
   var ch=activeChips(),a=$("active");a.innerHTML=ch.map(function(c){return'<button class="fc" data-k="'+c[0]+'" data-v="'+esc(c[1])+'" aria-label="Remove filter '+esc(c[2])+'">'+esc(c[2])+" <i>×</i></button>"}).join("")+(ch.length>1?'<button class="fc clr" id="clrAll">Clear all</button>':"");
-  var n=S.recs.filter(matches).length;$("tot").textContent=(S.cats.size||S.mgrs.size||S.opts.size||S.q)?n+" of "+S.recs.length:S.recs.length+" records";
+  var n=S.recs.filter(matches).length;$("tot").textContent=(S.cats.size||S.mgrs.size||S.eras.size||S.opts.size||S.q)?n+" of "+S.recs.length:S.recs.length+" records";
   var cs=$("clrAll");if(cs)cs.onclick=clearAll;
   var fh=$("filters").offsetHeight;if(fh)document.documentElement.style.setProperty("--fbh",fh+"px")}
-function clearAll(){S.q="";S.cats.clear();S.mgrs.clear();S.opts.clear();$("q").value="";render();if(panelFor)$("pbody").innerHTML=panelHTML(panelFor)}
+function clearAll(){S.q="";S.eras.clear();S.cats.clear();S.mgrs.clear();S.opts.clear();$("q").value="";render();if(panelFor)$("pbody").innerHTML=panelHTML(panelFor)}
 function init(){
   $("q").value=S.q;$("q").oninput=function(){S.q=this.value;render()};
   document.querySelectorAll(".dd").forEach(function(b){b.onclick=function(){panelFor===b.dataset.dd?closePanel():openPanel(b.dataset.dd,b)}});
   $("pbody").addEventListener("change",applyPanel);$("pscrim").onclick=closePanel;$("pdone").onclick=closePanel;$("pclear").onclick=clearAll;
-  $("active").addEventListener("click",function(e){var c=e.target.closest(".fc[data-k]");if(!c)return;var k=c.dataset.k,v=c.dataset.v;(k==="cat"?S.cats:k==="mgr"?S.mgrs:S.opts).delete(v);render()});
+  $("active").addEventListener("click",function(e){var c=e.target.closest(".fc[data-k]");if(!c)return;var k=c.dataset.k,v=c.dataset.v;(k==="cat"?S.cats:k==="mgr"?S.mgrs:k==="era"?S.eras:S.opts).delete(v);render()});
   $("tab-records").onclick=function(){S.view="records";render()};$("tab-changes").onclick=function(){S.view="changes";render()};
   $("scrim").onclick=closeDrawer;$("dx").onclick=closeDrawer;
   document.addEventListener("keydown",function(e){if(e.key==="Escape"){if(panelFor)closePanel();else closeDrawer()}
@@ -412,17 +440,17 @@ document.addEventListener("scroll",hideTip,true);
 function rec(id){return S.recs.filter(function(r){return r.id===id})[0]}
 
 /* ---------- drawer ---------- */
-function epaCell(v){if(v==null)return"";return'<span class="'+(v>0.004?"ep-p":v<-0.004?"ep-n":"")+'">'+(v>0?"+":"")+v.toFixed(2)+"</span>"}
 function detailHTML(x){return'<div class="fcards">'+x.blocks.map(function(b,i){return'<div class="fcard'+(b.chip?" win":"")+(x.blocks.length===1?" one":"")+'"><div class="fc-h">'+esc(b.head)+(b.chip?'<span class="fc-chip">'+esc(b.chip)+"</span>":"")+"</div><dl>"+b.rows.map(function(r){return"<dt>"+esc(r[0])+"</dt><dd>"+esc(r[1])+"</dd>"}).join("")+"</dl></div>"}).join("")+"</div>"}
 function cardHTML(c){
-  var rows=c.players.map(function(p){return'<tr><td class="rn"><span class="pos pos-'+esc(p.pos)+'">'+esc(p.pos)+'</span><span class="nm" title="'+esc(p.name)+'">'+esc(p.name)+'</span></td><td>'+p.pts.toFixed(2)+"</td><td>"+epaCell(p.epa)+"</td></tr>"}).join("");
+  var rows=c.players.map(function(p){return'<tr><td class="rn"><span class="pos pos-'+esc(p.pos)+'">'+esc(p.pos)+'</span><span class="nm" title="'+esc(p.name)+'">'+esc(p.name)+'</span></td><td>'+p.pts.toFixed(2)+"</td></tr>"}).join("");
   return'<div class="rcard'+(c.won?" win":"")+'"><div class="rc-h"><div class="rc-rum" title="Rumbles earned that week"><b>'+c.rumbles+"</b><small>vs. Field "+c.vs_field+'</small></div><div class="rc-id"><b>'+esc(c.name)+"</b>"+(c.won?'<span class="rc-win">WINNER</span>':"")+"<small>season "+c.season_rumbles+" · H2H "+c.w+"-"+c.l+'</small></div><div class="rc-tot"><b>'+c.act.toFixed(2)+"</b></div></div>"+
-   '<table class="rtab"><thead><tr><th></th><th>Act</th><th>EPA</th></tr></thead><tbody>'+rows+'</tbody><tfoot><tr><td class="rn">Starters</td><td>'+c.act.toFixed(2)+"</td><td>"+epaCell(c.epa)+"</td></tr></tfoot></table></div>"}
+   '<table class="rtab"><thead><tr><th></th><th>Pts</th></tr></thead><tbody>'+rows+'</tbody><tfoot><tr><td class="rn">Starters</td><td>'+c.act.toFixed(2)+"</td></tr></tfoot></table></div>"}
 
 var lastFocus=null;
 function openDrawer(id){
   var r=rec(id);if(!r)return;S.sel=id;lastFocus=document.activeElement;hideTip();
   var h='<h3>'+esc(r.name)+'</h3><div class="muted">'+esc(r.category)+'</div><div class="big">'+esc(shortVal(r.value))+'</div>'+(shortVal(r.value)!==r.value?'<div class="muted">'+esc(r.value.slice(shortVal(r.value).length).trim())+"</div>":"")+'<div style="margin-top:4px">'+holderHTML(r)+' <span class="muted">· '+esc(r.when)+(r.team?" · "+esc(r.team):"")+"</span></div>";
+  var el=eraLine(r);if(el)h+='<div class="muted" style="margin-top:6px;font-size:12.5px">Era: '+esc(el)+"</div>";
   var acts="";if(r.replay&&r.replay.url)acts+='<a class="btn" href="'+esc(r.replay.url)+'" target="_blank" rel="noopener">▶ Watch in Rumble Central</a> ';
   (r.cards?[]:(r.evidence||[])).forEach(function(u,i){acts+='<a class="btn sec" href="'+esc(u)+'" target="_blank" rel="noopener">📷 Proof'+((r.evidence.length>1)?" "+(i+1):"")+"</a> "});
   if(acts)h+='<div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap">'+acts+"</div>";
