@@ -15,7 +15,7 @@ for r in doc["records"]:   # the two non-FAB trade counts the data can verify
     if r["name"] == "Most non-FAB Trades in a Season (Team)": r["metric"], r["direction"] = "trades_team_season", "max"
 VERIFY_MAP = {"Most Points on Bench": ("bench", "max"), "Most Shotguns in a Season (League)": ("shot_league", "max"), "Most 0.0's in a Win": ("zeros_win", "max"),
               "Highest % Points Scored by 1 Player": ("top_share", "max"), "Fewest Total League Points on Thursday Night": ("thu_league", "min"),
-              "Most Points on a Saturday": ("sat_pts", "max"), "Largest Monday Night Deficit Overcome": ("mnf_overcome", "max")}
+              "Most Points on a Saturday": ("sat_pts", "max"), "Highest Projected Point Total": ("high_proj", "max"), "Highest Projected Point Total (Era Adjusted)": ("high_proj_adj", "max"), "Largest Monday Night Deficit Overcome": ("mnf_overcome", "max")}
 for r in doc["records"]:
     k = VERIFY_MAP.get(r["name"].strip())
     if k:

@@ -454,13 +454,13 @@
     },
     {
      "value": "3",
-     "holder": "Haan",
+     "holder": "Aidan",
      "when": "2016-2018",
      "replay": null
     },
     {
      "value": "3",
-     "holder": "Aidan",
+     "holder": "Haan",
      "when": "2016-2018",
      "replay": null
     }
@@ -1152,13 +1152,13 @@
     },
     {
      "value": "3",
-     "holder": "Haan",
+     "holder": "Aidan",
      "when": "2016-2018",
      "replay": null
     },
     {
      "value": "3",
-     "holder": "Aidan",
+     "holder": "Haan",
      "when": "2016-2018",
      "replay": null
     },
@@ -7670,22 +7670,37 @@
    "id": "highest-projected-point-total",
    "name": "Highest Projected Point Total",
    "category": "Projections & NFL Clock",
-   "source": "seeded",
-   "metric": null,
-   "direction": null,
-   "value": "172.05 (15% above league average score)",
-   "value_num": 172.05,
-   "when": "Week 13 - 2025",
+   "source": "computed",
+   "metric": "high_proj",
+   "direction": "max",
+   "value": "169.23 (14% above league average score)",
+   "value_num": 169.23,
+   "when": "Week 12 - 2025",
    "holder": "Steven",
    "holders": [
     "Steven"
    ],
    "league_level": false,
-   "team": "No Country for Old Men",
+   "team": "",
    "notes": [],
    "evidence": [],
-   "replay": null,
-   "previous": null,
+   "replay": {
+    "season": 2025,
+    "week": 12,
+    "rid": 7,
+    "opp_rid": 9,
+    "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=12.7.9&season=2025"
+   },
+   "previous": {
+    "value": "172.05 (15% above league average score)",
+    "holder": "Steven",
+    "when": "Week 13 - 2025",
+    "team": "No Country for Old Men",
+    "evidence": [],
+    "replaced_on": "2026-11-03",
+    "replaced_by": "Steven",
+    "reconciled": true
+   },
    "ties": [],
    "locked": false,
    "status": "active",
@@ -7693,32 +7708,243 @@
    "size_sensitive": false,
    "needs_definition": null,
    "definition": null,
-   "engine_gap": "Needs stored projection snapshots.",
-   "updated": "2026-11-02"
+   "engine_gap": null,
+   "updated": "2026-11-03",
+   "leaderboard": [
+    {
+     "value": "169.23 (14% above league average score)",
+     "holder": "Steven",
+     "when": "Week 12 - 2025",
+     "replay": {
+      "season": 2025,
+      "week": 12,
+      "rid": 7,
+      "opp_rid": 9,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=12.7.9&season=2025"
+     }
+    },
+    {
+     "value": "168.32 (13% above league average score)",
+     "holder": "Steven",
+     "when": "Week 13 - 2025",
+     "replay": {
+      "season": 2025,
+      "week": 13,
+      "rid": 7,
+      "opp_rid": 6,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=13.7.6&season=2025"
+     }
+    },
+    {
+     "value": "166.29 (12% above league average score)",
+     "holder": "Steven",
+     "when": "Week 15 - 2025",
+     "replay": {
+      "season": 2025,
+      "week": 15,
+      "rid": 7,
+      "opp_rid": 8,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=15.7.8&season=2025"
+     }
+    },
+    {
+     "value": "165.58 (12% above league average score)",
+     "holder": "Steven",
+     "when": "Week 17 - 2025",
+     "replay": {
+      "season": 2025,
+      "week": 17,
+      "rid": 7,
+      "opp_rid": 10,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=17.7.10&season=2025"
+     }
+    },
+    {
+     "value": "164.78 (11% above league average score)",
+     "holder": "Steven",
+     "when": "Week 9 - 2025",
+     "replay": {
+      "season": 2025,
+      "week": 9,
+      "rid": 7,
+      "opp_rid": 5,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=9.7.5&season=2025"
+     }
+    }
+   ],
+   "verified": true,
+   "detail": null,
+   "cards": {
+    "season": 2025,
+    "week": 12,
+    "teams": [
+     {
+      "rid": 7,
+      "name": "Steven",
+      "won": true,
+      "act": 227.38,
+      "rumbles": 18,
+      "vs_field": 9,
+      "season_rumbles": 165,
+      "w": 9,
+      "l": 3,
+      "players": [
+       {
+        "pos": "QB",
+        "name": "Patrick Mahomes",
+        "pts": 19.48
+       },
+       {
+        "pos": "RB",
+        "name": "James Cook III",
+        "pts": 22.9
+       },
+       {
+        "pos": "RB",
+        "name": "Bijan Robinson",
+        "pts": 16.2
+       },
+       {
+        "pos": "TE",
+        "name": "Trey McBride",
+        "pts": 19.9
+       },
+       {
+        "pos": "WR",
+        "name": "George Pickens",
+        "pts": 32.6
+       },
+       {
+        "pos": "WR",
+        "name": "Jaxon Smith-Njigba",
+        "pts": 38.6
+       },
+       {
+        "pos": "WR",
+        "name": "Rashee Rice",
+        "pts": 27.1
+       },
+       {
+        "pos": "QB",
+        "name": "Matthew Stafford",
+        "pts": 25.27
+       },
+       {
+        "pos": "K",
+        "name": "Cam Little",
+        "pts": 13.4
+       },
+       {
+        "pos": "DEF",
+        "name": "Baltimore Ravens",
+        "pts": 11.93
+       }
+      ]
+     },
+     {
+      "rid": 9,
+      "name": "Christian",
+      "won": false,
+      "act": 131.85,
+      "rumbles": 4,
+      "vs_field": 4,
+      "season_rumbles": 92,
+      "w": 5,
+      "l": 7,
+      "players": [
+       {
+        "pos": "QB",
+        "name": "Josh Allen",
+        "pts": 8.32
+       },
+       {
+        "pos": "RB",
+        "name": "Chase Brown",
+        "pts": 18.5
+       },
+       {
+        "pos": "RB",
+        "name": "Zach Charbonnet",
+        "pts": 11.0
+       },
+       {
+        "pos": "TE",
+        "name": "Dalton Schultz",
+        "pts": 1.8
+       },
+       {
+        "pos": "RB",
+        "name": "Emanuel Wilson",
+        "pts": 30.5
+       },
+       {
+        "pos": "WR",
+        "name": "DK Metcalf",
+        "pts": 15.4
+       },
+       {
+        "pos": "WR",
+        "name": "A.J. Brown",
+        "pts": 27.5
+       },
+       {
+        "pos": "QB",
+        "name": "Bryce Young",
+        "pts": 9.81
+       },
+       {
+        "pos": "K",
+        "name": "Cairo Santos",
+        "pts": 8.7
+       },
+       {
+        "pos": "DEF",
+        "name": "Detroit Lions",
+        "pts": 0.32
+       }
+      ]
+     }
+    ]
+   }
   },
   {
    "id": "highest-projected-point-total-era-adjusted",
    "name": "Highest Projected Point Total (Era Adjusted)",
    "category": "Projections & NFL Clock",
-   "source": "seeded",
-   "metric": null,
-   "direction": null,
-   "value": "159.81 (18% above league average score)",
-   "value_num": 159.81,
-   "when": "Week 14 - 2024",
-   "holder": "Ben",
+   "source": "computed",
+   "metric": "high_proj_adj",
+   "direction": "max",
+   "value": "146.10 (29% above league average score)",
+   "value_num": 128.69,
+   "when": "Week 17 - 2021",
+   "holder": "Ryan",
    "holders": [
-    "Ben"
+    "Ryan"
    ],
    "league_level": false,
-   "team": "Resident Evil",
+   "team": "",
    "notes": [
     "#2: 154.51 Week 5 2022 Joe Wins of Winter",
     "#3: 141.2 Week 13 2021 Ankit The Leviathan"
    ],
    "evidence": [],
-   "replay": null,
-   "previous": null,
+   "replay": {
+    "season": 2021,
+    "week": 17,
+    "rid": 10,
+    "opp_rid": 2,
+    "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=17.10.2&season=2021"
+   },
+   "previous": {
+    "value": "159.81 (18% above league average score)",
+    "holder": "Ben",
+    "when": "Week 14 - 2024",
+    "team": "Resident Evil",
+    "evidence": [],
+    "replaced_on": "2026-11-03",
+    "replaced_by": "Ryan",
+    "reconciled": true
+   },
    "ties": [],
    "locked": false,
    "status": "active",
@@ -7726,8 +7952,204 @@
    "size_sensitive": false,
    "needs_definition": null,
    "definition": null,
-   "engine_gap": "Needs stored projection snapshots.",
-   "updated": "2026-11-02"
+   "engine_gap": null,
+   "updated": "2026-11-03",
+   "leaderboard": [
+    {
+     "value": "146.10 (29% above league average score)",
+     "holder": "Ryan",
+     "when": "Week 17 - 2021",
+     "replay": {
+      "season": 2021,
+      "week": 17,
+      "rid": 10,
+      "opp_rid": 2,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=17.10.2&season=2021"
+     }
+    },
+    {
+     "value": "143.76 (27% above league average score)",
+     "holder": "Ankit",
+     "when": "Week 9 - 2021",
+     "replay": {
+      "season": 2021,
+      "week": 9,
+      "rid": 8,
+      "opp_rid": 3,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=9.8.3&season=2021"
+     }
+    },
+    {
+     "value": "138.66 (22% above league average score)",
+     "holder": "Ankit",
+     "when": "Week 2 - 2021",
+     "replay": {
+      "season": 2021,
+      "week": 2,
+      "rid": 8,
+      "opp_rid": 7,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=2.8.7&season=2021"
+     }
+    },
+    {
+     "value": "138.56 (22% above league average score)",
+     "holder": "Ben",
+     "when": "Week 8 - 2021",
+     "replay": {
+      "season": 2021,
+      "week": 8,
+      "rid": 2,
+      "opp_rid": 10,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=8.2.10&season=2021"
+     }
+    },
+    {
+     "value": "137.63 (21% above league average score)",
+     "holder": "Ankit",
+     "when": "Week 1 - 2021",
+     "replay": {
+      "season": 2021,
+      "week": 1,
+      "rid": 8,
+      "opp_rid": 6,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=1.8.6&season=2021"
+     }
+    }
+   ],
+   "verified": true,
+   "detail": null,
+   "cards": {
+    "season": 2021,
+    "week": 17,
+    "teams": [
+     {
+      "rid": 10,
+      "name": "Ryan",
+      "won": false,
+      "act": 123.77,
+      "rumbles": 4,
+      "vs_field": 4,
+      "season_rumbles": 190,
+      "w": 11,
+      "l": 4,
+      "players": [
+       {
+        "pos": "QB",
+        "name": "Aaron Rodgers",
+        "pts": 20.32
+       },
+       {
+        "pos": "RB",
+        "name": "Ezekiel Elliott",
+        "pts": 3.5
+       },
+       {
+        "pos": "RB",
+        "name": "Jonathan Taylor",
+        "pts": 17.65
+       },
+       {
+        "pos": "WR",
+        "name": "Tee Higgins",
+        "pts": 7.45
+       },
+       {
+        "pos": "WR",
+        "name": "Amari Cooper",
+        "pts": 8.3
+       },
+       {
+        "pos": "TE",
+        "name": "Mark Andrews",
+        "pts": 10.9
+       },
+       {
+        "pos": "RB",
+        "name": "Devin Singletary",
+        "pts": 23.0
+       },
+       {
+        "pos": "WR",
+        "name": "Justin Jefferson",
+        "pts": 8.05
+       },
+       {
+        "pos": "K",
+        "name": "Evan McPherson",
+        "pts": 11.6
+       },
+       {
+        "pos": "DEF",
+        "name": "New England Patriots",
+        "pts": 13.0
+       }
+      ]
+     },
+     {
+      "rid": 2,
+      "name": "Ben",
+      "won": true,
+      "act": 138.97,
+      "rumbles": 18,
+      "vs_field": 9,
+      "season_rumbles": 178,
+      "w": 11,
+      "l": 4,
+      "players": [
+       {
+        "pos": "QB",
+        "name": "Kyler Murray",
+        "pts": 22.42
+       },
+       {
+        "pos": "RB",
+        "name": "Darrel Williams",
+        "pts": 23.45
+       },
+       {
+        "pos": "RB",
+        "name": "Ronald Jones",
+        "pts": 2.7
+       },
+       {
+        "pos": "WR",
+        "name": "Ja'Marr Chase",
+        "pts": 48.6
+       },
+       {
+        "pos": "WR",
+        "name": "Michael Pittman Jr.",
+        "pts": 6.45
+       },
+       {
+        "pos": "TE",
+        "name": "Travis Kelce",
+        "pts": 8.9
+       },
+       {
+        "pos": "RB",
+        "name": "Chase Edmonds",
+        "pts": 9.45
+       },
+       {
+        "pos": "TE",
+        "name": "George Kittle",
+        "pts": 4.0
+       },
+       {
+        "pos": "K",
+        "name": "Greg Zuerlein",
+        "pts": 1.0
+       },
+       {
+        "pos": "DEF",
+        "name": "San Francisco 49ers",
+        "pts": 12.0
+       }
+      ]
+     }
+    ]
+   }
   },
   {
    "id": "most-0-0-s-in-a-win",

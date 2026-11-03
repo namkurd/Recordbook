@@ -84,7 +84,7 @@ def timeline_facts(d, season, week, lineups, pairs):
         if mnf_lead is None and mon_ko is not None: mnf_lead = round(a - b, 2)
         per[rid].update(lead_max=round(lead_max, 2), lead_min=round(lead_min, 2), chg=chg, mnf=mnf_lead)
         per[opp].update(lead_max=round(-lead_min, 2), lead_min=round(-lead_max, 2), chg=chg, mnf=None if mnf_lead is None else round(-mnf_lead, 2))
-    return per, {"tnf_total": round(tnf_total, 2), "tnf": tnf}
+    return per, {"tnf_total": round(tnf_total, 2), "tnf": tnf, "psrc": t.get("preSrc")}
 
 def ingest(d, budget_weeks=400):
     cache = load_cache(); names = load_names(); need_names = set(); added = 0

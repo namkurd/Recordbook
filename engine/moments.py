@@ -18,7 +18,10 @@ def make(d, cache, names):
         for rid, t in w["teams"].items():
             g = G.get((s, week, int(rid)))
             if g: rows.append({"s": s, "w": week, "rid": int(rid), "g": g, "t": t, "wk": w, "m": g["m"]})
+    rows_all = rows
+    rows = [r for r in rows if True]
     by = {(r["s"], r["w"], r["rid"]): r for r in rows}
+    sl = [r for r in rows if r["wk"].get("psrc") == "sleeper"]          # weeks whose pre-game numbers are Sleeper's own projections (not an average fallback)
     def mine(r, key): return by.get((r["s"], r["w"], r["g"]["opp_rid"]))
 
     def zeros(r): return [p for p in r["t"]["zeros"] if p != "0" and not _isdef(p)]
@@ -106,21 +109,30 @@ def make(d, cache, names):
     # ---- projections ----
     def upset():
         out = []
-        for r in rows:
+        for r in sl:
             o = mine(r, "t")
             if r["g"]["win"] and o and r["t"].get("proj") and o["t"].get("proj"):
                 gap = o["t"]["proj"] - r["t"]["proj"]
                 if gap > 0: out.append(_c(round(gap, 2), [r["m"]], r["s"], r["w"], *ref(r), when=wk(r["s"], r["w"]), ht=f'{r["m"]} over {r["g"]["opp"]}'))
         return out
     def over_proj(sign):
-        return lambda: [_c(round(sign * (r["g"]["pts"] - r["t"]["proj"]), 2), [r["m"]], r["s"], r["w"], *ref(r), when=wk(r["s"], r["w"]), ht=r["m"]) for r in rows if r["t"].get("proj")]
+        return lambda: [_c(round(sign * (r["g"]["pts"] - r["t"]["proj"]), 2), [r["m"]], r["s"], r["w"], *ref(r), when=wk(r["s"], r["w"]), ht=r["m"]) for r in sl if r["t"].get("proj")]
     R["upset_proj"] = upset; R["over_proj"] = over_proj(1); R["under_proj"] = over_proj(-1)
-    R["high_proj"] = lambda: [_c(r["t"]["proj"], [r["m"]], r["s"], r["w"], *ref(r), when=wk(r["s"], r["w"]), ht=r["m"]) for r in rows if r["t"].get("proj")]
+    def hp(adj):
+        out = []
+        for r in sl:
+            pj = r["t"].get("proj")
+            if not pj or r["s"] not in d.season_avg: continue
+            pct = 100 * pj / d.season_avg[r["s"]] - 100
+            c = _c(round(100 * pj / d.season_avg[r["s"]], 2) if adj else pj, [r["m"]], r["s"], r["w"], *ref(r), when=wk(r["s"], r["w"]), ht=r["m"])
+            c["display"] = f"{pj:.2f} ({pct:.0f}% above league average score)"; out.append(c)
+        return out
+    R["high_proj"] = lambda: hp(False); R["high_proj_adj"] = lambda: hp(True)
     return R
 
 FORMAT = {
  "bench": lambda v: f"{v:.2f}", "bench_season": lambda v: f"{v:.1f} pts", "shot_league": lambda v: f"{v:.0f}", "shot_week": lambda v: f"{v:.0f}", "shot_season": lambda v: f"{v:.0f}",
  "zeros_win": lambda v: f"{v:.0f}", "top_share": lambda v: f"{v:.1f}%", "thu_league": lambda v: f"{v:.1f}", "sat_pts": lambda v: f"{v:.2f}", "thu_pts": lambda v: f"{v:.2f}", "mon_pts": lambda v: f"{v:.2f}",
  "mnf_overcome": lambda v: f"{v:.2f}", "comeback": lambda v: f"{v:.1f} pts", "blown_lead": lambda v: f"{v:.1f} pts", "lead_changes": lambda v: f"{v:.0f}",
- "upset_proj": lambda v: f"{v:.1f} pts", "over_proj": lambda v: f"+{v:.1f} pts", "under_proj": lambda v: f"-{v:.1f} pts", "high_proj": lambda v: f"{v:.2f}",
+ "upset_proj": lambda v: f"{v:.1f} pts", "over_proj": lambda v: f"+{v:.1f} pts", "under_proj": lambda v: f"-{v:.1f} pts", "high_proj": lambda v: f"{v:.2f}", "high_proj_adj": lambda v: f"{v:.2f}",
 }

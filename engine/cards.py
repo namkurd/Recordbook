@@ -3,7 +3,7 @@ import re
 from load import fetch
 
 GAME_METRICS = {"game_pts", "game_pts_adj", "margin", "multiple", "win_pts", "loss_pts", "sit_start_miss", "sit_start_call", "worst_week",
-                "comeback", "blown_lead", "lead_changes", "upset_proj", "over_proj", "under_proj", "thu_pts", "mon_pts", "sat_pts", "mnf_overcome", "bench", "shot_week", "zeros_win", "top_share"}
+                "comeback", "blown_lead", "lead_changes", "upset_proj", "over_proj", "under_proj", "thu_pts", "mon_pts", "sat_pts", "mnf_overcome", "bench", "shot_week", "zeros_win", "top_share", "high_proj", "high_proj_adj"}
 EXTRA_IDS = {"most-points-on-a-saturday", "largest-monday-night-deficit-overcome"}   # seeded single-game records with a known week
 _cache = {}
 

@@ -19,7 +19,7 @@ args = set(sys.argv[1:]); BASELINE = "--baseline" in args; DRY = "--dry" in args
 TOL = {"game_pts_adj": 0.15, "league_week_adj": 0.15, "league_week": 0.05, "pf_plus": 0.05, "pa_plus": 0.05}
 
 FORMATS = {**MK.FORMAT, **MO.FORMAT, **EX.FORMAT}
-VERIFY = {"bench", "shot_league", "thu_league", "sat_pts", "mnf_overcome"}     # seeded records whose game is in the 2021+ data: Sleeper wins on a mismatch
+VERIFY = {"bench", "shot_league", "thu_league", "sat_pts", "mnf_overcome", "high_proj", "high_proj_adj"}     # seeded records whose game is in the 2021+ data: Sleeper wins on a mismatch
 NEW_MOMENTS = {"comeback", "blown_lead", "lead_changes", "upset_proj", "over_proj", "under_proj", "thu_pts", "mon_pts", "bench_season", "shot_week", "shot_season"}
 
 def stored_num(r):
