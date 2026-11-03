@@ -9,11 +9,18 @@ import metrics as M
 import cards as CARDS
 import seasons as SE
 import market as MK
+import facts as F
+import moments as MO
+import extras as EX
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 RC_BASE = os.environ.get("RC_BASE", "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html")
 args = set(sys.argv[1:]); BASELINE = "--baseline" in args; DRY = "--dry" in args
 TOL = {"game_pts_adj": 0.15, "league_week_adj": 0.15, "league_week": 0.05, "pf_plus": 0.05, "pa_plus": 0.05}
+
+FORMATS = {**MK.FORMAT, **MO.FORMAT, **EX.FORMAT}
+VERIFY = {"bench", "shot_league", "thu_league", "sat_pts", "mnf_overcome"}     # seeded records whose game is in the 2021+ data: Sleeper wins on a mismatch
+NEW_MOMENTS = {"comeback", "blown_lead", "lead_changes", "upset_proj", "over_proj", "under_proj", "thu_pts", "mon_pts", "bench_season", "shot_week", "shot_season"}
 
 def stored_num(r):
     v = r["value"]
@@ -25,7 +32,8 @@ def stored_num(r):
 
 def fmt(metric, c, d):
     v = c["value"]
-    if metric in MK.FORMAT: return MK.FORMAT[metric](v)
+    if c.get("display"): return c["display"]
+    if metric in FORMATS: return FORMATS[metric](v)
     if metric in ("season_pf", "season_pa", "pts_missed_playoffs", "pts_made_playoffs"): return f"{v:.0f}"
     if metric in ("pf_plus", "pa_plus"): return f"{v:.1f}"
     if metric == "field_pct": return f'{c["detail"]} ({v}%)'
@@ -64,7 +72,11 @@ def main():
     LEDGER = SE.make(d)
     for k, fn in LEDGER.items(): M.REGISTRY[k] = (lambda f: (lambda _d: f()))(fn)
     for k, fn in MK.REG.items(): M.REGISTRY[k] = fn
-    OWNED = set(MK.REG) - {"trades_league_season", "trades_team_season"} | {"trader_best", "trader_worst"}
+    FACTS, NAMES = (F.load_cache(), F.load_names()) if "--no-ingest" in args else F.ingest(d)
+    for k, fn in MO.make(d, FACTS, NAMES).items(): M.REGISTRY[k] = (lambda f: (lambda _d: f()))(fn)
+    EXR = EX.make(d)
+    for k, fn in EXR.items(): M.REGISTRY[k] = (lambda f: (lambda _d: f()))(fn)
+    OWNED = set(MK.REG) - {"trades_league_season", "trades_team_season"} | {"trader_best", "trader_worst"} | set(EXR) | NEW_MOMENTS
     doc = json.load(open(f"{ROOT}/data/records.json")); log = []
     for r in doc["records"]:
         if not r["metric"]: continue
@@ -116,18 +128,25 @@ def main():
                 log.append({"ts": now, "record": r["id"], "name": r["name"], "cause": "auto:blocked", "new": new, "note": "Record is locked; engine found a better mark and did not apply it."}); continue
             old = snapshot(r)
             r["previous"] = dict(old, replaced_on=now[:10], replaced_by=new["holder"], reconciled=BASELINE)
-            r.update(new, value_num=best["value"], holders=best["holders"], source="computed", evidence=[], ties=[], replay=replay(m, best, d.cur),
+            r.update(new, value_num=best["value"], holders=best["holders"], source="computed", evidence=[], ties=[], replay=replay(m, best, d.cur), detail=best.get("card"),
                      league_level=best["holders"] == ["DTFClub"], status="active", updated=now[:10])
             log.append({"ts": now, "record": r["id"], "name": r["name"], "cause": "auto:reconcile" if BASELINE else "auto:break", "old": old, "new": new,
                         "note": "Sleeper data differs from the hand-kept sheet; data wins." if BASELINE else "Record broken."})
+        elif m in VERIFY and not r["locked"] and not same and (lambda ys: ys and min(ys) >= 2021)([int(x) for x in re.findall(r"\b(20\d\d)\b", r["when"])]):
+            new = {"value": fmt(m, best, d), "holder": holder_text(m, best), "when": when(m, best), "team": ""}; old = snapshot(r)
+            r["previous"] = dict(old, replaced_on=now[:10], replaced_by=new["holder"], reconciled=True)
+            r.update(new, value_num=best["value"], holders=best["holders"], ties=[], source="computed", verified=True, evidence=[], replay=replay(m, best, d.cur), detail=best.get("card"), updated=now[:10])
+            log.append({"ts": now, "record": r["id"], "name": r["name"], "cause": "auto:reconcile", "old": old, "new": new, "note": "Sleeper data for this same game differs from the sheet; data wins."})
         elif same:
             hit = [c for c in cands if abs(c["value"] - sn) <= slack]
             if r["source"] == "seeded": r["source"] = "computed"; r["verified"] = True
             mine = [c for c in hit if set(c["holders"]) & set(r["holders"])] or hit[:1]
             if not r.get("replay"): r["replay"] = replay(m, mine[0], d.cur)
+            if mine[0].get("card"): r["detail"] = mine[0]["card"]
             known = {r["holder"]} | set(r["holders"]) | {t["holder"] for t in r["ties"]}
             for c in hit:
                 h = holder_text(m, c)
+                if len(r["ties"]) >= 4: break
                 if all(x not in known for x in c["holders"]) and h not in known:
                     t = {"holder": h, "when": when(m, c), "replay": replay(m, c, d.cur)}
                     r["ties"].append(t); known.add(h); known.update(c["holders"])

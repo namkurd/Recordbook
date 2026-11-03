@@ -252,13 +252,13 @@
     },
     {
      "value": "1",
-     "holder": "Ryan",
+     "holder": "Alex",
      "when": "2011",
      "replay": null
     },
     {
      "value": "1",
-     "holder": "Alex",
+     "holder": "Ryan",
      "when": "2011",
      "replay": null
     }
@@ -454,13 +454,13 @@
     },
     {
      "value": "3",
-     "holder": "Aidan",
+     "holder": "Haan",
      "when": "2016-2018",
      "replay": null
     },
     {
      "value": "3",
-     "holder": "Haan",
+     "holder": "Aidan",
      "when": "2016-2018",
      "replay": null
     }
@@ -1152,13 +1152,13 @@
     },
     {
      "value": "3",
-     "holder": "Aidan",
+     "holder": "Haan",
      "when": "2016-2018",
      "replay": null
     },
     {
      "value": "3",
-     "holder": "Haan",
+     "holder": "Aidan",
      "when": "2016-2018",
      "replay": null
     },
@@ -1169,6 +1169,646 @@
      "replay": null
     }
    ],
+   "verified": true
+  },
+  {
+   "id": "lowest-seed-to-win-the-title",
+   "name": "Lowest Seed to Win the Title",
+   "category": "Seasons & Playoffs",
+   "source": "computed",
+   "metric": "lowest_seed_champ",
+   "direction": "max",
+   "value": "#5 seed",
+   "value_num": 5,
+   "when": "2025",
+   "holder": "Haan",
+   "holders": [
+    "Haan"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "definition": "The lowest playoff seed to win the championship (seeds are known from 2021).",
+   "updated": "2026-11-03",
+   "leaderboard": [
+    {
+     "value": "#5 seed",
+     "holder": "Haan",
+     "when": "2025",
+     "replay": null
+    },
+    {
+     "value": "#4 seed",
+     "holder": "Ankit",
+     "when": "2023",
+     "replay": null
+    },
+    {
+     "value": "#2 seed",
+     "holder": "Ben",
+     "when": "2021",
+     "replay": null
+    },
+    {
+     "value": "#2 seed",
+     "holder": "Alex",
+     "when": "2024",
+     "replay": null
+    },
+    {
+     "value": "#1 seed",
+     "holder": "Ben",
+     "when": "2022",
+     "replay": null
+    }
+   ],
+   "detail": null,
+   "verified": true
+  },
+  {
+   "id": "highest-playoff-score",
+   "name": "Highest Playoff Score",
+   "category": "Seasons & Playoffs",
+   "source": "computed",
+   "metric": "highest_playoff_score",
+   "direction": "max",
+   "value": "202.00",
+   "value_num": 202.0,
+   "when": "Week 17 - 2025; Week 17 - 2025",
+   "holder": "Haan (won vs Steven); Haan (won vs Aidan)",
+   "holders": [
+    "Haan"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "definition": "The most points by one team in a playoff game.",
+   "updated": "2026-11-03",
+   "leaderboard": [
+    {
+     "value": "202.00",
+     "holder": "Haan (won vs Steven)",
+     "when": "Week 17 - 2025",
+     "replay": null
+    },
+    {
+     "value": "202.00",
+     "holder": "Haan (won vs Aidan)",
+     "when": "Week 17 - 2025",
+     "replay": null
+    },
+    {
+     "value": "186.00",
+     "holder": "Alex (won vs Aidan)",
+     "when": "Week 17 - 2024",
+     "replay": null
+    },
+    {
+     "value": "186.00",
+     "holder": "Alex (won vs Ben)",
+     "when": "Week 17 - 2024",
+     "replay": null
+    },
+    {
+     "value": "177.00",
+     "holder": "Steven (lost vs Haan)",
+     "when": "Week 17 - 2025",
+     "replay": null
+    }
+   ],
+   "detail": null,
+   "verified": true
+  },
+  {
+   "id": "closest-championship-game",
+   "name": "Closest Championship Game",
+   "category": "Seasons & Playoffs",
+   "source": "computed",
+   "metric": "closest_final",
+   "direction": "min",
+   "value": "158.0 to 152.0",
+   "value_num": 6.0,
+   "when": "2023 final",
+   "holder": "Ankit over Joe",
+   "holders": [
+    "Ankit"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "definition": "The smallest winning margin in a championship game.",
+   "updated": "2026-11-03",
+   "leaderboard": [
+    {
+     "value": "158.0 to 152.0",
+     "holder": "Ankit over Joe",
+     "when": "2023 final",
+     "replay": null
+    },
+    {
+     "value": "87.7 to 77.5",
+     "holder": "Tommy over Eli",
+     "when": "2015 final",
+     "replay": null
+    },
+    {
+     "value": "97.4 to 87.0",
+     "holder": "Ben over Aidan",
+     "when": "2022 final",
+     "replay": null
+    },
+    {
+     "value": "158.0 to 146.0",
+     "holder": "Ankit over Steven",
+     "when": "2023 final",
+     "replay": null
+    },
+    {
+     "value": "115.7 to 102.0",
+     "holder": "Ryan over Jake",
+     "when": "2019 final",
+     "replay": null
+    }
+   ],
+   "detail": null,
+   "verified": true
+  },
+  {
+   "id": "biggest-championship-blowout",
+   "name": "Biggest Championship Blowout",
+   "category": "Seasons & Playoffs",
+   "source": "computed",
+   "metric": "biggest_final",
+   "direction": "max",
+   "value": "202.0 to 120.0",
+   "value_num": 82.0,
+   "when": "2025 final",
+   "holder": "Haan over Aidan",
+   "holders": [
+    "Haan"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "definition": "The largest winning margin in a championship game.",
+   "updated": "2026-11-03",
+   "leaderboard": [
+    {
+     "value": "202.0 to 120.0",
+     "holder": "Haan over Aidan",
+     "when": "2025 final",
+     "replay": null
+    },
+    {
+     "value": "133.4 to 92.8",
+     "holder": "Oleg over Steven",
+     "when": "2013 final",
+     "replay": null
+    },
+    {
+     "value": "133.8 to 93.6",
+     "holder": "Ben over Joe",
+     "when": "2018 final",
+     "replay": null
+    },
+    {
+     "value": "186.0 to 154.0",
+     "holder": "Alex over Ben",
+     "when": "2024 final",
+     "replay": null
+    },
+    {
+     "value": "114.9 to 85.9",
+     "holder": "Tommy over Ryan",
+     "when": "2017 final",
+     "replay": null
+    }
+   ],
+   "detail": null,
+   "verified": true
+  },
+  {
+   "id": "most-playoff-wins-career",
+   "name": "Most Playoff Wins (Career)",
+   "category": "Seasons & Playoffs",
+   "source": "computed",
+   "metric": "playoff_wins",
+   "direction": "max",
+   "value": "8 wins",
+   "value_num": 8,
+   "when": "2014-2022",
+   "holder": "Ben",
+   "holders": [
+    "Ben"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "definition": "Most playoff games won, 2013 on.",
+   "updated": "2026-11-03",
+   "leaderboard": [
+    {
+     "value": "8 wins",
+     "holder": "Ben",
+     "when": "2014-2022",
+     "replay": null
+    },
+    {
+     "value": "7 wins",
+     "holder": "Ryan",
+     "when": "2014-2021",
+     "replay": null
+    },
+    {
+     "value": "4 wins",
+     "holder": "Tommy",
+     "when": "2015-2017",
+     "replay": null
+    },
+    {
+     "value": "4 wins",
+     "holder": "Haan",
+     "when": "2020-2025",
+     "replay": null
+    },
+    {
+     "value": "3 wins",
+     "holder": "Jake",
+     "when": "2016-2019",
+     "replay": null
+    }
+   ],
+   "detail": null,
+   "verified": true
+  },
+  {
+   "id": "most-playoff-trips-without-a-title",
+   "name": "Most Playoff Trips Without a Title",
+   "category": "Seasons & Playoffs",
+   "source": "computed",
+   "metric": "playoffs_no_title",
+   "direction": "max",
+   "value": "7 trips",
+   "value_num": 7,
+   "when": "'12/'13/'14/'17/'20/'23/'25",
+   "holder": "Steven",
+   "holders": [
+    "Steven"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "definition": "Most playoff appearances by a manager who has never won the championship.",
+   "updated": "2026-11-03",
+   "leaderboard": [
+    {
+     "value": "7 trips",
+     "holder": "Steven",
+     "when": "'12/'13/'14/'17/'20/'23/'25",
+     "replay": null
+    },
+    {
+     "value": "6 trips",
+     "holder": "Joe",
+     "when": "'13/'16/'18/'23/'24/'25",
+     "replay": null
+    },
+    {
+     "value": "5 trips",
+     "holder": "Aidan",
+     "when": "'19/'21/'22/'24/'25",
+     "replay": null
+    },
+    {
+     "value": "1 trips",
+     "holder": "Eli",
+     "when": "'15",
+     "replay": null
+    }
+   ],
+   "detail": null,
+   "verified": true
+  },
+  {
+   "id": "fewest-wins-to-make-the-playoffs",
+   "name": "Fewest Wins to Make the Playoffs",
+   "category": "Seasons & Playoffs",
+   "source": "computed",
+   "metric": "fewest_wins_playoffs",
+   "direction": "min",
+   "value": "7-8",
+   "value_num": 7,
+   "when": "2013; 2025",
+   "holder": "Oleg; Ankit",
+   "holders": [
+    "Oleg",
+    "Ankit"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "definition": "The fewest regular-season wins by a team that made the playoffs.",
+   "updated": "2026-11-03",
+   "leaderboard": [
+    {
+     "value": "7-8",
+     "holder": "Ankit",
+     "when": "2025",
+     "replay": null
+    },
+    {
+     "value": "7-7",
+     "holder": "Oleg",
+     "when": "2013",
+     "replay": null
+    },
+    {
+     "value": "8-6",
+     "holder": "Ryan",
+     "when": "2020",
+     "replay": null
+    },
+    {
+     "value": "8-6",
+     "holder": "Jake",
+     "when": "2019",
+     "replay": null
+    },
+    {
+     "value": "8-6",
+     "holder": "Haan",
+     "when": "2019",
+     "replay": null
+    }
+   ],
+   "detail": null,
+   "verified": true
+  },
+  {
+   "id": "most-wins-to-miss-the-playoffs",
+   "name": "Most Wins to Miss the Playoffs",
+   "category": "Seasons & Playoffs",
+   "source": "computed",
+   "metric": "most_wins_miss",
+   "direction": "max",
+   "value": "8-6",
+   "value_num": 8,
+   "when": "2016; 2020; 2022",
+   "holder": "Tommy; Ankit; Jake",
+   "holders": [
+    "Tommy",
+    "Ankit",
+    "Jake"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "definition": "The most regular-season wins by a team that missed the playoffs.",
+   "updated": "2026-11-03",
+   "leaderboard": [
+    {
+     "value": "8-6",
+     "holder": "Tommy",
+     "when": "2016",
+     "replay": null
+    },
+    {
+     "value": "8-6",
+     "holder": "Ankit",
+     "when": "2020",
+     "replay": null
+    },
+    {
+     "value": "8-7",
+     "holder": "Jake",
+     "when": "2022",
+     "replay": null
+    },
+    {
+     "value": "7-7",
+     "holder": "Jake",
+     "when": "2013",
+     "replay": null
+    },
+    {
+     "value": "7-7",
+     "holder": "Ben",
+     "when": "2013",
+     "replay": null
+    }
+   ],
+   "detail": null,
+   "verified": true
+  },
+  {
+   "id": "biggest-standings-jump",
+   "name": "Biggest Standings Jump",
+   "category": "Seasons & Playoffs",
+   "source": "computed",
+   "metric": "standings_jump",
+   "direction": "max",
+   "value": "9th to 1st",
+   "value_num": 8,
+   "when": "2022 to 2023; 2023 to 2024; 2024 to 2025",
+   "holder": "Steven; Ben; Steven",
+   "holders": [
+    "Steven",
+    "Ben"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "definition": "The most places a manager climbed in the final standings from one season to the next.",
+   "updated": "2026-11-03",
+   "leaderboard": [
+    {
+     "value": "9th to 1st",
+     "holder": "Steven",
+     "when": "2022 to 2023",
+     "replay": null
+    },
+    {
+     "value": "9th to 1st",
+     "holder": "Ben",
+     "when": "2023 to 2024",
+     "replay": null
+    },
+    {
+     "value": "9th to 1st",
+     "holder": "Steven",
+     "when": "2024 to 2025",
+     "replay": null
+    },
+    {
+     "value": "10th to 3rd",
+     "holder": "Steven",
+     "when": "2019 to 2020",
+     "replay": null
+    },
+    {
+     "value": "7th to 1st",
+     "holder": "Ryan",
+     "when": "2015 to 2016",
+     "replay": null
+    }
+   ],
+   "detail": null,
+   "verified": true
+  },
+  {
+   "id": "biggest-standings-drop",
+   "name": "Biggest Standings Drop",
+   "category": "Seasons & Playoffs",
+   "source": "computed",
+   "metric": "standings_drop",
+   "direction": "max",
+   "value": "1st to 9th",
+   "value_num": 8,
+   "when": "2022 to 2023; 2023 to 2024; 2023 to 2024",
+   "holder": "Ben; Steven; Ryan",
+   "holders": [
+    "Ben",
+    "Steven",
+    "Ryan"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "definition": "The most places a manager fell in the final standings from one season to the next.",
+   "updated": "2026-11-03",
+   "leaderboard": [
+    {
+     "value": "1st to 9th",
+     "holder": "Ben",
+     "when": "2022 to 2023",
+     "replay": null
+    },
+    {
+     "value": "1st to 9th",
+     "holder": "Steven",
+     "when": "2023 to 2024",
+     "replay": null
+    },
+    {
+     "value": "2nd to 10th",
+     "holder": "Ryan",
+     "when": "2023 to 2024",
+     "replay": null
+    },
+    {
+     "value": "2nd to 9th",
+     "holder": "Joe",
+     "when": "2013 to 2014",
+     "replay": null
+    },
+    {
+     "value": "3rd to 10th",
+     "holder": "Haan",
+     "when": "2015 to 2016",
+     "replay": null
+    }
+   ],
+   "detail": null,
    "verified": true
   },
   {
@@ -3100,7 +3740,7 @@
      }
     },
     {
-     "value": "71.59 (48% of League Average)",
+     "value": "71.59 (49% of League Average)",
      "holder": "Jake",
      "when": "Week 2 - 2026",
      "replay": {
@@ -3156,7 +3796,7 @@
      }
     },
     {
-     "value": "71.59 (48.33% of League Average)",
+     "value": "71.59 (48.63% of League Average)",
      "holder": "Jake",
      "when": "Week 2 - 2026",
      "replay": {
@@ -3209,25 +3849,40 @@
    "id": "most-points-on-bench",
    "name": "Most Points on Bench",
    "category": "Games & Weeks",
-   "source": "seeded",
-   "metric": null,
-   "direction": null,
-   "value": "177.2",
-   "value_num": 177.2,
+   "source": "computed",
+   "metric": "bench",
+   "direction": "max",
+   "value": "148.67",
+   "value_num": 148.67,
    "when": "Week 16 - 2023",
    "holder": "Jake",
    "holders": [
     "Jake"
    ],
    "league_level": false,
-   "team": "We are TuAnon (Expect Us)",
+   "team": "",
    "notes": [],
-   "evidence": [
-    "https://i.imgur.com/a0SwfI9.png",
-    "https://imgur.com/a/CiZKKKs"
-   ],
-   "replay": null,
-   "previous": null,
+   "evidence": [],
+   "replay": {
+    "season": 2023,
+    "week": 16,
+    "rid": 3,
+    "opp_rid": 5,
+    "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=16.3.5&season=2023"
+   },
+   "previous": {
+    "value": "177.2",
+    "holder": "Jake",
+    "when": "Week 16 - 2023",
+    "team": "We are TuAnon (Expect Us)",
+    "evidence": [
+     "https://i.imgur.com/a0SwfI9.png",
+     "https://imgur.com/a/CiZKKKs"
+    ],
+    "replaced_on": "2026-11-03",
+    "replaced_by": "Jake",
+    "reconciled": true
+   },
    "ties": [],
    "locked": false,
    "status": "active",
@@ -3235,8 +3890,243 @@
    "size_sensitive": false,
    "needs_definition": null,
    "definition": null,
-   "engine_gap": "Needs per-player starter/bench points (Sleeper matchups).",
-   "updated": "2026-11-02"
+   "engine_gap": null,
+   "updated": "2026-11-03",
+   "leaderboard": [
+    {
+     "value": "148.67",
+     "holder": "Jake",
+     "when": "Week 16 - 2023",
+     "replay": {
+      "season": 2023,
+      "week": 16,
+      "rid": 3,
+      "opp_rid": 5,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=16.3.5&season=2023"
+     }
+    },
+    {
+     "value": "123.14",
+     "holder": "Steven",
+     "when": "Week 2 - 2023",
+     "replay": {
+      "season": 2023,
+      "week": 2,
+      "rid": 7,
+      "opp_rid": 10,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=2.7.10&season=2023"
+     }
+    },
+    {
+     "value": "123.11",
+     "holder": "Jake",
+     "when": "Week 17 - 2023",
+     "replay": {
+      "season": 2023,
+      "week": 17,
+      "rid": 3,
+      "opp_rid": 10,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=17.3.10&season=2023"
+     }
+    },
+    {
+     "value": "120.16",
+     "holder": "Ankit",
+     "when": "Week 8 - 2024",
+     "replay": {
+      "season": 2024,
+      "week": 8,
+      "rid": 8,
+      "opp_rid": 7,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=8.8.7&season=2024"
+     }
+    },
+    {
+     "value": "119.96",
+     "holder": "Jake",
+     "when": "Week 4 - 2025",
+     "replay": {
+      "season": 2025,
+      "week": 4,
+      "rid": 3,
+      "opp_rid": 2,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=4.3.2&season=2025"
+     }
+    }
+   ],
+   "verified": true,
+   "detail": {
+    "kind": "facts",
+    "title": "Bench · Week 16, 2023",
+    "blocks": [
+     {
+      "head": "Jake",
+      "chip": null,
+      "rows": [
+       [
+        "Breece Hall",
+        "43.1 pts"
+       ],
+       [
+        "George Pickens",
+        "34.0 pts"
+       ],
+       [
+        "Puka Nacua",
+        "33.0 pts"
+       ],
+       [
+        "Tyler Allgeier",
+        "15.8 pts"
+       ],
+       [
+        "Chuba Hubbard",
+        "12.1 pts"
+       ],
+       [
+        "Dontayvion Wicks",
+        "10.9 pts"
+       ],
+       [
+        "All bench",
+        "148.7 pts"
+       ]
+      ]
+     }
+    ]
+   },
+   "cards": {
+    "season": 2023,
+    "week": 16,
+    "teams": [
+     {
+      "rid": 3,
+      "name": "Jake",
+      "won": false,
+      "act": 130.96,
+      "rumbles": 6,
+      "vs_field": 6,
+      "season_rumbles": 166,
+      "w": 9,
+      "l": 6,
+      "players": [
+       {
+        "pos": "QB",
+        "name": "Josh Allen",
+        "pts": 24.48
+       },
+       {
+        "pos": "RB",
+        "name": "Jahmyr Gibbs",
+        "pts": 24.0
+       },
+       {
+        "pos": "RB",
+        "name": "James Cook III",
+        "pts": 4.5
+       },
+       {
+        "pos": "WR",
+        "name": "CeeDee Lamb",
+        "pts": 25.2
+       },
+       {
+        "pos": "WR",
+        "name": "Jaylen Waddle",
+        "pts": 6.2
+       },
+       {
+        "pos": "TE",
+        "name": "T.J. Hockenson",
+        "pts": 9.8
+       },
+       {
+        "pos": "RB",
+        "name": "Isiah Pacheco",
+        "pts": 9.6
+       },
+       {
+        "pos": "QB",
+        "name": "Tua Tagovailoa",
+        "pts": 14.52
+       },
+       {
+        "pos": "K",
+        "name": "Jake Moody",
+        "pts": 6.5
+       },
+       {
+        "pos": "DEF",
+        "name": "Philadelphia Eagles",
+        "pts": 6.16
+       }
+      ]
+     },
+     {
+      "rid": 5,
+      "name": "Joe",
+      "won": true,
+      "act": 156.95,
+      "rumbles": 17,
+      "vs_field": 8,
+      "season_rumbles": 149,
+      "w": 9,
+      "l": 6,
+      "players": [
+       {
+        "pos": "QB",
+        "name": "Patrick Mahomes",
+        "pts": 12.2
+       },
+       {
+        "pos": "RB",
+        "name": "Rachaad White",
+        "pts": 19.7
+       },
+       {
+        "pos": "RB",
+        "name": "De'Von Achane",
+        "pts": 4.1
+       },
+       {
+        "pos": "WR",
+        "name": "Amon-Ra St. Brown",
+        "pts": 28.6
+       },
+       {
+        "pos": "WR",
+        "name": "Brandon Aiyuk",
+        "pts": 17.3
+       },
+       {
+        "pos": "TE",
+        "name": "George Kittle",
+        "pts": 19.6
+       },
+       {
+        "pos": "RB",
+        "name": "Saquon Barkley",
+        "pts": 18.4
+       },
+       {
+        "pos": "QB",
+        "name": "Jordan Love",
+        "pts": 23.46
+       },
+       {
+        "pos": "K",
+        "name": "Brandon Aubrey",
+        "pts": 9.6
+       },
+       {
+        "pos": "DEF",
+        "name": "Denver Broncos",
+        "pts": 3.99
+       }
+      ]
+     }
+    ]
+   }
   },
   {
    "id": "largest-margin-of-victory",
@@ -4352,13 +5242,13 @@
      "replay": null
     },
     {
-     "value": "156.1 (105.4% of League Average)",
+     "value": "156.1 (106.1% of League Average)",
      "holder": "DTFClub",
      "when": "Week 5 - 2026",
      "replay": null
     },
     {
-     "value": "156.1 (105.4% of League Average)",
+     "value": "156.1 (106.0% of League Average)",
      "holder": "DTFClub",
      "when": "Week 1 - 2026",
      "replay": null
@@ -4683,26 +5573,266 @@
    "id": "most-points-on-a-saturday",
    "name": "Most Points on a Saturday",
    "category": "Games & Weeks",
-   "source": "seeded",
-   "metric": null,
-   "direction": null,
-   "value": "109.88",
-   "value_num": 109.88,
-   "when": "Week 17 - 2024",
-   "holder": "Alex",
+   "source": "computed",
+   "metric": "sat_pts",
+   "direction": "max",
+   "value": "146.38",
+   "value_num": 146.38,
+   "when": "Week 16 - 2022",
+   "holder": "Ryan",
    "holders": [
-    "Alex"
+    "Ryan"
    ],
    "league_level": false,
-   "team": "Jazz Hands Team",
+   "team": "",
    "notes": [],
    "evidence": [],
    "replay": {
-    "season": 2024,
-    "week": 17,
-    "rid": 6,
-    "opp_rid": 10,
-    "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=17.6.10&season=2024"
+    "season": 2022,
+    "week": 16,
+    "rid": 10,
+    "opp_rid": 7,
+    "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=16.10.7&season=2022"
+   },
+   "previous": {
+    "value": "109.88",
+    "holder": "Alex",
+    "when": "Week 17 - 2024",
+    "team": "Jazz Hands Team",
+    "evidence": [],
+    "replaced_on": "2026-11-03",
+    "replaced_by": "Ryan",
+    "reconciled": true
+   },
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "definition": null,
+   "engine_gap": null,
+   "updated": "2026-11-03",
+   "cards": {
+    "season": 2022,
+    "week": 16,
+    "teams": [
+     {
+      "rid": 10,
+      "name": "Ryan",
+      "won": true,
+      "act": 164.68,
+      "rumbles": 18,
+      "vs_field": 9,
+      "season_rumbles": 100,
+      "w": 4,
+      "l": 11,
+      "players": [
+       {
+        "pos": "QB",
+        "name": "Josh Allen",
+        "pts": 21.48
+       },
+       {
+        "pos": "RB",
+        "name": "Joe Mixon",
+        "pts": 17.8
+       },
+       {
+        "pos": "RB",
+        "name": "D'Andre Swift",
+        "pts": 3.5
+       },
+       {
+        "pos": "WR",
+        "name": "Amon-Ra St. Brown",
+        "pts": 14.6
+       },
+       {
+        "pos": "WR",
+        "name": "Jakobi Meyers",
+        "pts": 20.3
+       },
+       {
+        "pos": "TE",
+        "name": "Evan Engram",
+        "pts": 18.3
+       },
+       {
+        "pos": "WR",
+        "name": "Terry McLaurin",
+        "pts": 17.7
+       },
+       {
+        "pos": "WR",
+        "name": "CeeDee Lamb",
+        "pts": 34.0
+       },
+       {
+        "pos": "K",
+        "name": "Daniel Carlson",
+        "pts": 5.0
+       },
+       {
+        "pos": "DEF",
+        "name": "Cincinnati Bengals",
+        "pts": 12.0
+       }
+      ]
+     },
+     {
+      "rid": 7,
+      "name": "Steven",
+      "won": false,
+      "act": 153.3,
+      "rumbles": 7,
+      "vs_field": 7,
+      "season_rumbles": 88,
+      "w": 5,
+      "l": 10,
+      "players": [
+       {
+        "pos": "QB",
+        "name": "Tua Tagovailoa",
+        "pts": 7.4
+       },
+       {
+        "pos": "RB",
+        "name": "Travis Etienne Jr.",
+        "pts": 13.2
+       },
+       {
+        "pos": "RB",
+        "name": "Christian McCaffrey",
+        "pts": 13.8
+       },
+       {
+        "pos": "WR",
+        "name": "Amari Cooper",
+        "pts": 13.2
+       },
+       {
+        "pos": "WR",
+        "name": "DJ Moore",
+        "pts": 20.1
+       },
+       {
+        "pos": "TE",
+        "name": "George Kittle",
+        "pts": 30.0
+       },
+       {
+        "pos": "RB",
+        "name": "Alvin Kamara",
+        "pts": 19.0
+       },
+       {
+        "pos": "WR",
+        "name": "Chris Godwin Jr.",
+        "pts": 14.3
+       },
+       {
+        "pos": "K",
+        "name": "Graham Gano",
+        "pts": 15.3
+       },
+       {
+        "pos": "DEF",
+        "name": "Tampa Bay Buccaneers",
+        "pts": 7.0
+       }
+      ]
+     }
+    ]
+   },
+   "leaderboard": [
+    {
+     "value": "146.38",
+     "holder": "Ryan",
+     "when": "Week 16 - 2022",
+     "replay": {
+      "season": 2022,
+      "week": 16,
+      "rid": 10,
+      "opp_rid": 7,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=16.10.7&season=2022"
+     }
+    },
+    {
+     "value": "116.96",
+     "holder": "Aidan",
+     "when": "Week 16 - 2022",
+     "replay": {
+      "season": 2022,
+      "week": 16,
+      "rid": 1,
+      "opp_rid": 4,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=16.1.4&season=2022"
+     }
+    },
+    {
+     "value": "114.26",
+     "holder": "Tommy",
+     "when": "Week 16 - 2022",
+     "replay": {
+      "season": 2022,
+      "week": 16,
+      "rid": 9,
+      "opp_rid": 8,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=16.9.8&season=2022"
+     }
+    },
+    {
+     "value": "111.40",
+     "holder": "Steven",
+     "when": "Week 16 - 2022",
+     "replay": {
+      "season": 2022,
+      "week": 16,
+      "rid": 7,
+      "opp_rid": 10,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=16.7.10&season=2022"
+     }
+    },
+    {
+     "value": "109.88",
+     "holder": "Alex",
+     "when": "Week 17 - 2024",
+     "replay": {
+      "season": 2024,
+      "week": 17,
+      "rid": 6,
+      "opp_rid": 10,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=17.6.10&season=2024"
+     }
+    }
+   ],
+   "detail": null
+  },
+  {
+   "id": "biggest-comeback-points-deficit-overcome",
+   "name": "Biggest Comeback (Points Deficit Overcome)",
+   "category": "Games & Weeks",
+   "source": "computed",
+   "metric": "comeback",
+   "direction": "max",
+   "value": "99.9 pts",
+   "value_num": 99.94,
+   "when": "Week 9 - 2025",
+   "holder": "Steven over Joe",
+   "holders": [
+    "Steven"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": {
+    "season": 2025,
+    "week": 9,
+    "rid": 7,
+    "opp_rid": 5,
+    "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=9.7.5&season=2025"
    },
    "previous": null,
    "ties": [],
@@ -4711,136 +5841,1825 @@
    "era_pair": null,
    "size_sensitive": false,
    "needs_definition": null,
-   "definition": null,
-   "engine_gap": "Needs NFL kickoff times.",
-   "updated": "2026-11-02",
+   "engine_gap": null,
+   "definition": "The biggest points deficit a team trailed by at any moment and still won, from Rumble Central's play-by-play timeline. Counts games since 2021, when Rumble Central's records begin.",
+   "updated": "2026-11-03",
+   "leaderboard": [
+    {
+     "value": "99.9 pts",
+     "holder": "Steven over Joe",
+     "when": "Week 9 - 2025",
+     "replay": {
+      "season": 2025,
+      "week": 9,
+      "rid": 7,
+      "opp_rid": 5,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=9.7.5&season=2025"
+     }
+    },
+    {
+     "value": "84.8 pts",
+     "holder": "Alex over Joe",
+     "when": "Week 10 - 2025",
+     "replay": {
+      "season": 2025,
+      "week": 10,
+      "rid": 6,
+      "opp_rid": 5,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=10.6.5&season=2025"
+     }
+    },
+    {
+     "value": "71.9 pts",
+     "holder": "Tommy over Steven",
+     "when": "Week 5 - 2021",
+     "replay": {
+      "season": 2021,
+      "week": 5,
+      "rid": 9,
+      "opp_rid": 7,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=5.9.7&season=2021"
+     }
+    },
+    {
+     "value": "69.8 pts",
+     "holder": "Jake over Ben",
+     "when": "Week 7 - 2023",
+     "replay": {
+      "season": 2023,
+      "week": 7,
+      "rid": 3,
+      "opp_rid": 2,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=7.3.2&season=2023"
+     }
+    },
+    {
+     "value": "68.3 pts",
+     "holder": "Haan over Tommy",
+     "when": "Week 6 - 2021",
+     "replay": {
+      "season": 2021,
+      "week": 6,
+      "rid": 4,
+      "opp_rid": 9,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=6.4.9&season=2021"
+     }
+    }
+   ],
+   "detail": null,
+   "verified": true,
    "cards": {
-    "season": 2024,
-    "week": 17,
+    "season": 2025,
+    "week": 9,
     "teams": [
      {
-      "rid": 6,
-      "name": "Alex",
+      "rid": 7,
+      "name": "Steven",
       "won": true,
-      "act": 186.61,
+      "act": 176.34,
       "rumbles": 17,
       "vs_field": 8,
-      "season_rumbles": 184,
-      "w": 10,
-      "l": 5,
+      "season_rumbles": 127,
+      "w": 7,
+      "l": 2,
       "players": [
        {
         "pos": "QB",
-        "name": "Drake Maye",
-        "pts": 8.88
+        "name": "Patrick Mahomes",
+        "pts": 11.75
        },
        {
         "pos": "RB",
-        "name": "De'Von Achane",
-        "pts": 5.8
+        "name": "James Cook III",
+        "pts": 16.0
        },
        {
         "pos": "RB",
-        "name": "Josh Jacobs",
-        "pts": 10.9
-       },
-       {
-        "pos": "WR",
-        "name": "Puka Nacua",
-        "pts": 22.9
-       },
-       {
-        "pos": "WR",
-        "name": "Ladd McConkey",
-        "pts": 29.4
+        "name": "Bijan Robinson",
+        "pts": 20.1
        },
        {
         "pos": "TE",
         "name": "Trey McBride",
-        "pts": 30.3
+        "pts": 17.5
        },
        {
         "pos": "WR",
-        "name": "Mike Evans",
-        "pts": 29.7
+        "name": "Rashee Rice",
+        "pts": 21.1
+       },
+       {
+        "pos": "WR",
+        "name": "George Pickens",
+        "pts": 15.9
+       },
+       {
+        "pos": "WR",
+        "name": "Jaxon Smith-Njigba",
+        "pts": 25.0
        },
        {
         "pos": "QB",
-        "name": "Bryce Young",
-        "pts": 14.67
+        "name": "Matthew Stafford",
+        "pts": 28.34
        },
        {
         "pos": "K",
-        "name": "Cameron Dicker",
-        "pts": 18.4
+        "name": "Harrison Butker",
+        "pts": 8.6
        },
        {
         "pos": "DEF",
-        "name": "Miami Dolphins",
-        "pts": 15.66
+        "name": "Baltimore Ravens",
+        "pts": 12.05
        }
       ]
      },
      {
-      "rid": 10,
-      "name": "Ryan",
+      "rid": 5,
+      "name": "Joe",
       "won": false,
-      "act": 150.48,
+      "act": 154.33,
       "rumbles": 5,
       "vs_field": 5,
-      "season_rumbles": 72,
-      "w": 4,
-      "l": 11,
+      "season_rumbles": 132,
+      "w": 8,
+      "l": 1,
       "players": [
        {
         "pos": "QB",
-        "name": "C.J. Stroud",
-        "pts": 4.85
+        "name": "Jordan Love",
+        "pts": 11.37
        },
        {
         "pos": "RB",
-        "name": "Ameer Abdullah",
-        "pts": 17.7
+        "name": "Jonathan Taylor",
+        "pts": 9.2
        },
        {
         "pos": "RB",
-        "name": "Breece Hall",
-        "pts": 6.3
-       },
-       {
-        "pos": "WR",
-        "name": "Jordan Addison",
-        "pts": 18.9
-       },
-       {
-        "pos": "WR",
-        "name": "Courtland Sutton",
-        "pts": 16.5
+        "name": "Kyle Monangai",
+        "pts": 26.8
        },
        {
         "pos": "TE",
-        "name": "Travis Kelce",
-        "pts": 22.4
+        "name": "Tucker Kraft",
+        "pts": 4.5
        },
        {
-        "pos": "TE",
-        "name": "Brock Bowers",
-        "pts": 14.6
+        "pos": "RB",
+        "name": "Kyren Williams",
+        "pts": 21.4
+       },
+       {
+        "pos": "WR",
+        "name": "Amon-Ra St. Brown",
+        "pts": 19.7
+       },
+       {
+        "pos": "WR",
+        "name": "Keenan Allen",
+        "pts": 7.1
        },
        {
         "pos": "QB",
         "name": "Justin Herbert",
-        "pts": 24.44
+        "pts": 27.2
        },
        {
         "pos": "K",
-        "name": "Jake Elliott",
-        "pts": 11.1
+        "name": "Ka'imi Fairbairn",
+        "pts": 18.0
        },
        {
         "pos": "DEF",
-        "name": "Las Vegas Raiders",
-        "pts": 13.69
+        "name": "Denver Broncos",
+        "pts": 9.06
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "biggest-blown-lead",
+   "name": "Biggest Blown Lead",
+   "category": "Games & Weeks",
+   "source": "computed",
+   "metric": "blown_lead",
+   "direction": "max",
+   "value": "99.9 pts",
+   "value_num": 99.94,
+   "when": "Week 9 - 2025",
+   "holder": "Joe (lost to Steven)",
+   "holders": [
+    "Joe"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": {
+    "season": 2025,
+    "week": 9,
+    "rid": 5,
+    "opp_rid": 7,
+    "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=9.5.7&season=2025"
+   },
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "definition": "The biggest points lead a team held at any moment and still lost. Counts games since 2021, when Rumble Central's records begin.",
+   "updated": "2026-11-03",
+   "leaderboard": [
+    {
+     "value": "99.9 pts",
+     "holder": "Joe (lost to Steven)",
+     "when": "Week 9 - 2025",
+     "replay": {
+      "season": 2025,
+      "week": 9,
+      "rid": 5,
+      "opp_rid": 7,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=9.5.7&season=2025"
+     }
+    },
+    {
+     "value": "84.8 pts",
+     "holder": "Joe (lost to Alex)",
+     "when": "Week 10 - 2025",
+     "replay": {
+      "season": 2025,
+      "week": 10,
+      "rid": 5,
+      "opp_rid": 6,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=10.5.6&season=2025"
+     }
+    },
+    {
+     "value": "71.9 pts",
+     "holder": "Steven (lost to Tommy)",
+     "when": "Week 5 - 2021",
+     "replay": {
+      "season": 2021,
+      "week": 5,
+      "rid": 7,
+      "opp_rid": 9,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=5.7.9&season=2021"
+     }
+    },
+    {
+     "value": "69.8 pts",
+     "holder": "Ben (lost to Jake)",
+     "when": "Week 7 - 2023",
+     "replay": {
+      "season": 2023,
+      "week": 7,
+      "rid": 2,
+      "opp_rid": 3,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=7.2.3&season=2023"
+     }
+    },
+    {
+     "value": "68.3 pts",
+     "holder": "Tommy (lost to Haan)",
+     "when": "Week 6 - 2021",
+     "replay": {
+      "season": 2021,
+      "week": 6,
+      "rid": 9,
+      "opp_rid": 4,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=6.9.4&season=2021"
+     }
+    }
+   ],
+   "detail": null,
+   "verified": true,
+   "cards": {
+    "season": 2025,
+    "week": 9,
+    "teams": [
+     {
+      "rid": 5,
+      "name": "Joe",
+      "won": false,
+      "act": 154.33,
+      "rumbles": 5,
+      "vs_field": 5,
+      "season_rumbles": 132,
+      "w": 8,
+      "l": 1,
+      "players": [
+       {
+        "pos": "QB",
+        "name": "Jordan Love",
+        "pts": 11.37
+       },
+       {
+        "pos": "RB",
+        "name": "Jonathan Taylor",
+        "pts": 9.2
+       },
+       {
+        "pos": "RB",
+        "name": "Kyle Monangai",
+        "pts": 26.8
+       },
+       {
+        "pos": "TE",
+        "name": "Tucker Kraft",
+        "pts": 4.5
+       },
+       {
+        "pos": "RB",
+        "name": "Kyren Williams",
+        "pts": 21.4
+       },
+       {
+        "pos": "WR",
+        "name": "Amon-Ra St. Brown",
+        "pts": 19.7
+       },
+       {
+        "pos": "WR",
+        "name": "Keenan Allen",
+        "pts": 7.1
+       },
+       {
+        "pos": "QB",
+        "name": "Justin Herbert",
+        "pts": 27.2
+       },
+       {
+        "pos": "K",
+        "name": "Ka'imi Fairbairn",
+        "pts": 18.0
+       },
+       {
+        "pos": "DEF",
+        "name": "Denver Broncos",
+        "pts": 9.06
+       }
+      ]
+     },
+     {
+      "rid": 7,
+      "name": "Steven",
+      "won": true,
+      "act": 176.34,
+      "rumbles": 17,
+      "vs_field": 8,
+      "season_rumbles": 127,
+      "w": 7,
+      "l": 2,
+      "players": [
+       {
+        "pos": "QB",
+        "name": "Patrick Mahomes",
+        "pts": 11.75
+       },
+       {
+        "pos": "RB",
+        "name": "James Cook III",
+        "pts": 16.0
+       },
+       {
+        "pos": "RB",
+        "name": "Bijan Robinson",
+        "pts": 20.1
+       },
+       {
+        "pos": "TE",
+        "name": "Trey McBride",
+        "pts": 17.5
+       },
+       {
+        "pos": "WR",
+        "name": "Rashee Rice",
+        "pts": 21.1
+       },
+       {
+        "pos": "WR",
+        "name": "George Pickens",
+        "pts": 15.9
+       },
+       {
+        "pos": "WR",
+        "name": "Jaxon Smith-Njigba",
+        "pts": 25.0
+       },
+       {
+        "pos": "QB",
+        "name": "Matthew Stafford",
+        "pts": 28.34
+       },
+       {
+        "pos": "K",
+        "name": "Harrison Butker",
+        "pts": 8.6
+       },
+       {
+        "pos": "DEF",
+        "name": "Baltimore Ravens",
+        "pts": 12.05
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "most-lead-changes-in-a-game",
+   "name": "Most Lead Changes in a Game",
+   "category": "Games & Weeks",
+   "source": "computed",
+   "metric": "lead_changes",
+   "direction": "max",
+   "value": "24",
+   "value_num": 24,
+   "when": "Week 6 - 2022; Week 1 - 2024",
+   "holder": "Ben over Joe; Christian over Ben",
+   "holders": [
+    "Ben",
+    "Christian"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": {
+    "season": 2022,
+    "week": 6,
+    "rid": 2,
+    "opp_rid": 5,
+    "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=6.2.5&season=2022"
+   },
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "definition": "The most times the lead flipped in one matchup. Counts games since 2021, when Rumble Central's records begin.",
+   "updated": "2026-11-03",
+   "leaderboard": [
+    {
+     "value": "24",
+     "holder": "Ben over Joe",
+     "when": "Week 6 - 2022",
+     "replay": {
+      "season": 2022,
+      "week": 6,
+      "rid": 2,
+      "opp_rid": 5,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=6.2.5&season=2022"
+     }
+    },
+    {
+     "value": "24",
+     "holder": "Christian over Ben",
+     "when": "Week 1 - 2024",
+     "replay": {
+      "season": 2024,
+      "week": 1,
+      "rid": 9,
+      "opp_rid": 2,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=1.9.2&season=2024"
+     }
+    },
+    {
+     "value": "18",
+     "holder": "Steven over Christian",
+     "when": "Week 12 - 2025",
+     "replay": {
+      "season": 2025,
+      "week": 12,
+      "rid": 7,
+      "opp_rid": 9,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=12.7.9&season=2025"
+     }
+    },
+    {
+     "value": "17",
+     "holder": "Haan over Ryan",
+     "when": "Week 1 - 2022",
+     "replay": {
+      "season": 2022,
+      "week": 1,
+      "rid": 4,
+      "opp_rid": 10,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=1.4.10&season=2022"
+     }
+    },
+    {
+     "value": "17",
+     "holder": "Haan over Ryan",
+     "when": "Week 6 - 2025",
+     "replay": {
+      "season": 2025,
+      "week": 6,
+      "rid": 4,
+      "opp_rid": 10,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=6.4.10&season=2025"
+     }
+    }
+   ],
+   "detail": null,
+   "verified": true,
+   "cards": {
+    "season": 2022,
+    "week": 6,
+    "teams": [
+     {
+      "rid": 2,
+      "name": "Ben",
+      "won": true,
+      "act": 97.46,
+      "rumbles": 11,
+      "vs_field": 2,
+      "season_rumbles": 83,
+      "w": 6,
+      "l": 0,
+      "players": [
+       {
+        "pos": "QB",
+        "name": "Patrick Mahomes",
+        "pts": 18.12
+       },
+       {
+        "pos": "RB",
+        "name": "Dalvin Cook",
+        "pts": 15.3
+       },
+       {
+        "pos": "RB",
+        "name": "J.D. McKissic",
+        "pts": 2.0
+       },
+       {
+        "pos": "WR",
+        "name": "Garrett Wilson",
+        "pts": 1.8
+       },
+       {
+        "pos": "WR",
+        "name": "Allen Robinson",
+        "pts": 17.3
+       },
+       {
+        "pos": "TE",
+        "name": "Taysom Hill",
+        "pts": 4.54
+       },
+       {
+        "pos": "WR",
+        "name": "DeVonta Smith",
+        "pts": 15.4
+       },
+       {
+        "pos": "WR",
+        "name": "Donovan Peoples-Jones",
+        "pts": 11.6
+       },
+       {
+        "pos": "K",
+        "name": "Ryan Succop",
+        "pts": 14.4
+       },
+       {
+        "pos": "DEF",
+        "name": "Jacksonville Jaguars",
+        "pts": -3.0
+       }
+      ]
+     },
+     {
+      "rid": 5,
+      "name": "Joe",
+      "won": false,
+      "act": 91.72,
+      "rumbles": 0,
+      "vs_field": 0,
+      "season_rumbles": 44,
+      "w": 2,
+      "l": 4,
+      "players": [
+       {
+        "pos": "QB",
+        "name": "Tom Brady",
+        "pts": 11.72
+       },
+       {
+        "pos": "RB",
+        "name": "Aaron Jones Sr.",
+        "pts": 7.4
+       },
+       {
+        "pos": "RB",
+        "name": "Clyde Edwards-Helaire",
+        "pts": 3.3
+       },
+       {
+        "pos": "WR",
+        "name": "Adam Thielen",
+        "pts": 15.6
+       },
+       {
+        "pos": "WR",
+        "name": "Cooper Kupp",
+        "pts": 16.7
+       },
+       {
+        "pos": "TE",
+        "name": "Travis Kelce",
+        "pts": 19.2
+       },
+       {
+        "pos": "WR",
+        "name": "Courtland Sutton",
+        "pts": 3.4
+       },
+       {
+        "pos": "WR",
+        "name": "DK Metcalf",
+        "pts": 5.4
+       },
+       {
+        "pos": "K",
+        "name": "Younghoe Koo",
+        "pts": 4.0
+       },
+       {
+        "pos": "DEF",
+        "name": "Tampa Bay Buccaneers",
+        "pts": 5.0
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "biggest-upset-by-projection",
+   "name": "Biggest Upset by Projection",
+   "category": "Games & Weeks",
+   "source": "computed",
+   "metric": "upset_proj",
+   "direction": "max",
+   "value": "40.2 pts",
+   "value_num": 40.25,
+   "when": "Week 6 - 2022",
+   "holder": "Ben over Joe",
+   "holders": [
+    "Ben"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": {
+    "season": 2022,
+    "week": 6,
+    "rid": 2,
+    "opp_rid": 5,
+    "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=6.2.5&season=2022"
+   },
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "definition": "The winner who was projected furthest behind going in (sum of Sleeper's pre-game projections for the starters). Counts games since 2021, when Rumble Central's records begin.",
+   "updated": "2026-11-03",
+   "leaderboard": [
+    {
+     "value": "40.2 pts",
+     "holder": "Ben over Joe",
+     "when": "Week 6 - 2022",
+     "replay": {
+      "season": 2022,
+      "week": 6,
+      "rid": 2,
+      "opp_rid": 5,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=6.2.5&season=2022"
+     }
+    },
+    {
+     "value": "30.9 pts",
+     "holder": "Kaitlyn over Steven",
+     "when": "Week 7 - 2026",
+     "replay": {
+      "season": 2026,
+      "week": 7,
+      "rid": 11,
+      "opp_rid": 7,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=7.11.7"
+     }
+    },
+    {
+     "value": "28.5 pts",
+     "holder": "Alex over Joe",
+     "when": "Week 10 - 2025",
+     "replay": {
+      "season": 2025,
+      "week": 10,
+      "rid": 6,
+      "opp_rid": 5,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=10.6.5&season=2025"
+     }
+    },
+    {
+     "value": "27.5 pts",
+     "holder": "Steven over Haan",
+     "when": "Week 1 - 2021",
+     "replay": {
+      "season": 2021,
+      "week": 1,
+      "rid": 7,
+      "opp_rid": 4,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=1.7.4&season=2021"
+     }
+    },
+    {
+     "value": "27.4 pts",
+     "holder": "Christian over Ben",
+     "when": "Week 4 - 2026",
+     "replay": {
+      "season": 2026,
+      "week": 4,
+      "rid": 9,
+      "opp_rid": 2,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=4.9.2"
+     }
+    }
+   ],
+   "detail": null,
+   "verified": true,
+   "cards": {
+    "season": 2022,
+    "week": 6,
+    "teams": [
+     {
+      "rid": 2,
+      "name": "Ben",
+      "won": true,
+      "act": 97.46,
+      "rumbles": 11,
+      "vs_field": 2,
+      "season_rumbles": 83,
+      "w": 6,
+      "l": 0,
+      "players": [
+       {
+        "pos": "QB",
+        "name": "Patrick Mahomes",
+        "pts": 18.12
+       },
+       {
+        "pos": "RB",
+        "name": "Dalvin Cook",
+        "pts": 15.3
+       },
+       {
+        "pos": "RB",
+        "name": "J.D. McKissic",
+        "pts": 2.0
+       },
+       {
+        "pos": "WR",
+        "name": "Garrett Wilson",
+        "pts": 1.8
+       },
+       {
+        "pos": "WR",
+        "name": "Allen Robinson",
+        "pts": 17.3
+       },
+       {
+        "pos": "TE",
+        "name": "Taysom Hill",
+        "pts": 4.54
+       },
+       {
+        "pos": "WR",
+        "name": "DeVonta Smith",
+        "pts": 15.4
+       },
+       {
+        "pos": "WR",
+        "name": "Donovan Peoples-Jones",
+        "pts": 11.6
+       },
+       {
+        "pos": "K",
+        "name": "Ryan Succop",
+        "pts": 14.4
+       },
+       {
+        "pos": "DEF",
+        "name": "Jacksonville Jaguars",
+        "pts": -3.0
+       }
+      ]
+     },
+     {
+      "rid": 5,
+      "name": "Joe",
+      "won": false,
+      "act": 91.72,
+      "rumbles": 0,
+      "vs_field": 0,
+      "season_rumbles": 44,
+      "w": 2,
+      "l": 4,
+      "players": [
+       {
+        "pos": "QB",
+        "name": "Tom Brady",
+        "pts": 11.72
+       },
+       {
+        "pos": "RB",
+        "name": "Aaron Jones Sr.",
+        "pts": 7.4
+       },
+       {
+        "pos": "RB",
+        "name": "Clyde Edwards-Helaire",
+        "pts": 3.3
+       },
+       {
+        "pos": "WR",
+        "name": "Adam Thielen",
+        "pts": 15.6
+       },
+       {
+        "pos": "WR",
+        "name": "Cooper Kupp",
+        "pts": 16.7
+       },
+       {
+        "pos": "TE",
+        "name": "Travis Kelce",
+        "pts": 19.2
+       },
+       {
+        "pos": "WR",
+        "name": "Courtland Sutton",
+        "pts": 3.4
+       },
+       {
+        "pos": "WR",
+        "name": "DK Metcalf",
+        "pts": 5.4
+       },
+       {
+        "pos": "K",
+        "name": "Younghoe Koo",
+        "pts": 4.0
+       },
+       {
+        "pos": "DEF",
+        "name": "Tampa Bay Buccaneers",
+        "pts": 5.0
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "most-points-over-projection",
+   "name": "Most Points Over Projection",
+   "category": "Games & Weeks",
+   "source": "computed",
+   "metric": "over_proj",
+   "direction": "max",
+   "value": "+107.2 pts",
+   "value_num": 107.18,
+   "when": "Week 8 - 2025",
+   "holder": "Joe",
+   "holders": [
+    "Joe"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": {
+    "season": 2025,
+    "week": 8,
+    "rid": 5,
+    "opp_rid": 3,
+    "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=8.5.3&season=2025"
+   },
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "definition": "Most points a team scored above the sum of its starters' pre-game projections. Counts games since 2021, when Rumble Central's records begin.",
+   "updated": "2026-11-03",
+   "leaderboard": [
+    {
+     "value": "+107.2 pts",
+     "holder": "Joe",
+     "when": "Week 8 - 2025",
+     "replay": {
+      "season": 2025,
+      "week": 8,
+      "rid": 5,
+      "opp_rid": 3,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=8.5.3&season=2025"
+     }
+    },
+    {
+     "value": "+83.4 pts",
+     "holder": "Steven",
+     "when": "Week 4 - 2025",
+     "replay": {
+      "season": 2025,
+      "week": 4,
+      "rid": 7,
+      "opp_rid": 4,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=4.7.4&season=2025"
+     }
+    },
+    {
+     "value": "+83.1 pts",
+     "holder": "Stephanie",
+     "when": "Week 2 - 2026",
+     "replay": {
+      "season": 2026,
+      "week": 2,
+      "rid": 12,
+      "opp_rid": 3,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=2.12.3"
+     }
+    },
+    {
+     "value": "+82.9 pts",
+     "holder": "Christian",
+     "when": "Week 4 - 2026",
+     "replay": {
+      "season": 2026,
+      "week": 4,
+      "rid": 9,
+      "opp_rid": 2,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=4.9.2"
+     }
+    },
+    {
+     "value": "+77.7 pts",
+     "holder": "Steven",
+     "when": "Week 8 - 2022",
+     "replay": {
+      "season": 2022,
+      "week": 8,
+      "rid": 7,
+      "opp_rid": 9,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=8.7.9&season=2022"
+     }
+    }
+   ],
+   "detail": null,
+   "verified": true,
+   "cards": {
+    "season": 2025,
+    "week": 8,
+    "teams": [
+     {
+      "rid": 5,
+      "name": "Joe",
+      "won": true,
+      "act": 243.51,
+      "rumbles": 18,
+      "vs_field": 9,
+      "season_rumbles": 127,
+      "w": 8,
+      "l": 0,
+      "players": [
+       {
+        "pos": "QB",
+        "name": "Justin Herbert",
+        "pts": 27.58
+       },
+       {
+        "pos": "RB",
+        "name": "Jonathan Taylor",
+        "pts": 39.9
+       },
+       {
+        "pos": "RB",
+        "name": "Saquon Barkley",
+        "pts": 35.4
+       },
+       {
+        "pos": "TE",
+        "name": "Tucker Kraft",
+        "pts": 34.8
+       },
+       {
+        "pos": "WR",
+        "name": "Troy Franklin",
+        "pts": 28.4
+       },
+       {
+        "pos": "WR",
+        "name": "Keenan Allen",
+        "pts": 10.4
+       },
+       {
+        "pos": "WR",
+        "name": "Tee Higgins",
+        "pts": 11.4
+       },
+       {
+        "pos": "QB",
+        "name": "Jordan Love",
+        "pts": 30.9
+       },
+       {
+        "pos": "K",
+        "name": "Ka'imi Fairbairn",
+        "pts": 15.4
+       },
+       {
+        "pos": "DEF",
+        "name": "Indianapolis Colts",
+        "pts": 9.33
+       }
+      ]
+     },
+     {
+      "rid": 3,
+      "name": "Jake",
+      "won": false,
+      "act": 128.65,
+      "rumbles": 3,
+      "vs_field": 3,
+      "season_rumbles": 54,
+      "w": 3,
+      "l": 5,
+      "players": [
+       {
+        "pos": "QB",
+        "name": "Carson Wentz",
+        "pts": 7.41
+       },
+       {
+        "pos": "RB",
+        "name": "Jaylen Warren",
+        "pts": 10.8
+       },
+       {
+        "pos": "RB",
+        "name": "Chuba Hubbard",
+        "pts": 10.44
+       },
+       {
+        "pos": "TE",
+        "name": "Kyle Pitts Sr.",
+        "pts": 15.4
+       },
+       {
+        "pos": "WR",
+        "name": "Rome Odunze",
+        "pts": 21.9
+       },
+       {
+        "pos": "WR",
+        "name": "Ladd McConkey",
+        "pts": 22.3
+       },
+       {
+        "pos": "WR",
+        "name": "Tetairoa McMillan",
+        "pts": 20.4
+       },
+       {
+        "pos": "QB",
+        "name": "Tyler Huntley",
+        "pts": 18.44
+       },
+       {
+        "pos": "K",
+        "name": "Wil Lutz",
+        "pts": 9.2
+       },
+       {
+        "pos": "DEF",
+        "name": "Cincinnati Bengals",
+        "pts": -7.64
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "most-points-under-projection",
+   "name": "Most Points Under Projection",
+   "category": "Games & Weeks",
+   "source": "computed",
+   "metric": "under_proj",
+   "direction": "max",
+   "value": "-75.7 pts",
+   "value_num": 75.73,
+   "when": "Week 1 - 2021",
+   "holder": "Aidan",
+   "holders": [
+    "Aidan"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": {
+    "season": 2021,
+    "week": 1,
+    "rid": 1,
+    "opp_rid": 2,
+    "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=1.1.2&season=2021"
+   },
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "definition": "Most points a team scored below the sum of its starters' pre-game projections. Counts games since 2021, when Rumble Central's records begin.",
+   "updated": "2026-11-03",
+   "leaderboard": [
+    {
+     "value": "-75.7 pts",
+     "holder": "Aidan",
+     "when": "Week 1 - 2021",
+     "replay": {
+      "season": 2021,
+      "week": 1,
+      "rid": 1,
+      "opp_rid": 2,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=1.1.2&season=2021"
+     }
+    },
+    {
+     "value": "-62.0 pts",
+     "holder": "Ben",
+     "when": "Week 1 - 2023",
+     "replay": {
+      "season": 2023,
+      "week": 1,
+      "rid": 2,
+      "opp_rid": 7,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=1.2.7&season=2023"
+     }
+    },
+    {
+     "value": "-61.5 pts",
+     "holder": "Ryan",
+     "when": "Week 11 - 2022",
+     "replay": {
+      "season": 2022,
+      "week": 11,
+      "rid": 10,
+      "opp_rid": 7,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=11.10.7&season=2022"
+     }
+    },
+    {
+     "value": "-61.2 pts",
+     "holder": "Aidan",
+     "when": "Week 13 - 2022",
+     "replay": {
+      "season": 2022,
+      "week": 13,
+      "rid": 1,
+      "opp_rid": 2,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=13.1.2&season=2022"
+     }
+    },
+    {
+     "value": "-59.2 pts",
+     "holder": "Steven",
+     "when": "Week 14 - 2022",
+     "replay": {
+      "season": 2022,
+      "week": 14,
+      "rid": 7,
+      "opp_rid": 1,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=14.7.1&season=2022"
+     }
+    }
+   ],
+   "detail": null,
+   "verified": true,
+   "cards": {
+    "season": 2021,
+    "week": 1,
+    "teams": [
+     {
+      "rid": 1,
+      "name": "Aidan",
+      "won": false,
+      "act": 53.28,
+      "rumbles": 0,
+      "vs_field": 0,
+      "season_rumbles": 0,
+      "w": 0,
+      "l": 1,
+      "players": [
+       {
+        "pos": "QB",
+        "name": "Ryan Tannehill",
+        "pts": 11.18
+       },
+       {
+        "pos": "RB",
+        "name": "Aaron Jones Sr.",
+        "pts": 2.7
+       },
+       {
+        "pos": "RB",
+        "name": "Najee Harris",
+        "pts": 4.9
+       },
+       {
+        "pos": "WR",
+        "name": "Keenan Allen",
+        "pts": 12.5
+       },
+       {
+        "pos": "WR",
+        "name": "Julio Jones",
+        "pts": 4.15
+       },
+       {
+        "pos": "TE",
+        "name": "Kyle Pitts Sr.",
+        "pts": 4.1
+       },
+       {
+        "pos": "WR",
+        "name": "Brandon Aiyuk",
+        "pts": 0.0
+       },
+       {
+        "pos": "WR",
+        "name": "Allen Robinson",
+        "pts": 4.75
+       },
+       {
+        "pos": "K",
+        "name": "Rodrigo Blankenship",
+        "pts": 4.0
+       },
+       {
+        "pos": "DEF",
+        "name": "Buffalo Bills",
+        "pts": 5.0
+       }
+      ]
+     },
+     {
+      "rid": 2,
+      "name": "Ben",
+      "won": true,
+      "act": 137.21,
+      "rumbles": 15,
+      "vs_field": 6,
+      "season_rumbles": 15,
+      "w": 1,
+      "l": 0,
+      "players": [
+       {
+        "pos": "QB",
+        "name": "Kyler Murray",
+        "pts": 32.56
+       },
+       {
+        "pos": "RB",
+        "name": "Chase Edmonds",
+        "pts": 11.1
+       },
+       {
+        "pos": "RB",
+        "name": "Clyde Edwards-Helaire",
+        "pts": 8.2
+       },
+       {
+        "pos": "WR",
+        "name": "Mike Evans",
+        "pts": 3.4
+       },
+       {
+        "pos": "WR",
+        "name": "Adam Thielen",
+        "pts": 24.2
+       },
+       {
+        "pos": "TE",
+        "name": "George Kittle",
+        "pts": 9.55
+       },
+       {
+        "pos": "TE",
+        "name": "Travis Kelce",
+        "pts": 22.1
+       },
+       {
+        "pos": "RB",
+        "name": "Darrell Henderson",
+        "pts": 15.2
+       },
+       {
+        "pos": "K",
+        "name": "Daniel Carlson",
+        "pts": 11.9
+       },
+       {
+        "pos": "DEF",
+        "name": "Baltimore Ravens",
+        "pts": -1.0
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "most-points-on-thursday-night-team",
+   "name": "Most Points on Thursday Night (Team)",
+   "category": "Games & Weeks",
+   "source": "computed",
+   "metric": "thu_pts",
+   "direction": "max",
+   "value": "80.48",
+   "value_num": 80.48,
+   "when": "Week 5 - 2023",
+   "holder": "Ankit",
+   "holders": [
+    "Ankit"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": {
+    "season": 2023,
+    "week": 5,
+    "rid": 8,
+    "opp_rid": 7,
+    "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=5.8.7&season=2023"
+   },
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "definition": "Most points from the Thursday-night game in one week by one team's starters. Counts games since 2021, when Rumble Central's records begin.",
+   "updated": "2026-11-03",
+   "leaderboard": [
+    {
+     "value": "80.48",
+     "holder": "Ankit",
+     "when": "Week 5 - 2023",
+     "replay": {
+      "season": 2023,
+      "week": 5,
+      "rid": 8,
+      "opp_rid": 7,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=5.8.7&season=2023"
+     }
+    },
+    {
+     "value": "79.39",
+     "holder": "Aidan",
+     "when": "Week 14 - 2025",
+     "replay": {
+      "season": 2025,
+      "week": 14,
+      "rid": 1,
+      "opp_rid": 2,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=14.1.2&season=2025"
+     }
+    },
+    {
+     "value": "77.86",
+     "holder": "Alex",
+     "when": "Week 5 - 2024",
+     "replay": {
+      "season": 2024,
+      "week": 5,
+      "rid": 6,
+      "opp_rid": 9,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=5.6.9&season=2024"
+     }
+    },
+    {
+     "value": "72.47",
+     "holder": "Alex",
+     "when": "Week 7 - 2026",
+     "replay": {
+      "season": 2026,
+      "week": 7,
+      "rid": 6,
+      "opp_rid": 12,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=7.6.12"
+     }
+    },
+    {
+     "value": "67.36",
+     "holder": "Alex",
+     "when": "Week 13 - 2023",
+     "replay": {
+      "season": 2023,
+      "week": 13,
+      "rid": 6,
+      "opp_rid": 7,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=13.6.7&season=2023"
+     }
+    }
+   ],
+   "detail": null,
+   "verified": true,
+   "cards": {
+    "season": 2023,
+    "week": 5,
+    "teams": [
+     {
+      "rid": 8,
+      "name": "Ankit",
+      "won": true,
+      "act": 135.78,
+      "rumbles": 15,
+      "vs_field": 6,
+      "season_rumbles": 83,
+      "w": 5,
+      "l": 0,
+      "players": [
+       {
+        "pos": "QB",
+        "name": "Justin Fields",
+        "pts": 31.48
+       },
+       {
+        "pos": "RB",
+        "name": "Kyren Williams",
+        "pts": 6.7
+       },
+       {
+        "pos": "RB",
+        "name": "Tony Pollard",
+        "pts": 7.4
+       },
+       {
+        "pos": "WR",
+        "name": "Zay Flowers",
+        "pts": 12.3
+       },
+       {
+        "pos": "WR",
+        "name": "DJ Moore",
+        "pts": 49.0
+       },
+       {
+        "pos": "TE",
+        "name": "Mark Andrews",
+        "pts": 11.5
+       },
+       {
+        "pos": "WR",
+        "name": "Jayden Reed",
+        "pts": 1.7
+       },
+       {
+        "pos": "QB",
+        "name": "Zach Wilson",
+        "pts": 5.56
+       },
+       {
+        "pos": "K",
+        "name": "Justin Tucker",
+        "pts": 4.0
+       },
+       {
+        "pos": "DEF",
+        "name": "Baltimore Ravens",
+        "pts": 6.14
+       }
+      ]
+     },
+     {
+      "rid": 7,
+      "name": "Steven",
+      "won": false,
+      "act": 123.11,
+      "rumbles": 5,
+      "vs_field": 5,
+      "season_rumbles": 41,
+      "w": 2,
+      "l": 3,
+      "players": [
+       {
+        "pos": "QB",
+        "name": "Dak Prescott",
+        "pts": 2.82
+       },
+       {
+        "pos": "RB",
+        "name": "Brian Robinson Jr.",
+        "pts": 7.3
+       },
+       {
+        "pos": "RB",
+        "name": "Travis Etienne Jr.",
+        "pts": 36.4
+       },
+       {
+        "pos": "WR",
+        "name": "Davante Adams",
+        "pts": 8.5
+       },
+       {
+        "pos": "WR",
+        "name": "Terry McLaurin",
+        "pts": 8.9
+       },
+       {
+        "pos": "TE",
+        "name": "Evan Engram",
+        "pts": 6.8
+       },
+       {
+        "pos": "RB",
+        "name": "Christian McCaffrey",
+        "pts": 13.8
+       },
+       {
+        "pos": "QB",
+        "name": "Matthew Stafford",
+        "pts": 14.88
+       },
+       {
+        "pos": "K",
+        "name": "Evan McPherson",
+        "pts": 12.0
+       },
+       {
+        "pos": "DEF",
+        "name": "Miami Dolphins",
+        "pts": 11.71
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "most-points-on-monday-night-team",
+   "name": "Most Points on Monday Night (Team)",
+   "category": "Games & Weeks",
+   "source": "computed",
+   "metric": "mon_pts",
+   "direction": "max",
+   "value": "79.22",
+   "value_num": 79.22,
+   "when": "Week 6 - 2021",
+   "holder": "Haan",
+   "holders": [
+    "Haan"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": {
+    "season": 2021,
+    "week": 6,
+    "rid": 4,
+    "opp_rid": 9,
+    "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=6.4.9&season=2021"
+   },
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "definition": "Most points from Monday-night games in one week by one team's starters. Counts games since 2021, when Rumble Central's records begin.",
+   "updated": "2026-11-03",
+   "leaderboard": [
+    {
+     "value": "79.22",
+     "holder": "Haan",
+     "when": "Week 6 - 2021",
+     "replay": {
+      "season": 2021,
+      "week": 6,
+      "rid": 4,
+      "opp_rid": 9,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=6.4.9&season=2021"
+     }
+    },
+    {
+     "value": "69.40",
+     "holder": "Ben",
+     "when": "Week 14 - 2024",
+     "replay": {
+      "season": 2024,
+      "week": 14,
+      "rid": 2,
+      "opp_rid": 4,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=14.2.4&season=2024"
+     }
+    },
+    {
+     "value": "67.50",
+     "holder": "Joe",
+     "when": "Week 16 - 2023",
+     "replay": {
+      "season": 2023,
+      "week": 16,
+      "rid": 5,
+      "opp_rid": 3,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=16.5.3&season=2023"
+     }
+    },
+    {
+     "value": "65.78",
+     "holder": "Ben",
+     "when": "Week 5 - 2022",
+     "replay": {
+      "season": 2022,
+      "week": 5,
+      "rid": 2,
+      "opp_rid": 6,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=5.2.6&season=2022"
+     }
+    },
+    {
+     "value": "64.85",
+     "holder": "Ryan",
+     "when": "Week 5 - 2021",
+     "replay": {
+      "season": 2021,
+      "week": 5,
+      "rid": 10,
+      "opp_rid": 4,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=5.10.4&season=2021"
+     }
+    }
+   ],
+   "detail": null,
+   "verified": true,
+   "cards": {
+    "season": 2021,
+    "week": 6,
+    "teams": [
+     {
+      "rid": 4,
+      "name": "Haan",
+      "won": true,
+      "act": 150.07,
+      "rumbles": 17,
+      "vs_field": 8,
+      "season_rumbles": 66,
+      "w": 3,
+      "l": 3,
+      "players": [
+       {
+        "pos": "QB",
+        "name": "Josh Allen",
+        "pts": 27.22
+       },
+       {
+        "pos": "RB",
+        "name": "Derrick Henry",
+        "pts": 33.85
+       },
+       {
+        "pos": "RB",
+        "name": "Alex Collins",
+        "pts": 15.8
+       },
+       {
+        "pos": "WR",
+        "name": "Terry McLaurin",
+        "pts": 3.8
+       },
+       {
+        "pos": "WR",
+        "name": "Stefon Diggs",
+        "pts": 18.15
+       },
+       {
+        "pos": "TE",
+        "name": "Mike Gesicki",
+        "pts": 14.25
+       },
+       {
+        "pos": "WR",
+        "name": "Marquise Brown",
+        "pts": 3.5
+       },
+       {
+        "pos": "WR",
+        "name": "Laviska Shenault",
+        "pts": 7.4
+       },
+       {
+        "pos": "K",
+        "name": "Justin Tucker",
+        "pts": 13.1
+       },
+       {
+        "pos": "DEF",
+        "name": "Dallas Cowboys",
+        "pts": 13.0
+       }
+      ]
+     },
+     {
+      "rid": 9,
+      "name": "Tommy",
+      "won": false,
+      "act": 123.4,
+      "rumbles": 3,
+      "vs_field": 3,
+      "season_rumbles": 28,
+      "w": 1,
+      "l": 5,
+      "players": [
+       {
+        "pos": "QB",
+        "name": "Dak Prescott",
+        "pts": 26.8
+       },
+       {
+        "pos": "RB",
+        "name": "Austin Ekeler",
+        "pts": 7.0
+       },
+       {
+        "pos": "RB",
+        "name": "Antonio Gibson",
+        "pts": 2.4
+       },
+       {
+        "pos": "WR",
+        "name": "Marvin Jones",
+        "pts": 18.75
+       },
+       {
+        "pos": "WR",
+        "name": "Odell Beckham Jr.",
+        "pts": 9.9
+       },
+       {
+        "pos": "TE",
+        "name": "Tyler Higbee",
+        "pts": 4.6
+       },
+       {
+        "pos": "RB",
+        "name": "Devontae Booker",
+        "pts": 7.9
+       },
+       {
+        "pos": "WR",
+        "name": "CeeDee Lamb",
+        "pts": 30.85
+       },
+       {
+        "pos": "K",
+        "name": "Harrison Butker",
+        "pts": 9.2
+       },
+       {
+        "pos": "DEF",
+        "name": "Tampa Bay Buccaneers",
+        "pts": 6.0
        }
       ]
      }
@@ -4914,9 +7733,9 @@
    "id": "most-0-0-s-in-a-win",
    "name": "Most 0.0's in a Win",
    "category": "Projections & NFL Clock",
-   "source": "seeded",
-   "metric": null,
-   "direction": null,
+   "source": "computed",
+   "metric": "zeros_win",
+   "direction": "max",
    "value": "2; Gesicki, John Brown",
    "value_num": 2.0,
    "when": "Week 5 - 2020",
@@ -4928,25 +7747,249 @@
    "team": "SARS and Scrubs",
    "notes": [],
    "evidence": [],
-   "replay": null,
+   "replay": {
+    "season": 2023,
+    "week": 17,
+    "rid": 3,
+    "opp_rid": 10,
+    "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=17.3.10&season=2023"
+   },
    "previous": null,
-   "ties": [],
+   "ties": [
+    {
+     "holder": "Jake — Jaylen Waddle, T.J. Hockenson",
+     "when": "Week 17 - 2023",
+     "replay": {
+      "season": 2023,
+      "week": 17,
+      "rid": 3,
+      "opp_rid": 10,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=17.3.10&season=2023"
+     }
+    },
+    {
+     "holder": "Haan — Chris Godwin Jr., Will Reichard",
+     "when": "Week 8 - 2026",
+     "replay": {
+      "season": 2026,
+      "week": 8,
+      "rid": 4,
+      "opp_rid": 6,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=8.4.6"
+     }
+    }
+   ],
    "locked": false,
    "status": "active",
    "era_pair": null,
    "size_sensitive": false,
    "needs_definition": null,
    "definition": null,
-   "engine_gap": "Needs per-player points.",
-   "updated": "2026-11-02"
+   "engine_gap": null,
+   "updated": "2026-11-02",
+   "leaderboard": [
+    {
+     "value": "2",
+     "holder": "Jake — Jaylen Waddle, T.J. Hockenson",
+     "when": "Week 17 - 2023",
+     "replay": {
+      "season": 2023,
+      "week": 17,
+      "rid": 3,
+      "opp_rid": 10,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=17.3.10&season=2023"
+     }
+    },
+    {
+     "value": "2",
+     "holder": "Haan — Chris Godwin Jr., Will Reichard",
+     "when": "Week 8 - 2026",
+     "replay": {
+      "season": 2026,
+      "week": 8,
+      "rid": 4,
+      "opp_rid": 6,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=8.4.6"
+     }
+    },
+    {
+     "value": "1",
+     "holder": "Jake — Emmanuel Sanders",
+     "when": "Week 8 - 2021",
+     "replay": {
+      "season": 2021,
+      "week": 8,
+      "rid": 3,
+      "opp_rid": 7,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=8.3.7&season=2021"
+     }
+    },
+    {
+     "value": "1",
+     "holder": "Ryan — Greg Zuerlein",
+     "when": "Week 9 - 2021",
+     "replay": {
+      "season": 2021,
+      "week": 9,
+      "rid": 10,
+      "opp_rid": 7,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=9.10.7&season=2021"
+     }
+    },
+    {
+     "value": "1",
+     "holder": "Haan — Mike Gesicki",
+     "when": "Week 10 - 2021",
+     "replay": {
+      "season": 2021,
+      "week": 10,
+      "rid": 4,
+      "opp_rid": 7,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=10.4.7&season=2021"
+     }
+    }
+   ],
+   "verified": true,
+   "cards": {
+    "season": 2023,
+    "week": 17,
+    "teams": [
+     {
+      "rid": 3,
+      "name": "Jake",
+      "won": true,
+      "act": 123.58,
+      "rumbles": 14,
+      "vs_field": 5,
+      "season_rumbles": 166,
+      "w": 9,
+      "l": 6,
+      "players": [
+       {
+        "pos": "QB",
+        "name": "Josh Allen",
+        "pts": 19.66
+       },
+       {
+        "pos": "RB",
+        "name": "Jahmyr Gibbs",
+        "pts": 5.3
+       },
+       {
+        "pos": "RB",
+        "name": "James Cook III",
+        "pts": 4.4
+       },
+       {
+        "pos": "WR",
+        "name": "CeeDee Lamb",
+        "pts": 40.2
+       },
+       {
+        "pos": "WR",
+        "name": "Jaylen Waddle",
+        "pts": 0.0
+       },
+       {
+        "pos": "TE",
+        "name": "T.J. Hockenson",
+        "pts": 0.0
+       },
+       {
+        "pos": "RB",
+        "name": "Isiah Pacheco",
+        "pts": 27.5
+       },
+       {
+        "pos": "QB",
+        "name": "Tua Tagovailoa",
+        "pts": 13.38
+       },
+       {
+        "pos": "K",
+        "name": "Jake Moody",
+        "pts": 9.8
+       },
+       {
+        "pos": "DEF",
+        "name": "Philadelphia Eagles",
+        "pts": 3.34
+       }
+      ]
+     },
+     {
+      "rid": 10,
+      "name": "Ryan",
+      "won": false,
+      "act": 109.76,
+      "rumbles": 3,
+      "vs_field": 3,
+      "season_rumbles": 169,
+      "w": 10,
+      "l": 5,
+      "players": [
+       {
+        "pos": "QB",
+        "name": "Russell Wilson",
+        "pts": 0.0
+       },
+       {
+        "pos": "RB",
+        "name": "Derrick Henry",
+        "pts": 4.2
+       },
+       {
+        "pos": "RB",
+        "name": "David Montgomery",
+        "pts": 12.5
+       },
+       {
+        "pos": "WR",
+        "name": "Jordan Addison",
+        "pts": 5.8
+       },
+       {
+        "pos": "WR",
+        "name": "Tyreek Hill",
+        "pts": 13.6
+       },
+       {
+        "pos": "TE",
+        "name": "Travis Kelce",
+        "pts": 4.6
+       },
+       {
+        "pos": "RB",
+        "name": "Raheem Mostert",
+        "pts": 0.0
+       },
+       {
+        "pos": "RB",
+        "name": "James Conner",
+        "pts": 26.3
+       },
+       {
+        "pos": "K",
+        "name": "Harrison Butker",
+        "pts": 26.1
+       },
+       {
+        "pos": "DEF",
+        "name": "Buffalo Bills",
+        "pts": 16.66
+       }
+      ]
+     }
+    ]
+   }
   },
   {
    "id": "highest-points-scored-by-1-player",
    "name": "Highest % Points Scored by 1 Player",
    "category": "Projections & NFL Clock",
    "source": "seeded",
-   "metric": null,
-   "direction": null,
+   "metric": "top_share",
+   "direction": "max",
    "value": "41.5%; Derrick Henry",
    "value_num": 41.5,
    "when": "Week 6 - 2020",
@@ -4967,16 +8010,78 @@
    "size_sensitive": false,
    "needs_definition": null,
    "definition": null,
-   "engine_gap": "Needs per-player points.",
-   "updated": "2026-11-02"
+   "engine_gap": null,
+   "updated": "2026-11-02",
+   "leaderboard": [
+    {
+     "value": "40.5%",
+     "holder": "Steven — Christian McCaffrey",
+     "when": "Week 14 - 2022",
+     "replay": {
+      "season": 2022,
+      "week": 14,
+      "rid": 7,
+      "opp_rid": 1,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=14.7.1&season=2022"
+     }
+    },
+    {
+     "value": "39.6%",
+     "holder": "Tommy — Austin Ekeler",
+     "when": "Week 11 - 2021",
+     "replay": {
+      "season": 2021,
+      "week": 11,
+      "rid": 9,
+      "opp_rid": 2,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=11.9.2&season=2021"
+     }
+    },
+    {
+     "value": "38.5%",
+     "holder": "Aidan — Justin Jefferson",
+     "when": "Week 14 - 2022",
+     "replay": {
+      "season": 2022,
+      "week": 14,
+      "rid": 1,
+      "opp_rid": 7,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=14.1.7&season=2022"
+     }
+    },
+    {
+     "value": "38.0%",
+     "holder": "Ben — Leonard Fournette",
+     "when": "Week 12 - 2021",
+     "replay": {
+      "season": 2021,
+      "week": 12,
+      "rid": 2,
+      "opp_rid": 5,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=12.2.5&season=2021"
+     }
+    },
+    {
+     "value": "37.7%",
+     "holder": "Joe — Patrick Mahomes",
+     "when": "Week 10 - 2021",
+     "replay": {
+      "season": 2021,
+      "week": 10,
+      "rid": 5,
+      "opp_rid": 9,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=10.5.9&season=2021"
+     }
+    }
+   ]
   },
   {
    "id": "fewest-total-league-points-on-thursday-night",
    "name": "Fewest Total League Points on Thursday Night",
    "category": "Projections & NFL Clock",
-   "source": "seeded",
-   "metric": null,
-   "direction": null,
+   "source": "computed",
+   "metric": "thu_league",
+   "direction": "min",
    "value": "20",
    "value_num": 20.0,
    "when": "Week 10 - 2022 Panthers vs Texans",
@@ -4997,16 +8102,49 @@
    "size_sensitive": false,
    "needs_definition": null,
    "definition": null,
-   "engine_gap": "Needs NFL kickoff times + per-player points.",
-   "updated": "2026-11-02"
+   "engine_gap": null,
+   "updated": "2026-11-02",
+   "leaderboard": [
+    {
+     "value": "20.0",
+     "holder": "DTFClub",
+     "when": "Week 10 - 2022 ATL at CAR",
+     "replay": null
+    },
+    {
+     "value": "27.4",
+     "holder": "DTFClub",
+     "when": "Week 7 - 2024 DEN at NO",
+     "replay": null
+    },
+    {
+     "value": "30.5",
+     "holder": "DTFClub",
+     "when": "Week 14 - 2023 NE at PIT",
+     "replay": null
+    },
+    {
+     "value": "34.5",
+     "holder": "DTFClub",
+     "when": "Week 6 - 2022 WAS at CHI",
+     "replay": null
+    },
+    {
+     "value": "42.4",
+     "holder": "DTFClub",
+     "when": "Week 2 - 2021 NYG at WAS",
+     "replay": null
+    }
+   ],
+   "verified": true
   },
   {
    "id": "largest-monday-night-deficit-overcome",
    "name": "Largest Monday Night Deficit Overcome",
    "category": "Projections & NFL Clock",
-   "source": "seeded",
-   "metric": null,
-   "direction": null,
+   "source": "computed",
+   "metric": "mnf_overcome",
+   "direction": "max",
    "value": "52.55",
    "value_num": 52.55,
    "when": "Week 6 - 2021",
@@ -5033,7 +8171,7 @@
    "size_sensitive": false,
    "needs_definition": null,
    "definition": null,
-   "engine_gap": "Candidate for Rumble Central wp_timeline.",
+   "engine_gap": null,
    "updated": "2026-11-02",
    "cards": {
     "season": 2021,
@@ -5169,7 +8307,70 @@
    },
    "legacy_evidence": [
     "https://imgur.com/a/h1xHu7o"
-   ]
+   ],
+   "leaderboard": [
+    {
+     "value": "52.55",
+     "holder": "Haan over Tommy",
+     "when": "Week 6 - 2021",
+     "replay": {
+      "season": 2021,
+      "week": 6,
+      "rid": 4,
+      "opp_rid": 9,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=6.4.9&season=2021"
+     }
+    },
+    {
+     "value": "44.78",
+     "holder": "Steven over Ben",
+     "when": "Week 8 - 2025",
+     "replay": {
+      "season": 2025,
+      "week": 8,
+      "rid": 7,
+      "opp_rid": 2,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=8.7.2&season=2025"
+     }
+    },
+    {
+     "value": "42.56",
+     "holder": "Ben over Alex",
+     "when": "Week 5 - 2022",
+     "replay": {
+      "season": 2022,
+      "week": 5,
+      "rid": 2,
+      "opp_rid": 6,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=5.2.6&season=2022"
+     }
+    },
+    {
+     "value": "42.14",
+     "holder": "Ankit over Haan",
+     "when": "Week 2 - 2026",
+     "replay": {
+      "season": 2026,
+      "week": 2,
+      "rid": 8,
+      "opp_rid": 4,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=2.8.4"
+     }
+    },
+    {
+     "value": "39.46",
+     "holder": "Steven over Ryan",
+     "when": "Week 17 - 2025",
+     "replay": {
+      "season": 2025,
+      "week": 17,
+      "rid": 7,
+      "opp_rid": 10,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=17.7.10&season=2025"
+     }
+    }
+   ],
+   "verified": true
   },
   {
    "id": "most-trades-in-24hrs",
@@ -6439,6 +9640,345 @@
    "verified": true
   },
   {
+   "id": "best-trade-by-a-champion-par",
+   "name": "Best Trade by a Champion (PAR)",
+   "category": "Trades",
+   "source": "computed",
+   "metric": "trade_champ_best",
+   "direction": "max",
+   "value": "+34.0 PAR",
+   "value_num": 34.0,
+   "when": "Week 11 - 2023",
+   "holder": "Ankit over Joe",
+   "holders": [
+    "Ankit"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "definition": "The best trade (by PAR) made by the eventual champion in their title season. Counts trades since 2021 (the first Sleeper season).",
+   "updated": "2026-11-03",
+   "leaderboard": [
+    {
+     "value": "+34.0 PAR",
+     "holder": "Ankit over Joe",
+     "when": "Week 11 - 2023",
+     "replay": null
+    },
+    {
+     "value": "+29.5 PAR",
+     "holder": "Ben over Steven",
+     "when": "Week 12 - 2021",
+     "replay": null
+    },
+    {
+     "value": "+3.2 PAR",
+     "holder": "Alex over Ben",
+     "when": "Week 10 - 2024",
+     "replay": null
+    },
+    {
+     "value": "+0.0 PAR",
+     "holder": "Ben over Alex",
+     "when": "Week 6 - 2022",
+     "replay": null
+    },
+    {
+     "value": "-5.7 PAR",
+     "holder": "Ben over Alex",
+     "when": "Week 11 - 2022",
+     "replay": null
+    }
+   ],
+   "detail": {
+    "kind": "trade",
+    "title": "Trade · Week 11, 2023",
+    "blocks": [
+     {
+      "head": "Joe",
+      "chip": null,
+      "rows": [
+       [
+        "Got",
+        "TE Mark Andrews (15.5)"
+       ],
+       [
+        "Gave",
+        "WR Christian Watson (9.6)"
+       ],
+       [
+        "Value in / out",
+        "15.5 / 9.6"
+       ],
+       [
+        "PAR since",
+        "-22.5"
+       ]
+      ]
+     },
+     {
+      "head": "Ankit",
+      "chip": "WON",
+      "rows": [
+       [
+        "Got",
+        "WR Christian Watson (9.6)"
+       ],
+       [
+        "Gave",
+        "TE Mark Andrews (15.5)"
+       ],
+       [
+        "Value in / out",
+        "9.6 / 15.5"
+       ],
+       [
+        "PAR since",
+        "+34.0"
+       ]
+      ]
+     }
+    ]
+   },
+   "verified": true
+  },
+  {
+   "id": "worst-trade-by-a-champion-par",
+   "name": "Worst Trade by a Champion (PAR)",
+   "category": "Trades",
+   "source": "computed",
+   "metric": "trade_champ_worst",
+   "direction": "min",
+   "value": "-141.2 PAR",
+   "value_num": -141.2,
+   "when": "Week 5 - 2023",
+   "holder": "Ankit over Tommy",
+   "holders": [
+    "Ankit"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "definition": "The worst trade (by PAR) made by an eventual champion in their title season, and they still won. Counts trades since 2021 (the first Sleeper season).",
+   "updated": "2026-11-03",
+   "leaderboard": [
+    {
+     "value": "-141.2 PAR",
+     "holder": "Ankit over Tommy",
+     "when": "Week 5 - 2023",
+     "replay": null
+    },
+    {
+     "value": "-103.5 PAR",
+     "holder": "Ben over Jake",
+     "when": "Week 10 - 2022",
+     "replay": null
+    },
+    {
+     "value": "-56.3 PAR",
+     "holder": "Haan over Ben",
+     "when": "Week 8 - 2025",
+     "replay": null
+    },
+    {
+     "value": "-50.4 PAR",
+     "holder": "Ben over Joe",
+     "when": "Week 10 - 2022",
+     "replay": null
+    },
+    {
+     "value": "-9.2 PAR",
+     "holder": "Alex over Aidan",
+     "when": "Week 12 - 2024",
+     "replay": null
+    }
+   ],
+   "detail": {
+    "kind": "trade",
+    "title": "Trade · Week 5, 2023",
+    "blocks": [
+     {
+      "head": "Ankit",
+      "chip": "WON",
+      "rows": [
+       [
+        "Got",
+        "QB Baker Mayfield (15.4), RB Tony Pollard (57.7)"
+       ],
+       [
+        "Gave",
+        "RB Joe Mixon (26.9), WR Calvin Ridley (26.9), QB Brock Purdy (30.8)"
+       ],
+       [
+        "Value in / out",
+        "73.1 / 84.6"
+       ],
+       [
+        "PAR since",
+        "-141.2"
+       ]
+      ]
+     },
+     {
+      "head": "Tommy",
+      "chip": null,
+      "rows": [
+       [
+        "Got",
+        "RB Joe Mixon (26.9), WR Calvin Ridley (26.9), QB Brock Purdy (30.8)"
+       ],
+       [
+        "Gave",
+        "QB Baker Mayfield (15.4), RB Tony Pollard (57.7)"
+       ],
+       [
+        "Value in / out",
+        "84.6 / 73.1"
+       ],
+       [
+        "PAR since",
+        "+80.0"
+       ]
+      ]
+     }
+    ]
+   },
+   "verified": true
+  },
+  {
+   "id": "worst-trade-by-an-eventual-sacko-par",
+   "name": "Worst Trade by an Eventual Sacko (PAR)",
+   "category": "Trades",
+   "source": "computed",
+   "metric": "trade_sacko_worst",
+   "direction": "min",
+   "value": "-29.2 PAR",
+   "value_num": -29.2,
+   "when": "Week 12 - 2022",
+   "holder": "Ankit (vs Joe)",
+   "holders": [
+    "Ankit"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "definition": "The worst trade (by PAR) made by the team that finished last that season. Counts trades since 2021 (the first Sleeper season).",
+   "updated": "2026-11-03",
+   "leaderboard": [
+    {
+     "value": "-29.2 PAR",
+     "holder": "Ankit (vs Joe)",
+     "when": "Week 12 - 2022",
+     "replay": null
+    },
+    {
+     "value": "-29.1 PAR",
+     "holder": "Steven (vs Ben)",
+     "when": "Week 12 - 2021",
+     "replay": null
+    },
+    {
+     "value": "-27.9 PAR",
+     "holder": "Jake (vs Ben)",
+     "when": "Week 11 - 2024",
+     "replay": null
+    },
+    {
+     "value": "-12.2 PAR",
+     "holder": "Jake (vs Ben)",
+     "when": "Week 5 - 2024",
+     "replay": null
+    },
+    {
+     "value": "-6.7 PAR",
+     "holder": "Ben (vs Joe)",
+     "when": "Week 10 - 2025",
+     "replay": null
+    }
+   ],
+   "detail": {
+    "kind": "trade",
+    "title": "Trade · Week 12, 2022",
+    "blocks": [
+     {
+      "head": "Joe",
+      "chip": "WON",
+      "rows": [
+       [
+        "Got",
+        "RB Cordarrelle Patterson (11.1), WR Mike Williams (12.2)"
+       ],
+       [
+        "Gave",
+        "QB Tom Brady (10.0), WR Courtland Sutton (12.2)"
+       ],
+       [
+        "Value in / out",
+        "23.3 / 22.2"
+       ],
+       [
+        "PAR since",
+        "+28.2"
+       ]
+      ]
+     },
+     {
+      "head": "Ankit",
+      "chip": null,
+      "rows": [
+       [
+        "Got",
+        "QB Tom Brady (10.0), WR Courtland Sutton (12.2)"
+       ],
+       [
+        "Gave",
+        "RB Cordarrelle Patterson (11.1), WR Mike Williams (12.2)"
+       ],
+       [
+        "Value in / out",
+        "22.2 / 23.3"
+       ],
+       [
+        "PAR since",
+        "-29.2"
+       ]
+      ]
+     }
+    ]
+   },
+   "verified": true
+  },
+  {
    "id": "most-fab-owned-at-one-time",
    "name": "Most FAB owned at one time",
    "category": "FAB & Waivers",
@@ -7509,20 +11049,20 @@
    "verified": true
   },
   {
-   "id": "most-shotguns-in-a-season-league",
-   "name": "Most Shotguns in a Season (League)",
-   "category": "Sit / Start",
-   "source": "seeded",
-   "metric": null,
-   "direction": null,
-   "value": "17",
-   "value_num": 17.0,
-   "when": "2025",
-   "holder": "DTFClub",
+   "id": "most-fab-spent-by-a-champion",
+   "name": "Most FAB Spent by a Champion",
+   "category": "FAB & Waivers",
+   "source": "computed",
+   "metric": "fab_champ_spent",
+   "direction": "max",
+   "value": "$271",
+   "value_num": 271,
+   "when": "2023",
+   "holder": "Ankit",
    "holders": [
-    "DTFClub"
+    "Ankit"
    ],
-   "league_level": true,
+   "league_level": false,
    "team": "",
    "notes": [],
    "evidence": [],
@@ -7534,9 +11074,179 @@
    "era_pair": null,
    "size_sensitive": false,
    "needs_definition": null,
+   "engine_gap": null,
+   "definition": "The most FAB dollars spent on winning bids by a team that won the title that season.",
+   "updated": "2026-11-03",
+   "leaderboard": [
+    {
+     "value": "$271",
+     "holder": "Ankit",
+     "when": "2023",
+     "replay": null
+    },
+    {
+     "value": "$200",
+     "holder": "Haan",
+     "when": "2025",
+     "replay": null
+    },
+    {
+     "value": "$198",
+     "holder": "Ben",
+     "when": "2021",
+     "replay": null
+    },
+    {
+     "value": "$197",
+     "holder": "Ben",
+     "when": "2022",
+     "replay": null
+    },
+    {
+     "value": "$195",
+     "holder": "Alex",
+     "when": "2024",
+     "replay": null
+    }
+   ],
+   "detail": null,
+   "verified": true
+  },
+  {
+   "id": "fewest-fab-spent-by-a-champion",
+   "name": "Fewest FAB Spent by a Champion",
+   "category": "FAB & Waivers",
+   "source": "computed",
+   "metric": "fab_champ_least",
+   "direction": "min",
+   "value": "$195",
+   "value_num": 195,
+   "when": "2024",
+   "holder": "Alex",
+   "holders": [
+    "Alex"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "definition": "The fewest FAB dollars spent on winning bids by a team that won the title that season.",
+   "updated": "2026-11-03",
+   "leaderboard": [
+    {
+     "value": "$195",
+     "holder": "Alex",
+     "when": "2024",
+     "replay": null
+    },
+    {
+     "value": "$197",
+     "holder": "Ben",
+     "when": "2022",
+     "replay": null
+    },
+    {
+     "value": "$198",
+     "holder": "Ben",
+     "when": "2021",
+     "replay": null
+    },
+    {
+     "value": "$200",
+     "holder": "Haan",
+     "when": "2025",
+     "replay": null
+    },
+    {
+     "value": "$271",
+     "holder": "Ankit",
+     "when": "2023",
+     "replay": null
+    }
+   ],
+   "detail": null,
+   "verified": true
+  },
+  {
+   "id": "most-shotguns-in-a-season-league",
+   "name": "Most Shotguns in a Season (League)",
+   "category": "Sit / Start",
+   "source": "computed",
+   "metric": "shot_league",
+   "direction": "max",
+   "value": "31",
+   "value_num": 31,
+   "when": "2022",
+   "holder": "DTFClub",
+   "holders": [
+    "DTFClub"
+   ],
+   "league_level": true,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": {
+    "value": "17",
+    "holder": "DTFClub",
+    "when": "2025",
+    "team": "",
+    "evidence": [],
+    "replaced_on": "2026-11-03",
+    "replaced_by": "DTFClub",
+    "reconciled": true
+   },
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
    "definition": "A score of 0 or less from a non-defense starter who was not ruled out before the 2nd half, or ruled out but didn't play in the 2nd half.",
-   "engine_gap": "Needs per-player points plus game-day inactive/ruled-out status for every starter.",
-   "updated": "2026-11-02"
+   "engine_gap": null,
+   "updated": "2026-11-03",
+   "leaderboard": [
+    {
+     "value": "31",
+     "holder": "DTFClub",
+     "when": "2022",
+     "replay": null
+    },
+    {
+     "value": "27",
+     "holder": "DTFClub",
+     "when": "2023",
+     "replay": null
+    },
+    {
+     "value": "25",
+     "holder": "DTFClub",
+     "when": "2024",
+     "replay": null
+    },
+    {
+     "value": "21",
+     "holder": "DTFClub",
+     "when": "2021",
+     "replay": null
+    },
+    {
+     "value": "17",
+     "holder": "DTFClub",
+     "when": "2025",
+     "replay": null
+    }
+   ],
+   "detail": null
   },
   {
    "id": "costliest-sit-start-miss",
@@ -8532,6 +12242,1477 @@
      "value": "1",
      "holder": "Jake",
      "when": "2021",
+     "replay": null
+    }
+   ],
+   "detail": null,
+   "verified": true
+  },
+  {
+   "id": "most-points-on-bench-in-a-season",
+   "name": "Most Points on Bench in a Season",
+   "category": "Sit / Start",
+   "source": "computed",
+   "metric": "bench_season",
+   "direction": "max",
+   "value": "1052.7 pts",
+   "value_num": 1052.7,
+   "when": "2025",
+   "holder": "Jake",
+   "holders": [
+    "Jake"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "definition": "Total points left on the bench across a regular season (every rostered player not in the starting lineup). Counts games since 2021, when Rumble Central's records begin.",
+   "updated": "2026-11-03",
+   "leaderboard": [
+    {
+     "value": "1052.7 pts",
+     "holder": "Jake",
+     "when": "2025",
+     "replay": null
+    },
+    {
+     "value": "1026.3 pts",
+     "holder": "Ankit",
+     "when": "2025",
+     "replay": null
+    },
+    {
+     "value": "1020.4 pts",
+     "holder": "Ryan",
+     "when": "2024",
+     "replay": null
+    },
+    {
+     "value": "1018.4 pts",
+     "holder": "Haan",
+     "when": "2025",
+     "replay": null
+    },
+    {
+     "value": "974.4 pts",
+     "holder": "Haan",
+     "when": "2024",
+     "replay": null
+    }
+   ],
+   "detail": null,
+   "verified": true
+  },
+  {
+   "id": "most-shotguns-in-a-week-team",
+   "name": "Most Shotguns in a Week (Team)",
+   "category": "Sit / Start",
+   "source": "computed",
+   "metric": "shot_week",
+   "direction": "max",
+   "value": "3",
+   "value_num": 3,
+   "when": "Week 7 - 2024",
+   "holder": "Joe",
+   "holders": [
+    "Joe"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": {
+    "season": 2024,
+    "week": 7,
+    "rid": 5,
+    "opp_rid": 2,
+    "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=7.5.2&season=2024"
+   },
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "definition": "A Shotgun is a score of 0 or less from a non-defense starter who took the field. The most for one team in one week. Counts games since 2021, when Rumble Central's records begin.",
+   "updated": "2026-11-03",
+   "leaderboard": [
+    {
+     "value": "3",
+     "holder": "Joe",
+     "when": "Week 7 - 2024",
+     "replay": {
+      "season": 2024,
+      "week": 7,
+      "rid": 5,
+      "opp_rid": 2,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=7.5.2&season=2024"
+     }
+    },
+    {
+     "value": "2",
+     "holder": "Steven",
+     "when": "Week 2 - 2022",
+     "replay": {
+      "season": 2022,
+      "week": 2,
+      "rid": 7,
+      "opp_rid": 10,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=2.7.10&season=2022"
+     }
+    },
+    {
+     "value": "2",
+     "holder": "Tommy",
+     "when": "Week 5 - 2022",
+     "replay": {
+      "season": 2022,
+      "week": 5,
+      "rid": 9,
+      "opp_rid": 4,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=5.9.4&season=2022"
+     }
+    },
+    {
+     "value": "2",
+     "holder": "Joe",
+     "when": "Week 7 - 2022",
+     "replay": {
+      "season": 2022,
+      "week": 7,
+      "rid": 5,
+      "opp_rid": 7,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=7.5.7&season=2022"
+     }
+    },
+    {
+     "value": "2",
+     "holder": "Aidan",
+     "when": "Week 1 - 2023",
+     "replay": {
+      "season": 2023,
+      "week": 1,
+      "rid": 1,
+      "opp_rid": 10,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=1.1.10&season=2023"
+     }
+    }
+   ],
+   "detail": {
+    "kind": "facts",
+    "title": "Shotguns · Week 7, 2024",
+    "blocks": [
+     {
+      "head": "Joe",
+      "chip": null,
+      "rows": [
+       [
+        "DeVonta Smith",
+        "-0.2 pts"
+       ],
+       [
+        "Tank Dell",
+        "0.0 pts"
+       ],
+       [
+        "Deebo Samuel Sr.",
+        "0.0 pts"
+       ]
+      ]
+     }
+    ]
+   },
+   "verified": true,
+   "cards": {
+    "season": 2024,
+    "week": 7,
+    "teams": [
+     {
+      "rid": 5,
+      "name": "Joe",
+      "won": false,
+      "act": 93.35,
+      "rumbles": 3,
+      "vs_field": 3,
+      "season_rumbles": 81,
+      "w": 5,
+      "l": 2,
+      "players": [
+       {
+        "pos": "QB",
+        "name": "Jordan Love",
+        "pts": 16.05
+       },
+       {
+        "pos": "RB",
+        "name": "Tony Pollard",
+        "pts": 8.5
+       },
+       {
+        "pos": "RB",
+        "name": "Kyren Williams",
+        "pts": 19.6
+       },
+       {
+        "pos": "WR",
+        "name": "DeVonta Smith",
+        "pts": -0.2
+       },
+       {
+        "pos": "WR",
+        "name": "Tank Dell",
+        "pts": 0.0
+       },
+       {
+        "pos": "TE",
+        "name": "Sam LaPorta",
+        "pts": 3.5
+       },
+       {
+        "pos": "WR",
+        "name": "Deebo Samuel Sr.",
+        "pts": 0.0
+       },
+       {
+        "pos": "QB",
+        "name": "Lamar Jackson",
+        "pts": 33.94
+       },
+       {
+        "pos": "K",
+        "name": "Younghoe Koo",
+        "pts": 1.0
+       },
+       {
+        "pos": "DEF",
+        "name": "Pittsburgh Steelers",
+        "pts": 10.96
+       }
+      ]
+     },
+     {
+      "rid": 2,
+      "name": "Ben",
+      "won": true,
+      "act": 179.42,
+      "rumbles": 18,
+      "vs_field": 9,
+      "season_rumbles": 82,
+      "w": 4,
+      "l": 3,
+      "players": [
+       {
+        "pos": "QB",
+        "name": "Drake Maye",
+        "pts": 20.34
+       },
+       {
+        "pos": "RB",
+        "name": "Saquon Barkley",
+        "pts": 26.7
+       },
+       {
+        "pos": "RB",
+        "name": "Alvin Kamara",
+        "pts": 7.4
+       },
+       {
+        "pos": "WR",
+        "name": "Ja'Marr Chase",
+        "pts": 17.6
+       },
+       {
+        "pos": "WR",
+        "name": "Justin Jefferson",
+        "pts": 21.4
+       },
+       {
+        "pos": "TE",
+        "name": "Evan Engram",
+        "pts": 8.5
+       },
+       {
+        "pos": "WR",
+        "name": "Amon-Ra St. Brown",
+        "pts": 25.2
+       },
+       {
+        "pos": "RB",
+        "name": "James Conner",
+        "pts": 16.7
+       },
+       {
+        "pos": "K",
+        "name": "Austin Seibert",
+        "pts": 18.0
+       },
+       {
+        "pos": "DEF",
+        "name": "Los Angeles Rams",
+        "pts": 17.58
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "most-shotguns-in-a-season-team",
+   "name": "Most Shotguns in a Season (Team)",
+   "category": "Sit / Start",
+   "source": "computed",
+   "metric": "shot_season",
+   "direction": "max",
+   "value": "8",
+   "value_num": 8,
+   "when": "2023",
+   "holder": "Tommy",
+   "holders": [
+    "Tommy"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "definition": "The most Shotguns by one team in a season. Counts games since 2021, when Rumble Central's records begin.",
+   "updated": "2026-11-03",
+   "leaderboard": [
+    {
+     "value": "8",
+     "holder": "Tommy",
+     "when": "2023",
+     "replay": null
+    },
+    {
+     "value": "5",
+     "holder": "Haan",
+     "when": "2021",
+     "replay": null
+    },
+    {
+     "value": "5",
+     "holder": "Tommy",
+     "when": "2022",
+     "replay": null
+    },
+    {
+     "value": "5",
+     "holder": "Joe",
+     "when": "2024",
+     "replay": null
+    },
+    {
+     "value": "5",
+     "holder": "Christian",
+     "when": "2024",
+     "replay": null
+    }
+   ],
+   "detail": null,
+   "verified": true
+  },
+  {
+   "id": "longest-head-to-head-win-streak-vs-one-opponent",
+   "name": "Longest Head-to-Head Win Streak vs One Opponent",
+   "category": "Rivalries",
+   "source": "computed",
+   "metric": "rivalry_streak",
+   "direction": "max",
+   "value": "7 straight",
+   "value_num": 7,
+   "when": "Week 1 2022 - Week 11 2025; Week 15 2023 - Week 3 2026",
+   "holder": "Aidan over Alex; Steven over Jake",
+   "holders": [
+    "Aidan",
+    "Steven"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "definition": "Most consecutive wins by one manager over the same opponent (regular season and playoffs). Counts games since 2021, when Rumble Central's records begin.",
+   "updated": "2026-11-03",
+   "leaderboard": [
+    {
+     "value": "7 straight",
+     "holder": "Aidan over Alex",
+     "when": "Week 1 2022 - Week 11 2025",
+     "replay": null
+    },
+    {
+     "value": "7 straight",
+     "holder": "Steven over Jake",
+     "when": "Week 15 2023 - Week 3 2026",
+     "replay": null
+    },
+    {
+     "value": "6 straight",
+     "holder": "Aidan over Tommy",
+     "when": "Week 9 2021 - Week 17 2023",
+     "replay": null
+    },
+    {
+     "value": "6 straight",
+     "holder": "Ben over Aidan",
+     "when": "Week 4 2022 - Week 16 2023",
+     "replay": null
+    },
+    {
+     "value": "5 straight",
+     "holder": "Joe over Jake",
+     "when": "Week 9 2023 - Week 8 2025",
+     "replay": null
+    }
+   ],
+   "detail": null,
+   "verified": true
+  },
+  {
+   "id": "most-meetings-between-two-managers",
+   "name": "Most Meetings Between Two Managers",
+   "category": "Rivalries",
+   "source": "computed",
+   "metric": "rivalry_meetings",
+   "direction": "max",
+   "value": "13 games",
+   "value_num": 13,
+   "when": "2021-; 2021-; 2021-",
+   "holder": "Aidan & Ben; Jake & Joe; Ryan & Steven",
+   "holders": [
+    "Aidan",
+    "Ben",
+    "Jake",
+    "Joe",
+    "Ryan",
+    "Steven"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "definition": "The most games between the same two managers. Counts games since 2021, when Rumble Central's records begin.",
+   "updated": "2026-11-03",
+   "leaderboard": [
+    {
+     "value": "13 games",
+     "holder": "Aidan & Ben",
+     "when": "2021-",
+     "replay": null
+    },
+    {
+     "value": "13 games",
+     "holder": "Jake & Joe",
+     "when": "2021-",
+     "replay": null
+    },
+    {
+     "value": "13 games",
+     "holder": "Ryan & Steven",
+     "when": "2021-",
+     "replay": null
+    },
+    {
+     "value": "12 games",
+     "holder": "Ankit & Ben",
+     "when": "2021-",
+     "replay": null
+    },
+    {
+     "value": "12 games",
+     "holder": "Aidan & Haan",
+     "when": "2021-",
+     "replay": null
+    }
+   ],
+   "detail": null,
+   "verified": true
+  },
+  {
+   "id": "most-one-sided-rivalry",
+   "name": "Most One-Sided Rivalry",
+   "category": "Rivalries",
+   "source": "computed",
+   "metric": "rivalry_onesided",
+   "direction": "max",
+   "value": "7-0",
+   "value_num": 100.007,
+   "when": "2021-",
+   "holder": "Aidan vs Alex",
+   "holders": [
+    "Aidan"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "definition": "Best head-to-head record against one opponent, with at least 6 meetings. Counts games since 2021, when Rumble Central's records begin.",
+   "updated": "2026-11-03",
+   "leaderboard": [
+    {
+     "value": "7-0",
+     "holder": "Aidan vs Alex",
+     "when": "2021-",
+     "replay": null
+    },
+    {
+     "value": "6-0",
+     "holder": "Aidan vs Tommy",
+     "when": "2021-",
+     "replay": null
+    },
+    {
+     "value": "8-1",
+     "holder": "Ben vs Ryan",
+     "when": "2021-",
+     "replay": null
+    },
+    {
+     "value": "6-1",
+     "holder": "Alex vs Ryan",
+     "when": "2021-",
+     "replay": null
+    },
+    {
+     "value": "6-2",
+     "holder": "Joe vs Tommy",
+     "when": "2021-",
+     "replay": null
+    }
+   ],
+   "detail": null,
+   "verified": true
+  },
+  {
+   "id": "most-playoff-meetings-between-two-managers",
+   "name": "Most Playoff Meetings Between Two Managers",
+   "category": "Rivalries",
+   "source": "computed",
+   "metric": "playoff_meetings",
+   "direction": "max",
+   "value": "5 meetings",
+   "value_num": 5,
+   "when": "2013-",
+   "holder": "Ben & Ryan",
+   "holders": [
+    "Ben",
+    "Ryan"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "definition": "The most playoff games between the same two managers, 2013 on.",
+   "updated": "2026-11-03",
+   "leaderboard": [
+    {
+     "value": "5 meetings",
+     "holder": "Ben & Ryan",
+     "when": "2013-",
+     "replay": null
+    },
+    {
+     "value": "2 meetings",
+     "holder": "Alex & Ben",
+     "when": "2013-",
+     "replay": null
+    },
+    {
+     "value": "2 meetings",
+     "holder": "Haan & Ryan",
+     "when": "2013-",
+     "replay": null
+    },
+    {
+     "value": "2 meetings",
+     "holder": "Haan & Steven",
+     "when": "2013-",
+     "replay": null
+    },
+    {
+     "value": "2 meetings",
+     "holder": "Aidan & Alex",
+     "when": "2013-",
+     "replay": null
+    }
+   ],
+   "detail": null,
+   "verified": true
+  },
+  {
+   "id": "most-expensive-auction-pick",
+   "name": "Most Expensive Auction Pick",
+   "category": "Draft & Auction",
+   "source": "computed",
+   "metric": "auction_price",
+   "direction": "max",
+   "value": "$85",
+   "value_num": 85.0,
+   "when": "2021",
+   "holder": "Jake — Christian McCaffrey",
+   "holders": [
+    "Jake"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "definition": "The highest price ever paid for a player in the auction draft (budget is $200 per team every year).",
+   "updated": "2026-11-03",
+   "leaderboard": [
+    {
+     "value": "$85",
+     "holder": "Jake — Christian McCaffrey",
+     "when": "2021",
+     "replay": null
+    },
+    {
+     "value": "$83",
+     "holder": "Ankit — David Johnson",
+     "when": "2017",
+     "replay": null
+    },
+    {
+     "value": "$80",
+     "holder": "Steven — David Johnson",
+     "when": "2018",
+     "replay": null
+    },
+    {
+     "value": "$78",
+     "holder": "Tommy — Todd Gurley",
+     "when": "2018",
+     "replay": null
+    },
+    {
+     "value": "$77",
+     "holder": "Kaitlyn — Josh Allen",
+     "when": "2026",
+     "replay": null
+    }
+   ],
+   "detail": {
+    "kind": "facts",
+    "title": "Auction · 2021",
+    "blocks": [
+     {
+      "head": "Jake",
+      "chip": null,
+      "rows": [
+       [
+        "Player",
+        "Christian McCaffrey (RB)"
+       ],
+       [
+        "Price",
+        "$85"
+       ],
+       [
+        "Finish at position",
+        "41 of 199"
+       ],
+       [
+        "Points",
+        "99.3"
+       ],
+       [
+        "Games",
+        "7"
+       ]
+      ]
+     }
+    ]
+   },
+   "verified": true
+  },
+  {
+   "id": "most-expensive-qb",
+   "name": "Most Expensive QB",
+   "category": "Draft & Auction",
+   "source": "computed",
+   "metric": "auction_qb",
+   "direction": "max",
+   "value": "$77",
+   "value_num": 77.0,
+   "when": "2026",
+   "holder": "Kaitlyn — Josh Allen",
+   "holders": [
+    "Kaitlyn"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "definition": "The highest price paid for a quarterback.",
+   "updated": "2026-11-03",
+   "leaderboard": [
+    {
+     "value": "$77",
+     "holder": "Kaitlyn — Josh Allen",
+     "when": "2026",
+     "replay": null
+    },
+    {
+     "value": "$65",
+     "holder": "Alex — Josh Allen",
+     "when": "2023",
+     "replay": null
+    },
+    {
+     "value": "$65",
+     "holder": "Joe — Patrick Mahomes",
+     "when": "2023",
+     "replay": null
+    },
+    {
+     "value": "$65",
+     "holder": "Jake — Lamar Jackson",
+     "when": "2025",
+     "replay": null
+    },
+    {
+     "value": "$62",
+     "holder": "Christian — Josh Allen",
+     "when": "2024",
+     "replay": null
+    }
+   ],
+   "detail": {
+    "kind": "facts",
+    "title": "Auction · 2026",
+    "blocks": [
+     {
+      "head": "Kaitlyn",
+      "chip": null,
+      "rows": [
+       [
+        "Player",
+        "Josh Allen (QB)"
+       ],
+       [
+        "Price",
+        "$77"
+       ],
+       [
+        "Finish at position",
+        "not yet ranked"
+       ],
+       [
+        "Points",
+        "–"
+       ],
+       [
+        "Games",
+        "–"
+       ]
+      ]
+     }
+    ]
+   },
+   "verified": true
+  },
+  {
+   "id": "most-expensive-rb",
+   "name": "Most Expensive RB",
+   "category": "Draft & Auction",
+   "source": "computed",
+   "metric": "auction_rb",
+   "direction": "max",
+   "value": "$85",
+   "value_num": 85.0,
+   "when": "2021",
+   "holder": "Jake — Christian McCaffrey",
+   "holders": [
+    "Jake"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "definition": "The highest price paid for a running back.",
+   "updated": "2026-11-03",
+   "leaderboard": [
+    {
+     "value": "$85",
+     "holder": "Jake — Christian McCaffrey",
+     "when": "2021",
+     "replay": null
+    },
+    {
+     "value": "$83",
+     "holder": "Ankit — David Johnson",
+     "when": "2017",
+     "replay": null
+    },
+    {
+     "value": "$80",
+     "holder": "Steven — David Johnson",
+     "when": "2018",
+     "replay": null
+    },
+    {
+     "value": "$78",
+     "holder": "Tommy — Todd Gurley",
+     "when": "2018",
+     "replay": null
+    },
+    {
+     "value": "$76",
+     "holder": "Haan — Adrian Peterson",
+     "when": "2013",
+     "replay": null
+    }
+   ],
+   "detail": {
+    "kind": "facts",
+    "title": "Auction · 2021",
+    "blocks": [
+     {
+      "head": "Jake",
+      "chip": null,
+      "rows": [
+       [
+        "Player",
+        "Christian McCaffrey (RB)"
+       ],
+       [
+        "Price",
+        "$85"
+       ],
+       [
+        "Finish at position",
+        "41 of 199"
+       ],
+       [
+        "Points",
+        "99.3"
+       ],
+       [
+        "Games",
+        "7"
+       ]
+      ]
+     }
+    ]
+   },
+   "verified": true
+  },
+  {
+   "id": "most-expensive-wr",
+   "name": "Most Expensive WR",
+   "category": "Draft & Auction",
+   "source": "computed",
+   "metric": "auction_wr",
+   "direction": "max",
+   "value": "$67",
+   "value_num": 67.0,
+   "when": "2017; 2023",
+   "holder": "Ben — Antonio Brown; Haan — Justin Jefferson",
+   "holders": [
+    "Ben",
+    "Haan"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "definition": "The highest price paid for a wide receiver.",
+   "updated": "2026-11-03",
+   "leaderboard": [
+    {
+     "value": "$67",
+     "holder": "Ben — Antonio Brown",
+     "when": "2017",
+     "replay": null
+    },
+    {
+     "value": "$67",
+     "holder": "Haan — Justin Jefferson",
+     "when": "2023",
+     "replay": null
+    },
+    {
+     "value": "$66",
+     "holder": "Jake — CeeDee Lamb",
+     "when": "2024",
+     "replay": null
+    },
+    {
+     "value": "$66",
+     "holder": "Ben — Ja'Marr Chase",
+     "when": "2025",
+     "replay": null
+    },
+    {
+     "value": "$64",
+     "holder": "Aidan — Justin Jefferson",
+     "when": "2022",
+     "replay": null
+    }
+   ],
+   "detail": {
+    "kind": "facts",
+    "title": "Auction · 2017",
+    "blocks": [
+     {
+      "head": "Ben",
+      "chip": null,
+      "rows": [
+       [
+        "Player",
+        "Antonio Brown (WR)"
+       ],
+       [
+        "Price",
+        "$67"
+       ],
+       [
+        "Finish at position",
+        "2 of 231"
+       ],
+       [
+        "Points",
+        "209.3"
+       ],
+       [
+        "Games",
+        "14"
+       ]
+      ]
+     }
+    ]
+   },
+   "verified": true
+  },
+  {
+   "id": "most-expensive-te",
+   "name": "Most Expensive TE",
+   "category": "Draft & Auction",
+   "source": "computed",
+   "metric": "auction_te",
+   "direction": "max",
+   "value": "$49",
+   "value_num": 49.0,
+   "when": "2014",
+   "holder": "John — Jimmy Graham",
+   "holders": [
+    "John"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "definition": "The highest price paid for a tight end.",
+   "updated": "2026-11-03",
+   "leaderboard": [
+    {
+     "value": "$49",
+     "holder": "John — Jimmy Graham",
+     "when": "2014",
+     "replay": null
+    },
+    {
+     "value": "$45",
+     "holder": "Ben — Travis Kelce",
+     "when": "2021",
+     "replay": null
+    },
+    {
+     "value": "$45",
+     "holder": "Ryan — Travis Kelce",
+     "when": "2023",
+     "replay": null
+    },
+    {
+     "value": "$43",
+     "holder": "Ryan — Rob Gronkowski",
+     "when": "2015",
+     "replay": null
+    },
+    {
+     "value": "$42",
+     "holder": "Ryan — Travis Kelce",
+     "when": "2019",
+     "replay": null
+    }
+   ],
+   "detail": {
+    "kind": "facts",
+    "title": "Auction · 2014",
+    "blocks": [
+     {
+      "head": "John",
+      "chip": null,
+      "rows": [
+       [
+        "Player",
+        "Jimmy Graham (TE)"
+       ],
+       [
+        "Price",
+        "$49"
+       ],
+       [
+        "Finish at position",
+        "3 of 130"
+       ],
+       [
+        "Points",
+        "144.9"
+       ],
+       [
+        "Games",
+        "16"
+       ]
+      ]
+     }
+    ]
+   },
+   "verified": true
+  },
+  {
+   "id": "costliest-bust",
+   "name": "Costliest Bust",
+   "category": "Draft & Auction",
+   "source": "computed",
+   "metric": "auction_bust",
+   "direction": "max",
+   "value": "$36",
+   "value_num": 36.0,
+   "when": "2014",
+   "holder": "Oleg — Zac Stacy",
+   "holders": [
+    "Oleg"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "definition": "The highest price paid for a player who played at least 8 games and finished in the bottom half at his position.",
+   "updated": "2026-11-03",
+   "leaderboard": [
+    {
+     "value": "$36",
+     "holder": "Oleg — Zac Stacy",
+     "when": "2014",
+     "replay": null
+    },
+    {
+     "value": "$11",
+     "holder": "Tommy — Darrell Henderson",
+     "when": "2019",
+     "replay": null
+    },
+    {
+     "value": "$9",
+     "holder": "Ben — Daryl Richardson",
+     "when": "2013",
+     "replay": null
+    },
+    {
+     "value": "$8",
+     "holder": "Oleg — Eddie Lacy",
+     "when": "2017",
+     "replay": null
+    },
+    {
+     "value": "$6",
+     "holder": "Aidan — Danny Woodhead",
+     "when": "2017",
+     "replay": null
+    }
+   ],
+   "detail": {
+    "kind": "facts",
+    "title": "Auction · 2014",
+    "blocks": [
+     {
+      "head": "Oleg",
+      "chip": null,
+      "rows": [
+       [
+        "Player",
+        "Zac Stacy (RB)"
+       ],
+       [
+        "Price",
+        "$36"
+       ],
+       [
+        "Finish at position",
+        "75 of 140"
+       ],
+       [
+        "Points",
+        "46.5"
+       ],
+       [
+        "Games",
+        "13"
+       ]
+      ]
+     }
+    ]
+   },
+   "verified": true
+  },
+  {
+   "id": "costliest-injury-casualty",
+   "name": "Costliest Injury Casualty",
+   "category": "Draft & Auction",
+   "source": "computed",
+   "metric": "auction_injury",
+   "direction": "max",
+   "value": "$85",
+   "value_num": 85.0,
+   "when": "2021",
+   "holder": "Jake — Christian McCaffrey",
+   "holders": [
+    "Jake"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "definition": "The highest price paid ($10+) for a player who played 7 games or fewer.",
+   "updated": "2026-11-03",
+   "leaderboard": [
+    {
+     "value": "$85",
+     "holder": "Jake — Christian McCaffrey",
+     "when": "2021",
+     "replay": null
+    },
+    {
+     "value": "$83",
+     "holder": "Ankit — David Johnson",
+     "when": "2017",
+     "replay": null
+    },
+    {
+     "value": "$71",
+     "holder": "Oleg — Christian McCaffrey",
+     "when": "2020",
+     "replay": null
+    },
+    {
+     "value": "$69",
+     "holder": "Aidan — Saquon Barkley",
+     "when": "2020",
+     "replay": null
+    },
+    {
+     "value": "$68",
+     "holder": "Haan — Adrian Peterson",
+     "when": "2016",
+     "replay": null
+    }
+   ],
+   "detail": {
+    "kind": "facts",
+    "title": "Auction · 2021",
+    "blocks": [
+     {
+      "head": "Jake",
+      "chip": null,
+      "rows": [
+       [
+        "Player",
+        "Christian McCaffrey (RB)"
+       ],
+       [
+        "Price",
+        "$85"
+       ],
+       [
+        "Finish at position",
+        "41 of 199"
+       ],
+       [
+        "Points",
+        "99.3"
+       ],
+       [
+        "Games",
+        "7"
+       ]
+      ]
+     }
+    ]
+   },
+   "verified": true
+  },
+  {
+   "id": "best-steal",
+   "name": "Best Steal",
+   "category": "Draft & Auction",
+   "source": "computed",
+   "metric": "auction_steal",
+   "direction": "min",
+   "value": "$1",
+   "value_num": 0.995829,
+   "when": "2018",
+   "holder": "Tommy — Patrick Mahomes",
+   "holders": [
+    "Tommy"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "definition": "The cheapest top-3 positional finisher; ties go to the most points.",
+   "updated": "2026-11-03",
+   "leaderboard": [
+    {
+     "value": "$1",
+     "holder": "Tommy — Patrick Mahomes",
+     "when": "2018",
+     "replay": null
+    },
+    {
+     "value": "$1",
+     "holder": "Alex — Matthew Stafford",
+     "when": "2025",
+     "replay": null
+    },
+    {
+     "value": "$1",
+     "holder": "Joe — Matt Ryan",
+     "when": "2018",
+     "replay": null
+    },
+    {
+     "value": "$1",
+     "holder": "Steven — Ben Roethlisberger",
+     "when": "2018",
+     "replay": null
+    },
+    {
+     "value": "$1",
+     "holder": "Ryan — Dak Prescott",
+     "when": "2019",
+     "replay": null
+    }
+   ],
+   "detail": {
+    "kind": "facts",
+    "title": "Auction · 2018",
+    "blocks": [
+     {
+      "head": "Tommy",
+      "chip": null,
+      "rows": [
+       [
+        "Player",
+        "Patrick Mahomes (QB)"
+       ],
+       [
+        "Price",
+        "$1"
+       ],
+       [
+        "Finish at position",
+        "1 of 94"
+       ],
+       [
+        "Points",
+        "417.1"
+       ],
+       [
+        "Games",
+        "16"
+       ]
+      ]
+     }
+    ]
+   },
+   "verified": true
+  },
+  {
+   "id": "most-spent-on-one-position",
+   "name": "Most Spent on One Position",
+   "category": "Draft & Auction",
+   "source": "computed",
+   "metric": "auction_pos_spend",
+   "direction": "max",
+   "value": "$177",
+   "value_num": 177.0,
+   "when": "2021 RB",
+   "holder": "Steven — RB",
+   "holders": [
+    "Steven"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "definition": "The most one manager spent on a single position in one auction.",
+   "updated": "2026-11-03",
+   "leaderboard": [
+    {
+     "value": "$177",
+     "holder": "Steven — RB",
+     "when": "2021 RB",
+     "replay": null
+    },
+    {
+     "value": "$167",
+     "holder": "Ankit — RB",
+     "when": "2017 RB",
+     "replay": null
+    },
+    {
+     "value": "$165",
+     "holder": "Jake — WR",
+     "when": "2024 WR",
+     "replay": null
+    },
+    {
+     "value": "$163",
+     "holder": "Steven — RB",
+     "when": "2018 RB",
+     "replay": null
+    },
+    {
+     "value": "$153",
+     "holder": "Haan — RB",
+     "when": "2013 RB",
      "replay": null
     }
    ],

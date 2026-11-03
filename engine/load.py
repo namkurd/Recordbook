@@ -5,13 +5,20 @@ SRC = os.environ.get("RB_SRC")  # dir containing sleeperliverumbles/ and sleeper
 RAW = {"sleeperliverumbles": "https://raw.githubusercontent.com/namkurd/SleeperLiveRumbles/main/",
        "sleepersheet": "https://raw.githubusercontent.com/namkurd/sleepersheet/main/",
        "sleepertradenodes": "https://raw.githubusercontent.com/namkurd/SleeperTradeNodes/main/",
-       "fab-management": "https://raw.githubusercontent.com/namkurd/FAB-Management/main/"}
+       "fab-management": "https://raw.githubusercontent.com/namkurd/FAB-Management/main/",
+       "sleeperauction": "https://raw.githubusercontent.com/namkurd/SleeperAuction/main/"}
 
 def fetch(repo, path):
     if SRC:
         with open(os.path.join(SRC, repo, path)) as f: return json.load(f)
     req = urllib.request.Request(RAW[repo] + path, headers={"User-Agent": "recordbook"})
     with urllib.request.urlopen(req, timeout=60) as r: return json.load(r)
+
+def fetch_text(repo, path):
+    if SRC:
+        with open(os.path.join(SRC, repo, path), encoding="utf-8") as f: return f.read()
+    req = urllib.request.Request(RAW[repo] + path, headers={"User-Agent": "recordbook"})
+    with urllib.request.urlopen(req, timeout=60) as r: return r.read().decode("utf-8")
 
 def load():
     hist = fetch("sleepersheet", "data/history.json")["seasons"]
@@ -41,4 +48,9 @@ def load():
     for key, repo, path in (("nodes", "sleepertradenodes", "data.json"), ("fab", "fab-management", "data.json"), ("fab_po", "fab-management", "playoff_teams.json")):
         try: extra[key] = fetch(repo, path)
         except Exception as e: print("WARN could not load", repo, path, e); extra[key] = None
+    try:
+        import csv, io
+        extra_picks = list(csv.DictReader(io.StringIO(fetch_text("sleeperauction", "data/picks.csv"))))
+    except Exception as e: print("WARN could not load auction picks", e); extra_picks = None
+    extra["picks"] = extra_picks
     return {"seasons": seasons, "playoffs": play, "games": games, "rosters": rosters, "current": cur, **extra}

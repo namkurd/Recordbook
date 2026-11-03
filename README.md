@@ -40,5 +40,8 @@ python3 -m http.server   # then open http://localhost:8000
 
 `tools/add_records.py` is the one place new records are defined (idempotent). Adding a record = a row there + a function in `engine/`.
 
+- **Bench, Shotguns, comebacks, projections, Thursday/Saturday/Monday** (`engine/facts.py` + `engine/moments.py`): each finished week is ingested once from Sleeper (every rostered player's points, who took the field) and Rumble Central's play-by-play timeline, then cached in `data/cache/`. Where the sheet's game is in this data and the numbers differ, Sleeper wins and the change log says so.
+- **Rivalries, playoffs and titles, draft and auction, champion/Sacko trades** (`engine/extras.py`): from the games archive, the playoff results, the SleeperAuction `picks.csv`, and the ledger.
+
 ## Not auto-updated yet
-Per-player records (bench points, 0.0s in a win, % of points from one player, Shotguns), NFL-clock records (Saturday/Thursday/Monday), projections, trade timing (24-hour trades, fastest acceptance), FAB balances (most FAB owned, overbid, bankruptcy, FAB in a trade) and the trade/lineup counts that include FAB-only trades. Their rows keep the sheet's value.
+Projections (the sheet's Highest Projected rows come from a different Sleeper snapshot than the one in the archive), trade timing (24-hour trades, fastest acceptance), FAB balances (most FAB owned, overbid, bankruptcy, FAB in a trade) and the trade/lineup counts that include FAB-only trades. Their rows keep the sheet's value.

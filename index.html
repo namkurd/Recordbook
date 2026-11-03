@@ -10,14 +10,14 @@
   color-scheme:dark;
   --bg:#0d1015;--surface:#161a21;--surface2:#1f2530;--text:#e8ebf0;--muted:#a0abbb;--line:#2b3340;--accent:#7aa2ff;--accent-ink:#0b1020;
   --good:#4cc38a;--warn:#e7b04c;--bad:#ff8a80;--focus:#7aa2ff;
-  --c0:#17261b;--c0h:#27452f;--c1:#16212f;--c1h:#24415f;--c2:#2a2716;--c2h:#4d4320;--c3:#2b1b25;--c3h:#52304a;--c4:#1e2025;--c4h:#363940;--c5:#132628;--c5h:#1f4a4c;--c6:#221d33;--c6h:#3d3463;
+  --c0:#17261b;--c0h:#27452f;--c1:#16212f;--c1h:#24415f;--c2:#2a2716;--c2h:#4d4320;--c3:#2b1b25;--c3h:#52304a;--c4:#1e2025;--c4h:#363940;--c5:#132628;--c5h:#1f4a4c;--c6:#221d33;--c6h:#3d3463;--c7:#2b1f14;--c7h:#58391d;--c8:#1f2a14;--c8h:#3f5326;
   --shadow:0 10px 32px rgba(0,0,0,.6);--fbh:56px;
 }
 @media (prefers-color-scheme:light){:root{
   color-scheme:light;
   --bg:#f4f5f7;--surface:#fff;--surface2:#eceff3;--text:#14181f;--muted:#586272;--line:#d5dae2;--accent:#1d4ed8;--accent-ink:#fff;
   --good:#0f7a43;--warn:#a15c00;--bad:#b42318;--focus:#1d4ed8;
-  --c0:#e4f1dc;--c0h:#b9d9a9;--c1:#dce9f8;--c1h:#a9c8ec;--c2:#fff4d1;--c2h:#ffe39a;--c3:#f4e3ec;--c3h:#dcb0c5;--c4:#f0f0f1;--c4h:#cfcfd3;--c5:#dcf1ee;--c5h:#a7ddd6;--c6:#e9e3f6;--c6h:#c6b8e8;
+  --c0:#e4f1dc;--c0h:#b9d9a9;--c1:#dce9f8;--c1h:#a9c8ec;--c2:#fff4d1;--c2h:#ffe39a;--c3:#f4e3ec;--c3h:#dcb0c5;--c4:#f0f0f1;--c4h:#cfcfd3;--c5:#dcf1ee;--c5h:#a7ddd6;--c6:#e9e3f6;--c6h:#c6b8e8;--c7:#fde9d8;--c7h:#f4c498;--c8:#eaf3d2;--c8h:#c9e08a;
   --shadow:0 10px 32px rgba(15,23,42,.22)}}
 *{box-sizing:border-box}
 html{scroll-padding-top:calc(var(--fbh) + 44px);-webkit-text-size-adjust:100%}
@@ -82,7 +82,7 @@ section.cat>h2 .n{font-weight:500;color:var(--muted);font-size:12px}
 section.cat>h2 .car{font-size:11px;transition:transform .15s}
 section.cat.closed>h2 .car{transform:rotate(-90deg)}
 section.cat.closed .rows{display:none}
-.cat0{--bgc:var(--c0);--hd:var(--c0h)}.cat1{--bgc:var(--c1);--hd:var(--c1h)}.cat2{--bgc:var(--c2);--hd:var(--c2h)}.cat3{--bgc:var(--c3);--hd:var(--c3h)}.cat4{--bgc:var(--c4);--hd:var(--c4h)}.cat5{--bgc:var(--c5);--hd:var(--c5h)}.cat6{--bgc:var(--c6);--hd:var(--c6h)}
+.cat0{--bgc:var(--c0);--hd:var(--c0h)}.cat1{--bgc:var(--c1);--hd:var(--c1h)}.cat2{--bgc:var(--c2);--hd:var(--c2h)}.cat3{--bgc:var(--c3);--hd:var(--c3h)}.cat4{--bgc:var(--c4);--hd:var(--c4h)}.cat5{--bgc:var(--c5);--hd:var(--c5h)}.cat6{--bgc:var(--c6);--hd:var(--c6h)}.cat7{--bgc:var(--c7);--hd:var(--c7h)}.cat8{--bgc:var(--c8);--hd:var(--c8h)}
 .rows{background:var(--bgc)}
 .row{display:grid;grid-template-columns:minmax(0,2.6fr) minmax(0,1.7fr) minmax(0,1.6fr) minmax(0,2fr) 58px;gap:10px;align-items:center;height:36px;padding:0 12px;border-top:1px solid rgba(127,127,127,.22);cursor:pointer}
 .row>*{overflow:hidden;text-overflow:ellipsis;min-width:0}
@@ -250,8 +250,8 @@ aside.drawer.wide{width:min(780px,100%)}
 (function(){
 "use strict";
 var REPO={owner:"namkurd",repo:"recordbook",branch:"main"};
-var CATS=["Seasons & Playoffs","Team Seasons","Games & Weeks","Projections & NFL Clock","Trades","FAB & Waivers","Sit / Start"];
-var CATVAR={"Seasons & Playoffs":"--c0","Team Seasons":"--c1","Games & Weeks":"--c2","Projections & NFL Clock":"--c3","Trades":"--c4","FAB & Waivers":"--c5","Sit / Start":"--c6"};
+var CATS=["Seasons & Playoffs","Team Seasons","Games & Weeks","Projections & NFL Clock","Trades","FAB & Waivers","Sit / Start","Rivalries","Draft & Auction"];
+var CATVAR={"Seasons & Playoffs":"--c0","Team Seasons":"--c1","Games & Weeks":"--c2","Projections & NFL Clock":"--c3","Trades":"--c4","FAB & Waivers":"--c5","Sit / Start":"--c6","Rivalries":"--c7","Draft & Auction":"--c8"};
 var S={eras:new Set(),recs:[],log:[],q:"",cats:new Set(),mgrs:new Set(),opts:new Set(),sort:null,closed:new Set(),view:"records",edit:false,sel:null};
 var $=function(i){return document.getElementById(i)};
 function esc(s){return String(s==null?"":s).replace(/[&<>"']/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]})}
@@ -381,8 +381,8 @@ function showTip(el,r){if(!tippable(r))return;tb.innerHTML=tipHTML(r);tb.hidden=
 function hideTip(){tb.hidden=true}
 
 /* ---------- render records ---------- */
-var CATCLS={"Seasons & Playoffs":"cat0","Team Seasons":"cat1","Games & Weeks":"cat2","Projections & NFL Clock":"cat3","Trades":"cat4","FAB & Waivers":"cat5","Sit / Start":"cat6"};
-CATVAR={"Seasons & Playoffs":"--c0","Team Seasons":"--c1","Games & Weeks":"--c2","Projections & NFL Clock":"--c3","Trades":"--c4","FAB & Waivers":"--c5","Sit / Start":"--c6"};
+var CATCLS={"Seasons & Playoffs":"cat0","Team Seasons":"cat1","Games & Weeks":"cat2","Projections & NFL Clock":"cat3","Trades":"cat4","FAB & Waivers":"cat5","Sit / Start":"cat6","Rivalries":"cat7","Draft & Auction":"cat8"};
+CATVAR={"Seasons & Playoffs":"--c0","Team Seasons":"--c1","Games & Weeks":"--c2","Projections & NFL Clock":"--c3","Trades":"--c4","FAB & Waivers":"--c5","Sit / Start":"--c6","Rivalries":"--c7","Draft & Auction":"--c8"};
 function holderHTML(r){   /* full chips, used in the drawer */
   var out=(r.holders||[]).map(function(m){return m==="DTFClub"?'<span class="muted">League</span>':'<button class="mgr" data-m="'+esc(m)+'" title="Show only '+esc(m)+'">'+esc(m)+"</button>"}).join("");
   var extra=(r.holders||[]).length===1&&/ (over|vs) /.test(r.holder||"")?' <span class="muted">'+esc(r.holder.replace(r.holders[0],"").trim())+"</span>":"";

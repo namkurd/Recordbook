@@ -23,7 +23,7 @@ jobs:
         run: |
           git config user.name "record-book[bot]"
           git config user.email "actions@users.noreply.github.com"
-          git add data/records.json data/changelog.jsonl
+          git add data/records.json data/changelog.jsonl data/cache
           if git diff --cached --quiet; then echo "No changes."; exit 0; fi
           git commit -m "record book: weekly update"
           git pull --rebase origin "${GITHUB_REF_NAME}"
