@@ -479,7 +479,7 @@ function openDrawer(id){
   (r.cards?[]:(r.evidence||[])).forEach(function(u,i){acts+='<a class="btn sec" href="'+esc(u)+'" target="_blank" rel="noopener">📷 Proof'+((r.evidence.length>1)?" "+(i+1):"")+"</a> "});
   if(acts)h+='<div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap">'+acts+"</div>";
   if(r.definition)h+='<h4>How it\'s measured</h4><div>'+esc(r.definition)+"</div>";
-  var fl=[];if(S.edit&&r.engine_gap)fl.push("Not auto-updated yet: "+r.engine_gap);if(r.size_sensitive)fl.push("Raw total depends on 10- vs 12-team seasons.");if(r.status==="provisional")fl.push("Provisional until the season ends.");
+  var fl=[];if(S.edit&&r.engine_gap)fl.push("Not auto-updated yet: "+r.engine_gap);if(r.status==="provisional")fl.push("Provisional until the season ends.");
   if(fl.length)h+='<h4>Notes</h4><ul class="plain">'+fl.map(function(x){return"<li>"+esc(x)+"</li>"}).join("")+"</ul>";
   if(r.previous)h+='<h4>Previous record</h4><div>'+esc(r.previous.value)+" — "+esc(r.previous.holder)+(r.previous.team?" ("+esc(r.previous.team)+")":"")+", "+esc(r.previous.when)+'<div class="muted">'+(r.previous.reconciled?"Replaced "+esc(r.previous.replaced_on)+" after checking against Sleeper data":"Broken "+esc(r.previous.replaced_on)+" by "+esc(r.previous.replaced_by))+"</div></div>";
   if((r.ties||[]).length)h+='<h4>Also tied by</h4><ul class="plain">'+r.ties.map(function(t){return"<li>"+esc(t.holder)+" — "+esc(t.when)+(t.replay?' · <a href="'+esc(t.replay.url)+'" target="_blank" rel="noopener">▶ replay</a>':"")+"</li>"}).join("")+"</ul>";
