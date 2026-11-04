@@ -481,7 +481,8 @@ function openDrawer(id){
   var r=rec(id);if(!r)return;S.sel=id;lastFocus=document.activeElement;hideTip();
   var h='<h3>'+esc(r.name)+'</h3><div class="muted">'+esc(r.category)+'</div><div class="big">'+esc(shortVal(r.value))+'</div>'+(shortVal(r.value)!==r.value?'<div class="muted">'+esc(r.value.slice(shortVal(r.value).length).trim())+"</div>":"")+'<div style="margin-top:4px">'+holderHTML(r)+' <span class="muted">· '+esc(r.when)+(r.team?" · "+esc(r.team):"")+"</span></div>";
   var el=eraLine(r);if(el)h+='<div class="muted" style="margin-top:6px;font-size:12.5px">Era: '+esc(el)+"</div>";
-  var acts="";if(r.replay&&r.replay.url)acts+='<a class="btn" href="'+esc(r.replay.url)+'" target="_blank" rel="noopener">▶ Watch in Rumble Central</a> ';
+  var acts="";if(r.links)["page","sheet"].forEach(function(k){var l=r.links[k];if(l)acts+='<a class="btn sec" href="'+esc(l.url)+'" target="_blank" rel="noopener">\u2197 '+esc(l.label)+"</a> "});
+  if(r.replay&&r.replay.url)acts+='<a class="btn" href="'+esc(r.replay.url)+'" target="_blank" rel="noopener">▶ Watch in Rumble Central</a> ';
   (r.cards?[]:(r.evidence||[])).forEach(function(u,i){acts+='<a class="btn sec" href="'+esc(u)+'" target="_blank" rel="noopener">📷 Proof'+((r.evidence.length>1)?" "+(i+1):"")+"</a> "});
   if(acts)h+='<div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap">'+acts+"</div>";
   if(r.definition)h+='<h4>How it\'s measured</h4><div>'+esc(r.definition)+"</div>";
@@ -491,7 +492,7 @@ function openDrawer(id){
   if((r.ties||[]).length)h+='<h4>Also tied by</h4><ul class="plain">'+r.ties.map(function(t){return"<li>"+esc(t.holder)+" — "+esc(t.when)+(t.replay?' · <a href="'+esc(t.replay.url)+'" target="_blank" rel="noopener">▶ replay</a>':"")+"</li>"}).join("")+"</ul>";
   if((r.notes||[]).length)h+='<h4>Also on record</h4><ul class="plain">'+r.notes.map(function(x){return"<li>"+esc(x)+"</li>"}).join("")+"</ul>";
   if(r.leaderboard&&r.leaderboard.length)h+='<h4>Leaderboard</h4><table class="lb"><tbody>'+r.leaderboard.map(function(x,i){var more=!!(x.detail||x.cards);
-    return'<tr class="lbr'+(more?" more":"")+'" data-i="'+i+'"'+(more?' tabindex="0" role="button" aria-expanded="false" aria-label="Show details for place '+(i+1)+'"':"")+"><td>"+(i+1)+'</td><td class="v" title="'+esc(x.value)+'">'+esc(shortVal(x.value))+"</td><td>"+esc(x.holder)+'</td><td class="muted">'+esc(x.when)+'</td><td class="lbt">'+(x.replay?'<a href="'+esc(x.replay.url)+'" target="_blank" rel="noopener" aria-label="Replay">▶</a>':"")+(more?'<span class="chev" aria-hidden="true">▾</span>':"")+"</td></tr>"}).join("")+"</tbody></table>";
+    return'<tr class="lbr'+(more?" more":"")+'" data-i="'+i+'"'+(more?' tabindex="0" role="button" aria-expanded="false" aria-label="Show details for place '+(i+1)+'"':"")+"><td>"+(i+1)+'</td><td class="v" title="'+esc(x.value)+'">'+esc(shortVal(x.value))+"</td><td>"+esc(x.holder)+'</td><td class="muted">'+esc(x.when)+'</td><td class="lbt">'+(x.links&&x.links.sheet?'<a href="'+esc(x.links.sheet.url)+'" target="_blank" rel="noopener" title="Open the '+esc(x.links.sheet.label)+'" aria-label="Open the '+esc(x.links.sheet.label)+'">\u2197</a>':"")+(x.replay?'<a href="'+esc(x.replay.url)+'" target="_blank" rel="noopener" aria-label="Replay">▶</a>':"")+(more?'<span class="chev" aria-hidden="true">▾</span>':"")+"</td></tr>"}).join("")+"</tbody></table>";
   if(r.detail)h+='<h4>'+esc(r.detail.title)+'</h4>'+detailHTML(r.detail);
   if(r.cards){var ct=r.cards.teams.slice().sort(function(a,b){return(b.won?1:0)-(a.won?1:0)});h+='<h4>Rumble Card · Week '+r.cards.week+", "+r.cards.season+'</h4><div class="rcards">'+ct.map(cardHTML).join("")+"</div>"}
   var hist=S.log.filter(function(e){return e.record===id});
@@ -505,6 +506,7 @@ function lbToggle(tr){
   var rec_=rec(S.sel);if(!rec_)return;var i=+tr.dataset.i,e=rec_.leaderboard[i],nx=tr.nextElementSibling;
   if(nx&&nx.classList.contains("lbx")){var show=nx.hidden;nx.hidden=!show;tr.classList.toggle("open",show);tr.setAttribute("aria-expanded",show);return}
   var h="";if(e.detail)h+=detailHTML(e.detail);
+  if(e.links)h+='<div style="margin-top:8px;display:flex;gap:8px;flex-wrap:wrap">'+["sheet","page"].map(function(k){var l=e.links[k];return l?'<a class="btn sec" href="'+esc(l.url)+'" target="_blank" rel="noopener">\u2197 '+esc(l.label)+"</a>":""}).join("")+"</div>";
   if(e.cards){var ct=e.cards.teams.slice().sort(function(a,b){return(b.won?1:0)-(a.won?1:0)});h+='<div class="rcards" style="margin-top:8px">'+ct.map(cardHTML).join("")+"</div>"}
   var row=document.createElement("tr");row.className="lbx";row.innerHTML='<td colspan="5">'+h+"</td>";tr.after(row);tr.classList.add("open");tr.setAttribute("aria-expanded","true")}
 $("dbody").addEventListener("keydown",function(e){if(e.key!=="Enter"&&e.key!==" ")return;var tr=e.target.closest&&e.target.closest("tr.lbr.more");if(tr&&e.target===tr){e.preventDefault();lbToggle(tr)}});

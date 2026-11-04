@@ -1161,7 +1161,8 @@
     }
    ],
    "detail": null,
-   "verified": true
+   "verified": true,
+   "links": null
   },
   {
    "id": "highest-playoff-score",
@@ -1931,7 +1932,8 @@
       ]
      }
     ]
-   }
+   },
+   "links": null
   },
   {
    "id": "closest-championship-game",
@@ -2421,7 +2423,8 @@
       ]
      }
     ]
-   }
+   },
+   "links": null
   },
   {
    "id": "biggest-championship-blowout",
@@ -2771,7 +2774,8 @@
       ]
      }
     ]
-   }
+   },
+   "links": null
   },
   {
    "id": "most-playoff-wins-career",
@@ -2835,7 +2839,8 @@
     }
    ],
    "detail": null,
-   "verified": true
+   "verified": true,
+   "links": null
   },
   {
    "id": "most-playoff-trips-without-a-title",
@@ -2893,7 +2898,8 @@
     }
    ],
    "detail": null,
-   "verified": true
+   "verified": true,
+   "links": null
   },
   {
    "id": "fewest-wins-to-make-the-playoffs",
@@ -2958,7 +2964,8 @@
     }
    ],
    "detail": null,
-   "verified": true
+   "verified": true,
+   "links": null
   },
   {
    "id": "most-wins-to-miss-the-playoffs",
@@ -3024,7 +3031,8 @@
     }
    ],
    "detail": null,
-   "verified": true
+   "verified": true,
+   "links": null
   },
   {
    "id": "biggest-standings-jump",
@@ -3089,7 +3097,8 @@
     }
    ],
    "detail": null,
-   "verified": true
+   "verified": true,
+   "links": null
   },
   {
    "id": "biggest-standings-drop",
@@ -3155,7 +3164,8 @@
     }
    ],
    "detail": null,
-   "verified": true
+   "verified": true,
+   "links": null
   },
   {
    "id": "total-wins-regular-season",
@@ -14681,7 +14691,8 @@
      }
     ]
    },
-   "short": "Biggest Comeback (Pts Overcome)"
+   "short": "Biggest Comeback (Pts Overcome)",
+   "links": null
   },
   {
    "id": "biggest-blown-lead",
@@ -15451,7 +15462,8 @@
       ]
      }
     ]
-   }
+   },
+   "links": null
   },
   {
    "id": "most-lead-changes-in-a-game",
@@ -16217,7 +16229,8 @@
       ]
      }
     ]
-   }
+   },
+   "links": null
   },
   {
    "id": "biggest-upset-by-projection",
@@ -16987,7 +17000,8 @@
       ]
      }
     ]
-   }
+   },
+   "links": null
   },
   {
    "id": "most-points-over-projection",
@@ -17757,7 +17771,8 @@
       ]
      }
     ]
-   }
+   },
+   "links": null
   },
   {
    "id": "most-points-under-projection",
@@ -18527,7 +18542,8 @@
       ]
      }
     ]
-   }
+   },
+   "links": null
   },
   {
    "id": "most-points-on-thursday-night-team",
@@ -19297,7 +19313,8 @@
       ]
      }
     ]
-   }
+   },
+   "links": null
   },
   {
    "id": "most-points-on-monday-night-team",
@@ -20067,7 +20084,8 @@
       ]
      }
     ]
-   }
+   },
+   "links": null
   },
   {
    "id": "highest-projected-point-total",
@@ -24524,7 +24542,8 @@
      }
     ]
    },
-   "verified": true
+   "verified": true,
+   "links": null
   },
   {
    "id": "most-par-gained-in-one-trade",
@@ -24837,7 +24856,8 @@
      }
     ]
    },
-   "verified": true
+   "verified": true,
+   "links": null
   },
   {
    "id": "most-par-lost-in-one-trade",
@@ -25150,7 +25170,8 @@
      }
     ]
    },
-   "verified": true
+   "verified": true,
+   "links": null
   },
   {
    "id": "biggest-trade-day-heist-value",
@@ -25463,7 +25484,8 @@
      }
     ]
    },
-   "verified": true
+   "verified": true,
+   "links": null
   },
   {
    "id": "biggest-blockbuster-total-value",
@@ -25777,7 +25799,8 @@
      }
     ]
    },
-   "verified": true
+   "verified": true,
+   "links": null
   },
   {
    "id": "most-players-in-one-trade",
@@ -26093,7 +26116,8 @@
      }
     ]
    },
-   "verified": true
+   "verified": true,
+   "links": null
   },
   {
    "id": "most-trades-career",
@@ -26157,7 +26181,8 @@
     }
    ],
    "detail": null,
-   "verified": true
+   "verified": true,
+   "links": null
   },
   {
    "id": "most-trades-with-one-partner",
@@ -26222,7 +26247,8 @@
     }
    ],
    "detail": null,
-   "verified": true
+   "verified": true,
+   "links": null
   },
   {
    "id": "best-trader-career-par",
@@ -26286,7 +26312,8 @@
     }
    ],
    "detail": null,
-   "verified": true
+   "verified": true,
+   "links": null
   },
   {
    "id": "worst-trader-career-par",
@@ -26350,7 +26377,8 @@
     }
    ],
    "detail": null,
-   "verified": true
+   "verified": true,
+   "links": null
   },
   {
    "id": "best-trade-by-a-champion-par",
@@ -26663,7 +26691,8 @@
      }
     ]
    },
-   "verified": true
+   "verified": true,
+   "links": null
   },
   {
    "id": "worst-trade-by-a-champion-par",
@@ -26976,7 +27005,8 @@
      }
     ]
    },
-   "verified": true
+   "verified": true,
+   "links": null
   },
   {
    "id": "worst-trade-by-an-eventual-sacko-par",
@@ -27290,7 +27320,8 @@
     ]
    },
    "verified": true,
-   "short": "Worst Trade by a Sacko (PAR)"
+   "short": "Worst Trade by a Sacko (PAR)",
+   "links": null
   },
   {
    "id": "most-fab-owned-at-one-time",
@@ -27635,7 +27666,8 @@
      }
     ]
    },
-   "verified": true
+   "verified": true,
+   "links": null
   },
   {
    "id": "best-free-agent-pickup-par",
@@ -27858,7 +27890,8 @@
      }
     ]
    },
-   "verified": true
+   "verified": true,
+   "links": null
   },
   {
    "id": "most-expensive-fab-claim",
@@ -28081,7 +28114,8 @@
      }
     ]
    },
-   "verified": true
+   "verified": true,
+   "links": null
   },
   {
    "id": "worst-fab-pickup-40-bids",
@@ -28304,7 +28338,8 @@
      }
     ]
    },
-   "verified": true
+   "verified": true,
+   "links": null
   },
   {
    "id": "best-fab-value-par-per",
@@ -28527,7 +28562,8 @@
      }
     ]
    },
-   "verified": true
+   "verified": true,
+   "links": null
   },
   {
    "id": "most-fab-spent-in-a-season",
@@ -28591,7 +28627,8 @@
     }
    ],
    "detail": null,
-   "verified": true
+   "verified": true,
+   "links": null
   },
   {
    "id": "most-waiver-par-in-a-season",
@@ -28655,7 +28692,8 @@
     }
    ],
    "detail": null,
-   "verified": true
+   "verified": true,
+   "links": null
   },
   {
    "id": "best-waiver-season-net-of-regret",
@@ -28719,7 +28757,8 @@
     }
    ],
    "detail": null,
-   "verified": true
+   "verified": true,
+   "links": null
   },
   {
    "id": "most-difference-makers-in-a-season",
@@ -28785,7 +28824,8 @@
     }
    ],
    "detail": null,
-   "verified": true
+   "verified": true,
+   "links": null
   },
   {
    "id": "most-pickups-in-a-season",
@@ -28849,7 +28889,8 @@
     }
    ],
    "detail": null,
-   "verified": true
+   "verified": true,
+   "links": null
   },
   {
    "id": "biggest-drop-regret-one-player",
@@ -29032,7 +29073,8 @@
      }
     ]
    },
-   "verified": true
+   "verified": true,
+   "links": null
   },
   {
    "id": "most-regret-in-a-season",
@@ -29096,7 +29138,8 @@
     }
    ],
    "detail": null,
-   "verified": true
+   "verified": true,
+   "links": null
   },
   {
    "id": "most-fab-spent-by-a-champion",
@@ -29160,7 +29203,8 @@
     }
    ],
    "detail": null,
-   "verified": true
+   "verified": true,
+   "links": null
   },
   {
    "id": "fewest-fab-spent-by-a-champion",
@@ -29224,7 +29268,8 @@
     }
    ],
    "detail": null,
-   "verified": true
+   "verified": true,
+   "links": null
   },
   {
    "id": "most-shotguns-in-a-season-league",
@@ -30185,7 +30230,8 @@
       ]
      }
     ]
-   }
+   },
+   "links": null
   },
   {
    "id": "best-sit-start-call",
@@ -31074,7 +31120,8 @@
       ]
      }
     ]
-   }
+   },
+   "links": null
   },
   {
    "id": "worst-lineup-week-points-lost",
@@ -31849,7 +31896,8 @@
       ]
      }
     ]
-   }
+   },
+   "links": null
   },
   {
    "id": "most-points-lost-to-lineup-misses-in-a-season",
@@ -31913,7 +31961,8 @@
     }
    ],
    "detail": null,
-   "verified": true
+   "verified": true,
+   "links": null
   },
   {
    "id": "most-wins-lost-to-lineup-misses-in-a-season",
@@ -31979,7 +32028,8 @@
     }
    ],
    "detail": null,
-   "verified": true
+   "verified": true,
+   "links": null
   },
   {
    "id": "most-rumbles-lost-to-lineup-misses-in-a-season",
@@ -32043,7 +32093,8 @@
     }
    ],
    "detail": null,
-   "verified": true
+   "verified": true,
+   "links": null
   },
   {
    "id": "most-big-brain-calls-in-a-season",
@@ -32107,7 +32158,8 @@
     }
    ],
    "detail": null,
-   "verified": true
+   "verified": true,
+   "links": null
   },
   {
    "id": "most-points-on-bench-in-a-season",
@@ -32171,7 +32223,8 @@
     }
    ],
    "detail": null,
-   "verified": true
+   "verified": true,
+   "links": null
   },
   {
    "id": "most-shotguns-in-a-week-team",
@@ -33044,7 +33097,8 @@
       ]
      }
     ]
-   }
+   },
+   "links": null
   },
   {
    "id": "most-shotguns-in-a-season-team",
@@ -33108,7 +33162,8 @@
     }
    ],
    "detail": null,
-   "verified": true
+   "verified": true,
+   "links": null
   },
   {
    "id": "longest-head-to-head-win-streak-vs-one-opponent",
@@ -33174,7 +33229,8 @@
    ],
    "detail": null,
    "verified": true,
-   "short": "Longest Win Streak vs One Opponent"
+   "short": "Longest Win Streak vs One Opponent",
+   "links": null
   },
   {
    "id": "most-meetings-between-two-managers",
@@ -33244,7 +33300,8 @@
    ],
    "detail": null,
    "verified": true,
-   "short": "Most Games vs One Opponent"
+   "short": "Most Games vs One Opponent",
+   "links": null
   },
   {
    "id": "most-one-sided-rivalry",
@@ -33308,7 +33365,8 @@
     }
    ],
    "detail": null,
-   "verified": true
+   "verified": true,
+   "links": null
   },
   {
    "id": "most-playoff-meetings-between-two-managers",
@@ -33374,7 +33432,8 @@
    ],
    "detail": null,
    "verified": true,
-   "short": "Most Playoff Games vs One Opponent"
+   "short": "Most Playoff Games vs One Opponent",
+   "links": null
   },
   {
    "id": "most-expensive-auction-pick",
@@ -33410,13 +33469,33 @@
      "value": "$85",
      "holder": "Jake — Christian McCaffrey",
      "when": "2021",
-     "replay": null
+     "replay": null,
+     "links": {
+      "sheet": {
+       "label": "2021 auction sheet",
+       "url": "https://namkurd.github.io/SleeperAuction/#drafts/2021"
+      },
+      "page": {
+       "label": "Christian McCaffrey in the Auction tool",
+       "url": "https://namkurd.github.io/SleeperAuction/#players/id%3A4034"
+      }
+     }
     },
     {
      "value": "$83",
      "holder": "Ankit — David Johnson",
      "when": "2017",
      "replay": null,
+     "links": {
+      "sheet": {
+       "label": "2017 auction sheet",
+       "url": "https://namkurd.github.io/SleeperAuction/#drafts/2017"
+      },
+      "page": {
+       "label": "David Johnson in the Auction tool",
+       "url": "https://namkurd.github.io/SleeperAuction/#players/id%3A2391"
+      }
+     },
      "detail": {
       "kind": "facts",
       "title": "Auction · 2017",
@@ -33455,6 +33534,16 @@
      "holder": "Steven — David Johnson",
      "when": "2018",
      "replay": null,
+     "links": {
+      "sheet": {
+       "label": "2018 auction sheet",
+       "url": "https://namkurd.github.io/SleeperAuction/#drafts/2018"
+      },
+      "page": {
+       "label": "David Johnson in the Auction tool",
+       "url": "https://namkurd.github.io/SleeperAuction/#players/id%3A2391"
+      }
+     },
      "detail": {
       "kind": "facts",
       "title": "Auction · 2018",
@@ -33493,6 +33582,16 @@
      "holder": "Tommy — Todd Gurley",
      "when": "2018",
      "replay": null,
+     "links": {
+      "sheet": {
+       "label": "2018 auction sheet",
+       "url": "https://namkurd.github.io/SleeperAuction/#drafts/2018"
+      },
+      "page": {
+       "label": "Todd Gurley in the Auction tool",
+       "url": "https://namkurd.github.io/SleeperAuction/#players/id%3A2315"
+      }
+     },
      "detail": {
       "kind": "facts",
       "title": "Auction · 2018",
@@ -33531,6 +33630,16 @@
      "holder": "Kaitlyn — Josh Allen",
      "when": "2026",
      "replay": null,
+     "links": {
+      "sheet": {
+       "label": "2026 auction sheet",
+       "url": "https://namkurd.github.io/SleeperAuction/#drafts/2026"
+      },
+      "page": {
+       "label": "Josh Allen in the Auction tool",
+       "url": "https://namkurd.github.io/SleeperAuction/#players/id%3A4984"
+      }
+     },
      "detail": {
       "kind": "facts",
       "title": "Auction · 2026",
@@ -33597,7 +33706,17 @@
      }
     ]
    },
-   "verified": true
+   "verified": true,
+   "links": {
+    "sheet": {
+     "label": "2021 auction sheet",
+     "url": "https://namkurd.github.io/SleeperAuction/#drafts/2021"
+    },
+    "page": {
+     "label": "Christian McCaffrey in the Auction tool",
+     "url": "https://namkurd.github.io/SleeperAuction/#players/id%3A4034"
+    }
+   }
   },
   {
    "id": "most-expensive-qb",
@@ -33633,13 +33752,33 @@
      "value": "$77",
      "holder": "Kaitlyn — Josh Allen",
      "when": "2026",
-     "replay": null
+     "replay": null,
+     "links": {
+      "sheet": {
+       "label": "2026 auction sheet",
+       "url": "https://namkurd.github.io/SleeperAuction/#drafts/2026"
+      },
+      "page": {
+       "label": "Josh Allen in the Auction tool",
+       "url": "https://namkurd.github.io/SleeperAuction/#players/id%3A4984"
+      }
+     }
     },
     {
      "value": "$65",
      "holder": "Alex — Josh Allen",
      "when": "2023",
      "replay": null,
+     "links": {
+      "sheet": {
+       "label": "2023 auction sheet",
+       "url": "https://namkurd.github.io/SleeperAuction/#drafts/2023"
+      },
+      "page": {
+       "label": "Josh Allen in the Auction tool",
+       "url": "https://namkurd.github.io/SleeperAuction/#players/id%3A4984"
+      }
+     },
      "detail": {
       "kind": "facts",
       "title": "Auction · 2023",
@@ -33678,6 +33817,16 @@
      "holder": "Joe — Patrick Mahomes",
      "when": "2023",
      "replay": null,
+     "links": {
+      "sheet": {
+       "label": "2023 auction sheet",
+       "url": "https://namkurd.github.io/SleeperAuction/#drafts/2023"
+      },
+      "page": {
+       "label": "Patrick Mahomes in the Auction tool",
+       "url": "https://namkurd.github.io/SleeperAuction/#players/id%3A4046"
+      }
+     },
      "detail": {
       "kind": "facts",
       "title": "Auction · 2023",
@@ -33716,6 +33865,16 @@
      "holder": "Jake — Lamar Jackson",
      "when": "2025",
      "replay": null,
+     "links": {
+      "sheet": {
+       "label": "2025 auction sheet",
+       "url": "https://namkurd.github.io/SleeperAuction/#drafts/2025"
+      },
+      "page": {
+       "label": "Lamar Jackson in the Auction tool",
+       "url": "https://namkurd.github.io/SleeperAuction/#players/id%3A4881"
+      }
+     },
      "detail": {
       "kind": "facts",
       "title": "Auction · 2025",
@@ -33754,6 +33913,16 @@
      "holder": "Christian — Josh Allen",
      "when": "2024",
      "replay": null,
+     "links": {
+      "sheet": {
+       "label": "2024 auction sheet",
+       "url": "https://namkurd.github.io/SleeperAuction/#drafts/2024"
+      },
+      "page": {
+       "label": "Josh Allen in the Auction tool",
+       "url": "https://namkurd.github.io/SleeperAuction/#players/id%3A4984"
+      }
+     },
      "detail": {
       "kind": "facts",
       "title": "Auction · 2024",
@@ -33820,7 +33989,17 @@
      }
     ]
    },
-   "verified": true
+   "verified": true,
+   "links": {
+    "sheet": {
+     "label": "2026 auction sheet",
+     "url": "https://namkurd.github.io/SleeperAuction/#drafts/2026"
+    },
+    "page": {
+     "label": "Josh Allen in the Auction tool",
+     "url": "https://namkurd.github.io/SleeperAuction/#players/id%3A4984"
+    }
+   }
   },
   {
    "id": "most-expensive-rb",
@@ -33856,13 +34035,33 @@
      "value": "$85",
      "holder": "Jake — Christian McCaffrey",
      "when": "2021",
-     "replay": null
+     "replay": null,
+     "links": {
+      "sheet": {
+       "label": "2021 auction sheet",
+       "url": "https://namkurd.github.io/SleeperAuction/#drafts/2021"
+      },
+      "page": {
+       "label": "Christian McCaffrey in the Auction tool",
+       "url": "https://namkurd.github.io/SleeperAuction/#players/id%3A4034"
+      }
+     }
     },
     {
      "value": "$83",
      "holder": "Ankit — David Johnson",
      "when": "2017",
      "replay": null,
+     "links": {
+      "sheet": {
+       "label": "2017 auction sheet",
+       "url": "https://namkurd.github.io/SleeperAuction/#drafts/2017"
+      },
+      "page": {
+       "label": "David Johnson in the Auction tool",
+       "url": "https://namkurd.github.io/SleeperAuction/#players/id%3A2391"
+      }
+     },
      "detail": {
       "kind": "facts",
       "title": "Auction · 2017",
@@ -33901,6 +34100,16 @@
      "holder": "Steven — David Johnson",
      "when": "2018",
      "replay": null,
+     "links": {
+      "sheet": {
+       "label": "2018 auction sheet",
+       "url": "https://namkurd.github.io/SleeperAuction/#drafts/2018"
+      },
+      "page": {
+       "label": "David Johnson in the Auction tool",
+       "url": "https://namkurd.github.io/SleeperAuction/#players/id%3A2391"
+      }
+     },
      "detail": {
       "kind": "facts",
       "title": "Auction · 2018",
@@ -33939,6 +34148,16 @@
      "holder": "Tommy — Todd Gurley",
      "when": "2018",
      "replay": null,
+     "links": {
+      "sheet": {
+       "label": "2018 auction sheet",
+       "url": "https://namkurd.github.io/SleeperAuction/#drafts/2018"
+      },
+      "page": {
+       "label": "Todd Gurley in the Auction tool",
+       "url": "https://namkurd.github.io/SleeperAuction/#players/id%3A2315"
+      }
+     },
      "detail": {
       "kind": "facts",
       "title": "Auction · 2018",
@@ -33977,6 +34196,16 @@
      "holder": "Haan — Adrian Peterson",
      "when": "2013",
      "replay": null,
+     "links": {
+      "sheet": {
+       "label": "2013 auction sheet",
+       "url": "https://namkurd.github.io/SleeperAuction/#drafts/2013"
+      },
+      "page": {
+       "label": "Adrian Peterson in the Auction tool",
+       "url": "https://namkurd.github.io/SleeperAuction/#players/id%3A184"
+      }
+     },
      "detail": {
       "kind": "facts",
       "title": "Auction · 2013",
@@ -34043,7 +34272,17 @@
      }
     ]
    },
-   "verified": true
+   "verified": true,
+   "links": {
+    "sheet": {
+     "label": "2021 auction sheet",
+     "url": "https://namkurd.github.io/SleeperAuction/#drafts/2021"
+    },
+    "page": {
+     "label": "Christian McCaffrey in the Auction tool",
+     "url": "https://namkurd.github.io/SleeperAuction/#players/id%3A4034"
+    }
+   }
   },
   {
    "id": "most-expensive-wr",
@@ -34080,13 +34319,33 @@
      "value": "$67",
      "holder": "Ben — Antonio Brown",
      "when": "2017",
-     "replay": null
+     "replay": null,
+     "links": {
+      "sheet": {
+       "label": "2017 auction sheet",
+       "url": "https://namkurd.github.io/SleeperAuction/#drafts/2017"
+      },
+      "page": {
+       "label": "Antonio Brown in the Auction tool",
+       "url": "https://namkurd.github.io/SleeperAuction/#players/id%3A536"
+      }
+     }
     },
     {
      "value": "$67",
      "holder": "Haan — Justin Jefferson",
      "when": "2023",
      "replay": null,
+     "links": {
+      "sheet": {
+       "label": "2023 auction sheet",
+       "url": "https://namkurd.github.io/SleeperAuction/#drafts/2023"
+      },
+      "page": {
+       "label": "Justin Jefferson in the Auction tool",
+       "url": "https://namkurd.github.io/SleeperAuction/#players/id%3A6794"
+      }
+     },
      "detail": {
       "kind": "facts",
       "title": "Auction · 2023",
@@ -34125,6 +34384,16 @@
      "holder": "Jake — CeeDee Lamb",
      "when": "2024",
      "replay": null,
+     "links": {
+      "sheet": {
+       "label": "2024 auction sheet",
+       "url": "https://namkurd.github.io/SleeperAuction/#drafts/2024"
+      },
+      "page": {
+       "label": "CeeDee Lamb in the Auction tool",
+       "url": "https://namkurd.github.io/SleeperAuction/#players/id%3A6786"
+      }
+     },
      "detail": {
       "kind": "facts",
       "title": "Auction · 2024",
@@ -34163,6 +34432,16 @@
      "holder": "Ben — Ja'Marr Chase",
      "when": "2025",
      "replay": null,
+     "links": {
+      "sheet": {
+       "label": "2025 auction sheet",
+       "url": "https://namkurd.github.io/SleeperAuction/#drafts/2025"
+      },
+      "page": {
+       "label": "Ja'Marr Chase in the Auction tool",
+       "url": "https://namkurd.github.io/SleeperAuction/#players/id%3A7564"
+      }
+     },
      "detail": {
       "kind": "facts",
       "title": "Auction · 2025",
@@ -34201,6 +34480,16 @@
      "holder": "Aidan — Justin Jefferson",
      "when": "2022",
      "replay": null,
+     "links": {
+      "sheet": {
+       "label": "2022 auction sheet",
+       "url": "https://namkurd.github.io/SleeperAuction/#drafts/2022"
+      },
+      "page": {
+       "label": "Justin Jefferson in the Auction tool",
+       "url": "https://namkurd.github.io/SleeperAuction/#players/id%3A6794"
+      }
+     },
      "detail": {
       "kind": "facts",
       "title": "Auction · 2022",
@@ -34267,7 +34556,17 @@
      }
     ]
    },
-   "verified": true
+   "verified": true,
+   "links": {
+    "sheet": {
+     "label": "2017 auction sheet",
+     "url": "https://namkurd.github.io/SleeperAuction/#drafts/2017"
+    },
+    "page": {
+     "label": "Antonio Brown in the Auction tool",
+     "url": "https://namkurd.github.io/SleeperAuction/#players/id%3A536"
+    }
+   }
   },
   {
    "id": "most-expensive-te",
@@ -34303,13 +34602,33 @@
      "value": "$49",
      "holder": "John — Jimmy Graham",
      "when": "2014",
-     "replay": null
+     "replay": null,
+     "links": {
+      "sheet": {
+       "label": "2014 auction sheet",
+       "url": "https://namkurd.github.io/SleeperAuction/#drafts/2014"
+      },
+      "page": {
+       "label": "Jimmy Graham in the Auction tool",
+       "url": "https://namkurd.github.io/SleeperAuction/#players/id%3A616"
+      }
+     }
     },
     {
      "value": "$45",
      "holder": "Ben — Travis Kelce",
      "when": "2021",
      "replay": null,
+     "links": {
+      "sheet": {
+       "label": "2021 auction sheet",
+       "url": "https://namkurd.github.io/SleeperAuction/#drafts/2021"
+      },
+      "page": {
+       "label": "Travis Kelce in the Auction tool",
+       "url": "https://namkurd.github.io/SleeperAuction/#players/id%3A1466"
+      }
+     },
      "detail": {
       "kind": "facts",
       "title": "Auction · 2021",
@@ -34348,6 +34667,16 @@
      "holder": "Ryan — Travis Kelce",
      "when": "2023",
      "replay": null,
+     "links": {
+      "sheet": {
+       "label": "2023 auction sheet",
+       "url": "https://namkurd.github.io/SleeperAuction/#drafts/2023"
+      },
+      "page": {
+       "label": "Travis Kelce in the Auction tool",
+       "url": "https://namkurd.github.io/SleeperAuction/#players/id%3A1466"
+      }
+     },
      "detail": {
       "kind": "facts",
       "title": "Auction · 2023",
@@ -34386,6 +34715,16 @@
      "holder": "Ryan — Rob Gronkowski",
      "when": "2015",
      "replay": null,
+     "links": {
+      "sheet": {
+       "label": "2015 auction sheet",
+       "url": "https://namkurd.github.io/SleeperAuction/#drafts/2015"
+      },
+      "page": {
+       "label": "Rob Gronkowski in the Auction tool",
+       "url": "https://namkurd.github.io/SleeperAuction/#players/id%3A515"
+      }
+     },
      "detail": {
       "kind": "facts",
       "title": "Auction · 2015",
@@ -34424,6 +34763,16 @@
      "holder": "Ryan — Travis Kelce",
      "when": "2019",
      "replay": null,
+     "links": {
+      "sheet": {
+       "label": "2019 auction sheet",
+       "url": "https://namkurd.github.io/SleeperAuction/#drafts/2019"
+      },
+      "page": {
+       "label": "Travis Kelce in the Auction tool",
+       "url": "https://namkurd.github.io/SleeperAuction/#players/id%3A1466"
+      }
+     },
      "detail": {
       "kind": "facts",
       "title": "Auction · 2019",
@@ -34490,7 +34839,17 @@
      }
     ]
    },
-   "verified": true
+   "verified": true,
+   "links": {
+    "sheet": {
+     "label": "2014 auction sheet",
+     "url": "https://namkurd.github.io/SleeperAuction/#drafts/2014"
+    },
+    "page": {
+     "label": "Jimmy Graham in the Auction tool",
+     "url": "https://namkurd.github.io/SleeperAuction/#players/id%3A616"
+    }
+   }
   },
   {
    "id": "costliest-bust",
@@ -34526,13 +34885,33 @@
      "value": "$36",
      "holder": "Oleg — Zac Stacy",
      "when": "2014",
-     "replay": null
+     "replay": null,
+     "links": {
+      "sheet": {
+       "label": "2014 auction sheet",
+       "url": "https://namkurd.github.io/SleeperAuction/#drafts/2014"
+      },
+      "page": {
+       "label": "Zac Stacy in the Auction tool",
+       "url": "https://namkurd.github.io/SleeperAuction/#players/id%3A1573"
+      }
+     }
     },
     {
      "value": "$11",
      "holder": "Tommy — Darrell Henderson",
      "when": "2019",
      "replay": null,
+     "links": {
+      "sheet": {
+       "label": "2019 auction sheet",
+       "url": "https://namkurd.github.io/SleeperAuction/#drafts/2019"
+      },
+      "page": {
+       "label": "Darrell Henderson in the Auction tool",
+       "url": "https://namkurd.github.io/SleeperAuction/#players/id%3A5916"
+      }
+     },
      "detail": {
       "kind": "facts",
       "title": "Auction · 2019",
@@ -34571,6 +34950,16 @@
      "holder": "Ben — Daryl Richardson",
      "when": "2013",
      "replay": null,
+     "links": {
+      "sheet": {
+       "label": "2013 auction sheet",
+       "url": "https://namkurd.github.io/SleeperAuction/#drafts/2013"
+      },
+      "page": {
+       "label": "Daryl Richardson in the Auction tool",
+       "url": "https://namkurd.github.io/SleeperAuction/#players/id%3A1265"
+      }
+     },
      "detail": {
       "kind": "facts",
       "title": "Auction · 2013",
@@ -34609,6 +34998,16 @@
      "holder": "Oleg — Eddie Lacy",
      "when": "2017",
      "replay": null,
+     "links": {
+      "sheet": {
+       "label": "2017 auction sheet",
+       "url": "https://namkurd.github.io/SleeperAuction/#drafts/2017"
+      },
+      "page": {
+       "label": "Eddie Lacy in the Auction tool",
+       "url": "https://namkurd.github.io/SleeperAuction/#players/id%3A1527"
+      }
+     },
      "detail": {
       "kind": "facts",
       "title": "Auction · 2017",
@@ -34647,6 +35046,16 @@
      "holder": "Aidan — Danny Woodhead",
      "when": "2017",
      "replay": null,
+     "links": {
+      "sheet": {
+       "label": "2017 auction sheet",
+       "url": "https://namkurd.github.io/SleeperAuction/#drafts/2017"
+      },
+      "page": {
+       "label": "Danny Woodhead in the Auction tool",
+       "url": "https://namkurd.github.io/SleeperAuction/#players/id%3A735"
+      }
+     },
      "detail": {
       "kind": "facts",
       "title": "Auction · 2017",
@@ -34713,7 +35122,17 @@
      }
     ]
    },
-   "verified": true
+   "verified": true,
+   "links": {
+    "sheet": {
+     "label": "2014 auction sheet",
+     "url": "https://namkurd.github.io/SleeperAuction/#drafts/2014"
+    },
+    "page": {
+     "label": "Zac Stacy in the Auction tool",
+     "url": "https://namkurd.github.io/SleeperAuction/#players/id%3A1573"
+    }
+   }
   },
   {
    "id": "costliest-injury-casualty",
@@ -34749,13 +35168,33 @@
      "value": "$85",
      "holder": "Jake — Christian McCaffrey",
      "when": "2021",
-     "replay": null
+     "replay": null,
+     "links": {
+      "sheet": {
+       "label": "2021 auction sheet",
+       "url": "https://namkurd.github.io/SleeperAuction/#drafts/2021"
+      },
+      "page": {
+       "label": "Christian McCaffrey in the Auction tool",
+       "url": "https://namkurd.github.io/SleeperAuction/#players/id%3A4034"
+      }
+     }
     },
     {
      "value": "$83",
      "holder": "Ankit — David Johnson",
      "when": "2017",
      "replay": null,
+     "links": {
+      "sheet": {
+       "label": "2017 auction sheet",
+       "url": "https://namkurd.github.io/SleeperAuction/#drafts/2017"
+      },
+      "page": {
+       "label": "David Johnson in the Auction tool",
+       "url": "https://namkurd.github.io/SleeperAuction/#players/id%3A2391"
+      }
+     },
      "detail": {
       "kind": "facts",
       "title": "Auction · 2017",
@@ -34794,6 +35233,16 @@
      "holder": "Oleg — Christian McCaffrey",
      "when": "2020",
      "replay": null,
+     "links": {
+      "sheet": {
+       "label": "2020 auction sheet",
+       "url": "https://namkurd.github.io/SleeperAuction/#drafts/2020"
+      },
+      "page": {
+       "label": "Christian McCaffrey in the Auction tool",
+       "url": "https://namkurd.github.io/SleeperAuction/#players/id%3A4034"
+      }
+     },
      "detail": {
       "kind": "facts",
       "title": "Auction · 2020",
@@ -34832,6 +35281,16 @@
      "holder": "Aidan — Saquon Barkley",
      "when": "2020",
      "replay": null,
+     "links": {
+      "sheet": {
+       "label": "2020 auction sheet",
+       "url": "https://namkurd.github.io/SleeperAuction/#drafts/2020"
+      },
+      "page": {
+       "label": "Saquon Barkley in the Auction tool",
+       "url": "https://namkurd.github.io/SleeperAuction/#players/id%3A4866"
+      }
+     },
      "detail": {
       "kind": "facts",
       "title": "Auction · 2020",
@@ -34870,6 +35329,16 @@
      "holder": "Haan — Adrian Peterson",
      "when": "2016",
      "replay": null,
+     "links": {
+      "sheet": {
+       "label": "2016 auction sheet",
+       "url": "https://namkurd.github.io/SleeperAuction/#drafts/2016"
+      },
+      "page": {
+       "label": "Adrian Peterson in the Auction tool",
+       "url": "https://namkurd.github.io/SleeperAuction/#players/id%3A184"
+      }
+     },
      "detail": {
       "kind": "facts",
       "title": "Auction · 2016",
@@ -34936,7 +35405,17 @@
      }
     ]
    },
-   "verified": true
+   "verified": true,
+   "links": {
+    "sheet": {
+     "label": "2021 auction sheet",
+     "url": "https://namkurd.github.io/SleeperAuction/#drafts/2021"
+    },
+    "page": {
+     "label": "Christian McCaffrey in the Auction tool",
+     "url": "https://namkurd.github.io/SleeperAuction/#players/id%3A4034"
+    }
+   }
   },
   {
    "id": "best-steal",
@@ -34972,13 +35451,33 @@
      "value": "$1",
      "holder": "Tommy — Patrick Mahomes",
      "when": "2018",
-     "replay": null
+     "replay": null,
+     "links": {
+      "sheet": {
+       "label": "2018 auction sheet",
+       "url": "https://namkurd.github.io/SleeperAuction/#drafts/2018"
+      },
+      "page": {
+       "label": "Patrick Mahomes in the Auction tool",
+       "url": "https://namkurd.github.io/SleeperAuction/#players/id%3A4046"
+      }
+     }
     },
     {
      "value": "$1",
      "holder": "Alex — Matthew Stafford",
      "when": "2025",
      "replay": null,
+     "links": {
+      "sheet": {
+       "label": "2025 auction sheet",
+       "url": "https://namkurd.github.io/SleeperAuction/#drafts/2025"
+      },
+      "page": {
+       "label": "Matthew Stafford in the Auction tool",
+       "url": "https://namkurd.github.io/SleeperAuction/#players/id%3A421"
+      }
+     },
      "detail": {
       "kind": "facts",
       "title": "Auction · 2025",
@@ -35017,6 +35516,16 @@
      "holder": "Joe — Matt Ryan",
      "when": "2018",
      "replay": null,
+     "links": {
+      "sheet": {
+       "label": "2018 auction sheet",
+       "url": "https://namkurd.github.io/SleeperAuction/#drafts/2018"
+      },
+      "page": {
+       "label": "Matt Ryan in the Auction tool",
+       "url": "https://namkurd.github.io/SleeperAuction/#players/id%3A24"
+      }
+     },
      "detail": {
       "kind": "facts",
       "title": "Auction · 2018",
@@ -35055,6 +35564,16 @@
      "holder": "Steven — Ben Roethlisberger",
      "when": "2018",
      "replay": null,
+     "links": {
+      "sheet": {
+       "label": "2018 auction sheet",
+       "url": "https://namkurd.github.io/SleeperAuction/#drafts/2018"
+      },
+      "page": {
+       "label": "Ben Roethlisberger in the Auction tool",
+       "url": "https://namkurd.github.io/SleeperAuction/#players/id%3A138"
+      }
+     },
      "detail": {
       "kind": "facts",
       "title": "Auction · 2018",
@@ -35093,6 +35612,16 @@
      "holder": "Ryan — Dak Prescott",
      "when": "2019",
      "replay": null,
+     "links": {
+      "sheet": {
+       "label": "2019 auction sheet",
+       "url": "https://namkurd.github.io/SleeperAuction/#drafts/2019"
+      },
+      "page": {
+       "label": "Dak Prescott in the Auction tool",
+       "url": "https://namkurd.github.io/SleeperAuction/#players/id%3A3294"
+      }
+     },
      "detail": {
       "kind": "facts",
       "title": "Auction · 2019",
@@ -35159,7 +35688,17 @@
      }
     ]
    },
-   "verified": true
+   "verified": true,
+   "links": {
+    "sheet": {
+     "label": "2018 auction sheet",
+     "url": "https://namkurd.github.io/SleeperAuction/#drafts/2018"
+    },
+    "page": {
+     "label": "Patrick Mahomes in the Auction tool",
+     "url": "https://namkurd.github.io/SleeperAuction/#players/id%3A4046"
+    }
+   }
   },
   {
    "id": "most-spent-on-one-position",
@@ -35195,35 +35734,95 @@
      "value": "$177",
      "holder": "Steven — RB",
      "when": "2021 RB",
-     "replay": null
+     "replay": null,
+     "links": {
+      "sheet": {
+       "label": "2021 auction sheet",
+       "url": "https://namkurd.github.io/SleeperAuction/#drafts/2021"
+      },
+      "page": {
+       "label": "Steven's spending in the Auction tool",
+       "url": "https://namkurd.github.io/SleeperAuction/#managers/Steven"
+      }
+     }
     },
     {
      "value": "$167",
      "holder": "Ankit — RB",
      "when": "2017 RB",
-     "replay": null
+     "replay": null,
+     "links": {
+      "sheet": {
+       "label": "2017 auction sheet",
+       "url": "https://namkurd.github.io/SleeperAuction/#drafts/2017"
+      },
+      "page": {
+       "label": "Ankit's spending in the Auction tool",
+       "url": "https://namkurd.github.io/SleeperAuction/#managers/Ankit"
+      }
+     }
     },
     {
      "value": "$165",
      "holder": "Jake — WR",
      "when": "2024 WR",
-     "replay": null
+     "replay": null,
+     "links": {
+      "sheet": {
+       "label": "2024 auction sheet",
+       "url": "https://namkurd.github.io/SleeperAuction/#drafts/2024"
+      },
+      "page": {
+       "label": "Jake's spending in the Auction tool",
+       "url": "https://namkurd.github.io/SleeperAuction/#managers/Jake"
+      }
+     }
     },
     {
      "value": "$163",
      "holder": "Steven — RB",
      "when": "2018 RB",
-     "replay": null
+     "replay": null,
+     "links": {
+      "sheet": {
+       "label": "2018 auction sheet",
+       "url": "https://namkurd.github.io/SleeperAuction/#drafts/2018"
+      },
+      "page": {
+       "label": "Steven's spending in the Auction tool",
+       "url": "https://namkurd.github.io/SleeperAuction/#managers/Steven"
+      }
+     }
     },
     {
      "value": "$153",
      "holder": "Haan — RB",
      "when": "2013 RB",
-     "replay": null
+     "replay": null,
+     "links": {
+      "sheet": {
+       "label": "2013 auction sheet",
+       "url": "https://namkurd.github.io/SleeperAuction/#drafts/2013"
+      },
+      "page": {
+       "label": "Haan's spending in the Auction tool",
+       "url": "https://namkurd.github.io/SleeperAuction/#managers/Haan"
+      }
+     }
     }
    ],
    "detail": null,
-   "verified": true
+   "verified": true,
+   "links": {
+    "sheet": {
+     "label": "2021 auction sheet",
+     "url": "https://namkurd.github.io/SleeperAuction/#drafts/2021"
+    },
+    "page": {
+     "label": "Steven's spending in the Auction tool",
+     "url": "https://namkurd.github.io/SleeperAuction/#managers/Steven"
+    }
+   }
   }
  ]
 }

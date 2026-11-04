@@ -93,6 +93,7 @@ def main():
         r["leaderboard"] = []
         for i, c in enumerate(cands[:5]):
             e = {"value": fmt(m, c, d), "holder": holder_text(m, c), "when": when(m, c), "replay": replay(m, c, d.cur)}
+            if c.get("links"): e["links"] = c["links"]
             if i:       # places 2-5 can be expanded in the page; the record itself already shows its own detail
                 if c.get("card"): e["detail"] = c["card"]
                 if m in CARDS.GAME_METRICS and c.get("rid") and c.get("opp_rid") and c.get("week") and c["season"] >= 2021:
@@ -104,7 +105,7 @@ def main():
             new = {"value": fmt(m, best, d), "holder": "; ".join(holder_text(m, c) for c in top_c), "when": "; ".join(when(m, c) for c in top_c), "team": ""}
             hs = []
             for c in top_c: hs += [h for h in c["holders"] if h not in hs]
-            r["detail"] = top_c[0].get("card"); r["replay"] = replay(m, top_c[0], d.cur)
+            r["detail"] = top_c[0].get("card"); r["replay"] = replay(m, top_c[0], d.cur); r["links"] = top_c[0].get("links")
             if r["locked"]: continue
             old = snapshot(r)
             if not r["value"]: kind, note = "auto:new", "Added to the book."

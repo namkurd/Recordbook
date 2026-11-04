@@ -1,10 +1,17 @@
 """Rivalries, playoff/championship records, draft & auction records, and trade/FAB records tied to champions and Sackos."""
-import collections, itertools, re
+import collections, itertools, os, re
+from urllib.parse import quote
 from metrics import norm
 import market as MK
 import cards as C
 
 ALIAS = {"Rohaan": "Haan"}
+AUCTION = os.environ.get("AUCTION_BASE", "https://namkurd.github.io/SleeperAuction/")
+def alinks(season, page=None):
+    """Links into the SleeperAuction tool: the season's draft board (every manager's sheet) and, optionally, a player or manager page."""
+    out = {"sheet": {"label": f"{season} auction sheet", "url": f"{AUCTION}#drafts/{season}"}}
+    if page: out["page"] = page
+    return out
 def N(x): return ALIAS.get(norm(x), norm(x))
 def wk(s, w): return f"Week {w} - {s}"
 def _c(value, holders, s, w=None, rid=None, opp=None, when=None, ht=None, card=None, display=None):
@@ -144,7 +151,11 @@ def make(d):
     def pcard(x, s, price, m):
         rk = f'{x["pos_rank"]} of {x["pos_n"]}' if x.get("pos_rank") else "not yet ranked"
         return fact(f'Auction · {s}', m, [["Player", f'{x["player"]} ({x["position"]})'], ["Price", f"${price:.0f}"], ["Finish at position", rk], ["Points", x.get("pts") or "–"], ["Games", x.get("games") or "–"]])
-    def pc(val, x, s, price, m, disp=None): return _c(val, [m], s, when=str(s), ht=f'{m} — {x["player"]}', card=pcard(x, s, price, m), display=disp)
+    def pc(val, x, s, price, m, disp=None):
+        c = _c(val, [m], s, when=str(s), ht=f'{m} — {x["player"]}', card=pcard(x, s, price, m), display=disp)
+        pk = x.get("player_key")
+        c["links"] = alinks(s, {"label": f'{x["player"]} in the Auction tool', "url": f"{AUCTION}#players/{quote(pk, safe='')}"} if pk else None)
+        return c
     R["auction_price"] = lambda: [pc(price, x, s, price, m) for x, s, price, m in P() if x["position"] not in ("K", "DEF")]
     for pos in ("QB", "RB", "WR", "TE"):
         R[f"auction_{pos.lower()}"] = (lambda pos: lambda: [pc(price, x, s, price, m) for x, s, price, m in P() if x["position"] == pos])(pos)
@@ -159,7 +170,13 @@ def make(d):
     def spend():
         a = collections.defaultdict(float)
         for x, s, price, m in P(): a[(s, m, x["position"])] += price
-        return [_c(v, [m], s, when=f"{s} {pos}", ht=f"{m} — {pos}") for (s, m, pos), v in a.items() if pos in ("QB", "RB", "WR", "TE")]
+        out = []
+        for (s, m, pos), v in a.items():
+            if pos not in ("QB", "RB", "WR", "TE"): continue
+            c = _c(v, [m], s, when=f"{s} {pos}", ht=f"{m} — {pos}")
+            c["links"] = alinks(s, {"label": f"{m}'s spending in the Auction tool", "url": f"{AUCTION}#managers/{quote(m, safe='')}"})
+            out.append(c)
+        return out
     R["auction_pos_spend"] = spend
     # ---------------- trades & FAB tied to champions / Sackos ----------------
     def season_flag(y, m, flag): return flag in (L.get(y, {}).get(m, set()))
