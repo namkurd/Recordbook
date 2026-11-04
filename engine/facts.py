@@ -120,10 +120,10 @@ def ingest(d, budget_weeks=400):
             zeros = [(p, v) for p, v in starters if v == 0]
             shot = [(p, v) for p, v in starters if v <= 0 and not (len(p) <= 3 and p.isalpha()) and took_field(p)]   # DEF ids are team letters
             top = max(starters, key=lambda x: x[1]) if starters else ("", 0); tot = sum(v for _, v in starters)
-            teams[str(rid)] = {"bench": round(sum(v for _, v in bench), 2), "bench_top": [[k, v] for k, v in bench[:6]],
+            teams[str(rid)] = {"bench": round(sum(v for _, v in bench), 2), "bench_top": [[k, v] for k, v in bench[:6]], "bench_all": [[k, v] for k, v in bench],
                                "zeros": [p for p, _ in zeros], "shot": [[p, v] for p, v in shot],
                                "top": [top[0], round(top[1], 2), round(100 * top[1] / tot, 1) if tot > 0 else 0]}
-            for p in [k for k, _ in bench[:6]] + [p for p, _ in zeros] + [p for p, _ in shot] + [top[0]]:
+            for p in [k for k, _ in bench] + [p for p, _ in zeros] + [p for p, _ in shot] + [top[0]]:
                 if p not in names: need_names.add(p)
             teams[str(rid)].update(per_t.get(rid, {}))
         cache["weeks"][key] = {"teams": teams, **wk}; added += 1

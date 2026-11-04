@@ -2,6 +2,11 @@
 import json, re
 P = "data/records.json"
 doc = json.load(open(P)); have = {r["id"] for r in doc["records"]}
+try:        # a record deleted in edit mode stays deleted
+    for line in open("data/changelog.jsonl"):
+        e = json.loads(line)
+        if e.get("cause") == "manual:delete": have.add(e["record"])
+except FileNotFoundError: pass
 def slug(s): return re.sub(r"[^a-z0-9]+", "-", s.lower()).strip("-")
 MOVE = {"Trades": ["Most Trades in 24hrs", "Most non-FAB Trades in a Season (League)", "Most Trades in a Season (League)", "Most non-FAB Trades in a Season (Team)",
                    "Most Trades in a Season (Team)", "Most Teams to Make a Trade", "Most FAB in a trade", "Fastest Trade Acceptance to Player Start"],

@@ -192,7 +192,7 @@ def make(d):
             for who, other, par in MK._sides(t):
                 if par is not None and season_flag(t["s"], who, "sacko"): out.append(MK._c(round(par, 1), [who], t["s"], t["w"], when=wk(t["s"], t["w"]), holder_text=f"{who} (vs {other})", card=MK.trade_card(t, other)))
         return out
-    R["trade_champ_best"] = champ_trade; R["trade_champ_worst"] = champ_trade; R["trade_sacko_worst"] = sacko_trade
+    R["trade_champ_best"] = lambda: MK.add_links(champ_trade(), "trade"); R["trade_champ_worst"] = lambda: MK.add_links(champ_trade(), "trade"); R["trade_sacko_worst"] = lambda: MK.add_links(sacko_trade(), "trade")
     def champ_fab():
         out = []
         for s in fabs:
@@ -200,7 +200,7 @@ def make(d):
             for t in s["teams"]:
                 if t.get("finish") == "Champion": out.append(_c(t["bids"], [N(t["m"])], s["s"], when=str(s["s"])))
         return out
-    R["fab_champ_spent"] = champ_fab; R["fab_champ_least"] = champ_fab
+    R["fab_champ_spent"] = lambda: MK.add_links(champ_fab(), "fab"); R["fab_champ_least"] = lambda: MK.add_links(champ_fab(), "fab")
     return R
 
 def _ord(n): return f"{n}th"

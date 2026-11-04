@@ -1,6 +1,7 @@
 """Trade, FAB and sit/start records (data since 2021).  Sources: SleeperTradeNodes data.json (trades, PAR swing) and
 FAB-Management data.json (pickups, drops, lineup decisions).  PAR = points above replacement (see those repos' READMEs)."""
-import collections, re
+import collections, os, re
+from urllib.parse import urlencode
 from metrics import norm
 
 def N(x): return {"Rohaan": "Haan"}.get(norm(x), norm(x))
@@ -186,3 +187,76 @@ FORMAT = {
  "sit_start_miss": lambda v: f"{v:.1f} pts", "sit_start_call": lambda v: f"{v:.1f} pts", "worst_week": lambda v: f"{v:.1f} pts",
  "season_bench": lambda v: f"{v:.1f} pts", "season_wins_lost": lambda v: f"{v:.0f}", "season_rumbles_lost": lambda v: f"{v:.0f}", "season_brain": lambda v: f"{v:.0f}",
 }
+
+# ---------------- richer detail cards for lineup records ----------------
+def _miss_rows(rows, wk_label=False):
+    out = []
+    for l in rows:
+        o, i = l["out"], l["inn"]
+        out.append([f'{l["slot"]}' + (f' · Wk {l["w"]}' if wk_label else "") + (" · toss-up" if l.get("tier") == "flip" else ""), f'Started {o["pl"]} ({o["pts"]:.1f}) over {i["pl"]} ({i["pts"]:.1f}) — lost {l["lost"]:.1f}'])
+    return out
+def _wl(d, s, w, m): return sorted([l for l in fab(d).get("lineup", []) if (l["s"], l["w"], l["m"]) == (s, w, m) and l.get("lost") is not None], key=lambda l: -l["lost"])
+def _sl(d, s, m): return sorted([l for l in fab(d).get("lineup", []) if l.get("tier") == "clear" and (l["s"], l["m"]) == (s, m) and l.get("lost") is not None], key=lambda l: -l["lost"])
+_orig_worst_week = worst_week
+def worst_week(d):
+    out = _orig_worst_week(d)
+    for c in out:
+        rows = _wl(d, c["season"], c["week"], c["holders"][0])
+        c["card"] = {"kind": "swaps", "title": f'Lineup misses · Week {c["week"]}, {c["season"]}', "blocks": [{"head": c["holders"][0], "chip": None, "rows": (_miss_rows(rows) + [["Total lost", f'{sum(r["lost"] for r in rows):.1f} pts']]) if rows else [["", "No detail"]]}]}
+    return out
+def _season_miss(key):
+    def f(d):
+        out = {"season_bench": season_bench, "season_wins_lost": season_wins_lost, "season_rumbles_lost": season_rumbles_lost}[key](d)
+        for c in out:
+            rows = _sl(d, c["season"], c["holders"][0])[:6]
+            c["card"] = {"kind": "swaps", "title": f'Biggest lineup misses · {c["season"]}', "blocks": [{"head": c["holders"][0], "chip": None, "rows": _miss_rows(rows, True) or [["", "None"]]}]}
+        return out
+    return f
+_orig = {k: globals()[k] for k in ("season_bench", "season_wins_lost", "season_rumbles_lost")}
+_sb, _swl, _srl = season_bench, season_wins_lost, season_rumbles_lost
+def season_bench(d): return _season_card(d, _sb(d), "Biggest lineup misses")
+def season_wins_lost(d): return _season_card(d, _swl(d), "Misses behind the lost wins")
+def season_rumbles_lost(d): return _season_card(d, _srl(d), "Misses behind the lost Rumbles")
+def _season_card(d, out, title):
+    for c in out:
+        rows = _sl(d, c["season"], c["holders"][0])[:6]
+        c["card"] = {"kind": "swaps", "title": f'{title} · {c["season"]}', "blocks": [{"head": c["holders"][0], "chip": None, "rows": _miss_rows(rows, True) or [["", "None"]]}]}
+    return out
+_sbr = season_brain
+def season_brain(d):
+    out = _sbr(d)
+    for c in out:
+        calls = sorted([x for x in fab(d).get("calls", []) if x.get("tier") == "brain" and x.get("gain") is not None and (x["s"], x["m"]) == (c["season"], c["holders"][0])], key=lambda x: -x["gain"])
+        rows = [[f'{x["slot"]} · Wk {x["w"]}', f'Started {x["out"]["pl"]} ({x["out"]["pts"]:.1f}) over {x["inn"]["pl"]} ({x["inn"]["pts"]:.1f}) — gained {x["gain"]:.1f}'] for x in calls[:6]]
+        c["card"] = {"kind": "swaps", "title": f'Big-brain calls · {c["season"]}', "blocks": [{"head": c["holders"][0], "chip": None, "rows": rows or [["", "None"]]}]}
+    return out
+for _k, _f in (("worst_week", worst_week), ("season_bench", season_bench), ("season_wins_lost", season_wins_lost), ("season_rumbles_lost", season_rumbles_lost), ("season_brain", season_brain)): REG[_k] = _f
+
+
+# ---------------- links into the sister tools (Trade Network, FAB Management) ----------------
+TRADE_BASE = os.environ.get("TRADE_BASE", "https://namkurd.github.io/SleeperTradeNodes/")
+FAB_BASE = os.environ.get("FAB_BASE", "https://namkurd.github.io/FAB-Management/")
+TOOLS = {"trade": (TRADE_BASE, "trades", "Trade Network"), "fab": (FAB_BASE, "FAB pickups", "FAB Management"), "lineup": (FAB_BASE + "lineup.html", "sit/start", "FAB Management")}
+def _lk(kind, season, manager):
+    base, noun, tool = TOOLS[kind]
+    q = {k: v for k, v in (("season", season), ("manager", manager)) if v}
+    url = lambda qq: base + ("?" + urlencode(qq) if qq else "")
+    out = {}
+    if manager:
+        out["page"] = {"label": f"{manager}'s {noun}" + (f" in {season}" if season else "") + f" · {tool}", "url": url(q)}
+        out["row"] = out["page"]
+        if season: out["sheet"] = {"label": f"All {season} {noun} · {tool}", "url": url({"season": season})}
+    elif season:
+        out["page"] = {"label": f"All {season} {noun} · {tool}", "url": url({"season": season})}; out["row"] = out["page"]
+    return out or None
+def add_links(cands, kind):
+    for c in cands:
+        hs = c.get("holders") or []; mgr = hs[0] if len(hs) == 1 and hs[0] != "DTFClub" else None
+        when = (c.get("when") or "").strip(); s = c.get("season") if (c.get("season") or 0) >= 2021 and not when.endswith("-") else None
+        c["links"] = _lk(kind, s, mgr)
+    return cands
+_KIND = {"trade": ("trade_net", "trade_best_side", "trade_worst_side", "trade_value_gap", "trade_blockbuster", "trade_assets", "trades_career", "trades_partner", "trader_best", "trader_worst", "trades_league_season", "trades_team_season"),
+         "fab": ("fab_best_par", "fab_best_fa", "fab_bid", "fab_worst", "fab_value", "fab_spent", "fab_season_par", "fab_season_net", "fab_season_hits", "fab_season_adds", "fab_season_regret", "fab_regret_drop"),
+         "lineup": ("sit_start_miss", "sit_start_call", "worst_week", "season_bench", "season_wins_lost", "season_rumbles_lost", "season_brain")}
+for _kind, _names in _KIND.items():
+    for _n in _names: REG[_n] = (lambda f, k: (lambda d: add_links(f(d), k)))(REG[_n], _kind)
