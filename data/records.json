@@ -10,7 +10,7 @@
    "metric": "titles",
    "direction": "max",
    "value": "3",
-   "value_num": 3.0,
+   "value_num": 3,
    "when": "'11/'14/'19;'18/'21/'22",
    "holder": "Ryan;Ben",
    "holders": [
@@ -74,7 +74,7 @@
    "metric": "finals",
    "direction": "max",
    "value": "6",
-   "value_num": 6.0,
+   "value_num": 6,
    "when": "'11/'14/'17/'19/'20/'21",
    "holder": "Ryan",
    "holders": [
@@ -137,7 +137,7 @@
    "metric": "final_losses",
    "direction": "max",
    "value": "3",
-   "value_num": 3.0,
+   "value_num": 3,
    "when": "'17/'20/'21; '12/'13/'25",
    "holder": "Ryan;Steven",
    "holders": [
@@ -210,7 +210,7 @@
    "metric": "final_streak",
    "direction": "max",
    "value": "3",
-   "value_num": 3.0,
+   "value_num": 3,
    "when": "2019-2021",
    "holder": "Ryan",
    "holders": [
@@ -273,7 +273,7 @@
    "metric": "playoff_apps",
    "direction": "max",
    "value": "9",
-   "value_num": 9.0,
+   "value_num": 9,
    "when": "'11/'12/'14/'16/'17/'19/'20/'21/'23",
    "holder": "Ryan",
    "holders": [
@@ -336,7 +336,7 @@
    "metric": "playoff_streak",
    "direction": "max",
    "value": "3",
-   "value_num": 3.0,
+   "value_num": 3,
    "when": "2012-2014; 2016-2018; 2019-2021; 2020-2022; 2023-2025",
    "holder": "Steven;Ben;Ryan;Ben;Joe",
    "holders": [
@@ -412,7 +412,7 @@
    "metric": "drought",
    "direction": "max",
    "value": "8",
-   "value_num": 8.0,
+   "value_num": 8,
    "when": "2013 - 2020",
    "holder": "Ankit",
    "holders": [
@@ -475,7 +475,7 @@
    "metric": "sackos",
    "direction": "max",
    "value": "4",
-   "value_num": 4.0,
+   "value_num": 4,
    "when": "'13/'15/'18/'22",
    "holder": "Ankit",
    "holders": [
@@ -538,7 +538,7 @@
    "metric": "seed1",
    "direction": "max",
    "value": "5",
-   "value_num": 5.0,
+   "value_num": 5,
    "when": "'11/'12/'16/'19/'21",
    "holder": "Ryan",
    "holders": [
@@ -589,7 +589,7 @@
    "metric": "top_pf_seasons",
    "direction": "max",
    "value": "4",
-   "value_num": 4.0,
+   "value_num": 4,
    "when": "'16/'20/'21/'23",
    "holder": "Ryan",
    "holders": [
@@ -652,7 +652,7 @@
    "metric": "bottom_pf_seasons",
    "direction": "max",
    "value": "2",
-   "value_num": 2.0,
+   "value_num": 2,
    "when": "'13/'16;'15/'19;'17/'20;'24/'25",
    "holder": "Haan;Ben;Joe;Ryan",
    "holders": [
@@ -718,7 +718,7 @@
    "metric": null,
    "direction": null,
    "value": "27",
-   "value_num": 27.0,
+   "value_num": 27,
    "when": "All-Time",
    "holder": "Steven",
    "holders": [
@@ -748,7 +748,7 @@
    "metric": null,
    "direction": null,
    "value": "22",
-   "value_num": 22.0,
+   "value_num": 22,
    "when": "All-Time",
    "holder": "Joe",
    "holders": [
@@ -778,7 +778,7 @@
    "metric": "win_streak",
    "direction": "max",
    "value": "22",
-   "value_num": 22.0,
+   "value_num": 22,
    "when": "Week 13 2021 - Week 17 2022",
    "holder": "Ben",
    "holders": [
@@ -918,7 +918,7 @@
    "metric": "high_pa_seasons",
    "direction": "max",
    "value": "3",
-   "value_num": 3.0,
+   "value_num": 3,
    "when": "'14/'19/'20",
    "holder": "Joe",
    "holders": [
@@ -981,7 +981,7 @@
    "metric": "winning_streak_seasons",
    "direction": "max",
    "value": "6",
-   "value_num": 6.0,
+   "value_num": 6,
    "when": "2013 - 2018",
    "holder": "Ben",
    "holders": [
@@ -1044,7 +1044,7 @@
    "metric": "losing_streak_seasons",
    "direction": "max",
    "value": "5",
-   "value_num": 5.0,
+   "value_num": 5,
    "when": "2019 - 2023",
    "holder": "Tommy",
    "holders": [
@@ -1172,7 +1172,7 @@
    "metric": "highest_playoff_score",
    "direction": "max",
    "value": "202.00",
-   "value_num": 202.0,
+   "value_num": 202,
    "when": "Week 17 - 2025; Week 17 - 2025",
    "holder": "Haan (won vs Steven); Haan (won vs Aidan)",
    "holders": [
@@ -1287,7 +1287,7 @@
          {
           "pos": "DEF",
           "name": "New York Giants",
-          "pts": 20.0
+          "pts": 20
          }
         ]
        },
@@ -1492,7 +1492,7 @@
          {
           "pos": "K",
           "name": "Brandon Aubrey",
-          "pts": 0.0
+          "pts": 0
          },
          {
           "pos": "DEF",
@@ -1623,7 +1623,7 @@
          {
           "pos": "TE",
           "name": "Pat Freiermuth",
-          "pts": 11.0
+          "pts": 11
          },
          {
           "pos": "WR",
@@ -1789,7 +1789,7 @@
          {
           "pos": "DEF",
           "name": "New York Giants",
-          "pts": 20.0
+          "pts": 20
          }
         ]
        }
@@ -1863,7 +1863,7 @@
        {
         "pos": "DEF",
         "name": "New York Giants",
-        "pts": 20.0
+        "pts": 20
        }
       ]
      },
@@ -1943,7 +1943,7 @@
    "metric": "closest_final",
    "direction": "min",
    "value": "158.0 to 152.0",
-   "value_num": 6.0,
+   "value_num": 6,
    "when": "2023 final",
    "holder": "Ankit over Joe",
    "holders": [
@@ -2049,7 +2049,7 @@
          {
           "pos": "WR",
           "name": "Ja'Marr Chase",
-          "pts": 0.0
+          "pts": 0
          },
          {
           "pos": "WR",
@@ -2059,12 +2059,12 @@
          {
           "pos": "K",
           "name": "Harrison Butker",
-          "pts": 2.0
+          "pts": 2
          },
          {
           "pos": "DEF",
           "name": "New York Giants",
-          "pts": 15.0
+          "pts": 15
          }
         ]
        },
@@ -2073,7 +2073,7 @@
         "name": "Aidan",
         "team": "Dawg Daly Afternoon",
         "won": false,
-        "act": 87.0,
+        "act": 87,
         "rumbles": 1,
         "vs_field": 1,
         "season_rumbles": 195,
@@ -2128,7 +2128,7 @@
          {
           "pos": "DEF",
           "name": "Kansas City Chiefs",
-          "pts": 8.0
+          "pts": 8
          }
         ]
        }
@@ -2205,7 +2205,7 @@
          {
           "pos": "K",
           "name": "Justin Tucker",
-          "pts": 8.0
+          "pts": 8
          },
          {
           "pos": "DEF",
@@ -2249,17 +2249,17 @@
          {
           "pos": "WR",
           "name": "Mike Evans",
-          "pts": 10.0
+          "pts": 10
          },
          {
           "pos": "TE",
           "name": "Evan Engram",
-          "pts": 12.0
+          "pts": 12
          },
          {
           "pos": "RB",
           "name": "Aaron Jones Sr.",
-          "pts": 14.0
+          "pts": 14
          },
          {
           "pos": "QB",
@@ -2349,7 +2349,7 @@
        {
         "pos": "K",
         "name": "Justin Tucker",
-        "pts": 8.0
+        "pts": 8
        },
        {
         "pos": "DEF",
@@ -2373,7 +2373,7 @@
        {
         "pos": "QB",
         "name": "Patrick Mahomes",
-        "pts": 11.0
+        "pts": 11
        },
        {
         "pos": "RB",
@@ -2434,7 +2434,7 @@
    "metric": "biggest_final",
    "direction": "max",
    "value": "202.0 to 120.0",
-   "value_num": 82.0,
+   "value_num": 82,
    "when": "2025 final",
    "holder": "Haan over Aidan",
    "holders": [
@@ -2605,7 +2605,7 @@
          {
           "pos": "TE",
           "name": "Pat Freiermuth",
-          "pts": 11.0
+          "pts": 11
          },
          {
           "pos": "WR",
@@ -2705,7 +2705,7 @@
        {
         "pos": "DEF",
         "name": "New York Giants",
-        "pts": 20.0
+        "pts": 20
        }
       ]
      },
@@ -3035,72 +3035,6 @@
    "links": null
   },
   {
-   "id": "biggest-standings-jump",
-   "name": "Biggest Standings Jump",
-   "category": "Seasons & Playoffs",
-   "source": "computed",
-   "metric": "standings_jump",
-   "direction": "max",
-   "value": "9th to 1st",
-   "value_num": 8,
-   "when": "2022 to 2023; 2023 to 2024; 2024 to 2025",
-   "holder": "Steven; Ben; Steven",
-   "holders": [
-    "Steven",
-    "Ben"
-   ],
-   "league_level": false,
-   "team": "",
-   "notes": [],
-   "evidence": [],
-   "replay": null,
-   "previous": null,
-   "ties": [],
-   "locked": false,
-   "status": "active",
-   "era_pair": null,
-   "size_sensitive": false,
-   "needs_definition": null,
-   "engine_gap": null,
-   "definition": "The most places a manager climbed in the final standings from one season to the next.",
-   "updated": "2026-11-03",
-   "leaderboard": [
-    {
-     "value": "9th to 1st",
-     "holder": "Steven",
-     "when": "2022 to 2023",
-     "replay": null
-    },
-    {
-     "value": "9th to 1st",
-     "holder": "Ben",
-     "when": "2023 to 2024",
-     "replay": null
-    },
-    {
-     "value": "9th to 1st",
-     "holder": "Steven",
-     "when": "2024 to 2025",
-     "replay": null
-    },
-    {
-     "value": "10th to 3rd",
-     "holder": "Steven",
-     "when": "2019 to 2020",
-     "replay": null
-    },
-    {
-     "value": "7th to 1st",
-     "holder": "Ryan",
-     "when": "2015 to 2016",
-     "replay": null
-    }
-   ],
-   "detail": null,
-   "verified": true,
-   "links": null
-  },
-  {
    "id": "biggest-standings-drop",
    "name": "Biggest Standings Drop",
    "category": "Seasons & Playoffs",
@@ -3175,7 +3109,7 @@
    "metric": "reg_wins",
    "direction": "max",
    "value": "15",
-   "value_num": 15.0,
+   "value_num": 15,
    "when": "2022",
    "holder": "Ben",
    "holders": [
@@ -3238,7 +3172,7 @@
    "metric": null,
    "direction": null,
    "value": "17",
-   "value_num": 17.0,
+   "value_num": 17,
    "when": "2022",
    "holder": "Ben",
    "holders": [
@@ -3528,7 +3462,7 @@
    "metric": "season_pf",
    "direction": "max",
    "value": "2674",
-   "value_num": 2674.0,
+   "value_num": 2674,
    "when": "2025",
    "holder": "Steven",
    "holders": [
@@ -3591,7 +3525,7 @@
    "metric": "season_pa",
    "direction": "max",
    "value": "2336",
-   "value_num": 2336.0,
+   "value_num": 2336,
    "when": "2025",
    "holder": "Ryan",
    "holders": [
@@ -3654,7 +3588,7 @@
    "metric": "season_pf",
    "direction": "min",
    "value": "1132",
-   "value_num": 1132.0,
+   "value_num": 1132,
    "when": "2017",
    "holder": "Joe",
    "holders": [
@@ -3719,7 +3653,7 @@
    "metric": "rumble_pct",
    "direction": "max",
    "value": "88%",
-   "value_num": 88.0,
+   "value_num": 88,
    "when": "2018",
    "holder": "Tommy",
    "holders": [
@@ -3781,7 +3715,7 @@
    "metric": "rumble_pct",
    "direction": "min",
    "value": "21%",
-   "value_num": 21.0,
+   "value_num": 21,
    "when": "2023",
    "holder": "Tommy",
    "holders": [
@@ -3843,7 +3777,7 @@
    "metric": "field_pct",
    "direction": "max",
    "value": "101-25 (80.2%)",
-   "value_num": 101.0,
+   "value_num": 101,
    "when": "2014",
    "holder": "Ben",
    "holders": [
@@ -3906,7 +3840,7 @@
    "metric": "field_pct",
    "direction": "min",
    "value": "33-102 (24.4%)",
-   "value_num": 33.0,
+   "value_num": 33,
    "when": "2025",
    "holder": "Ryan",
    "holders": [
@@ -3969,7 +3903,7 @@
    "metric": "composite",
    "direction": "max",
    "value": "26",
-   "value_num": 26.0,
+   "value_num": 26,
    "when": "2014",
    "holder": "Ben",
    "holders": [
@@ -4033,7 +3967,7 @@
    "metric": "composite",
    "direction": "min",
    "value": "5",
-   "value_num": 5.0,
+   "value_num": 5,
    "when": "2023, 2022",
    "holder": "Tommy, Tommy",
    "holders": [
@@ -4105,7 +4039,7 @@
    "metric": "top_weeks",
    "direction": "max",
    "value": "6",
-   "value_num": 6.0,
+   "value_num": 6,
    "when": "2024, 2025",
    "holder": "Ben, Steven",
    "holders": [
@@ -4169,7 +4103,7 @@
    "metric": "bottom_weeks",
    "direction": "max",
    "value": "5",
-   "value_num": 5.0,
+   "value_num": 5,
    "when": "2025, 2024, 2019",
    "holder": "Alex, Ryan, Ben",
    "holders": [
@@ -4234,7 +4168,7 @@
    "metric": "top_streak",
    "direction": "max",
    "value": "4",
-   "value_num": 4.0,
+   "value_num": 4,
    "when": "Week 4 2017 - Week 7 2017",
    "holder": "Steven",
    "holders": [
@@ -4298,7 +4232,7 @@
    "metric": "bottom_streak",
    "direction": "max",
    "value": "3",
-   "value_num": 3.0,
+   "value_num": 3,
    "when": "Week 2-4 2024, Week 8-10 2019",
    "holder": "Aidan, Ben",
    "holders": [
@@ -4362,7 +4296,7 @@
    "metric": "pts_missed_playoffs",
    "direction": "max",
    "value": "2173",
-   "value_num": 2173.0,
+   "value_num": 2173,
    "when": "2025",
    "holder": "Ben",
    "holders": [
@@ -4425,7 +4359,7 @@
    "metric": "pts_made_playoffs",
    "direction": "min",
    "value": "1283",
-   "value_num": 1283.0,
+   "value_num": 1283,
    "when": "2015",
    "holder": "Jake",
    "holders": [
@@ -4590,7 +4524,7 @@
          {
           "pos": "WR",
           "name": "Jaxon Smith-Njigba",
-          "pts": 15.0
+          "pts": 15
          },
          {
           "pos": "QB",
@@ -4644,7 +4578,7 @@
          {
           "pos": "RB",
           "name": "D'Andre Swift",
-          "pts": 18.0
+          "pts": 18
          },
          {
           "pos": "WR",
@@ -4780,7 +4714,7 @@
          {
           "pos": "RB",
           "name": "Zach Charbonnet",
-          "pts": 11.0
+          "pts": 11
          },
          {
           "pos": "TE",
@@ -4852,7 +4786,7 @@
          {
           "pos": "QB",
           "name": "Baker Mayfield",
-          "pts": 18.0
+          "pts": 18
          },
          {
           "pos": "RB",
@@ -4956,7 +4890,7 @@
          {
           "pos": "K",
           "name": "Tyler Bass",
-          "pts": 6.0
+          "pts": 6
          },
          {
           "pos": "DEF",
@@ -5023,7 +4957,7 @@
          {
           "pos": "WR",
           "name": "George Pickens",
-          "pts": 28.0
+          "pts": 28
          },
          {
           "pos": "WR",
@@ -5067,7 +5001,7 @@
          {
           "pos": "RB",
           "name": "De'Von Achane",
-          "pts": 18.0
+          "pts": 18
          },
          {
           "pos": "RB",
@@ -5077,7 +5011,7 @@
          {
           "pos": "TE",
           "name": "Harold Fannin Jr.",
-          "pts": 20.0
+          "pts": 20
          },
          {
           "pos": "WR",
@@ -5379,7 +5313,7 @@
          {
           "pos": "DEF",
           "name": "Atlanta Falcons",
-          "pts": 3.0
+          "pts": 3
          }
         ]
        },
@@ -5423,7 +5357,7 @@
          {
           "pos": "TE",
           "name": "Kyle Pitts Sr.",
-          "pts": 19.0
+          "pts": 19
          },
          {
           "pos": "RB",
@@ -5438,12 +5372,12 @@
          {
           "pos": "K",
           "name": "Justin Tucker",
-          "pts": 8.0
+          "pts": 8
          },
          {
           "pos": "DEF",
           "name": "Baltimore Ravens",
-          "pts": 4.0
+          "pts": 4
          }
         ]
        }
@@ -5480,7 +5414,7 @@
          {
           "pos": "QB",
           "name": "Baker Mayfield",
-          "pts": 18.0
+          "pts": 18
          },
          {
           "pos": "RB",
@@ -5584,7 +5518,7 @@
          {
           "pos": "K",
           "name": "Tyler Bass",
-          "pts": 6.0
+          "pts": 6
          },
          {
           "pos": "DEF",
@@ -5666,12 +5600,12 @@
          {
           "pos": "K",
           "name": "Tyler Bass",
-          "pts": 8.0
+          "pts": 8
          },
          {
           "pos": "DEF",
           "name": "Arizona Cardinals",
-          "pts": 7.0
+          "pts": 7
          }
         ]
        },
@@ -5695,7 +5629,7 @@
          {
           "pos": "RB",
           "name": "Derrick Henry",
-          "pts": 31.0
+          "pts": 31
          },
          {
           "pos": "RB",
@@ -5730,12 +5664,12 @@
          {
           "pos": "K",
           "name": "Justin Tucker",
-          "pts": 3.0
+          "pts": 3
          },
          {
           "pos": "DEF",
           "name": "Baltimore Ravens",
-          "pts": 0.0
+          "pts": 0
          }
         ]
        }
@@ -5944,17 +5878,17 @@
        {
         "pos": "WR",
         "name": "Tee Higgins",
-        "pts": 2.0
+        "pts": 2
        },
        {
         "pos": "K",
         "name": "Ryan Succop",
-        "pts": 13.0
+        "pts": 13
        },
        {
         "pos": "DEF",
         "name": "New England Patriots",
-        "pts": 26.0
+        "pts": 26
        }
       ]
      },
@@ -5973,7 +5907,7 @@
        {
         "pos": "QB",
         "name": "Patrick Mahomes",
-        "pts": 6.0
+        "pts": 6
        },
        {
         "pos": "RB",
@@ -6018,7 +5952,7 @@
        {
         "pos": "DEF",
         "name": "San Francisco 49ers",
-        "pts": 11.0
+        "pts": 11
        }
       ]
      }
@@ -6104,7 +6038,7 @@
          {
           "pos": "RB",
           "name": "Sony Michel",
-          "pts": 12.0
+          "pts": 12
          },
          {
           "pos": "RB",
@@ -6139,12 +6073,12 @@
          {
           "pos": "K",
           "name": "Nick Folk",
-          "pts": 5.0
+          "pts": 5
          },
          {
           "pos": "DEF",
           "name": "Jacksonville Jaguars",
-          "pts": 4.0
+          "pts": 4
          }
         ]
        },
@@ -6203,12 +6137,12 @@
          {
           "pos": "K",
           "name": "Chris Boswell",
-          "pts": 16.0
+          "pts": 16
          },
          {
           "pos": "DEF",
           "name": "Arizona Cardinals",
-          "pts": 3.0
+          "pts": 3
          }
         ]
        }
@@ -6290,7 +6224,7 @@
          {
           "pos": "DEF",
           "name": "Los Angeles Rams",
-          "pts": 1.0
+          "pts": 1
          }
         ]
        },
@@ -6319,7 +6253,7 @@
          {
           "pos": "RB",
           "name": "Adrian Peterson",
-          "pts": 2.0
+          "pts": 2
          },
          {
           "pos": "WR",
@@ -6354,7 +6288,7 @@
          {
           "pos": "DEF",
           "name": "Baltimore Ravens",
-          "pts": 6.0
+          "pts": 6
          }
         ]
        }
@@ -6475,7 +6409,7 @@
          {
           "pos": "WR",
           "name": "Tee Higgins",
-          "pts": 0.0
+          "pts": 0
          },
          {
           "pos": "TE",
@@ -6495,7 +6429,7 @@
          {
           "pos": "K",
           "name": "Daniel Carlson",
-          "pts": 5.0
+          "pts": 5
          },
          {
           "pos": "DEF",
@@ -6542,7 +6476,7 @@
          {
           "pos": "RB",
           "name": "Javonte Williams",
-          "pts": 8.0
+          "pts": 8
          },
          {
           "pos": "TE",
@@ -6552,7 +6486,7 @@
          {
           "pos": "TE",
           "name": "Colby Parkinson",
-          "pts": 4.0
+          "pts": 4
          },
          {
           "pos": "WR",
@@ -6611,12 +6545,12 @@
          {
           "pos": "TE",
           "name": "Dalton Schultz",
-          "pts": 29.0
+          "pts": 29
          },
          {
           "pos": "RB",
           "name": "Aaron Jones Sr.",
-          "pts": 12.0
+          "pts": 12
          },
          {
           "pos": "WR",
@@ -6626,7 +6560,7 @@
          {
           "pos": "WR",
           "name": "Ja'Marr Chase",
-          "pts": 27.0
+          "pts": 27
          },
          {
           "pos": "QB",
@@ -6641,7 +6575,7 @@
          {
           "pos": "K",
           "name": "Eddy Pineiro",
-          "pts": 5.0
+          "pts": 5
          },
          {
           "pos": "DEF",
@@ -6732,7 +6666,7 @@
          {
           "pos": "RB",
           "name": "Javonte Williams",
-          "pts": 8.0
+          "pts": 8
          },
          {
           "pos": "TE",
@@ -6742,7 +6676,7 @@
          {
           "pos": "TE",
           "name": "Colby Parkinson",
-          "pts": 4.0
+          "pts": 4
          },
          {
           "pos": "WR",
@@ -6801,12 +6735,12 @@
          {
           "pos": "TE",
           "name": "Dalton Schultz",
-          "pts": 29.0
+          "pts": 29
          },
          {
           "pos": "RB",
           "name": "Aaron Jones Sr.",
-          "pts": 12.0
+          "pts": 12
          },
          {
           "pos": "WR",
@@ -6816,7 +6750,7 @@
          {
           "pos": "WR",
           "name": "Ja'Marr Chase",
-          "pts": 27.0
+          "pts": 27
          },
          {
           "pos": "QB",
@@ -6831,7 +6765,7 @@
          {
           "pos": "K",
           "name": "Eddy Pineiro",
-          "pts": 5.0
+          "pts": 5
          },
          {
           "pos": "DEF",
@@ -6888,12 +6822,12 @@
          {
           "pos": "TE",
           "name": "Sam LaPorta",
-          "pts": 5.0
+          "pts": 5
          },
          {
           "pos": "WR",
           "name": "Jameson Williams",
-          "pts": 0.0
+          "pts": 0
          },
          {
           "pos": "WR",
@@ -6913,7 +6847,7 @@
          {
           "pos": "K",
           "name": "Matt Gay",
-          "pts": 2.0
+          "pts": 2
          },
          {
           "pos": "DEF",
@@ -6927,7 +6861,7 @@
         "name": "Christian",
         "team": "Spider 3 Y Banana",
         "won": true,
-        "act": 154.0,
+        "act": 154,
         "rumbles": 14,
         "vs_field": 5,
         "season_rumbles": 55,
@@ -6957,7 +6891,7 @@
          {
           "pos": "WR",
           "name": "Quentin Johnston",
-          "pts": 11.0
+          "pts": 11
          },
          {
           "pos": "WR",
@@ -7024,7 +6958,7 @@
          {
           "pos": "RB",
           "name": "Sony Michel",
-          "pts": 12.0
+          "pts": 12
          },
          {
           "pos": "RB",
@@ -7059,12 +6993,12 @@
          {
           "pos": "K",
           "name": "Nick Folk",
-          "pts": 5.0
+          "pts": 5
          },
          {
           "pos": "DEF",
           "name": "Jacksonville Jaguars",
-          "pts": 4.0
+          "pts": 4
          }
         ]
        },
@@ -7123,12 +7057,12 @@
          {
           "pos": "K",
           "name": "Chris Boswell",
-          "pts": 16.0
+          "pts": 16
          },
          {
           "pos": "DEF",
           "name": "Arizona Cardinals",
-          "pts": 3.0
+          "pts": 3
          }
         ]
        }
@@ -7264,7 +7198,7 @@
          {
           "pos": "QB",
           "name": "Matthew Stafford",
-          "pts": 14.0
+          "pts": 14
          },
          {
           "pos": "K",
@@ -7492,7 +7426,7 @@
          {
           "pos": "WR",
           "name": "Tyreek Hill",
-          "pts": 15.0
+          "pts": 15
          },
          {
           "pos": "WR",
@@ -7619,12 +7553,12 @@
          {
           "pos": "WR",
           "name": "Jaylen Waddle",
-          "pts": 0.0
+          "pts": 0
          },
          {
           "pos": "TE",
           "name": "T.J. Hockenson",
-          "pts": 0.0
+          "pts": 0
          },
          {
           "pos": "RB",
@@ -7663,7 +7597,7 @@
          {
           "pos": "QB",
           "name": "Russell Wilson",
-          "pts": 0.0
+          "pts": 0
          },
          {
           "pos": "RB",
@@ -7693,7 +7627,7 @@
          {
           "pos": "RB",
           "name": "Raheem Mostert",
-          "pts": 0.0
+          "pts": 0
          },
          {
           "pos": "RB",
@@ -7815,7 +7749,7 @@
          {
           "pos": "WR",
           "name": "Brian Thomas Jr.",
-          "pts": 15.0
+          "pts": 15
          },
          {
           "pos": "QB",
@@ -7976,7 +7910,7 @@
          {
           "pos": "RB",
           "name": "Omarion Hampton",
-          "pts": 29.0
+          "pts": 29
          },
          {
           "pos": "RB",
@@ -7986,7 +7920,7 @@
          {
           "pos": "TE",
           "name": "Harold Fannin Jr.",
-          "pts": 5.0
+          "pts": 5
          },
          {
           "pos": "WR",
@@ -8075,7 +8009,7 @@
          {
           "pos": "K",
           "name": "Spencer Shrader",
-          "pts": 11.0
+          "pts": 11
          },
          {
           "pos": "DEF",
@@ -8153,7 +8087,7 @@
        {
         "pos": "RB",
         "name": "Jahmyr Gibbs",
-        "pts": 24.0
+        "pts": 24
        },
        {
         "pos": "RB",
@@ -8379,7 +8313,7 @@
          {
           "pos": "QB",
           "name": "Matthew Stafford",
-          "pts": 14.0
+          "pts": 14
          },
          {
           "pos": "K",
@@ -8671,17 +8605,17 @@
          {
           "pos": "WR",
           "name": "Tee Higgins",
-          "pts": 2.0
+          "pts": 2
          },
          {
           "pos": "K",
           "name": "Ryan Succop",
-          "pts": 13.0
+          "pts": 13
          },
          {
           "pos": "DEF",
           "name": "New England Patriots",
-          "pts": 26.0
+          "pts": 26
          }
         ]
        },
@@ -8700,7 +8634,7 @@
          {
           "pos": "QB",
           "name": "Patrick Mahomes",
-          "pts": 6.0
+          "pts": 6
          },
          {
           "pos": "RB",
@@ -8745,7 +8679,7 @@
          {
           "pos": "DEF",
           "name": "San Francisco 49ers",
-          "pts": 11.0
+          "pts": 11
          }
         ]
        }
@@ -8822,7 +8756,7 @@
          {
           "pos": "K",
           "name": "Cam Little",
-          "pts": 4.0
+          "pts": 4
          },
          {
           "pos": "DEF",
@@ -8929,12 +8863,12 @@
        {
         "pos": "TE",
         "name": "Dalton Schultz",
-        "pts": 29.0
+        "pts": 29
        },
        {
         "pos": "RB",
         "name": "Aaron Jones Sr.",
-        "pts": 12.0
+        "pts": 12
        },
        {
         "pos": "WR",
@@ -8944,7 +8878,7 @@
        {
         "pos": "WR",
         "name": "Ja'Marr Chase",
-        "pts": 27.0
+        "pts": 27
        },
        {
         "pos": "QB",
@@ -8959,7 +8893,7 @@
        {
         "pos": "K",
         "name": "Eddy Pineiro",
-        "pts": 5.0
+        "pts": 5
        },
        {
         "pos": "DEF",
@@ -8988,7 +8922,7 @@
        {
         "pos": "RB",
         "name": "Javonte Williams",
-        "pts": 8.0
+        "pts": 8
        },
        {
         "pos": "TE",
@@ -8998,7 +8932,7 @@
        {
         "pos": "TE",
         "name": "Colby Parkinson",
-        "pts": 4.0
+        "pts": 4
        },
        {
         "pos": "WR",
@@ -9161,7 +9095,7 @@
          {
           "pos": "DEF",
           "name": "Indianapolis Colts",
-          "pts": 8.0
+          "pts": 8
          }
         ]
        },
@@ -9220,12 +9154,12 @@
          {
           "pos": "K",
           "name": "Tyler Bass",
-          "pts": 3.0
+          "pts": 3
          },
          {
           "pos": "DEF",
           "name": "Chicago Bears",
-          "pts": 22.0
+          "pts": 22
          }
         ]
        }
@@ -9267,7 +9201,7 @@
          {
           "pos": "RB",
           "name": "Breece Hall",
-          "pts": 9.0
+          "pts": 9
          },
          {
           "pos": "RB",
@@ -9287,7 +9221,7 @@
          {
           "pos": "TE",
           "name": "Travis Kelce",
-          "pts": 21.0
+          "pts": 21
          },
          {
           "pos": "WR",
@@ -9366,7 +9300,7 @@
          {
           "pos": "K",
           "name": "Justin Tucker",
-          "pts": 12.0
+          "pts": 12
          },
          {
           "pos": "DEF",
@@ -9438,7 +9372,7 @@
          {
           "pos": "WR",
           "name": "Keenan Allen",
-          "pts": 9.0
+          "pts": 9
          },
          {
           "pos": "RB",
@@ -9453,7 +9387,7 @@
          {
           "pos": "DEF",
           "name": "Las Vegas Raiders",
-          "pts": 5.0
+          "pts": 5
          }
         ]
        },
@@ -9512,12 +9446,12 @@
          {
           "pos": "K",
           "name": "Greg Zuerlein",
-          "pts": 15.0
+          "pts": 15
          },
          {
           "pos": "DEF",
           "name": "Minnesota Vikings",
-          "pts": 11.0
+          "pts": 11
          }
         ]
        }
@@ -9569,7 +9503,7 @@
          {
           "pos": "WR",
           "name": "Tyreek Hill",
-          "pts": 25.0
+          "pts": 25
          },
          {
           "pos": "WR",
@@ -9579,7 +9513,7 @@
          {
           "pos": "TE",
           "name": "George Kittle",
-          "pts": 8.0
+          "pts": 8
          },
          {
           "pos": "RB",
@@ -9648,7 +9582,7 @@
          {
           "pos": "WR",
           "name": "Cooper Kupp",
-          "pts": 31.0
+          "pts": 31
          },
          {
           "pos": "QB",
@@ -9770,7 +9704,7 @@
        {
         "pos": "TE",
         "name": "Kyle Pitts Sr.",
-        "pts": 5.0
+        "pts": 5
        },
        {
         "pos": "WR",
@@ -9966,7 +9900,7 @@
          {
           "pos": "RB",
           "name": "Travis Etienne Jr.",
-          "pts": 11.0
+          "pts": 11
          },
          {
           "pos": "RB",
@@ -10001,7 +9935,7 @@
          {
           "pos": "K",
           "name": "Jake Elliott",
-          "pts": 1.0
+          "pts": 1
          },
          {
           "pos": "DEF",
@@ -10058,7 +9992,7 @@
          {
           "pos": "WR",
           "name": "A.J. Brown",
-          "pts": 26.0
+          "pts": 26
          },
          {
           "pos": "WR",
@@ -10073,7 +10007,7 @@
          {
           "pos": "RB",
           "name": "Damien Harris",
-          "pts": 14.0
+          "pts": 14
          },
          {
           "pos": "WR",
@@ -10083,12 +10017,12 @@
          {
           "pos": "K",
           "name": "Randy Bullock",
-          "pts": 13.0
+          "pts": 13
          },
          {
           "pos": "DEF",
           "name": "Los Angeles Rams",
-          "pts": 8.0
+          "pts": 8
          }
         ]
        },
@@ -10152,7 +10086,7 @@
          {
           "pos": "DEF",
           "name": "Cincinnati Bengals",
-          "pts": 1.0
+          "pts": 1
          }
         ]
        }
@@ -10229,12 +10163,12 @@
          {
           "pos": "K",
           "name": "Dustin Hopkins",
-          "pts": 0.0
+          "pts": 0
          },
          {
           "pos": "DEF",
           "name": "Philadelphia Eagles",
-          "pts": 6.0
+          "pts": 6
          }
         ]
        },
@@ -10298,7 +10232,7 @@
          {
           "pos": "DEF",
           "name": "Houston Texans",
-          "pts": 9.0
+          "pts": 9
          }
         ]
        }
@@ -10345,7 +10279,7 @@
          {
           "pos": "RB",
           "name": "Omarion Hampton",
-          "pts": 10.0
+          "pts": 10
          },
          {
           "pos": "TE",
@@ -10355,12 +10289,12 @@
          {
           "pos": "WR",
           "name": "Ladd McConkey",
-          "pts": 4.0
+          "pts": 4
          },
          {
           "pos": "WR",
           "name": "Tetairoa McMillan",
-          "pts": 5.0
+          "pts": 5
          },
          {
           "pos": "WR",
@@ -10409,7 +10343,7 @@
          {
           "pos": "RB",
           "name": "Derrick Henry",
-          "pts": 12.0
+          "pts": 12
          },
          {
           "pos": "TE",
@@ -10541,7 +10475,7 @@
        {
         "pos": "RB",
         "name": "Travis Etienne Jr.",
-        "pts": 11.0
+        "pts": 11
        },
        {
         "pos": "RB",
@@ -10576,7 +10510,7 @@
        {
         "pos": "K",
         "name": "Jake Elliott",
-        "pts": 1.0
+        "pts": 1
        },
        {
         "pos": "DEF",
@@ -10712,7 +10646,7 @@
          {
           "pos": "QB",
           "name": "Matthew Stafford",
-          "pts": 14.0
+          "pts": 14
          },
          {
           "pos": "K",
@@ -10868,7 +10802,7 @@
          {
           "pos": "DEF",
           "name": "Baltimore Ravens",
-          "pts": -1.0
+          "pts": -1
          }
         ]
        },
@@ -10917,7 +10851,7 @@
          {
           "pos": "WR",
           "name": "Brandon Aiyuk",
-          "pts": 0.0
+          "pts": 0
          },
          {
           "pos": "WR",
@@ -10927,12 +10861,12 @@
          {
           "pos": "K",
           "name": "Rodrigo Blankenship",
-          "pts": 4.0
+          "pts": 4
          },
          {
           "pos": "DEF",
           "name": "Buffalo Bills",
-          "pts": 5.0
+          "pts": 5
          }
         ]
        }
@@ -10979,7 +10913,7 @@
          {
           "pos": "RB",
           "name": "Joe Mixon",
-          "pts": 21.0
+          "pts": 21
          },
          {
           "pos": "WR",
@@ -11009,7 +10943,7 @@
          {
           "pos": "K",
           "name": "Cameron Dicker",
-          "pts": 8.0
+          "pts": 8
          },
          {
           "pos": "DEF",
@@ -11073,7 +11007,7 @@
          {
           "pos": "K",
           "name": "Matt Ammendola",
-          "pts": 2.0
+          "pts": 2
          },
          {
           "pos": "DEF",
@@ -11105,7 +11039,7 @@
         "name": "Christian",
         "team": "Spider 3 Y Banana",
         "won": true,
-        "act": 154.0,
+        "act": 154,
         "rumbles": 14,
         "vs_field": 5,
         "season_rumbles": 55,
@@ -11135,7 +11069,7 @@
          {
           "pos": "WR",
           "name": "Quentin Johnston",
-          "pts": 11.0
+          "pts": 11
          },
          {
           "pos": "WR",
@@ -11194,12 +11128,12 @@
          {
           "pos": "TE",
           "name": "Sam LaPorta",
-          "pts": 5.0
+          "pts": 5
          },
          {
           "pos": "WR",
           "name": "Jameson Williams",
-          "pts": 0.0
+          "pts": 0
          },
          {
           "pos": "WR",
@@ -11219,7 +11153,7 @@
          {
           "pos": "K",
           "name": "Matt Gay",
-          "pts": 2.0
+          "pts": 2
          },
          {
           "pos": "DEF",
@@ -11261,12 +11195,12 @@
        {
         "pos": "TE",
         "name": "Dalton Schultz",
-        "pts": 29.0
+        "pts": 29
        },
        {
         "pos": "RB",
         "name": "Aaron Jones Sr.",
-        "pts": 12.0
+        "pts": 12
        },
        {
         "pos": "WR",
@@ -11276,7 +11210,7 @@
        {
         "pos": "WR",
         "name": "Ja'Marr Chase",
-        "pts": 27.0
+        "pts": 27
        },
        {
         "pos": "QB",
@@ -11291,7 +11225,7 @@
        {
         "pos": "K",
         "name": "Eddy Pineiro",
-        "pts": 5.0
+        "pts": 5
        },
        {
         "pos": "DEF",
@@ -11320,7 +11254,7 @@
        {
         "pos": "RB",
         "name": "Javonte Williams",
-        "pts": 8.0
+        "pts": 8
        },
        {
         "pos": "TE",
@@ -11330,7 +11264,7 @@
        {
         "pos": "TE",
         "name": "Colby Parkinson",
-        "pts": 4.0
+        "pts": 4
        },
        {
         "pos": "WR",
@@ -11456,7 +11390,7 @@
          {
           "pos": "WR",
           "name": "Michael Gallup",
-          "pts": 6.0
+          "pts": 6
          },
          {
           "pos": "WR",
@@ -11481,12 +11415,12 @@
          {
           "pos": "K",
           "name": "Jason Myers",
-          "pts": 6.0
+          "pts": 6
          },
          {
           "pos": "DEF",
           "name": "Buffalo Bills",
-          "pts": 12.0
+          "pts": 12
          }
         ]
        },
@@ -11545,12 +11479,12 @@
          {
           "pos": "K",
           "name": "Graham Gano",
-          "pts": 2.0
+          "pts": 2
          },
          {
           "pos": "DEF",
           "name": "Tampa Bay Buccaneers",
-          "pts": -5.0
+          "pts": -5
          }
         ]
        }
@@ -11607,7 +11541,7 @@
          {
           "pos": "WR",
           "name": "Tee Higgins",
-          "pts": 0.0
+          "pts": 0
          },
          {
           "pos": "TE",
@@ -11627,7 +11561,7 @@
          {
           "pos": "K",
           "name": "Daniel Carlson",
-          "pts": 5.0
+          "pts": 5
          },
          {
           "pos": "DEF",
@@ -11778,7 +11712,7 @@
          {
           "pos": "DEF",
           "name": "Denver Broncos",
-          "pts": 17.0
+          "pts": 17
          }
         ]
        },
@@ -11842,7 +11776,7 @@
          {
           "pos": "DEF",
           "name": "Tampa Bay Buccaneers",
-          "pts": -2.0
+          "pts": -2
          }
         ]
        }
@@ -11894,7 +11828,7 @@
          {
           "pos": "WR",
           "name": "DeVonta Smith",
-          "pts": 6.0
+          "pts": 6
          },
          {
           "pos": "WR",
@@ -11919,7 +11853,7 @@
          {
           "pos": "K",
           "name": "Dustin Hopkins",
-          "pts": 0.0
+          "pts": 0
          },
          {
           "pos": "DEF",
@@ -11948,7 +11882,7 @@
          {
           "pos": "RB",
           "name": "Zack Moss",
-          "pts": 0.0
+          "pts": 0
          },
          {
           "pos": "RB",
@@ -11978,7 +11912,7 @@
          {
           "pos": "QB",
           "name": "Trevor Lawrence",
-          "pts": 0.0
+          "pts": 0
          },
          {
           "pos": "K",
@@ -12146,12 +12080,12 @@
          {
           "pos": "RB",
           "name": "Bucky Irving",
-          "pts": 34.0
+          "pts": 34
          },
          {
           "pos": "TE",
           "name": "Brock Bowers",
-          "pts": 24.0
+          "pts": 24
          },
          {
           "pos": "WR",
@@ -12374,7 +12308,7 @@
          {
           "pos": "RB",
           "name": "De'Von Achane",
-          "pts": 18.0
+          "pts": 18
          },
          {
           "pos": "RB",
@@ -12384,7 +12318,7 @@
          {
           "pos": "TE",
           "name": "Harold Fannin Jr.",
-          "pts": 20.0
+          "pts": 20
          },
          {
           "pos": "WR",
@@ -12458,7 +12392,7 @@
          {
           "pos": "WR",
           "name": "George Pickens",
-          "pts": 28.0
+          "pts": 28
          },
          {
           "pos": "WR",
@@ -12589,12 +12523,12 @@
          {
           "pos": "TE",
           "name": "Colston Loveland",
-          "pts": 19.0
+          "pts": 19
          },
          {
           "pos": "WR",
           "name": "Puka Nacua",
-          "pts": 15.0
+          "pts": 15
          },
          {
           "pos": "WR",
@@ -12604,7 +12538,7 @@
          {
           "pos": "TE",
           "name": "Kyle Pitts Sr.",
-          "pts": 24.0
+          "pts": 24
          },
          {
           "pos": "QB",
@@ -12677,7 +12611,7 @@
        {
         "pos": "WR",
         "name": "Brian Thomas Jr.",
-        "pts": 25.0
+        "pts": 25
        },
        {
         "pos": "WR",
@@ -12736,7 +12670,7 @@
        {
         "pos": "WR",
         "name": "Michael Pittman Jr.",
-        "pts": 5.0
+        "pts": 5
        },
        {
         "pos": "WR",
@@ -12776,7 +12710,7 @@
    "metric": "league_week",
    "direction": "max",
    "value": "160 (107.8% of League Average)",
-   "value_num": 160.0,
+   "value_num": 160,
    "when": "Week 15 - 2025",
    "holder": "DTFClub",
    "holders": [
@@ -13242,17 +13176,17 @@
        {
         "pos": "WR",
         "name": "CeeDee Lamb",
-        "pts": 34.0
+        "pts": 34
        },
        {
         "pos": "K",
         "name": "Daniel Carlson",
-        "pts": 5.0
+        "pts": 5
        },
        {
         "pos": "DEF",
         "name": "Cincinnati Bengals",
-        "pts": 12.0
+        "pts": 12
        }
       ]
      },
@@ -13296,12 +13230,12 @@
        {
         "pos": "TE",
         "name": "George Kittle",
-        "pts": 30.0
+        "pts": 30
        },
        {
         "pos": "RB",
         "name": "Alvin Kamara",
-        "pts": 19.0
+        "pts": 19
        },
        {
         "pos": "WR",
@@ -13316,7 +13250,7 @@
        {
         "pos": "DEF",
         "name": "Tampa Bay Buccaneers",
-        "pts": 7.0
+        "pts": 7
        }
       ]
      }
@@ -13405,12 +13339,12 @@
          {
           "pos": "K",
           "name": "Jason Myers",
-          "pts": 4.0
+          "pts": 4
          },
          {
           "pos": "DEF",
           "name": "Buffalo Bills",
-          "pts": 11.0
+          "pts": 11
          }
         ]
        },
@@ -13439,12 +13373,12 @@
          {
           "pos": "RB",
           "name": "Latavius Murray",
-          "pts": 7.0
+          "pts": 7
          },
          {
           "pos": "WR",
           "name": "Marquise Goodwin",
-          "pts": 0.0
+          "pts": 0
          },
          {
           "pos": "WR",
@@ -13469,12 +13403,12 @@
          {
           "pos": "K",
           "name": "Evan McPherson",
-          "pts": 2.0
+          "pts": 2
          },
          {
           "pos": "DEF",
           "name": "San Francisco 49ers",
-          "pts": 7.0
+          "pts": 7
          }
         ]
        }
@@ -13521,7 +13455,7 @@
          {
           "pos": "RB",
           "name": "Tony Pollard",
-          "pts": 14.0
+          "pts": 14
          },
          {
           "pos": "WR",
@@ -13551,12 +13485,12 @@
          {
           "pos": "K",
           "name": "Justin Tucker",
-          "pts": 8.0
+          "pts": 8
          },
          {
           "pos": "DEF",
           "name": "Baltimore Ravens",
-          "pts": 7.0
+          "pts": 7
          }
         ]
        },
@@ -13615,12 +13549,12 @@
          {
           "pos": "K",
           "name": "Nick Folk",
-          "pts": -2.0
+          "pts": -2
          },
          {
           "pos": "DEF",
           "name": "Denver Broncos",
-          "pts": -5.0
+          "pts": -5
          }
         ]
        }
@@ -13682,12 +13616,12 @@
          {
           "pos": "TE",
           "name": "George Kittle",
-          "pts": 30.0
+          "pts": 30
          },
          {
           "pos": "RB",
           "name": "Alvin Kamara",
-          "pts": 19.0
+          "pts": 19
          },
          {
           "pos": "WR",
@@ -13702,7 +13636,7 @@
          {
           "pos": "DEF",
           "name": "Tampa Bay Buccaneers",
-          "pts": 7.0
+          "pts": 7
          }
         ]
        },
@@ -13756,17 +13690,17 @@
          {
           "pos": "WR",
           "name": "CeeDee Lamb",
-          "pts": 34.0
+          "pts": 34
          },
          {
           "pos": "K",
           "name": "Daniel Carlson",
-          "pts": 5.0
+          "pts": 5
          },
          {
           "pos": "DEF",
           "name": "Cincinnati Bengals",
-          "pts": 12.0
+          "pts": 12
          }
         ]
        }
@@ -14161,7 +14095,7 @@
          {
           "pos": "WR",
           "name": "Marvin Jones",
-          "pts": 3.0
+          "pts": 3
          },
          {
           "pos": "WR",
@@ -14191,7 +14125,7 @@
          {
           "pos": "DEF",
           "name": "Tampa Bay Buccaneers",
-          "pts": 8.0
+          "pts": 8
          }
         ]
        },
@@ -14255,7 +14189,7 @@
          {
           "pos": "DEF",
           "name": "Pittsburgh Steelers",
-          "pts": 4.0
+          "pts": 4
          }
         ]
        }
@@ -14297,7 +14231,7 @@
          {
           "pos": "RB",
           "name": "Isiah Pacheco",
-          "pts": 16.0
+          "pts": 16
          },
          {
           "pos": "RB",
@@ -14483,7 +14417,7 @@
          {
           "pos": "DEF",
           "name": "Dallas Cowboys",
-          "pts": 13.0
+          "pts": 13
          }
         ]
        },
@@ -14507,7 +14441,7 @@
          {
           "pos": "RB",
           "name": "Austin Ekeler",
-          "pts": 7.0
+          "pts": 7
          },
          {
           "pos": "RB",
@@ -14547,7 +14481,7 @@
          {
           "pos": "DEF",
           "name": "Tampa Bay Buccaneers",
-          "pts": 6.0
+          "pts": 6
          }
         ]
        }
@@ -14581,7 +14515,7 @@
        {
         "pos": "RB",
         "name": "James Cook III",
-        "pts": 16.0
+        "pts": 16
        },
        {
         "pos": "RB",
@@ -14606,7 +14540,7 @@
        {
         "pos": "WR",
         "name": "Jaxon Smith-Njigba",
-        "pts": 25.0
+        "pts": 25
        },
        {
         "pos": "QB",
@@ -14680,7 +14614,7 @@
        {
         "pos": "K",
         "name": "Ka'imi Fairbairn",
-        "pts": 18.0
+        "pts": 18
        },
        {
         "pos": "DEF",
@@ -14963,7 +14897,7 @@
          {
           "pos": "DEF",
           "name": "Pittsburgh Steelers",
-          "pts": 4.0
+          "pts": 4
          }
         ]
        },
@@ -14997,7 +14931,7 @@
          {
           "pos": "WR",
           "name": "Marvin Jones",
-          "pts": 3.0
+          "pts": 3
          },
          {
           "pos": "WR",
@@ -15027,7 +14961,7 @@
          {
           "pos": "DEF",
           "name": "Tampa Bay Buccaneers",
-          "pts": 8.0
+          "pts": 8
          }
         ]
        }
@@ -15133,7 +15067,7 @@
          {
           "pos": "RB",
           "name": "Isiah Pacheco",
-          "pts": 16.0
+          "pts": 16
          },
          {
           "pos": "RB",
@@ -15215,7 +15149,7 @@
          {
           "pos": "RB",
           "name": "Austin Ekeler",
-          "pts": 7.0
+          "pts": 7
          },
          {
           "pos": "RB",
@@ -15255,7 +15189,7 @@
          {
           "pos": "DEF",
           "name": "Tampa Bay Buccaneers",
-          "pts": 6.0
+          "pts": 6
          }
         ]
        },
@@ -15319,7 +15253,7 @@
          {
           "pos": "DEF",
           "name": "Dallas Cowboys",
-          "pts": 13.0
+          "pts": 13
          }
         ]
        }
@@ -15388,7 +15322,7 @@
        {
         "pos": "K",
         "name": "Ka'imi Fairbairn",
-        "pts": 18.0
+        "pts": 18
        },
        {
         "pos": "DEF",
@@ -15417,7 +15351,7 @@
        {
         "pos": "RB",
         "name": "James Cook III",
-        "pts": 16.0
+        "pts": 16
        },
        {
         "pos": "RB",
@@ -15442,7 +15376,7 @@
        {
         "pos": "WR",
         "name": "Jaxon Smith-Njigba",
-        "pts": 25.0
+        "pts": 25
        },
        {
         "pos": "QB",
@@ -15534,7 +15468,7 @@
         "name": "Christian",
         "team": "Spider 2 Y Banana",
         "won": true,
-        "act": 163.0,
+        "act": 163,
         "rumbles": 18,
         "vs_field": 9,
         "season_rumbles": 18,
@@ -15574,7 +15508,7 @@
          {
           "pos": "WR",
           "name": "DJ Moore",
-          "pts": 9.0
+          "pts": 9
          },
          {
           "pos": "QB",
@@ -15613,7 +15547,7 @@
          {
           "pos": "RB",
           "name": "Alvin Kamara",
-          "pts": 21.0
+          "pts": 21
          },
          {
           "pos": "WR",
@@ -15643,7 +15577,7 @@
          {
           "pos": "K",
           "name": "Jason Myers",
-          "pts": 10.0
+          "pts": 10
          },
          {
           "pos": "DEF",
@@ -15759,7 +15693,7 @@
          {
           "pos": "RB",
           "name": "Zach Charbonnet",
-          "pts": 11.0
+          "pts": 11
          },
          {
           "pos": "TE",
@@ -15876,7 +15810,7 @@
          {
           "pos": "DEF",
           "name": "San Francisco 49ers",
-          "pts": 7.0
+          "pts": 7
          }
         ]
        },
@@ -15940,7 +15874,7 @@
          {
           "pos": "DEF",
           "name": "New Orleans Saints",
-          "pts": 3.0
+          "pts": 3
          }
         ]
        }
@@ -15997,7 +15931,7 @@
          {
           "pos": "RB",
           "name": "D'Andre Swift",
-          "pts": 29.0
+          "pts": 29
          },
          {
           "pos": "WR",
@@ -16017,7 +15951,7 @@
          {
           "pos": "K",
           "name": "Jake Bates",
-          "pts": 5.0
+          "pts": 5
          },
          {
           "pos": "DEF",
@@ -16125,7 +16059,7 @@
        {
         "pos": "RB",
         "name": "J.D. McKissic",
-        "pts": 2.0
+        "pts": 2
        },
        {
         "pos": "WR",
@@ -16160,7 +16094,7 @@
        {
         "pos": "DEF",
         "name": "Jacksonville Jaguars",
-        "pts": -3.0
+        "pts": -3
        }
       ]
      },
@@ -16219,12 +16153,12 @@
        {
         "pos": "K",
         "name": "Younghoe Koo",
-        "pts": 4.0
+        "pts": 4
        },
        {
         "pos": "DEF",
         "name": "Tampa Bay Buccaneers",
-        "pts": 5.0
+        "pts": 5
        }
       ]
      }
@@ -16414,7 +16348,7 @@
          {
           "pos": "K",
           "name": "Jake Bates",
-          "pts": 9.0
+          "pts": 9
          },
          {
           "pos": "DEF",
@@ -16647,7 +16581,7 @@
          {
           "pos": "DEF",
           "name": "Minnesota Vikings",
-          "pts": 4.0
+          "pts": 4
          }
         ]
        },
@@ -16711,7 +16645,7 @@
          {
           "pos": "DEF",
           "name": "Washington Commanders",
-          "pts": 3.0
+          "pts": 3
          }
         ]
        }
@@ -16758,7 +16692,7 @@
          {
           "pos": "TE",
           "name": "Tucker Kraft",
-          "pts": 18.0
+          "pts": 18
          },
          {
           "pos": "RB",
@@ -16768,7 +16702,7 @@
          {
           "pos": "WR",
           "name": "DK Metcalf",
-          "pts": 19.0
+          "pts": 19
          },
          {
           "pos": "WR",
@@ -16812,7 +16746,7 @@
          {
           "pos": "RB",
           "name": "Jeremiyah Love",
-          "pts": 7.0
+          "pts": 7
          },
          {
           "pos": "RB",
@@ -16837,7 +16771,7 @@
          {
           "pos": "WR",
           "name": "Stefon Diggs",
-          "pts": 9.0
+          "pts": 9
          },
          {
           "pos": "QB",
@@ -16852,7 +16786,7 @@
          {
           "pos": "K",
           "name": "Chase McLaughlin",
-          "pts": 2.0
+          "pts": 2
          },
          {
           "pos": "DEF",
@@ -16896,7 +16830,7 @@
        {
         "pos": "RB",
         "name": "J.D. McKissic",
-        "pts": 2.0
+        "pts": 2
        },
        {
         "pos": "WR",
@@ -16931,7 +16865,7 @@
        {
         "pos": "DEF",
         "name": "Jacksonville Jaguars",
-        "pts": -3.0
+        "pts": -3
        }
       ]
      },
@@ -16990,12 +16924,12 @@
        {
         "pos": "K",
         "name": "Younghoe Koo",
-        "pts": 4.0
+        "pts": 4
        },
        {
         "pos": "DEF",
         "name": "Tampa Bay Buccaneers",
-        "pts": 5.0
+        "pts": 5
        }
       ]
      }
@@ -17111,7 +17045,7 @@
          {
           "pos": "WR",
           "name": "Jaxon Smith-Njigba",
-          "pts": 15.0
+          "pts": 15
          },
          {
           "pos": "QB",
@@ -17165,7 +17099,7 @@
          {
           "pos": "RB",
           "name": "D'Andre Swift",
-          "pts": 18.0
+          "pts": 18
          },
          {
           "pos": "WR",
@@ -17237,12 +17171,12 @@
          {
           "pos": "TE",
           "name": "Dalton Schultz",
-          "pts": 29.0
+          "pts": 29
          },
          {
           "pos": "RB",
           "name": "Aaron Jones Sr.",
-          "pts": 12.0
+          "pts": 12
          },
          {
           "pos": "WR",
@@ -17252,7 +17186,7 @@
          {
           "pos": "WR",
           "name": "Ja'Marr Chase",
-          "pts": 27.0
+          "pts": 27
          },
          {
           "pos": "QB",
@@ -17267,7 +17201,7 @@
          {
           "pos": "K",
           "name": "Eddy Pineiro",
-          "pts": 5.0
+          "pts": 5
          },
          {
           "pos": "DEF",
@@ -17296,7 +17230,7 @@
          {
           "pos": "RB",
           "name": "Javonte Williams",
-          "pts": 8.0
+          "pts": 8
          },
          {
           "pos": "TE",
@@ -17306,7 +17240,7 @@
          {
           "pos": "TE",
           "name": "Colby Parkinson",
-          "pts": 4.0
+          "pts": 4
          },
          {
           "pos": "WR",
@@ -17383,7 +17317,7 @@
          {
           "pos": "TE",
           "name": "Tucker Kraft",
-          "pts": 18.0
+          "pts": 18
          },
          {
           "pos": "RB",
@@ -17393,7 +17327,7 @@
          {
           "pos": "WR",
           "name": "DK Metcalf",
-          "pts": 19.0
+          "pts": 19
          },
          {
           "pos": "WR",
@@ -17437,7 +17371,7 @@
          {
           "pos": "RB",
           "name": "Jeremiyah Love",
-          "pts": 7.0
+          "pts": 7
          },
          {
           "pos": "RB",
@@ -17462,7 +17396,7 @@
          {
           "pos": "WR",
           "name": "Stefon Diggs",
-          "pts": 9.0
+          "pts": 9
          },
          {
           "pos": "QB",
@@ -17477,7 +17411,7 @@
          {
           "pos": "K",
           "name": "Chase McLaughlin",
-          "pts": 2.0
+          "pts": 2
          },
          {
           "pos": "DEF",
@@ -17564,7 +17498,7 @@
          {
           "pos": "DEF",
           "name": "Atlanta Falcons",
-          "pts": 3.0
+          "pts": 3
          }
         ]
        },
@@ -17608,7 +17542,7 @@
          {
           "pos": "TE",
           "name": "Kyle Pitts Sr.",
-          "pts": 19.0
+          "pts": 19
          },
          {
           "pos": "RB",
@@ -17623,12 +17557,12 @@
          {
           "pos": "K",
           "name": "Justin Tucker",
-          "pts": 8.0
+          "pts": 8
          },
          {
           "pos": "DEF",
           "name": "Baltimore Ravens",
-          "pts": 4.0
+          "pts": 4
          }
         ]
        }
@@ -17936,7 +17870,7 @@
          {
           "pos": "WR",
           "name": "Tee Higgins",
-          "pts": 0.0
+          "pts": 0
          },
          {
           "pos": "TE",
@@ -17956,7 +17890,7 @@
          {
           "pos": "K",
           "name": "Daniel Carlson",
-          "pts": 5.0
+          "pts": 5
          },
          {
           "pos": "DEF",
@@ -18013,7 +17947,7 @@
          {
           "pos": "WR",
           "name": "Amon-Ra St. Brown",
-          "pts": 15.0
+          "pts": 15
          },
          {
           "pos": "WR",
@@ -18043,7 +17977,7 @@
          {
           "pos": "DEF",
           "name": "Cincinnati Bengals",
-          "pts": 0.0
+          "pts": 0
          }
         ]
        },
@@ -18102,12 +18036,12 @@
          {
           "pos": "K",
           "name": "Graham Gano",
-          "pts": -2.0
+          "pts": -2
          },
          {
           "pos": "DEF",
           "name": "Los Angeles Rams",
-          "pts": 4.0
+          "pts": 4
          }
         ]
        }
@@ -18169,7 +18103,7 @@
          {
           "pos": "TE",
           "name": "Gerald Everett",
-          "pts": 13.0
+          "pts": 13
          },
          {
           "pos": "RB",
@@ -18189,7 +18123,7 @@
          {
           "pos": "DEF",
           "name": "Buffalo Bills",
-          "pts": 7.0
+          "pts": 7
          }
         ]
        },
@@ -18238,7 +18172,7 @@
          {
           "pos": "RB",
           "name": "Josh Jacobs",
-          "pts": 21.0
+          "pts": 21
          },
          {
           "pos": "WR",
@@ -18248,12 +18182,12 @@
          {
           "pos": "K",
           "name": "Ryan Succop",
-          "pts": 5.0
+          "pts": 5
          },
          {
           "pos": "DEF",
           "name": "New York Giants",
-          "pts": 7.0
+          "pts": 7
          }
         ]
        }
@@ -18330,12 +18264,12 @@
          {
           "pos": "K",
           "name": "Graham Gano",
-          "pts": 2.0
+          "pts": 2
          },
          {
           "pos": "DEF",
           "name": "Tampa Bay Buccaneers",
-          "pts": -5.0
+          "pts": -5
          }
         ]
        },
@@ -18369,7 +18303,7 @@
          {
           "pos": "WR",
           "name": "Michael Gallup",
-          "pts": 6.0
+          "pts": 6
          },
          {
           "pos": "WR",
@@ -18394,12 +18328,12 @@
          {
           "pos": "K",
           "name": "Jason Myers",
-          "pts": 6.0
+          "pts": 6
          },
          {
           "pos": "DEF",
           "name": "Buffalo Bills",
-          "pts": 12.0
+          "pts": 12
          }
         ]
        }
@@ -18458,7 +18392,7 @@
        {
         "pos": "WR",
         "name": "Brandon Aiyuk",
-        "pts": 0.0
+        "pts": 0
        },
        {
         "pos": "WR",
@@ -18468,12 +18402,12 @@
        {
         "pos": "K",
         "name": "Rodrigo Blankenship",
-        "pts": 4.0
+        "pts": 4
        },
        {
         "pos": "DEF",
         "name": "Buffalo Bills",
-        "pts": 5.0
+        "pts": 5
        }
       ]
      },
@@ -18537,7 +18471,7 @@
        {
         "pos": "DEF",
         "name": "Baltimore Ravens",
-        "pts": -1.0
+        "pts": -1
        }
       ]
      }
@@ -18633,7 +18567,7 @@
          {
           "pos": "RB",
           "name": "Jahmyr Gibbs",
-          "pts": 39.0
+          "pts": 39
          },
          {
           "pos": "TE",
@@ -18643,12 +18577,12 @@
          {
           "pos": "RB",
           "name": "Kareem Hunt",
-          "pts": 10.0
+          "pts": 10
          },
          {
           "pos": "WR",
           "name": "Alec Pierce",
-          "pts": 15.0
+          "pts": 15
          },
          {
           "pos": "WR",
@@ -18727,12 +18661,12 @@
          {
           "pos": "K",
           "name": "Chris Boswell",
-          "pts": 9.0
+          "pts": 9
          },
          {
           "pos": "DEF",
           "name": "Tennessee Titans",
-          "pts": 6.0
+          "pts": 6
          }
         ]
        }
@@ -18873,7 +18807,7 @@
          {
           "pos": "K",
           "name": "Jake Moody",
-          "pts": 8.0
+          "pts": 8
          },
          {
           "pos": "DEF",
@@ -18979,17 +18913,17 @@
          {
           "pos": "RB",
           "name": "D'Andre Swift",
-          "pts": 20.0
+          "pts": 20
          },
          {
           "pos": "RB",
           "name": "Christian McCaffrey",
-          "pts": 24.0
+          "pts": 24
          },
          {
           "pos": "TE",
           "name": "T.J. Hockenson",
-          "pts": 14.0
+          "pts": 14
          },
          {
           "pos": "WR",
@@ -19071,7 +19005,7 @@
          {
           "pos": "RB",
           "name": "D'Andre Swift",
-          "pts": 4.0
+          "pts": 4
          },
          {
           "pos": "WR",
@@ -19140,7 +19074,7 @@
          {
           "pos": "WR",
           "name": "Terry McLaurin",
-          "pts": 0.0
+          "pts": 0
          },
          {
           "pos": "WR",
@@ -19219,7 +19153,7 @@
        {
         "pos": "WR",
         "name": "DJ Moore",
-        "pts": 49.0
+        "pts": 49
        },
        {
         "pos": "TE",
@@ -19239,7 +19173,7 @@
        {
         "pos": "K",
         "name": "Justin Tucker",
-        "pts": 4.0
+        "pts": 4
        },
        {
         "pos": "DEF",
@@ -19303,7 +19237,7 @@
        {
         "pos": "K",
         "name": "Evan McPherson",
-        "pts": 12.0
+        "pts": 12
        },
        {
         "pos": "DEF",
@@ -19394,7 +19328,7 @@
          {
           "pos": "QB",
           "name": "Baker Mayfield",
-          "pts": 18.0
+          "pts": 18
          },
          {
           "pos": "RB",
@@ -19498,7 +19432,7 @@
          {
           "pos": "K",
           "name": "Tyler Bass",
-          "pts": 6.0
+          "pts": 6
          },
          {
           "pos": "DEF",
@@ -19609,7 +19543,7 @@
          {
           "pos": "RB",
           "name": "Jahmyr Gibbs",
-          "pts": 24.0
+          "pts": 24
          },
          {
           "pos": "RB",
@@ -19731,7 +19665,7 @@
          {
           "pos": "DEF",
           "name": "Jacksonville Jaguars",
-          "pts": 6.0
+          "pts": 6
          }
         ]
        },
@@ -19770,7 +19704,7 @@
          {
           "pos": "WR",
           "name": "Tyreek Hill",
-          "pts": 12.0
+          "pts": 12
          },
          {
           "pos": "TE",
@@ -19785,7 +19719,7 @@
          {
           "pos": "WR",
           "name": "Brandin Cooks",
-          "pts": 6.0
+          "pts": 6
          },
          {
           "pos": "K",
@@ -19795,7 +19729,7 @@
          {
           "pos": "DEF",
           "name": "Denver Broncos",
-          "pts": 16.0
+          "pts": 16
          }
         ]
        }
@@ -19872,12 +19806,12 @@
          {
           "pos": "K",
           "name": "Tyler Bass",
-          "pts": 8.0
+          "pts": 8
          },
          {
           "pos": "DEF",
           "name": "Arizona Cardinals",
-          "pts": 7.0
+          "pts": 7
          }
         ]
        },
@@ -19901,7 +19835,7 @@
          {
           "pos": "RB",
           "name": "Derrick Henry",
-          "pts": 31.0
+          "pts": 31
          },
          {
           "pos": "RB",
@@ -19936,12 +19870,12 @@
          {
           "pos": "K",
           "name": "Justin Tucker",
-          "pts": 3.0
+          "pts": 3
          },
          {
           "pos": "DEF",
           "name": "Baltimore Ravens",
-          "pts": 0.0
+          "pts": 0
          }
         ]
        }
@@ -20015,7 +19949,7 @@
        {
         "pos": "DEF",
         "name": "Dallas Cowboys",
-        "pts": 13.0
+        "pts": 13
        }
       ]
      },
@@ -20039,7 +19973,7 @@
        {
         "pos": "RB",
         "name": "Austin Ekeler",
-        "pts": 7.0
+        "pts": 7
        },
        {
         "pos": "RB",
@@ -20079,7 +20013,7 @@
        {
         "pos": "DEF",
         "name": "Tampa Bay Buccaneers",
-        "pts": 6.0
+        "pts": 6
        }
       ]
      }
@@ -20278,7 +20212,7 @@
          {
           "pos": "K",
           "name": "Andy Borregales",
-          "pts": 14.0
+          "pts": 14
          },
          {
           "pos": "DEF",
@@ -20394,7 +20328,7 @@
          {
           "pos": "RB",
           "name": "Travis Etienne Jr.",
-          "pts": 33.0
+          "pts": 33
          },
          {
           "pos": "TE",
@@ -20409,7 +20343,7 @@
          {
           "pos": "WR",
           "name": "Nico Collins",
-          "pts": 24.0
+          "pts": 24
          },
          {
           "pos": "WR",
@@ -20545,7 +20479,7 @@
          {
           "pos": "TE",
           "name": "Harold Fannin Jr.",
-          "pts": 11.0
+          "pts": 11
          },
          {
           "pos": "WR",
@@ -20555,7 +20489,7 @@
          {
           "pos": "WR",
           "name": "Zay Flowers",
-          "pts": 14.0
+          "pts": 14
          },
          {
           "pos": "WR",
@@ -20617,7 +20551,7 @@
          {
           "pos": "RB",
           "name": "James Cook III",
-          "pts": 16.0
+          "pts": 16
          },
          {
           "pos": "RB",
@@ -20642,7 +20576,7 @@
          {
           "pos": "WR",
           "name": "Jaxon Smith-Njigba",
-          "pts": 25.0
+          "pts": 25
          },
          {
           "pos": "QB",
@@ -20716,7 +20650,7 @@
          {
           "pos": "K",
           "name": "Ka'imi Fairbairn",
-          "pts": 18.0
+          "pts": 18
          },
          {
           "pos": "DEF",
@@ -20824,7 +20758,7 @@
        {
         "pos": "RB",
         "name": "Zach Charbonnet",
-        "pts": 11.0
+        "pts": 11
        },
        {
         "pos": "TE",
@@ -21001,7 +20935,7 @@
          {
           "pos": "DEF",
           "name": "Dallas Cowboys",
-          "pts": 0.0
+          "pts": 0
          }
         ]
        },
@@ -21065,7 +20999,7 @@
          {
           "pos": "DEF",
           "name": "San Francisco 49ers",
-          "pts": -1.0
+          "pts": -1
          }
         ]
        }
@@ -21142,12 +21076,12 @@
          {
           "pos": "K",
           "name": "Greg Zuerlein",
-          "pts": 11.0
+          "pts": 11
          },
          {
           "pos": "DEF",
           "name": "Cleveland Browns",
-          "pts": 5.0
+          "pts": 5
          }
         ]
        },
@@ -21206,12 +21140,12 @@
          {
           "pos": "K",
           "name": "Ryan Succop",
-          "pts": 5.0
+          "pts": 5
          },
          {
           "pos": "DEF",
           "name": "Pittsburgh Steelers",
-          "pts": 0.0
+          "pts": 0
          }
         ]
        }
@@ -21293,7 +21227,7 @@
          {
           "pos": "DEF",
           "name": "Denver Broncos",
-          "pts": 17.0
+          "pts": 17
          }
         ]
        },
@@ -21357,7 +21291,7 @@
          {
           "pos": "DEF",
           "name": "Atlanta Falcons",
-          "pts": 3.0
+          "pts": 3
          }
         ]
        }
@@ -21439,7 +21373,7 @@
          {
           "pos": "DEF",
           "name": "Carolina Panthers",
-          "pts": 12.0
+          "pts": 12
          }
         ]
        },
@@ -21478,7 +21412,7 @@
          {
           "pos": "WR",
           "name": "Tyler Lockett",
-          "pts": 23.0
+          "pts": 23
          },
          {
           "pos": "TE",
@@ -21498,12 +21432,12 @@
          {
           "pos": "K",
           "name": "Younghoe Koo",
-          "pts": 6.0
+          "pts": 6
          },
          {
           "pos": "DEF",
           "name": "Los Angeles Rams",
-          "pts": 8.0
+          "pts": 8
          }
         ]
        }
@@ -21562,7 +21496,7 @@
        {
         "pos": "RB",
         "name": "Devin Singletary",
-        "pts": 23.0
+        "pts": 23
        },
        {
         "pos": "WR",
@@ -21577,7 +21511,7 @@
        {
         "pos": "DEF",
         "name": "New England Patriots",
-        "pts": 13.0
+        "pts": 13
        }
       ]
      },
@@ -21631,17 +21565,17 @@
        {
         "pos": "TE",
         "name": "George Kittle",
-        "pts": 4.0
+        "pts": 4
        },
        {
         "pos": "K",
         "name": "Greg Zuerlein",
-        "pts": 1.0
+        "pts": 1
        },
        {
         "pos": "DEF",
         "name": "San Francisco 49ers",
-        "pts": 12.0
+        "pts": 12
        }
       ]
      }
@@ -21656,7 +21590,7 @@
    "metric": "zeros_win",
    "direction": "max",
    "value": "2; Gesicki, John Brown",
-   "value_num": 2.0,
+   "value_num": 2,
    "when": "Week 5 - 2020",
    "holder": "Aidan",
    "holders": [
@@ -21769,7 +21703,7 @@
          {
           "pos": "WR",
           "name": "Chris Godwin Jr.",
-          "pts": 0.0
+          "pts": 0
          },
          {
           "pos": "WR",
@@ -21789,7 +21723,7 @@
          {
           "pos": "K",
           "name": "Will Reichard",
-          "pts": 0.0
+          "pts": 0
          },
          {
           "pos": "DEF",
@@ -21803,7 +21737,7 @@
         "name": "Alex",
         "team": "Kindergarten Kupp",
         "won": false,
-        "act": 150.0,
+        "act": 150,
         "rumbles": 5,
         "vs_field": 5,
         "season_rumbles": 73,
@@ -21930,17 +21864,17 @@
          {
           "pos": "WR",
           "name": "Emmanuel Sanders",
-          "pts": 0.0
+          "pts": 0
          },
          {
           "pos": "K",
           "name": "Chase McLaughlin",
-          "pts": 4.0
+          "pts": 4
          },
          {
           "pos": "DEF",
           "name": "Philadelphia Eagles",
-          "pts": 22.0
+          "pts": 22
          }
         ]
        },
@@ -21999,12 +21933,12 @@
          {
           "pos": "K",
           "name": "Evan McPherson",
-          "pts": 7.0
+          "pts": 7
          },
          {
           "pos": "DEF",
           "name": "San Francisco 49ers",
-          "pts": 7.0
+          "pts": 7
          }
         ]
        }
@@ -22081,12 +22015,12 @@
          {
           "pos": "K",
           "name": "Greg Zuerlein",
-          "pts": 0.0
+          "pts": 0
          },
          {
           "pos": "DEF",
           "name": "New England Patriots",
-          "pts": 20.0
+          "pts": 20
          }
         ]
        },
@@ -22150,7 +22084,7 @@
          {
           "pos": "DEF",
           "name": "Pittsburgh Steelers",
-          "pts": 4.0
+          "pts": 4
          }
         ]
        }
@@ -22197,7 +22131,7 @@
          {
           "pos": "RB",
           "name": "Brandon Bolden",
-          "pts": 8.0
+          "pts": 8
          },
          {
           "pos": "WR",
@@ -22212,7 +22146,7 @@
          {
           "pos": "TE",
           "name": "Mike Gesicki",
-          "pts": 0.0
+          "pts": 0
          },
          {
           "pos": "WR",
@@ -22232,7 +22166,7 @@
          {
           "pos": "DEF",
           "name": "New Orleans Saints",
-          "pts": 4.0
+          "pts": 4
          }
         ]
        },
@@ -22251,12 +22185,12 @@
          {
           "pos": "QB",
           "name": "Tom Brady",
-          "pts": 13.0
+          "pts": 13
          },
          {
           "pos": "RB",
           "name": "Myles Gaskin",
-          "pts": 5.0
+          "pts": 5
          },
          {
           "pos": "RB",
@@ -22271,7 +22205,7 @@
          {
           "pos": "WR",
           "name": "Cole Beasley",
-          "pts": 2.0
+          "pts": 2
          },
          {
           "pos": "TE",
@@ -22291,12 +22225,12 @@
          {
           "pos": "K",
           "name": "Tyler Bass",
-          "pts": 9.0
+          "pts": 9
          },
          {
           "pos": "DEF",
           "name": "Pittsburgh Steelers",
-          "pts": 5.0
+          "pts": 5
          }
         ]
        }
@@ -22344,12 +22278,12 @@
        {
         "pos": "WR",
         "name": "Jaylen Waddle",
-        "pts": 0.0
+        "pts": 0
        },
        {
         "pos": "TE",
         "name": "T.J. Hockenson",
-        "pts": 0.0
+        "pts": 0
        },
        {
         "pos": "RB",
@@ -22388,7 +22322,7 @@
        {
         "pos": "QB",
         "name": "Russell Wilson",
-        "pts": 0.0
+        "pts": 0
        },
        {
         "pos": "RB",
@@ -22418,7 +22352,7 @@
        {
         "pos": "RB",
         "name": "Raheem Mostert",
-        "pts": 0.0
+        "pts": 0
        },
        {
         "pos": "RB",
@@ -22552,12 +22486,12 @@
          {
           "pos": "K",
           "name": "Harrison Butker",
-          "pts": 8.0
+          "pts": 8
          },
          {
           "pos": "DEF",
           "name": "Tampa Bay Buccaneers",
-          "pts": 13.0
+          "pts": 13
          }
         ]
        },
@@ -22596,7 +22530,7 @@
          {
           "pos": "WR",
           "name": "Ja'Marr Chase",
-          "pts": 11.0
+          "pts": 11
          },
          {
           "pos": "TE",
@@ -22621,7 +22555,7 @@
          {
           "pos": "DEF",
           "name": "Tennessee Titans",
-          "pts": 3.0
+          "pts": 3
          }
         ]
        }
@@ -22673,7 +22607,7 @@
          {
           "pos": "WR",
           "name": "Michael Gallup",
-          "pts": 6.0
+          "pts": 6
          },
          {
           "pos": "WR",
@@ -22698,12 +22632,12 @@
          {
           "pos": "K",
           "name": "Jason Myers",
-          "pts": 6.0
+          "pts": 6
          },
          {
           "pos": "DEF",
           "name": "Buffalo Bills",
-          "pts": 12.0
+          "pts": 12
          }
         ]
        },
@@ -22762,12 +22696,12 @@
          {
           "pos": "K",
           "name": "Graham Gano",
-          "pts": 2.0
+          "pts": 2
          },
          {
           "pos": "DEF",
           "name": "Tampa Bay Buccaneers",
-          "pts": -5.0
+          "pts": -5
          }
         ]
        }
@@ -22844,12 +22778,12 @@
          {
           "pos": "K",
           "name": "Dustin Hopkins",
-          "pts": 0.0
+          "pts": 0
          },
          {
           "pos": "DEF",
           "name": "Philadelphia Eagles",
-          "pts": 6.0
+          "pts": 6
          }
         ]
        },
@@ -22888,7 +22822,7 @@
          {
           "pos": "WR",
           "name": "Brandon Aiyuk",
-          "pts": 11.0
+          "pts": 11
          },
          {
           "pos": "TE",
@@ -22908,12 +22842,12 @@
          {
           "pos": "K",
           "name": "Greg Joseph",
-          "pts": 1.0
+          "pts": 1
          },
          {
           "pos": "DEF",
           "name": "Miami Dolphins",
-          "pts": 25.0
+          "pts": 25
          }
         ]
        }
@@ -22975,7 +22909,7 @@
          {
           "pos": "TE",
           "name": "T.J. Hockenson",
-          "pts": 0.0
+          "pts": 0
          },
          {
           "pos": "WR",
@@ -22995,7 +22929,7 @@
          {
           "pos": "DEF",
           "name": "Indianapolis Colts",
-          "pts": 14.0
+          "pts": 14
          }
         ]
        },
@@ -23059,7 +22993,7 @@
          {
           "pos": "DEF",
           "name": "Tampa Bay Buccaneers",
-          "pts": 6.0
+          "pts": 6
          }
         ]
        }
@@ -23076,7 +23010,7 @@
    "metric": "thu_league",
    "direction": "min",
    "value": "20",
-   "value_num": 20.0,
+   "value_num": 20,
    "when": "Week 10 - 2022 Panthers vs Texans",
    "holder": "DTFClub",
    "holders": [
@@ -23230,7 +23164,7 @@
        {
         "pos": "DEF",
         "name": "Dallas Cowboys",
-        "pts": 13.0
+        "pts": 13
        }
       ]
      },
@@ -23254,7 +23188,7 @@
        {
         "pos": "RB",
         "name": "Austin Ekeler",
-        "pts": 7.0
+        "pts": 7
        },
        {
         "pos": "RB",
@@ -23294,7 +23228,7 @@
        {
         "pos": "DEF",
         "name": "Tampa Bay Buccaneers",
-        "pts": 6.0
+        "pts": 6
        }
       ]
      }
@@ -23366,7 +23300,7 @@
          {
           "pos": "WR",
           "name": "Rashee Rice",
-          "pts": 26.0
+          "pts": 26
          },
          {
           "pos": "WR",
@@ -23386,7 +23320,7 @@
          {
           "pos": "K",
           "name": "Harrison Butker",
-          "pts": 4.0
+          "pts": 4
          },
          {
           "pos": "DEF",
@@ -23537,7 +23471,7 @@
          {
           "pos": "DEF",
           "name": "Jacksonville Jaguars",
-          "pts": 6.0
+          "pts": 6
          }
         ]
        },
@@ -23576,7 +23510,7 @@
          {
           "pos": "WR",
           "name": "Tyreek Hill",
-          "pts": 12.0
+          "pts": 12
          },
          {
           "pos": "TE",
@@ -23591,7 +23525,7 @@
          {
           "pos": "WR",
           "name": "Brandin Cooks",
-          "pts": 6.0
+          "pts": 6
          },
          {
           "pos": "K",
@@ -23601,7 +23535,7 @@
          {
           "pos": "DEF",
           "name": "Denver Broncos",
-          "pts": 16.0
+          "pts": 16
          }
         ]
        }
@@ -23648,7 +23582,7 @@
          {
           "pos": "TE",
           "name": "Kyle Pitts Sr.",
-          "pts": 3.0
+          "pts": 3
          },
          {
           "pos": "RB",
@@ -23673,12 +23607,12 @@
          {
           "pos": "WR",
           "name": "Davante Adams",
-          "pts": 42.0
+          "pts": 42
          },
          {
           "pos": "K",
           "name": "Harrison Mevis",
-          "pts": 3.0
+          "pts": 3
          },
          {
           "pos": "DEF",
@@ -23863,7 +23797,7 @@
          {
           "pos": "TE",
           "name": "Harold Fannin Jr.",
-          "pts": 11.0
+          "pts": 11
          },
          {
           "pos": "WR",
@@ -23873,7 +23807,7 @@
          {
           "pos": "WR",
           "name": "Zay Flowers",
-          "pts": 14.0
+          "pts": 14
          },
          {
           "pos": "WR",
@@ -23911,7 +23845,7 @@
    "metric": null,
    "direction": null,
    "value": "3",
-   "value_num": 3.0,
+   "value_num": 3,
    "when": "Week 5 2024, Week 7 2025",
    "holder": "Joe, Alex",
    "holders": [
@@ -23942,7 +23876,7 @@
    "metric": "trades_league_season",
    "direction": "max",
    "value": "17",
-   "value_num": 17.0,
+   "value_num": 17,
    "when": "2024 & 2020",
    "holder": "DTFClub",
    "holders": [
@@ -24007,7 +23941,7 @@
    "metric": null,
    "direction": null,
    "value": "27",
-   "value_num": 27.0,
+   "value_num": 27,
    "when": "2024 & 2022",
    "holder": "DTFClub",
    "holders": [
@@ -24037,7 +23971,7 @@
    "metric": "trades_team_season",
    "direction": "max",
    "value": "7 (+1 veto)",
-   "value_num": 7.0,
+   "value_num": 7,
    "when": "2017",
    "holder": "Ankit",
    "holders": [
@@ -24118,7 +24052,7 @@
    "metric": null,
    "direction": null,
    "value": "12",
-   "value_num": 12.0,
+   "value_num": 12,
    "when": "2022",
    "holder": "Steven",
    "holders": [
@@ -24148,7 +24082,7 @@
    "metric": null,
    "direction": null,
    "value": "10",
-   "value_num": 10.0,
+   "value_num": 10,
    "when": "2018, 2025",
    "holder": "DTFClub",
    "holders": [
@@ -24178,7 +24112,7 @@
    "metric": null,
    "direction": null,
    "value": "$121",
-   "value_num": 121.0,
+   "value_num": 121,
    "when": "Week 11 - 2021",
    "holder": "Steven & Ankit",
    "holders": [
@@ -24209,7 +24143,7 @@
    "metric": null,
    "direction": null,
    "value": "8 minutes; Keelan Cole",
-   "value_num": 8.0,
+   "value_num": 8,
    "when": "Week 3 Thursday Night - 2020",
    "holder": "Ben",
    "holders": [
@@ -26258,7 +26192,7 @@
    "metric": "trader_best",
    "direction": "max",
    "value": "+593.0 PAR",
-   "value_num": 593.0,
+   "value_num": 593,
    "when": "14 trades, 2021-",
    "holder": "Aidan",
    "holders": [
@@ -26388,7 +26322,7 @@
    "metric": "trade_champ_best",
    "direction": "max",
    "value": "+34.0 PAR",
-   "value_num": 34.0,
+   "value_num": 34,
    "when": "Week 11 - 2023",
    "holder": "Ankit over Joe",
    "holders": [
@@ -27331,7 +27265,7 @@
    "metric": null,
    "direction": null,
    "value": "$205",
-   "value_num": 205.0,
+   "value_num": 205,
    "when": "Week 1 - 2025",
    "holder": "Ryan",
    "holders": [
@@ -27361,7 +27295,7 @@
    "metric": null,
    "direction": null,
    "value": "$131 ($194 total bid)",
-   "value_num": 131.0,
+   "value_num": 131,
    "when": "Week 5 - 2022",
    "holder": "Ankit - George Pickens",
    "holders": [
@@ -27391,7 +27325,7 @@
    "metric": null,
    "direction": null,
    "value": "0%; $149",
-   "value_num": 0.0,
+   "value_num": 0,
    "when": "Week 3 - 2023",
    "holder": "Joe - De'Von Achane",
    "holders": [
@@ -27423,7 +27357,7 @@
    "metric": null,
    "direction": null,
    "value": "Week 2",
-   "value_num": 2.0,
+   "value_num": 2,
    "when": "2020",
    "holder": "Oleg",
    "holders": [
@@ -28638,7 +28572,7 @@
    "metric": "fab_season_par",
    "direction": "max",
    "value": "+180.0 PAR",
-   "value_num": 180.0,
+   "value_num": 180,
    "when": "2023",
    "holder": "Ankit",
    "holders": [
@@ -29455,7 +29389,7 @@
          {
           "pos": "TE",
           "name": "George Kittle",
-          "pts": 17.0
+          "pts": 17
          },
          {
           "pos": "WR",
@@ -29620,7 +29554,7 @@
          {
           "pos": "RB",
           "name": "Saquon Barkley",
-          "pts": 10.0
+          "pts": 10
          },
          {
           "pos": "TE",
@@ -29655,7 +29589,7 @@
          {
           "pos": "K",
           "name": "Tyler Bass",
-          "pts": 6.0
+          "pts": 6
          },
          {
           "pos": "DEF",
@@ -29975,7 +29909,7 @@
          {
           "pos": "WR",
           "name": "A.J. Brown",
-          "pts": 25.0
+          "pts": 25
          },
          {
           "pos": "TE",
@@ -30059,7 +29993,7 @@
          {
           "pos": "K",
           "name": "Jake Moody",
-          "pts": 10.0
+          "pts": 10
          },
          {
           "pos": "DEF",
@@ -30106,7 +30040,7 @@
       "name": "Aidan",
       "team": "Neon Jennings Evansgelion",
       "won": false,
-      "act": 132.0,
+      "act": 132,
       "rumbles": 0,
       "vs_field": 0,
       "season_rumbles": 174,
@@ -30121,7 +30055,7 @@
        {
         "pos": "RB",
         "name": "RJ Harvey",
-        "pts": 11.0
+        "pts": 11
        },
        {
         "pos": "RB",
@@ -30136,7 +30070,7 @@
        {
         "pos": "RB",
         "name": "Chris Rodriguez Jr.",
-        "pts": 0.0
+        "pts": 0
        },
        {
         "pos": "WR",
@@ -30190,7 +30124,7 @@
        {
         "pos": "RB",
         "name": "Omarion Hampton",
-        "pts": 10.0
+        "pts": 10
        },
        {
         "pos": "TE",
@@ -30200,12 +30134,12 @@
        {
         "pos": "WR",
         "name": "Ladd McConkey",
-        "pts": 4.0
+        "pts": 4
        },
        {
         "pos": "WR",
         "name": "Tetairoa McMillan",
-        "pts": 5.0
+        "pts": 5
        },
        {
         "pos": "WR",
@@ -30355,7 +30289,7 @@
          {
           "pos": "RB",
           "name": "D'Andre Swift",
-          "pts": 29.0
+          "pts": 29
          },
          {
           "pos": "WR",
@@ -30375,7 +30309,7 @@
          {
           "pos": "K",
           "name": "Jake Bates",
-          "pts": 5.0
+          "pts": 5
          },
          {
           "pos": "DEF",
@@ -30515,7 +30449,7 @@
          {
           "pos": "RB",
           "name": "Derrick Henry",
-          "pts": 12.0
+          "pts": 12
          },
          {
           "pos": "TE",
@@ -30599,7 +30533,7 @@
          {
           "pos": "WR",
           "name": "DK Metcalf",
-          "pts": 15.0
+          "pts": 15
          },
          {
           "pos": "QB",
@@ -30715,7 +30649,7 @@
          {
           "pos": "K",
           "name": "Tyler Loop",
-          "pts": 2.0
+          "pts": 2
          },
          {
           "pos": "DEF",
@@ -30749,7 +30683,7 @@
          {
           "pos": "RB",
           "name": "Javonte Williams",
-          "pts": 18.0
+          "pts": 18
          },
          {
           "pos": "TE",
@@ -30779,7 +30713,7 @@
          {
           "pos": "K",
           "name": "Chris Boswell",
-          "pts": 1.0
+          "pts": 1
          },
          {
           "pos": "DEF",
@@ -30885,7 +30819,7 @@
          {
           "pos": "K",
           "name": "Cameron Dicker",
-          "pts": 3.0
+          "pts": 3
          },
          {
           "pos": "DEF",
@@ -30934,7 +30868,7 @@
          {
           "pos": "TE",
           "name": "David Njoku",
-          "pts": 6.0
+          "pts": 6
          },
          {
           "pos": "WR",
@@ -31011,7 +30945,7 @@
        {
         "pos": "RB",
         "name": "Chase Brown",
-        "pts": 8.0
+        "pts": 8
        },
        {
         "pos": "TE",
@@ -31046,7 +30980,7 @@
        {
         "pos": "K",
         "name": "Evan McPherson",
-        "pts": 7.0
+        "pts": 7
        },
        {
         "pos": "DEF",
@@ -31131,7 +31065,7 @@
    "metric": "worst_week",
    "direction": "max",
    "value": "40.0 pts",
-   "value_num": 40.0,
+   "value_num": 40,
    "when": "Week 14 - 2023",
    "holder": "Ankit",
    "holders": [
@@ -31221,7 +31155,7 @@
          {
           "pos": "WR",
           "name": "A.J. Brown",
-          "pts": 25.0
+          "pts": 25
          },
          {
           "pos": "TE",
@@ -31305,7 +31239,7 @@
          {
           "pos": "K",
           "name": "Jake Moody",
-          "pts": 10.0
+          "pts": 10
          },
          {
           "pos": "DEF",
@@ -31387,7 +31321,7 @@
          {
           "pos": "K",
           "name": "Jake Bates",
-          "pts": 7.0
+          "pts": 7
          },
          {
           "pos": "DEF",
@@ -31416,7 +31350,7 @@
          {
           "pos": "RB",
           "name": "Jahmyr Gibbs",
-          "pts": 15.0
+          "pts": 15
          },
          {
           "pos": "RB",
@@ -31441,7 +31375,7 @@
          {
           "pos": "WR",
           "name": "CeeDee Lamb",
-          "pts": 20.0
+          "pts": 20
          },
          {
           "pos": "QB",
@@ -31533,7 +31467,7 @@
          {
           "pos": "K",
           "name": "Tyler Loop",
-          "pts": 3.0
+          "pts": 3
          },
          {
           "pos": "DEF",
@@ -31597,7 +31531,7 @@
          {
           "pos": "K",
           "name": "Evan McPherson",
-          "pts": 5.0
+          "pts": 5
          },
          {
           "pos": "DEF",
@@ -31649,7 +31583,7 @@
          {
           "pos": "TE",
           "name": "Travis Kelce",
-          "pts": 4.0
+          "pts": 4
          },
          {
           "pos": "WR",
@@ -31748,7 +31682,7 @@
          {
           "pos": "K",
           "name": "Evan McPherson",
-          "pts": 5.0
+          "pts": 5
          },
          {
           "pos": "DEF",
@@ -31822,7 +31756,7 @@
        {
         "pos": "K",
         "name": "Matt Gay",
-        "pts": -2.0
+        "pts": -2
        },
        {
         "pos": "DEF",
@@ -32339,7 +32273,7 @@
          {
           "pos": "WR",
           "name": "DJ Chark",
-          "pts": 0.0
+          "pts": 0
          },
          {
           "pos": "WR",
@@ -32364,12 +32298,12 @@
          {
           "pos": "K",
           "name": "Matt Gay",
-          "pts": 7.0
+          "pts": 7
          },
          {
           "pos": "DEF",
           "name": "Los Angeles Rams",
-          "pts": 11.0
+          "pts": 11
          }
         ]
        },
@@ -32413,7 +32347,7 @@
          {
           "pos": "TE",
           "name": "Darren Waller",
-          "pts": 17.0
+          "pts": 17
          },
          {
           "pos": "RB",
@@ -32433,7 +32367,7 @@
          {
           "pos": "DEF",
           "name": "Pittsburgh Steelers",
-          "pts": 2.0
+          "pts": 2
          }
         ]
        }
@@ -32515,7 +32449,7 @@
          {
           "pos": "TE",
           "name": "Tyler Conklin",
-          "pts": 0.0
+          "pts": 0
          },
          {
           "pos": "WR",
@@ -32525,7 +32459,7 @@
          {
           "pos": "WR",
           "name": "Tee Higgins",
-          "pts": 0.0
+          "pts": 0
          },
          {
           "pos": "K",
@@ -32535,7 +32469,7 @@
          {
           "pos": "DEF",
           "name": "Baltimore Ravens",
-          "pts": 8.0
+          "pts": 8
          }
         ]
        },
@@ -32594,12 +32528,12 @@
          {
           "pos": "K",
           "name": "Evan McPherson",
-          "pts": 6.0
+          "pts": 6
          },
          {
           "pos": "DEF",
           "name": "San Francisco 49ers",
-          "pts": 16.0
+          "pts": 16
          }
         ]
        }
@@ -32646,7 +32580,7 @@
         "name": "Joe",
         "team": "The Wins of Winter",
         "won": false,
-        "act": 99.0,
+        "act": 99,
         "rumbles": 1,
         "vs_field": 1,
         "season_rumbles": 45,
@@ -32666,7 +32600,7 @@
          {
           "pos": "RB",
           "name": "James Robinson",
-          "pts": 0.0
+          "pts": 0
          },
          {
           "pos": "WR",
@@ -32676,7 +32610,7 @@
          {
           "pos": "WR",
           "name": "Michael Gallup",
-          "pts": 0.0
+          "pts": 0
          },
          {
           "pos": "TE",
@@ -32701,7 +32635,7 @@
          {
           "pos": "DEF",
           "name": "Tampa Bay Buccaneers",
-          "pts": 1.0
+          "pts": 1
          }
         ]
        },
@@ -32760,12 +32694,12 @@
          {
           "pos": "K",
           "name": "Graham Gano",
-          "pts": 12.0
+          "pts": 12
          },
          {
           "pos": "DEF",
           "name": "Miami Dolphins",
-          "pts": 11.0
+          "pts": 11
          }
         ]
        }
@@ -32847,12 +32781,12 @@
          {
           "pos": "TE",
           "name": "Dallas Goedert",
-          "pts": 0.0
+          "pts": 0
          },
          {
           "pos": "WR",
           "name": "Tyler Lockett",
-          "pts": 3.0
+          "pts": 3
          },
          {
           "pos": "QB",
@@ -32862,7 +32796,7 @@
          {
           "pos": "K",
           "name": "Graham Gano",
-          "pts": -2.0
+          "pts": -2
          },
          {
           "pos": "DEF",
@@ -32916,7 +32850,7 @@
          {
           "pos": "RB",
           "name": "James Conner",
-          "pts": 9.0
+          "pts": 9
          },
          {
           "pos": "QB",
@@ -33003,7 +32937,7 @@
        {
         "pos": "WR",
         "name": "Tank Dell",
-        "pts": 0.0
+        "pts": 0
        },
        {
         "pos": "TE",
@@ -33013,7 +32947,7 @@
        {
         "pos": "WR",
         "name": "Deebo Samuel Sr.",
-        "pts": 0.0
+        "pts": 0
        },
        {
         "pos": "QB",
@@ -33023,7 +32957,7 @@
        {
         "pos": "K",
         "name": "Younghoe Koo",
-        "pts": 1.0
+        "pts": 1
        },
        {
         "pos": "DEF",
@@ -33087,7 +33021,7 @@
        {
         "pos": "K",
         "name": "Austin Seibert",
-        "pts": 18.0
+        "pts": 18
        },
        {
         "pos": "DEF",
@@ -33443,7 +33377,7 @@
    "metric": "auction_price",
    "direction": "max",
    "value": "$85",
-   "value_num": 85.0,
+   "value_num": 85,
    "when": "2021",
    "holder": "Jake — Christian McCaffrey",
    "holders": [
@@ -33726,7 +33660,7 @@
    "metric": "auction_qb",
    "direction": "max",
    "value": "$77",
-   "value_num": 77.0,
+   "value_num": 77,
    "when": "2026",
    "holder": "Kaitlyn — Josh Allen",
    "holders": [
@@ -34009,7 +33943,7 @@
    "metric": "auction_rb",
    "direction": "max",
    "value": "$85",
-   "value_num": 85.0,
+   "value_num": 85,
    "when": "2021",
    "holder": "Jake — Christian McCaffrey",
    "holders": [
@@ -34292,7 +34226,7 @@
    "metric": "auction_wr",
    "direction": "max",
    "value": "$67",
-   "value_num": 67.0,
+   "value_num": 67,
    "when": "2017; 2023",
    "holder": "Ben — Antonio Brown; Haan — Justin Jefferson",
    "holders": [
@@ -34576,7 +34510,7 @@
    "metric": "auction_te",
    "direction": "max",
    "value": "$49",
-   "value_num": 49.0,
+   "value_num": 49,
    "when": "2014",
    "holder": "John — Jimmy Graham",
    "holders": [
@@ -34859,7 +34793,7 @@
    "metric": "auction_bust",
    "direction": "max",
    "value": "$36",
-   "value_num": 36.0,
+   "value_num": 36,
    "when": "2014",
    "holder": "Oleg — Zac Stacy",
    "holders": [
@@ -35142,7 +35076,7 @@
    "metric": "auction_injury",
    "direction": "max",
    "value": "$85",
-   "value_num": 85.0,
+   "value_num": 85,
    "when": "2021",
    "holder": "Jake — Christian McCaffrey",
    "holders": [
@@ -35708,7 +35642,7 @@
    "metric": "auction_pos_spend",
    "direction": "max",
    "value": "$177",
-   "value_num": 177.0,
+   "value_num": 177,
    "when": "2021 RB",
    "holder": "Steven — RB",
    "holders": [
