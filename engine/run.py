@@ -90,7 +90,15 @@ def main():
         rev = r["direction"] == "max"
         cands.sort(key=lambda c: (c["value"], -c["season"], -(c["week"] or 0)), reverse=rev)
         best = cands[0]; sn = stored_num(r); tol = TOL.get(m, 0.006 if r["value_num"] and r["value_num"] > 500 else 0.0051)
-        r["leaderboard"] = [{"value": fmt(m, c, d), "holder": holder_text(m, c), "when": when(m, c), "replay": replay(m, c, d.cur)} for c in cands[:5]]
+        r["leaderboard"] = []
+        for i, c in enumerate(cands[:5]):
+            e = {"value": fmt(m, c, d), "holder": holder_text(m, c), "when": when(m, c), "replay": replay(m, c, d.cur)}
+            if i:       # places 2-5 can be expanded in the page; the record itself already shows its own detail
+                if c.get("card"): e["detail"] = c["card"]
+                if m in CARDS.GAME_METRICS and c.get("rid") and c.get("opp_rid") and c.get("week") and c["season"] >= 2021:
+                    pr = CARDS.pair(d, c["season"], c["week"], c["rid"], c["opp_rid"], m in CARDS.BY_SCORE)
+                    if pr: e["cards"] = pr
+            r["leaderboard"].append(e)
         if m in OWNED:
             best = cands[0]; top_c = sorted([c for c in cands if abs(c["value"] - best["value"]) < 1e-9], key=lambda c: (c["season"], c["week"] or 0))
             new = {"value": fmt(m, best, d), "holder": "; ".join(holder_text(m, c) for c in top_c), "when": "; ".join(when(m, c) for c in top_c), "team": ""}

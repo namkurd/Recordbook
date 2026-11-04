@@ -124,9 +124,15 @@ aside.drawer.on{transform:none}
 .mgr{border:0;background:var(--surface2);border-radius:6px;padding:2px 8px;margin:0 4px 3px 0;font-size:13px}
 .mgr:hover{background:var(--accent);color:var(--accent-ink)}
 .lb{width:100%;border-collapse:collapse;font-size:13.5px}
-.lb td{padding:5px 6px;border-bottom:1px solid var(--line)}
-.lb td:first-child{color:var(--muted);width:24px}
+.lb>tbody>tr>td{padding:5px 6px;border-bottom:1px solid var(--line)}
+.lb>tbody>tr>td:first-child{color:var(--muted);width:24px}
 .lb .v{font-weight:600;font-variant-numeric:tabular-nums}
+.lb tr.more{cursor:pointer}.lb tr.more:hover>td,.lb tr.more:focus-visible>td{background:var(--surface2)}
+.lb .lbt{text-align:right;white-space:nowrap}.lb .lbt a{margin-right:8px}
+.chev{display:inline-block;color:var(--muted);transition:transform .15s;font-size:13px}
+.lb tr.open .chev{transform:rotate(180deg)}
+.lb tr.lbx>td{padding:10px 0 14px;border-bottom:1px solid var(--line)}
+.lb tr.lbx .rcards,.lb tr.lbx .fcards{margin-top:2px}
 ul.plain{list-style:none;padding:0;margin:0}
 ul.plain li{padding:6px 0;border-bottom:1px solid var(--line);font-size:13.5px}
 .btn{border:0;background:var(--accent);color:var(--accent-ink);padding:9px 16px;border-radius:8px;font-weight:600;min-height:38px;text-decoration:none;display:inline-block}
@@ -484,7 +490,8 @@ function openDrawer(id){
   if(r.previous)h+='<h4>Previous record</h4><div>'+esc(r.previous.value)+" — "+esc(r.previous.holder)+(r.previous.team?" ("+esc(r.previous.team)+")":"")+", "+esc(r.previous.when)+'<div class="muted">'+(r.previous.reconciled?"Replaced "+esc(r.previous.replaced_on)+" after checking against Sleeper data":"Broken "+esc(r.previous.replaced_on)+" by "+esc(r.previous.replaced_by))+"</div></div>";
   if((r.ties||[]).length)h+='<h4>Also tied by</h4><ul class="plain">'+r.ties.map(function(t){return"<li>"+esc(t.holder)+" — "+esc(t.when)+(t.replay?' · <a href="'+esc(t.replay.url)+'" target="_blank" rel="noopener">▶ replay</a>':"")+"</li>"}).join("")+"</ul>";
   if((r.notes||[]).length)h+='<h4>Also on record</h4><ul class="plain">'+r.notes.map(function(x){return"<li>"+esc(x)+"</li>"}).join("")+"</ul>";
-  if(r.leaderboard&&r.leaderboard.length)h+='<h4>Leaderboard</h4><table class="lb"><tbody>'+r.leaderboard.map(function(x,i){return"<tr><td>"+(i+1)+'</td><td class="v" title="'+esc(x.value)+'">'+esc(shortVal(x.value))+"</td><td>"+esc(x.holder)+'</td><td class="muted">'+esc(x.when)+"</td><td>"+(x.replay?'<a href="'+esc(x.replay.url)+'" target="_blank" rel="noopener" aria-label="Replay">▶</a>':"")+"</td></tr>"}).join("")+"</tbody></table>";
+  if(r.leaderboard&&r.leaderboard.length)h+='<h4>Leaderboard</h4><table class="lb"><tbody>'+r.leaderboard.map(function(x,i){var more=!!(x.detail||x.cards);
+    return'<tr class="lbr'+(more?" more":"")+'" data-i="'+i+'"'+(more?' tabindex="0" role="button" aria-expanded="false" aria-label="Show details for place '+(i+1)+'"':"")+"><td>"+(i+1)+'</td><td class="v" title="'+esc(x.value)+'">'+esc(shortVal(x.value))+"</td><td>"+esc(x.holder)+'</td><td class="muted">'+esc(x.when)+'</td><td class="lbt">'+(x.replay?'<a href="'+esc(x.replay.url)+'" target="_blank" rel="noopener" aria-label="Replay">▶</a>':"")+(more?'<span class="chev" aria-hidden="true">▾</span>':"")+"</td></tr>"}).join("")+"</tbody></table>";
   if(r.detail)h+='<h4>'+esc(r.detail.title)+'</h4>'+detailHTML(r.detail);
   if(r.cards){var ct=r.cards.teams.slice().sort(function(a,b){return(b.won?1:0)-(a.won?1:0)});h+='<h4>Rumble Card · Week '+r.cards.week+", "+r.cards.season+'</h4><div class="rcards">'+ct.map(cardHTML).join("")+"</div>"}
   var hist=S.log.filter(function(e){return e.record===id});
@@ -494,7 +501,14 @@ function openDrawer(id){
   $("dbody").innerHTML=h;$("drawer").classList.toggle("wide",!!(r.cards||r.detail));$("drawer").classList.add("on");$("scrim").classList.add("on");$("drawer").setAttribute("aria-hidden","false");$("dx").focus();toURL();
   if(S.edit)wireForm(r)}
 function closeDrawer(){if(!$("drawer").classList.contains("on"))return;$("drawer").classList.remove("on");$("scrim").classList.remove("on");$("drawer").setAttribute("aria-hidden","true");S.sel=null;toURL();if(lastFocus&&lastFocus.focus)lastFocus.focus()}
-$("dbody").addEventListener("click",function(e){var o=e.target.closest("[data-open]");if(o){e.preventDefault();openDrawer(o.dataset.open);return}var m=e.target.closest(".mgr[data-m]");if(m){S.view="records";S.mgrs.clear();S.mgrs.add(m.dataset.m.replace(/ \(tie\)$/,""));closeDrawer();render();scrollTo(0,0)}});
+function lbToggle(tr){
+  var rec_=rec(S.sel);if(!rec_)return;var i=+tr.dataset.i,e=rec_.leaderboard[i],nx=tr.nextElementSibling;
+  if(nx&&nx.classList.contains("lbx")){var show=nx.hidden;nx.hidden=!show;tr.classList.toggle("open",show);tr.setAttribute("aria-expanded",show);return}
+  var h="";if(e.detail)h+=detailHTML(e.detail);
+  if(e.cards){var ct=e.cards.teams.slice().sort(function(a,b){return(b.won?1:0)-(a.won?1:0)});h+='<div class="rcards" style="margin-top:8px">'+ct.map(cardHTML).join("")+"</div>"}
+  var row=document.createElement("tr");row.className="lbx";row.innerHTML='<td colspan="5">'+h+"</td>";tr.after(row);tr.classList.add("open");tr.setAttribute("aria-expanded","true")}
+$("dbody").addEventListener("keydown",function(e){if(e.key!=="Enter"&&e.key!==" ")return;var tr=e.target.closest&&e.target.closest("tr.lbr.more");if(tr&&e.target===tr){e.preventDefault();lbToggle(tr)}});
+$("dbody").addEventListener("click",function(e){var lb=e.target.closest("tr.lbr.more");if(lb&&!e.target.closest("a")){lbToggle(lb);return}var o=e.target.closest("[data-open]");if(o){e.preventDefault();openDrawer(o.dataset.open);return}var m=e.target.closest(".mgr[data-m]");if(m){S.view="records";S.mgrs.clear();S.mgrs.add(m.dataset.m.replace(/ \(tie\)$/,""));closeDrawer();render();scrollTo(0,0)}});
 
 /* ---------- edit mode (commits straight to GitHub) ---------- */
 function token(){return ls("rb-token")}

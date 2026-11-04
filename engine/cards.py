@@ -33,6 +33,15 @@ def card(d, season, week, rid):
             "season_rumbles": sum(x["rumbles"] for x in prior), "w": sum(1 for x in prior if x["win"]), "l": sum(1 for x in prior if not x["win"]),
             "players": players}
 
+def pair(d, season, week, rid, opp, by_score=False):
+    """The two Rumble Cards of one matchup (or None). by_score: decide the WINNER chip by points (3-team finals)."""
+    a, b = card(d, season, week, rid), card(d, season, week, opp)
+    if not a or not b: return None
+    if by_score: a["won"] = a["act"] > b["act"]; b["won"] = b["act"] > a["act"]
+    return {"season": season, "week": week, "teams": [a, b]}
+
+BY_SCORE = {"highest_playoff_score", "closest_final", "biggest_final"}
+
 def attach(d, rec):
     """Set rec['cards'] (or drop it). Returns True if a card was produced."""
     sw = None
