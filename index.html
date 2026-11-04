@@ -87,6 +87,8 @@ section.cat.closed .rows{display:none}
 .row{display:grid;grid-template-columns:minmax(0,2.6fr) minmax(0,1.7fr) minmax(0,1.6fr) minmax(0,2fr) 58px;gap:10px;align-items:center;height:36px;padding:0 12px;border-top:1px solid rgba(127,127,127,.22);cursor:pointer}
 .row>*{overflow:hidden;text-overflow:ellipsis;min-width:0}
 .row:hover,.row:focus-visible{background:rgba(127,127,127,.17)}
+.whs{display:none}
+.hold .hs{display:none}
 .rname,.hold,.when,.val{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;line-clamp:2;overflow:hidden;line-height:1.15;overflow-wrap:anywhere}
 .rname{font-weight:600}
 .rname .pill{font-size:10px;font-weight:700;vertical-align:1px;margin-left:6px;padding:0 5px;border-radius:999px;border:1px solid var(--good);color:var(--good);letter-spacing:.03em}
@@ -190,8 +192,10 @@ aside.drawer.wide{width:min(780px,100%)}
   .tot{display:none}
   .fin input[type=search]{font-size:16px}
   .colhd{display:none}
-  .row{grid-template-columns:minmax(0,1fr) auto auto;gap:8px;height:44px;padding:0 10px;font-size:13.5px}
-  .rname{font-size:13.5px}.row .val{max-width:34vw}.row .hold{max-width:30vw}
+  .row{grid-template-columns:minmax(0,1fr) auto auto auto;grid-template-areas:"n w v h";gap:8px;height:44px;padding:0 10px;font-size:13.5px}
+  .hold .hf{display:none}.hold .hs{display:inline}
+  .rname{grid-area:n}.row .whs{grid-area:w;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;line-clamp:2;overflow:hidden;font-size:11px;line-height:1.1;color:var(--muted);text-align:right;max-width:17vw;overflow-wrap:anywhere}.row .val{grid-area:v}.row .hold{grid-area:h}
+  .rname{font-size:13.5px}.row .val{max-width:30vw}.row .hold{max-width:24vw}
   .row .when,.row .ico{display:none}
   .row .val{text-align:right}
   .row .hold{text-align:right;color:var(--muted)}
@@ -206,7 +210,7 @@ aside.drawer.wide{width:min(780px,100%)}
   .chg{grid-template-columns:70px 1fr}
 }
 @media (max-width:340px){.row{font-size:12px}.rname{font-size:12px}}
-@media (max-width:370px){.row{font-size:12.5px;gap:6px;padding:0 8px;grid-template-columns:minmax(0,1fr) auto auto}.row .hold{max-width:26vw}.rname{font-size:12.5px}}
+@media (max-width:370px){.row{font-size:12.5px;gap:6px;padding:0 8px;grid-template-columns:minmax(0,1fr) auto auto auto}.row .hold{max-width:22vw}.rname{font-size:12.5px}}
 @media print{.fbar,.hact,.strip,.scrim,aside.drawer,.panel{display:none!important}section.cat.closed .rows{display:block}.row{break-inside:avoid}}
 </style>
 </head>
@@ -391,23 +395,36 @@ function holderHTML(r){   /* full chips, used in the drawer */
   var extra=(r.holders||[]).length===1&&/ (over|vs) /.test(r.holder||"")?' <span class="muted">'+esc(r.holder.replace(r.holders[0],"").trim())+"</span>":"";
   (r.ties||[]).forEach(function(t){out+='<button class="mgr" data-m="'+esc(t.holder)+'" title="Tied">'+esc(t.holder)+" (tie)</button>"});
   return out+extra}
+function whenShort(w){
+  w=String(w||"");if(/all-?time/i.test(w))return"All-time";
+  var yy=function(y){return"\u2019"+String(y).slice(-2)},x,m=/Week (\d+)\D+?(20\d\d)\s*-\s*Week (\d+)\D+?(20\d\d)/.exec(w);
+  if(m&&!/[;,]/.test(w.replace(m[0],"")))return m[2]===m[4]?"W"+m[1]+"\u2013"+m[3]+" "+yy(m[2]):yy(m[2])+"\u2013"+yy(m[4]);
+  var pairs=[],re=/Week (\d+)(?:-\d+)?\D*?(20\d\d)/g;while((x=re.exec(w)))pairs.push("W"+x[1]+" "+yy(x[2]));
+  if(pairs.length)return pairs.slice(0,2).join(", ")+(pairs.length>2?" +"+(pairs.length-2):"");
+  var ys={},re2=/(20\d\d)|'(\d\d)\b/g;while((x=re2.exec(w))){var y=x[1]?+x[1]:(+x[2]<=30?2000+ +x[2]:1900+ +x[2]);ys[y]=1}
+  var list=Object.keys(ys).map(Number).sort();if(!list.length)return"";
+  if(list.length===1)return yy(list[0])+(/(20\d\d)\s*[-\u2013]\s*$/.test(w)?"\u2013":"");
+  var range=/(20\d\d)\s*[-\u2013]\s*(20\d\d)/.test(w)||/'\d\d\s*[-\u2013]\s*'\d\d/.test(w);
+  if(list.length===2&&!range)return yy(list[0])+", "+yy(list[1]);
+  return yy(list[0])+"\u2013"+yy(list[list.length-1])}
 function shortVal(v){v=String(v==null?"":v);var i=v.indexOf("; ");if(i>0)return v.slice(0,i);return v.length>16&&v.indexOf(" (")>0?v.slice(0,v.indexOf(" (")):v}
 function holdShort(r){
   var hs=(r.holders||[]).slice(),ties=(r.ties||[]).map(function(t){return t.holder});
   if(hs.length===1&&hs[0]==="DTFClub")return"League";
   var all=hs.concat(ties),first=all.slice(0,2).join(", "),more=all.length-2;
-  return esc(first)+(more>0?'<span class="more">+'+more+"</span>":"")+(ties.length&&all.length<=2?' <span class="more">(tie)</span>':"")}
+  var full=esc(first)+(more>0?'<span class="more">+'+more+"</span>":"")+(ties.length&&all.length<=2?' <span class="more">(tie)</span>':"");
+  return '<span class="hf">'+full+'</span><span class="hs">'+esc(all[0])+(all.length>1?'<span class="more">+'+(all.length-1)+"</span>":"")+"</span>"}
 function rowHTML(r){
   var pill=recent(r)?'<span class="pill" title="Changed in the last 14 days">NEW</span>':"",lock=r.locked?'<span class="ic" title="Edited by hand; locked from automatic updates">🔒</span>':"";
   var rp=r.replay&&r.replay.url?'<a href="'+esc(r.replay.url)+'" target="_blank" rel="noopener" title="Watch this matchup in Rumble Central" aria-label="Replay" onclick="event.stopPropagation()">▶</a>':"";
   var ev=(r.evidence||[]).length?'<a href="'+esc(r.evidence[0])+'" target="_blank" rel="noopener" title="Screenshot proof" aria-label="Proof" onclick="event.stopPropagation()">📷</a>':"";
   var plain=(r.holders||[]).concat((r.ties||[]).map(function(t){return t.holder})).join(", ");
   return'<div class="row" tabindex="0" role="button" data-id="'+esc(r.id)+'" aria-label="'+esc(r.name+": "+r.value+", "+(plain||r.holder)+", "+r.when)+'. Open details">'+
-   '<div class="rname" title="'+esc(r.name)+'">'+esc(r.name)+pill+lock+"</div>"+
+   '<div class="rname" title="'+esc(r.name)+'">'+esc(r.short||r.name)+pill+lock+"</div>"+
    '<div class="val"><span'+(tippable(r)?' class="tip" data-tip="'+esc(r.id)+'"':"")+">"+esc(shortVal(r.value))+"</span></div>"+
    '<div class="hold" title="'+esc(plain||r.holder)+'">'+holdShort(r)+"</div>"+
    '<div class="when" title="'+esc(r.when)+'">'+esc(r.when)+"</div>"+
-   '<div class="ico">'+rp+ev+"</div></div>"}
+   '<div class="ico">'+rp+ev+'</div><div class="whs" title="'+esc(r.when)+'">'+esc(whenShort(r.when))+"</div></div>"}
 function renderRecords(){
   var list=S.recs.filter(matches),by={};list.forEach(function(r){(by[r.category]=by[r.category]||[]).push(r)});
   var h="";if(!list.length)h='<div class="empty">No records match these filters.<br><button class="ibtn" id="clrEmpty" style="margin-top:10px">Clear filters</button></div>';

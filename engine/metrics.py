@@ -94,6 +94,18 @@ def composite(d):
         if g["season"] in d.done: by[(g["season"], g["m"])] += int(g["win"]) + int(g["outscored"] >= g["n"] / 2)
     return [_c(v, m, y) for (y, m), v in by.items()]
 
+def rumble_margin(d):
+    """Smallest gap between two teams' scores in the same week: a 'Rumble win' is beating any team, not just your opponent."""
+    by = collections.defaultdict(list)
+    for g in d.reg: by[(g["season"], g["week"])].append(g)
+    out = []
+    for (y, w), gs in by.items():
+        gs = sorted(gs, key=lambda g: -g["pts"])
+        for hi, lo in zip(gs, gs[1:]):
+            if hi["pts"] - lo["pts"] < 0.005: continue          # an exact tie is not a win
+            out.append(_c(round(hi["pts"] - lo["pts"], 2), hi["m"], y, w, hi["rid"], f'{hi["pts"]} vs {lo["pts"]} over {lo["m"]}', lo["rid"]))
+    return out
+
 def rumble_pct(d):
     out = []; by = collections.defaultdict(lambda: [0, 0])
     for g in d.reg:
@@ -103,4 +115,4 @@ def rumble_pct(d):
 SEASON_ALL = {"season_pf", "season_pa", "pf_plus", "pa_plus", "field_pct", "reg_wins", "luck", "pts_missed_playoffs", "pts_made_playoffs"}
 REGISTRY = {k: v for k, v in globals().items() if callable(v) and k in {
     "season_pf","season_pa","pf_plus","pa_plus","field_pct","reg_wins","luck","pts_missed_playoffs","pts_made_playoffs","game_pts","game_pts_adj",
-    "margin","multiple","win_pts","loss_pts","league_week","league_week_adj","top_weeks","bottom_weeks","win_streak","loss_streak","top_streak","bottom_streak","rumble_pct","composite"}}
+    "margin","multiple","win_pts","loss_pts","league_week","league_week_adj","top_weeks","bottom_weeks","win_streak","loss_streak","top_streak","bottom_streak","rumble_pct","composite","rumble_margin"}}

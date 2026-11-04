@@ -13,7 +13,7 @@ for r in doc["records"]:
 for r in doc["records"]:   # the two non-FAB trade counts the data can verify
     if r["name"] == "Most non-FAB Trades in a Season (League)": r["metric"], r["direction"] = "trades_league_season", "max"
     if r["name"] == "Most non-FAB Trades in a Season (Team)": r["metric"], r["direction"] = "trades_team_season", "max"
-VERIFY_MAP = {"Most Points on Bench": ("bench", "max"), "Most Shotguns in a Season (League)": ("shot_league", "max"), "Most 0.0's in a Win": ("zeros_win", "max"),
+VERIFY_MAP = {"Smallest Margin of Rumble Win Victory": ("rumble_margin", "min"), "Most Points on Bench": ("bench", "max"), "Most Shotguns in a Season (League)": ("shot_league", "max"), "Most 0.0's in a Win": ("zeros_win", "max"),
               "Highest % Points Scored by 1 Player": ("top_share", "max"), "Fewest Total League Points on Thursday Night": ("thu_league", "min"),
               "Most Points on a Saturday": ("sat_pts", "max"), "Highest Projected Point Total": ("high_proj", "max"), "Highest Projected Point Total (Era Adjusted)": ("high_proj_adj", "max"), "Largest Monday Night Deficit Overcome": ("mnf_overcome", "max")}
 for r in doc["records"]:
@@ -102,6 +102,11 @@ for cat, name, metric, direction, definition in NEW:
     add.append({"id": slug(name), "name": name, "category": cat, "source": "computed", "metric": metric, "direction": direction, "value": "", "value_num": None,
                 "when": "", "holder": "", "holders": [], "league_level": False, "team": "", "notes": [], "evidence": [], "replay": None, "previous": None, "ties": [],
                 "locked": False, "status": "active", "era_pair": None, "size_sensitive": False, "needs_definition": None, "engine_gap": None, "definition": definition, "updated": ""})
+SHORT = {"Longest Head-to-Head Win Streak vs One Opponent": "Longest Win Streak vs One Opponent", "Most Meetings Between Two Managers": "Most Games vs One Opponent",
+         "Most Playoff Meetings Between Two Managers": "Most Playoff Games vs One Opponent", "Biggest Comeback (Points Deficit Overcome)": "Biggest Comeback (Pts Overcome)",
+         "Worst Trade by an Eventual Sacko (PAR)": "Worst Trade by a Sacko (PAR)"}     # row label only; the full name shows in the details view
+for r in doc["records"]:
+    if r["name"] in SHORT: r["short"] = SHORT[r["name"]]
 order = ["Seasons & Playoffs", "Team Seasons", "Games & Weeks", "Projections & NFL Clock", "Trades", "FAB & Waivers", "Sit / Start", "Rivalries", "Draft & Auction"]
 doc["records"] += add
 doc["records"].sort(key=lambda r: order.index(r["category"]))     # stable: keeps the sheet's order inside a category

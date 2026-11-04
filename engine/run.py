@@ -20,7 +20,7 @@ args = set(sys.argv[1:]); BASELINE = "--baseline" in args; DRY = "--dry" in args
 TOL = {"game_pts_adj": 0.15, "league_week_adj": 0.15, "league_week": 0.05, "pf_plus": 0.05, "pa_plus": 0.05}
 
 FORMATS = {**MK.FORMAT, **MO.FORMAT, **EX.FORMAT}
-VERIFY = {"bench", "shot_league", "thu_league", "sat_pts", "mnf_overcome", "high_proj", "high_proj_adj"}     # seeded records whose game is in the 2021+ data: Sleeper wins on a mismatch
+VERIFY = {"rumble_margin", "bench", "shot_league", "thu_league", "sat_pts", "mnf_overcome", "high_proj", "high_proj_adj"}     # seeded records whose game is in the 2021+ data: Sleeper wins on a mismatch
 NEW_MOMENTS = {"comeback", "blown_lead", "lead_changes", "upset_proj", "over_proj", "under_proj", "thu_pts", "mon_pts", "bench_season", "shot_week", "shot_season"}
 
 def stored_num(r):
@@ -45,7 +45,7 @@ def fmt(metric, c, d):
     if metric == "game_pts_adj": return f'{c["detail"].split()[0]} ({v:.2f}% of League Average)'
     if metric == "league_week": return f'{v:.1f} ({100 * v / d.season_avg[c["season"]]:.1f}% of League Average)'
     if metric == "league_week_adj": return f'{v:.1f}% of League Average'
-    if metric in ("margin", "win_pts", "loss_pts"): return f"{v:.2f}"
+    if metric in ("margin", "win_pts", "loss_pts", "rumble_margin"): return f"{v:.2f}"
     return str(int(v)) if float(v).is_integer() else str(v)
 
 def when(metric, c):
@@ -57,10 +57,13 @@ def when(metric, c):
 def holder_text(metric, c):
     if c.get("holder_text"): return c["holder_text"]
     m = re.search(r"over (\S+)", c["detail"])
-    if metric in ("margin", "multiple", "win_pts") and m: return f'{c["holders"][0]} over {m.group(1)}'
+    if metric in ("margin", "multiple", "win_pts", "rumble_margin") and m: return f'{c["holders"][0]} over {m.group(1)}'
     return " & ".join(c["holders"]) if c["holders"] != ["DTFClub"] else "DTFClub"
 
+STREAK_METRICS = {"win_streak", "loss_streak", "top_streak", "bottom_streak"}     # span many games: no single matchup to replay
+
 def replay(metric, c, cur):
+    if metric in STREAK_METRICS: return None
     if not c.get("rid") or not c.get("opp_rid") or c["week"] is None: return None
     q = f'?wp={c["week"]}.{c["rid"]}.{c["opp_rid"]}' + (f'&season={c["season"]}' if c["season"] != cur else "")
     return {"season": c["season"], "week": c["week"], "rid": c["rid"], "opp_rid": c["opp_rid"], "url": RC_BASE + q}
@@ -142,8 +145,14 @@ def main():
         elif same:
             hit = [c for c in cands if abs(c["value"] - sn) <= slack]
             if r["source"] == "seeded": r["source"] = "computed"; r["verified"] = True
-            mine = [c for c in hit if set(c["holders"]) & set(r["holders"])] or hit[:1]
-            if not r.get("replay"): r["replay"] = replay(m, mine[0], d.cur)
+            wm = re.search(r"Week (\d+)\D+?(20\d\d)", r.get("when") or "")
+            same_game = [c for c in hit if wm and (c["week"], c["season"]) == (int(wm.group(1)), int(wm.group(2))) and set(c["holders"]) & set(r["holders"])]
+            mine = same_game or [c for c in hit if set(c["holders"]) & set(r["holders"])] or hit[:1]
+            if same_game and m in VERIFY and not r["locked"] and holder_text(m, same_game[0]) != r["holder"] and r["holder"].count(" ") >= 2:
+                old = snapshot(r); r["holder"] = holder_text(m, same_game[0]); r["replay"] = replay(m, same_game[0], d.cur)
+                log.append({"ts": now, "record": r["id"], "name": r["name"], "cause": "auto:reconcile", "old": old, "new": {"value": r["value"], "holder": r["holder"], "when": r["when"], "team": r["team"]},
+                            "note": "Same game, but Sleeper data has a different opponent; data wins."})
+            if not r.get("replay") or (same_game and m in VERIFY): r["replay"] = replay(m, mine[0], d.cur)
             if mine[0].get("card"): r["detail"] = mine[0]["card"]
             known = {r["holder"]} | set(r["holders"]) | {t["holder"] for t in r["ties"]}
             for c in hit:
@@ -157,6 +166,8 @@ def main():
         ys = sorted({int(x) for x in re.findall(r"\b(20\d\d)\b", r.get("when") or "")})
         if r.get("team") or r["locked"] or len(r["holders"]) != 1 or r["holders"][0] == "DTFClub" or len(ys) != 1 or ys[0] < 2021: continue
         r["team"] = d.teams.get(ys[0], {}).get(r["holders"][0], "")
+    for r in doc["records"]:
+        if r.get("metric") in STREAK_METRICS: r["replay"] = None; r.pop("cards", None)
     n_cards = sum(1 for r in doc["records"] if CARDS.attach(d, r))
     print(n_cards, "record(s) with a Rumble Card")
     if not DRY:

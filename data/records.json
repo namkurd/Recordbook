@@ -252,13 +252,13 @@
     },
     {
      "value": "1",
-     "holder": "Alex",
+     "holder": "Ryan",
      "when": "2011",
      "replay": null
     },
     {
      "value": "1",
-     "holder": "Ryan",
+     "holder": "Alex",
      "when": "2011",
      "replay": null
     }
@@ -454,13 +454,13 @@
     },
     {
      "value": "3",
-     "holder": "Haan",
+     "holder": "Aidan",
      "when": "2016-2018",
      "replay": null
     },
     {
      "value": "3",
-     "holder": "Aidan",
+     "holder": "Haan",
      "when": "2016-2018",
      "replay": null
     }
@@ -790,13 +790,7 @@
     "#2: 16, 2017-2018 Tommy"
    ],
    "evidence": [],
-   "replay": {
-    "season": 2021,
-    "week": 13,
-    "rid": 2,
-    "opp_rid": 8,
-    "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=13.2.8&season=2021"
-   },
+   "replay": null,
    "previous": null,
    "ties": [],
    "locked": false,
@@ -812,61 +806,31 @@
      "value": "22",
      "holder": "Ben",
      "when": "Week 13 2021 - Week 17 2022",
-     "replay": {
-      "season": 2021,
-      "week": 13,
-      "rid": 2,
-      "opp_rid": 8,
-      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=13.2.8&season=2021"
-     }
+     "replay": null
     },
     {
      "value": "12",
      "holder": "Steven",
      "when": "Week 11 2025 - Week 5 2026",
-     "replay": {
-      "season": 2025,
-      "week": 11,
-      "rid": 7,
-      "opp_rid": 3,
-      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=11.7.3&season=2025"
-     }
+     "replay": null
     },
     {
      "value": "8",
      "holder": "Ryan",
      "when": "Week 1 2023 - Week 8 2023",
-     "replay": {
-      "season": 2023,
-      "week": 1,
-      "rid": 10,
-      "opp_rid": 1,
-      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=1.10.1&season=2023"
-     }
+     "replay": null
     },
     {
      "value": "8",
      "holder": "Ben",
      "when": "Week 9 2024 - Week 16 2024",
-     "replay": {
-      "season": 2024,
-      "week": 9,
-      "rid": 2,
-      "opp_rid": 7,
-      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=9.2.7&season=2024"
-     }
+     "replay": null
     },
     {
      "value": "8",
      "holder": "Joe",
      "when": "Week 1 2025 - Week 8 2025",
-     "replay": {
-      "season": 2025,
-      "week": 1,
-      "rid": 5,
-      "opp_rid": 8,
-      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=1.5.8&season=2025"
-     }
+     "replay": null
     }
    ],
    "verified": true
@@ -891,13 +855,7 @@
     "#2: 11, 2018-2019 Steven"
    ],
    "evidence": [],
-   "replay": {
-    "season": 2024,
-    "week": 11,
-    "rid": 10,
-    "opp_rid": 2,
-    "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=11.10.2&season=2024"
-   },
+   "replay": null,
    "previous": {
     "value": "12",
     "holder": "Tommy",
@@ -924,61 +882,31 @@
      "value": "13",
      "holder": "Ryan",
      "when": "Week 11 2024 - Week 6 2025",
-     "replay": {
-      "season": 2024,
-      "week": 11,
-      "rid": 10,
-      "opp_rid": 2,
-      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=11.10.2&season=2024"
-     }
+     "replay": null
     },
     {
      "value": "12",
      "holder": "Tommy",
      "when": "Week 16 2021 - Week 10 2022",
-     "replay": {
-      "season": 2021,
-      "week": 16,
-      "rid": 9,
-      "opp_rid": 5,
-      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=16.9.5&season=2021"
-     }
+     "replay": null
     },
     {
      "value": "9",
      "holder": "Ankit",
      "when": "Week 13 2021 - Week 4 2022",
-     "replay": {
-      "season": 2021,
-      "week": 13,
-      "rid": 8,
-      "opp_rid": 2,
-      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=13.8.2&season=2021"
-     }
+     "replay": null
     },
     {
      "value": "9",
      "holder": "Steven",
      "when": "Week 15 2021 - Week 6 2022",
-     "replay": {
-      "season": 2021,
-      "week": 15,
-      "rid": 7,
-      "opp_rid": 2,
-      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=15.7.2&season=2021"
-     }
+     "replay": null
     },
     {
      "value": "9",
      "holder": "Tommy",
      "when": "Week 2 2023 - Week 10 2023",
-     "replay": {
-      "season": 2023,
-      "week": 2,
-      "rid": 9,
-      "opp_rid": 2,
-      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=2.9.2&season=2023"
-     }
+     "replay": null
     }
    ]
   },
@@ -1152,13 +1080,13 @@
     },
     {
      "value": "3",
-     "holder": "Haan",
+     "holder": "Aidan",
      "when": "2016-2018",
      "replay": null
     },
     {
      "value": "3",
-     "holder": "Aidan",
+     "holder": "Haan",
      "when": "2016-2018",
      "replay": null
     },
@@ -1253,7 +1181,13 @@
    "team": "The Kiran Tor",
    "notes": [],
    "evidence": [],
-   "replay": null,
+   "replay": {
+    "season": 2025,
+    "week": 17,
+    "rid": 4,
+    "opp_rid": 7,
+    "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=17.4.7&season=2025"
+   },
    "previous": null,
    "ties": [],
    "locked": false,
@@ -1269,35 +1203,199 @@
      "value": "202.00",
      "holder": "Haan (won vs Steven)",
      "when": "Week 17 - 2025",
-     "replay": null
+     "replay": {
+      "season": 2025,
+      "week": 17,
+      "rid": 4,
+      "opp_rid": 7,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=17.4.7&season=2025"
+     }
     },
     {
      "value": "202.00",
      "holder": "Haan (won vs Aidan)",
      "when": "Week 17 - 2025",
-     "replay": null
+     "replay": {
+      "season": 2025,
+      "week": 17,
+      "rid": 4,
+      "opp_rid": 1,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=17.4.1&season=2025"
+     }
     },
     {
      "value": "186.00",
      "holder": "Alex (won vs Aidan)",
      "when": "Week 17 - 2024",
-     "replay": null
+     "replay": {
+      "season": 2024,
+      "week": 17,
+      "rid": 6,
+      "opp_rid": 1,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=17.6.1&season=2024"
+     }
     },
     {
      "value": "186.00",
      "holder": "Alex (won vs Ben)",
      "when": "Week 17 - 2024",
-     "replay": null
+     "replay": {
+      "season": 2024,
+      "week": 17,
+      "rid": 6,
+      "opp_rid": 2,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=17.6.2&season=2024"
+     }
     },
     {
      "value": "177.00",
      "holder": "Steven (lost vs Haan)",
      "when": "Week 17 - 2025",
-     "replay": null
+     "replay": {
+      "season": 2025,
+      "week": 17,
+      "rid": 7,
+      "opp_rid": 4,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=17.7.4&season=2025"
+     }
     }
    ],
    "detail": null,
-   "verified": true
+   "verified": true,
+   "cards": {
+    "season": 2025,
+    "week": 17,
+    "teams": [
+     {
+      "rid": 4,
+      "name": "Haan",
+      "team": "The Kiran Tor",
+      "won": true,
+      "act": 202.85,
+      "rumbles": 18,
+      "vs_field": 9,
+      "season_rumbles": 139,
+      "w": 9,
+      "l": 6,
+      "players": [
+       {
+        "pos": "QB",
+        "name": "Drake Maye",
+        "pts": 34.59
+       },
+       {
+        "pos": "RB",
+        "name": "Tyrone Tracy Jr.",
+        "pts": 6.7
+       },
+       {
+        "pos": "RB",
+        "name": "Derrick Henry",
+        "pts": 50.6
+       },
+       {
+        "pos": "TE",
+        "name": "AJ Barner",
+        "pts": 14.3
+       },
+       {
+        "pos": "RB",
+        "name": "D'Andre Swift",
+        "pts": 23.4
+       },
+       {
+        "pos": "WR",
+        "name": "Justin Jefferson",
+        "pts": 7.5
+       },
+       {
+        "pos": "WR",
+        "name": "Stefon Diggs",
+        "pts": 24.1
+       },
+       {
+        "pos": "QB",
+        "name": "Baker Mayfield",
+        "pts": 18.99
+       },
+       {
+        "pos": "K",
+        "name": "Cameron Dicker",
+        "pts": 2.67
+       },
+       {
+        "pos": "DEF",
+        "name": "New York Giants",
+        "pts": 20.0
+       }
+      ]
+     },
+     {
+      "rid": 7,
+      "name": "Steven",
+      "team": "No Country For Old Men",
+      "won": false,
+      "act": 177.03,
+      "rumbles": 17,
+      "vs_field": 8,
+      "season_rumbles": 210,
+      "w": 12,
+      "l": 3,
+      "players": [
+       {
+        "pos": "QB",
+        "name": "Joe Burrow",
+        "pts": 22.65
+       },
+       {
+        "pos": "RB",
+        "name": "James Cook III",
+        "pts": 10.2
+       },
+       {
+        "pos": "RB",
+        "name": "Kenny Gainwell",
+        "pts": 7.76
+       },
+       {
+        "pos": "TE",
+        "name": "Trey McBride",
+        "pts": 25.1
+       },
+       {
+        "pos": "RB",
+        "name": "Bijan Robinson",
+        "pts": 42.4
+       },
+       {
+        "pos": "WR",
+        "name": "George Pickens",
+        "pts": 13.8
+       },
+       {
+        "pos": "WR",
+        "name": "Jaxon Smith-Njigba",
+        "pts": 17.7
+       },
+       {
+        "pos": "QB",
+        "name": "Matthew Stafford",
+        "pts": 11.61
+       },
+       {
+        "pos": "K",
+        "name": "Cam Little",
+        "pts": 14.9
+       },
+       {
+        "pos": "DEF",
+        "name": "Pittsburgh Steelers",
+        "pts": 10.91
+       }
+      ]
+     }
+    ]
+   }
   },
   {
    "id": "closest-championship-game",
@@ -1317,7 +1415,13 @@
    "team": "Fields of Dreams",
    "notes": [],
    "evidence": [],
-   "replay": null,
+   "replay": {
+    "season": 2023,
+    "week": 17,
+    "rid": 8,
+    "opp_rid": 5,
+    "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=17.8.5&season=2023"
+   },
    "previous": null,
    "ties": [],
    "locked": false,
@@ -1333,7 +1437,13 @@
      "value": "158.0 to 152.0",
      "holder": "Ankit over Joe",
      "when": "2023 final",
-     "replay": null
+     "replay": {
+      "season": 2023,
+      "week": 17,
+      "rid": 8,
+      "opp_rid": 5,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=17.8.5&season=2023"
+     }
     },
     {
      "value": "87.7 to 77.5",
@@ -1345,13 +1455,25 @@
      "value": "97.4 to 87.0",
      "holder": "Ben over Aidan",
      "when": "2022 final",
-     "replay": null
+     "replay": {
+      "season": 2022,
+      "week": 17,
+      "rid": 2,
+      "opp_rid": 1,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=17.2.1&season=2022"
+     }
     },
     {
      "value": "158.0 to 146.0",
      "holder": "Ankit over Steven",
      "when": "2023 final",
-     "replay": null
+     "replay": {
+      "season": 2023,
+      "week": 17,
+      "rid": 8,
+      "opp_rid": 7,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=17.8.7&season=2023"
+     }
     },
     {
      "value": "115.7 to 102.0",
@@ -1361,7 +1483,141 @@
     }
    ],
    "detail": null,
-   "verified": true
+   "verified": true,
+   "cards": {
+    "season": 2023,
+    "week": 17,
+    "teams": [
+     {
+      "rid": 8,
+      "name": "Ankit",
+      "team": "Fields of Dreams",
+      "won": true,
+      "act": 159.83,
+      "rumbles": 18,
+      "vs_field": 9,
+      "season_rumbles": 158,
+      "w": 9,
+      "l": 6,
+      "players": [
+       {
+        "pos": "QB",
+        "name": "Justin Fields",
+        "pts": 23.22
+       },
+       {
+        "pos": "RB",
+        "name": "Kyren Williams",
+        "pts": 30.1
+       },
+       {
+        "pos": "RB",
+        "name": "Tony Pollard",
+        "pts": 5.9
+       },
+       {
+        "pos": "WR",
+        "name": "DJ Moore",
+        "pts": 30.9
+       },
+       {
+        "pos": "WR",
+        "name": "Noah Brown",
+        "pts": 1.8
+       },
+       {
+        "pos": "TE",
+        "name": "Darren Waller",
+        "pts": 10.1
+       },
+       {
+        "pos": "WR",
+        "name": "Zay Flowers",
+        "pts": 19.6
+       },
+       {
+        "pos": "QB",
+        "name": "Tyrod Taylor",
+        "pts": 15.26
+       },
+       {
+        "pos": "K",
+        "name": "Justin Tucker",
+        "pts": 8.0
+       },
+       {
+        "pos": "DEF",
+        "name": "Cleveland Browns",
+        "pts": 14.95
+       }
+      ]
+     },
+     {
+      "rid": 5,
+      "name": "Joe",
+      "team": "The Liberal Elite",
+      "won": false,
+      "act": 152.62,
+      "rumbles": 8,
+      "vs_field": 8,
+      "season_rumbles": 149,
+      "w": 9,
+      "l": 6,
+      "players": [
+       {
+        "pos": "QB",
+        "name": "Patrick Mahomes",
+        "pts": 11.0
+       },
+       {
+        "pos": "RB",
+        "name": "Rachaad White",
+        "pts": 8.6
+       },
+       {
+        "pos": "RB",
+        "name": "Saquon Barkley",
+        "pts": 8.8
+       },
+       {
+        "pos": "WR",
+        "name": "Amon-Ra St. Brown",
+        "pts": 22.1
+       },
+       {
+        "pos": "WR",
+        "name": "Brandon Aiyuk",
+        "pts": 24.4
+       },
+       {
+        "pos": "TE",
+        "name": "George Kittle",
+        "pts": 5.9
+       },
+       {
+        "pos": "RB",
+        "name": "De'Von Achane",
+        "pts": 23.7
+       },
+       {
+        "pos": "QB",
+        "name": "Jordan Love",
+        "pts": 28.44
+       },
+       {
+        "pos": "K",
+        "name": "Brandon Aubrey",
+        "pts": 11.4
+       },
+       {
+        "pos": "DEF",
+        "name": "Denver Broncos",
+        "pts": 8.28
+       }
+      ]
+     }
+    ]
+   }
   },
   {
    "id": "biggest-championship-blowout",
@@ -1381,7 +1637,13 @@
    "team": "The Kiran Tor",
    "notes": [],
    "evidence": [],
-   "replay": null,
+   "replay": {
+    "season": 2025,
+    "week": 17,
+    "rid": 4,
+    "opp_rid": 1,
+    "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=17.4.1&season=2025"
+   },
    "previous": null,
    "ties": [],
    "locked": false,
@@ -1397,7 +1659,13 @@
      "value": "202.0 to 120.0",
      "holder": "Haan over Aidan",
      "when": "2025 final",
-     "replay": null
+     "replay": {
+      "season": 2025,
+      "week": 17,
+      "rid": 4,
+      "opp_rid": 1,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=17.4.1&season=2025"
+     }
     },
     {
      "value": "133.4 to 92.8",
@@ -1415,7 +1683,13 @@
      "value": "186.0 to 154.0",
      "holder": "Alex over Ben",
      "when": "2024 final",
-     "replay": null
+     "replay": {
+      "season": 2024,
+      "week": 17,
+      "rid": 6,
+      "opp_rid": 2,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=17.6.2&season=2024"
+     }
     },
     {
      "value": "114.9 to 85.9",
@@ -1425,7 +1699,141 @@
     }
    ],
    "detail": null,
-   "verified": true
+   "verified": true,
+   "cards": {
+    "season": 2025,
+    "week": 17,
+    "teams": [
+     {
+      "rid": 4,
+      "name": "Haan",
+      "team": "The Kiran Tor",
+      "won": true,
+      "act": 202.85,
+      "rumbles": 18,
+      "vs_field": 9,
+      "season_rumbles": 139,
+      "w": 9,
+      "l": 6,
+      "players": [
+       {
+        "pos": "QB",
+        "name": "Drake Maye",
+        "pts": 34.59
+       },
+       {
+        "pos": "RB",
+        "name": "Tyrone Tracy Jr.",
+        "pts": 6.7
+       },
+       {
+        "pos": "RB",
+        "name": "Derrick Henry",
+        "pts": 50.6
+       },
+       {
+        "pos": "TE",
+        "name": "AJ Barner",
+        "pts": 14.3
+       },
+       {
+        "pos": "RB",
+        "name": "D'Andre Swift",
+        "pts": 23.4
+       },
+       {
+        "pos": "WR",
+        "name": "Justin Jefferson",
+        "pts": 7.5
+       },
+       {
+        "pos": "WR",
+        "name": "Stefon Diggs",
+        "pts": 24.1
+       },
+       {
+        "pos": "QB",
+        "name": "Baker Mayfield",
+        "pts": 18.99
+       },
+       {
+        "pos": "K",
+        "name": "Cameron Dicker",
+        "pts": 2.67
+       },
+       {
+        "pos": "DEF",
+        "name": "New York Giants",
+        "pts": 20.0
+       }
+      ]
+     },
+     {
+      "rid": 1,
+      "name": "Aidan",
+      "team": "Neon Jennings Evansgelion",
+      "won": false,
+      "act": 120.95,
+      "rumbles": 1,
+      "vs_field": 1,
+      "season_rumbles": 174,
+      "w": 10,
+      "l": 5,
+      "players": [
+       {
+        "pos": "QB",
+        "name": "Dak Prescott",
+        "pts": 23.98
+       },
+       {
+        "pos": "RB",
+        "name": "RJ Harvey",
+        "pts": 20.6
+       },
+       {
+        "pos": "RB",
+        "name": "Jahmyr Gibbs",
+        "pts": 7.4
+       },
+       {
+        "pos": "TE",
+        "name": "Dallas Goedert",
+        "pts": 9.8
+       },
+       {
+        "pos": "WR",
+        "name": "Drake London",
+        "pts": 1.9
+       },
+       {
+        "pos": "WR",
+        "name": "Mike Evans",
+        "pts": 13.1
+       },
+       {
+        "pos": "WR",
+        "name": "CeeDee Lamb",
+        "pts": 9.6
+       },
+       {
+        "pos": "QB",
+        "name": "Jalen Hurts",
+        "pts": 9.65
+       },
+       {
+        "pos": "K",
+        "name": "Evan McPherson",
+        "pts": 9.37
+       },
+       {
+        "pos": "DEF",
+        "name": "Seattle Seahawks",
+        "pts": 15.55
+       }
+      ]
+     }
+    ]
+   }
   },
   {
    "id": "most-playoff-wins-career",
@@ -2906,61 +3314,31 @@
      "value": "3",
      "holder": "Ankit",
      "when": "Week 7 2021 - Week 9 2021",
-     "replay": {
-      "season": 2021,
-      "week": 7,
-      "rid": 8,
-      "opp_rid": 9,
-      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=7.8.9&season=2021"
-     }
+     "replay": null
     },
     {
      "value": "3",
      "holder": "Aidan",
      "when": "Week 1 2022 - Week 3 2022",
-     "replay": {
-      "season": 2022,
-      "week": 1,
-      "rid": 1,
-      "opp_rid": 6,
-      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=1.1.6&season=2022"
-     }
+     "replay": null
     },
     {
      "value": "3",
      "holder": "Ankit",
      "when": "Week 5 2022 - Week 7 2022",
-     "replay": {
-      "season": 2022,
-      "week": 5,
-      "rid": 8,
-      "opp_rid": 10,
-      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=5.8.10&season=2022"
-     }
+     "replay": null
     },
     {
      "value": "2",
      "holder": "Tommy",
      "when": "Week 12 2021 - Week 13 2021",
-     "replay": {
-      "season": 2021,
-      "week": 12,
-      "rid": 9,
-      "opp_rid": 3,
-      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=12.9.3&season=2021"
-     }
+     "replay": null
     },
     {
      "value": "2",
      "holder": "Joe",
      "when": "Week 14 2021 - Week 15 2021",
-     "replay": {
-      "season": 2021,
-      "week": 14,
-      "rid": 5,
-      "opp_rid": 3,
-      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=14.5.3&season=2021"
-     }
+     "replay": null
     }
    ]
   },
@@ -2983,13 +3361,7 @@
    "team": "Mr. Downside, A Series of Un4nettate Events",
    "notes": [],
    "evidence": [],
-   "replay": {
-    "season": 2024,
-    "week": 2,
-    "rid": 1,
-    "opp_rid": 8,
-    "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=2.1.8&season=2024"
-   },
+   "replay": null,
    "previous": null,
    "ties": [],
    "locked": false,
@@ -3005,61 +3377,31 @@
      "value": "3",
      "holder": "Aidan",
      "when": "Week 2 2024 - Week 4 2024",
-     "replay": {
-      "season": 2024,
-      "week": 2,
-      "rid": 1,
-      "opp_rid": 8,
-      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=2.1.8&season=2024"
-     }
+     "replay": null
     },
     {
      "value": "2",
      "holder": "Steven",
      "when": "Week 3 2022 - Week 4 2022",
-     "replay": {
-      "season": 2022,
-      "week": 3,
-      "rid": 7,
-      "opp_rid": 4,
-      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=3.7.4&season=2022"
-     }
+     "replay": null
     },
     {
      "value": "2",
      "holder": "Joe",
      "when": "Week 4 2023 - Week 5 2023",
-     "replay": {
-      "season": 2023,
-      "week": 4,
-      "rid": 5,
-      "opp_rid": 10,
-      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=4.5.10&season=2023"
-     }
+     "replay": null
     },
     {
      "value": "2",
      "holder": "Alex",
      "when": "Week 14 2023 - Week 15 2023",
-     "replay": {
-      "season": 2023,
-      "week": 14,
-      "rid": 6,
-      "opp_rid": 2,
-      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=14.6.2&season=2023"
-     }
+     "replay": null
     },
     {
      "value": "2",
      "holder": "Ryan",
      "when": "Week 14 2024 - Week 15 2024",
-     "replay": {
-      "season": 2024,
-      "week": 14,
-      "rid": 10,
-      "opp_rid": 1,
-      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=14.10.1&season=2024"
-     }
+     "replay": null
     }
    ],
    "verified": true
@@ -4609,9 +4951,9 @@
    "id": "smallest-margin-of-rumble-win-victory",
    "name": "Smallest Margin of Rumble Win Victory",
    "category": "Games & Weeks",
-   "source": "seeded",
-   "metric": null,
-   "direction": null,
+   "source": "computed",
+   "metric": "rumble_margin",
+   "direction": "min",
    "value": "0.01",
    "value_num": 0.01,
    "when": "Week 14 - 2024",
@@ -4623,9 +4965,27 @@
    "team": "Touchdune Messiah",
    "notes": [],
    "evidence": [],
-   "replay": null,
+   "replay": {
+    "season": 2024,
+    "week": 14,
+    "rid": 5,
+    "opp_rid": 3,
+    "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=14.5.3&season=2024"
+   },
    "previous": null,
-   "ties": [],
+   "ties": [
+    {
+     "holder": "Oleg over Haan",
+     "when": "Week 8 - 2021",
+     "replay": {
+      "season": 2021,
+      "week": 8,
+      "rid": 6,
+      "opp_rid": 4,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=8.6.4&season=2021"
+     }
+    }
+   ],
    "locked": false,
    "status": "active",
    "era_pair": null,
@@ -4633,7 +4993,204 @@
    "needs_definition": null,
    "definition": null,
    "engine_gap": null,
-   "updated": "2026-11-02"
+   "updated": "2026-11-02",
+   "leaderboard": [
+    {
+     "value": "0.01",
+     "holder": "Joe over Ankit",
+     "when": "Week 5 - 2026",
+     "replay": {
+      "season": 2026,
+      "week": 5,
+      "rid": 5,
+      "opp_rid": 8,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=5.5.8"
+     }
+    },
+    {
+     "value": "0.01",
+     "holder": "Joe over Jake",
+     "when": "Week 14 - 2024",
+     "replay": {
+      "season": 2024,
+      "week": 14,
+      "rid": 5,
+      "opp_rid": 3,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=14.5.3&season=2024"
+     }
+    },
+    {
+     "value": "0.01",
+     "holder": "Oleg over Haan",
+     "when": "Week 8 - 2021",
+     "replay": {
+      "season": 2021,
+      "week": 8,
+      "rid": 6,
+      "opp_rid": 4,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=8.6.4&season=2021"
+     }
+    },
+    {
+     "value": "0.02",
+     "holder": "Ben over Jake",
+     "when": "Week 12 - 2021",
+     "replay": {
+      "season": 2021,
+      "week": 12,
+      "rid": 2,
+      "opp_rid": 3,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=12.2.3&season=2021"
+     }
+    },
+    {
+     "value": "0.03",
+     "holder": "Jake over Haan",
+     "when": "Week 15 - 2025",
+     "replay": {
+      "season": 2025,
+      "week": 15,
+      "rid": 3,
+      "opp_rid": 4,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=15.3.4&season=2025"
+     }
+    }
+   ],
+   "verified": true,
+   "cards": {
+    "season": 2024,
+    "week": 14,
+    "teams": [
+     {
+      "rid": 5,
+      "name": "Joe",
+      "team": "TouchDune Messiah",
+      "won": true,
+      "act": 125.25,
+      "rumbles": 12,
+      "vs_field": 3,
+      "season_rumbles": 130,
+      "w": 8,
+      "l": 6,
+      "players": [
+       {
+        "pos": "QB",
+        "name": "Jordan Love",
+        "pts": 14.29
+       },
+       {
+        "pos": "RB",
+        "name": "Tony Pollard",
+        "pts": 14.4
+       },
+       {
+        "pos": "RB",
+        "name": "Kyren Williams",
+        "pts": 23.7
+       },
+       {
+        "pos": "WR",
+        "name": "Deebo Samuel Sr.",
+        "pts": 5.5
+       },
+       {
+        "pos": "WR",
+        "name": "DeAndre Hopkins",
+        "pts": 13.2
+       },
+       {
+        "pos": "TE",
+        "name": "Sam LaPorta",
+        "pts": 10.4
+       },
+       {
+        "pos": "RB",
+        "name": "Isiah Pacheco",
+        "pts": 8.1
+       },
+       {
+        "pos": "QB",
+        "name": "Aaron Rodgers",
+        "pts": 16.81
+       },
+       {
+        "pos": "K",
+        "name": "Brandon McManus",
+        "pts": 7.2
+       },
+       {
+        "pos": "DEF",
+        "name": "Pittsburgh Steelers",
+        "pts": 11.65
+       }
+      ]
+     },
+     {
+      "rid": 3,
+      "name": "Jake",
+      "team": "Put em to bed night night",
+      "won": false,
+      "act": 125.24,
+      "rumbles": 2,
+      "vs_field": 2,
+      "season_rumbles": 97,
+      "w": 4,
+      "l": 10,
+      "players": [
+       {
+        "pos": "QB",
+        "name": "Geno Smith",
+        "pts": 12.82
+       },
+       {
+        "pos": "RB",
+        "name": "Travis Etienne Jr.",
+        "pts": 11.0
+       },
+       {
+        "pos": "RB",
+        "name": "Rico Dowdle",
+        "pts": 15.1
+       },
+       {
+        "pos": "WR",
+        "name": "Jaylen Waddle",
+        "pts": 20.9
+       },
+       {
+        "pos": "WR",
+        "name": "Amon-Ra St. Brown",
+        "pts": 10.3
+       },
+       {
+        "pos": "TE",
+        "name": "Jonnu Smith",
+        "pts": 13.4
+       },
+       {
+        "pos": "WR",
+        "name": "Garrett Wilson",
+        "pts": 18.4
+       },
+       {
+        "pos": "QB",
+        "name": "Cooper Rush",
+        "pts": 13.07
+       },
+       {
+        "pos": "K",
+        "name": "Jake Elliott",
+        "pts": 1.0
+       },
+       {
+        "pos": "DEF",
+        "name": "Tennessee Titans",
+        "pts": 9.25
+       }
+      ]
+     }
+    ]
+   }
   },
   {
    "id": "largest-multiple-of-opponents-score",
@@ -6057,7 +6614,8 @@
       ]
      }
     ]
-   }
+   },
+   "short": "Biggest Comeback (Pts Overcome)"
   },
   {
    "id": "biggest-blown-lead",
@@ -10438,7 +10996,8 @@
      }
     ]
    },
-   "verified": true
+   "verified": true,
+   "short": "Worst Trade by a Sacko (PAR)"
   },
   {
    "id": "most-fab-owned-at-one-time",
@@ -13164,7 +13723,8 @@
     }
    ],
    "detail": null,
-   "verified": true
+   "verified": true,
+   "short": "Longest Win Streak vs One Opponent"
   },
   {
    "id": "most-meetings-between-two-managers",
@@ -13233,7 +13793,8 @@
     }
    ],
    "detail": null,
-   "verified": true
+   "verified": true,
+   "short": "Most Games vs One Opponent"
   },
   {
    "id": "most-one-sided-rivalry",
@@ -13362,7 +13923,8 @@
     }
    ],
    "detail": null,
-   "verified": true
+   "verified": true,
+   "short": "Most Playoff Games vs One Opponent"
   },
   {
    "id": "most-expensive-auction-pick",

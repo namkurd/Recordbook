@@ -14,6 +14,11 @@ def fact(title, head, rows, chip=None): return {"kind": "facts", "title": title,
 
 def make(d):
     R = {}; L = getattr(d, "_ledger", {}) or {}
+    def rid_of(season, name):
+        for rid, n in (d.raw["rosters"].get(season) or {}).items():
+            if N(norm(n, season)) == N(name): return rid
+        return None
+    def refs(season, a, b): return (rid_of(season, a), rid_of(season, b)) if season >= 2021 else (None, None)
     play = d.raw["playoffs"]; seasons = {int(y): v for y, v in d.raw["seasons"].items()}
     fabs = ((d.raw.get("fab") or {}).get("seasons")) or []
     # ---------------- rivalries (2021+ games; weekly archive) ----------------
@@ -69,7 +74,7 @@ def make(d):
         out = []
         for p in play:
             for who, sc, opp, sc2 in ((p["winner"], p["winner_score"], p["loser"], p["loser_score"]), (p["loser"], p["loser_score"], p["winner"], p["winner_score"])):
-                if sc: out.append(_c(sc, [N(who)], p["season"], p["week"], when=wk(p["season"], p["week"]), ht=f"{N(who)} ({'won' if sc > sc2 else 'lost'} vs {N(opp)})"))
+                if sc: out.append(_c(sc, [N(who)], p["season"], p["week"], *refs(p["season"], who, opp), when=wk(p["season"], p["week"]), ht=f"{N(who)} ({'won' if sc > sc2 else 'lost'} vs {N(opp)})"))
         return out
     R["highest_playoff_score"] = hi_playoff
     def finals(sign):
@@ -77,7 +82,7 @@ def make(d):
         for p in play: last[p["season"]] = max(last.get(p["season"], 0), p["week"])
         for p in play:
             if p["week"] == last[p["season"]] and p.get("winner_score") and p.get("loser_score"):
-                out.append(_c(round(p["winner_score"] - p["loser_score"], 1), [N(p["winner"])], p["season"], p["week"], when=f'{p["season"]} final', ht=f'{N(p["winner"])} over {N(p["loser"])}',
+                out.append(_c(round(p["winner_score"] - p["loser_score"], 1), [N(p["winner"])], p["season"], p["week"], *refs(p["season"], p["winner"], p["loser"]), when=f'{p["season"]} final', ht=f'{N(p["winner"])} over {N(p["loser"])}',
                               display=f'{p["winner_score"]:.1f} to {p["loser_score"]:.1f}'))
         return out
     R["closest_final"] = lambda: finals(1); R["biggest_final"] = lambda: finals(1)

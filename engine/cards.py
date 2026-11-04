@@ -3,7 +3,7 @@ import re
 from load import fetch
 
 GAME_METRICS = {"game_pts", "game_pts_adj", "margin", "multiple", "win_pts", "loss_pts", "sit_start_miss", "sit_start_call", "worst_week",
-                "comeback", "blown_lead", "lead_changes", "upset_proj", "over_proj", "under_proj", "thu_pts", "mon_pts", "sat_pts", "mnf_overcome", "bench", "shot_week", "zeros_win", "top_share", "high_proj", "high_proj_adj"}
+                "comeback", "blown_lead", "lead_changes", "upset_proj", "over_proj", "under_proj", "thu_pts", "mon_pts", "sat_pts", "mnf_overcome", "bench", "shot_week", "zeros_win", "top_share", "high_proj", "high_proj_adj", "highest_playoff_score", "closest_final", "biggest_final", "rumble_margin"}
 EXTRA_IDS = {"most-points-on-a-saturday", "largest-monday-night-deficit-overcome"}   # seeded single-game records with a known week
 _cache = {}
 
@@ -51,6 +51,8 @@ def attach(d, rec):
     a, b = card(d, y, wk, rid), card(d, y, wk, opp)
     if not a or not b:
         rec.pop("cards", None); return False
+    if rec.get("metric") in ("highest_playoff_score", "closest_final", "biggest_final"):      # a 3-team final pairs teams oddly in Sleeper's data: decide the winner by score
+        a["won"] = a["act"] > b["act"]; b["won"] = b["act"] > a["act"]
     rec["cards"] = {"season": y, "week": wk, "teams": [a, b]}
     if not rec.get("replay") and has_replay(y, wk, d.cur):
         from run_util import replay_url
