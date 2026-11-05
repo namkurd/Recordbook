@@ -307,8 +307,10 @@ function eraLine(r){var ss=seasonsOf(r);if(!ss.length)return"";var first=eraTags
   return eraTags(ss[0]).map(function(k){return ERALABEL[k]}).join(" · ")}
 
 /* ---------- helpers ---------- */
-function allHolders(r){var h=(r.holders||[]).slice();(r.ties||[]).forEach(function(t){h.push(t.holder)});return h}
-function mgrList(){var m={};S.recs.forEach(function(r){var seen={};(r.holders||[]).concat((r.ties||[]).map(function(t){return t.holder})).forEach(function(n){if(n&&n!=="DTFClub"&&!seen[n]){seen[n]=1;m[n]=(m[n]||0)+1}})});return Object.keys(m).sort().map(function(k){return[k,m[k]]})}
+/* a holder string can carry detail ("Haan — Chris Godwin Jr., Will Reichard", "Oleg over Haan"); the Held-by filter wants the one manager */
+function mgrOf(n){return String(n||"").split(/\s+(?:\u2014|over|vs)\s+/)[0].trim()}
+function allHolders(r){var h=(r.holders||[]).map(mgrOf);(r.ties||[]).forEach(function(t){h.push(mgrOf(t.holder))});return h}
+function mgrList(){var m={};S.recs.forEach(function(r){var seen={};allHolders(r).forEach(function(n){if(n&&n!=="DTFClub"&&!seen[n]){seen[n]=1;m[n]=(m[n]||0)+1}})});return Object.keys(m).sort().map(function(k){return[k,m[k]]})}
 function recent(r){return !!(r.previous&&!r.previous.reconciled&&r.previous.replaced_on&&daysAgo(r.previous.replaced_on)<=14)}
 function daysAgo(s){return Math.floor((Date.now()-new Date(s+"T12:00:00").getTime())/864e5)}
 function matches(r){
@@ -403,9 +405,9 @@ function hideTip(){tb.hidden=true}
 var CATCLS={"Seasons & Playoffs":"cat0","Team Seasons":"cat1","Games & Weeks":"cat2","Projections & NFL Clock":"cat3","Trades":"cat4","FAB & Waivers":"cat5","Sit / Start":"cat6","Rivalries":"cat7","Draft & Auction":"cat8"};
 CATVAR={"Seasons & Playoffs":"--c0","Team Seasons":"--c1","Games & Weeks":"--c2","Projections & NFL Clock":"--c3","Trades":"--c4","FAB & Waivers":"--c5","Sit / Start":"--c6","Rivalries":"--c7","Draft & Auction":"--c8"};
 function holderHTML(r){   /* full chips, used in the drawer */
-  var out=(r.holders||[]).map(function(m){return m==="DTFClub"?'<span class="muted">League</span>':'<button class="mgr" data-m="'+esc(m)+'" title="Show only '+esc(m)+'">'+esc(m)+"</button>"}).join("");
-  var extra=(r.holders||[]).length===1&&/ (over|vs) /.test(r.holder||"")?' <span class="muted">'+esc(r.holder.replace(r.holders[0],"").trim())+"</span>":"";
-  (r.ties||[]).forEach(function(t){out+='<button class="mgr" data-m="'+esc(t.holder)+'" title="Tied">'+esc(t.holder)+" (tie)</button>"});
+  var out=(r.holders||[]).map(function(m){return m==="DTFClub"?'<span class="muted">League</span>':'<button class="mgr" data-m="'+esc(mgrOf(m))+'" title="Show only '+esc(mgrOf(m))+'">'+esc(mgrOf(m))+"</button>"}).join("");
+  var extra=(r.holders||[]).length===1&&mgrOf(r.holders[0])!==String(r.holders[0]).trim()?' <span class="muted">'+esc(String(r.holders[0]).replace(mgrOf(r.holders[0]),"").trim())+"</span>":((r.holders||[]).length===1&&/ (over|vs) /.test(r.holder||"")?' <span class="muted">'+esc(r.holder.replace(r.holders[0],"").trim())+"</span>":"");
+  (r.ties||[]).forEach(function(t){out+='<button class="mgr" data-m="'+esc(mgrOf(t.holder))+'" title="Tied">'+esc(mgrOf(t.holder))+" (tie)</button>"});
   return out+extra}
 function whenShort(w){
   w=String(w||"");if(/all-?time/i.test(w))return"All-time";
@@ -472,7 +474,7 @@ document.addEventListener("mouseover",function(e){var t=tipTarget(e);if(t)showTi
 document.addEventListener("mouseout",function(e){if(tipTarget(e))hideTip()});
 document.addEventListener("focusin",function(e){var t=tipTarget(e);if(t)showTip(t,rec(t.dataset.tip))});
 document.addEventListener("focusout",function(e){if(tipTarget(e))hideTip()});
-document.addEventListener("scroll",hideTip,true);
+document.addEventListener("scroll",function(e){if(e.target&&e.target.nodeType===1&&tb.contains(e.target))return;hideTip()},true);
 function rec(id){return S.recs.filter(function(r){return r.id===id})[0]}
 
 /* ---------- drawer ---------- */
@@ -642,6 +644,7 @@ function save(r,v,isNew,tries){
 })();
 </script>
 <script>window.DTF_VIEWS = {"hide": ".seg[aria-label=\"View\"]", "items": [{"label": "Records", "sel": "#tab-records"}, {"label": "Change log", "sel": "#tab-changes"}]};</script>
+<script>window.DTF_TIPS = ["#tipbox"];</script>
 <script src="/shell/nav.js" defer></script>
 </body>
 </html>
