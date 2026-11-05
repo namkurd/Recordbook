@@ -327,7 +327,7 @@ function matches(r){
 
 /* ---------- URL state ---------- */
 function fromURL(){var p=new URLSearchParams(location.search);S.q=p.get("q")||"";(p.get("type")||"").split("|").filter(Boolean).forEach(function(x){S.cats.add(x)});(p.get("mgr")||"").split("|").filter(Boolean).forEach(function(x){S.mgrs.add(x)});(p.get("show")||"").split("|").filter(Boolean).forEach(function(x){S.opts.add(x)});(p.get("era")||"").split("|").filter(Boolean).forEach(function(x){S.eras.add(x)});if(p.get("view")==="changes")S.view="changes";S.focus=p.get("r")}
-function toURL(){var p=new URLSearchParams();if(S.q)p.set("q",S.q);if(S.cats.size)p.set("type",[...S.cats].join("|"));if(S.mgrs.size)p.set("mgr",[...S.mgrs].join("|"));if(S.opts.size)p.set("show",[...S.opts].join("|"));if(S.eras.size)p.set("era",[...S.eras].join("|"));if(S.view==="changes")p.set("view","changes");if(S.sel)p.set("r",S.sel);var s=p.toString();try{history.replaceState(null,"",location.pathname+(s?"?"+s:""))}catch(e){}}
+function toURL(){var p=new URLSearchParams();if(S.q)p.set("q",S.q);if(S.cats.size)p.set("type",[...S.cats].join("|"));if(S.mgrs.size)p.set("mgr",[...S.mgrs].join("|"));if(S.opts.size)p.set("show",[...S.opts].join("|"));if(S.eras.size)p.set("era",[...S.eras].join("|"));if(S.view==="changes")p.set("view","changes");if(S.sel)p.set("r",S.sel);var s=p.toString();try{history.replaceState(history.state,"",location.pathname+(s?"?"+s:""))}catch(e){}}
 
 /* ---------- filters: slim bar + dropdowns (one bottom sheet on phones) ---------- */
 var OPTLABEL={recent:"Recently changed",raw:"Raw only",adj:"Era-adjusted only",computed:"Computed",seeded:"Seeded",manual:"Manual",replay:"Has replay"};
