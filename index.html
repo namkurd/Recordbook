@@ -20,7 +20,7 @@
   --c0:#e4f1dc;--c0h:#b9d9a9;--c1:#dce9f8;--c1h:#a9c8ec;--c2:#fff4d1;--c2h:#ffe39a;--c3:#f4e3ec;--c3h:#dcb0c5;--c4:#f0f0f1;--c4h:#cfcfd3;--c5:#dcf1ee;--c5h:#a7ddd6;--c6:#e9e3f6;--c6h:#c6b8e8;--c7:#fde9d8;--c7h:#f4c498;--c8:#eaf3d2;--c8h:#c9e08a;
   --shadow:0 10px 32px rgba(15,23,42,.22)}}
 *{box-sizing:border-box}
-html{scroll-padding-top:calc(var(--fbh) + 44px);-webkit-text-size-adjust:100%}
+html{scroll-padding-top:calc(var(--fbh) + 44px + var(--dtf-top-h,0px));-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--bg);color:var(--text);font:14px/1.4 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
 a{color:var(--accent)}
 :focus-visible{outline:2px solid var(--focus);outline-offset:-2px;border-radius:4px}
@@ -42,7 +42,7 @@ header.top h1{margin:0;font-size:20px;letter-spacing:-.01em;white-space:nowrap}
 .strip .t{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .strip button{border:0;background:none;color:var(--accent);padding:2px 4px;font-weight:600}
 /* filter bar: one slim sticky row */
-.fbar{position:sticky;top:0;z-index:30;background:var(--bg);border-bottom:1px solid var(--line);padding:8px 0}
+.fbar{position:sticky;top:var(--dtf-top-h,0px);z-index:30;background:var(--bg);border-bottom:1px solid var(--line);padding:8px 0}
 .fin{display:flex;gap:6px;align-items:center}
 .fin input[type=search]{flex:1;min-width:0;font:inherit;font-size:14px;color:var(--text);background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:0 10px;height:36px}
 .dd{border:1px solid var(--line);background:var(--surface);border-radius:8px;height:36px;padding:0 10px;display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
@@ -77,7 +77,7 @@ header.top h1{margin:0;font-size:20px;letter-spacing:-.01em;white-space:nowrap}
 /* sections + one-line rows */
 main{padding-bottom:10px}
 section.cat{margin:12px 0;border-radius:10px;overflow:clip;border:1px solid var(--line)}
-section.cat>h2{position:sticky;top:var(--fbh);z-index:5;margin:0;display:flex;align-items:center;gap:8px;font-size:13.5px;padding:0 12px;height:34px;cursor:pointer;user-select:none;background:var(--hd)}
+section.cat>h2{position:sticky;top:calc(var(--fbh) + var(--dtf-top-h,0px));z-index:5;margin:0;display:flex;align-items:center;gap:8px;font-size:13.5px;padding:0 12px;height:34px;cursor:pointer;user-select:none;background:var(--hd)}
 section.cat>h2 .n{font-weight:500;color:var(--muted);font-size:12px}
 section.cat>h2 .car{font-size:11px;transition:transform .15s}
 section.cat.closed>h2 .car{transform:rotate(-90deg)}
@@ -192,7 +192,7 @@ aside.drawer.wide{width:min(780px,100%)}
 @media (prefers-reduced-motion:reduce){aside.drawer,.scrim,section.cat>h2 .car{transition:none}}
 /* ---- phone ---- */
 @media (max-width:820px){
-  html{scroll-padding-top:calc(var(--fbh) + 40px)}
+  html{scroll-padding-top:calc(var(--fbh) + 40px + var(--dtf-top-h,0px))}
   .wrap{padding:0 10px}
   header.top{padding:8px 0 6px;gap:8px}
   header.top h1{font-size:18px}
@@ -641,6 +641,7 @@ function save(r,v,isNew,tries){
     if(/401/.test(e.message))ls("rb-token",null)})}
 })();
 </script>
+<script>window.DTF_VIEWS = {"hide": ".seg[aria-label=\"View\"]", "items": [{"label": "Records", "sel": "#tab-records"}, {"label": "Change log", "sel": "#tab-changes"}]};</script>
 <script src="/shell/nav.js" defer></script>
 </body>
 </html>
