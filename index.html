@@ -75,7 +75,19 @@ header.top h1{margin:0;font-size:20px;letter-spacing:-.01em;white-space:nowrap}
 .pf{display:none}
 .mgrid{display:grid;grid-template-columns:1fr 1fr}
 /* sections + one-line rows */
-main{padding-bottom:10px}
+main{padding-bottom:10px;min-width:0}
+/* colour-coded type filters, like the Rulebook's: one box per type, in that type's colour */
+:root{--b0:#5ec26a;--b1:#5b9dff;--b2:#f0c43c;--b3:#e55fa8;--b4:#a7adbb;--b5:#4cc2b0;--b6:#a46bff;--b7:#ff9a4d;--b8:#a3d957}
+.rlay{display:grid;grid-template-columns:200px minmax(0,1fr);gap:16px;align-items:start}
+.cchips{display:flex;flex-direction:column;gap:6px;position:sticky;top:calc(var(--fbh,56px) + var(--dtf-top-h,0px) + 12px);margin-top:12px}
+.cchips[hidden]{display:none}
+.cchip{--b:var(--text);display:flex;align-items:center;justify-content:space-between;gap:8px;text-align:left;width:100%;border:1px solid color-mix(in srgb,var(--b) 62%,transparent);color:var(--b);background:color-mix(in srgb,var(--b) 8%,transparent);padding:8px 12px;border-radius:10px;font:inherit;font-size:13.5px;cursor:pointer}
+.cchip:hover{background:color-mix(in srgb,var(--b) 20%,transparent)}
+.cchip.on{background:var(--b);color:#0f1115;font-weight:700}
+.cchip .n{font-size:12px;opacity:.75;font-variant-numeric:tabular-nums}
+.cchip.all{--b:#e8eaf0}
+.cchip.cat0{--b:var(--b0)}.cchip.cat1{--b:var(--b1)}.cchip.cat2{--b:var(--b2)}.cchip.cat3{--b:var(--b3)}.cchip.cat4{--b:var(--b4)}.cchip.cat5{--b:var(--b5)}.cchip.cat6{--b:var(--b6)}.cchip.cat7{--b:var(--b7)}.cchip.cat8{--b:var(--b8)}
+@media(max-width:860px){.rlay{grid-template-columns:1fr;gap:0}.cchips{flex-direction:row;overflow-x:auto;position:static;scrollbar-width:none;padding:2px 0 4px}.cchips::-webkit-scrollbar{display:none}.cchip{flex:none;width:auto;border-radius:999px;padding:6px 12px;white-space:nowrap}}
 section.cat{margin:14px 0;border-radius:12px;overflow:clip;border:1px solid var(--line);border-left:5px solid var(--hd)}
 section.cat>h2{position:sticky;top:calc(var(--fbh) + var(--dtf-top-h,0px));z-index:5;margin:0;display:flex;align-items:center;gap:8px;font-size:13.5px;padding:0 12px;height:34px;cursor:pointer;user-select:none;background:var(--hd)}
 section.cat>h2 .n{font-weight:500;color:var(--muted);font-size:12px}
@@ -255,7 +267,8 @@ aside.drawer.wide{width:min(780px,100%)}
   <div class="act-row" id="active" aria-label="Active filters"></div>
 </div></div>
 <div class="wrap">
-  <main id="main"></main>
+  <div class="rlay"><aside class="cchips" id="cats" aria-label="Filter by type of record"></aside>
+  <main id="main"></main></div>
   <footer>
     <div class="legend" id="legend"></div>
     <b>Computed</b> records are rechecked against Sleeper and <a id="rcLink" href="https://namkurd.github.io/SleeperLiveRumbles/rumbles.html">Rumble Central</a> data every week. <b>Seeded</b> records come from the old hand-kept sheet (weekly scores before 2021 aren't in the data) and are tested against every new game. <b>Manual</b> records are entered by the commissioner. Tap any record for its history, definition and top marks.
@@ -501,9 +514,16 @@ function renderBanner(){
   var rc=S.recs.filter(recent);if(!rc.length||S.view!=="records"||S.opts.has("recent")||S.bannerOff){$("banner").innerHTML="";return}
   $("banner").innerHTML='<div class="strip"><span class="t"><b>New:</b> '+rc.slice(0,3).map(function(r){return esc(r.name)+" "+esc(shortVal(r.value))}).join(" · ")+(rc.length>3?" · +"+(rc.length-3):"")+'</span><button id="bnShow">View</button><button id="bnX" aria-label="Dismiss">✕</button></div>';
   $("bnShow").onclick=function(){S.opts.add("recent");render()};$("bnX").onclick=function(){S.bannerOff=1;renderBanner()}}
+function renderCats(){
+  var box=$("cats");box.hidden=S.view!=="records";if(box.hidden)return;
+  var save=S.cats;S.cats=new Set();var counts={};S.recs.filter(matches).forEach(function(r){counts[r.category]=(counts[r.category]||0)+1});S.cats=save;
+  box.innerHTML='<button class="cchip all'+(S.cats.size?"":" on")+'" data-c="" aria-pressed="'+!S.cats.size+'">All types</button>'+
+    CATS.map(function(c){return'<button class="cchip '+CATCLS[c]+(S.cats.has(c)?" on":"")+'" data-c="'+esc(c)+'" aria-pressed="'+S.cats.has(c)+'"><span>'+esc(c)+'</span><span class="n">'+(counts[c]||0)+"</span></button>"}).join("")}
+document.addEventListener("click",function(e){var b=e.target.closest&&e.target.closest("#cats .cchip");if(!b)return;var c=b.dataset.c;
+  if(!c)S.cats.clear();else S.cats.has(c)?S.cats.delete(c):S.cats.add(c);render();if(typeof panelFor!=="undefined"&&panelFor)$("pbody").innerHTML=panelHTML(panelFor)});
 function render(){
   $("tab-records").setAttribute("aria-selected",S.view==="records");$("tab-changes").setAttribute("aria-selected",S.view==="changes");
-  renderBanner();S.view==="records"?renderRecords():renderChanges();buildBar();toURL()}
+  renderBanner();S.view==="records"?renderRecords():renderChanges();renderCats();buildBar();toURL()}
 
 /* ---------- events (delegated) ---------- */
 $("main").addEventListener("click",function(e){
