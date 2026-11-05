@@ -472,7 +472,7 @@ document.addEventListener("mouseover",function(e){var t=tipTarget(e);if(t)showTi
 document.addEventListener("mouseout",function(e){if(tipTarget(e))hideTip()});
 document.addEventListener("focusin",function(e){var t=tipTarget(e);if(t)showTip(t,rec(t.dataset.tip))});
 document.addEventListener("focusout",function(e){if(tipTarget(e))hideTip()});
-document.addEventListener("scroll",hideTip,true);
+document.addEventListener("scroll",function(e){if(e.target&&e.target.nodeType===1&&tb.contains(e.target))return;hideTip()},true);
 function rec(id){return S.recs.filter(function(r){return r.id===id})[0]}
 
 /* ---------- drawer ---------- */
@@ -642,6 +642,7 @@ function save(r,v,isNew,tries){
 })();
 </script>
 <script>window.DTF_VIEWS = {"hide": ".seg[aria-label=\"View\"]", "items": [{"label": "Records", "sel": "#tab-records"}, {"label": "Change log", "sel": "#tab-changes"}]};</script>
+<script>window.DTF_TIPS = ["#tipbox"];</script>
 <script src="/shell/nav.js" defer></script>
 </body>
 </html>
