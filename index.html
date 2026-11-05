@@ -76,31 +76,34 @@ header.top h1{margin:0;font-size:20px;letter-spacing:-.01em;white-space:nowrap}
 .mgrid{display:grid;grid-template-columns:1fr 1fr}
 /* sections + one-line rows */
 main{padding-bottom:10px}
-section.cat{margin:12px 0;border-radius:10px;overflow:clip;border:1px solid var(--line)}
+section.cat{margin:14px 0;border-radius:12px;overflow:clip;border:1px solid var(--line);border-left:5px solid var(--hd)}
 section.cat>h2{position:sticky;top:calc(var(--fbh) + var(--dtf-top-h,0px));z-index:5;margin:0;display:flex;align-items:center;gap:8px;font-size:13.5px;padding:0 12px;height:34px;cursor:pointer;user-select:none;background:var(--hd)}
 section.cat>h2 .n{font-weight:500;color:var(--muted);font-size:12px}
 section.cat>h2 .car{font-size:11px;transition:transform .15s}
 section.cat.closed>h2 .car{transform:rotate(-90deg)}
 section.cat.closed .rows{display:none}
 .cat0{--bgc:var(--c0);--hd:var(--c0h)}.cat1{--bgc:var(--c1);--hd:var(--c1h)}.cat2{--bgc:var(--c2);--hd:var(--c2h)}.cat3{--bgc:var(--c3);--hd:var(--c3h)}.cat4{--bgc:var(--c4);--hd:var(--c4h)}.cat5{--bgc:var(--c5);--hd:var(--c5h)}.cat6{--bgc:var(--c6);--hd:var(--c6h)}.cat7{--bgc:var(--c7);--hd:var(--c7h)}.cat8{--bgc:var(--c8);--hd:var(--c8h)}
-.rows{background:var(--bgc)}
-.row{display:grid;grid-template-columns:minmax(0,2.6fr) minmax(0,1.7fr) minmax(0,1.6fr) minmax(0,2fr) 58px;gap:10px;align-items:center;height:36px;padding:0 12px;border-top:1px solid rgba(127,127,127,.22);cursor:pointer}
+.rows{background:color-mix(in srgb,var(--bgc) 42%,var(--bg))}   /* the section colour is a tint now, not the whole page: easier on the eyes */
+.row.alt{background:rgba(127,127,127,.11)}
+.sub{padding:11px 12px 5px;font-size:11px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);border-top:1px solid rgba(127,127,127,.28);background:rgba(0,0,0,.12)}
+.sub:first-of-type{border-top:0}
+.row{display:grid;grid-template-columns:minmax(0,2.6fr) minmax(0,1.7fr) minmax(0,1.6fr) minmax(0,2fr) 58px;gap:10px;align-items:center;height:46px;padding:0 14px;border-top:1px solid rgba(127,127,127,.13);cursor:pointer}
 .row>*{overflow:hidden;text-overflow:ellipsis;min-width:0}
-.row:hover,.row:focus-visible{background:rgba(127,127,127,.17)}
+.row:hover,.row:focus-visible{background:rgba(127,127,127,.22)}
 .whs{display:none}
 .hold .hs{display:none}
 .rname,.hold,.when,.val{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;line-clamp:2;overflow:hidden;line-height:1.15;overflow-wrap:anywhere}
-.rname{font-weight:600}
+.rname{font-weight:600;font-size:14.5px}
 .rname .pill{font-size:10px;font-weight:700;vertical-align:1px;margin-left:6px;padding:0 5px;border-radius:999px;border:1px solid var(--good);color:var(--good);letter-spacing:.03em}
 .rname .ic{margin-left:5px;font-size:11px;opacity:.7}
-.val{font-weight:700;font-variant-numeric:tabular-nums;line-height:1.15}
-.tip{border-bottom:1px dotted var(--muted);cursor:help}
+.val{font-weight:800;font-size:15.5px;font-variant-numeric:tabular-nums;line-height:1.15}
+.tip{border-bottom:1px dotted rgba(127,127,127,.55);cursor:help}
 .hold .more{color:var(--muted);font-size:12px;margin-left:4px}
-.when{color:var(--muted);font-size:13px}
+.when{color:var(--muted);font-size:12.5px}
 .ico{display:flex;gap:4px;justify-content:flex-end;overflow:visible}
 .ico a{font-size:12px;text-decoration:none;color:var(--text);border:1px solid rgba(127,127,127,.4);border-radius:6px;padding:1px 6px;background:var(--surface)}
 .ico a:hover{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
-.colhd{display:grid;grid-template-columns:minmax(0,2.6fr) minmax(0,1.7fr) minmax(0,1.6fr) minmax(0,2fr) 58px;gap:10px;padding:5px 12px;font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);background:var(--surface2)}
+.colhd{display:grid;padding-left:14px!important;padding-right:14px!important;grid-template-columns:minmax(0,2.6fr) minmax(0,1.7fr) minmax(0,1.6fr) minmax(0,2fr) 58px;gap:10px;padding:5px 12px;font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);background:var(--surface2)}
 .empty{text-align:center;color:var(--muted);padding:40px 0}
 .tipbox{position:fixed;z-index:90;max-width:300px;background:var(--text);color:var(--bg);padding:9px 11px;border-radius:8px;font-size:13px;box-shadow:var(--shadow);pointer-events:none;line-height:1.35}
 .tipbox b{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.06em;opacity:.7;margin-bottom:2px}
@@ -439,11 +442,51 @@ function rowHTML(r){
    '<div class="hold" title="'+esc(plain||r.holder)+'">'+holdShort(r)+"</div>"+
    '<div class="when" title="'+esc(r.when)+'">'+esc(r.when)+"</div>"+
    '<div class="ico">'+rp+ev+'</div><div class="whs" title="'+esc(r.when)+'">'+esc(whenShort(r.when))+"</div></div>"}
+
+/* ---------- order within a section: related records sit together under a small heading (anything new lands in "More") ---------- */
+var GROUPS={
+"Seasons & Playoffs":[
+ ["Titles & finals",["Most Championships","Most Championship Appearances","Most Championship Losses","Most Consecutive Championship Appearances","Lowest Seed to Win the Title","Closest Championship Game","Biggest Championship Blowout"]],
+ ["Playoffs",["Most Playoff Appearances","Most Consecutive Playoff Appearances","Most Playoff Wins (Career)","Highest Playoff Score","Most Playoff Trips Without a Title","Longest Playoff Drought","Fewest Wins to Make the Playoffs","Most Wins to Miss the Playoffs"]],
+ ["Seasons & seeding",["Most #1 Seeds","Most Top Scoring Seasons","Most Bottom Scoring Seasons","Most Highest Points Against Seasons","Most Consecutive .500 or Better Seasons","Most Consecutive Losing Seasons","Most Sackos"]],
+ ["Weeks & streaks",["Most Top Scoring Weeks (All-Time)","Most Bottom Scoring Weeks (All-Time)","Winning Streak","Losing Streak"]]],
+"Team Seasons":[
+ ["Wins & record",["Total Wins (Regular Season)","Total Wins (incl. Playoffs)","Best Rumble %","Worst Rumble %","Best Record vs. Field","Worst Record vs. Field","Most Composite Wins in a Season","Fewest Composite Wins in a Season"]],
+ ["Scoring",["Most Points (Season)","Fewest Points (Season)","Most Points Against (Season)","Most Dominant Offensive Season","Most Futile Offensive Season","Most Dominant Defensive Season","Most Cursed Defensive Season"]],
+ ["Top & bottom weeks",["Most Top Scoring Weeks (Season)","Most Bottom Scoring Weeks (Season)","Most Consecutive Top Scoring Weeks","Most Consecutive Bottom Scoring Weeks"]],
+ ["Playoff bubble",["Most Points to Not Make Playoffs","Fewest Points to Make Playoffs"]]],
+"Games & Weeks":[
+ ["Single-game scoring",["Most Points (Game)","Most Points (Game, Era Adjusted)","Fewest Points (Game)","Fewest Points (Game, Era Adjusted)","Fewest Points in a Win","Most Points in a Loss","Most Points on Bench"]],
+ ["Margins",["Largest Margin of Victory","Smallest Margin of Victory","Smallest Margin of Rumble Win Victory","Largest Multiple of Opponents Score"]],
+ ["League weeks & luck",["Highest Scoring Week (League)","Highest Scoring Week (League, Era Adjusted)","Lowest Scoring Week (League)","Lowest Scoring Week (League, Era Adjusted)","Luckiest Season (H2H% - Field%)","Unluckiest Season (H2H% - Field%)"]],
+ ["How games unfold",["Biggest Comeback (Points Deficit Overcome)","Biggest Blown Lead","Most Lead Changes in a Game","Biggest Upset by Projection","Most Points Over Projection","Most Points Under Projection"]],
+ ["The NFL clock",["Most Points on Thursday Night (Team)","Most Points on Monday Night (Team)","Most Points on a Saturday"]]],
+"Trades":[
+ ["How many trades",["Most Trades in 24hrs","Most Trades in a Season (League)","Most non-FAB Trades in a Season (League)","Most Trades in a Season (Team)","Most non-FAB Trades in a Season (Team)","Most Trades (Career)","Most Trades with One Partner"]],
+ ["Size of a deal",["Most Teams to Make a Trade","Most Players in One Trade","Most FAB in a trade","Fastest Trade Acceptance to Player Start","Biggest Blockbuster (Total Value)","Biggest Trade-Day Heist (Value)"]],
+ ["Winners & losers (PAR)",["Best Trade (PAR Swing)","Most PAR Gained in One Trade","Most PAR Lost in One Trade","Best Trader (Career PAR)","Worst Trader (Career PAR)"]],
+ ["Champions & sackos",["Best Trade by a Champion (PAR)","Worst Trade by a Champion (PAR)","Worst Trade by an Eventual Sacko (PAR)"]]],
+"FAB & Waivers":[
+ ["Budget",["Most FAB owned at one time","Earliest FAB Bankruptcy","Most FAB Spent by a Champion","Fewest FAB Spent by a Champion"]],
+ ["Bids",["Most Expensive FAB Claim","Largest FAB Overbid","Best FAB Bid (Lowest % over next bid)","Best FAB Value (PAR per $)","Worst FAB Pickup ($40+ Bids)"]],
+ ["Pickups",["Best FAB Pickup (PAR)","Best Free-Agent Pickup (PAR)","Most Pickups in a Season","Most Waiver PAR in a Season","Most Difference-Makers in a Season"]],
+ ["Regret",["Best Waiver Season (Net of Regret)","Biggest Drop Regret (One Player)","Most Regret in a Season"]]],
+"Sit / Start":[
+ ["Lineup misses",["Costliest Sit/Start Miss","Worst Lineup Week (Points Lost)","Most Points Lost to Lineup Misses in a Season","Most Wins Lost to Lineup Misses in a Season","Most Rumbles Lost to Lineup Misses in a Season","Most Points on Bench in a Season"]],
+ ["Good calls",["Best Sit/Start Call","Most Big-Brain Calls in a Season"]],
+ ["Shotguns",["Most Shotguns in a Week (Team)","Most Shotguns in a Season (Team)","Most Shotguns in a Season (League)"]]],
+"Draft & Auction":[
+ ["Top prices",["Most Expensive Auction Pick","Most Expensive QB","Most Expensive RB","Most Expensive WR","Most Expensive TE","Most Spent on One Position"]],
+ ["Hits & misses",["Best Steal","Costliest Bust","Costliest Injury Casualty"]]]};
+function groupRows(c,rs){   // [[label, [records]]...] in the order above; unknown records go last under "More" (only when the section is grouped)
+  var g=GROUPS[c];if(!g)return[["",rs]];var seen={},out=[];
+  g.forEach(function(x){var m=[];x[1].forEach(function(n){rs.forEach(function(r){if(r.name===n){m.push(r);seen[r.id]=1}})});if(m.length)out.push([x[0],m])});
+  var rest=rs.filter(function(r){return!seen[r.id]});if(rest.length)out.push([out.length?"More":"",rest]);return out}
 function renderRecords(){
   var list=S.recs.filter(matches),by={};list.forEach(function(r){(by[r.category]=by[r.category]||[]).push(r)});
   var h="";if(!list.length)h='<div class="empty">No records match these filters.<br><button class="ibtn" id="clrEmpty" style="margin-top:10px">Clear filters</button></div>';
-  CATS.forEach(function(c){var rs=by[c];if(!rs)return;var closed=S.closed.has(c)&&!S.q&&!S.mgrs.size;
-    h+='<section class="cat '+CATCLS[c]+(closed?" closed":"")+'"><h2 data-cat="'+esc(c)+'" tabindex="0" role="button" aria-expanded="'+!closed+'"><span class="car">▾</span>'+esc(c)+' <span class="n">'+rs.length+'</span></h2><div class="rows"><div class="colhd"><span>Record</span><span>Mark</span><span>Holder</span><span>When</span><span></span></div>'+rs.map(rowHTML).join("")+"</div></section>"});
+  CATS.forEach(function(c){var rs=by[c];if(!rs)return;var i=0;var closed=S.closed.has(c)&&!S.q&&!S.mgrs.size;
+    h+='<section class="cat '+CATCLS[c]+(closed?" closed":"")+'"><h2 data-cat="'+esc(c)+'" tabindex="0" role="button" aria-expanded="'+!closed+'"><span class="car">▾</span>'+esc(c)+' <span class="n">'+rs.length+'</span></h2><div class="rows"><div class="colhd"><span>Record</span><span>Mark</span><span>Holder</span><span>When</span><span></span></div>'+groupRows(c,rs).map(function(g){return(g[0]?'<div class="sub">'+esc(g[0])+"</div>":"")+g[1].map(function(r){return rowHTML(r).replace('class="row','class="row'+((i++)%2?" alt":""))}).join("")}).join("")+"</div></section>"});
   $("main").innerHTML=h;var ce=$("clrEmpty");if(ce)ce.onclick=clearAll}
 /* ---------- render change log ---------- */
 var CAUSE={"auto:break":"Record broken","auto:reconcile":"Corrected to Sleeper data","auto:tie":"Tied","auto:blocked":"Blocked by lock","seed:sheet":"Imported","manual:new":"Record broken (manual)","manual:correction":"Correction (manual)","manual:add":"Added (manual)","manual:delete":"Deleted (manual)"};
