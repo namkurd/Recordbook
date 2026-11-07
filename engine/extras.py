@@ -178,6 +178,39 @@ def make(d):
             out.append(c)
         return out
     R["auction_pos_spend"] = spend
+    # best draft / best drafter: every manager spends the same $200, so a draft is judged by the points its players scored over the average draft that year
+    def draft_scores():
+        tot = collections.defaultdict(float); pk = collections.defaultdict(list)
+        for x, s, price, m in P():
+            if s >= d.cur: continue
+            try: pts = float(x["pts"] or 0)
+            except Exception: pts = 0.0
+            tot[(s, m)] += pts; pk[(s, m)].append((pts, price, x))
+        avg = {}
+        for y in {k[0] for k in tot}: avg[y] = sum(v for k, v in tot.items() if k[0] == y) / len([1 for k in tot if k[0] == y])
+        return tot, pk, avg
+    def draft_card(s, m, tot, pk, avg):
+        top = sorted(pk[(s, m)], key=lambda t: -t[0])[:5]
+        rows = [[f'{x["player"]} ({x["position"]})', f"${price:.0f} · {pts:.0f} pts"] for pts, price, x in top]
+        return fact(f"Auction draft · {s}", m, [["Draft total", f"{tot[(s, m)]:.0f} pts (average draft {avg[s]:.0f})"]] + rows)
+    def draft_best():
+        tot, pk, avg = draft_scores(); out = []
+        for (s, m), v in tot.items():
+            c = _c(round(v - avg[s], 1), [m], s, when=str(s), ht=m, card=draft_card(s, m, tot, pk, avg))
+            c["links"] = alinks(s, {"label": f"{m}'s drafts in the Auction tool", "url": f"{AUCTION}#managers/{quote(m, safe='')}"}); out.append(c)
+        return out
+    def drafter_best():
+        tot, pk, avg = draft_scores(); by = collections.defaultdict(list)
+        for (s, m), v in tot.items(): by[m].append((s, v - avg[s]))
+        out = []
+        for m, rows in by.items():
+            if len(rows) < 3: continue
+            yrs = sorted(r[0] for r in rows)
+            c = _c(round(sum(r[1] for r in rows) / len(rows), 1), [m], yrs[0], when=f"{yrs[0]}-{yrs[-1]}", ht=m,
+                   card=fact(f"Auction drafts · {len(rows)} seasons", m, [[str(s), f"{v:+.0f} pts vs the average draft"] for s, v in sorted(rows)]))
+            c["links"] = alinks(yrs[-1], {"label": f"{m}'s drafts in the Auction tool", "url": f"{AUCTION}#managers/{quote(m, safe='')}"}); out.append(c)
+        return out
+    R["draft_best"] = draft_best; R["drafter_best"] = drafter_best
     # ---------------- trades & FAB tied to champions / Sackos ----------------
     def season_flag(y, m, flag): return flag in (L.get(y, {}).get(m, set()))
     def champ_trade():
@@ -210,6 +243,6 @@ FORMAT = {
  "playoff_wins": lambda v: f"{v:.0f} wins", "playoffs_no_title": lambda v: f"{v:.0f} trips", "fewest_wins_playoffs": lambda v: f"{v:.0f} wins", "most_wins_miss": lambda v: f"{v:.0f} wins",
  "standings_jump": lambda v: f"+{v:.0f} spots", "standings_drop": lambda v: f"-{v:.0f} spots",
  "auction_price": lambda v: f"${v:.0f}", "auction_qb": lambda v: f"${v:.0f}", "auction_rb": lambda v: f"${v:.0f}", "auction_wr": lambda v: f"${v:.0f}", "auction_te": lambda v: f"${v:.0f}",
- "auction_bust": lambda v: f"${v:.0f}", "auction_injury": lambda v: f"${v:.0f}", "auction_steal": lambda v: f"${round(v):.0f}", "auction_pos_spend": lambda v: f"${v:.0f}",
+ "auction_bust": lambda v: f"${v:.0f}", "auction_injury": lambda v: f"${v:.0f}", "auction_steal": lambda v: f"${round(v):.0f}", "auction_pos_spend": lambda v: f"${v:.0f}", "draft_best": lambda v: f"{v:+.0f} pts", "drafter_best": lambda v: f"{v:+.0f} pts per draft",
  "trade_champ_best": lambda v: f"{v:+.1f} PAR", "trade_champ_worst": lambda v: f"{v:.1f} PAR", "trade_sacko_worst": lambda v: f"{v:.1f} PAR", "fab_champ_spent": lambda v: f"${v:.0f}", "fab_champ_least": lambda v: f"${v:.0f}",
 }

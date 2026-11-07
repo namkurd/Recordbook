@@ -98,6 +98,8 @@ NEW += [
  ("Trades", "Best Trade by a Champion (PAR)", "trade_champ_best", "max", "The best trade (by PAR) made by the eventual champion in their title season." + S21),
  ("Trades", "Worst Trade by a Champion (PAR)", "trade_champ_worst", "min", "The worst trade (by PAR) made by an eventual champion in their title season, and they still won." + S21),
  ("Trades", "Worst Trade by an Eventual Sacko (PAR)", "trade_sacko_worst", "min", "The worst trade (by PAR) made by the team that finished last that season." + S21),
+ ("Draft & Auction", "Best Draft", "draft_best", "max", "The most points scored by one manager's auction draft over the average draft that year (everyone spends the same $200)."),
+ ("Draft & Auction", "Best Drafter (Career)", "drafter_best", "max", "The best average auction draft, in points over the average draft that year, across at least 3 drafts."),
  ("FAB & Waivers", "Most FAB Spent by a Champion", "fab_champ_spent", "max", "The most FAB dollars spent on winning bids by a team that won the title that season."),
  ("FAB & Waivers", "Fewest FAB Spent by a Champion", "fab_champ_least", "min", "The fewest FAB dollars spent on winning bids by a team that won the title that season."),
 ]
