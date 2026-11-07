@@ -24,13 +24,15 @@ def load():
     hist = fetch("sleepersheet", "data/history.json")["seasons"]
     play = fetch("sleepersheet", "data/playoffs_history.json")["games"]
     idx = fetch("sleeperliverumbles", "seasons/index.json")
-    games, rosters, seasons = [], {}, {int(y): v for y, v in hist.items()}
+    games, rosters, seasons, epa = [], {}, {int(y): v for y, v in hist.items()}, {}
     cur = int(idx["current"])
     for y in sorted({int(s["season"]) for s in idx["seasons"]} | {cur}):
         try:
             d = fetch("sleeperliverumbles", "rumbles_history.json" if y == cur else f"seasons/{y}/rumbles_history.json")
         except Exception:
             continue
+        try: epa[y] = fetch("sleeperliverumbles", "epa_weekly.json" if y == cur else f"seasons/{y}/epa_weekly.json")
+        except Exception: pass
         name = {int(s["roster_id"]): s["manager"] for s in d["standings"]}
         rosters[y] = name
         allw = dict(d["weekly"])
@@ -55,4 +57,4 @@ def load():
     extra["picks"] = extra_picks
     try: extra["auction_slots"] = fetch("sleeperauction", "site/data.json").get("pos_slots") or {}
     except Exception as e: print("WARN could not load auction pos_slots", e); extra["auction_slots"] = {}
-    return {"seasons": seasons, "playoffs": play, "games": games, "rosters": rosters, "current": cur, **extra}
+    return {"epa": epa, "seasons": seasons, "playoffs": play, "games": games, "rosters": rosters, "current": cur, **extra}

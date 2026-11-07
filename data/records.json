@@ -25171,6 +25171,2814 @@
    ]
   },
   {
+   "id": "most-points-by-a-quarterback-game",
+   "name": "Most Points by a Quarterback (Game)",
+   "category": "Games & Weeks",
+   "source": "computed",
+   "metric": "player_qb",
+   "direction": "max",
+   "value": "51.88 pts",
+   "value_num": 51.88,
+   "when": "Week 14 - 2024",
+   "holder": "Ben — Josh Allen",
+   "holders": [
+    "Ben"
+   ],
+   "league_level": false,
+   "team": "Resident Evil 🏆🏆😵☠️⚰️🪦🧟‍♂️🏆",
+   "notes": [],
+   "evidence": [],
+   "replay": {
+    "season": 2024,
+    "week": 14,
+    "rid": 2,
+    "opp_rid": 4,
+    "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=14.2.4&season=2024"
+   },
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "definition": "The most fantasy points scored by one starting quarterback in a game. Counts trades since 2021 (the first Sleeper season).",
+   "updated": "2026-11-07",
+   "leaderboard": [
+    {
+     "value": "51.88 pts",
+     "holder": "Ben — Josh Allen",
+     "when": "Week 14 - 2024",
+     "replay": {
+      "season": 2024,
+      "week": 14,
+      "rid": 2,
+      "opp_rid": 4,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=14.2.4&season=2024"
+     }
+    },
+    {
+     "value": "46.90 pts",
+     "holder": "Alex — Trevor Lawrence",
+     "when": "Week 15 - 2025",
+     "replay": {
+      "season": 2025,
+      "week": 15,
+      "rid": 6,
+      "opp_rid": 2,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=15.6.2&season=2025"
+     },
+     "detail": {
+      "kind": "facts",
+      "title": "Quarterback · Week 15, 2025",
+      "blocks": [
+       {
+        "head": "Alex",
+        "chip": null,
+        "rows": [
+         [
+          "Player",
+          "Trevor Lawrence"
+         ],
+         [
+          "Points",
+          "46.90"
+         ],
+         [
+          "Team",
+          "Alex (155.78 vs Ben 172.98)"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "value": "44.88 pts",
+     "holder": "Christian — Josh Allen",
+     "when": "Week 11 - 2025",
+     "replay": {
+      "season": 2025,
+      "week": 11,
+      "rid": 9,
+      "opp_rid": 2,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=11.9.2&season=2025"
+     },
+     "detail": {
+      "kind": "facts",
+      "title": "Quarterback · Week 11, 2025",
+      "blocks": [
+       {
+        "head": "Christian",
+        "chip": null,
+        "rows": [
+         [
+          "Player",
+          "Josh Allen"
+         ],
+         [
+          "Points",
+          "44.88"
+         ],
+         [
+          "Team",
+          "Christian (142.21 vs Ben 127.59)"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "value": "43.22 pts",
+     "holder": "Kaitlyn — Josh Allen",
+     "when": "Week 2 - 2026",
+     "replay": {
+      "season": 2026,
+      "week": 2,
+      "rid": 11,
+      "opp_rid": 5,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=2.11.5"
+     },
+     "detail": {
+      "kind": "facts",
+      "title": "Quarterback · Week 2, 2026",
+      "blocks": [
+       {
+        "head": "Kaitlyn",
+        "chip": null,
+        "rows": [
+         [
+          "Player",
+          "Josh Allen"
+         ],
+         [
+          "Points",
+          "43.22"
+         ],
+         [
+          "Team",
+          "Kaitlyn (178.91 vs Joe 131.51)"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "value": "42.13 pts",
+     "holder": "Haan — Joe Burrow",
+     "when": "Week 8 - 2026",
+     "replay": {
+      "season": 2026,
+      "week": 8,
+      "rid": 4,
+      "opp_rid": 6,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=8.4.6"
+     },
+     "detail": {
+      "kind": "facts",
+      "title": "Quarterback · Week 8, 2026",
+      "blocks": [
+       {
+        "head": "Haan",
+        "chip": null,
+        "rows": [
+         [
+          "Player",
+          "Joe Burrow"
+         ],
+         [
+          "Points",
+          "42.13"
+         ],
+         [
+          "Team",
+          "Haan (150.60 vs Alex 150.00)"
+         ]
+        ]
+       }
+      ]
+     }
+    }
+   ],
+   "by_season": [
+    {
+     "s": 2026,
+     "n": 43.22,
+     "value": "43.22 pts",
+     "holder": "Kaitlyn — Josh Allen",
+     "holders": [
+      "Kaitlyn"
+     ],
+     "when": "Week 2 - 2026",
+     "replay": {
+      "season": 2026,
+      "week": 2,
+      "rid": 11,
+      "opp_rid": 5,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=2.11.5"
+     },
+     "detail": {
+      "kind": "facts",
+      "title": "Quarterback · Week 2, 2026",
+      "blocks": [
+       {
+        "head": "Kaitlyn",
+        "chip": null,
+        "rows": [
+         [
+          "Player",
+          "Josh Allen"
+         ],
+         [
+          "Points",
+          "43.22"
+         ],
+         [
+          "Team",
+          "Kaitlyn (178.91 vs Joe 131.51)"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "s": 2025,
+     "n": 46.9,
+     "value": "46.90 pts",
+     "holder": "Alex — Trevor Lawrence",
+     "holders": [
+      "Alex"
+     ],
+     "when": "Week 15 - 2025",
+     "replay": {
+      "season": 2025,
+      "week": 15,
+      "rid": 6,
+      "opp_rid": 2,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=15.6.2&season=2025"
+     },
+     "detail": {
+      "kind": "facts",
+      "title": "Quarterback · Week 15, 2025",
+      "blocks": [
+       {
+        "head": "Alex",
+        "chip": null,
+        "rows": [
+         [
+          "Player",
+          "Trevor Lawrence"
+         ],
+         [
+          "Points",
+          "46.90"
+         ],
+         [
+          "Team",
+          "Alex (155.78 vs Ben 172.98)"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "s": 2024,
+     "n": 51.88,
+     "value": "51.88 pts",
+     "holder": "Ben — Josh Allen",
+     "holders": [
+      "Ben"
+     ],
+     "when": "Week 14 - 2024",
+     "replay": {
+      "season": 2024,
+      "week": 14,
+      "rid": 2,
+      "opp_rid": 4,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=14.2.4&season=2024"
+     },
+     "detail": {
+      "kind": "facts",
+      "title": "Quarterback · Week 14, 2024",
+      "blocks": [
+       {
+        "head": "Ben",
+        "chip": null,
+        "rows": [
+         [
+          "Player",
+          "Josh Allen"
+         ],
+         [
+          "Points",
+          "51.88"
+         ],
+         [
+          "Team",
+          "Ben (226.54 vs Haan 165.35)"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "s": 2023,
+     "n": 39.16,
+     "value": "39.16 pts",
+     "holder": "Jake — Josh Allen",
+     "holders": [
+      "Jake"
+     ],
+     "when": "Week 12 - 2023",
+     "replay": {
+      "season": 2023,
+      "week": 12,
+      "rid": 3,
+      "opp_rid": 8,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=12.3.8&season=2023"
+     },
+     "detail": {
+      "kind": "facts",
+      "title": "Quarterback · Week 12, 2023",
+      "blocks": [
+       {
+        "head": "Jake",
+        "chip": null,
+        "rows": [
+         [
+          "Player",
+          "Josh Allen"
+         ],
+         [
+          "Points",
+          "39.16"
+         ],
+         [
+          "Team",
+          "Jake (166.09 vs Ankit 162.18)"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "s": 2022,
+     "n": 41.62,
+     "value": "41.62 pts",
+     "holder": "Aidan — Lamar Jackson",
+     "holders": [
+      "Aidan"
+     ],
+     "when": "Week 2 - 2022",
+     "replay": {
+      "season": 2022,
+      "week": 2,
+      "rid": 1,
+      "opp_rid": 5,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=2.1.5&season=2022"
+     },
+     "detail": {
+      "kind": "facts",
+      "title": "Quarterback · Week 2, 2022",
+      "blocks": [
+       {
+        "head": "Aidan",
+        "chip": null,
+        "rows": [
+         [
+          "Player",
+          "Lamar Jackson"
+         ],
+         [
+          "Points",
+          "41.62"
+         ],
+         [
+          "Team",
+          "Aidan (175.22 vs Joe 149.08)"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "s": 2021,
+     "n": 41.82,
+     "value": "41.82 pts",
+     "holder": "Aidan — Justin Herbert",
+     "holders": [
+      "Aidan"
+     ],
+     "when": "Week 5 - 2021",
+     "replay": {
+      "season": 2021,
+      "week": 5,
+      "rid": 1,
+      "opp_rid": 8,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=5.1.8&season=2021"
+     },
+     "detail": {
+      "kind": "facts",
+      "title": "Quarterback · Week 5, 2021",
+      "blocks": [
+       {
+        "head": "Aidan",
+        "chip": null,
+        "rows": [
+         [
+          "Player",
+          "Justin Herbert"
+         ],
+         [
+          "Points",
+          "41.82"
+         ],
+         [
+          "Team",
+          "Aidan (157.07 vs Ankit 156.78)"
+         ]
+        ]
+       }
+      ]
+     }
+    }
+   ],
+   "detail": {
+    "kind": "facts",
+    "title": "Quarterback · Week 14, 2024",
+    "blocks": [
+     {
+      "head": "Ben",
+      "chip": null,
+      "rows": [
+       [
+        "Player",
+        "Josh Allen"
+       ],
+       [
+        "Points",
+        "51.88"
+       ],
+       [
+        "Team",
+        "Ben (226.54 vs Haan 165.35)"
+       ]
+      ]
+     }
+    ]
+   },
+   "links": null,
+   "verified": true
+  },
+  {
+   "id": "most-points-by-a-running-back-game",
+   "name": "Most Points by a Running Back (Game)",
+   "category": "Games & Weeks",
+   "source": "computed",
+   "metric": "player_rb",
+   "direction": "max",
+   "value": "56.90 pts",
+   "value_num": 56.9,
+   "when": "Week 12 - 2025",
+   "holder": "Aidan — Jahmyr Gibbs",
+   "holders": [
+    "Aidan"
+   ],
+   "league_level": false,
+   "team": "Neon Jennings Evansgelion",
+   "notes": [],
+   "evidence": [],
+   "replay": {
+    "season": 2025,
+    "week": 12,
+    "rid": 1,
+    "opp_rid": 10,
+    "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=12.1.10&season=2025"
+   },
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "definition": "The most fantasy points scored by one starting running back in a game. Counts trades since 2021 (the first Sleeper season).",
+   "updated": "2026-11-07",
+   "leaderboard": [
+    {
+     "value": "56.90 pts",
+     "holder": "Aidan — Jahmyr Gibbs",
+     "when": "Week 12 - 2025",
+     "replay": {
+      "season": 2025,
+      "week": 12,
+      "rid": 1,
+      "opp_rid": 10,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=12.1.10&season=2025"
+     }
+    },
+    {
+     "value": "55.10 pts",
+     "holder": "Ryan — Joe Mixon",
+     "when": "Week 9 - 2022",
+     "replay": {
+      "season": 2022,
+      "week": 9,
+      "rid": 10,
+      "opp_rid": 1,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=9.10.1&season=2022"
+     },
+     "detail": {
+      "kind": "facts",
+      "title": "Running Back · Week 9, 2022",
+      "blocks": [
+       {
+        "head": "Ryan",
+        "chip": null,
+        "rows": [
+         [
+          "Player",
+          "Joe Mixon"
+         ],
+         [
+          "Points",
+          "55.10"
+         ],
+         [
+          "Team",
+          "Ryan (151.30 vs Aidan 158.22)"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "value": "54.10 pts",
+     "holder": "Joe — Jonathan Taylor",
+     "when": "Week 10 - 2025",
+     "replay": {
+      "season": 2025,
+      "week": 10,
+      "rid": 5,
+      "opp_rid": 6,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=10.5.6&season=2025"
+     },
+     "detail": {
+      "kind": "facts",
+      "title": "Running Back · Week 10, 2025",
+      "blocks": [
+       {
+        "head": "Joe",
+        "chip": null,
+        "rows": [
+         [
+          "Player",
+          "Jonathan Taylor"
+         ],
+         [
+          "Points",
+          "54.10"
+         ],
+         [
+          "Team",
+          "Joe (179.84 vs Alex 183.06)"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "value": "50.90 pts",
+     "holder": "Ryan — Jonathan Taylor",
+     "when": "Week 11 - 2021",
+     "replay": {
+      "season": 2021,
+      "week": 11,
+      "rid": 10,
+      "opp_rid": 5,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=11.10.5&season=2021"
+     },
+     "detail": {
+      "kind": "facts",
+      "title": "Running Back · Week 11, 2021",
+      "blocks": [
+       {
+        "head": "Ryan",
+        "chip": null,
+        "rows": [
+         [
+          "Player",
+          "Jonathan Taylor"
+         ],
+         [
+          "Points",
+          "50.90"
+         ],
+         [
+          "Team",
+          "Ryan (203.65 vs Joe 101.40)"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "value": "50.60 pts",
+     "holder": "Haan — Derrick Henry",
+     "when": "Week 17 - 2025",
+     "replay": {
+      "season": 2025,
+      "week": 17,
+      "rid": 4,
+      "opp_rid": 1,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=17.4.1&season=2025"
+     },
+     "detail": {
+      "kind": "facts",
+      "title": "Running Back · Week 17, 2025",
+      "blocks": [
+       {
+        "head": "Haan",
+        "chip": null,
+        "rows": [
+         [
+          "Player",
+          "Derrick Henry"
+         ],
+         [
+          "Points",
+          "50.60"
+         ],
+         [
+          "Team",
+          "Haan (202.85 vs Aidan 120.95)"
+         ]
+        ]
+       }
+      ]
+     }
+    }
+   ],
+   "by_season": [
+    {
+     "s": 2026,
+     "n": 45.4,
+     "value": "45.40 pts",
+     "holder": "Ankit — Jahmyr Gibbs",
+     "holders": [
+      "Ankit"
+     ],
+     "when": "Week 3 - 2026",
+     "replay": {
+      "season": 2026,
+      "week": 3,
+      "rid": 8,
+      "opp_rid": 12,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=3.8.12"
+     },
+     "detail": {
+      "kind": "facts",
+      "title": "Running Back · Week 3, 2026",
+      "blocks": [
+       {
+        "head": "Ankit",
+        "chip": null,
+        "rows": [
+         [
+          "Player",
+          "Jahmyr Gibbs"
+         ],
+         [
+          "Points",
+          "45.40"
+         ],
+         [
+          "Team",
+          "Ankit (155.70 vs Stephanie 151.11)"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "s": 2025,
+     "n": 56.9,
+     "value": "56.90 pts",
+     "holder": "Aidan — Jahmyr Gibbs",
+     "holders": [
+      "Aidan"
+     ],
+     "when": "Week 12 - 2025",
+     "replay": {
+      "season": 2025,
+      "week": 12,
+      "rid": 1,
+      "opp_rid": 10,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=12.1.10&season=2025"
+     },
+     "detail": {
+      "kind": "facts",
+      "title": "Running Back · Week 12, 2025",
+      "blocks": [
+       {
+        "head": "Aidan",
+        "chip": null,
+        "rows": [
+         [
+          "Player",
+          "Jahmyr Gibbs"
+         ],
+         [
+          "Points",
+          "56.90"
+         ],
+         [
+          "Team",
+          "Aidan (195.95 vs Ryan 129.81)"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "s": 2024,
+     "n": 45.2,
+     "value": "45.20 pts",
+     "holder": "Ben — Saquon Barkley",
+     "holders": [
+      "Ben"
+     ],
+     "when": "Week 12 - 2024",
+     "replay": {
+      "season": 2024,
+      "week": 12,
+      "rid": 2,
+      "opp_rid": 6,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=12.2.6&season=2024"
+     },
+     "detail": {
+      "kind": "facts",
+      "title": "Running Back · Week 12, 2024",
+      "blocks": [
+       {
+        "head": "Ben",
+        "chip": null,
+        "rows": [
+         [
+          "Player",
+          "Saquon Barkley"
+         ],
+         [
+          "Points",
+          "45.20"
+         ],
+         [
+          "Team",
+          "Ben (180.90 vs Alex 175.20)"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "s": 2023,
+     "n": 48.7,
+     "value": "48.70 pts",
+     "holder": "Steven — Christian McCaffrey",
+     "holders": [
+      "Steven"
+     ],
+     "when": "Week 4 - 2023",
+     "replay": {
+      "season": 2023,
+      "week": 4,
+      "rid": 7,
+      "opp_rid": 6,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=4.7.6&season=2023"
+     },
+     "detail": {
+      "kind": "facts",
+      "title": "Running Back · Week 4, 2023",
+      "blocks": [
+       {
+        "head": "Steven",
+        "chip": null,
+        "rows": [
+         [
+          "Player",
+          "Christian McCaffrey"
+         ],
+         [
+          "Points",
+          "48.70"
+         ],
+         [
+          "Team",
+          "Steven (157.32 vs Alex 178.72)"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "s": 2022,
+     "n": 55.1,
+     "value": "55.10 pts",
+     "holder": "Ryan — Joe Mixon",
+     "holders": [
+      "Ryan"
+     ],
+     "when": "Week 9 - 2022",
+     "replay": {
+      "season": 2022,
+      "week": 9,
+      "rid": 10,
+      "opp_rid": 1,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=9.10.1&season=2022"
+     },
+     "detail": {
+      "kind": "facts",
+      "title": "Running Back · Week 9, 2022",
+      "blocks": [
+       {
+        "head": "Ryan",
+        "chip": null,
+        "rows": [
+         [
+          "Player",
+          "Joe Mixon"
+         ],
+         [
+          "Points",
+          "55.10"
+         ],
+         [
+          "Team",
+          "Ryan (151.30 vs Aidan 158.22)"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "s": 2021,
+     "n": 50.9,
+     "value": "50.90 pts",
+     "holder": "Ryan — Jonathan Taylor",
+     "holders": [
+      "Ryan"
+     ],
+     "when": "Week 11 - 2021",
+     "replay": {
+      "season": 2021,
+      "week": 11,
+      "rid": 10,
+      "opp_rid": 5,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=11.10.5&season=2021"
+     },
+     "detail": {
+      "kind": "facts",
+      "title": "Running Back · Week 11, 2021",
+      "blocks": [
+       {
+        "head": "Ryan",
+        "chip": null,
+        "rows": [
+         [
+          "Player",
+          "Jonathan Taylor"
+         ],
+         [
+          "Points",
+          "50.90"
+         ],
+         [
+          "Team",
+          "Ryan (203.65 vs Joe 101.40)"
+         ]
+        ]
+       }
+      ]
+     }
+    }
+   ],
+   "detail": {
+    "kind": "facts",
+    "title": "Running Back · Week 12, 2025",
+    "blocks": [
+     {
+      "head": "Aidan",
+      "chip": null,
+      "rows": [
+       [
+        "Player",
+        "Jahmyr Gibbs"
+       ],
+       [
+        "Points",
+        "56.90"
+       ],
+       [
+        "Team",
+        "Aidan (195.95 vs Ryan 129.81)"
+       ]
+      ]
+     }
+    ]
+   },
+   "links": null,
+   "verified": true
+  },
+  {
+   "id": "most-points-by-a-wide-receiver-game",
+   "name": "Most Points by a Wide Receiver (Game)",
+   "category": "Games & Weeks",
+   "source": "computed",
+   "metric": "player_wr",
+   "direction": "max",
+   "value": "55.40 pts",
+   "value_num": 55.4,
+   "when": "Week 10 - 2024",
+   "holder": "Ben — Ja'Marr Chase",
+   "holders": [
+    "Ben"
+   ],
+   "league_level": false,
+   "team": "Resident Evil 🏆🏆😵☠️⚰️🪦🧟‍♂️🏆",
+   "notes": [],
+   "evidence": [],
+   "replay": {
+    "season": 2024,
+    "week": 10,
+    "rid": 2,
+    "opp_rid": 9,
+    "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=10.2.9&season=2024"
+   },
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "definition": "The most fantasy points scored by one starting wide receiver in a game. Counts trades since 2021 (the first Sleeper season).",
+   "updated": "2026-11-07",
+   "leaderboard": [
+    {
+     "value": "55.40 pts",
+     "holder": "Ben — Ja'Marr Chase",
+     "when": "Week 10 - 2024",
+     "replay": {
+      "season": 2024,
+      "week": 10,
+      "rid": 2,
+      "opp_rid": 9,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=10.2.9&season=2024"
+     }
+    },
+    {
+     "value": "52.20 pts",
+     "holder": "Aidan — Ja'Marr Chase",
+     "when": "Week 5 - 2023",
+     "replay": {
+      "season": 2023,
+      "week": 5,
+      "rid": 1,
+      "opp_rid": 9,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=5.1.9&season=2023"
+     },
+     "detail": {
+      "kind": "facts",
+      "title": "Wide Receiver · Week 5, 2023",
+      "blocks": [
+       {
+        "head": "Aidan",
+        "chip": null,
+        "rows": [
+         [
+          "Player",
+          "Ja'Marr Chase"
+         ],
+         [
+          "Points",
+          "52.20"
+         ],
+         [
+          "Team",
+          "Aidan (184.80 vs Tommy 120.91)"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "value": "51.50 pts",
+     "holder": "Ankit — Amari Cooper",
+     "when": "Week 16 - 2023",
+     "replay": {
+      "season": 2023,
+      "week": 16,
+      "rid": 8,
+      "opp_rid": 10,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=16.8.10&season=2023"
+     },
+     "detail": {
+      "kind": "facts",
+      "title": "Wide Receiver · Week 16, 2023",
+      "blocks": [
+       {
+        "head": "Ankit",
+        "chip": null,
+        "rows": [
+         [
+          "Player",
+          "Amari Cooper"
+         ],
+         [
+          "Points",
+          "51.50"
+         ],
+         [
+          "Team",
+          "Ankit (164.47 vs Ryan 124.85)"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "value": "49.00 pts",
+     "holder": "Ankit — DJ Moore",
+     "when": "Week 5 - 2023",
+     "replay": {
+      "season": 2023,
+      "week": 5,
+      "rid": 8,
+      "opp_rid": 7,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=5.8.7&season=2023"
+     },
+     "detail": {
+      "kind": "facts",
+      "title": "Wide Receiver · Week 5, 2023",
+      "blocks": [
+       {
+        "head": "Ankit",
+        "chip": null,
+        "rows": [
+         [
+          "Player",
+          "DJ Moore"
+         ],
+         [
+          "Points",
+          "49.00"
+         ],
+         [
+          "Team",
+          "Ankit (135.78 vs Steven 123.11)"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "value": "49.00 pts",
+     "holder": "Jake — Puka Nacua",
+     "when": "Week 16 - 2025",
+     "replay": {
+      "season": 2025,
+      "week": 16,
+      "rid": 3,
+      "opp_rid": 2,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=16.3.2&season=2025"
+     },
+     "detail": {
+      "kind": "facts",
+      "title": "Wide Receiver · Week 16, 2025",
+      "blocks": [
+       {
+        "head": "Jake",
+        "chip": null,
+        "rows": [
+         [
+          "Player",
+          "Puka Nacua"
+         ],
+         [
+          "Points",
+          "49.00"
+         ],
+         [
+          "Team",
+          "Jake (189.44 vs Ben 165.54)"
+         ]
+        ]
+       }
+      ]
+     }
+    }
+   ],
+   "by_season": [
+    {
+     "s": 2026,
+     "n": 47.7,
+     "value": "47.70 pts",
+     "holder": "Steven — Tetairoa McMillan",
+     "holders": [
+      "Steven"
+     ],
+     "when": "Week 4 - 2026",
+     "replay": {
+      "season": 2026,
+      "week": 4,
+      "rid": 7,
+      "opp_rid": 12,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=4.7.12"
+     },
+     "detail": {
+      "kind": "facts",
+      "title": "Wide Receiver · Week 4, 2026",
+      "blocks": [
+       {
+        "head": "Steven",
+        "chip": null,
+        "rows": [
+         [
+          "Player",
+          "Tetairoa McMillan"
+         ],
+         [
+          "Points",
+          "47.70"
+         ],
+         [
+          "Team",
+          "Steven (166.97 vs Stephanie 141.93)"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "s": 2025,
+     "n": 49.0,
+     "value": "49.00 pts",
+     "holder": "Jake — Puka Nacua",
+     "holders": [
+      "Jake"
+     ],
+     "when": "Week 16 - 2025",
+     "replay": {
+      "season": 2025,
+      "week": 16,
+      "rid": 3,
+      "opp_rid": 2,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=16.3.2&season=2025"
+     },
+     "detail": {
+      "kind": "facts",
+      "title": "Wide Receiver · Week 16, 2025",
+      "blocks": [
+       {
+        "head": "Jake",
+        "chip": null,
+        "rows": [
+         [
+          "Player",
+          "Puka Nacua"
+         ],
+         [
+          "Points",
+          "49.00"
+         ],
+         [
+          "Team",
+          "Jake (189.44 vs Ben 165.54)"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "s": 2024,
+     "n": 55.4,
+     "value": "55.40 pts",
+     "holder": "Ben — Ja'Marr Chase",
+     "holders": [
+      "Ben"
+     ],
+     "when": "Week 10 - 2024",
+     "replay": {
+      "season": 2024,
+      "week": 10,
+      "rid": 2,
+      "opp_rid": 9,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=10.2.9&season=2024"
+     },
+     "detail": {
+      "kind": "facts",
+      "title": "Wide Receiver · Week 10, 2024",
+      "blocks": [
+       {
+        "head": "Ben",
+        "chip": null,
+        "rows": [
+         [
+          "Player",
+          "Ja'Marr Chase"
+         ],
+         [
+          "Points",
+          "55.40"
+         ],
+         [
+          "Team",
+          "Ben (168.08 vs Christian 123.30)"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "s": 2023,
+     "n": 52.2,
+     "value": "52.20 pts",
+     "holder": "Aidan — Ja'Marr Chase",
+     "holders": [
+      "Aidan"
+     ],
+     "when": "Week 5 - 2023",
+     "replay": {
+      "season": 2023,
+      "week": 5,
+      "rid": 1,
+      "opp_rid": 9,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=5.1.9&season=2023"
+     },
+     "detail": {
+      "kind": "facts",
+      "title": "Wide Receiver · Week 5, 2023",
+      "blocks": [
+       {
+        "head": "Aidan",
+        "chip": null,
+        "rows": [
+         [
+          "Player",
+          "Ja'Marr Chase"
+         ],
+         [
+          "Points",
+          "52.20"
+         ],
+         [
+          "Team",
+          "Aidan (184.80 vs Tommy 120.91)"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "s": 2022,
+     "n": 48.7,
+     "value": "48.70 pts",
+     "holder": "Jake — Mike Evans",
+     "holders": [
+      "Jake"
+     ],
+     "when": "Week 17 - 2022",
+     "replay": {
+      "season": 2022,
+      "week": 17,
+      "rid": 3,
+      "opp_rid": 5,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=17.3.5&season=2022"
+     },
+     "detail": {
+      "kind": "facts",
+      "title": "Wide Receiver · Week 17, 2022",
+      "blocks": [
+       {
+        "head": "Jake",
+        "chip": null,
+        "rows": [
+         [
+          "Player",
+          "Mike Evans"
+         ],
+         [
+          "Points",
+          "48.70"
+         ],
+         [
+          "Team",
+          "Jake (189.52 vs Joe 97.98)"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "s": 2021,
+     "n": 48.6,
+     "value": "48.60 pts",
+     "holder": "Ben — Ja'Marr Chase",
+     "holders": [
+      "Ben"
+     ],
+     "when": "Week 17 - 2021",
+     "replay": {
+      "season": 2021,
+      "week": 17,
+      "rid": 2,
+      "opp_rid": 10,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=17.2.10&season=2021"
+     },
+     "detail": {
+      "kind": "facts",
+      "title": "Wide Receiver · Week 17, 2021",
+      "blocks": [
+       {
+        "head": "Ben",
+        "chip": null,
+        "rows": [
+         [
+          "Player",
+          "Ja'Marr Chase"
+         ],
+         [
+          "Points",
+          "48.60"
+         ],
+         [
+          "Team",
+          "Ben (138.97 vs Ryan 123.77)"
+         ]
+        ]
+       }
+      ]
+     }
+    }
+   ],
+   "detail": {
+    "kind": "facts",
+    "title": "Wide Receiver · Week 10, 2024",
+    "blocks": [
+     {
+      "head": "Ben",
+      "chip": null,
+      "rows": [
+       [
+        "Player",
+        "Ja'Marr Chase"
+       ],
+       [
+        "Points",
+        "55.40"
+       ],
+       [
+        "Team",
+        "Ben (168.08 vs Christian 123.30)"
+       ]
+      ]
+     }
+    ]
+   },
+   "links": null,
+   "verified": true
+  },
+  {
+   "id": "most-points-by-a-tight-end-game",
+   "name": "Most Points by a Tight End (Game)",
+   "category": "Games & Weeks",
+   "source": "computed",
+   "metric": "player_te",
+   "direction": "max",
+   "value": "48.10 pts",
+   "value_num": 48.1,
+   "when": "Week 15 - 2025",
+   "holder": "Jake — Kyle Pitts Sr.",
+   "holders": [
+    "Jake"
+   ],
+   "league_level": false,
+   "team": "Ladds, it's the DTF club",
+   "notes": [],
+   "evidence": [],
+   "replay": {
+    "season": 2025,
+    "week": 15,
+    "rid": 3,
+    "opp_rid": 1,
+    "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=15.3.1&season=2025"
+   },
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "definition": "The most fantasy points scored by one starting tight end in a game. Counts trades since 2021 (the first Sleeper season).",
+   "updated": "2026-11-07",
+   "leaderboard": [
+    {
+     "value": "48.10 pts",
+     "holder": "Jake — Kyle Pitts Sr.",
+     "when": "Week 15 - 2025",
+     "replay": {
+      "season": 2025,
+      "week": 15,
+      "rid": 3,
+      "opp_rid": 1,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=15.3.1&season=2025"
+     }
+    },
+    {
+     "value": "40.40 pts",
+     "holder": "Steven — Trey McBride",
+     "when": "Week 15 - 2025",
+     "replay": {
+      "season": 2025,
+      "week": 15,
+      "rid": 7,
+      "opp_rid": 8,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=15.7.8&season=2025"
+     },
+     "detail": {
+      "kind": "facts",
+      "title": "Tight End · Week 15, 2025",
+      "blocks": [
+       {
+        "head": "Steven",
+        "chip": null,
+        "rows": [
+         [
+          "Player",
+          "Trey McBride"
+         ],
+         [
+          "Points",
+          "40.40"
+         ],
+         [
+          "Team",
+          "Steven (202.15 vs Ankit 141.80)"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "value": "39.90 pts",
+     "holder": "Ben — T.J. Hockenson",
+     "when": "Week 4 - 2022",
+     "replay": {
+      "season": 2022,
+      "week": 4,
+      "rid": 2,
+      "opp_rid": 1,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=4.2.1&season=2022"
+     },
+     "detail": {
+      "kind": "facts",
+      "title": "Tight End · Week 4, 2022",
+      "blocks": [
+       {
+        "head": "Ben",
+        "chip": null,
+        "rows": [
+         [
+          "Player",
+          "T.J. Hockenson"
+         ],
+         [
+          "Points",
+          "39.90"
+         ],
+         [
+          "Team",
+          "Ben (160.26 vs Aidan 136.46)"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "value": "35.90 pts",
+     "holder": "Ben — T.J. Hockenson",
+     "when": "Week 16 - 2022",
+     "replay": {
+      "season": 2022,
+      "week": 16,
+      "rid": 2,
+      "opp_rid": 6,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=16.2.6&season=2022"
+     },
+     "detail": {
+      "kind": "facts",
+      "title": "Tight End · Week 16, 2022",
+      "blocks": [
+       {
+        "head": "Ben",
+        "chip": null,
+        "rows": [
+         [
+          "Player",
+          "T.J. Hockenson"
+         ],
+         [
+          "Points",
+          "35.90"
+         ],
+         [
+          "Team",
+          "Ben (125.90 vs Alex 93.62)"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "value": "35.90 pts",
+     "holder": "Ryan — Travis Kelce",
+     "when": "Week 7 - 2023",
+     "replay": {
+      "season": 2023,
+      "week": 7,
+      "rid": 10,
+      "opp_rid": 6,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=7.10.6&season=2023"
+     },
+     "detail": {
+      "kind": "facts",
+      "title": "Tight End · Week 7, 2023",
+      "blocks": [
+       {
+        "head": "Ryan",
+        "chip": null,
+        "rows": [
+         [
+          "Player",
+          "Travis Kelce"
+         ],
+         [
+          "Points",
+          "35.90"
+         ],
+         [
+          "Team",
+          "Ryan (165.68 vs Alex 125.29)"
+         ]
+        ]
+       }
+      ]
+     }
+    }
+   ],
+   "by_season": [
+    {
+     "s": 2026,
+     "n": 34.4,
+     "value": "34.40 pts",
+     "holder": "Aidan — Isaiah Likely",
+     "holders": [
+      "Aidan"
+     ],
+     "when": "Week 5 - 2026",
+     "replay": {
+      "season": 2026,
+      "week": 5,
+      "rid": 1,
+      "opp_rid": 8,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=5.1.8"
+     },
+     "detail": {
+      "kind": "facts",
+      "title": "Tight End · Week 5, 2026",
+      "blocks": [
+       {
+        "head": "Aidan",
+        "chip": null,
+        "rows": [
+         [
+          "Player",
+          "Isaiah Likely"
+         ],
+         [
+          "Points",
+          "34.40"
+         ],
+         [
+          "Team",
+          "Aidan (174.50 vs Ankit 171.82)"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "s": 2025,
+     "n": 48.1,
+     "value": "48.10 pts",
+     "holder": "Jake — Kyle Pitts Sr.",
+     "holders": [
+      "Jake"
+     ],
+     "when": "Week 15 - 2025",
+     "replay": {
+      "season": 2025,
+      "week": 15,
+      "rid": 3,
+      "opp_rid": 1,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=15.3.1&season=2025"
+     },
+     "detail": {
+      "kind": "facts",
+      "title": "Tight End · Week 15, 2025",
+      "blocks": [
+       {
+        "head": "Jake",
+        "chip": null,
+        "rows": [
+         [
+          "Player",
+          "Kyle Pitts Sr."
+         ],
+         [
+          "Points",
+          "48.10"
+         ],
+         [
+          "Team",
+          "Jake (160.78 vs Aidan 132.00)"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "s": 2024,
+     "n": 31.3,
+     "value": "31.30 pts",
+     "holder": "Ryan — Brock Bowers",
+     "holders": [
+      "Ryan"
+     ],
+     "when": "Week 11 - 2024",
+     "replay": {
+      "season": 2024,
+      "week": 11,
+      "rid": 10,
+      "opp_rid": 2,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=11.10.2&season=2024"
+     },
+     "detail": {
+      "kind": "facts",
+      "title": "Tight End · Week 11, 2024",
+      "blocks": [
+       {
+        "head": "Ryan",
+        "chip": null,
+        "rows": [
+         [
+          "Player",
+          "Brock Bowers"
+         ],
+         [
+          "Points",
+          "31.30"
+         ],
+         [
+          "Team",
+          "Ryan (143.50 vs Ben 167.91)"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "s": 2023,
+     "n": 35.9,
+     "value": "35.90 pts",
+     "holder": "Ryan — Travis Kelce",
+     "holders": [
+      "Ryan"
+     ],
+     "when": "Week 7 - 2023",
+     "replay": {
+      "season": 2023,
+      "week": 7,
+      "rid": 10,
+      "opp_rid": 6,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=7.10.6&season=2023"
+     },
+     "detail": {
+      "kind": "facts",
+      "title": "Tight End · Week 7, 2023",
+      "blocks": [
+       {
+        "head": "Ryan",
+        "chip": null,
+        "rows": [
+         [
+          "Player",
+          "Travis Kelce"
+         ],
+         [
+          "Points",
+          "35.90"
+         ],
+         [
+          "Team",
+          "Ryan (165.68 vs Alex 125.29)"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "s": 2022,
+     "n": 39.9,
+     "value": "39.90 pts",
+     "holder": "Ben — T.J. Hockenson",
+     "holders": [
+      "Ben"
+     ],
+     "when": "Week 4 - 2022",
+     "replay": {
+      "season": 2022,
+      "week": 4,
+      "rid": 2,
+      "opp_rid": 1,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=4.2.1&season=2022"
+     },
+     "detail": {
+      "kind": "facts",
+      "title": "Tight End · Week 4, 2022",
+      "blocks": [
+       {
+        "head": "Ben",
+        "chip": null,
+        "rows": [
+         [
+          "Player",
+          "T.J. Hockenson"
+         ],
+         [
+          "Points",
+          "39.90"
+         ],
+         [
+          "Team",
+          "Ben (160.26 vs Aidan 136.46)"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "s": 2021,
+     "n": 34.85,
+     "value": "34.85 pts",
+     "holder": "Ben — Travis Kelce",
+     "holders": [
+      "Ben"
+     ],
+     "when": "Week 15 - 2021",
+     "replay": {
+      "season": 2021,
+      "week": 15,
+      "rid": 2,
+      "opp_rid": 7,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=15.2.7&season=2021"
+     },
+     "detail": {
+      "kind": "facts",
+      "title": "Tight End · Week 15, 2021",
+      "blocks": [
+       {
+        "head": "Ben",
+        "chip": null,
+        "rows": [
+         [
+          "Player",
+          "Travis Kelce"
+         ],
+         [
+          "Points",
+          "34.85"
+         ],
+         [
+          "Team",
+          "Ben (94.83 vs Steven 85.11)"
+         ]
+        ]
+       }
+      ]
+     }
+    }
+   ],
+   "detail": {
+    "kind": "facts",
+    "title": "Tight End · Week 15, 2025",
+    "blocks": [
+     {
+      "head": "Jake",
+      "chip": null,
+      "rows": [
+       [
+        "Player",
+        "Kyle Pitts Sr."
+       ],
+       [
+        "Points",
+        "48.10"
+       ],
+       [
+        "Team",
+        "Jake (160.78 vs Aidan 132.00)"
+       ]
+      ]
+     }
+    ]
+   },
+   "links": null,
+   "verified": true
+  },
+  {
+   "id": "most-points-by-a-kicker-game",
+   "name": "Most Points by a Kicker (Game)",
+   "category": "Games & Weeks",
+   "source": "computed",
+   "metric": "player_k",
+   "direction": "max",
+   "value": "26.30 pts",
+   "value_num": 26.3,
+   "when": "Week 15 - 2025",
+   "holder": "Jake — Jason Myers",
+   "holders": [
+    "Jake"
+   ],
+   "league_level": false,
+   "team": "Ladds, it's the DTF club",
+   "notes": [],
+   "evidence": [],
+   "replay": {
+    "season": 2025,
+    "week": 15,
+    "rid": 3,
+    "opp_rid": 1,
+    "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=15.3.1&season=2025"
+   },
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "definition": "The most fantasy points scored by one starting kicker in a game. Counts trades since 2021 (the first Sleeper season).",
+   "updated": "2026-11-07",
+   "leaderboard": [
+    {
+     "value": "26.30 pts",
+     "holder": "Jake — Jason Myers",
+     "when": "Week 15 - 2025",
+     "replay": {
+      "season": 2025,
+      "week": 15,
+      "rid": 3,
+      "opp_rid": 1,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=15.3.1&season=2025"
+     }
+    },
+    {
+     "value": "26.20 pts",
+     "holder": "Joe — Tyler Bass",
+     "when": "Week 11 - 2022",
+     "replay": {
+      "season": 2022,
+      "week": 11,
+      "rid": 5,
+      "opp_rid": 1,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=11.5.1&season=2022"
+     },
+     "detail": {
+      "kind": "facts",
+      "title": "Kicker · Week 11, 2022",
+      "blocks": [
+       {
+        "head": "Joe",
+        "chip": null,
+        "rows": [
+         [
+          "Player",
+          "Tyler Bass"
+         ],
+         [
+          "Points",
+          "26.20"
+         ],
+         [
+          "Team",
+          "Joe (167.90 vs Aidan 110.16)"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "value": "26.10 pts",
+     "holder": "Ryan — Harrison Butker",
+     "when": "Week 17 - 2023",
+     "replay": {
+      "season": 2023,
+      "week": 17,
+      "rid": 10,
+      "opp_rid": 3,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=17.10.3&season=2023"
+     },
+     "detail": {
+      "kind": "facts",
+      "title": "Kicker · Week 17, 2023",
+      "blocks": [
+       {
+        "head": "Ryan",
+        "chip": null,
+        "rows": [
+         [
+          "Player",
+          "Harrison Butker"
+         ],
+         [
+          "Points",
+          "26.10"
+         ],
+         [
+          "Team",
+          "Ryan (109.76 vs Jake 123.58)"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "value": "25.70 pts",
+     "holder": "Ankit — Brandon Aubrey",
+     "when": "Week 14 - 2025",
+     "replay": {
+      "season": 2025,
+      "week": 14,
+      "rid": 8,
+      "opp_rid": 6,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=14.8.6&season=2025"
+     },
+     "detail": {
+      "kind": "facts",
+      "title": "Kicker · Week 14, 2025",
+      "blocks": [
+       {
+        "head": "Ankit",
+        "chip": null,
+        "rows": [
+         [
+          "Player",
+          "Brandon Aubrey"
+         ],
+         [
+          "Points",
+          "25.70"
+         ],
+         [
+          "Team",
+          "Ankit (127.27 vs Alex 147.08)"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "value": "25.30 pts",
+     "holder": "Christian — Chris Boswell",
+     "when": "Week 11 - 2024",
+     "replay": {
+      "season": 2024,
+      "week": 11,
+      "rid": 9,
+      "opp_rid": 3,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=11.9.3&season=2024"
+     },
+     "detail": {
+      "kind": "facts",
+      "title": "Kicker · Week 11, 2024",
+      "blocks": [
+       {
+        "head": "Christian",
+        "chip": null,
+        "rows": [
+         [
+          "Player",
+          "Chris Boswell"
+         ],
+         [
+          "Points",
+          "25.30"
+         ],
+         [
+          "Team",
+          "Christian (124.11 vs Jake 145.16)"
+         ]
+        ]
+       }
+      ]
+     }
+    }
+   ],
+   "by_season": [
+    {
+     "s": 2026,
+     "n": 25.0,
+     "value": "25.00 pts",
+     "holder": "Kaitlyn — Jason Myers",
+     "holders": [
+      "Kaitlyn"
+     ],
+     "when": "Week 5 - 2026",
+     "replay": {
+      "season": 2026,
+      "week": 5,
+      "rid": 11,
+      "opp_rid": 12,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=5.11.12"
+     },
+     "detail": {
+      "kind": "facts",
+      "title": "Kicker · Week 5, 2026",
+      "blocks": [
+       {
+        "head": "Kaitlyn",
+        "chip": null,
+        "rows": [
+         [
+          "Player",
+          "Jason Myers"
+         ],
+         [
+          "Points",
+          "25.00"
+         ],
+         [
+          "Team",
+          "Kaitlyn (126.82 vs Stephanie 138.97)"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "s": 2025,
+     "n": 26.3,
+     "value": "26.30 pts",
+     "holder": "Jake — Jason Myers",
+     "holders": [
+      "Jake"
+     ],
+     "when": "Week 15 - 2025",
+     "replay": {
+      "season": 2025,
+      "week": 15,
+      "rid": 3,
+      "opp_rid": 1,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=15.3.1&season=2025"
+     },
+     "detail": {
+      "kind": "facts",
+      "title": "Kicker · Week 15, 2025",
+      "blocks": [
+       {
+        "head": "Jake",
+        "chip": null,
+        "rows": [
+         [
+          "Player",
+          "Jason Myers"
+         ],
+         [
+          "Points",
+          "26.30"
+         ],
+         [
+          "Team",
+          "Jake (160.78 vs Aidan 132.00)"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "s": 2024,
+     "n": 25.3,
+     "value": "25.30 pts",
+     "holder": "Christian — Chris Boswell",
+     "holders": [
+      "Christian"
+     ],
+     "when": "Week 11 - 2024",
+     "replay": {
+      "season": 2024,
+      "week": 11,
+      "rid": 9,
+      "opp_rid": 3,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=11.9.3&season=2024"
+     },
+     "detail": {
+      "kind": "facts",
+      "title": "Kicker · Week 11, 2024",
+      "blocks": [
+       {
+        "head": "Christian",
+        "chip": null,
+        "rows": [
+         [
+          "Player",
+          "Chris Boswell"
+         ],
+         [
+          "Points",
+          "25.30"
+         ],
+         [
+          "Team",
+          "Christian (124.11 vs Jake 145.16)"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "s": 2023,
+     "n": 26.1,
+     "value": "26.10 pts",
+     "holder": "Ryan — Harrison Butker",
+     "holders": [
+      "Ryan"
+     ],
+     "when": "Week 17 - 2023",
+     "replay": {
+      "season": 2023,
+      "week": 17,
+      "rid": 10,
+      "opp_rid": 3,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=17.10.3&season=2023"
+     },
+     "detail": {
+      "kind": "facts",
+      "title": "Kicker · Week 17, 2023",
+      "blocks": [
+       {
+        "head": "Ryan",
+        "chip": null,
+        "rows": [
+         [
+          "Player",
+          "Harrison Butker"
+         ],
+         [
+          "Points",
+          "26.10"
+         ],
+         [
+          "Team",
+          "Ryan (109.76 vs Jake 123.58)"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "s": 2022,
+     "n": 26.2,
+     "value": "26.20 pts",
+     "holder": "Joe — Tyler Bass",
+     "holders": [
+      "Joe"
+     ],
+     "when": "Week 11 - 2022",
+     "replay": {
+      "season": 2022,
+      "week": 11,
+      "rid": 5,
+      "opp_rid": 1,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=11.5.1&season=2022"
+     },
+     "detail": {
+      "kind": "facts",
+      "title": "Kicker · Week 11, 2022",
+      "blocks": [
+       {
+        "head": "Joe",
+        "chip": null,
+        "rows": [
+         [
+          "Player",
+          "Tyler Bass"
+         ],
+         [
+          "Points",
+          "26.20"
+         ],
+         [
+          "Team",
+          "Joe (167.90 vs Aidan 110.16)"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "s": 2021,
+     "n": 21.5,
+     "value": "21.50 pts",
+     "holder": "Ankit — Evan McPherson",
+     "holders": [
+      "Ankit"
+     ],
+     "when": "Week 11 - 2021",
+     "replay": {
+      "season": 2021,
+      "week": 11,
+      "rid": 8,
+      "opp_rid": 7,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=11.8.7&season=2021"
+     },
+     "detail": {
+      "kind": "facts",
+      "title": "Kicker · Week 11, 2021",
+      "blocks": [
+       {
+        "head": "Ankit",
+        "chip": null,
+        "rows": [
+         [
+          "Player",
+          "Evan McPherson"
+         ],
+         [
+          "Points",
+          "21.50"
+         ],
+         [
+          "Team",
+          "Ankit (117.66 vs Steven 88.73)"
+         ]
+        ]
+       }
+      ]
+     }
+    }
+   ],
+   "detail": {
+    "kind": "facts",
+    "title": "Kicker · Week 15, 2025",
+    "blocks": [
+     {
+      "head": "Jake",
+      "chip": null,
+      "rows": [
+       [
+        "Player",
+        "Jason Myers"
+       ],
+       [
+        "Points",
+        "26.30"
+       ],
+       [
+        "Team",
+        "Jake (160.78 vs Aidan 132.00)"
+       ]
+      ]
+     }
+    ]
+   },
+   "links": null,
+   "verified": true
+  },
+  {
+   "id": "most-points-by-a-defense-game",
+   "name": "Most Points by a Defense (Game)",
+   "category": "Games & Weeks",
+   "source": "computed",
+   "metric": "player_def",
+   "direction": "max",
+   "value": "35.68 pts",
+   "value_num": 35.68,
+   "when": "Week 3 - 2025",
+   "holder": "Haan — Minnesota Vikings",
+   "holders": [
+    "Haan"
+   ],
+   "league_level": false,
+   "team": "The Kiran Tor",
+   "notes": [],
+   "evidence": [],
+   "replay": {
+    "season": 2025,
+    "week": 3,
+    "rid": 4,
+    "opp_rid": 8,
+    "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=3.4.8&season=2025"
+   },
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "definition": "The most fantasy points scored by one starting defense/special teams in a game. Counts trades since 2021 (the first Sleeper season).",
+   "updated": "2026-11-07",
+   "leaderboard": [
+    {
+     "value": "35.68 pts",
+     "holder": "Haan — Minnesota Vikings",
+     "when": "Week 3 - 2025",
+     "replay": {
+      "season": 2025,
+      "week": 3,
+      "rid": 4,
+      "opp_rid": 8,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=3.4.8&season=2025"
+     }
+    },
+    {
+     "value": "31.08 pts",
+     "holder": "Ryan — Buffalo Bills",
+     "when": "Week 3 - 2023",
+     "replay": {
+      "season": 2023,
+      "week": 3,
+      "rid": 10,
+      "opp_rid": 9,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=3.10.9&season=2023"
+     },
+     "detail": {
+      "kind": "facts",
+      "title": "Defense · Week 3, 2023",
+      "blocks": [
+       {
+        "head": "Ryan",
+        "chip": null,
+        "rows": [
+         [
+          "Player",
+          "Buffalo Bills"
+         ],
+         [
+          "Points",
+          "31.08"
+         ],
+         [
+          "Team",
+          "Ryan (197.78 vs Tommy 137.86)"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "value": "31.00 pts",
+     "holder": "Alex — Cleveland Browns",
+     "when": "Week 13 - 2022",
+     "replay": {
+      "season": 2022,
+      "week": 13,
+      "rid": 6,
+      "opp_rid": 7,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=13.6.7&season=2022"
+     },
+     "detail": {
+      "kind": "facts",
+      "title": "Defense · Week 13, 2022",
+      "blocks": [
+       {
+        "head": "Alex",
+        "chip": null,
+        "rows": [
+         [
+          "Player",
+          "Cleveland Browns"
+         ],
+         [
+          "Points",
+          "31.00"
+         ],
+         [
+          "Team",
+          "Alex (173.70 vs Steven 110.30)"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "value": "30.84 pts",
+     "holder": "Aidan — Seattle Seahawks",
+     "when": "Week 13 - 2025",
+     "replay": {
+      "season": 2025,
+      "week": 13,
+      "rid": 1,
+      "opp_rid": 5,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=13.1.5&season=2025"
+     },
+     "detail": {
+      "kind": "facts",
+      "title": "Defense · Week 13, 2025",
+      "blocks": [
+       {
+        "head": "Aidan",
+        "chip": null,
+        "rows": [
+         [
+          "Player",
+          "Seattle Seahawks"
+         ],
+         [
+          "Points",
+          "30.84"
+         ],
+         [
+          "Team",
+          "Aidan (187.44 vs Joe 114.83)"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "value": "28.08 pts",
+     "holder": "Ben — Chicago Bears",
+     "when": "Week 1 - 2024",
+     "replay": {
+      "season": 2024,
+      "week": 1,
+      "rid": 2,
+      "opp_rid": 9,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=1.2.9&season=2024"
+     },
+     "detail": {
+      "kind": "facts",
+      "title": "Defense · Week 1, 2024",
+      "blocks": [
+       {
+        "head": "Ben",
+        "chip": null,
+        "rows": [
+         [
+          "Player",
+          "Chicago Bears"
+         ],
+         [
+          "Points",
+          "28.08"
+         ],
+         [
+          "Team",
+          "Ben (153.88 vs Christian 163.00)"
+         ]
+        ]
+       }
+      ]
+     }
+    }
+   ],
+   "by_season": [
+    {
+     "s": 2026,
+     "n": 27.64,
+     "value": "27.64 pts",
+     "holder": "Stephanie — Jacksonville Jaguars",
+     "holders": [
+      "Stephanie"
+     ],
+     "when": "Week 8 - 2026",
+     "replay": {
+      "season": 2026,
+      "week": 8,
+      "rid": 12,
+      "opp_rid": 9,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=8.12.9"
+     },
+     "detail": {
+      "kind": "facts",
+      "title": "Defense · Week 8, 2026",
+      "blocks": [
+       {
+        "head": "Stephanie",
+        "chip": null,
+        "rows": [
+         [
+          "Player",
+          "Jacksonville Jaguars"
+         ],
+         [
+          "Points",
+          "27.64"
+         ],
+         [
+          "Team",
+          "Stephanie (151.94 vs Christian 155.15)"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "s": 2025,
+     "n": 35.68,
+     "value": "35.68 pts",
+     "holder": "Haan — Minnesota Vikings",
+     "holders": [
+      "Haan"
+     ],
+     "when": "Week 3 - 2025",
+     "replay": {
+      "season": 2025,
+      "week": 3,
+      "rid": 4,
+      "opp_rid": 8,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=3.4.8&season=2025"
+     },
+     "detail": {
+      "kind": "facts",
+      "title": "Defense · Week 3, 2025",
+      "blocks": [
+       {
+        "head": "Haan",
+        "chip": null,
+        "rows": [
+         [
+          "Player",
+          "Minnesota Vikings"
+         ],
+         [
+          "Points",
+          "35.68"
+         ],
+         [
+          "Team",
+          "Haan (164.02 vs Ankit 169.70)"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "s": 2024,
+     "n": 28.08,
+     "value": "28.08 pts",
+     "holder": "Ben — Chicago Bears",
+     "holders": [
+      "Ben"
+     ],
+     "when": "Week 1 - 2024",
+     "replay": {
+      "season": 2024,
+      "week": 1,
+      "rid": 2,
+      "opp_rid": 9,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=1.2.9&season=2024"
+     },
+     "detail": {
+      "kind": "facts",
+      "title": "Defense · Week 1, 2024",
+      "blocks": [
+       {
+        "head": "Ben",
+        "chip": null,
+        "rows": [
+         [
+          "Player",
+          "Chicago Bears"
+         ],
+         [
+          "Points",
+          "28.08"
+         ],
+         [
+          "Team",
+          "Ben (153.88 vs Christian 163.00)"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "s": 2023,
+     "n": 31.08,
+     "value": "31.08 pts",
+     "holder": "Ryan — Buffalo Bills",
+     "holders": [
+      "Ryan"
+     ],
+     "when": "Week 3 - 2023",
+     "replay": {
+      "season": 2023,
+      "week": 3,
+      "rid": 10,
+      "opp_rid": 9,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=3.10.9&season=2023"
+     },
+     "detail": {
+      "kind": "facts",
+      "title": "Defense · Week 3, 2023",
+      "blocks": [
+       {
+        "head": "Ryan",
+        "chip": null,
+        "rows": [
+         [
+          "Player",
+          "Buffalo Bills"
+         ],
+         [
+          "Points",
+          "31.08"
+         ],
+         [
+          "Team",
+          "Ryan (197.78 vs Tommy 137.86)"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "s": 2022,
+     "n": 31.0,
+     "value": "31.00 pts",
+     "holder": "Alex — Cleveland Browns",
+     "holders": [
+      "Alex"
+     ],
+     "when": "Week 13 - 2022",
+     "replay": {
+      "season": 2022,
+      "week": 13,
+      "rid": 6,
+      "opp_rid": 7,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=13.6.7&season=2022"
+     },
+     "detail": {
+      "kind": "facts",
+      "title": "Defense · Week 13, 2022",
+      "blocks": [
+       {
+        "head": "Alex",
+        "chip": null,
+        "rows": [
+         [
+          "Player",
+          "Cleveland Browns"
+         ],
+         [
+          "Points",
+          "31.00"
+         ],
+         [
+          "Team",
+          "Alex (173.70 vs Steven 110.30)"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "s": 2021,
+     "n": 27.0,
+     "value": "27.00 pts",
+     "holder": "Haan — Dallas Cowboys",
+     "holders": [
+      "Haan"
+     ],
+     "when": "Week 16 - 2021",
+     "replay": {
+      "season": 2021,
+      "week": 16,
+      "rid": 4,
+      "opp_rid": 6,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=16.4.6&season=2021"
+     },
+     "detail": {
+      "kind": "facts",
+      "title": "Defense · Week 16, 2021",
+      "blocks": [
+       {
+        "head": "Haan",
+        "chip": null,
+        "rows": [
+         [
+          "Player",
+          "Dallas Cowboys"
+         ],
+         [
+          "Points",
+          "27.00"
+         ],
+         [
+          "Team",
+          "Haan (146.16 vs Oleg 108.56)"
+         ]
+        ]
+       }
+      ]
+     }
+    }
+   ],
+   "detail": {
+    "kind": "facts",
+    "title": "Defense · Week 3, 2025",
+    "blocks": [
+     {
+      "head": "Haan",
+      "chip": null,
+      "rows": [
+       [
+        "Player",
+        "Minnesota Vikings"
+       ],
+       [
+        "Points",
+        "35.68"
+       ],
+       [
+        "Team",
+        "Haan (164.02 vs Ankit 169.70)"
+       ]
+      ]
+     }
+    ]
+   },
+   "links": null,
+   "verified": true
+  },
+  {
    "id": "highest-projected-point-total",
    "name": "Highest Projected Point Total",
    "category": "Projections & NFL Clock",
@@ -53648,6 +56456,1107 @@
      "when": "2021"
     }
    ]
+  },
+  {
+   "id": "best-sit-start-career",
+   "name": "Best Sit/Start % (Career)",
+   "category": "Sit / Start",
+   "source": "computed",
+   "metric": "sitstart_career",
+   "direction": "max",
+   "value": "66.7% (52-26)",
+   "value_num": 66.7,
+   "when": "2022-2025",
+   "holder": "Alex",
+   "holders": [
+    "Alex"
+   ],
+   "league_level": false,
+   "team": "",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "definition": "The best Toss-up % across a career: of the sit/start calls that were projected within 2 points of each other, the share where the starter finished above replacement and the bench option did not (the Sit/Start tool's Toss-up %). At least 10 toss-ups. Counts trades since 2021 (the first Sleeper season).",
+   "updated": "2026-11-07",
+   "leaderboard": [
+    {
+     "value": "66.7% (52-26)",
+     "holder": "Alex",
+     "when": "2022-2025",
+     "replay": null,
+     "links": {
+      "page": {
+       "label": "Alex's sit/start in 2022 · FAB Management",
+       "url": "https://namkurd.github.io/FAB-Management/lineup.html?season=2022&manager=Alex"
+      },
+      "row": {
+       "label": "Alex's sit/start in 2022 · FAB Management",
+       "url": "https://namkurd.github.io/FAB-Management/lineup.html?season=2022&manager=Alex"
+      },
+      "sheet": {
+       "label": "All 2022 sit/start · FAB Management",
+       "url": "https://namkurd.github.io/FAB-Management/lineup.html?season=2022"
+      }
+     }
+    },
+    {
+     "value": "65.0% (52-28)",
+     "holder": "Ankit",
+     "when": "2021-2025",
+     "replay": null,
+     "links": {
+      "page": {
+       "label": "Ankit's sit/start in 2021 · FAB Management",
+       "url": "https://namkurd.github.io/FAB-Management/lineup.html?season=2021&manager=Ankit"
+      },
+      "row": {
+       "label": "Ankit's sit/start in 2021 · FAB Management",
+       "url": "https://namkurd.github.io/FAB-Management/lineup.html?season=2021&manager=Ankit"
+      },
+      "sheet": {
+       "label": "All 2021 sit/start · FAB Management",
+       "url": "https://namkurd.github.io/FAB-Management/lineup.html?season=2021"
+      }
+     },
+     "detail": {
+      "kind": "facts",
+      "title": "Toss-ups · 5 seasons",
+      "blocks": [
+       {
+        "head": "Ankit",
+        "chip": null,
+        "rows": [
+         [
+          "Toss-ups won",
+          "52 of 80 (65.0%)"
+         ],
+         [
+          "2021",
+          "2-3"
+         ],
+         [
+          "2022",
+          "12-2"
+         ],
+         [
+          "2023",
+          "16-8"
+         ],
+         [
+          "2024",
+          "14-7"
+         ],
+         [
+          "2025",
+          "8-8"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "value": "60.5% (49-32)",
+     "holder": "Ben",
+     "when": "2021-2025",
+     "replay": null,
+     "links": {
+      "page": {
+       "label": "Ben's sit/start in 2021 · FAB Management",
+       "url": "https://namkurd.github.io/FAB-Management/lineup.html?season=2021&manager=Ben"
+      },
+      "row": {
+       "label": "Ben's sit/start in 2021 · FAB Management",
+       "url": "https://namkurd.github.io/FAB-Management/lineup.html?season=2021&manager=Ben"
+      },
+      "sheet": {
+       "label": "All 2021 sit/start · FAB Management",
+       "url": "https://namkurd.github.io/FAB-Management/lineup.html?season=2021"
+      }
+     },
+     "detail": {
+      "kind": "facts",
+      "title": "Toss-ups · 5 seasons",
+      "blocks": [
+       {
+        "head": "Ben",
+        "chip": null,
+        "rows": [
+         [
+          "Toss-ups won",
+          "49 of 81 (60.5%)"
+         ],
+         [
+          "2021",
+          "12-5"
+         ],
+         [
+          "2022",
+          "9-2"
+         ],
+         [
+          "2023",
+          "12-10"
+         ],
+         [
+          "2024",
+          "6-8"
+         ],
+         [
+          "2025",
+          "10-7"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "value": "58.7% (64-45)",
+     "holder": "Aidan",
+     "when": "2021-2025",
+     "replay": null,
+     "links": {
+      "page": {
+       "label": "Aidan's sit/start in 2021 · FAB Management",
+       "url": "https://namkurd.github.io/FAB-Management/lineup.html?season=2021&manager=Aidan"
+      },
+      "row": {
+       "label": "Aidan's sit/start in 2021 · FAB Management",
+       "url": "https://namkurd.github.io/FAB-Management/lineup.html?season=2021&manager=Aidan"
+      },
+      "sheet": {
+       "label": "All 2021 sit/start · FAB Management",
+       "url": "https://namkurd.github.io/FAB-Management/lineup.html?season=2021"
+      }
+     },
+     "detail": {
+      "kind": "facts",
+      "title": "Toss-ups · 5 seasons",
+      "blocks": [
+       {
+        "head": "Aidan",
+        "chip": null,
+        "rows": [
+         [
+          "Toss-ups won",
+          "64 of 109 (58.7%)"
+         ],
+         [
+          "2021",
+          "14-12"
+         ],
+         [
+          "2022",
+          "13-6"
+         ],
+         [
+          "2023",
+          "11-12"
+         ],
+         [
+          "2024",
+          "12-7"
+         ],
+         [
+          "2025",
+          "14-8"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "value": "56.3% (49-38)",
+     "holder": "Jake",
+     "when": "2021-2025",
+     "replay": null,
+     "links": {
+      "page": {
+       "label": "Jake's sit/start in 2021 · FAB Management",
+       "url": "https://namkurd.github.io/FAB-Management/lineup.html?season=2021&manager=Jake"
+      },
+      "row": {
+       "label": "Jake's sit/start in 2021 · FAB Management",
+       "url": "https://namkurd.github.io/FAB-Management/lineup.html?season=2021&manager=Jake"
+      },
+      "sheet": {
+       "label": "All 2021 sit/start · FAB Management",
+       "url": "https://namkurd.github.io/FAB-Management/lineup.html?season=2021"
+      }
+     },
+     "detail": {
+      "kind": "facts",
+      "title": "Toss-ups · 5 seasons",
+      "blocks": [
+       {
+        "head": "Jake",
+        "chip": null,
+        "rows": [
+         [
+          "Toss-ups won",
+          "49 of 87 (56.3%)"
+         ],
+         [
+          "2021",
+          "12-7"
+         ],
+         [
+          "2022",
+          "12-4"
+         ],
+         [
+          "2023",
+          "10-6"
+         ],
+         [
+          "2024",
+          "9-8"
+         ],
+         [
+          "2025",
+          "6-13"
+         ]
+        ]
+       }
+      ]
+     }
+    }
+   ],
+   "era_parts": {
+    "agg": "wavg",
+    "min": 10,
+    "fmt": "pct",
+    "unit": "toss-ups",
+    "rows": [
+     [
+      2021,
+      "Aidan",
+      14,
+      26
+     ],
+     [
+      2021,
+      "Ben",
+      12,
+      17
+     ],
+     [
+      2021,
+      "Jake",
+      12,
+      19
+     ],
+     [
+      2021,
+      "Haan",
+      7,
+      10
+     ],
+     [
+      2021,
+      "Joe",
+      8,
+      14
+     ],
+     [
+      2021,
+      "Oleg",
+      12,
+      22
+     ],
+     [
+      2021,
+      "Steven",
+      8,
+      17
+     ],
+     [
+      2021,
+      "Ankit",
+      2,
+      5
+     ],
+     [
+      2021,
+      "Tommy",
+      8,
+      15
+     ],
+     [
+      2021,
+      "Ryan",
+      11,
+      19
+     ],
+     [
+      2022,
+      "Aidan",
+      13,
+      19
+     ],
+     [
+      2022,
+      "Ben",
+      9,
+      11
+     ],
+     [
+      2022,
+      "Jake",
+      12,
+      16
+     ],
+     [
+      2022,
+      "Haan",
+      11,
+      17
+     ],
+     [
+      2022,
+      "Joe",
+      12,
+      20
+     ],
+     [
+      2022,
+      "Alex",
+      19,
+      26
+     ],
+     [
+      2022,
+      "Steven",
+      9,
+      18
+     ],
+     [
+      2022,
+      "Ankit",
+      12,
+      14
+     ],
+     [
+      2022,
+      "Tommy",
+      10,
+      16
+     ],
+     [
+      2022,
+      "Ryan",
+      11,
+      18
+     ],
+     [
+      2023,
+      "Aidan",
+      11,
+      23
+     ],
+     [
+      2023,
+      "Ben",
+      12,
+      22
+     ],
+     [
+      2023,
+      "Jake",
+      10,
+      16
+     ],
+     [
+      2023,
+      "Haan",
+      10,
+      16
+     ],
+     [
+      2023,
+      "Joe",
+      10,
+      20
+     ],
+     [
+      2023,
+      "Alex",
+      14,
+      22
+     ],
+     [
+      2023,
+      "Steven",
+      10,
+      20
+     ],
+     [
+      2023,
+      "Ankit",
+      16,
+      24
+     ],
+     [
+      2023,
+      "Tommy",
+      10,
+      24
+     ],
+     [
+      2023,
+      "Ryan",
+      9,
+      16
+     ],
+     [
+      2024,
+      "Aidan",
+      12,
+      19
+     ],
+     [
+      2024,
+      "Ben",
+      6,
+      14
+     ],
+     [
+      2024,
+      "Jake",
+      9,
+      17
+     ],
+     [
+      2024,
+      "Haan",
+      4,
+      12
+     ],
+     [
+      2024,
+      "Joe",
+      8,
+      14
+     ],
+     [
+      2024,
+      "Alex",
+      8,
+      11
+     ],
+     [
+      2024,
+      "Steven",
+      13,
+      25
+     ],
+     [
+      2024,
+      "Ankit",
+      14,
+      21
+     ],
+     [
+      2024,
+      "Christian",
+      11,
+      23
+     ],
+     [
+      2024,
+      "Ryan",
+      10,
+      25
+     ],
+     [
+      2025,
+      "Aidan",
+      14,
+      22
+     ],
+     [
+      2025,
+      "Ben",
+      10,
+      17
+     ],
+     [
+      2025,
+      "Jake",
+      6,
+      19
+     ],
+     [
+      2025,
+      "Haan",
+      7,
+      22
+     ],
+     [
+      2025,
+      "Joe",
+      9,
+      16
+     ],
+     [
+      2025,
+      "Alex",
+      11,
+      19
+     ],
+     [
+      2025,
+      "Steven",
+      7,
+      12
+     ],
+     [
+      2025,
+      "Ankit",
+      8,
+      16
+     ],
+     [
+      2025,
+      "Christian",
+      13,
+      20
+     ],
+     [
+      2025,
+      "Ryan",
+      10,
+      18
+     ]
+    ]
+   },
+   "by_season": [],
+   "detail": {
+    "kind": "facts",
+    "title": "Toss-ups · 4 seasons",
+    "blocks": [
+     {
+      "head": "Alex",
+      "chip": null,
+      "rows": [
+       [
+        "Toss-ups won",
+        "52 of 78 (66.7%)"
+       ],
+       [
+        "2022",
+        "19-7"
+       ],
+       [
+        "2023",
+        "14-8"
+       ],
+       [
+        "2024",
+        "8-3"
+       ],
+       [
+        "2025",
+        "11-8"
+       ]
+      ]
+     }
+    ]
+   },
+   "links": {
+    "page": {
+     "label": "Alex's sit/start in 2022 · FAB Management",
+     "url": "https://namkurd.github.io/FAB-Management/lineup.html?season=2022&manager=Alex"
+    },
+    "row": {
+     "label": "Alex's sit/start in 2022 · FAB Management",
+     "url": "https://namkurd.github.io/FAB-Management/lineup.html?season=2022&manager=Alex"
+    },
+    "sheet": {
+     "label": "All 2022 sit/start · FAB Management",
+     "url": "https://namkurd.github.io/FAB-Management/lineup.html?season=2022"
+    }
+   },
+   "verified": true
+  },
+  {
+   "id": "best-sit-start-season",
+   "name": "Best Sit/Start % (Season)",
+   "category": "Sit / Start",
+   "source": "computed",
+   "metric": "sitstart_season",
+   "direction": "max",
+   "value": "85.7% (12-2)",
+   "value_num": 85.7,
+   "when": "2022",
+   "holder": "Ankit",
+   "holders": [
+    "Ankit"
+   ],
+   "league_level": false,
+   "team": "Behenchode",
+   "notes": [],
+   "evidence": [],
+   "replay": null,
+   "previous": null,
+   "ties": [],
+   "locked": false,
+   "status": "active",
+   "era_pair": null,
+   "size_sensitive": false,
+   "needs_definition": null,
+   "engine_gap": null,
+   "definition": "The best Toss-up % in one season (the Sit/Start tool's Toss-up %), with at least 10 toss-ups. Counts trades since 2021 (the first Sleeper season).",
+   "updated": "2026-11-07",
+   "leaderboard": [
+    {
+     "value": "85.7% (12-2)",
+     "holder": "Ankit",
+     "when": "2022",
+     "replay": null,
+     "links": {
+      "page": {
+       "label": "Ankit's sit/start in 2022 · FAB Management",
+       "url": "https://namkurd.github.io/FAB-Management/lineup.html?season=2022&manager=Ankit"
+      },
+      "row": {
+       "label": "Ankit's sit/start in 2022 · FAB Management",
+       "url": "https://namkurd.github.io/FAB-Management/lineup.html?season=2022&manager=Ankit"
+      },
+      "sheet": {
+       "label": "All 2022 sit/start · FAB Management",
+       "url": "https://namkurd.github.io/FAB-Management/lineup.html?season=2022"
+      }
+     }
+    },
+    {
+     "value": "81.8% (9-2)",
+     "holder": "Ben",
+     "when": "2022",
+     "replay": null,
+     "links": {
+      "page": {
+       "label": "Ben's sit/start in 2022 · FAB Management",
+       "url": "https://namkurd.github.io/FAB-Management/lineup.html?season=2022&manager=Ben"
+      },
+      "row": {
+       "label": "Ben's sit/start in 2022 · FAB Management",
+       "url": "https://namkurd.github.io/FAB-Management/lineup.html?season=2022&manager=Ben"
+      },
+      "sheet": {
+       "label": "All 2022 sit/start · FAB Management",
+       "url": "https://namkurd.github.io/FAB-Management/lineup.html?season=2022"
+      }
+     },
+     "detail": {
+      "kind": "facts",
+      "title": "Toss-ups · 2022",
+      "blocks": [
+       {
+        "head": "Ben",
+        "chip": null,
+        "rows": [
+         [
+          "Toss-ups won",
+          "9 of 11"
+         ],
+         [
+          "Win %",
+          "81.8%"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "value": "75.0% (12-4)",
+     "holder": "Jake",
+     "when": "2022",
+     "replay": null,
+     "links": {
+      "page": {
+       "label": "Jake's sit/start in 2022 · FAB Management",
+       "url": "https://namkurd.github.io/FAB-Management/lineup.html?season=2022&manager=Jake"
+      },
+      "row": {
+       "label": "Jake's sit/start in 2022 · FAB Management",
+       "url": "https://namkurd.github.io/FAB-Management/lineup.html?season=2022&manager=Jake"
+      },
+      "sheet": {
+       "label": "All 2022 sit/start · FAB Management",
+       "url": "https://namkurd.github.io/FAB-Management/lineup.html?season=2022"
+      }
+     },
+     "detail": {
+      "kind": "facts",
+      "title": "Toss-ups · 2022",
+      "blocks": [
+       {
+        "head": "Jake",
+        "chip": null,
+        "rows": [
+         [
+          "Toss-ups won",
+          "12 of 16"
+         ],
+         [
+          "Win %",
+          "75.0%"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "value": "73.1% (19-7)",
+     "holder": "Alex",
+     "when": "2022",
+     "replay": null,
+     "links": {
+      "page": {
+       "label": "Alex's sit/start in 2022 · FAB Management",
+       "url": "https://namkurd.github.io/FAB-Management/lineup.html?season=2022&manager=Alex"
+      },
+      "row": {
+       "label": "Alex's sit/start in 2022 · FAB Management",
+       "url": "https://namkurd.github.io/FAB-Management/lineup.html?season=2022&manager=Alex"
+      },
+      "sheet": {
+       "label": "All 2022 sit/start · FAB Management",
+       "url": "https://namkurd.github.io/FAB-Management/lineup.html?season=2022"
+      }
+     },
+     "detail": {
+      "kind": "facts",
+      "title": "Toss-ups · 2022",
+      "blocks": [
+       {
+        "head": "Alex",
+        "chip": null,
+        "rows": [
+         [
+          "Toss-ups won",
+          "19 of 26"
+         ],
+         [
+          "Win %",
+          "73.1%"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "value": "72.7% (8-3)",
+     "holder": "Alex",
+     "when": "2024",
+     "replay": null,
+     "links": {
+      "page": {
+       "label": "Alex's sit/start in 2024 · FAB Management",
+       "url": "https://namkurd.github.io/FAB-Management/lineup.html?season=2024&manager=Alex"
+      },
+      "row": {
+       "label": "Alex's sit/start in 2024 · FAB Management",
+       "url": "https://namkurd.github.io/FAB-Management/lineup.html?season=2024&manager=Alex"
+      },
+      "sheet": {
+       "label": "All 2024 sit/start · FAB Management",
+       "url": "https://namkurd.github.io/FAB-Management/lineup.html?season=2024"
+      }
+     },
+     "detail": {
+      "kind": "facts",
+      "title": "Toss-ups · 2024",
+      "blocks": [
+       {
+        "head": "Alex",
+        "chip": null,
+        "rows": [
+         [
+          "Toss-ups won",
+          "8 of 11"
+         ],
+         [
+          "Win %",
+          "72.7%"
+         ]
+        ]
+       }
+      ]
+     }
+    }
+   ],
+   "by_season": [
+    {
+     "s": 2025,
+     "n": 65.0,
+     "value": "65.0% (13-7)",
+     "holder": "Christian",
+     "holders": [
+      "Christian"
+     ],
+     "when": "2025",
+     "links": {
+      "page": {
+       "label": "Christian's sit/start in 2025 · FAB Management",
+       "url": "https://namkurd.github.io/FAB-Management/lineup.html?season=2025&manager=Christian"
+      },
+      "row": {
+       "label": "Christian's sit/start in 2025 · FAB Management",
+       "url": "https://namkurd.github.io/FAB-Management/lineup.html?season=2025&manager=Christian"
+      },
+      "sheet": {
+       "label": "All 2025 sit/start · FAB Management",
+       "url": "https://namkurd.github.io/FAB-Management/lineup.html?season=2025"
+      }
+     },
+     "detail": {
+      "kind": "facts",
+      "title": "Toss-ups · 2025",
+      "blocks": [
+       {
+        "head": "Christian",
+        "chip": null,
+        "rows": [
+         [
+          "Toss-ups won",
+          "13 of 20"
+         ],
+         [
+          "Win %",
+          "65.0%"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "s": 2024,
+     "n": 72.7,
+     "value": "72.7% (8-3)",
+     "holder": "Alex",
+     "holders": [
+      "Alex"
+     ],
+     "when": "2024",
+     "links": {
+      "page": {
+       "label": "Alex's sit/start in 2024 · FAB Management",
+       "url": "https://namkurd.github.io/FAB-Management/lineup.html?season=2024&manager=Alex"
+      },
+      "row": {
+       "label": "Alex's sit/start in 2024 · FAB Management",
+       "url": "https://namkurd.github.io/FAB-Management/lineup.html?season=2024&manager=Alex"
+      },
+      "sheet": {
+       "label": "All 2024 sit/start · FAB Management",
+       "url": "https://namkurd.github.io/FAB-Management/lineup.html?season=2024"
+      }
+     },
+     "detail": {
+      "kind": "facts",
+      "title": "Toss-ups · 2024",
+      "blocks": [
+       {
+        "head": "Alex",
+        "chip": null,
+        "rows": [
+         [
+          "Toss-ups won",
+          "8 of 11"
+         ],
+         [
+          "Win %",
+          "72.7%"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "s": 2023,
+     "n": 66.7,
+     "value": "66.7% (16-8)",
+     "holder": "Ankit",
+     "holders": [
+      "Ankit"
+     ],
+     "when": "2023",
+     "links": {
+      "page": {
+       "label": "Ankit's sit/start in 2023 · FAB Management",
+       "url": "https://namkurd.github.io/FAB-Management/lineup.html?season=2023&manager=Ankit"
+      },
+      "row": {
+       "label": "Ankit's sit/start in 2023 · FAB Management",
+       "url": "https://namkurd.github.io/FAB-Management/lineup.html?season=2023&manager=Ankit"
+      },
+      "sheet": {
+       "label": "All 2023 sit/start · FAB Management",
+       "url": "https://namkurd.github.io/FAB-Management/lineup.html?season=2023"
+      }
+     },
+     "detail": {
+      "kind": "facts",
+      "title": "Toss-ups · 2023",
+      "blocks": [
+       {
+        "head": "Ankit",
+        "chip": null,
+        "rows": [
+         [
+          "Toss-ups won",
+          "16 of 24"
+         ],
+         [
+          "Win %",
+          "66.7%"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "s": 2022,
+     "n": 85.7,
+     "value": "85.7% (12-2)",
+     "holder": "Ankit",
+     "holders": [
+      "Ankit"
+     ],
+     "when": "2022",
+     "links": {
+      "page": {
+       "label": "Ankit's sit/start in 2022 · FAB Management",
+       "url": "https://namkurd.github.io/FAB-Management/lineup.html?season=2022&manager=Ankit"
+      },
+      "row": {
+       "label": "Ankit's sit/start in 2022 · FAB Management",
+       "url": "https://namkurd.github.io/FAB-Management/lineup.html?season=2022&manager=Ankit"
+      },
+      "sheet": {
+       "label": "All 2022 sit/start · FAB Management",
+       "url": "https://namkurd.github.io/FAB-Management/lineup.html?season=2022"
+      }
+     },
+     "detail": {
+      "kind": "facts",
+      "title": "Toss-ups · 2022",
+      "blocks": [
+       {
+        "head": "Ankit",
+        "chip": null,
+        "rows": [
+         [
+          "Toss-ups won",
+          "12 of 14"
+         ],
+         [
+          "Win %",
+          "85.7%"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "s": 2021,
+     "n": 70.6,
+     "value": "70.6% (12-5)",
+     "holder": "Ben",
+     "holders": [
+      "Ben"
+     ],
+     "when": "2021",
+     "links": {
+      "page": {
+       "label": "Ben's sit/start in 2021 · FAB Management",
+       "url": "https://namkurd.github.io/FAB-Management/lineup.html?season=2021&manager=Ben"
+      },
+      "row": {
+       "label": "Ben's sit/start in 2021 · FAB Management",
+       "url": "https://namkurd.github.io/FAB-Management/lineup.html?season=2021&manager=Ben"
+      },
+      "sheet": {
+       "label": "All 2021 sit/start · FAB Management",
+       "url": "https://namkurd.github.io/FAB-Management/lineup.html?season=2021"
+      }
+     },
+     "detail": {
+      "kind": "facts",
+      "title": "Toss-ups · 2021",
+      "blocks": [
+       {
+        "head": "Ben",
+        "chip": null,
+        "rows": [
+         [
+          "Toss-ups won",
+          "12 of 17"
+         ],
+         [
+          "Win %",
+          "70.6%"
+         ]
+        ]
+       }
+      ]
+     }
+    }
+   ],
+   "detail": {
+    "kind": "facts",
+    "title": "Toss-ups · 2022",
+    "blocks": [
+     {
+      "head": "Ankit",
+      "chip": null,
+      "rows": [
+       [
+        "Toss-ups won",
+        "12 of 14"
+       ],
+       [
+        "Win %",
+        "85.7%"
+       ]
+      ]
+     }
+    ]
+   },
+   "links": {
+    "page": {
+     "label": "Ankit's sit/start in 2022 · FAB Management",
+     "url": "https://namkurd.github.io/FAB-Management/lineup.html?season=2022&manager=Ankit"
+    },
+    "row": {
+     "label": "Ankit's sit/start in 2022 · FAB Management",
+     "url": "https://namkurd.github.io/FAB-Management/lineup.html?season=2022&manager=Ankit"
+    },
+    "sheet": {
+     "label": "All 2022 sit/start · FAB Management",
+     "url": "https://namkurd.github.io/FAB-Management/lineup.html?season=2022"
+    }
+   },
+   "verified": true
   },
   {
    "id": "longest-head-to-head-win-streak-vs-one-opponent",

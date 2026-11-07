@@ -331,7 +331,7 @@ function eraParts(r){
   var dir=r.direction==="min"?1:-1;list.sort(function(a,b){return dir*(a.n-b.n)});
   var sg=function(v,d){return(v>=0?"+":"\u2212")+Math.abs(v).toFixed(d)};
   var txt=function(o){var yrs=Object.keys(o.ss).map(Number).sort();var when=yrs[0]===yrs[yrs.length-1]?String(yrs[0]):yrs[0]+"-"+yrs[yrs.length-1];
-    var v=P.fmt==="par"?sg(o.n,1)+" PAR":P.fmt==="ov"?sg(o.n,2)+" ("+o.w+" "+P.unit+", "+o.ns+" drafts)":o.n+" "+P.unit;
+    var v=P.fmt==="pct"?(o.n*100).toFixed(1)+"% ("+o.v+"-"+(o.w-o.v)+")":P.fmt==="par"?sg(o.n,1)+" PAR":P.fmt==="ov"?sg(o.n,2)+" ("+o.w+" "+P.unit+", "+o.ns+" drafts)":o.n+" "+P.unit;
     return{value:v,holder:o.m,when:when,replay:null,links:null,detail:null}};
   var top=list.slice(0,5).map(txt),b=top[0];
   return Object.assign({},r,{value:b.value+(P.fmt==="par"?" ("+list[0].w+" "+P.unit+")":""),holder:b.holder,holders:[list[0].m],when:b.when+" (era)",team:"",replay:null,links:r.links,detail:null,previous:null,ties:[],evidence:[],leaderboard:top,_era:r,_ss:null})}
