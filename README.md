@@ -43,5 +43,8 @@ python3 -m http.server   # then open http://localhost:8000
 - **Bench, Shotguns, comebacks, projections, Thursday/Saturday/Monday** (`engine/facts.py` + `engine/moments.py`): each finished week is ingested once from Sleeper (every rostered player's points, who took the field) and Rumble Central's play-by-play timeline, then cached in `data/cache/`. Where the sheet's game is in this data and the numbers differ, Sleeper wins and the change log says so.
 - **Rivalries, playoffs and titles, draft and auction, champion/Sacko trades** (`engine/extras.py`): from the games archive, the playoff results, the SleeperAuction `picks.csv`, and the ledger.
 
+## Eras
+The **Era** chips under the search bar filter the book by league format and, for records that can be split by season, show each record's best mark inside the era. The eras (No PPR, PPR, Superflex no PPFD, Superflex + 0.5 PPFD) come from `data/eras.json`, which `tools/build_eras.py` rebuilds every week from each season's Sleeper league settings (reception tiers, SUPER_FLEX slot, first-down bonuses); 2011-2020 were not on Sleeper and are hand-set.
+
 ## Not auto-updated yet
 Projections (the sheet's Highest Projected rows come from a different Sleeper snapshot than the one in the archive), trade timing (24-hour trades, fastest acceptance), FAB balances (most FAB owned, overbid, bankruptcy, FAB in a trade) and the trade/lineup counts that include FAB-only trades. Their rows keep the sheet's value.
