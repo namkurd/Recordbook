@@ -101,6 +101,18 @@ def make(d):
             seen.add(k); cnt[N(p["winner"])] += 1; yrs[N(p["winner"])].add(p["season"])
         return [_c(v, [m], max(yrs[m]), when=f"{min(yrs[m])}-{max(yrs[m])}") for m, v in cnt.items()]
     R["playoff_wins"] = pwins
+    def pwins_parts():
+        seen = set(); rows = collections.Counter()
+        for p in play:
+            k = (p["season"], p["week"], N(p["winner"]))
+            if k in seen: continue
+            seen.add(k); rows[(p["season"], N(p["winner"]))] += 1
+        return {"agg": "sum", "fmt": "int", "unit": "wins", "when": "years", "min": 1, "rows": [[y, m, v, v] for (y, m), v in sorted(rows.items())]}
+    def no_title_parts():
+        rows = [[y, m, 1, 1] for y, ms in sorted(L.items()) for m, fl in ms.items() if "playoff" in fl and "champ" not in fl]
+        return {"agg": "sum", "fmt": "int", "unit": "trips", "when": "years", "min": 1, "rows": rows,
+                "excl": [[y, m] for y, ms in sorted(L.items()) for m, fl in ms.items() if "champ" in fl]}
+    d._era_parts.update({"playoff_wins": pwins_parts, "playoffs_no_title": no_title_parts})
     def no_title():
         c = collections.defaultdict(list); t = collections.Counter()
         for y, ms in L.items():

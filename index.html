@@ -323,23 +323,33 @@ function eraMatch(r){return seasonsOf(r).some(eraYear)}
    replaced by the best season-by-season mark the engine stored (by_season). Records with neither are hidden, as before. */
 var ERAVIEW={};
 function eraParts(r){
-  var P=r.era_parts,by={};
-  P.rows.forEach(function(x){if(!eraYear(x[0]))return;var o=by[x[1]]||(by[x[1]]={m:x[1],v:0,w:0,ss:{}});o.v+=x[2];o.w+=x[3];o.ss[x[0]]=1});
-  var list=Object.keys(by).map(function(k){var o=by[k];o.ns=Object.keys(o.ss).length;o.n=P.agg==="wavg"?(o.w?o.v/o.w:0):o.v;return o})
+  var P=r.era_parts,by={},ex={};
+  (P.excl||[]).forEach(function(x){if(eraYear(x[0]))ex[x[1]]=1});
+  P.rows.forEach(function(x){if(!eraYear(x[0])||ex[x[1]])return;var o=by[x[1]]||(by[x[1]]={m:x[1],v:0,w:0,ss:{}});o.v+=x[2];o.w+=x[3];o.ss[x[0]]=1});
+  var list=Object.keys(by).map(function(k){var o=by[k];o.ns=Object.keys(o.ss).length;
+    if(P.agg==="streak"){var ys=Object.keys(o.ss).map(Number).sort(function(a,b){return a-b}),best=[0,0,0],st=0;
+      ys.forEach(function(y,i){if(i&&y===ys[i-1]+1){} else st=i;var len=i-st+1;if(len>best[0])best=[len,ys[st],y]});o.n=best[0];o.run=[best[1],best[2]]}
+    else o.n=P.agg==="wavg"?(o.w?o.v/o.w:0):o.v;return o})
     .filter(function(o){return(!P.min||o.w>=P.min)&&(!P.minseasons||o.ns>=P.minseasons)});
   if(!list.length)return null;
   var dir=r.direction==="min"?1:-1;list.sort(function(a,b){return dir*(a.n-b.n)});
   var sg=function(v,d){return(v>=0?"+":"\u2212")+Math.abs(v).toFixed(d)};
-  var txt=function(o){var yrs=Object.keys(o.ss).map(Number).sort();var when=yrs[0]===yrs[yrs.length-1]?String(yrs[0]):yrs[0]+"-"+yrs[yrs.length-1];
-    var v=P.fmt==="pct"?(o.n*100).toFixed(1)+"% ("+o.v+"-"+(o.w-o.v)+")":P.fmt==="par"?sg(o.n,1)+" PAR":P.fmt==="ov"?sg(o.n,2)+" ("+o.w+" "+P.unit+", "+o.ns+" drafts)":o.n+" "+P.unit;
+  var yl=function(ys){return ys.map(function(y){return"'"+String(y).slice(2)}).join("/")};
+  var txt=function(o){var yrs=Object.keys(o.ss).map(Number).sort();var when=P.agg==="streak"?(o.run[0]===o.run[1]?String(o.run[0]):o.run[0]+"-"+o.run[1]):P.when==="years"?yl(yrs):yrs[0]===yrs[yrs.length-1]?String(yrs[0]):yrs[0]+"-"+yrs[yrs.length-1];
+    var v=P.fmt==="pct"?(o.n*100).toFixed(1)+"% ("+o.v+"-"+(o.w-o.v)+")":P.fmt==="par"?sg(o.n,1)+" PAR":P.fmt==="ov"?sg(o.n,2)+" ("+o.w+" "+P.unit+", "+o.ns+" drafts)":P.fmt==="int"?String(o.n)+(P.unit?" "+P.unit:""):o.n+" "+P.unit;
     return{value:v,holder:o.m,when:when,replay:null,links:null,detail:null}};
-  var top=list.slice(0,5).map(txt),b=top[0];
-  return Object.assign({},r,{value:b.value+(P.fmt==="par"?" ("+list[0].w+" "+P.unit+")":""),holder:b.holder,holders:[list[0].m],when:b.when+" (era)",team:"",replay:null,links:r.links,detail:null,previous:null,ties:[],evidence:[],leaderboard:top,_era:r,_ss:null})}
+  var all=list.map(txt),top=all.slice(0,5),b=top[0],ties=list.filter(function(o){return o.n===list[0].n});
+  return Object.assign({},r,{value:b.value+(P.fmt==="par"?" ("+list[0].w+" "+P.unit+")":""),holder:ties.map(function(o){return o.m}).join(", "),holders:ties.map(function(o){return o.m}),
+    when:ties.map(function(o){return all[list.indexOf(o)].when}).filter(function(w,i,a){return a.indexOf(w)===i}).join("; ")+(P.when==="years"||P.agg==="streak"?"":" (era)"),team:"",replay:null,links:r.links,detail:null,previous:null,ties:[],evidence:[],leaderboard:top,_era:r,_ss:null})}
 function eraView(r){
   if(!S.eras.size)return r;
   var key=r.id+"|"+[...S.eras].sort().join(","),hit=ERAVIEW[key];if(hit!==undefined)return hit;
   var out=null;
   if(r.era_parts)out=eraParts(r);
+  else if(r.by_era){var ok=Object.keys(r.by_era).filter(function(k){return S.eras.has(k)}).map(function(k){return r.by_era[k]});
+    if(ok.length){var dr=r.direction==="min"?1:-1;ok.sort(function(a,b){return dr*(a.n-b.n)});var bb=ok[0];
+      out=Object.assign({},r,{value:bb.value,holder:bb.holder,holders:bb.holders||[],when:bb.when,team:"",replay:bb.replay||null,links:null,detail:null,previous:null,ties:[],evidence:[],
+        leaderboard:ok.slice(0,5).map(function(e){return{value:e.value,holder:e.holder,when:e.when,replay:e.replay||null,links:null,detail:null}}),_era:r,_ss:null})}}
   else if(eraMatch(r))out=r;
   else if(r.by_season&&r.by_season.length){
     var ok=r.by_season.filter(function(e){return eraYear(e.s)});

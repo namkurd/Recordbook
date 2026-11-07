@@ -92,6 +92,19 @@ def make(d):
     R["high_pa_seasons"] = lambda: _cands_count(L, "high_pa")
     R["winning_streak_seasons"] = lambda: _runs(L, lambda f: "winning" in f)
     R["losing_streak_seasons"] = lambda: _runs(L, lambda f: "losing" in f)
+    # per-season parts, so the page can re-add these records for an era (see eraParts in index.html)
+    def flagged(pred, y0=0):
+        return [[y, m, 1, 1] for y in sorted(L) if y >= y0 for m, f in L[y].items() if pred(f)]
+    def counts(pred): return {"agg": "sum", "fmt": "int", "when": "years", "min": 1, "rows": flagged(pred)}
+    def streak(pred, y0=0): return {"agg": "streak", "fmt": "int", "min": 1, "rows": flagged(pred, y0)}
+    d._era_parts = {
+        "titles": lambda: counts(lambda f: "champ" in f), "finals": lambda: counts(lambda f: bool(f & {"champ", "runner"})), "final_losses": lambda: counts(lambda f: "runner" in f),
+        "playoff_apps": lambda: counts(lambda f: "playoff" in f), "sackos": lambda: counts(lambda f: "sacko" in f), "seed1": lambda: counts(lambda f: "seed1" in f),
+        "top_pf_seasons": lambda: counts(lambda f: "top_pf" in f), "bottom_pf_seasons": lambda: counts(lambda f: "bottom_pf" in f), "high_pa_seasons": lambda: counts(lambda f: "high_pa" in f),
+        "final_streak": lambda: streak(lambda f: bool(f & {"champ", "runner"})), "playoff_streak": lambda: streak(lambda f: "playoff" in f),
+        "drought": lambda: streak(lambda f: "playoff" not in f and "played" in f, 2013),
+        "winning_streak_seasons": lambda: streak(lambda f: "winning" in f), "losing_streak_seasons": lambda: streak(lambda f: "losing" in f),
+    }
     return R
 
 COMPLETE = {"titles", "finals", "final_losses", "final_streak", "playoff_apps", "playoff_streak", "drought", "sackos", "top_pf_seasons", "bottom_pf_seasons", "high_pa_seasons", "winning_streak_seasons", "losing_streak_seasons"}
