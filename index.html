@@ -314,11 +314,40 @@ function seasonsOf(r){
   }
   return r._ss=Object.keys(out).map(Number).sort()}
 function eraTags(y){var e=ERAS[y];if(!e)return[];var t=["t"+e.teams,e.ppr];if(e.superflex)t.push("sf");if(e.fd)t.push("fd");return t}
-function eraMatch(r){
-  var sel={t:[],p:[],q:[],f:[]};S.eras.forEach(function(k){(k[0]==="t"?sel.t:k==="ppr"||k==="nppr"?sel.p:k==="fd"?sel.f:sel.q).push(k)});
-  if(!sel.t.length&&!sel.p.length&&!sel.q.length&&!sel.f.length)return true;
-  return seasonsOf(r).some(function(y){var tg=eraTags(y);if(!tg.length)return false;
-    return(!sel.t.length||sel.t.some(function(k){return tg.indexOf(k)>=0}))&&(!sel.p.length||sel.p.some(function(k){return tg.indexOf(k)>=0}))&&(!sel.q.length||tg.indexOf("sf")>=0)&&(!sel.f.length||tg.indexOf("fd")>=0)})}
+function eraSel(){var sel={t:[],p:[],q:[],f:[]};S.eras.forEach(function(k){(k[0]==="t"?sel.t:k==="ppr"||k==="nppr"?sel.p:k==="fd"?sel.f:sel.q).push(k)});return sel}
+function eraYear(y,sel){sel=sel||eraSel();if(!sel.t.length&&!sel.p.length&&!sel.q.length&&!sel.f.length)return true;
+  var tg=eraTags(y);if(!tg.length)return false;
+  return(!sel.t.length||sel.t.some(function(k){return tg.indexOf(k)>=0}))&&(!sel.p.length||sel.p.some(function(k){return tg.indexOf(k)>=0}))&&(!sel.q.length||tg.indexOf("sf")>=0)&&(!sel.f.length||tg.indexOf("fd")>=0)}
+function eraMatch(r){var sel=eraSel();return seasonsOf(r).some(function(y){return eraYear(y,sel)})}
+/* With an era picked, a record is shown as its best mark inside that era: kept as is when the record itself sits in the era, otherwise
+   replaced by the best season-by-season mark the engine stored (by_season). Records with neither are hidden, as before. */
+var ERAVIEW={};
+function eraParts(r){
+  var P=r.era_parts,sel=eraSel(),by={};
+  P.rows.forEach(function(x){if(!eraYear(x[0],sel))return;var o=by[x[1]]||(by[x[1]]={m:x[1],v:0,w:0,ss:{}});o.v+=x[2];o.w+=x[3];o.ss[x[0]]=1});
+  var list=Object.keys(by).map(function(k){var o=by[k];o.ns=Object.keys(o.ss).length;o.n=P.agg==="wavg"?(o.w?o.v/o.w:0):o.v;return o})
+    .filter(function(o){return(!P.min||o.w>=P.min)&&(!P.minseasons||o.ns>=P.minseasons)});
+  if(!list.length)return null;
+  var dir=r.direction==="min"?1:-1;list.sort(function(a,b){return dir*(a.n-b.n)});
+  var sg=function(v,d){return(v>=0?"+":"\u2212")+Math.abs(v).toFixed(d)};
+  var txt=function(o){var yrs=Object.keys(o.ss).map(Number).sort();var when=yrs[0]===yrs[yrs.length-1]?String(yrs[0]):yrs[0]+"-"+yrs[yrs.length-1];
+    var v=P.fmt==="par"?sg(o.n,1)+" PAR":P.fmt==="ov"?sg(o.n,2)+" ("+o.w+" "+P.unit+", "+o.ns+" drafts)":o.n+" "+P.unit;
+    return{value:v,holder:o.m,when:when,replay:null,links:null,detail:null}};
+  var top=list.slice(0,5).map(txt),b=top[0];
+  return Object.assign({},r,{value:b.value+(P.fmt==="par"?" ("+list[0].w+" "+P.unit+")":""),holder:b.holder,holders:[list[0].m],when:b.when+" (era)",team:"",replay:null,links:r.links,detail:null,previous:null,ties:[],evidence:[],leaderboard:top,_era:r,_ss:null})}
+function eraView(r){
+  if(!S.eras.size)return r;
+  var key=r.id+"|"+[...S.eras].sort().join(","),hit=ERAVIEW[key];if(hit!==undefined)return hit;
+  var out=null;
+  if(r.era_parts)out=eraParts(r);
+  else if(eraMatch(r))out=r;
+  else if(r.by_season&&r.by_season.length){
+    var sel=eraSel(),ok=r.by_season.filter(function(e){return eraYear(e.s,sel)});
+    if(ok.length){
+      var dir=r.direction==="min"?1:-1;ok=ok.slice().sort(function(a,b){return dir*(a.n-b.n)||b.s-a.s});var b=ok[0];
+      out=Object.assign({},r,{value:b.value,holder:b.holder,holders:b.holders||[],when:b.when,team:"",replay:b.replay||null,links:b.links||null,detail:b.detail||null,previous:null,ties:[],evidence:[],
+        leaderboard:ok.slice(0,5).map(function(e){return{value:e.value,holder:e.holder,when:e.when,replay:e.replay||null,links:e.links||null,detail:e.detail||null}}),_era:r,_ss:null})}}
+  ERAVIEW[key]=out;return out}
 function eraLine(r){var ss=seasonsOf(r);if(!ss.length)return"";var first=eraTags(ss[0]).join("|");if(!ss.every(function(y){return eraTags(y).join("|")===first}))return"";
   return eraTags(ss[0]).map(function(k){return ERALABEL[k]}).join(" · ")}
 
@@ -337,7 +366,7 @@ function matches(r){
   if(S.opts.has("recent")&&!recent(r))return false;
   var src=["computed","seeded","manual"].filter(function(k){return S.opts.has(k)});if(src.length&&src.indexOf(r.source)<0)return false;
   if(S.opts.has("replay")&&!(r.replay&&r.replay.url))return false;
-  if(S.eras.size&&!eraMatch(r))return false;
+  if(S.eras.size&&!eraView(r))return false;
   if(S.q){var hay=(r.name+" "+r.value+" "+r.holder+" "+(r.team||"")+" "+r.when+" "+(r.ties||[]).map(function(t){return t.holder}).join(" ")).toLowerCase();if(!S.q.toLowerCase().split(/\s+/).every(function(w){return hay.indexOf(w)>=0}))return false}
   return true}
 
@@ -496,7 +525,7 @@ function groupRows(c,rs){   // [[label, [records]]...] in the order above; unkno
   g.forEach(function(x){var m=[];x[1].forEach(function(n){rs.forEach(function(r){if(r.name===n){m.push(r);seen[r.id]=1}})});if(m.length)out.push([x[0],m])});
   var rest=rs.filter(function(r){return!seen[r.id]});if(rest.length)out.push([out.length?"More":"",rest]);return out}
 function renderRecords(){
-  var list=S.recs.filter(matches),by={};list.forEach(function(r){(by[r.category]=by[r.category]||[]).push(r)});
+  var list=S.recs.filter(matches).map(eraView),by={};list.forEach(function(r){(by[r.category]=by[r.category]||[]).push(r)});
   var h="";if(!list.length)h='<div class="empty">No records match these filters.<br><button class="ibtn" id="clrEmpty" style="margin-top:10px">Clear filters</button></div>';
   CATS.forEach(function(c){var rs=by[c];if(!rs)return;var i=0;var closed=S.closed.has(c)&&!S.q&&!S.mgrs.size;
     h+='<section class="cat '+CATCLS[c]+(closed?" closed":"")+'"><h2 data-cat="'+esc(c)+'" tabindex="0" role="button" aria-expanded="'+!closed+'"><span class="car">▾</span>'+esc(c)+' <span class="n">'+rs.length+'</span></h2><div class="rows"><div class="colhd"><span>Record</span><span>Mark</span><span>Holder</span><span>When</span><span></span></div>'+groupRows(c,rs).map(function(g){return(g[0]?'<div class="sub">'+esc(g[0])+"</div>":"")+g[1].map(function(r){return rowHTML(r).replace('class="row','class="row'+((i++)%2?" alt":""))}).join("")}).join("")+"</div></section>"});
@@ -538,7 +567,7 @@ document.addEventListener("mouseout",function(e){if(tipTarget(e))hideTip()});
 document.addEventListener("focusin",function(e){var t=tipTarget(e);if(t)showTip(t,rec(t.dataset.tip))});
 document.addEventListener("focusout",function(e){if(tipTarget(e))hideTip()});
 document.addEventListener("scroll",function(e){if(e.target&&e.target.nodeType===1&&tb.contains(e.target))return;hideTip()},true);
-function rec(id){return S.recs.filter(function(r){return r.id===id})[0]}
+function rec(id){var r=S.recs.filter(function(r){return r.id===id})[0];return r&&S.eras.size?(eraView(r)||r):r}
 
 /* ---------- drawer ---------- */
 function detailHTML(x){return'<div class="fcards">'+x.blocks.map(function(b,i){return'<div class="fcard'+(b.chip?" win":"")+(x.blocks.length===1?" one":"")+'"><div class="fc-h">'+esc(b.head)+(b.chip?'<span class="fc-chip">'+esc(b.chip)+"</span>":"")+"</div><dl>"+b.rows.map(function(r){return"<dt>"+esc(r[0])+"</dt><dd>"+esc(r[1])+"</dd>"}).join("")+"</dl></div>"}).join("")+"</div>"}
@@ -578,6 +607,7 @@ function openDrawer(id){
   var r=rec(id);if(!r)return;S.sel=id;lastFocus=document.activeElement;hideTip();
   var h='<h3>'+esc(r.name)+'</h3><div class="muted">'+esc(r.category)+'</div><div class="big">'+esc(shortVal(r.value))+'</div>'+(shortVal(r.value)!==r.value?'<div class="muted">'+esc(r.value.slice(shortVal(r.value).length).trim())+"</div>":"")+'<div style="margin-top:4px">'+holderHTML(r)+' <span class="muted">· '+esc(r.when)+(r.team?" · "+esc(r.team):"")+"</span></div>";
   var el=eraLine(r);if(el)h+='<div class="muted" style="margin-top:6px;font-size:12.5px">Era: '+esc(el)+"</div>";
+  if(r._era)h+='<div class="muted" style="margin-top:6px;font-size:12.5px">Best mark in the selected era. The all-time record is '+esc(r._era.value)+" ("+esc(r._era.holder)+", "+esc(r._era.when)+").</div>";
   var acts="";if(r.links)["page","sheet"].forEach(function(k){var l=r.links[k];if(l)acts+='<a class="btn sec" href="'+esc(l.url)+'" target="_blank" rel="noopener">\u2197 '+esc(l.label)+"</a> "});
   if(r.replay&&r.replay.url)acts+='<a class="btn" href="'+esc(r.replay.url)+'" target="_blank" rel="noopener">▶ Watch in Rumble Central</a> ';
   (r.cards?[]:(r.evidence||[])).forEach(function(u,i){acts+='<a class="btn sec" href="'+esc(u)+'" target="_blank" rel="noopener">📷 Proof'+((r.evidence.length>1)?" "+(i+1):"")+"</a> "});
@@ -700,7 +730,7 @@ function save(r,v,isNew,tries){
     return gh("/git/commits",{method:"POST",body:{message:"record book: "+(out.entry.name||"edit")+" ("+out.entry.cause+")",tree:t.sha,parents:[head]}})}).then(function(c){
     return gh("/git/refs/heads/"+REPO.branch,{method:"PATCH",body:{sha:c.sha}})}).then(function(){
     status("Saved. The live page updates in about a minute.");S.log.unshift(out.entry);
-    var doc2=JSON.parse(out.records);S.recs=doc2.records;render();setTimeout(function(){if(v.del)closeDrawer();else openDrawer(out.entry.record)},300)}).catch(function(e){
+    var doc2=JSON.parse(out.records);S.recs=doc2.records;ERAVIEW={};render();setTimeout(function(){if(v.del)closeDrawer();else openDrawer(out.entry.record)},300)}).catch(function(e){
     if(/422|409/.test(e.message)&&tries<2)return save(r,v,isNew,tries+1);
     $("f-save")&&($("f-save").disabled=false);status(/401|403|404/.test(e.message)?"GitHub refused the token ("+e.message+"). Check it has Contents: Read & write on "+REPO.owner+"/"+REPO.repo+".":"Save failed: "+e.message,1);
     if(/401/.test(e.message))ls("rb-token",null)})}

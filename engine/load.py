@@ -53,4 +53,6 @@ def load():
         extra_picks = list(csv.DictReader(io.StringIO(fetch_text("sleeperauction", "data/picks.csv"))))
     except Exception as e: print("WARN could not load auction picks", e); extra_picks = None
     extra["picks"] = extra_picks
+    try: extra["auction_slots"] = fetch("sleeperauction", "site/data.json").get("pos_slots") or {}
+    except Exception as e: print("WARN could not load auction pos_slots", e); extra["auction_slots"] = {}
     return {"seasons": seasons, "playoffs": play, "games": games, "rosters": rosters, "current": cur, **extra}

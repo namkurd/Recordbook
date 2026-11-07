@@ -5,8 +5,8 @@ from urllib.parse import urlencode
 from metrics import norm
 
 def N(x): return {"Rohaan": "Haan"}.get(norm(x), norm(x))
-def _c(value, holders, season, week=None, rid=None, opp_rid=None, detail="", when=None, holder_text=None, card=None):
-    return {"value": value, "holders": holders if isinstance(holders, list) else [holders], "season": season, "week": week, "rid": rid, "opp_rid": opp_rid,
+def _c(value, holders, season, week=None, rid=None, opp_rid=None, detail="", when=None, holder_text=None, card=None, inst=None):
+    return {"inst": inst, "value": value, "holders": holders if isinstance(holders, list) else [holders], "season": season, "week": week, "rid": rid, "opp_rid": opp_rid,
             "detail": detail, "when": when, "holder_text": holder_text, "card": card}
 def wk(s, w): return f"Week {w} - {s}"
 
@@ -29,7 +29,7 @@ def trade_card(t, hl=None):
         side(N(t["a"]), t["bg"], t["ag"], t.get("lga"), t.get("fpa"), t["vb"], t["va"]),
         side(N(t["b"]), t["ag"], t["bg"], t.get("lgb"), t.get("fpb"), t["va"], t["vb"])]}
 def _tc(value, t, who, loser, detail=""):
-    return _c(value, [who], t["s"], t["w"], when=wk(t["s"], t["w"]), holder_text=f"{who} over {loser}", detail=detail, card=trade_card(t, who))
+    return _c(value, [who], t["s"], t["w"], when=wk(t["s"], t["w"]), holder_text=f"{who} over {loser}", detail=detail, card=trade_card(t, who), inst=("trade", t["id"]))
 
 def _sides(t):
     return [(N(t["a"]), N(t["b"]), t.get("lga")), (N(t["b"]), N(t["a"]), t.get("lgb"))]
@@ -37,15 +37,15 @@ def _sides(t):
 def trade_net(d): return [_tc(round(t["lgNet"], 1), t, N(t["a"]), N(t["b"])) if t["lgNet"] > 0 else _tc(round(-t["lgNet"], 1), t, N(t["b"]), N(t["a"]))
                           for t in trades(d) if t.get("lgNet") is not None]
 def trade_best_side(d): return [_tc(round(p, 1), t, w, l) for t in trades(d) for w, l, p in _sides(t) if p is not None]
-def trade_worst_side(d): return [_c(round(p, 1), [w], t["s"], t["w"], when=wk(t["s"], t["w"]), holder_text=f"{w} (vs {l})", card=trade_card(t, l)) for t in trades(d) for w, l, p in _sides(t) if p is not None]
+def trade_worst_side(d): return [_c(round(p, 1), [w], t["s"], t["w"], when=wk(t["s"], t["w"]), holder_text=f"{w} (vs {l})", card=trade_card(t, l), inst=("trade", t["id"])) for t in trades(d) for w, l, p in _sides(t) if p is not None]
 def trade_value_gap(d):
     out = []
     for t in trades(d):
         gap = t["vb"] - t["va"]          # a gave va, got vb
         if gap: w, l = (N(t["a"]), N(t["b"])) if gap > 0 else (N(t["b"]), N(t["a"])); out.append(_tc(round(abs(gap), 1), t, w, l))
     return out
-def trade_blockbuster(d): return [_c(round(t["tv"], 1), [N(t["a"]), N(t["b"])], t["s"], t["w"], when=wk(t["s"], t["w"]), holder_text=f'{N(t["a"])} & {N(t["b"])}', card=trade_card(t)) for t in trades(d)]
-def trade_assets(d): return [_c(len(t["ag"]) + len(t["bg"]), [N(t["a"]), N(t["b"])], t["s"], t["w"], when=wk(t["s"], t["w"]), holder_text=f'{N(t["a"])} & {N(t["b"])}', card=trade_card(t)) for t in trades(d)]
+def trade_blockbuster(d): return [_c(round(t["tv"], 1), [N(t["a"]), N(t["b"])], t["s"], t["w"], when=wk(t["s"], t["w"]), holder_text=f'{N(t["a"])} & {N(t["b"])}', card=trade_card(t), inst=("trade", t["id"])) for t in trades(d)]
+def trade_assets(d): return [_c(len(t["ag"]) + len(t["bg"]), [N(t["a"]), N(t["b"])], t["s"], t["w"], when=wk(t["s"], t["w"]), holder_text=f'{N(t["a"])} & {N(t["b"])}', card=trade_card(t), inst=("trade", t["id"])) for t in trades(d)]
 
 def _count_rows(cnt, when_fn=None):
     return [_c(v, [k] if not isinstance(k, tuple) else list(k), 0, when=when_fn(k) if when_fn else None, holder_text=" & ".join(k) if isinstance(k, tuple) else None) for k, v in cnt.items()]
@@ -83,7 +83,7 @@ def pickup_card(a, rid_map=None):
             ["Weeks started / benched", f'{a.get("ws", 0)} / {a.get("wb", 0)}'], ["Outcome", {"kept": "Kept", "dropped": "Later dropped"}.get(a.get("end"), str(a.get("end") or ""))]]
     return {"kind": "pickup", "title": f'Pickup · Week {a["w"]}, {a["s"]}', "blocks": [{"head": N(a["m"]), "chip": None, "rows": rows}]}
 def _pc(value, a, who=None):
-    return _c(value, [N(a["m"])], a["s"], a["w"], when=wk(a["s"], a["w"]), holder_text=f'{N(a["m"])} — {a["pl"]}', card=pickup_card(a))
+    return _c(value, [N(a["m"])], a["s"], a["w"], when=wk(a["s"], a["w"]), holder_text=f'{N(a["m"])} — {a["pl"]}', card=pickup_card(a), inst=("pickup", f'{a["s"]}.{a["w"]}.{a["pid"]}'))
 def fab_best_par(d): return [_pc(a["par"], a) for a in claims(d) if a.get("par") is not None]
 def fab_best_fa(d): return [_pc(a["par"], a) for a in free_agents(d) if a.get("par") is not None]
 def fab_bid(d): return [_pc(a["b"], a) for a in claims(d)]
@@ -174,6 +174,11 @@ REG = {k: v for k, v in globals().items() if k in {
  "trade_net","trade_best_side","trade_worst_side","trade_value_gap","trade_blockbuster","trade_assets","trades_career","trades_partner","trades_league_season","trades_team_season",
  "fab_best_par","fab_best_fa","fab_bid","fab_worst","fab_value","fab_spent","fab_season_par","fab_season_net","fab_season_hits","fab_season_adds","fab_season_regret","fab_regret_drop",
  "sit_start_miss","sit_start_call","worst_week","season_bench","season_wins_lost","season_rumbles_lost","season_brain"}}
+def era_trader(d):      # per-season parts of the career trader records, so the page can re-add them for an era
+    return {"agg": "sum", "min": 3, "fmt": "par", "unit": "trades", "rows": [[t["s"], w, round(p, 1), 1] for t in trades(d) if t.get("lgNet") is not None for w, l, p in _sides(t) if p is not None]}
+def era_trades(d):
+    return {"agg": "sum", "min": 1, "fmt": "count", "unit": "trades", "rows": [[t["s"], m, 1, 1] for t in trades(d) for m in (N(t["a"]), N(t["b"]))]}
+ERA_PARTS = {"trader_best": era_trader, "trader_worst": era_trader, "trades_career": era_trades}
 REG["trader_best"] = lambda d: trader_net(d, 1)
 REG["trader_worst"] = lambda d: trader_net(d, -1)
 
@@ -237,11 +242,17 @@ for _k, _f in (("worst_week", worst_week), ("season_bench", season_bench), ("sea
 TRADE_BASE = os.environ.get("TRADE_BASE", "https://namkurd.github.io/SleeperTradeNodes/")
 FAB_BASE = os.environ.get("FAB_BASE", "https://namkurd.github.io/FAB-Management/")
 TOOLS = {"trade": (TRADE_BASE, "trades", "Trade Network"), "fab": (FAB_BASE, "FAB pickups", "FAB Management"), "lineup": (FAB_BASE + "lineup.html", "sit/start", "FAB Management")}
-def _lk(kind, season, manager):
+def _lk(kind, season, manager, inst=None):
     base, noun, tool = TOOLS[kind]
     q = {k: v for k, v in (("season", season), ("manager", manager)) if v}
     url = lambda qq: base + ("?" + urlencode(qq) if qq else "")
     out = {}
+    if inst and inst[0] in ("trade", "pickup"):      # the one trade / pickup itself: the tool scrolls to it and flashes it
+        s0 = inst[1].split(".")[0] if inst[0] == "pickup" else season
+        out["page"] = {"label": ("This trade" if inst[0] == "trade" else "This pickup") + f" in {tool}", "url": url({k: v for k, v in (("season", s0), (inst[0], inst[1])) if v})}
+        out["row"] = out["page"]
+        if season: out["sheet"] = {"label": f"All {season} {noun} · {tool}", "url": url({"season": season})}
+        return out
     if manager:
         out["page"] = {"label": f"{manager}'s {noun}" + (f" in {season}" if season else "") + f" · {tool}", "url": url(q)}
         out["row"] = out["page"]
@@ -253,7 +264,7 @@ def add_links(cands, kind):
     for c in cands:
         hs = c.get("holders") or []; mgr = hs[0] if len(hs) == 1 and hs[0] != "DTFClub" else None
         when = (c.get("when") or "").strip(); s = c.get("season") if (c.get("season") or 0) >= 2021 and not when.endswith("-") else None
-        c["links"] = _lk(kind, s, mgr)
+        c["links"] = _lk(kind, s, mgr, c.get("inst"))
     return cands
 _KIND = {"trade": ("trade_net", "trade_best_side", "trade_worst_side", "trade_value_gap", "trade_blockbuster", "trade_assets", "trades_career", "trades_partner", "trader_best", "trader_worst", "trades_league_season", "trades_team_season"),
          "fab": ("fab_best_par", "fab_best_fa", "fab_bid", "fab_worst", "fab_value", "fab_spent", "fab_season_par", "fab_season_net", "fab_season_hits", "fab_season_adds", "fab_season_regret", "fab_regret_drop"),

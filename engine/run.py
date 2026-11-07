@@ -68,6 +68,26 @@ def replay(metric, c, cur):
     q = f'?wp={c["week"]}.{c["rid"]}.{c["opp_rid"]}' + (f'&season={c["season"]}' if c["season"] != cur else "")
     return {"season": c["season"], "week": c["week"], "rid": c["rid"], "opp_rid": c["opp_rid"], "url": RC_BASE + q}
 
+SINGLE = re.compile(r"^(?:Week \d+ - )?(20\d\d)(?: [A-Z]{2,3})?$")
+def by_season(m, cands, rev, d):
+    """The best candidate of every season for a record whose marks each sit in one season (not careers, streaks or ranges)."""
+    if m in STREAK_METRICS: return []
+    top = cands[:10]
+    if not top or not all(SINGLE.match(when(m, c) or "") for c in top): return []
+    best = {}
+    for c in cands:
+        y = int(c["season"])
+        if y not in best or (c["value"] > best[y]["value"] if rev else c["value"] < best[y]["value"]): best[y] = c
+    out = []
+    for y in sorted(best, reverse=True):
+        c = best[y]; e = {"s": y, "n": c["value"], "value": fmt(m, c, d), "holder": holder_text(m, c), "holders": c["holders"], "when": when(m, c)}
+        rp = replay(m, c, d.cur)
+        if rp: e["replay"] = rp
+        if c.get("links"): e["links"] = c["links"]
+        if c.get("card"): e["detail"] = c["card"]
+        out.append(e)
+    return out
+
 def snapshot(r): return {k: r[k] for k in ("value", "holder", "when", "team", "evidence") if k in r}
 now = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 
@@ -79,7 +99,7 @@ def main():
     for k, fn in MK.REG.items(): M.REGISTRY[k] = fn
     FACTS, NAMES = (F.load_cache(), F.load_names()) if "--no-ingest" in args else F.ingest(d)
     for k, fn in MO.make(d, FACTS, NAMES).items(): M.REGISTRY[k] = (lambda f: (lambda _d: f()))(fn)
-    EXR = EX.make(d)
+    EXR = EX.make(d); ERA_FN = {"drafter_best": EXR.pop("_era_drafter")}
     for k, fn in EXR.items(): M.REGISTRY[k] = (lambda f: (lambda _d: f()))(fn)
     OWNED = set(MK.REG) - {"trades_league_season", "trades_team_season"} | {"trader_best", "trader_worst"} | set(EXR) | NEW_MOMENTS
     doc = json.load(open(f"{ROOT}/data/records.json")); log = []
@@ -100,6 +120,9 @@ def main():
                     pr = CARDS.pair(d, c["season"], c["week"], c["rid"], c["opp_rid"], m in CARDS.BY_SCORE)
                     if pr: e["cards"] = pr
             r["leaderboard"].append(e)
+        if m in MK.ERA_PARTS: r["era_parts"] = MK.ERA_PARTS[m](d)          # career records are re-added from per-season parts when an era is picked
+        elif m in ERA_FN: r["era_parts"] = ERA_FN[m]()
+        r["by_season"] = by_season(m, cands, rev, d)     # the best mark of each season, so the page can show a record "within an era" (empty when the record spans seasons)
         if m in OWNED:
             best = cands[0]; top_c = sorted([c for c in cands if abs(c["value"] - best["value"]) < 1e-9], key=lambda c: (c["season"], c["week"] or 0))
             new = {"value": fmt(m, best, d), "holder": "; ".join(holder_text(m, c) for c in top_c), "when": "; ".join(when(m, c) for c in top_c), "team": ""}
