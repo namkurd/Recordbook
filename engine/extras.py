@@ -1,5 +1,5 @@
 """Rivalries, playoff/championship records, draft & auction records, and trade/FAB records tied to champions and Sackos."""
-import collections, itertools, os, re
+import collections, itertools, math, os, re
 from urllib.parse import quote
 from metrics import norm
 import market as MK
@@ -178,39 +178,75 @@ def make(d):
             out.append(c)
         return out
     R["auction_pos_spend"] = spend
-    # best draft / best drafter: every manager spends the same $200, so a draft is judged by the points its players scored over the average draft that year
-    def draft_scores():
-        tot = collections.defaultdict(float); pk = collections.defaultdict(list)
-        for x, s, price, m in P():
-            if s >= d.cur: continue
-            try: pts = float(x["pts"] or 0)
-            except Exception: pts = 0.0
-            tot[(s, m)] += pts; pk[(s, m)].append((pts, price, x))
-        avg = {}
-        for y in {k[0] for k in tot}: avg[y] = sum(v for k, v in tot.items() if k[0] == y) / len([1 for k in tot if k[0] == y])
-        return tot, pk, avg
-    def draft_card(s, m, tot, pk, avg):
-        top = sorted(pk[(s, m)], key=lambda t: -t[0])[:5]
-        rows = [[f'{x["player"]} ({x["position"]})', f"${price:.0f} · {pts:.0f} pts"] for pts, price, x in top]
-        return fact(f"Auction draft · {s}", m, [["Draft total", f"{tot[(s, m)]:.0f} pts (average draft {avg[s]:.0f})"]] + rows)
+    # best draft / best drafter: the Auction tool's own pick grades (its Draft Quality tab, ported from SleeperAuction site/index.html: pickGradeKey,
+    # outcomeBand, priceTier). Banger +2, Hit +1, Meh 0, Bust -1, Fail -2; K/DEF, ungraded picks and injuries are left out. A draft's score is its average grade.
+    GRADE_SCORE = {"banger": 2, "hit": 1, "meh": 0, "bust": -1, "fail": -2}; ICON = {"banger": "\U0001f525", "hit": "\u2705", "meh": "\U0001f610", "bust": "\U0001f4c9", "fail": "\U0001f480"}
+    GRID = {"A": dict(top5="hit", top10="meh", great="meh", good="bust", replacement="fail", deep="fail"), "B": dict(top5="banger", top10="hit", great="meh", good="meh", replacement="bust", deep="fail"),
+            "C": dict(top5="banger", top10="banger", great="meh", good="meh", replacement="bust", deep="fail"), "D": dict(top5="banger", top10="banger", great="hit", good="hit", replacement="meh", deep="meh"),
+            "E": dict(top5="banger", top10="banger", great="banger", good="hit", replacement="meh", deep="meh")}
+    slots_by = d.raw.get("auction_slots") or {}
+    jr = lambda x: int(math.floor(x + 0.5))      # JavaScript Math.round (half up), as the Auction tool grades
+    def band(rank, pos, season):
+        slots = (slots_by.get(str(season)) or {}).get(pos) or 30; sc = slots / 30
+        c5 = max(1, jr(5 * sc)); c10 = max(c5 + 1, jr(10 * sc)); c20 = max(c10 + 1, jr(20 * sc)); c50 = max(slots + 1, jr(50 * sc))
+        return "top5" if rank <= c5 else "top10" if rank <= c10 else "great" if rank <= c20 else "good" if rank <= slots else "replacement" if rank <= c50 else "deep"
+    def tier(rank, pool):
+        return "A" if rank <= max(5, jr(pool * .10)) else "B" if rank <= jr(pool * .25) else "C" if rank <= jr(pool * .50) else "D" if rank <= jr(pool * .75) else "E"
+    def tool_graded():
+        rows = [(x, s, price, m) for x, s, price, m in P()]
+        grp = collections.defaultdict(list)
+        for r in rows: grp[(r[1], r[0]["position"])].append(r[2])
+        out = []
+        for x, s, price, m in rows:
+            pos = x["position"]
+            try: rank = int(float(x["pos_rank"])); games = float(x["games"]) if x.get("games") not in (None, "") else None
+            except Exception: continue
+            if pos in ("K", "DEF"): continue
+            if rank == 1: g = "banger"
+            else:
+                prices = grp[(s, pos)]; pool = len(prices); pr = 1 + sum(1 for q in prices if q > price)       # competition rank by price, as the tool's PRICE_RANK
+                t, b = tier(pr, pool), band(rank, pos, s); g = GRID[t][b]
+                if t in "AB" and g == "meh" and rank <= pr: g = "hit"
+                if g == "banger" and t in "CD" and b in ("top5", "top10") and price > min(prices) + 4 and pr - rank < jr(pool * .25): g = "hit"
+                if g == "fail" and price <= 5: g = "bust"
+                if g == "fail" and games is not None and games <= 7: g = "injury"
+            if g != "injury": out.append((x, s, m, price, g))
+        return out
+    def overall(items): return sum(GRADE_SCORE[g[4]] for g in items) / len(items)
+    def by_draft():
+        by = collections.defaultdict(list)
+        for it in tool_graded():
+            if it[1] < d.cur: by[(it[1], it[2])].append(it)
+        return by
+    def counts(items):
+        c = collections.Counter(g[4] for g in items); return " · ".join(f"{ICON[k]} {c[k]}" for k in ("banger", "hit", "meh", "bust", "fail") if c[k])
     def draft_best():
-        tot, pk, avg = draft_scores(); out = []
-        for (s, m), v in tot.items():
-            c = _c(round(v - avg[s], 1), [m], s, when=str(s), ht=m, card=draft_card(s, m, tot, pk, avg))
-            c["links"] = alinks(s, {"label": f"{m}'s drafts in the Auction tool", "url": f"{AUCTION}#managers/{quote(m, safe='')}"}); out.append(c)
+        out = []
+        for (s, m), items in by_draft().items():
+            if len(items) < 10: continue                    # the tool ranks drafts with 10+ graded picks
+            top = sorted(items, key=lambda g: (-GRADE_SCORE[g[4]], -g[3]))[:5]
+            card = fact(f"Auction draft · {s}", m, [["Overall", f"{overall(items):+.2f} over {len(items)} graded picks"], ["Grades", counts(items)]] +
+                        [[f'{ICON[g[4]]} {g[0]["player"]} ({g[0]["position"]})', f"${g[3]:.0f} · finished {g[0]['position']}{int(float(g[0]['pos_rank']))}"] for g in top])
+            c = _c(round(overall(items), 2), [m], s, when=str(s), ht=m, card=card, display=f"{overall(items):+.2f} ({len(items)} graded picks)")
+            c["links"] = alinks(s, {"label": f"{s} draft in the Auction tool", "url": f"{AUCTION}#drafts/{s}"}); out.append(c)
         return out
     def drafter_best():
-        tot, pk, avg = draft_scores(); by = collections.defaultdict(list)
-        for (s, m), v in tot.items(): by[m].append((s, v - avg[s]))
+        by = collections.defaultdict(list)
+        for (s, m), items in by_draft().items(): by[m] += items
         out = []
-        for m, rows in by.items():
-            if len(rows) < 3: continue
-            yrs = sorted(r[0] for r in rows)
-            c = _c(round(sum(r[1] for r in rows) / len(rows), 1), [m], yrs[0], when=f"{yrs[0]}-{yrs[-1]}", ht=m,
-                   card=fact(f"Auction drafts · {len(rows)} seasons", m, [[str(s), f"{v:+.0f} pts vs the average draft"] for s, v in sorted(rows)]))
+        for m, items in by.items():
+            yrs = sorted({g[1] for g in items})
+            if len(yrs) < 3: continue
+            per = [[str(y), f"{overall([g for g in items if g[1] == y]):+.2f}"] for y in yrs]
+            c = _c(round(overall(items), 2), [m], yrs[0], when=f"{yrs[0]}-{yrs[-1]}", ht=m, display=f"{overall(items):+.2f} ({len(items)} graded picks, {len(yrs)} drafts)",
+                   card=fact(f"Auction drafts · {len(yrs)} seasons", m, [["Overall (all graded picks)", f"{overall(items):+.2f}"], ["Grades", counts(items)]] + per))
             c["links"] = alinks(yrs[-1], {"label": f"{m}'s drafts in the Auction tool", "url": f"{AUCTION}#managers/{quote(m, safe='')}"}); out.append(c)
         return out
     R["draft_best"] = draft_best; R["drafter_best"] = drafter_best
+    def era_drafter():
+        rows = [[s, m, sum(GRADE_SCORE[g[4]] for g in items), len(items)] for (s, m), items in by_draft().items()]
+        return {"agg": "wavg", "minseasons": 3, "fmt": "ov", "unit": "graded picks", "rows": rows}
+    R["_era_drafter"] = era_drafter
     # ---------------- trades & FAB tied to champions / Sackos ----------------
     def season_flag(y, m, flag): return flag in (L.get(y, {}).get(m, set()))
     def champ_trade():
@@ -223,7 +259,7 @@ def make(d):
         out = []
         for t in MK.trades(d):
             for who, other, par in MK._sides(t):
-                if par is not None and season_flag(t["s"], who, "sacko"): out.append(MK._c(round(par, 1), [who], t["s"], t["w"], when=wk(t["s"], t["w"]), holder_text=f"{who} (vs {other})", card=MK.trade_card(t, other)))
+                if par is not None and season_flag(t["s"], who, "sacko"): out.append(MK._c(round(par, 1), [who], t["s"], t["w"], when=wk(t["s"], t["w"]), holder_text=f"{who} (vs {other})", card=MK.trade_card(t, other), inst=("trade", t["id"])))
         return out
     R["trade_champ_best"] = lambda: MK.add_links(champ_trade(), "trade"); R["trade_champ_worst"] = lambda: MK.add_links(champ_trade(), "trade"); R["trade_sacko_worst"] = lambda: MK.add_links(sacko_trade(), "trade")
     def champ_fab():
@@ -243,6 +279,6 @@ FORMAT = {
  "playoff_wins": lambda v: f"{v:.0f} wins", "playoffs_no_title": lambda v: f"{v:.0f} trips", "fewest_wins_playoffs": lambda v: f"{v:.0f} wins", "most_wins_miss": lambda v: f"{v:.0f} wins",
  "standings_jump": lambda v: f"+{v:.0f} spots", "standings_drop": lambda v: f"-{v:.0f} spots",
  "auction_price": lambda v: f"${v:.0f}", "auction_qb": lambda v: f"${v:.0f}", "auction_rb": lambda v: f"${v:.0f}", "auction_wr": lambda v: f"${v:.0f}", "auction_te": lambda v: f"${v:.0f}",
- "auction_bust": lambda v: f"${v:.0f}", "auction_injury": lambda v: f"${v:.0f}", "auction_steal": lambda v: f"${round(v):.0f}", "auction_pos_spend": lambda v: f"${v:.0f}", "draft_best": lambda v: f"{v:+.0f} pts", "drafter_best": lambda v: f"{v:+.0f} pts per draft",
+ "auction_bust": lambda v: f"${v:.0f}", "auction_injury": lambda v: f"${v:.0f}", "auction_steal": lambda v: f"${round(v):.0f}", "auction_pos_spend": lambda v: f"${v:.0f}", "draft_best": lambda v: f"{v:+.2f}", "drafter_best": lambda v: f"{v:+.2f}",
  "trade_champ_best": lambda v: f"{v:+.1f} PAR", "trade_champ_worst": lambda v: f"{v:.1f} PAR", "trade_sacko_worst": lambda v: f"{v:.1f} PAR", "fab_champ_spent": lambda v: f"${v:.0f}", "fab_champ_least": lambda v: f"${v:.0f}",
 }
