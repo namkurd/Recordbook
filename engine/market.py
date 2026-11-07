@@ -5,8 +5,8 @@ from urllib.parse import urlencode
 from metrics import norm
 
 def N(x): return {"Rohaan": "Haan"}.get(norm(x), norm(x))
-def _c(value, holders, season, week=None, rid=None, opp_rid=None, detail="", when=None, holder_text=None, card=None, inst=None):
-    return {"inst": inst, "value": value, "holders": holders if isinstance(holders, list) else [holders], "season": season, "week": week, "rid": rid, "opp_rid": opp_rid,
+def _c(value, holders, season, week=None, rid=None, opp_rid=None, detail="", when=None, holder_text=None, card=None, inst=None, display=None):
+    return {"display": display, "inst": inst, "value": value, "holders": holders if isinstance(holders, list) else [holders], "season": season, "week": week, "rid": rid, "opp_rid": opp_rid,
             "detail": detail, "when": when, "holder_text": holder_text, "card": card}
 def wk(s, w): return f"Week {w} - {s}"
 
@@ -170,6 +170,37 @@ def season_brain(d):
                 if "bigBrain" in x: out.append(_c(x["bigBrain"], [N(m)], int(y), when=y))
     return out
 
+# ---------------- sit / start % : toss-ups won out of all toss-ups (the Sit/Start tool's "Toss-up %") ----------------
+def _tossups(d):
+    out = []
+    for y, ms in fab(d).get("summary", {}).items():
+        if int(y) not in _fin(d): continue
+        for m, v in ms.items():
+            c = v.get("calls") or {}; w, l = c.get("flipsWon"), c.get("flipsLost")
+            if w is not None and l is not None and w + l: out.append((int(y), N(m), w, w + l))
+    return out
+def _pct_card(who, title, rows):
+    return {"kind": "facts", "title": title, "blocks": [{"head": who, "chip": None, "rows": rows}]}
+def sitstart_season(d):
+    out = []
+    for y, m, w, n in _tossups(d):
+        if n < 10: continue
+        out.append(_c(round(100 * w / n, 1), [m], y, when=str(y), holder_text=m, display=f"{100 * w / n:.1f}% ({w}-{n - w})",
+                      card=_pct_card(m, f"Toss-ups · {y}", [["Toss-ups won", f"{w} of {n}"], ["Win %", f"{100 * w / n:.1f}%"]])))
+    return add_links(out, "lineup")
+def sitstart_career(d):
+    by = collections.defaultdict(lambda: [0, 0, []])
+    for y, m, w, n in _tossups(d): by[m][0] += w; by[m][1] += n; by[m][2].append((y, w, n))
+    out = []
+    for m, (w, n, per) in by.items():
+        if n < 10: continue
+        yrs = sorted(p[0] for p in per)
+        out.append(_c(round(100 * w / n, 1), [m], yrs[0], when=f"{yrs[0]}-{yrs[-1]}", holder_text=m, display=f"{100 * w / n:.1f}% ({w}-{n - w})",
+                      card=_pct_card(m, f"Toss-ups · {len(yrs)} seasons", [["Toss-ups won", f"{w} of {n} ({100 * w / n:.1f}%)"]] + [[str(y), f"{ww}-{nn - ww}"] for y, ww, nn in sorted(per)])))
+    return add_links(out, "lineup")
+def era_sitstart(d):
+    return {"agg": "wavg", "min": 10, "fmt": "pct", "unit": "toss-ups", "rows": [[y, m, w, n] for y, m, w, n in _tossups(d)]}
+
 REG = {k: v for k, v in globals().items() if k in {
  "trade_net","trade_best_side","trade_worst_side","trade_value_gap","trade_blockbuster","trade_assets","trades_career","trades_partner","trades_league_season","trades_team_season",
  "fab_best_par","fab_best_fa","fab_bid","fab_worst","fab_value","fab_spent","fab_season_par","fab_season_net","fab_season_hits","fab_season_adds","fab_season_regret","fab_regret_drop",
@@ -178,7 +209,8 @@ def era_trader(d):      # per-season parts of the career trader records, so the 
     return {"agg": "sum", "min": 3, "fmt": "par", "unit": "trades", "rows": [[t["s"], w, round(p, 1), 1] for t in trades(d) if t.get("lgNet") is not None for w, l, p in _sides(t) if p is not None]}
 def era_trades(d):
     return {"agg": "sum", "min": 1, "fmt": "count", "unit": "trades", "rows": [[t["s"], m, 1, 1] for t in trades(d) for m in (N(t["a"]), N(t["b"]))]}
-ERA_PARTS = {"trader_best": era_trader, "trader_worst": era_trader, "trades_career": era_trades}
+ERA_PARTS = {"sitstart_career": era_sitstart, "trader_best": era_trader, "trader_worst": era_trader, "trades_career": era_trades}
+REG["sitstart_season"] = sitstart_season; REG["sitstart_career"] = sitstart_career
 REG["trader_best"] = lambda d: trader_net(d, 1)
 REG["trader_worst"] = lambda d: trader_net(d, -1)
 
@@ -190,7 +222,7 @@ FORMAT = {
  "fab_value": lambda v: f"{v:.2f} PAR per $", "fab_spent": lambda v: f"${v:.0f}", "fab_season_par": lambda v: f"{v:+.1f} PAR", "fab_season_net": lambda v: f"{v:+.1f} PAR",
  "fab_season_hits": lambda v: f"{v:.0f}", "fab_season_adds": lambda v: f"{v:.0f}", "fab_season_regret": lambda v: f"{v:.1f} PAR", "fab_regret_drop": lambda v: f"{v:.1f} PAR",
  "sit_start_miss": lambda v: f"{v:.1f} pts", "sit_start_call": lambda v: f"{v:.1f} pts", "worst_week": lambda v: f"{v:.1f} pts",
- "season_bench": lambda v: f"{v:.1f} pts", "season_wins_lost": lambda v: f"{v:.0f}", "season_rumbles_lost": lambda v: f"{v:.0f}", "season_brain": lambda v: f"{v:.0f}",
+ "sitstart_season": lambda v: f"{v:.1f}%", "sitstart_career": lambda v: f"{v:.1f}%", "season_bench": lambda v: f"{v:.1f} pts", "season_wins_lost": lambda v: f"{v:.0f}", "season_rumbles_lost": lambda v: f"{v:.0f}", "season_brain": lambda v: f"{v:.0f}",
 }
 
 # ---------------- richer detail cards for lineup records ----------------

@@ -243,6 +243,31 @@ def make(d):
             c["links"] = alinks(yrs[-1], {"label": f"{m}'s drafts in the Auction tool", "url": f"{AUCTION}#managers/{quote(m, safe='')}"}); out.append(c)
         return out
     R["draft_best"] = draft_best; R["drafter_best"] = drafter_best
+    # ---------------- most points by one player in a game, by position (starters, 2021+; from Rumble Central's weekly lineups) ----------------
+    gidx = {(g["season"], g["week"], g["rid"]): g for g in d.games if g["reg"] or g["week"] >= 16}
+    POSNAME = {"QB": "Quarterback", "RB": "Running Back", "WR": "Wide Receiver", "TE": "Tight End", "K": "Kicker", "DEF": "Defense"}
+    def player_games():
+        out = collections.defaultdict(list)
+        for y, e in (d.raw.get("epa") or {}).items():
+            slots = [x for x in e.get("slots", []) if x not in ("BN", "IR", "TAXI")]; names = e.get("names") or {}
+            for wk, byrid in (e.get("lineups") or {}).items():
+                for rid, lineup in byrid.items():
+                    g = gidx.get((y, int(wk), int(rid)))
+                    if not g: continue
+                    for pid, pts in lineup[:len(slots)]:
+                        nm, pos = names.get(str(pid), [str(pid), ""])
+                        if pos in POSNAME: out[pos].append((y, int(wk), g, nm, round(float(pts), 2)))
+        return out
+    def player_pos(pos):
+        def f():
+            rows = []
+            for y, w, g, nm, pts in player_games().get(pos, []):
+                card = fact(f"{POSNAME[pos]} · Week {w}, {y}", g["m"], [["Player", nm], ["Points", f"{pts:.2f}"], ["Team", f'{g["m"]} ({g["pts"]:.2f} vs {g["opp"]} {g["opp_pts"]:.2f})']])
+                rows.append(_c(pts, [g["m"]], y, w, g["rid"], g["opp_rid"], when=wk_(y, w), ht=f'{g["m"]} — {nm}', card=card))
+            return rows
+        return f
+    def wk_(y, w): return f"Week {w} - {y}"
+    for _pos in POSNAME: R[f"player_{_pos.lower()}"] = player_pos(_pos)
     def era_drafter():
         rows = [[s, m, sum(GRADE_SCORE[g[4]] for g in items), len(items)] for (s, m), items in by_draft().items()]
         return {"agg": "wavg", "minseasons": 3, "fmt": "ov", "unit": "graded picks", "rows": rows}
@@ -279,6 +304,6 @@ FORMAT = {
  "playoff_wins": lambda v: f"{v:.0f} wins", "playoffs_no_title": lambda v: f"{v:.0f} trips", "fewest_wins_playoffs": lambda v: f"{v:.0f} wins", "most_wins_miss": lambda v: f"{v:.0f} wins",
  "standings_jump": lambda v: f"+{v:.0f} spots", "standings_drop": lambda v: f"-{v:.0f} spots",
  "auction_price": lambda v: f"${v:.0f}", "auction_qb": lambda v: f"${v:.0f}", "auction_rb": lambda v: f"${v:.0f}", "auction_wr": lambda v: f"${v:.0f}", "auction_te": lambda v: f"${v:.0f}",
- "auction_bust": lambda v: f"${v:.0f}", "auction_injury": lambda v: f"${v:.0f}", "auction_steal": lambda v: f"${round(v):.0f}", "auction_pos_spend": lambda v: f"${v:.0f}", "draft_best": lambda v: f"{v:+.2f}", "drafter_best": lambda v: f"{v:+.2f}",
+ "auction_bust": lambda v: f"${v:.0f}", "auction_injury": lambda v: f"${v:.0f}", "auction_steal": lambda v: f"${round(v):.0f}", "auction_pos_spend": lambda v: f"${v:.0f}", "draft_best": lambda v: f"{v:+.2f}", "drafter_best": lambda v: f"{v:+.2f}", **{f"player_{p.lower()}": (lambda v: f"{v:.2f} pts") for p in ("QB", "RB", "WR", "TE", "K", "DEF")},
  "trade_champ_best": lambda v: f"{v:+.1f} PAR", "trade_champ_worst": lambda v: f"{v:.1f} PAR", "trade_sacko_worst": lambda v: f"{v:.1f} PAR", "fab_champ_spent": lambda v: f"${v:.0f}", "fab_champ_least": lambda v: f"${v:.0f}",
 }
