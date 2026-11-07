@@ -1,0 +1,9 @@
+{
+ "_comment": "Records deleted in edit mode. tools/add_records.py will not add these back. (Kept here because the change log no longer lists deletions.)",
+ "ids": [
+  "biggest-standings-drop",
+  "biggest-standings-jump",
+  "most-fab-spent-in-a-season",
+  "most-meetings-between-two-managers"
+ ]
+}
