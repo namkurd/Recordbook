@@ -44,7 +44,7 @@ header.top h1{margin:0;font-size:20px;letter-spacing:-.01em;white-space:nowrap}
 /* filter bar: one slim sticky row */
 .fbar{position:sticky;top:var(--dtf-top-h,0px);z-index:30;background:var(--bg);border-bottom:1px solid var(--line);padding:8px 0}
 .fin{display:flex;gap:6px;align-items:center}
-.fin input[type=search]{flex:1;min-width:0;font:inherit;font-size:14px;color:var(--text);background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:0 10px;height:36px}
+
 .dd{border:1px solid var(--line);background:var(--surface);border-radius:8px;height:36px;padding:0 10px;display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
 .erarow{display:flex;gap:6px;align-items:center;overflow-x:auto;scrollbar-width:none;padding:6px 0 2px}.erarow::-webkit-scrollbar{display:none}.erarow .lbl{flex:none;font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--muted,#9097a8);margin-right:2px}
 .echip{flex:none;border:1px solid var(--line);background:var(--surface);color:var(--text);border-radius:999px;height:30px;padding:0 12px;font-size:13px;white-space:nowrap;display:inline-flex;align-items:center;gap:6px}
@@ -54,7 +54,7 @@ header.top h1{margin:0;font-size:20px;letter-spacing:-.01em;white-space:nowrap}
 .dd .cnt{background:var(--accent);color:var(--accent-ink);border-radius:999px;font-size:11px;font-weight:700;min-width:18px;height:18px;line-height:18px;text-align:center;padding:0 5px}
 .dd .car{font-size:10px;opacity:.7}
 #ddAll{display:none}
-.tot{color:var(--muted);font-size:12.5px;white-space:nowrap;padding-left:4px}
+.tot{color:var(--muted);font-size:12.5px;white-space:nowrap;padding-left:4px;margin-left:auto}
 .act-row{display:flex;gap:6px;overflow-x:auto;padding-top:7px;scrollbar-width:none}
 .act-row::-webkit-scrollbar{display:none}
 .act-row:empty{display:none}
@@ -259,7 +259,6 @@ aside.drawer.wide{width:min(780px,100%)}
 </div>
 <div class="fbar" id="filters"><div class="wrap">
   <div class="fin">
-    <input type="search" id="q" placeholder="Search records, managers…" aria-label="Search records" enterkeyhint="search">
     <button class="dd" data-dd="type" aria-haspopup="true" aria-expanded="false">Type <span class="cnt" hidden></span><span class="car">▾</span></button>
     <button class="dd" data-dd="mgr" aria-haspopup="true" aria-expanded="false">Manager <span class="cnt" hidden></span><span class="car">▾</span></button>
     <button class="dd" data-dd="show" aria-haspopup="true" aria-expanded="false">More <span class="cnt" hidden></span><span class="car">▾</span></button>
@@ -376,12 +375,11 @@ function matches(r){
   var src=["computed","seeded","manual"].filter(function(k){return S.opts.has(k)});if(src.length&&src.indexOf(r.source)<0)return false;
   if(S.opts.has("replay")&&!(r.replay&&r.replay.url))return false;
   if(S.eras.size&&!eraView(r))return false;
-  if(S.q){var hay=(r.name+" "+r.value+" "+r.holder+" "+(r.team||"")+" "+r.when+" "+(r.ties||[]).map(function(t){return t.holder}).join(" ")).toLowerCase();if(!S.q.toLowerCase().split(/\s+/).every(function(w){return hay.indexOf(w)>=0}))return false}
   return true}
 
 /* ---------- URL state ---------- */
-function fromURL(){var p=new URLSearchParams(location.search);S.q=p.get("q")||"";(p.get("type")||"").split("|").filter(Boolean).forEach(function(x){S.cats.add(x)});(p.get("mgr")||"").split("|").filter(Boolean).forEach(function(x){S.mgrs.add(x)});(p.get("show")||"").split("|").filter(Boolean).forEach(function(x){S.opts.add(x)});(p.get("era")||"").split("|").filter(Boolean).forEach(function(x){S.eras.add(x)});if(p.get("view")==="changes")S.view="changes";S.focus=p.get("r")}
-function toURL(){var p=new URLSearchParams();if(S.q)p.set("q",S.q);if(S.cats.size)p.set("type",[...S.cats].join("|"));if(S.mgrs.size)p.set("mgr",[...S.mgrs].join("|"));if(S.opts.size)p.set("show",[...S.opts].join("|"));if(S.eras.size)p.set("era",[...S.eras].join("|"));if(S.view==="changes")p.set("view","changes");if(S.sel)p.set("r",S.sel);var s=p.toString();try{history.replaceState(history.state,"",location.pathname+(s?"?"+s:""))}catch(e){}}
+function fromURL(){var p=new URLSearchParams(location.search);(p.get("type")||"").split("|").filter(Boolean).forEach(function(x){S.cats.add(x)});(p.get("mgr")||"").split("|").filter(Boolean).forEach(function(x){S.mgrs.add(x)});(p.get("show")||"").split("|").filter(Boolean).forEach(function(x){S.opts.add(x)});(p.get("era")||"").split("|").filter(Boolean).forEach(function(x){S.eras.add(x)});if(p.get("view")==="changes")S.view="changes";S.focus=p.get("r")}
+function toURL(){var p=new URLSearchParams();if(S.cats.size)p.set("type",[...S.cats].join("|"));if(S.mgrs.size)p.set("mgr",[...S.mgrs].join("|"));if(S.opts.size)p.set("show",[...S.opts].join("|"));if(S.eras.size)p.set("era",[...S.eras].join("|"));if(S.view==="changes")p.set("view","changes");if(S.sel)p.set("r",S.sel);var s=p.toString();try{history.replaceState(history.state,"",location.pathname+(s?"?"+s:""))}catch(e){}}
 
 /* ---------- filters: slim bar + dropdowns (one bottom sheet on phones) ---------- */
 var OPTLABEL={recent:"Recently changed",raw:"Raw only",adj:"Era-adjusted only",computed:"Computed",seeded:"Seeded",manual:"Manual",replay:"Has replay"};
@@ -423,20 +421,18 @@ function buildBar(){
   document.querySelectorAll(".dd").forEach(function(b){var n=set[b.dataset.dd],c=b.querySelector(".cnt");c.hidden=!n;c.textContent=n||"";b.classList.toggle("has",!!n)});
   var er=$("eras");if(er)er.innerHTML='<span class="lbl">Era</span><button type="button" class="echip'+(S.eras.size?"":" on")+'" data-e="" aria-pressed="'+!S.eras.size+'">All</button>'+ERALIST.map(function(e){return'<button type="button" class="echip'+(S.eras.has(e.id)?" on":"")+'" data-e="'+esc(e.id)+'" aria-pressed="'+S.eras.has(e.id)+'">'+esc(e.name)+" <small>"+esc(e.label)+"</small></button>"}).join("");
   var ch=activeChips(),a=$("active");a.innerHTML=ch.map(function(c){return'<button class="fc" data-k="'+c[0]+'" data-v="'+esc(c[1])+'" aria-label="Remove filter '+esc(c[2])+'">'+esc(c[2])+" <i>×</i></button>"}).join("")+(ch.length>1?'<button class="fc clr" id="clrAll">Clear all</button>':"");
-  var n=S.recs.filter(matches).length;$("tot").textContent=(S.cats.size||S.mgrs.size||S.eras.size||S.opts.size||S.q)?n+" of "+S.recs.length:S.recs.length+" records";
+  var n=S.recs.filter(matches).length;$("tot").textContent=(S.cats.size||S.mgrs.size||S.eras.size||S.opts.size)?n+" of "+S.recs.length:S.recs.length+" records";
   var cs=$("clrAll");if(cs)cs.onclick=clearAll;
   var fh=$("filters").offsetHeight;if(fh)document.documentElement.style.setProperty("--fbh",fh+"px")}
 document.addEventListener("click",function(e){var b=e.target.closest&&e.target.closest("#eras .echip");if(!b)return;var id=b.dataset.e;if(!id)S.eras.clear();else S.eras.has(id)?S.eras.delete(id):S.eras.add(id);render()});
-function clearAll(){S.q="";S.eras.clear();S.cats.clear();S.mgrs.clear();S.opts.clear();$("q").value="";render();if(panelFor)$("pbody").innerHTML=panelHTML(panelFor)}
+function clearAll(){S.eras.clear();S.cats.clear();S.mgrs.clear();S.opts.clear();render();if(panelFor)$("pbody").innerHTML=panelHTML(panelFor)}
 function init(){
-  $("q").value=S.q;$("q").oninput=function(){S.q=this.value;render()};
   document.querySelectorAll(".dd").forEach(function(b){b.onclick=function(){panelFor===b.dataset.dd?closePanel():openPanel(b.dataset.dd,b)}});
   $("pbody").addEventListener("change",applyPanel);$("pscrim").onclick=closePanel;$("pdone").onclick=closePanel;$("pclear").onclick=clearAll;
   $("active").addEventListener("click",function(e){var c=e.target.closest(".fc[data-k]");if(!c)return;var k=c.dataset.k,v=c.dataset.v;(k==="cat"?S.cats:k==="mgr"?S.mgrs:k==="era"?S.eras:S.opts).delete(v);render()});
   $("tab-records").onclick=function(){S.view="records";render()};$("tab-changes").onclick=function(){S.view="changes";render()};
   $("scrim").onclick=closeDrawer;$("dx").onclick=closeDrawer;
-  document.addEventListener("keydown",function(e){if(e.key==="Escape"){if(panelFor)closePanel();else closeDrawer()}
-    else if(e.key==="/"&&!/INPUT|TEXTAREA|SELECT/.test((document.activeElement||{}).tagName||"")){e.preventDefault();$("q").focus()}});
+  document.addEventListener("keydown",function(e){if(e.key==="Escape"){if(panelFor)closePanel();else closeDrawer()}});
   $("editToggle").onclick=toggleEdit;
   $("legend").innerHTML=CATS.map(function(c){return'<span><i style="background:var('+CATVAR[c]+'h)"></i>'+esc(c)+"</span>"}).join("");
   if(window.ResizeObserver)new ResizeObserver(function(){var fh=$("filters").offsetHeight;if(fh)document.documentElement.style.setProperty("--fbh",fh+"px")}).observe($("filters"));
@@ -534,7 +530,7 @@ function groupRows(c,rs){   // [[label, [records]]...] in the order above; unkno
 function renderRecords(){
   var list=S.recs.filter(matches).map(eraView),by={};list.forEach(function(r){(by[r.category]=by[r.category]||[]).push(r)});
   var h="";if(!list.length)h='<div class="empty">No records match these filters.<br><button class="ibtn" id="clrEmpty" style="margin-top:10px">Clear filters</button></div>';
-  CATS.forEach(function(c){var rs=by[c];if(!rs)return;var i=0;var closed=S.closed.has(c)&&!S.q&&!S.mgrs.size;
+  CATS.forEach(function(c){var rs=by[c];if(!rs)return;var i=0;var closed=S.closed.has(c)&&!S.mgrs.size;
     h+='<section class="cat '+CATCLS[c]+(closed?" closed":"")+'"><h2 data-cat="'+esc(c)+'" tabindex="0" role="button" aria-expanded="'+!closed+'"><span class="car">▾</span>'+esc(c)+' <span class="n">'+rs.length+'</span></h2><div class="rows"><div class="colhd"><span>Record</span><span>Mark</span><span>Holder</span><span>When</span><span></span></div>'+groupRows(c,rs).map(function(g){return(g[0]?'<div class="sub">'+esc(g[0])+"</div>":"")+g[1].map(function(r){return rowHTML(r).replace('class="row','class="row'+((i++)%2?" alt":""))}).join("")}).join("")+"</div></section>"});
   $("main").innerHTML=h;var ce=$("clrEmpty");if(ce)ce.onclick=clearAll}
 /* ---------- render change log ---------- */
