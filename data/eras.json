@@ -1,88 +1,165 @@
 {
-  "_comment": "League format by season, from SleeperAuction config/eras.json (scoring-rule markers) and Sleeper's league settings. ppr: 'ppr' = flat 1 point per catch (2022 on), 'nppr' = no PPR. 2021 paid reception tiers by yardage and is tagged no-PPR on purpose (edit here to change). 2011-12 and 2013-20: standard non-PPR, 10 teams, per the old sheet. Add a season here when a new one starts. fd = first-down bonuses (0.5 FLEX / 0.2 QB per first down), from SleeperAuction config/eras.json, from 2025.",
-  "seasons": {
-    "2011": {
-      "teams": 10,
-      "ppr": "nppr",
-      "superflex": false
-    },
-    "2012": {
-      "teams": 10,
-      "ppr": "nppr",
-      "superflex": false
-    },
-    "2013": {
-      "teams": 10,
-      "ppr": "nppr",
-      "superflex": false
-    },
-    "2014": {
-      "teams": 10,
-      "ppr": "nppr",
-      "superflex": false
-    },
-    "2015": {
-      "teams": 10,
-      "ppr": "nppr",
-      "superflex": false
-    },
-    "2016": {
-      "teams": 10,
-      "ppr": "nppr",
-      "superflex": false
-    },
-    "2017": {
-      "teams": 10,
-      "ppr": "nppr",
-      "superflex": false
-    },
-    "2018": {
-      "teams": 10,
-      "ppr": "nppr",
-      "superflex": false
-    },
-    "2019": {
-      "teams": 10,
-      "ppr": "nppr",
-      "superflex": false
-    },
-    "2020": {
-      "teams": 10,
-      "ppr": "nppr",
-      "superflex": false
-    },
-    "2021": {
-      "teams": 10,
-      "ppr": "nppr",
-      "superflex": false,
-      "note": "tiered reception scoring"
-    },
-    "2022": {
-      "teams": 10,
-      "ppr": "ppr",
-      "superflex": false
-    },
-    "2023": {
-      "teams": 10,
-      "ppr": "ppr",
-      "superflex": true
-    },
-    "2024": {
-      "teams": 10,
-      "ppr": "ppr",
-      "superflex": true
-    },
-    "2025": {
-      "teams": 10,
-      "ppr": "ppr",
-      "superflex": true,
-      "fd": true
-    },
-    "2026": {
-      "teams": 12,
-      "ppr": "ppr",
-      "superflex": true,
-      "fd": true
-    }
+ "_comment": "League format by season. 2021 on is read from each season's Sleeper league settings by tools/build_eras.py (reception tiers, SUPER_FLEX slot, first-down bonuses, number of teams); 2011-2020 were not on Sleeper and are hand-set (source 'sheet'). An era is a run of seasons with the same scoring and lineup. 2021 paid reception tiers of 0.25-0.5 and counts as No PPR on purpose.",
+ "seasons": {
+  "2011": {
+   "teams": 10,
+   "ppr": "nppr",
+   "superflex": false,
+   "era": "nppr",
+   "source": "sheet"
+  },
+  "2012": {
+   "teams": 10,
+   "ppr": "nppr",
+   "superflex": false,
+   "era": "nppr",
+   "source": "sheet"
+  },
+  "2013": {
+   "teams": 10,
+   "ppr": "nppr",
+   "superflex": false,
+   "era": "nppr",
+   "source": "sheet"
+  },
+  "2014": {
+   "teams": 10,
+   "ppr": "nppr",
+   "superflex": false,
+   "era": "nppr",
+   "source": "sheet"
+  },
+  "2015": {
+   "teams": 10,
+   "ppr": "nppr",
+   "superflex": false,
+   "era": "nppr",
+   "source": "sheet"
+  },
+  "2016": {
+   "teams": 10,
+   "ppr": "nppr",
+   "superflex": false,
+   "era": "nppr",
+   "source": "sheet"
+  },
+  "2017": {
+   "teams": 10,
+   "ppr": "nppr",
+   "superflex": false,
+   "era": "nppr",
+   "source": "sheet"
+  },
+  "2018": {
+   "teams": 10,
+   "ppr": "nppr",
+   "superflex": false,
+   "era": "nppr",
+   "source": "sheet"
+  },
+  "2019": {
+   "teams": 10,
+   "ppr": "nppr",
+   "superflex": false,
+   "era": "nppr",
+   "source": "sheet"
+  },
+  "2020": {
+   "teams": 10,
+   "ppr": "nppr",
+   "superflex": false,
+   "era": "nppr",
+   "source": "sheet"
+  },
+  "2021": {
+   "teams": 10,
+   "ppr": "nppr",
+   "superflex": false,
+   "source": "sleeper",
+   "era": "nppr"
+  },
+  "2022": {
+   "teams": 10,
+   "ppr": "ppr",
+   "superflex": false,
+   "source": "sleeper",
+   "era": "ppr"
+  },
+  "2023": {
+   "teams": 10,
+   "ppr": "ppr",
+   "superflex": true,
+   "source": "sleeper",
+   "era": "sf"
+  },
+  "2024": {
+   "teams": 10,
+   "ppr": "ppr",
+   "superflex": true,
+   "source": "sleeper",
+   "era": "sf"
+  },
+  "2025": {
+   "teams": 10,
+   "ppr": "ppr",
+   "superflex": true,
+   "source": "sleeper",
+   "fd": "0.5",
+   "era": "sffd"
+  },
+  "2026": {
+   "teams": 12,
+   "ppr": "ppr",
+   "superflex": true,
+   "source": "sleeper",
+   "fd": "0.5",
+   "era": "sffd"
   }
+ },
+ "eras": [
+  {
+   "id": "nppr",
+   "name": "No PPR",
+   "seasons": [
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021
+   ],
+   "label": "2011-2021"
+  },
+  {
+   "id": "ppr",
+   "name": "PPR",
+   "seasons": [
+    2022
+   ],
+   "label": "2022"
+  },
+  {
+   "id": "sf",
+   "name": "Superflex no PPFD",
+   "seasons": [
+    2023,
+    2024
+   ],
+   "label": "2023-2024"
+  },
+  {
+   "id": "sffd",
+   "name": "Superflex + 0.5 PPFD",
+   "seasons": [
+    2025,
+    2026
+   ],
+   "label": "2025-"
+  }
+ ]
 }
