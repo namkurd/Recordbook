@@ -113,6 +113,13 @@ NEW += [
  ("FAB & Waivers", "Most FAB Spent by a Champion", "fab_champ_spent", "max", "The most FAB dollars spent on winning bids by a team that won the title that season."),
  ("FAB & Waivers", "Fewest FAB Spent by a Champion", "fab_champ_least", "min", "The fewest FAB dollars spent on winning bids by a team that won the title that season."),
 ]
+BIND = {      # hand-kept records now computed from Sleeper's own transaction list / the league ledger (engine/txns.py); value_num is the sheet's mark, so the first run logs the correction
+ "Most FAB in a trade": ("trade_fab", "max", 121), "Largest FAB Overbid": ("fab_overbid", "max", 131), "Best FAB Bid (Lowest % over next bid)": ("fab_bestbid", "min", -0.000149),
+ "Most Trades in 24hrs": ("trades_24h", "max", 3), "Most Trades in a Season (League)": ("trades_league_all", "max", 27), "Most Trades in a Season (Team)": ("trades_team_all", "max", 12),
+ "Most FAB owned at one time": ("fab_owned", "max", 205), "Total Wins (incl. Playoffs)": ("total_wins", "max", 17)}
+for r in doc["records"]:
+    if r["name"] in BIND and not r.get("metric"):
+        r["metric"], r["direction"], r["value_num"] = BIND[r["name"]]
 add = []
 for cat, name, metric, direction, definition in NEW:
     if slug(name) in have: continue

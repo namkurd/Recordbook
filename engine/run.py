@@ -12,14 +12,15 @@ import market as MK
 import facts as F
 import moments as MO
 import extras as EX
+import txns as TX
 import teams as TM
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 RC_BASE = os.environ.get("RC_BASE", "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html")
 args = set(sys.argv[1:]); BASELINE = "--baseline" in args; DRY = "--dry" in args
-TOL = {"game_pts_adj": 0.15, "league_week_adj": 0.15, "league_week": 0.05, "pf_plus": 0.05, "pa_plus": 0.05}
+TOL = {"rumble_pct": 1.0, "game_pts_adj": 0.15, "league_week_adj": 0.15, "league_week": 0.05, "pf_plus": 0.05, "pa_plus": 0.05}
 
-FORMATS = {**MK.FORMAT, **MO.FORMAT, **EX.FORMAT}
+FORMATS = {**MK.FORMAT, **MO.FORMAT, **EX.FORMAT, **TX.FORMAT}
 VERIFY = {"rumble_margin", "bench", "shot_league", "thu_league", "sat_pts", "mnf_overcome", "high_proj", "high_proj_adj"}     # seeded records whose game is in the 2021+ data: Sleeper wins on a mismatch
 NEW_MOMENTS = {"comeback", "blown_lead", "lead_changes", "upset_proj", "over_proj", "under_proj", "thu_pts", "mon_pts", "bench_season", "shot_week", "shot_season"}
 
@@ -115,7 +116,9 @@ def main():
     for k, fn in MO.make(d, FACTS, NAMES).items(): M.REGISTRY[k] = (lambda f: (lambda _d: f()))(fn)
     EXR = EX.make(d); ERA_FN = {"drafter_best": EXR.pop("_era_drafter")}
     for k, fn in EXR.items(): M.REGISTRY[k] = (lambda f: (lambda _d: f()))(fn)
-    OWNED = set(MK.REG) - {"trades_league_season", "trades_team_season"} | {"trader_best", "trader_worst"} | set(EXR) | NEW_MOMENTS
+    TXR = TX.make(d)
+    for k, fn in TXR.items(): M.REGISTRY[k] = (lambda f: (lambda _d: f()))(fn)
+    OWNED = set(MK.REG) - {"trades_league_season", "trades_team_season"} | {"trader_best", "trader_worst"} | set(EXR) | NEW_MOMENTS | set(TXR)
     doc = json.load(open(f"{ROOT}/data/records.json")); log = []
     for r in doc["records"]:
         if not r["metric"]: continue
@@ -150,12 +153,13 @@ def main():
             if not r["value"]: kind, note = "auto:new", "Added to the book."
             elif abs((r["value_num"] or 0) - best["value"]) > 1e-9:
                 worse = (best["value"] < r["value_num"]) if rev else (best["value"] > r["value_num"])
-                kind, note = ("auto:reconcile", "Data changed; value recomputed.") if worse else ("auto:break", "Record broken.")
+                kind, note = ("auto:reconcile", "Sleeper data replaces the hand-kept sheet mark.") if r["source"] == "seeded" else ("auto:reconcile", "Data changed; value recomputed.") if worse else ("auto:break", "Record broken.")
             elif hs != r["holders"] or new["when"] != r["when"]:
                 kind, note = "auto:tie" if set(hs) > set(r["holders"]) else "auto:reconcile", "Holders updated."
             else:
                 kind = None
                 if new["holder"] != r["holder"]: r["holder"] = new["holder"]      # wording only: no change-log entry
+                if r["source"] == "seeded": r["source"] = "computed"; r["verified"] = True      # the sheet mark matches the data
             if kind:
                 if kind == "auto:break": r["previous"] = dict(old, replaced_on=now[:10], replaced_by=new["holder"])
                 r.update(new, value_num=best["value"], holders=hs, ties=[], source="computed", verified=True, updated=now[:10], league_level=hs == ["DTFClub"])
