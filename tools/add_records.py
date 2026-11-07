@@ -7,6 +7,8 @@ try:        # a record deleted in edit mode stays deleted
         e = json.loads(line)
         if e.get("cause") == "manual:delete": have.add(e["record"])
 except FileNotFoundError: pass
+try: have.update(json.load(open("data/deleted.json"))["ids"])
+except FileNotFoundError: pass
 def slug(s): return re.sub(r"[^a-z0-9]+", "-", s.lower()).strip("-")
 MOVE = {"Trades": ["Most Trades in 24hrs", "Most non-FAB Trades in a Season (League)", "Most Trades in a Season (League)", "Most non-FAB Trades in a Season (Team)",
                    "Most Trades in a Season (Team)", "Most Teams to Make a Trade", "Most FAB in a trade", "Fastest Trade Acceptance to Player Start"],

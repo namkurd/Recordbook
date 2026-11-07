@@ -68,7 +68,7 @@ def replay(metric, c, cur):
     q = f'?wp={c["week"]}.{c["rid"]}.{c["opp_rid"]}' + (f'&season={c["season"]}' if c["season"] != cur else "")
     return {"season": c["season"], "week": c["week"], "rid": c["rid"], "opp_rid": c["opp_rid"], "url": RC_BASE + q}
 
-SINGLE = re.compile(r"^(?:Week \d+ - )?(20\d\d)(?: [A-Z]{2,3})?$")
+SINGLE = re.compile(r"^(?:Week \d+ - )?(20\d\d)(?: [A-Za-z]{2,5})?$")
 def by_season(m, cands, rev, d):
     """The best candidate of every season for a record whose marks each sit in one season (not careers, streaks or ranges)."""
     if m in STREAK_METRICS: return []
@@ -86,6 +86,20 @@ def by_season(m, cands, rev, d):
         if c.get("links"): e["links"] = c["links"]
         if c.get("card"): e["detail"] = c["card"]
         out.append(e)
+    return out
+
+ERA_RERUN = {"win_streak", "loss_streak"}
+def by_era(m, rev, d):
+    """The metric recomputed on each era's seasons alone (for records that cannot be re-added from per-season parts, like streaks of games)."""
+    eras = json.load(open(f"{ROOT}/data/eras.json")).get("eras") or []; out = {}
+    for e in eras:
+        ys = set(e["seasons"]); raw = dict(d.raw, games=[g for g in d.raw["games"] if g["season"] in ys])
+        c = M.REGISTRY[m](M.Data(raw))
+        if not c: continue
+        c.sort(key=lambda x: (x["value"], -x["season"], -(x["week"] or 0)), reverse=rev); b = c[0]
+        out[e["id"]] = {"n": b["value"], "value": fmt(m, b, d), "holder": holder_text(m, b), "holders": b["holders"], "when": when(m, b)}
+        rp = replay(m, b, d.cur)
+        if rp: out[e["id"]]["replay"] = rp
     return out
 
 def snapshot(r): return {k: r[k] for k in ("value", "holder", "when", "team", "evidence") if k in r}
@@ -120,7 +134,9 @@ def main():
                     pr = CARDS.pair(d, c["season"], c["week"], c["rid"], c["opp_rid"], m in CARDS.BY_SCORE)
                     if pr: e["cards"] = pr
             r["leaderboard"].append(e)
-        if m in MK.ERA_PARTS: r["era_parts"] = MK.ERA_PARTS[m](d)          # career records are re-added from per-season parts when an era is picked
+        if m in d._era_parts: r["era_parts"] = d._era_parts[m]()
+        elif m in ERA_RERUN: r["by_era"] = by_era(m, rev, d)           # game-by-game streaks: rerun on each era's seasons alone
+        elif m in MK.ERA_PARTS: r["era_parts"] = MK.ERA_PARTS[m](d)          # career records are re-added from per-season parts when an era is picked
         elif m in ERA_FN: r["era_parts"] = ERA_FN[m]()
         r["by_season"] = by_season(m, cands, rev, d)     # the best mark of each season, so the page can show a record "within an era" (empty when the record spans seasons)
         if m in OWNED:
