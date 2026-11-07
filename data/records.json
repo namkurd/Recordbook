@@ -7579,9 +7579,9 @@
    "id": "total-wins-incl-playoffs",
    "name": "Total Wins (incl. Playoffs)",
    "category": "Team Seasons",
-   "source": "seeded",
-   "metric": null,
-   "direction": null,
+   "source": "computed",
+   "metric": "total_wins",
+   "direction": "max",
    "value": "17",
    "value_num": 17,
    "when": "2022",
@@ -7603,7 +7603,605 @@
    "needs_definition": null,
    "definition": null,
    "engine_gap": null,
-   "updated": "2026-11-02"
+   "updated": "2026-11-02",
+   "leaderboard": [
+    {
+     "value": "17",
+     "holder": "Ben",
+     "when": "2022",
+     "replay": null
+    },
+    {
+     "value": "14",
+     "holder": "Tommy",
+     "when": "2018",
+     "replay": null,
+     "detail": {
+      "kind": "facts",
+      "title": "Wins · 2018",
+      "blocks": [
+       {
+        "head": "Tommy",
+        "chip": null,
+        "rows": [
+         [
+          "Regular season",
+          "14"
+         ],
+         [
+          "Playoffs",
+          "0"
+         ],
+         [
+          "Total",
+          "14"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "value": "13",
+     "holder": "Ben",
+     "when": "2014",
+     "replay": null,
+     "detail": {
+      "kind": "facts",
+      "title": "Wins · 2014",
+      "blocks": [
+       {
+        "head": "Ben",
+        "chip": null,
+        "rows": [
+         [
+          "Regular season",
+          "12"
+         ],
+         [
+          "Playoffs",
+          "1"
+         ],
+         [
+          "Total",
+          "13"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "value": "13",
+     "holder": "Ben",
+     "when": "2021",
+     "replay": null,
+     "detail": {
+      "kind": "facts",
+      "title": "Wins · 2021",
+      "blocks": [
+       {
+        "head": "Ben",
+        "chip": null,
+        "rows": [
+         [
+          "Regular season",
+          "11"
+         ],
+         [
+          "Playoffs",
+          "2"
+         ],
+         [
+          "Total",
+          "13"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "value": "13",
+     "holder": "Aidan",
+     "when": "2022",
+     "replay": null,
+     "detail": {
+      "kind": "facts",
+      "title": "Wins · 2022",
+      "blocks": [
+       {
+        "head": "Aidan",
+        "chip": null,
+        "rows": [
+         [
+          "Regular season",
+          "12"
+         ],
+         [
+          "Playoffs",
+          "1"
+         ],
+         [
+          "Total",
+          "13"
+         ]
+        ]
+       }
+      ]
+     }
+    }
+   ],
+   "by_season": [
+    {
+     "s": 2025,
+     "n": 12,
+     "value": "12",
+     "holder": "Steven",
+     "holders": [
+      "Steven"
+     ],
+     "when": "2025",
+     "detail": {
+      "kind": "facts",
+      "title": "Wins · 2025",
+      "blocks": [
+       {
+        "head": "Steven",
+        "chip": null,
+        "rows": [
+         [
+          "Regular season",
+          "12"
+         ],
+         [
+          "Playoffs",
+          "0"
+         ],
+         [
+          "Total",
+          "12"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "s": 2024,
+     "n": 12,
+     "value": "12",
+     "holder": "Alex",
+     "holders": [
+      "Alex"
+     ],
+     "when": "2024",
+     "detail": {
+      "kind": "facts",
+      "title": "Wins · 2024",
+      "blocks": [
+       {
+        "head": "Alex",
+        "chip": null,
+        "rows": [
+         [
+          "Regular season",
+          "10"
+         ],
+         [
+          "Playoffs",
+          "2"
+         ],
+         [
+          "Total",
+          "12"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "s": 2023,
+     "n": 11,
+     "value": "11",
+     "holder": "Ankit",
+     "holders": [
+      "Ankit"
+     ],
+     "when": "2023",
+     "detail": {
+      "kind": "facts",
+      "title": "Wins · 2023",
+      "blocks": [
+       {
+        "head": "Ankit",
+        "chip": null,
+        "rows": [
+         [
+          "Regular season",
+          "9"
+         ],
+         [
+          "Playoffs",
+          "2"
+         ],
+         [
+          "Total",
+          "11"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "s": 2022,
+     "n": 17,
+     "value": "17",
+     "holder": "Ben",
+     "holders": [
+      "Ben"
+     ],
+     "when": "2022",
+     "detail": {
+      "kind": "facts",
+      "title": "Wins · 2022",
+      "blocks": [
+       {
+        "head": "Ben",
+        "chip": null,
+        "rows": [
+         [
+          "Regular season",
+          "15"
+         ],
+         [
+          "Playoffs",
+          "2"
+         ],
+         [
+          "Total",
+          "17"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "s": 2021,
+     "n": 13,
+     "value": "13",
+     "holder": "Ben",
+     "holders": [
+      "Ben"
+     ],
+     "when": "2021",
+     "detail": {
+      "kind": "facts",
+      "title": "Wins · 2021",
+      "blocks": [
+       {
+        "head": "Ben",
+        "chip": null,
+        "rows": [
+         [
+          "Regular season",
+          "11"
+         ],
+         [
+          "Playoffs",
+          "2"
+         ],
+         [
+          "Total",
+          "13"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "s": 2020,
+     "n": 12,
+     "value": "12",
+     "holder": "Haan",
+     "holders": [
+      "Haan"
+     ],
+     "when": "2020",
+     "detail": {
+      "kind": "facts",
+      "title": "Wins · 2020",
+      "blocks": [
+       {
+        "head": "Haan",
+        "chip": null,
+        "rows": [
+         [
+          "Regular season",
+          "10"
+         ],
+         [
+          "Playoffs",
+          "2"
+         ],
+         [
+          "Total",
+          "12"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "s": 2019,
+     "n": 12,
+     "value": "12",
+     "holder": "Ryan",
+     "holders": [
+      "Ryan"
+     ],
+     "when": "2019",
+     "detail": {
+      "kind": "facts",
+      "title": "Wins · 2019",
+      "blocks": [
+       {
+        "head": "Ryan",
+        "chip": null,
+        "rows": [
+         [
+          "Regular season",
+          "10"
+         ],
+         [
+          "Playoffs",
+          "2"
+         ],
+         [
+          "Total",
+          "12"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "s": 2018,
+     "n": 14,
+     "value": "14",
+     "holder": "Tommy",
+     "holders": [
+      "Tommy"
+     ],
+     "when": "2018",
+     "detail": {
+      "kind": "facts",
+      "title": "Wins · 2018",
+      "blocks": [
+       {
+        "head": "Tommy",
+        "chip": null,
+        "rows": [
+         [
+          "Regular season",
+          "14"
+         ],
+         [
+          "Playoffs",
+          "0"
+         ],
+         [
+          "Total",
+          "14"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "s": 2017,
+     "n": 11,
+     "value": "11",
+     "holder": "Ben",
+     "holders": [
+      "Ben"
+     ],
+     "when": "2017",
+     "detail": {
+      "kind": "facts",
+      "title": "Wins · 2017",
+      "blocks": [
+       {
+        "head": "Ben",
+        "chip": null,
+        "rows": [
+         [
+          "Regular season",
+          "11"
+         ],
+         [
+          "Playoffs",
+          "0"
+         ],
+         [
+          "Total",
+          "11"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "s": 2016,
+     "n": 12,
+     "value": "12",
+     "holder": "Jake",
+     "holders": [
+      "Jake"
+     ],
+     "when": "2016",
+     "detail": {
+      "kind": "facts",
+      "title": "Wins · 2016",
+      "blocks": [
+       {
+        "head": "Jake",
+        "chip": null,
+        "rows": [
+         [
+          "Regular season",
+          "10"
+         ],
+         [
+          "Playoffs",
+          "2"
+         ],
+         [
+          "Total",
+          "12"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "s": 2015,
+     "n": 10,
+     "value": "10",
+     "holder": "Tommy",
+     "holders": [
+      "Tommy"
+     ],
+     "when": "2015",
+     "detail": {
+      "kind": "facts",
+      "title": "Wins · 2015",
+      "blocks": [
+       {
+        "head": "Tommy",
+        "chip": null,
+        "rows": [
+         [
+          "Regular season",
+          "8"
+         ],
+         [
+          "Playoffs",
+          "2"
+         ],
+         [
+          "Total",
+          "10"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "s": 2014,
+     "n": 13,
+     "value": "13",
+     "holder": "Ben",
+     "holders": [
+      "Ben"
+     ],
+     "when": "2014",
+     "detail": {
+      "kind": "facts",
+      "title": "Wins · 2014",
+      "blocks": [
+       {
+        "head": "Ben",
+        "chip": null,
+        "rows": [
+         [
+          "Regular season",
+          "12"
+         ],
+         [
+          "Playoffs",
+          "1"
+         ],
+         [
+          "Total",
+          "13"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "s": 2013,
+     "n": 10,
+     "value": "10",
+     "holder": "Steven",
+     "holders": [
+      "Steven"
+     ],
+     "when": "2013",
+     "detail": {
+      "kind": "facts",
+      "title": "Wins · 2013",
+      "blocks": [
+       {
+        "head": "Steven",
+        "chip": null,
+        "rows": [
+         [
+          "Regular season",
+          "9"
+         ],
+         [
+          "Playoffs",
+          "1"
+         ],
+         [
+          "Total",
+          "10"
+         ]
+        ]
+       }
+      ]
+     }
+    }
+   ],
+   "detail": {
+    "kind": "facts",
+    "title": "Wins · 2022",
+    "blocks": [
+     {
+      "head": "Ben",
+      "chip": null,
+      "rows": [
+       [
+        "Regular season",
+        "15"
+       ],
+       [
+        "Playoffs",
+        "2"
+       ],
+       [
+        "Total",
+        "17"
+       ]
+      ]
+     }
+    ]
+   },
+   "links": null,
+   "verified": true
   },
   {
    "id": "most-dominant-offensive-season",
@@ -9098,7 +9696,7 @@
    "id": "worst-rumble",
    "name": "Worst Rumble %",
    "category": "Team Seasons",
-   "source": "seeded",
+   "source": "computed",
    "metric": "rumble_pct",
    "direction": "min",
    "value": "21%",
@@ -9206,7 +9804,8 @@
      ],
      "when": "2021"
     }
-   ]
+   ],
+   "verified": true
   },
   {
    "id": "best-record-vs-field",
@@ -36162,19 +36761,20 @@
    "id": "most-trades-in-24hrs",
    "name": "Most Trades in 24hrs",
    "category": "Trades",
-   "source": "seeded",
-   "metric": null,
-   "direction": null,
+   "source": "computed",
+   "metric": "trades_24h",
+   "direction": "max",
    "value": "3",
    "value_num": 3,
-   "when": "Week 5 2024, Week 7 2025",
-   "holder": "Joe, Alex",
+   "when": "Week 7 - 2021; Week 5 - 2024; Week 8 - 2025",
+   "holder": "Oleg; Joe; Alex",
    "holders": [
+    "Oleg",
     "Joe",
     "Alex"
    ],
    "league_level": false,
-   "team": "Project 2025, Double Dippers",
+   "team": "",
    "notes": [],
    "evidence": [],
    "replay": null,
@@ -36187,7 +36787,347 @@
    "needs_definition": null,
    "definition": null,
    "engine_gap": null,
-   "updated": "2026-11-02"
+   "updated": "2026-11-07",
+   "leaderboard": [
+    {
+     "value": "3",
+     "holder": "Oleg",
+     "when": "Week 7 - 2021",
+     "replay": null
+    },
+    {
+     "value": "3",
+     "holder": "Joe",
+     "when": "Week 5 - 2024",
+     "replay": null,
+     "detail": {
+      "kind": "facts",
+      "title": "3 trades in 24 hours · 2024",
+      "blocks": [
+       {
+        "head": "Joe",
+        "chip": null,
+        "rows": [
+         [
+          "Week 5",
+          "Ankit"
+         ],
+         [
+          "Week 5",
+          "Christian"
+         ],
+         [
+          "Week 5",
+          "Steven"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "value": "3",
+     "holder": "Alex",
+     "when": "Week 8 - 2025",
+     "replay": null,
+     "detail": {
+      "kind": "facts",
+      "title": "3 trades in 24 hours · 2025",
+      "blocks": [
+       {
+        "head": "Alex",
+        "chip": null,
+        "rows": [
+         [
+          "Week 8",
+          "Ben"
+         ],
+         [
+          "Week 8",
+          "Ankit"
+         ],
+         [
+          "Week 8",
+          "Aidan"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "value": "2",
+     "holder": "Aidan",
+     "when": "Week 7 - 2021",
+     "replay": null,
+     "detail": {
+      "kind": "facts",
+      "title": "2 trades in 24 hours · 2021",
+      "blocks": [
+       {
+        "head": "Aidan",
+        "chip": null,
+        "rows": [
+         [
+          "Week 7",
+          "Oleg"
+         ],
+         [
+          "Week 7",
+          "Oleg"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "value": "2",
+     "holder": "Joe",
+     "when": "Week 7 - 2021",
+     "replay": null,
+     "detail": {
+      "kind": "facts",
+      "title": "2 trades in 24 hours · 2021",
+      "blocks": [
+       {
+        "head": "Joe",
+        "chip": null,
+        "rows": [
+         [
+          "Week 7",
+          "Oleg"
+         ],
+         [
+          "Week 7",
+          "Steven"
+         ]
+        ]
+       }
+      ]
+     }
+    }
+   ],
+   "by_season": [
+    {
+     "s": 2026,
+     "n": 2,
+     "value": "2",
+     "holder": "Joe",
+     "holders": [
+      "Joe"
+     ],
+     "when": "Week 6 - 2026",
+     "detail": {
+      "kind": "facts",
+      "title": "2 trades in 24 hours · 2026",
+      "blocks": [
+       {
+        "head": "Joe",
+        "chip": null,
+        "rows": [
+         [
+          "Week 6",
+          "Steven"
+         ],
+         [
+          "Week 6",
+          "Alex"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "s": 2025,
+     "n": 3,
+     "value": "3",
+     "holder": "Alex",
+     "holders": [
+      "Alex"
+     ],
+     "when": "Week 8 - 2025",
+     "detail": {
+      "kind": "facts",
+      "title": "3 trades in 24 hours · 2025",
+      "blocks": [
+       {
+        "head": "Alex",
+        "chip": null,
+        "rows": [
+         [
+          "Week 8",
+          "Ben"
+         ],
+         [
+          "Week 8",
+          "Ankit"
+         ],
+         [
+          "Week 8",
+          "Aidan"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "s": 2024,
+     "n": 3,
+     "value": "3",
+     "holder": "Joe",
+     "holders": [
+      "Joe"
+     ],
+     "when": "Week 5 - 2024",
+     "detail": {
+      "kind": "facts",
+      "title": "3 trades in 24 hours · 2024",
+      "blocks": [
+       {
+        "head": "Joe",
+        "chip": null,
+        "rows": [
+         [
+          "Week 5",
+          "Ankit"
+         ],
+         [
+          "Week 5",
+          "Christian"
+         ],
+         [
+          "Week 5",
+          "Steven"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "s": 2023,
+     "n": 2,
+     "value": "2",
+     "holder": "Alex",
+     "holders": [
+      "Alex"
+     ],
+     "when": "Week 3 - 2023",
+     "detail": {
+      "kind": "facts",
+      "title": "2 trades in 24 hours · 2023",
+      "blocks": [
+       {
+        "head": "Alex",
+        "chip": null,
+        "rows": [
+         [
+          "Week 3",
+          "Steven"
+         ],
+         [
+          "Week 3",
+          "Joe"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "s": 2022,
+     "n": 2,
+     "value": "2",
+     "holder": "Alex",
+     "holders": [
+      "Alex"
+     ],
+     "when": "Week 2 - 2022",
+     "detail": {
+      "kind": "facts",
+      "title": "2 trades in 24 hours · 2022",
+      "blocks": [
+       {
+        "head": "Alex",
+        "chip": null,
+        "rows": [
+         [
+          "Week 2",
+          "Ankit"
+         ],
+         [
+          "Week 2",
+          "Steven"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "s": 2021,
+     "n": 3,
+     "value": "3",
+     "holder": "Oleg",
+     "holders": [
+      "Oleg"
+     ],
+     "when": "Week 7 - 2021",
+     "detail": {
+      "kind": "facts",
+      "title": "3 trades in 24 hours · 2021",
+      "blocks": [
+       {
+        "head": "Oleg",
+        "chip": null,
+        "rows": [
+         [
+          "Week 7",
+          "Joe"
+         ],
+         [
+          "Week 7",
+          "Aidan"
+         ],
+         [
+          "Week 7",
+          "Aidan"
+         ]
+        ]
+       }
+      ]
+     }
+    }
+   ],
+   "detail": {
+    "kind": "facts",
+    "title": "3 trades in 24 hours · 2021",
+    "blocks": [
+     {
+      "head": "Oleg",
+      "chip": null,
+      "rows": [
+       [
+        "Week 7",
+        "Joe"
+       ],
+       [
+        "Week 7",
+        "Aidan"
+       ],
+       [
+        "Week 7",
+        "Aidan"
+       ]
+      ]
+     }
+    ]
+   },
+   "links": null,
+   "verified": true
   },
   {
    "id": "most-non-fab-trades-in-a-season-league",
@@ -36410,12 +37350,12 @@
    "id": "most-trades-in-a-season-league",
    "name": "Most Trades in a Season (League)",
    "category": "Trades",
-   "source": "seeded",
-   "metric": null,
-   "direction": null,
-   "value": "27",
-   "value_num": 27,
-   "when": "2024 & 2022",
+   "source": "computed",
+   "metric": "trades_league_all",
+   "direction": "max",
+   "value": "30",
+   "value_num": 30,
+   "when": "2022",
    "holder": "DTFClub",
    "holders": [
     "DTFClub"
@@ -36434,7 +37374,94 @@
    "needs_definition": null,
    "definition": null,
    "engine_gap": null,
-   "updated": "2026-11-02"
+   "updated": "2026-11-07",
+   "leaderboard": [
+    {
+     "value": "30",
+     "holder": "DTFClub",
+     "when": "2022",
+     "replay": null
+    },
+    {
+     "value": "27",
+     "holder": "DTFClub",
+     "when": "2024",
+     "replay": null
+    },
+    {
+     "value": "23",
+     "holder": "DTFClub",
+     "when": "2025",
+     "replay": null
+    },
+    {
+     "value": "14",
+     "holder": "DTFClub",
+     "when": "2023",
+     "replay": null
+    },
+    {
+     "value": "12",
+     "holder": "DTFClub",
+     "when": "2021",
+     "replay": null
+    }
+   ],
+   "by_season": [
+    {
+     "s": 2025,
+     "n": 23,
+     "value": "23",
+     "holder": "DTFClub",
+     "holders": [
+      "DTFClub"
+     ],
+     "when": "2025"
+    },
+    {
+     "s": 2024,
+     "n": 27,
+     "value": "27",
+     "holder": "DTFClub",
+     "holders": [
+      "DTFClub"
+     ],
+     "when": "2024"
+    },
+    {
+     "s": 2023,
+     "n": 14,
+     "value": "14",
+     "holder": "DTFClub",
+     "holders": [
+      "DTFClub"
+     ],
+     "when": "2023"
+    },
+    {
+     "s": 2022,
+     "n": 30,
+     "value": "30",
+     "holder": "DTFClub",
+     "holders": [
+      "DTFClub"
+     ],
+     "when": "2022"
+    },
+    {
+     "s": 2021,
+     "n": 12,
+     "value": "12",
+     "holder": "DTFClub",
+     "holders": [
+      "DTFClub"
+     ],
+     "when": "2021"
+    }
+   ],
+   "detail": null,
+   "links": null,
+   "verified": true
   },
   {
    "id": "most-non-fab-trades-in-a-season-team",
@@ -36713,9 +37740,9 @@
    "id": "most-trades-in-a-season-team",
    "name": "Most Trades in a Season (Team)",
    "category": "Trades",
-   "source": "seeded",
-   "metric": null,
-   "direction": null,
+   "source": "computed",
+   "metric": "trades_team_all",
+   "direction": "max",
    "value": "12",
    "value_num": 12,
    "when": "2022",
@@ -36737,7 +37764,94 @@
    "needs_definition": null,
    "definition": null,
    "engine_gap": null,
-   "updated": "2026-11-02"
+   "updated": "2026-11-02",
+   "leaderboard": [
+    {
+     "value": "12",
+     "holder": "Steven",
+     "when": "2022",
+     "replay": null
+    },
+    {
+     "value": "11",
+     "holder": "Joe",
+     "when": "2024",
+     "replay": null
+    },
+    {
+     "value": "10",
+     "holder": "Joe",
+     "when": "2022",
+     "replay": null
+    },
+    {
+     "value": "9",
+     "holder": "Alex",
+     "when": "2022",
+     "replay": null
+    },
+    {
+     "value": "9",
+     "holder": "Ankit",
+     "when": "2022",
+     "replay": null
+    }
+   ],
+   "by_season": [
+    {
+     "s": 2025,
+     "n": 9,
+     "value": "9",
+     "holder": "Joe",
+     "holders": [
+      "Joe"
+     ],
+     "when": "2025"
+    },
+    {
+     "s": 2024,
+     "n": 11,
+     "value": "11",
+     "holder": "Joe",
+     "holders": [
+      "Joe"
+     ],
+     "when": "2024"
+    },
+    {
+     "s": 2023,
+     "n": 8,
+     "value": "8",
+     "holder": "Joe",
+     "holders": [
+      "Joe"
+     ],
+     "when": "2023"
+    },
+    {
+     "s": 2022,
+     "n": 12,
+     "value": "12",
+     "holder": "Steven",
+     "holders": [
+      "Steven"
+     ],
+     "when": "2022"
+    },
+    {
+     "s": 2021,
+     "n": 6,
+     "value": "6",
+     "holder": "Joe",
+     "holders": [
+      "Joe"
+     ],
+     "when": "2021"
+    }
+   ],
+   "detail": null,
+   "links": null,
+   "verified": true
   },
   {
    "id": "most-teams-to-make-a-trade",
@@ -36773,12 +37887,12 @@
    "id": "most-fab-in-a-trade",
    "name": "Most FAB in a trade",
    "category": "Trades",
-   "source": "seeded",
-   "metric": null,
-   "direction": null,
+   "source": "computed",
+   "metric": "trade_fab",
+   "direction": "max",
    "value": "$121",
    "value_num": 121,
-   "when": "Week 11 - 2021",
+   "when": "Week 10 - 2021",
    "holder": "Steven & Ankit",
    "holders": [
     "Steven",
@@ -36798,7 +37912,329 @@
    "needs_definition": null,
    "definition": null,
    "engine_gap": null,
-   "updated": "2026-11-02"
+   "updated": "2026-11-07",
+   "leaderboard": [
+    {
+     "value": "$121",
+     "holder": "Steven & Ankit",
+     "when": "Week 10 - 2021",
+     "replay": null
+    },
+    {
+     "value": "$100",
+     "holder": "Steven & Ankit",
+     "when": "Week 5 - 2022",
+     "replay": null,
+     "detail": {
+      "kind": "facts",
+      "title": "Trade · Week 5, 2022",
+      "blocks": [
+       {
+        "head": "Steven & Ankit",
+        "chip": null,
+        "rows": [
+         [
+          "FAB moved",
+          "$100"
+         ],
+         [
+          "Who sent what",
+          "Steven to Ankit $100"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "value": "$85",
+     "holder": "Joe & Ankit",
+     "when": "Week 3 - 2022",
+     "replay": null,
+     "detail": {
+      "kind": "facts",
+      "title": "Trade · Week 3, 2022",
+      "blocks": [
+       {
+        "head": "Joe & Ankit",
+        "chip": null,
+        "rows": [
+         [
+          "FAB moved",
+          "$85"
+         ],
+         [
+          "Who sent what",
+          "Joe to Ankit $85"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "value": "$70",
+     "holder": "Joe & Ankit",
+     "when": "Week 11 - 2022",
+     "replay": null,
+     "detail": {
+      "kind": "facts",
+      "title": "Trade · Week 11, 2022",
+      "blocks": [
+       {
+        "head": "Joe & Ankit",
+        "chip": null,
+        "rows": [
+         [
+          "FAB moved",
+          "$70"
+         ],
+         [
+          "Who sent what",
+          "Joe to Ankit $70"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "value": "$50",
+     "holder": "Joe & Ankit",
+     "when": "Week 7 - 2026",
+     "replay": null,
+     "detail": {
+      "kind": "facts",
+      "title": "Trade · Week 7, 2026",
+      "blocks": [
+       {
+        "head": "Joe & Ankit",
+        "chip": null,
+        "rows": [
+         [
+          "FAB moved",
+          "$50"
+         ],
+         [
+          "Who sent what",
+          "Joe to Ankit $50"
+         ]
+        ]
+       }
+      ]
+     }
+    }
+   ],
+   "by_season": [
+    {
+     "s": 2026,
+     "n": 50,
+     "value": "$50",
+     "holder": "Joe & Ankit",
+     "holders": [
+      "Joe",
+      "Ankit"
+     ],
+     "when": "Week 7 - 2026",
+     "detail": {
+      "kind": "facts",
+      "title": "Trade · Week 7, 2026",
+      "blocks": [
+       {
+        "head": "Joe & Ankit",
+        "chip": null,
+        "rows": [
+         [
+          "FAB moved",
+          "$50"
+         ],
+         [
+          "Who sent what",
+          "Joe to Ankit $50"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "s": 2025,
+     "n": 35,
+     "value": "$35",
+     "holder": "Ankit & Christian",
+     "holders": [
+      "Ankit",
+      "Christian"
+     ],
+     "when": "Week 10 - 2025",
+     "detail": {
+      "kind": "facts",
+      "title": "Trade · Week 10, 2025",
+      "blocks": [
+       {
+        "head": "Ankit & Christian",
+        "chip": null,
+        "rows": [
+         [
+          "FAB moved",
+          "$35"
+         ],
+         [
+          "Who sent what",
+          "Christian to Ankit $35"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "s": 2024,
+     "n": 28,
+     "value": "$28",
+     "holder": "Steven & Ankit",
+     "holders": [
+      "Steven",
+      "Ankit"
+     ],
+     "when": "Week 12 - 2024",
+     "detail": {
+      "kind": "facts",
+      "title": "Trade · Week 12, 2024",
+      "blocks": [
+       {
+        "head": "Steven & Ankit",
+        "chip": null,
+        "rows": [
+         [
+          "FAB moved",
+          "$28"
+         ],
+         [
+          "Who sent what",
+          "Steven to Ankit $28"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "s": 2023,
+     "n": 33,
+     "value": "$33",
+     "holder": "Steven & Ankit",
+     "holders": [
+      "Steven",
+      "Ankit"
+     ],
+     "when": "Week 12 - 2023",
+     "detail": {
+      "kind": "facts",
+      "title": "Trade · Week 12, 2023",
+      "blocks": [
+       {
+        "head": "Steven & Ankit",
+        "chip": null,
+        "rows": [
+         [
+          "FAB moved",
+          "$33"
+         ],
+         [
+          "Who sent what",
+          "Steven to Ankit $33"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "s": 2022,
+     "n": 100,
+     "value": "$100",
+     "holder": "Steven & Ankit",
+     "holders": [
+      "Steven",
+      "Ankit"
+     ],
+     "when": "Week 5 - 2022",
+     "detail": {
+      "kind": "facts",
+      "title": "Trade · Week 5, 2022",
+      "blocks": [
+       {
+        "head": "Steven & Ankit",
+        "chip": null,
+        "rows": [
+         [
+          "FAB moved",
+          "$100"
+         ],
+         [
+          "Who sent what",
+          "Steven to Ankit $100"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "s": 2021,
+     "n": 121,
+     "value": "$121",
+     "holder": "Steven & Ankit",
+     "holders": [
+      "Steven",
+      "Ankit"
+     ],
+     "when": "Week 10 - 2021",
+     "detail": {
+      "kind": "facts",
+      "title": "Trade · Week 10, 2021",
+      "blocks": [
+       {
+        "head": "Steven & Ankit",
+        "chip": null,
+        "rows": [
+         [
+          "FAB moved",
+          "$121"
+         ],
+         [
+          "Who sent what",
+          "Steven to Ankit $121"
+         ]
+        ]
+       }
+      ]
+     }
+    }
+   ],
+   "detail": {
+    "kind": "facts",
+    "title": "Trade · Week 10, 2021",
+    "blocks": [
+     {
+      "head": "Steven & Ankit",
+      "chip": null,
+      "rows": [
+       [
+        "FAB moved",
+        "$121"
+       ],
+       [
+        "Who sent what",
+        "Steven to Ankit $121"
+       ]
+      ]
+     }
+    ]
+   },
+   "links": null,
+   "verified": true
   },
   {
    "id": "fastest-trade-acceptance-to-player-start",
@@ -47274,18 +48710,18 @@
    "id": "most-fab-owned-at-one-time",
    "name": "Most FAB owned at one time",
    "category": "FAB & Waivers",
-   "source": "seeded",
-   "metric": null,
-   "direction": null,
-   "value": "$205",
-   "value_num": 205,
-   "when": "Week 1 - 2025",
-   "holder": "Ryan",
+   "source": "computed",
+   "metric": "fab_owned",
+   "direction": "max",
+   "value": "$284",
+   "value_num": 284,
+   "when": "Week 3 - 2022",
+   "holder": "Ankit",
    "holders": [
-    "Ryan"
+    "Ankit"
    ],
    "league_level": false,
-   "team": "Like Father Like Son",
+   "team": "Behenchode",
    "notes": [],
    "evidence": [],
    "replay": null,
@@ -47298,24 +48734,111 @@
    "needs_definition": null,
    "definition": null,
    "engine_gap": null,
-   "updated": "2026-11-02"
+   "updated": "2026-11-07",
+   "leaderboard": [
+    {
+     "value": "$284",
+     "holder": "Ankit",
+     "when": "Week 3 - 2022",
+     "replay": null
+    },
+    {
+     "value": "$208",
+     "holder": "Ben",
+     "when": "Week 3 - 2026",
+     "replay": null
+    },
+    {
+     "value": "$205",
+     "holder": "Joe",
+     "when": "Week 5 - 2024",
+     "replay": null
+    },
+    {
+     "value": "$205",
+     "holder": "Ryan",
+     "when": "Week 1 - 2025",
+     "replay": null
+    },
+    {
+     "value": "$205",
+     "holder": "Joe",
+     "when": "Week 2 - 2025",
+     "replay": null
+    }
+   ],
+   "by_season": [
+    {
+     "s": 2026,
+     "n": 208,
+     "value": "$208",
+     "holder": "Ben",
+     "holders": [
+      "Ben"
+     ],
+     "when": "Week 3 - 2026"
+    },
+    {
+     "s": 2025,
+     "n": 205,
+     "value": "$205",
+     "holder": "Ryan",
+     "holders": [
+      "Ryan"
+     ],
+     "when": "Week 1 - 2025"
+    },
+    {
+     "s": 2024,
+     "n": 205,
+     "value": "$205",
+     "holder": "Joe",
+     "holders": [
+      "Joe"
+     ],
+     "when": "Week 5 - 2024"
+    },
+    {
+     "s": 2022,
+     "n": 284,
+     "value": "$284",
+     "holder": "Ankit",
+     "holders": [
+      "Ankit"
+     ],
+     "when": "Week 3 - 2022"
+    },
+    {
+     "s": 2021,
+     "n": 202,
+     "value": "$202",
+     "holder": "Joe",
+     "holders": [
+      "Joe"
+     ],
+     "when": "Week 2 - 2021"
+    }
+   ],
+   "detail": null,
+   "links": null,
+   "verified": true
   },
   {
    "id": "largest-fab-overbid",
    "name": "Largest FAB Overbid",
    "category": "FAB & Waivers",
-   "source": "seeded",
-   "metric": null,
-   "direction": null,
-   "value": "$131 ($194 total bid)",
-   "value_num": 131,
+   "source": "computed",
+   "metric": "fab_overbid",
+   "direction": "max",
+   "value": "$133 ($194 total bid)",
+   "value_num": 133,
    "when": "Week 5 - 2022",
    "holder": "Ankit - George Pickens",
    "holders": [
     "Ankit"
    ],
    "league_level": false,
-   "team": "ATTAAAAACK!",
+   "team": "Behenchode",
    "notes": [],
    "evidence": [],
    "replay": null,
@@ -47328,18 +48851,422 @@
    "needs_definition": null,
    "definition": null,
    "engine_gap": null,
-   "updated": "2026-11-02"
+   "updated": "2026-11-07",
+   "leaderboard": [
+    {
+     "value": "$133 ($194 total bid)",
+     "holder": "Ankit - George Pickens",
+     "when": "Week 5 - 2022",
+     "replay": null
+    },
+    {
+     "value": "$115 ($150 total bid)",
+     "holder": "Jake - Braelon Allen",
+     "when": "Week 4 - 2026",
+     "replay": null,
+     "detail": {
+      "kind": "facts",
+      "title": "Claim · Week 4, 2026",
+      "blocks": [
+       {
+        "head": "Jake",
+        "chip": null,
+        "rows": [
+         [
+          "Player",
+          "Braelon Allen"
+         ],
+         [
+          "Winning bid",
+          "$150"
+         ],
+         [
+          "Next highest bid",
+          "$35"
+         ],
+         [
+          "Teams beaten",
+          "6"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "value": "$81 ($81 total bid)",
+     "holder": "Christian - Gardner Minshew II",
+     "when": "Week 9 - 2026",
+     "replay": null,
+     "detail": {
+      "kind": "facts",
+      "title": "Claim · Week 9, 2026",
+      "blocks": [
+       {
+        "head": "Christian",
+        "chip": null,
+        "rows": [
+         [
+          "Player",
+          "Gardner Minshew II"
+         ],
+         [
+          "Winning bid",
+          "$81"
+         ],
+         [
+          "Next highest bid",
+          "$0"
+         ],
+         [
+          "Teams beaten",
+          "1"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "value": "$68 ($102 total bid)",
+     "holder": "Ryan - Isaac Guerendo",
+     "when": "Week 14 - 2024",
+     "replay": null,
+     "detail": {
+      "kind": "facts",
+      "title": "Claim · Week 14, 2024",
+      "blocks": [
+       {
+        "head": "Ryan",
+        "chip": null,
+        "rows": [
+         [
+          "Player",
+          "Isaac Guerendo"
+         ],
+         [
+          "Winning bid",
+          "$102"
+         ],
+         [
+          "Next highest bid",
+          "$34"
+         ],
+         [
+          "Teams beaten",
+          "6"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "value": "$65 ($80 total bid)",
+     "holder": "Ankit - Alec Pierce",
+     "when": "Week 6 - 2022",
+     "replay": null,
+     "detail": {
+      "kind": "facts",
+      "title": "Claim · Week 6, 2022",
+      "blocks": [
+       {
+        "head": "Ankit",
+        "chip": null,
+        "rows": [
+         [
+          "Player",
+          "Alec Pierce"
+         ],
+         [
+          "Winning bid",
+          "$80"
+         ],
+         [
+          "Next highest bid",
+          "$15"
+         ],
+         [
+          "Teams beaten",
+          "2"
+         ]
+        ]
+       }
+      ]
+     }
+    }
+   ],
+   "by_season": [
+    {
+     "s": 2026,
+     "n": 115,
+     "value": "$115 ($150 total bid)",
+     "holder": "Jake - Braelon Allen",
+     "holders": [
+      "Jake"
+     ],
+     "when": "Week 4 - 2026",
+     "detail": {
+      "kind": "facts",
+      "title": "Claim · Week 4, 2026",
+      "blocks": [
+       {
+        "head": "Jake",
+        "chip": null,
+        "rows": [
+         [
+          "Player",
+          "Braelon Allen"
+         ],
+         [
+          "Winning bid",
+          "$150"
+         ],
+         [
+          "Next highest bid",
+          "$35"
+         ],
+         [
+          "Teams beaten",
+          "6"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "s": 2025,
+     "n": 53,
+     "value": "$53 ($174 total bid)",
+     "holder": "Haan - Tyrone Tracy Jr.",
+     "holders": [
+      "Haan"
+     ],
+     "when": "Week 9 - 2025",
+     "detail": {
+      "kind": "facts",
+      "title": "Claim · Week 9, 2025",
+      "blocks": [
+       {
+        "head": "Haan",
+        "chip": null,
+        "rows": [
+         [
+          "Player",
+          "Tyrone Tracy Jr."
+         ],
+         [
+          "Winning bid",
+          "$174"
+         ],
+         [
+          "Next highest bid",
+          "$121"
+         ],
+         [
+          "Teams beaten",
+          "6"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "s": 2024,
+     "n": 68,
+     "value": "$68 ($102 total bid)",
+     "holder": "Ryan - Isaac Guerendo",
+     "holders": [
+      "Ryan"
+     ],
+     "when": "Week 14 - 2024",
+     "detail": {
+      "kind": "facts",
+      "title": "Claim · Week 14, 2024",
+      "blocks": [
+       {
+        "head": "Ryan",
+        "chip": null,
+        "rows": [
+         [
+          "Player",
+          "Isaac Guerendo"
+         ],
+         [
+          "Winning bid",
+          "$102"
+         ],
+         [
+          "Next highest bid",
+          "$34"
+         ],
+         [
+          "Teams beaten",
+          "6"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "s": 2023,
+     "n": 53,
+     "value": "$53 ($80 total bid)",
+     "holder": "Alex - Joshua Kelley",
+     "holders": [
+      "Alex"
+     ],
+     "when": "Week 2 - 2023",
+     "detail": {
+      "kind": "facts",
+      "title": "Claim · Week 2, 2023",
+      "blocks": [
+       {
+        "head": "Alex",
+        "chip": null,
+        "rows": [
+         [
+          "Player",
+          "Joshua Kelley"
+         ],
+         [
+          "Winning bid",
+          "$80"
+         ],
+         [
+          "Next highest bid",
+          "$27"
+         ],
+         [
+          "Teams beaten",
+          "4"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "s": 2022,
+     "n": 133,
+     "value": "$133 ($194 total bid)",
+     "holder": "Ankit - George Pickens",
+     "holders": [
+      "Ankit"
+     ],
+     "when": "Week 5 - 2022",
+     "detail": {
+      "kind": "facts",
+      "title": "Claim · Week 5, 2022",
+      "blocks": [
+       {
+        "head": "Ankit",
+        "chip": null,
+        "rows": [
+         [
+          "Player",
+          "George Pickens"
+         ],
+         [
+          "Winning bid",
+          "$194"
+         ],
+         [
+          "Next highest bid",
+          "$61"
+         ],
+         [
+          "Teams beaten",
+          "6"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "s": 2021,
+     "n": 44,
+     "value": "$44 ($86 total bid)",
+     "holder": "Aidan - D'Ernest Johnson",
+     "holders": [
+      "Aidan"
+     ],
+     "when": "Week 7 - 2021",
+     "detail": {
+      "kind": "facts",
+      "title": "Claim · Week 7, 2021",
+      "blocks": [
+       {
+        "head": "Aidan",
+        "chip": null,
+        "rows": [
+         [
+          "Player",
+          "D'Ernest Johnson"
+         ],
+         [
+          "Winning bid",
+          "$86"
+         ],
+         [
+          "Next highest bid",
+          "$42"
+         ],
+         [
+          "Teams beaten",
+          "4"
+         ]
+        ]
+       }
+      ]
+     }
+    }
+   ],
+   "detail": {
+    "kind": "facts",
+    "title": "Claim · Week 5, 2022",
+    "blocks": [
+     {
+      "head": "Ankit",
+      "chip": null,
+      "rows": [
+       [
+        "Player",
+        "George Pickens"
+       ],
+       [
+        "Winning bid",
+        "$194"
+       ],
+       [
+        "Next highest bid",
+        "$61"
+       ],
+       [
+        "Teams beaten",
+        "6"
+       ]
+      ]
+     }
+    ]
+   },
+   "links": null,
+   "verified": true
   },
   {
    "id": "best-fab-bid-lowest-over-next-bid",
    "name": "Best FAB Bid (Lowest % over next bid)",
    "category": "FAB & Waivers",
-   "source": "seeded",
-   "metric": null,
-   "direction": null,
+   "source": "computed",
+   "metric": "fab_bestbid",
+   "direction": "min",
    "value": "0%; $149",
-   "value_num": 0,
-   "when": "Week 3 - 2023",
+   "value_num": -0.000149,
+   "when": "Week 4 - 2023",
    "holder": "Joe - De'Von Achane",
    "holders": [
     "Joe"
@@ -47360,7 +49287,411 @@
    "needs_definition": null,
    "definition": null,
    "engine_gap": null,
-   "updated": "2026-11-02"
+   "updated": "2026-11-07",
+   "leaderboard": [
+    {
+     "value": "0%; $149",
+     "holder": "Joe - De'Von Achane",
+     "when": "Week 4 - 2023",
+     "replay": null
+    },
+    {
+     "value": "0%; $23",
+     "holder": "Ankit - Michael Wilson",
+     "when": "Week 5 - 2023",
+     "replay": null,
+     "detail": {
+      "kind": "facts",
+      "title": "Claim · Week 5, 2023",
+      "blocks": [
+       {
+        "head": "Ankit",
+        "chip": null,
+        "rows": [
+         [
+          "Player",
+          "Michael Wilson"
+         ],
+         [
+          "Winning bid",
+          "$23"
+         ],
+         [
+          "Next highest bid",
+          "$23"
+         ],
+         [
+          "Teams beaten",
+          "3"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "value": "0%; $22",
+     "holder": "Haan - James Cook III",
+     "when": "Week 14 - 2022",
+     "replay": null,
+     "detail": {
+      "kind": "facts",
+      "title": "Claim · Week 14, 2022",
+      "blocks": [
+       {
+        "head": "Haan",
+        "chip": null,
+        "rows": [
+         [
+          "Player",
+          "James Cook III"
+         ],
+         [
+          "Winning bid",
+          "$22"
+         ],
+         [
+          "Next highest bid",
+          "$22"
+         ],
+         [
+          "Teams beaten",
+          "1"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "value": "0%; $15",
+     "holder": "Aidan - Tre Tucker",
+     "when": "Week 4 - 2025",
+     "replay": null,
+     "detail": {
+      "kind": "facts",
+      "title": "Claim · Week 4, 2025",
+      "blocks": [
+       {
+        "head": "Aidan",
+        "chip": null,
+        "rows": [
+         [
+          "Player",
+          "Tre Tucker"
+         ],
+         [
+          "Winning bid",
+          "$15"
+         ],
+         [
+          "Next highest bid",
+          "$15"
+         ],
+         [
+          "Teams beaten",
+          "3"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "value": "0%; $13",
+     "holder": "Ankit - Detroit Lions",
+     "when": "Week 11 - 2024",
+     "replay": null,
+     "detail": {
+      "kind": "facts",
+      "title": "Claim · Week 11, 2024",
+      "blocks": [
+       {
+        "head": "Ankit",
+        "chip": null,
+        "rows": [
+         [
+          "Player",
+          "Detroit Lions"
+         ],
+         [
+          "Winning bid",
+          "$13"
+         ],
+         [
+          "Next highest bid",
+          "$13"
+         ],
+         [
+          "Teams beaten",
+          "3"
+         ]
+        ]
+       }
+      ]
+     }
+    }
+   ],
+   "by_season": [
+    {
+     "s": 2026,
+     "n": 5.999929,
+     "value": "6%; $71",
+     "holder": "Aidan - Will Shipley",
+     "holders": [
+      "Aidan"
+     ],
+     "when": "Week 4 - 2026",
+     "detail": {
+      "kind": "facts",
+      "title": "Claim · Week 4, 2026",
+      "blocks": [
+       {
+        "head": "Aidan",
+        "chip": null,
+        "rows": [
+         [
+          "Player",
+          "Will Shipley"
+         ],
+         [
+          "Winning bid",
+          "$71"
+         ],
+         [
+          "Next highest bid",
+          "$67"
+         ],
+         [
+          "Teams beaten",
+          "8"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "s": 2025,
+     "n": -1.4999999999999999e-05,
+     "value": "0%; $15",
+     "holder": "Aidan - Tre Tucker",
+     "holders": [
+      "Aidan"
+     ],
+     "when": "Week 4 - 2025",
+     "detail": {
+      "kind": "facts",
+      "title": "Claim · Week 4, 2025",
+      "blocks": [
+       {
+        "head": "Aidan",
+        "chip": null,
+        "rows": [
+         [
+          "Player",
+          "Tre Tucker"
+         ],
+         [
+          "Winning bid",
+          "$15"
+         ],
+         [
+          "Next highest bid",
+          "$15"
+         ],
+         [
+          "Teams beaten",
+          "3"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "s": 2024,
+     "n": -1.3e-05,
+     "value": "0%; $13",
+     "holder": "Ankit - Detroit Lions",
+     "holders": [
+      "Ankit"
+     ],
+     "when": "Week 11 - 2024",
+     "detail": {
+      "kind": "facts",
+      "title": "Claim · Week 11, 2024",
+      "blocks": [
+       {
+        "head": "Ankit",
+        "chip": null,
+        "rows": [
+         [
+          "Player",
+          "Detroit Lions"
+         ],
+         [
+          "Winning bid",
+          "$13"
+         ],
+         [
+          "Next highest bid",
+          "$13"
+         ],
+         [
+          "Teams beaten",
+          "3"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "s": 2023,
+     "n": -0.000149,
+     "value": "0%; $149",
+     "holder": "Joe - De'Von Achane",
+     "holders": [
+      "Joe"
+     ],
+     "when": "Week 4 - 2023",
+     "detail": {
+      "kind": "facts",
+      "title": "Claim · Week 4, 2023",
+      "blocks": [
+       {
+        "head": "Joe",
+        "chip": null,
+        "rows": [
+         [
+          "Player",
+          "De'Von Achane"
+         ],
+         [
+          "Winning bid",
+          "$149"
+         ],
+         [
+          "Next highest bid",
+          "$149"
+         ],
+         [
+          "Teams beaten",
+          "6"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "s": 2022,
+     "n": -2.2e-05,
+     "value": "0%; $22",
+     "holder": "Haan - James Cook III",
+     "holders": [
+      "Haan"
+     ],
+     "when": "Week 14 - 2022",
+     "detail": {
+      "kind": "facts",
+      "title": "Claim · Week 14, 2022",
+      "blocks": [
+       {
+        "head": "Haan",
+        "chip": null,
+        "rows": [
+         [
+          "Player",
+          "James Cook III"
+         ],
+         [
+          "Winning bid",
+          "$22"
+         ],
+         [
+          "Next highest bid",
+          "$22"
+         ],
+         [
+          "Teams beaten",
+          "1"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "s": 2021,
+     "n": 3.099967,
+     "value": "3%; $33",
+     "holder": "Aidan - Chuba Hubbard",
+     "holders": [
+      "Aidan"
+     ],
+     "when": "Week 13 - 2021",
+     "detail": {
+      "kind": "facts",
+      "title": "Claim · Week 13, 2021",
+      "blocks": [
+       {
+        "head": "Aidan",
+        "chip": null,
+        "rows": [
+         [
+          "Player",
+          "Chuba Hubbard"
+         ],
+         [
+          "Winning bid",
+          "$33"
+         ],
+         [
+          "Next highest bid",
+          "$32"
+         ],
+         [
+          "Teams beaten",
+          "4"
+         ]
+        ]
+       }
+      ]
+     }
+    }
+   ],
+   "detail": {
+    "kind": "facts",
+    "title": "Claim · Week 4, 2023",
+    "blocks": [
+     {
+      "head": "Joe",
+      "chip": null,
+      "rows": [
+       [
+        "Player",
+        "De'Von Achane"
+       ],
+       [
+        "Winning bid",
+        "$149"
+       ],
+       [
+        "Next highest bid",
+        "$149"
+       ],
+       [
+        "Teams beaten",
+        "6"
+       ]
+      ]
+     }
+    ]
+   },
+   "links": null,
+   "verified": true
   },
   {
    "id": "earliest-fab-bankruptcy",
