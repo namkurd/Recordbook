@@ -130,6 +130,19 @@ section.cat.closed .rows{display:none}
 .chg .d{color:var(--muted);font-size:12.5px}
 .chg .why{font-size:12px;color:var(--muted)}
 .arrow{color:var(--muted)}
+.rlay.chgv{grid-template-columns:minmax(0,1fr);max-width:860px}
+.cgrp{margin:18px 0 0}.cgrp h3{margin:0 0 8px;font-size:13px;font-weight:700;letter-spacing:.02em;color:var(--muted);display:flex;gap:8px;align-items:baseline}.cgrp h3 span{font-weight:400;font-size:12px;opacity:.8}
+.clist{display:flex;flex-direction:column;gap:8px}
+.cc{--t:var(--muted);background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--t);border-radius:10px;padding:11px 14px 10px}
+.cc.k-break{--t:#3fb97a}.cc.k-tie{--t:#5aa9ff}.cc.k-reconcile{--t:#e0a23a}.cc.k-blocked{--t:#e5484d}.cc.k-seed{--t:#8a93a6}
+.cc .top{display:flex;align-items:baseline;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.cc .nm{font-weight:700;font-size:15px;color:var(--text);text-decoration:none}.cc a.nm:hover{text-decoration:underline}
+.cc .tag{font-size:11px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--t);border:1px solid color-mix(in srgb,var(--t) 55%,transparent);border-radius:999px;padding:1px 8px;white-space:nowrap}
+.cc .mk{margin-top:6px;display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;font-variant-numeric:tabular-nums}
+.cc .mk .o{color:var(--muted);text-decoration:line-through;text-decoration-color:color-mix(in srgb,var(--muted) 60%,transparent);font-size:14px}
+.cc .mk .ar{color:var(--muted)}.cc .mk .n{font-size:19px;font-weight:700;color:var(--text)}
+.cc .who{margin-top:3px;font-size:13.5px;color:var(--text)}.cc .who .m{color:var(--muted)}
+.cc .nt{margin-top:5px;font-size:12px;color:var(--muted)}
 /* drawer: side panel on laptop, bottom sheet on phone */
 .scrim{position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:40;opacity:0;pointer-events:none;transition:opacity .15s}
 .scrim.on{opacity:1;pointer-events:auto}
@@ -539,14 +552,33 @@ function chgHTML(e,showName){
   var nm=e.name?(showName?'<a href="?r='+esc(e.record)+'" data-open="'+esc(e.record)+'"><b>'+esc(e.name)+"</b></a><br>":""):"";
   var body=e.old&&!e.new?"<b>Deleted:</b> "+esc(e.old.value)+" ("+esc(e.old.holder)+")":e.old&&e.new?esc(e.old.value)+" ("+esc(e.old.holder)+') <span class="arrow">→</span> <b>'+esc(e.new.value)+"</b> ("+esc(e.new.holder)+", "+esc(e.new.when||"")+")":e.new?"<b>"+esc(e.new.value||e.new.holder||"")+"</b> "+esc(e.new.holder&&e.new.value?"("+e.new.holder+")":""):"";
   return '<div class="chg"><div class="d">'+esc((e.ts||"").slice(0,10))+'</div><div>'+nm+body+'<div class="why">'+esc(CAUSE[e.cause]||e.cause)+(e.note?" · "+esc(e.note):"")+"</div></div></div>"}
+var TAGK={"auto:break":["Record broken","break"],"auto:reconcile":["Corrected","reconcile"],"auto:tie":["Tied","tie"],"auto:blocked":["Blocked","blocked"],"seed:sheet":["Imported","seed"],"manual:new":["Record broken","break"],"manual:correction":["Corrected","reconcile"],"manual:add":["Added","tie"],"manual:delete":["Deleted","blocked"]};
+var MON=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+function fmtDay(d){var p=d.split("-");return p.length===3?MON[+p[1]-1]+" "+(+p[2])+", "+p[0]:d}
+/* the holder text ends with the week or season it happened in; keep it on its own muted line */
+function chgCard(e){
+  var t=TAGK[e.cause]||[CAUSE[e.cause]||e.cause,"seed"],o=e.old,n=e.new;
+  var nm=e.name?'<a class="nm" href="?r='+esc(e.record)+'" data-open="'+esc(e.record)+'">'+esc(e.name)+"</a>":'<span class="nm">'+esc(e.note||"")+"</span>";
+  var mk="",who="";
+  if(o&&n&&o.value!==n.value)mk='<span class="o">'+esc(o.value)+'</span><span class="ar">\u2192</span><span class="n">'+esc(n.value)+"</span>";
+  else if(n&&(n.value||o&&o.value))mk='<span class="n">'+esc(n.value||o.value)+"</span>";
+  else if(o)mk='<span class="o">'+esc(o.value)+"</span>";
+  if(n&&(n.holder||n.when))who='<div class="who">'+esc(n.holder||"")+(n.when?' <span class="m">\u00b7 '+esc(n.when)+"</span>":"")+"</div>";
+  else if(o)who='<div class="who">'+esc(o.holder||"")+"</div>";
+  var was=o&&n&&o.holder&&n.holder&&o.holder!==n.holder?'<div class="nt">Was: '+esc(o.holder)+(o.when?" \u00b7 "+esc(o.when):"")+"</div>":"";
+  var note=e.note&&e.name?'<div class="nt">'+esc(e.note)+"</div>":"";
+  return'<article class="cc k-'+t[1]+'"><div class="top">'+nm+'<span class="tag">'+esc(t[0])+"</span></div>"+(mk?'<div class="mk">'+mk+"</div>":"")+who+was+note+"</article>"}
 function renderChanges(){
   var list=S.log.filter(function(e){if(e.record==="*")return true;var r=S.recs.filter(function(x){return x.id===e.record})[0];return !r||matches(r)});
-  $("main").innerHTML='<div class="count">'+list.length+' changes</div><div class="log">'+(list.map(function(e){return chgHTML(e,true)}).join("")||'<div class="empty">Nothing yet.</div>')+"</div>"}
+  var by={},days=[];list.forEach(function(e){var d=(e.ts||"").slice(0,10);if(!by[d]){by[d]=[];days.push(d)}by[d].push(e)});
+  days.sort().reverse();
+  $("main").innerHTML=days.length?days.map(function(d){return'<section class="cgrp"><h3>'+esc(fmtDay(d))+" <span>"+by[d].length+(by[d].length===1?" change":" changes")+'</span></h3><div class="clist">'+by[d].map(chgCard).join("")+"</div></section>"}).join(""):'<div class="empty">Nothing yet.</div>'}
 function renderBanner(){
   var rc=S.recs.filter(recent);if(!rc.length||S.view!=="records"||S.opts.has("recent")||S.bannerOff){$("banner").innerHTML="";return}
   $("banner").innerHTML='<div class="strip"><span class="t"><b>New:</b> '+rc.slice(0,3).map(function(r){return esc(r.name)+" "+esc(shortVal(r.value))}).join(" · ")+(rc.length>3?" · +"+(rc.length-3):"")+'</span><button id="bnShow">View</button><button id="bnX" aria-label="Dismiss">✕</button></div>';
   $("bnShow").onclick=function(){S.opts.add("recent");render()};$("bnX").onclick=function(){S.bannerOff=1;renderBanner()}}
 function renderCats(){
+  var lay=document.querySelector(".rlay");if(lay)lay.classList.toggle("chgv",S.view==="changes");
   var box=$("cats");box.hidden=S.view!=="records";if(box.hidden)return;
   var save=S.cats;S.cats=new Set();var counts={};S.recs.filter(matches).forEach(function(r){counts[r.category]=(counts[r.category]||0)+1});S.cats=save;
   box.innerHTML='<button class="cchip all'+(S.cats.size?"":" on")+'" data-c="" aria-pressed="'+!S.cats.size+'">All types</button>'+
