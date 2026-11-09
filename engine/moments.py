@@ -26,7 +26,7 @@ def make(d, cache, names):
 
     def zeros(r): return [p for p in r["t"]["zeros"] if p != "0" and not _isdef(p)]
     qb_out = d.raw.get("qb_out") or set()
-    def shots(r): return [x for x in r["t"]["shot"] if x[0] != "0" and (r["s"], r["w"], r["rid"], str(x[0])) not in qb_out]      # a QB ruled out in his game is not a Shotgun
+    def shots(r): return [x for x in r["t"]["shot"] if x[0] != "0" and (r["s"], r["w"], r["rid"], str(x[0])) not in qb_out]      # a starter ruled out in his game is not a Shotgun
     def fact(title, who, rows_):
         return {"kind": "facts", "title": title, "blocks": [{"head": who, "chip": None, "rows": rows_}]}
     def ref(r): return r["rid"], r["g"]["opp_rid"]
