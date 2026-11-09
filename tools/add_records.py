@@ -72,7 +72,7 @@ NEW += [
  ("Games & Weeks", "Most Points on Thursday Night (Team)", "thu_pts", "max", "Most points from the Thursday-night game in one week by one team's starters." + S21b),
  ("Games & Weeks", "Most Points on Monday Night (Team)", "mon_pts", "max", "Most points from Monday-night games in one week by one team's starters." + S21b),
  ("Sit / Start", "Most Points on Bench in a Season", "bench_season", "max", "Total points left on the bench across a regular season (every rostered player not in the starting lineup)." + S21b),
- ("Sit / Start", "Most Shotguns in a Week (Team)", "shot_week", "max", "A Shotgun is a score of 0 or less from a non-defense starter who took the field and was not ruled out in the game (a QB whose backup's points the league credited, or any starter Sleeper marked Out, IR or PUP while his game was on; tracked from 2026). The most for one team in one week." + S21b),
+ ("Sit / Start", "Most Shotguns in a Week (Team)", "shot_week", "max", "A Shotgun is a score of 0 or less from a non-defense starter who took the field and was not ruled out in the game (a QB whose backup's points the league credited, or any starter Sleeper marked Out, IR or PUP before the 2nd half of his game; tracked from 2026). The most for one team in one week." + S21b),
  ("Sit / Start", "Most Shotguns in a Season (Team)", "shot_season", "max", "The most Shotguns by one team in a season." + S21b),
  ("Rivalries", "Longest Head-to-Head Win Streak vs One Opponent", "rivalry_streak", "max", "Most consecutive wins by one manager over the same opponent (regular season and playoffs)." + S21b),
  ("Rivalries", "Most Meetings Between Two Managers", "rivalry_meetings", "max", "The most games between the same two managers." + S21b),
