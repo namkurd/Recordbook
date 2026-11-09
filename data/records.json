@@ -627,13 +627,13 @@
     },
     {
      "value": "1",
-     "holder": "Ryan",
+     "holder": "Alex",
      "when": "2011",
      "replay": null
     },
     {
      "value": "1",
-     "holder": "Alex",
+     "holder": "Ryan",
      "when": "2011",
      "replay": null
     }
@@ -85856,7 +85856,7 @@
    "size_sensitive": false,
    "needs_definition": null,
    "engine_gap": null,
-   "definition": "A Shotgun is a score of 0 or less from a non-defense starter who took the field. The most for one team in one week. Counts games since 2021, when Rumble Central's records begin.",
+   "definition": "A Shotgun is a score of 0 or less from a non-defense starter who took the field and was not ruled out in the game (a starting QB whose backup's points the league credited does not count). The most for one team in one week. Counts games since 2021, when Rumble Central's records begin.",
    "updated": "2026-11-03",
    "leaderboard": [
     {
