@@ -53,7 +53,7 @@ def load():
     hist = fetch("sleepersheet", "data/history.json")["seasons"]
     play = fetch("sleepersheet", "data/playoffs_history.json")["games"]
     idx = fetch("sleeperliverumbles", "seasons/index.json")
-    games, rosters, seasons, epa, leagues = [], {}, {int(y): v for y, v in hist.items()}, {}, {}
+    games, rosters, seasons, epa, leagues, qb_out = [], {}, {int(y): v for y, v in hist.items()}, {}, {}, set()
     cur = int(idx["current"])
     for y in sorted({int(s["season"]) for s in idx["seasons"]} | {cur}):
         try:
@@ -64,6 +64,9 @@ def load():
         except Exception: pass
         name = {int(s["roster_id"]): s["manager"] for s in d["standings"]}
         rosters[y] = name; leagues[y] = d.get("league_id")
+        for e in d.get("qb_adjustments") or []:      # a starting QB ruled out in his game, whose backup's points the league credited (confirmed, or likely: the status flipped to Out in the game)
+            if e.get("confidence") in ("confirmed", "likely") and e.get("injured_qb"):
+                qb_out.add((y, int(e["week"]), int(e["roster_id"]), str(e["injured_qb"]["player_id"])))
         allw = dict(d["weekly"])
         for wk, rows in (d.get("extra_weekly") or {}).items(): allw[wk] = rows
         n_reg = len(d["weekly"])
@@ -86,4 +89,12 @@ def load():
     extra["picks"] = extra_picks
     try: extra["auction_slots"] = fetch("sleeperauction", "site/data.json").get("pos_slots") or {}
     except Exception as e: print("WARN could not load auction pos_slots", e); extra["auction_slots"] = {}
-    return {"txns": transactions(leagues, cur), "epa": epa, "seasons": seasons, "playoffs": play, "games": games, "rosters": rosters, "current": cur, **extra}
+    # Starters of any position Rumble Central logged as ruled out during their own game (capture_live_qb_injuries.py), or that are entered by hand
+    # (the league's rule: ruled out before the 2nd half = not a Shotgun, so a capture made after the 2nd half began does not count; hand entries always do)
+    for name, key, pick in (("live_injury_captures.json", "captures", lambda e: (e.get("player") or {}).get("player_id")),
+                            ("injury_overrides.json", "ruled_out", lambda e: e.get("player_id"))):
+        try:
+            for e in fetch("sleeperliverumbles", name).get(key) or []:
+                if pick(e) is not None and not e.get("second_half_started"): qb_out.add((int(e["season"]), int(e["week"]), int(e["roster_id"]), str(pick(e))))
+        except Exception: pass
+    return {"qb_out": qb_out, "txns": transactions(leagues, cur), "epa": epa, "seasons": seasons, "playoffs": play, "games": games, "rosters": rosters, "current": cur, **extra}
