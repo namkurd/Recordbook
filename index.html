@@ -352,7 +352,7 @@ function eraParts(r){
     return{value:v,holder:o.m,when:when,replay:null,links:null,detail:null}};
   var all=list.map(txt),top=all.slice(0,5),b=top[0],ties=list.filter(function(o){return o.n===list[0].n});
   return Object.assign({},r,{value:b.value+(P.fmt==="par"?" ("+list[0].w+" "+P.unit+")":""),holder:ties.map(function(o){return o.m}).join(", "),holders:ties.map(function(o){return o.m}),
-    when:ties.map(function(o){return all[list.indexOf(o)].when}).filter(function(w,i,a){return a.indexOf(w)===i}).join("; ")+(P.when==="years"||P.agg==="streak"?"":" (era)"),team:"",replay:null,links:r.links,detail:null,previous:null,ties:[],evidence:[],leaderboard:top,_era:r,_ss:null})}
+    when:ties.map(function(o){return all[list.indexOf(o)].when}).filter(function(w,i,a){return a.indexOf(w)===i}).join("; ")+(P.when==="years"||P.agg==="streak"?"":" (era)"),team:"",replay:null,links:r.links,detail:null,cards:null,previous:null,ties:[],evidence:[],leaderboard:top,_era:r,_ss:null})}
 function eraView(r){
   if(!S.eras.size)return r;
   var key=r.id+"|"+[...S.eras].sort().join(","),hit=ERAVIEW[key];if(hit!==undefined)return hit;
@@ -360,15 +360,15 @@ function eraView(r){
   if(r.era_parts)out=eraParts(r);
   else if(r.by_era){var ok=Object.keys(r.by_era).filter(function(k){return S.eras.has(k)}).map(function(k){return r.by_era[k]});
     if(ok.length){var dr=r.direction==="min"?1:-1;ok.sort(function(a,b){return dr*(a.n-b.n)});var bb=ok[0];
-      out=Object.assign({},r,{value:bb.value,holder:bb.holder,holders:bb.holders||[],when:bb.when,team:"",replay:bb.replay||null,links:null,detail:null,previous:null,ties:[],evidence:[],
+      out=Object.assign({},r,{value:bb.value,holder:bb.holder,holders:bb.holders||[],when:bb.when,team:"",replay:bb.replay||null,links:null,detail:null,cards:null,previous:null,ties:[],evidence:[],
         leaderboard:ok.slice(0,5).map(function(e){return{value:e.value,holder:e.holder,when:e.when,replay:e.replay||null,links:null,detail:null}}),_era:r,_ss:null})}}
   else if(eraMatch(r))out=r;
   else if(r.by_season&&r.by_season.length){
     var ok=r.by_season.filter(function(e){return eraYear(e.s)});
     if(ok.length){
       var dir=r.direction==="min"?1:-1;ok=ok.slice().sort(function(a,b){return dir*(a.n-b.n)||b.s-a.s});var b=ok[0];
-      out=Object.assign({},r,{value:b.value,holder:b.holder,holders:b.holders||[],when:b.when,team:"",replay:b.replay||null,links:b.links||null,detail:b.detail||null,previous:null,ties:[],evidence:[],
-        leaderboard:ok.slice(0,5).map(function(e){return{value:e.value,holder:e.holder,when:e.when,replay:e.replay||null,links:e.links||null,detail:e.detail||null}}),_era:r,_ss:null})}}
+      out=Object.assign({},r,{value:b.value,holder:b.holder,holders:b.holders||[],when:b.when,team:"",replay:b.replay||null,links:b.links||null,detail:b.detail||null,cards:b.cards||null,previous:null,ties:[],evidence:[],
+        leaderboard:ok.slice(0,5).map(function(e,i){return{value:e.value,holder:e.holder,when:e.when,replay:e.replay||null,links:e.links||null,detail:i?e.detail||null:null,cards:i?e.cards||null:null}}),_era:r,_ss:null})}}
   ERAVIEW[key]=out;return out}
 function eraLine(r){var ss=seasonsOf(r);if(!ss.length)return"";var f=eraOf(ss[0]);if(!f||!ss.every(function(y){return eraOf(y)===f}))return"";var e=ERALIST.filter(function(x){return x.id===f})[0];return e?e.name+" ("+e.label+")":""}
 

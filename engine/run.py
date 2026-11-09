@@ -86,6 +86,9 @@ def by_season(m, cands, rev, d):
         if rp: e["replay"] = rp
         if c.get("links"): e["links"] = c["links"]
         if c.get("card"): e["detail"] = c["card"]
+        if m in CARDS.GAME_METRICS and c.get("rid") and c.get("opp_rid") and c.get("week") and c["season"] >= 2021:      # the matchup's Rumble Card, for an era view
+            pr = CARDS.pair(d, c["season"], c["week"], c["rid"], c["opp_rid"], m in CARDS.BY_SCORE)
+            if pr: e["cards"] = pr
         out.append(e)
     return out
 
