@@ -1,9 +1,10 @@
 name: Update records
 on:
   schedule:
-    # Tuesday, after the Rumble Central / lifetime-record repos have refreshed (they run 07:17-10:17 UTC). Cron is UTC and best-effort.
-    - cron: "40 11 * * 2"
-    - cron: "40 14 * * 2"
+    # GitHub's scheduler runs cron jobs hours late (or skips them), so try every hour from Tuesday morning through Wednesday morning.
+    # Extra runs are harmless: the job only commits when the data changed. Cron is UTC and best-effort.
+    - cron: "40 11-23 * * 2"
+    - cron: "40 0-12 * * 3"
   workflow_dispatch:
 permissions:
   contents: write
