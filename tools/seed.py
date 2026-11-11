@@ -58,7 +58,7 @@ DEFINITION = {
  "Most Cursed Defensive Season": "PA+: points against as a % of that season's league average. Higher is worse.",
  "Most Points (Game, Era Adjusted)": "Score as a % of that season's average team score.", "Fewest Points (Game, Era Adjusted)": "Score as a % of that season's average team score.",
  "Highest Scoring Week (League, Era Adjusted)": "The week's average team score as a % of that season's average.", "Lowest Scoring Week (League, Era Adjusted)": "The week's average team score as a % of that season's average.",
- "Best Rumble %": "Rumbles earned out of the maximum possible in the regular season (9 per matchup win + 1 per team outscored each week).",
+ "Best Rumble %": "Rumbles earned out of the maximum possible in the regular season (10 per head-to-head win + 1 per additional team outscored each week).",
  "Luckiest Season (H2H% - Field%)": "Head-to-head win % minus record-vs-the-field %.",
 }
 SOURCE_HINT = {  # rows the engine can't compute yet and why

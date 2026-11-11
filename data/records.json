@@ -11614,7 +11614,7 @@
    "era_pair": null,
    "size_sensitive": false,
    "needs_definition": null,
-   "definition": "Rumbles earned out of the maximum possible in the regular season (9 per matchup win + 1 per team outscored each week).",
+   "definition": "Rumbles earned out of the maximum possible in the regular season (10 per head-to-head win + 1 per additional team outscored each week).",
    "engine_gap": null,
    "updated": "2026-11-02",
    "leaderboard": [
