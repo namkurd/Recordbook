@@ -13979,7 +13979,7 @@
     {
      "s": 2026,
      "n": 219.0,
-     "value": "219.00 (150% of League Average)",
+     "value": "219.00 (149% of League Average)",
      "holder": "Ben",
      "holders": [
       "Ben"
@@ -15660,8 +15660,8 @@
    "by_season": [
     {
      "s": 2026,
-     "n": 149.83,
-     "value": "219.0 (149.83% of League Average)",
+     "n": 149.4,
+     "value": "219.0 (149.40% of League Average)",
      "holder": "Ben",
      "holders": [
       "Ben"
@@ -18152,7 +18152,7 @@
      }
     },
     {
-     "value": "71.59 (48.98% of League Average)",
+     "value": "71.59 (48.84% of League Average)",
      "holder": "Jake",
      "when": "Week 2 - 2026",
      "replay": {
@@ -18739,8 +18739,8 @@
    "by_season": [
     {
      "s": 2026,
-     "n": 48.98,
-     "value": "71.59 (48.98% of League Average)",
+     "n": 48.84,
+     "value": "71.59 (48.84% of League Average)",
      "holder": "Jake",
      "holders": [
       "Jake"
@@ -31775,13 +31775,13 @@
      "replay": null
     },
     {
-     "value": "156.1 (106.8% of League Average)",
+     "value": "156.1 (106.5% of League Average)",
      "holder": "DTFClub",
      "when": "Week 5 - 2026",
      "replay": null
     },
     {
-     "value": "156.1 (106.8% of League Average)",
+     "value": "156.1 (106.5% of League Average)",
      "holder": "DTFClub",
      "when": "Week 1 - 2026",
      "replay": null
@@ -31792,7 +31792,7 @@
     {
      "s": 2026,
      "n": 156.12,
-     "value": "156.1 (106.8% of League Average)",
+     "value": "156.1 (106.5% of League Average)",
      "holder": "DTFClub",
      "holders": [
       "DTFClub"
@@ -31916,8 +31916,8 @@
    "by_season": [
     {
      "s": 2026,
-     "n": 106.8,
-     "value": "106.8% of League Average",
+     "n": 106.5,
+     "value": "106.5% of League Average",
      "holder": "DTFClub",
      "holders": [
       "DTFClub"
@@ -32041,7 +32041,7 @@
     {
      "s": 2026,
      "n": 137.76,
-     "value": "137.8 (94.3% of League Average)",
+     "value": "137.8 (94.0% of League Average)",
      "holder": "DTFClub",
      "holders": [
       "DTFClub"
@@ -32164,8 +32164,8 @@
    "by_season": [
     {
      "s": 2026,
-     "n": 94.2,
-     "value": "94.2% of League Average",
+     "n": 94.0,
+     "value": "94.0% of League Average",
      "holder": "DTFClub",
      "holders": [
       "DTFClub"
@@ -34198,6 +34198,152 @@
      }
     },
     {
+     "value": "87.0 pts",
+     "holder": "Haan over Aidan",
+     "when": "Week 10 - 2026",
+     "replay": {
+      "season": 2026,
+      "week": 10,
+      "rid": 4,
+      "opp_rid": 1,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=10.4.1"
+     },
+     "cards": {
+      "season": 2026,
+      "week": 10,
+      "teams": [
+       {
+        "rid": 4,
+        "name": "Haan",
+        "team": "Dear Jon(Taylors Version)",
+        "won": true,
+        "act": 200.16,
+        "rumbles": 19,
+        "vs_field": 10,
+        "season_rumbles": 104,
+        "w": 5,
+        "l": 5,
+        "players": [
+         {
+          "pos": "RB",
+          "name": "Chuba Hubbard",
+          "pts": 37.2
+         },
+         {
+          "pos": "RB",
+          "name": "Jonathan Taylor",
+          "pts": 14.3
+         },
+         {
+          "pos": "TE",
+          "name": "Mike Gesicki",
+          "pts": 1.9
+         },
+         {
+          "pos": "WR",
+          "name": "Deebo Samuel Sr.",
+          "pts": 28.04
+         },
+         {
+          "pos": "TE",
+          "name": "Dalton Kincaid",
+          "pts": 8.3
+         },
+         {
+          "pos": "WR",
+          "name": "Justin Jefferson",
+          "pts": 17.9
+         },
+         {
+          "pos": "QB",
+          "name": "Joe Burrow",
+          "pts": 36.71
+         },
+         {
+          "pos": "QB",
+          "name": "Dak Prescott",
+          "pts": 36.97
+         },
+         {
+          "pos": "K",
+          "name": "Will Reichard",
+          "pts": 12.6
+         },
+         {
+          "pos": "DEF",
+          "name": "Baltimore Ravens",
+          "pts": 6.24
+         }
+        ]
+       },
+       {
+        "rid": 1,
+        "name": "Aidan",
+        "team": "Hot Ones Time Machine",
+        "won": false,
+        "act": 168.91,
+        "rumbles": 8,
+        "vs_field": 8,
+        "season_rumbles": 42,
+        "w": 1,
+        "l": 9,
+        "players": [
+         {
+          "pos": "RB",
+          "name": "Jadarian Price",
+          "pts": 13.08
+         },
+         {
+          "pos": "RB",
+          "name": "Cam Skattebo",
+          "pts": 30.2
+         },
+         {
+          "pos": "TE",
+          "name": "George Kittle",
+          "pts": 15.4
+         },
+         {
+          "pos": "TE",
+          "name": "Isaiah Likely",
+          "pts": 28.2
+         },
+         {
+          "pos": "WR",
+          "name": "Nico Collins",
+          "pts": 27.4
+         },
+         {
+          "pos": "WR",
+          "name": "Omar Cooper Jr.",
+          "pts": 0.0
+         },
+         {
+          "pos": "QB",
+          "name": "J.J. McCarthy",
+          "pts": 19.27
+         },
+         {
+          "pos": "QB",
+          "name": "Matthew Stafford",
+          "pts": 20.86
+         },
+         {
+          "pos": "K",
+          "name": "Spencer Shrader",
+          "pts": 8.1
+         },
+         {
+          "pos": "DEF",
+          "name": "Houston Texans",
+          "pts": 6.4
+         }
+        ]
+       }
+      ]
+     }
+    },
+    {
      "value": "84.8 pts",
      "holder": "Alex over Joe",
      "when": "Week 10 - 2025",
@@ -34634,152 +34780,6 @@
        }
       ]
      }
-    },
-    {
-     "value": "68.3 pts",
-     "holder": "Haan over Tommy",
-     "when": "Week 6 - 2021",
-     "replay": {
-      "season": 2021,
-      "week": 6,
-      "rid": 4,
-      "opp_rid": 9,
-      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=6.4.9&season=2021"
-     },
-     "cards": {
-      "season": 2021,
-      "week": 6,
-      "teams": [
-       {
-        "rid": 4,
-        "name": "Haan",
-        "team": "King Haan",
-        "won": true,
-        "act": 150.07,
-        "rumbles": 17,
-        "vs_field": 8,
-        "season_rumbles": 66,
-        "w": 3,
-        "l": 3,
-        "players": [
-         {
-          "pos": "QB",
-          "name": "Josh Allen",
-          "pts": 27.22
-         },
-         {
-          "pos": "RB",
-          "name": "Derrick Henry",
-          "pts": 33.85
-         },
-         {
-          "pos": "RB",
-          "name": "Alex Collins",
-          "pts": 15.8
-         },
-         {
-          "pos": "WR",
-          "name": "Terry McLaurin",
-          "pts": 3.8
-         },
-         {
-          "pos": "WR",
-          "name": "Stefon Diggs",
-          "pts": 18.15
-         },
-         {
-          "pos": "TE",
-          "name": "Mike Gesicki",
-          "pts": 14.25
-         },
-         {
-          "pos": "WR",
-          "name": "Marquise Brown",
-          "pts": 3.5
-         },
-         {
-          "pos": "WR",
-          "name": "Laviska Shenault",
-          "pts": 7.4
-         },
-         {
-          "pos": "K",
-          "name": "Justin Tucker",
-          "pts": 13.1
-         },
-         {
-          "pos": "DEF",
-          "name": "Dallas Cowboys",
-          "pts": 13.0
-         }
-        ]
-       },
-       {
-        "rid": 9,
-        "name": "Tommy",
-        "team": "Austin's Powers",
-        "won": false,
-        "act": 123.4,
-        "rumbles": 3,
-        "vs_field": 3,
-        "season_rumbles": 28,
-        "w": 1,
-        "l": 5,
-        "players": [
-         {
-          "pos": "QB",
-          "name": "Dak Prescott",
-          "pts": 26.8
-         },
-         {
-          "pos": "RB",
-          "name": "Austin Ekeler",
-          "pts": 7.0
-         },
-         {
-          "pos": "RB",
-          "name": "Antonio Gibson",
-          "pts": 2.4
-         },
-         {
-          "pos": "WR",
-          "name": "Marvin Jones",
-          "pts": 18.75
-         },
-         {
-          "pos": "WR",
-          "name": "Odell Beckham Jr.",
-          "pts": 9.9
-         },
-         {
-          "pos": "TE",
-          "name": "Tyler Higbee",
-          "pts": 4.6
-         },
-         {
-          "pos": "RB",
-          "name": "Devontae Booker",
-          "pts": 7.9
-         },
-         {
-          "pos": "WR",
-          "name": "CeeDee Lamb",
-          "pts": 30.85
-         },
-         {
-          "pos": "K",
-          "name": "Harrison Butker",
-          "pts": 9.2
-         },
-         {
-          "pos": "DEF",
-          "name": "Tampa Bay Buccaneers",
-          "pts": 6.0
-         }
-        ]
-       }
-      ]
-     }
     }
    ],
    "detail": null,
@@ -34923,149 +34923,149 @@
    "by_season": [
     {
      "s": 2026,
-     "n": 60.27,
-     "value": "60.3 pts",
-     "holder": "Ben over Steven",
+     "n": 86.97,
+     "value": "87.0 pts",
+     "holder": "Haan over Aidan",
      "holders": [
-      "Ben"
+      "Haan"
      ],
-     "when": "Week 8 - 2026",
+     "when": "Week 10 - 2026",
      "replay": {
       "season": 2026,
-      "week": 8,
-      "rid": 2,
-      "opp_rid": 7,
-      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=8.2.7"
+      "week": 10,
+      "rid": 4,
+      "opp_rid": 1,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=10.4.1"
      },
      "cards": {
       "season": 2026,
-      "week": 8,
+      "week": 10,
       "teams": [
        {
-        "rid": 2,
-        "name": "Ben",
-        "team": "🏆🏆🏆 Lore of the Rings 🏆🏆🏆",
+        "rid": 4,
+        "name": "Haan",
+        "team": "Dear Jon(Taylors Version)",
         "won": true,
-        "act": 186.85,
-        "rumbles": 20,
-        "vs_field": 11,
-        "season_rumbles": 112,
-        "w": 6,
-        "l": 2,
+        "act": 200.16,
+        "rumbles": 19,
+        "vs_field": 10,
+        "season_rumbles": 104,
+        "w": 5,
+        "l": 5,
         "players": [
          {
           "pos": "RB",
-          "name": "Jonah Coleman",
-          "pts": 22.9
+          "name": "Chuba Hubbard",
+          "pts": 37.2
          },
          {
           "pos": "RB",
-          "name": "Bhayshul Tuten",
-          "pts": 31.4
+          "name": "Jonathan Taylor",
+          "pts": 14.3
          },
          {
           "pos": "TE",
-          "name": "Tyler Warren",
-          "pts": 6.3
+          "name": "Mike Gesicki",
+          "pts": 1.9
          },
          {
           "pos": "WR",
-          "name": "Stefon Diggs",
-          "pts": 13.8
+          "name": "Deebo Samuel Sr.",
+          "pts": 28.04
+         },
+         {
+          "pos": "TE",
+          "name": "Dalton Kincaid",
+          "pts": 8.3
          },
          {
           "pos": "WR",
-          "name": "Amon-Ra St. Brown",
-          "pts": 14.6
-         },
-         {
-          "pos": "WR",
-          "name": "Denzel Boston",
-          "pts": 11.2
+          "name": "Justin Jefferson",
+          "pts": 17.9
          },
          {
           "pos": "QB",
-          "name": "Patrick Mahomes",
-          "pts": 27.14
+          "name": "Joe Burrow",
+          "pts": 36.71
          },
          {
-          "pos": "WR",
-          "name": "Jaxon Smith-Njigba",
-          "pts": 26.3
+          "pos": "QB",
+          "name": "Dak Prescott",
+          "pts": 36.97
          },
          {
           "pos": "K",
-          "name": "Chase McLaughlin",
-          "pts": 13.2
+          "name": "Will Reichard",
+          "pts": 12.6
          },
          {
           "pos": "DEF",
-          "name": "Pittsburgh Steelers",
-          "pts": 20.01
+          "name": "Baltimore Ravens",
+          "pts": 6.24
          }
         ]
        },
        {
-        "rid": 7,
-        "name": "Steven",
-        "team": "No Country For Old Men",
+        "rid": 1,
+        "name": "Aidan",
+        "team": "Hot Ones Time Machine",
         "won": false,
-        "act": 154.29,
+        "act": 168.91,
         "rumbles": 8,
         "vs_field": 8,
-        "season_rumbles": 104,
-        "w": 5,
-        "l": 3,
+        "season_rumbles": 42,
+        "w": 1,
+        "l": 9,
         "players": [
          {
           "pos": "RB",
-          "name": "Bijan Robinson",
-          "pts": 8.6
+          "name": "Jadarian Price",
+          "pts": 13.08
          },
          {
           "pos": "RB",
-          "name": "Bucky Irving",
-          "pts": 23.5
+          "name": "Cam Skattebo",
+          "pts": 30.2
          },
          {
           "pos": "TE",
-          "name": "Brock Bowers",
-          "pts": 29.7
+          "name": "George Kittle",
+          "pts": 15.4
+         },
+         {
+          "pos": "TE",
+          "name": "Isaiah Likely",
+          "pts": 28.2
          },
          {
           "pos": "WR",
-          "name": "Tetairoa McMillan",
-          "pts": 13.8
+          "name": "Nico Collins",
+          "pts": 27.4
          },
          {
           "pos": "WR",
-          "name": "Christian Watson",
-          "pts": 18.8
-         },
-         {
-          "pos": "WR",
-          "name": "George Pickens",
-          "pts": 7.8
-         },
-         {
-          "pos": "RB",
-          "name": "Ollie Gordon II",
-          "pts": 8.9
+          "name": "Omar Cooper Jr.",
+          "pts": 0.0
          },
          {
           "pos": "QB",
-          "name": "Geno Smith",
-          "pts": 20.1
+          "name": "J.J. McCarthy",
+          "pts": 19.27
+         },
+         {
+          "pos": "QB",
+          "name": "Matthew Stafford",
+          "pts": 20.86
          },
          {
           "pos": "K",
-          "name": "Jake Bates",
-          "pts": 6.7
+          "name": "Spencer Shrader",
+          "pts": 8.1
          },
          {
           "pos": "DEF",
-          "name": "Washington Commanders",
-          "pts": 16.39
+          "name": "Houston Texans",
+          "pts": 6.4
          }
         ]
        }
@@ -35878,6 +35878,152 @@
      }
     },
     {
+     "value": "87.0 pts",
+     "holder": "Aidan (lost to Haan)",
+     "when": "Week 10 - 2026",
+     "replay": {
+      "season": 2026,
+      "week": 10,
+      "rid": 1,
+      "opp_rid": 4,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=10.1.4"
+     },
+     "cards": {
+      "season": 2026,
+      "week": 10,
+      "teams": [
+       {
+        "rid": 1,
+        "name": "Aidan",
+        "team": "Hot Ones Time Machine",
+        "won": false,
+        "act": 168.91,
+        "rumbles": 8,
+        "vs_field": 8,
+        "season_rumbles": 42,
+        "w": 1,
+        "l": 9,
+        "players": [
+         {
+          "pos": "RB",
+          "name": "Jadarian Price",
+          "pts": 13.08
+         },
+         {
+          "pos": "RB",
+          "name": "Cam Skattebo",
+          "pts": 30.2
+         },
+         {
+          "pos": "TE",
+          "name": "George Kittle",
+          "pts": 15.4
+         },
+         {
+          "pos": "TE",
+          "name": "Isaiah Likely",
+          "pts": 28.2
+         },
+         {
+          "pos": "WR",
+          "name": "Nico Collins",
+          "pts": 27.4
+         },
+         {
+          "pos": "WR",
+          "name": "Omar Cooper Jr.",
+          "pts": 0.0
+         },
+         {
+          "pos": "QB",
+          "name": "J.J. McCarthy",
+          "pts": 19.27
+         },
+         {
+          "pos": "QB",
+          "name": "Matthew Stafford",
+          "pts": 20.86
+         },
+         {
+          "pos": "K",
+          "name": "Spencer Shrader",
+          "pts": 8.1
+         },
+         {
+          "pos": "DEF",
+          "name": "Houston Texans",
+          "pts": 6.4
+         }
+        ]
+       },
+       {
+        "rid": 4,
+        "name": "Haan",
+        "team": "Dear Jon(Taylors Version)",
+        "won": true,
+        "act": 200.16,
+        "rumbles": 19,
+        "vs_field": 10,
+        "season_rumbles": 104,
+        "w": 5,
+        "l": 5,
+        "players": [
+         {
+          "pos": "RB",
+          "name": "Chuba Hubbard",
+          "pts": 37.2
+         },
+         {
+          "pos": "RB",
+          "name": "Jonathan Taylor",
+          "pts": 14.3
+         },
+         {
+          "pos": "TE",
+          "name": "Mike Gesicki",
+          "pts": 1.9
+         },
+         {
+          "pos": "WR",
+          "name": "Deebo Samuel Sr.",
+          "pts": 28.04
+         },
+         {
+          "pos": "TE",
+          "name": "Dalton Kincaid",
+          "pts": 8.3
+         },
+         {
+          "pos": "WR",
+          "name": "Justin Jefferson",
+          "pts": 17.9
+         },
+         {
+          "pos": "QB",
+          "name": "Joe Burrow",
+          "pts": 36.71
+         },
+         {
+          "pos": "QB",
+          "name": "Dak Prescott",
+          "pts": 36.97
+         },
+         {
+          "pos": "K",
+          "name": "Will Reichard",
+          "pts": 12.6
+         },
+         {
+          "pos": "DEF",
+          "name": "Baltimore Ravens",
+          "pts": 6.24
+         }
+        ]
+       }
+      ]
+     }
+    },
+    {
      "value": "84.8 pts",
      "holder": "Joe (lost to Alex)",
      "when": "Week 10 - 2025",
@@ -36314,152 +36460,6 @@
        }
       ]
      }
-    },
-    {
-     "value": "68.3 pts",
-     "holder": "Tommy (lost to Haan)",
-     "when": "Week 6 - 2021",
-     "replay": {
-      "season": 2021,
-      "week": 6,
-      "rid": 9,
-      "opp_rid": 4,
-      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=6.9.4&season=2021"
-     },
-     "cards": {
-      "season": 2021,
-      "week": 6,
-      "teams": [
-       {
-        "rid": 9,
-        "name": "Tommy",
-        "team": "Austin's Powers",
-        "won": false,
-        "act": 123.4,
-        "rumbles": 3,
-        "vs_field": 3,
-        "season_rumbles": 28,
-        "w": 1,
-        "l": 5,
-        "players": [
-         {
-          "pos": "QB",
-          "name": "Dak Prescott",
-          "pts": 26.8
-         },
-         {
-          "pos": "RB",
-          "name": "Austin Ekeler",
-          "pts": 7.0
-         },
-         {
-          "pos": "RB",
-          "name": "Antonio Gibson",
-          "pts": 2.4
-         },
-         {
-          "pos": "WR",
-          "name": "Marvin Jones",
-          "pts": 18.75
-         },
-         {
-          "pos": "WR",
-          "name": "Odell Beckham Jr.",
-          "pts": 9.9
-         },
-         {
-          "pos": "TE",
-          "name": "Tyler Higbee",
-          "pts": 4.6
-         },
-         {
-          "pos": "RB",
-          "name": "Devontae Booker",
-          "pts": 7.9
-         },
-         {
-          "pos": "WR",
-          "name": "CeeDee Lamb",
-          "pts": 30.85
-         },
-         {
-          "pos": "K",
-          "name": "Harrison Butker",
-          "pts": 9.2
-         },
-         {
-          "pos": "DEF",
-          "name": "Tampa Bay Buccaneers",
-          "pts": 6.0
-         }
-        ]
-       },
-       {
-        "rid": 4,
-        "name": "Haan",
-        "team": "King Haan",
-        "won": true,
-        "act": 150.07,
-        "rumbles": 17,
-        "vs_field": 8,
-        "season_rumbles": 66,
-        "w": 3,
-        "l": 3,
-        "players": [
-         {
-          "pos": "QB",
-          "name": "Josh Allen",
-          "pts": 27.22
-         },
-         {
-          "pos": "RB",
-          "name": "Derrick Henry",
-          "pts": 33.85
-         },
-         {
-          "pos": "RB",
-          "name": "Alex Collins",
-          "pts": 15.8
-         },
-         {
-          "pos": "WR",
-          "name": "Terry McLaurin",
-          "pts": 3.8
-         },
-         {
-          "pos": "WR",
-          "name": "Stefon Diggs",
-          "pts": 18.15
-         },
-         {
-          "pos": "TE",
-          "name": "Mike Gesicki",
-          "pts": 14.25
-         },
-         {
-          "pos": "WR",
-          "name": "Marquise Brown",
-          "pts": 3.5
-         },
-         {
-          "pos": "WR",
-          "name": "Laviska Shenault",
-          "pts": 7.4
-         },
-         {
-          "pos": "K",
-          "name": "Justin Tucker",
-          "pts": 13.1
-         },
-         {
-          "pos": "DEF",
-          "name": "Dallas Cowboys",
-          "pts": 13.0
-         }
-        ]
-       }
-      ]
-     }
     }
    ],
    "detail": null,
@@ -36602,149 +36602,149 @@
    "by_season": [
     {
      "s": 2026,
-     "n": 60.27,
-     "value": "60.3 pts",
-     "holder": "Steven (lost to Ben)",
+     "n": 86.97,
+     "value": "87.0 pts",
+     "holder": "Aidan (lost to Haan)",
      "holders": [
-      "Steven"
+      "Aidan"
      ],
-     "when": "Week 8 - 2026",
+     "when": "Week 10 - 2026",
      "replay": {
       "season": 2026,
-      "week": 8,
-      "rid": 7,
-      "opp_rid": 2,
-      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=8.7.2"
+      "week": 10,
+      "rid": 1,
+      "opp_rid": 4,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=10.1.4"
      },
      "cards": {
       "season": 2026,
-      "week": 8,
+      "week": 10,
       "teams": [
        {
-        "rid": 7,
-        "name": "Steven",
-        "team": "No Country For Old Men",
+        "rid": 1,
+        "name": "Aidan",
+        "team": "Hot Ones Time Machine",
         "won": false,
-        "act": 154.29,
+        "act": 168.91,
         "rumbles": 8,
         "vs_field": 8,
-        "season_rumbles": 104,
-        "w": 5,
-        "l": 3,
+        "season_rumbles": 42,
+        "w": 1,
+        "l": 9,
         "players": [
          {
           "pos": "RB",
-          "name": "Bijan Robinson",
-          "pts": 8.6
+          "name": "Jadarian Price",
+          "pts": 13.08
          },
          {
           "pos": "RB",
-          "name": "Bucky Irving",
-          "pts": 23.5
+          "name": "Cam Skattebo",
+          "pts": 30.2
          },
          {
           "pos": "TE",
-          "name": "Brock Bowers",
-          "pts": 29.7
+          "name": "George Kittle",
+          "pts": 15.4
+         },
+         {
+          "pos": "TE",
+          "name": "Isaiah Likely",
+          "pts": 28.2
          },
          {
           "pos": "WR",
-          "name": "Tetairoa McMillan",
-          "pts": 13.8
+          "name": "Nico Collins",
+          "pts": 27.4
          },
          {
           "pos": "WR",
-          "name": "Christian Watson",
-          "pts": 18.8
-         },
-         {
-          "pos": "WR",
-          "name": "George Pickens",
-          "pts": 7.8
-         },
-         {
-          "pos": "RB",
-          "name": "Ollie Gordon II",
-          "pts": 8.9
+          "name": "Omar Cooper Jr.",
+          "pts": 0.0
          },
          {
           "pos": "QB",
-          "name": "Geno Smith",
-          "pts": 20.1
+          "name": "J.J. McCarthy",
+          "pts": 19.27
+         },
+         {
+          "pos": "QB",
+          "name": "Matthew Stafford",
+          "pts": 20.86
          },
          {
           "pos": "K",
-          "name": "Jake Bates",
-          "pts": 6.7
+          "name": "Spencer Shrader",
+          "pts": 8.1
          },
          {
           "pos": "DEF",
-          "name": "Washington Commanders",
-          "pts": 16.39
+          "name": "Houston Texans",
+          "pts": 6.4
          }
         ]
        },
        {
-        "rid": 2,
-        "name": "Ben",
-        "team": "🏆🏆🏆 Lore of the Rings 🏆🏆🏆",
+        "rid": 4,
+        "name": "Haan",
+        "team": "Dear Jon(Taylors Version)",
         "won": true,
-        "act": 186.85,
-        "rumbles": 20,
-        "vs_field": 11,
-        "season_rumbles": 112,
-        "w": 6,
-        "l": 2,
+        "act": 200.16,
+        "rumbles": 19,
+        "vs_field": 10,
+        "season_rumbles": 104,
+        "w": 5,
+        "l": 5,
         "players": [
          {
           "pos": "RB",
-          "name": "Jonah Coleman",
-          "pts": 22.9
+          "name": "Chuba Hubbard",
+          "pts": 37.2
          },
          {
           "pos": "RB",
-          "name": "Bhayshul Tuten",
-          "pts": 31.4
+          "name": "Jonathan Taylor",
+          "pts": 14.3
          },
          {
           "pos": "TE",
-          "name": "Tyler Warren",
-          "pts": 6.3
+          "name": "Mike Gesicki",
+          "pts": 1.9
          },
          {
           "pos": "WR",
-          "name": "Stefon Diggs",
-          "pts": 13.8
+          "name": "Deebo Samuel Sr.",
+          "pts": 28.04
+         },
+         {
+          "pos": "TE",
+          "name": "Dalton Kincaid",
+          "pts": 8.3
          },
          {
           "pos": "WR",
-          "name": "Amon-Ra St. Brown",
-          "pts": 14.6
-         },
-         {
-          "pos": "WR",
-          "name": "Denzel Boston",
-          "pts": 11.2
+          "name": "Justin Jefferson",
+          "pts": 17.9
          },
          {
           "pos": "QB",
-          "name": "Patrick Mahomes",
-          "pts": 27.14
+          "name": "Joe Burrow",
+          "pts": 36.71
          },
          {
-          "pos": "WR",
-          "name": "Jaxon Smith-Njigba",
-          "pts": 26.3
+          "pos": "QB",
+          "name": "Dak Prescott",
+          "pts": 36.97
          },
          {
           "pos": "K",
-          "name": "Chase McLaughlin",
-          "pts": 13.2
+          "name": "Will Reichard",
+          "pts": 12.6
          },
          {
           "pos": "DEF",
-          "name": "Pittsburgh Steelers",
-          "pts": 20.01
+          "name": "Baltimore Ravens",
+          "pts": 6.24
          }
         ]
        }
@@ -44556,6 +44556,152 @@
      }
     },
     {
+     "value": "77.67",
+     "holder": "Aidan",
+     "when": "Week 10 - 2026",
+     "replay": {
+      "season": 2026,
+      "week": 10,
+      "rid": 1,
+      "opp_rid": 4,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=10.1.4"
+     },
+     "cards": {
+      "season": 2026,
+      "week": 10,
+      "teams": [
+       {
+        "rid": 1,
+        "name": "Aidan",
+        "team": "Hot Ones Time Machine",
+        "won": false,
+        "act": 168.91,
+        "rumbles": 8,
+        "vs_field": 8,
+        "season_rumbles": 42,
+        "w": 1,
+        "l": 9,
+        "players": [
+         {
+          "pos": "RB",
+          "name": "Jadarian Price",
+          "pts": 13.08
+         },
+         {
+          "pos": "RB",
+          "name": "Cam Skattebo",
+          "pts": 30.2
+         },
+         {
+          "pos": "TE",
+          "name": "George Kittle",
+          "pts": 15.4
+         },
+         {
+          "pos": "TE",
+          "name": "Isaiah Likely",
+          "pts": 28.2
+         },
+         {
+          "pos": "WR",
+          "name": "Nico Collins",
+          "pts": 27.4
+         },
+         {
+          "pos": "WR",
+          "name": "Omar Cooper Jr.",
+          "pts": 0.0
+         },
+         {
+          "pos": "QB",
+          "name": "J.J. McCarthy",
+          "pts": 19.27
+         },
+         {
+          "pos": "QB",
+          "name": "Matthew Stafford",
+          "pts": 20.86
+         },
+         {
+          "pos": "K",
+          "name": "Spencer Shrader",
+          "pts": 8.1
+         },
+         {
+          "pos": "DEF",
+          "name": "Houston Texans",
+          "pts": 6.4
+         }
+        ]
+       },
+       {
+        "rid": 4,
+        "name": "Haan",
+        "team": "Dear Jon(Taylors Version)",
+        "won": true,
+        "act": 200.16,
+        "rumbles": 19,
+        "vs_field": 10,
+        "season_rumbles": 104,
+        "w": 5,
+        "l": 5,
+        "players": [
+         {
+          "pos": "RB",
+          "name": "Chuba Hubbard",
+          "pts": 37.2
+         },
+         {
+          "pos": "RB",
+          "name": "Jonathan Taylor",
+          "pts": 14.3
+         },
+         {
+          "pos": "TE",
+          "name": "Mike Gesicki",
+          "pts": 1.9
+         },
+         {
+          "pos": "WR",
+          "name": "Deebo Samuel Sr.",
+          "pts": 28.04
+         },
+         {
+          "pos": "TE",
+          "name": "Dalton Kincaid",
+          "pts": 8.3
+         },
+         {
+          "pos": "WR",
+          "name": "Justin Jefferson",
+          "pts": 17.9
+         },
+         {
+          "pos": "QB",
+          "name": "Joe Burrow",
+          "pts": 36.71
+         },
+         {
+          "pos": "QB",
+          "name": "Dak Prescott",
+          "pts": 36.97
+         },
+         {
+          "pos": "K",
+          "name": "Will Reichard",
+          "pts": 12.6
+         },
+         {
+          "pos": "DEF",
+          "name": "Baltimore Ravens",
+          "pts": 6.24
+         }
+        ]
+       }
+      ]
+     }
+    },
+    {
      "value": "72.47",
      "holder": "Alex",
      "when": "Week 7 - 2026",
@@ -44695,152 +44841,6 @@
           "pos": "DEF",
           "name": "Carolina Panthers",
           "pts": -1.78
-         }
-        ]
-       }
-      ]
-     }
-    },
-    {
-     "value": "67.36",
-     "holder": "Alex",
-     "when": "Week 13 - 2023",
-     "replay": {
-      "season": 2023,
-      "week": 13,
-      "rid": 6,
-      "opp_rid": 7,
-      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=13.6.7&season=2023"
-     },
-     "cards": {
-      "season": 2023,
-      "week": 13,
-      "teams": [
-       {
-        "rid": 6,
-        "name": "Alex",
-        "team": "Sounds of the Game",
-        "won": true,
-        "act": 145.91,
-        "rumbles": 15,
-        "vs_field": 6,
-        "season_rumbles": 130,
-        "w": 7,
-        "l": 6,
-        "players": [
-         {
-          "pos": "QB",
-          "name": "Geno Smith",
-          "pts": 29.96
-         },
-         {
-          "pos": "RB",
-          "name": "Austin Ekeler",
-          "pts": 3.7
-         },
-         {
-          "pos": "RB",
-          "name": "D'Andre Swift",
-          "pts": 4.0
-         },
-         {
-          "pos": "WR",
-          "name": "DK Metcalf",
-          "pts": 37.4
-         },
-         {
-          "pos": "WR",
-          "name": "Nico Collins",
-          "pts": 34.1
-         },
-         {
-          "pos": "TE",
-          "name": "David Njoku",
-          "pts": 3.7
-         },
-         {
-          "pos": "WR",
-          "name": "Adam Thielen",
-          "pts": 5.5
-         },
-         {
-          "pos": "QB",
-          "name": "Jalen Hurts",
-          "pts": 21.92
-         },
-         {
-          "pos": "K",
-          "name": "Jake Elliott",
-          "pts": 7.9
-         },
-         {
-          "pos": "DEF",
-          "name": "Jacksonville Jaguars",
-          "pts": -2.27
-         }
-        ]
-       },
-       {
-        "rid": 7,
-        "name": "Steven",
-        "team": "Goodell Boys Club (HIM)",
-        "won": false,
-        "act": 143.9600067138672,
-        "rumbles": 5,
-        "vs_field": 5,
-        "season_rumbles": 139,
-        "w": 8,
-        "l": 5,
-        "players": [
-         {
-          "pos": "QB",
-          "name": "Dak Prescott",
-          "pts": 26.26
-         },
-         {
-          "pos": "RB",
-          "name": "Brian Robinson Jr.",
-          "pts": 5.3
-         },
-         {
-          "pos": "RB",
-          "name": "Christian McCaffrey",
-          "pts": 22.3
-         },
-         {
-          "pos": "WR",
-          "name": "Terry McLaurin",
-          "pts": 0.0
-         },
-         {
-          "pos": "WR",
-          "name": "Mike Evans",
-          "pts": 29.2
-         },
-         {
-          "pos": "TE",
-          "name": "Evan Engram",
-          "pts": 22.2
-         },
-         {
-          "pos": "RB",
-          "name": "Travis Etienne Jr.",
-          "pts": 17.9
-         },
-         {
-          "pos": "RB",
-          "name": "AJ Dillon",
-          "pts": 9.7
-         },
-         {
-          "pos": "K",
-          "name": "Jason Sanders",
-          "pts": 10.9
-         },
-         {
-          "pos": "DEF",
-          "name": "Dallas Cowboys",
-          "pts": 0.2
          }
         ]
        }
@@ -44988,149 +44988,149 @@
    "by_season": [
     {
      "s": 2026,
-     "n": 72.47,
-     "value": "72.47",
-     "holder": "Alex",
+     "n": 77.67,
+     "value": "77.67",
+     "holder": "Aidan",
      "holders": [
-      "Alex"
+      "Aidan"
      ],
-     "when": "Week 7 - 2026",
+     "when": "Week 10 - 2026",
      "replay": {
       "season": 2026,
-      "week": 7,
-      "rid": 6,
-      "opp_rid": 12,
-      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=7.6.12"
+      "week": 10,
+      "rid": 1,
+      "opp_rid": 4,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=10.1.4"
      },
      "cards": {
       "season": 2026,
-      "week": 7,
+      "week": 10,
       "teams": [
        {
-        "rid": 6,
-        "name": "Alex",
-        "team": "Songs in the Key of Ball",
+        "rid": 1,
+        "name": "Aidan",
+        "team": "Hot Ones Time Machine",
         "won": false,
-        "act": 124.98,
-        "rumbles": 2,
-        "vs_field": 2,
-        "season_rumbles": 68,
-        "w": 3,
-        "l": 4,
+        "act": 168.91,
+        "rumbles": 8,
+        "vs_field": 8,
+        "season_rumbles": 42,
+        "w": 1,
+        "l": 9,
         "players": [
          {
           "pos": "RB",
-          "name": "Kenneth Walker III",
-          "pts": 10.7
+          "name": "Jadarian Price",
+          "pts": 13.08
          },
          {
           "pos": "RB",
-          "name": "Rhamondre Stevenson",
-          "pts": 23.5
+          "name": "Cam Skattebo",
+          "pts": 30.2
          },
          {
           "pos": "TE",
-          "name": "Sam LaPorta",
-          "pts": 3.3
+          "name": "George Kittle",
+          "pts": 15.4
+         },
+         {
+          "pos": "TE",
+          "name": "Isaiah Likely",
+          "pts": 28.2
          },
          {
           "pos": "WR",
-          "name": "Matthew Golden",
-          "pts": 10.4
+          "name": "Nico Collins",
+          "pts": 27.4
          },
          {
           "pos": "WR",
-          "name": "Malik Washington",
-          "pts": 8.02
-         },
-         {
-          "pos": "WR",
-          "name": "Luther Burden III",
-          "pts": 25.2
+          "name": "Omar Cooper Jr.",
+          "pts": 0.0
          },
          {
           "pos": "QB",
-          "name": "Caleb Williams",
-          "pts": 23.77
+          "name": "J.J. McCarthy",
+          "pts": 19.27
          },
          {
           "pos": "QB",
-          "name": "Kyler Murray",
-          "pts": 15.15
+          "name": "Matthew Stafford",
+          "pts": 20.86
          },
          {
           "pos": "K",
-          "name": "Ryan Fitzgerald",
-          "pts": 0.67
+          "name": "Spencer Shrader",
+          "pts": 8.1
          },
          {
           "pos": "DEF",
-          "name": "Kansas City Chiefs",
-          "pts": 4.27
+          "name": "Houston Texans",
+          "pts": 6.4
          }
         ]
        },
        {
-        "rid": 12,
-        "name": "Stephanie",
-        "team": "The Lady Greyhounds",
+        "rid": 4,
+        "name": "Haan",
+        "team": "Dear Jon(Taylors Version)",
         "won": true,
-        "act": 128.56,
-        "rumbles": 12,
-        "vs_field": 3,
-        "season_rumbles": 74,
-        "w": 4,
-        "l": 3,
+        "act": 200.16,
+        "rumbles": 19,
+        "vs_field": 10,
+        "season_rumbles": 104,
+        "w": 5,
+        "l": 5,
         "players": [
          {
           "pos": "RB",
-          "name": "D'Andre Swift",
-          "pts": 20.0
+          "name": "Chuba Hubbard",
+          "pts": 37.2
          },
          {
           "pos": "RB",
-          "name": "Christian McCaffrey",
-          "pts": 24.0
+          "name": "Jonathan Taylor",
+          "pts": 14.3
          },
          {
           "pos": "TE",
-          "name": "T.J. Hockenson",
-          "pts": 14.0
+          "name": "Mike Gesicki",
+          "pts": 1.9
          },
          {
           "pos": "WR",
-          "name": "Jaylen Waddle",
-          "pts": 9.8
+          "name": "Deebo Samuel Sr.",
+          "pts": 28.04
+         },
+         {
+          "pos": "TE",
+          "name": "Dalton Kincaid",
+          "pts": 8.3
          },
          {
           "pos": "WR",
-          "name": "Germie Bernard",
-          "pts": 6.2
-         },
-         {
-          "pos": "WR",
-          "name": "Ja'Marr Chase",
-          "pts": 18.7
+          "name": "Justin Jefferson",
+          "pts": 17.9
          },
          {
           "pos": "QB",
-          "name": "Jared Goff",
-          "pts": 19.67
+          "name": "Joe Burrow",
+          "pts": 36.71
          },
          {
           "pos": "QB",
-          "name": "Bryce Young",
-          "pts": 5.37
+          "name": "Dak Prescott",
+          "pts": 36.97
          },
          {
           "pos": "K",
-          "name": "Chris Boswell",
+          "name": "Will Reichard",
           "pts": 12.6
          },
          {
           "pos": "DEF",
-          "name": "Carolina Panthers",
-          "pts": -1.78
+          "name": "Baltimore Ravens",
+          "pts": 6.24
          }
         ]
        }
@@ -48237,23 +48237,23 @@
    "by_season": [
     {
      "s": 2026,
-     "n": 45.4,
-     "value": "45.40 pts",
+     "n": 48.7,
+     "value": "48.70 pts",
      "holder": "Ankit — Jahmyr Gibbs",
      "holders": [
       "Ankit"
      ],
-     "when": "Week 3 - 2026",
+     "when": "Week 10 - 2026",
      "replay": {
       "season": 2026,
-      "week": 3,
+      "week": 10,
       "rid": 8,
-      "opp_rid": 12,
-      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=3.8.12"
+      "opp_rid": 11,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=10.8.11"
      },
      "detail": {
       "kind": "facts",
-      "title": "Running Back · Week 3, 2026",
+      "title": "Running Back · Week 10, 2026",
       "blocks": [
        {
         "head": "Ankit",
@@ -48265,11 +48265,11 @@
          ],
          [
           "Points",
-          "45.40"
+          "48.70"
          ],
          [
           "Team",
-          "Ankit (155.70 vs Stephanie 151.11)"
+          "Ankit (184.72 vs Kaitlyn 123.55)"
          ]
         ]
        }
@@ -51163,7 +51163,7 @@
     {
      "s": 2026,
      "n": 155.95,
-     "value": "155.95 (7% above league average score)",
+     "value": "155.95 (6% above league average score)",
      "holder": "Ben",
      "holders": [
       "Ben"
@@ -52852,8 +52852,8 @@
    "by_season": [
     {
      "s": 2026,
-     "n": 106.7,
-     "value": "155.95 (7% above league average score)",
+     "n": 106.39,
+     "value": "155.95 (6% above league average score)",
      "holder": "Ben",
      "holders": [
       "Ben"
@@ -56088,149 +56088,154 @@
    "by_season": [
     {
      "s": 2026,
-     "n": 36.0,
-     "value": "36.0%",
-     "holder": "Stephanie — D'Andre Swift",
+     "n": 36.4,
+     "value": "36.4%",
+     "holder": "Jake — Trevor Lawrence",
      "holders": [
-      "Stephanie"
+      "Jake"
      ],
-     "when": "Week 1 - 2026",
+     "when": "Week 10 - 2026",
      "replay": {
       "season": 2026,
-      "week": 1,
-      "rid": 12,
-      "opp_rid": 5,
-      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=1.12.5"
+      "week": 10,
+      "rid": 3,
+      "opp_rid": 10,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=10.3.10"
      },
      "cards": {
       "season": 2026,
-      "week": 1,
+      "week": 10,
       "teams": [
        {
-        "rid": 12,
-        "name": "Stephanie",
-        "team": "The Lady Greyhounds",
+        "rid": 3,
+        "name": "Jake",
+        "team": "12 Teams 1 Cup",
         "won": false,
-        "act": 94.09,
+        "act": 90.07,
         "rumbles": 0,
         "vs_field": 0,
-        "season_rumbles": 0,
-        "w": 0,
-        "l": 1,
+        "season_rumbles": 108,
+        "w": 6,
+        "l": 4,
         "players": [
          {
           "pos": "RB",
-          "name": "D'Andre Swift",
-          "pts": 33.9
+          "name": "Travis Etienne Jr.",
+          "pts": 6.9
          },
          {
           "pos": "RB",
-          "name": "Christian McCaffrey",
-          "pts": 13.8
+          "name": "Javonte Williams",
+          "pts": 9.2
          },
          {
           "pos": "TE",
-          "name": "Harold Fannin Jr.",
-          "pts": 4.6
+          "name": "Kyle Pitts Sr.",
+          "pts": 7.5
          },
          {
           "pos": "WR",
-          "name": "Jaylen Waddle",
-          "pts": 1.2
+          "name": "DeMario Douglas",
+          "pts": 1.4
          },
          {
           "pos": "WR",
-          "name": "Rome Odunze",
-          "pts": 7.7
+          "name": "Jalen Coker",
+          "pts": 0.3
          },
          {
           "pos": "WR",
-          "name": "Ja'Marr Chase",
-          "pts": 2.7
+          "name": "Konata Mumpfield",
+          "pts": 12.6
          },
          {
           "pos": "QB",
-          "name": "Bo Nix",
-          "pts": 4.44
+          "name": "Drake Maye",
+          "pts": 3.37
          },
          {
           "pos": "QB",
-          "name": "Jared Goff",
-          "pts": 17.29
+          "name": "Trevor Lawrence",
+          "pts": 30.33
          },
          {
           "pos": "K",
-          "name": "Andy Borregales",
-          "pts": 6.0
+          "name": "Evan McPherson",
+          "pts": 7.0
          },
          {
           "pos": "DEF",
-          "name": "Denver Broncos",
-          "pts": 2.46
+          "name": "Green Bay Packers",
+          "pts": 4.73
+         },
+         {
+          "pos": "QB",
+          "name": "Tommy DeVito",
+          "pts": 6.74
          }
         ]
        },
        {
-        "rid": 5,
-        "name": "Joe",
-        "team": "Virtue Signal Caller",
+        "rid": 10,
+        "name": "Ryan",
+        "team": "Covet Thy Nabers Flowers",
         "won": true,
-        "act": 147.02,
-        "rumbles": 13,
-        "vs_field": 4,
-        "season_rumbles": 13,
-        "w": 1,
-        "l": 0,
+        "act": 120.13,
+        "rumbles": 11,
+        "vs_field": 2,
+        "season_rumbles": 112,
+        "w": 6,
+        "l": 4,
         "players": [
          {
           "pos": "RB",
-          "name": "Derrick Henry",
-          "pts": 37.8
+          "name": "Jaylen Warren",
+          "pts": 9.1
          },
          {
           "pos": "RB",
-          "name": "Omarion Hampton",
-          "pts": 10.3
+          "name": "Chris Rodriguez Jr.",
+          "pts": 1.0
          },
          {
           "pos": "TE",
-          "name": "Trey McBride",
-          "pts": 27.0
+          "name": "Travis Kelce",
+          "pts": 5.5
          },
          {
           "pos": "WR",
-          "name": "Rashee Rice",
-          "pts": 9.9
+          "name": "Malik Nabers",
+          "pts": 5.9
          },
          {
           "pos": "WR",
-          "name": "A.J. Brown",
-          "pts": 6.6
+          "name": "Drake London",
+          "pts": 18.9
          },
          {
           "pos": "WR",
-          "name": "Jameson Williams",
-          "pts": 9.5
+          "name": "Zay Flowers",
+          "pts": 12.9
          },
          {
           "pos": "QB",
-          "name": "Baker Mayfield",
-          "pts": 13.04
+          "name": "Jayden Daniels",
+          "pts": 22.11
          },
          {
           "pos": "QB",
-          "name": "Jordan Love",
-          "pts": 20.78
+          "name": "Kirk Cousins",
+          "pts": 16.43
          },
          {
           "pos": "K",
-          "name": "Trey Smack",
-          "pts": 13.87
+          "name": "Ka'imi Fairbairn",
+          "pts": 7.5
          },
          {
           "pos": "DEF",
-          "name": "Los Angeles Chargers",
-          "pts": -1.77
+          "name": "Los Angeles Rams",
+          "pts": 20.79
          }
         ]
        }
@@ -60646,8 +60651,8 @@
    "by_season": [
     {
      "s": 2026,
-     "n": 131.7,
-     "value": "+131.7 PAR",
+     "n": 117.7,
+     "value": "+117.7 PAR",
      "holder": "Alex over Ben",
      "holders": [
       "Alex"
@@ -60689,7 +60694,7 @@
          ],
          [
           "PAR since",
-          "-54.2"
+          "-47.5"
          ]
         ]
        },
@@ -60711,7 +60716,7 @@
          ],
          [
           "PAR since",
-          "+77.5"
+          "+70.2"
          ]
         ]
        }
@@ -61489,8 +61494,8 @@
    "by_season": [
     {
      "s": 2026,
-     "n": 77.5,
-     "value": "+77.5 PAR",
+     "n": 70.2,
+     "value": "+70.2 PAR",
      "holder": "Alex over Ben",
      "holders": [
       "Alex"
@@ -61532,7 +61537,7 @@
          ],
          [
           "PAR since",
-          "-54.2"
+          "-47.5"
          ]
         ]
        },
@@ -61554,7 +61559,7 @@
          ],
          [
           "PAR since",
-          "+77.5"
+          "+70.2"
          ]
         ]
        }
@@ -62332,8 +62337,8 @@
    "by_season": [
     {
      "s": 2026,
-     "n": -54.2,
-     "value": "-54.2 PAR",
+     "n": -47.5,
+     "value": "-47.5 PAR",
      "holder": "Ben (vs Alex)",
      "holders": [
       "Ben"
@@ -62375,7 +62380,7 @@
          ],
          [
           "PAR since",
-          "-54.2"
+          "-47.5"
          ]
         ]
        },
@@ -62397,7 +62402,7 @@
          ],
          [
           "PAR since",
-          "+77.5"
+          "+70.2"
          ]
         ]
        }
@@ -64019,22 +64024,22 @@
    "by_season": [
     {
      "s": 2026,
-     "n": 82.6,
-     "value": "82.6",
-     "holder": "Aidan & Christian",
+     "n": 99.1,
+     "value": "99.1",
+     "holder": "Jake & Steven",
      "holders": [
-      "Aidan",
-      "Christian"
+      "Jake",
+      "Steven"
      ],
-     "when": "Week 6 - 2026",
+     "when": "Week 10 - 2026",
      "links": {
       "page": {
        "label": "This trade in Trade Network",
-       "url": "https://namkurd.github.io/SleeperTradeNodes/?season=2026&trade=1417335988040089600"
+       "url": "https://namkurd.github.io/SleeperTradeNodes/?season=2026&trade=1428147026687721472"
       },
       "row": {
        "label": "This trade in Trade Network",
-       "url": "https://namkurd.github.io/SleeperTradeNodes/?season=2026&trade=1417335988040089600"
+       "url": "https://namkurd.github.io/SleeperTradeNodes/?season=2026&trade=1428147026687721472"
       },
       "sheet": {
        "label": "All 2026 trades · Trade Network",
@@ -64043,49 +64048,49 @@
      },
      "detail": {
       "kind": "trade",
-      "title": "Trade · Week 6, 2026",
+      "title": "Trade · Week 10, 2026",
       "blocks": [
        {
-        "head": "Aidan",
+        "head": "Jake",
         "chip": null,
         "rows": [
          [
           "Got",
-          "WR Terry McLaurin (10.7), QB Jalen Hurts (33.0)"
+          "RB Bucky Irving (42.3), QB Cam Ward (5.4)"
          ],
          [
           "Gave",
-          "WR DJ Moore (12.9), QB Justin Herbert (26.0)"
+          "RB Travis Etienne Jr. (9.5), WR Puka Nacua (41.9)"
          ],
          [
           "Value in / out",
-          "43.7 / 38.9"
+          "47.7 / 51.4"
          ],
          [
           "PAR since",
-          "+0.0"
+          "–"
          ]
         ]
        },
        {
-        "head": "Christian",
+        "head": "Steven",
         "chip": null,
         "rows": [
          [
           "Got",
-          "WR DJ Moore (12.9), QB Justin Herbert (26.0)"
+          "RB Travis Etienne Jr. (9.5), WR Puka Nacua (41.9)"
          ],
          [
           "Gave",
-          "WR Terry McLaurin (10.7), QB Jalen Hurts (33.0)"
+          "RB Bucky Irving (42.3), QB Cam Ward (5.4)"
          ],
          [
           "Value in / out",
-          "38.9 / 43.7"
+          "51.4 / 47.7"
          ],
          [
           "PAR since",
-          "+36.2"
+          "–"
          ]
         ]
        }
@@ -64937,7 +64942,7 @@
          ],
          [
           "PAR since",
-          "+36.2"
+          "+53.1"
          ]
         ]
        }
@@ -65328,8 +65333,8 @@
    "source": "computed",
    "metric": "trades_career",
    "direction": "max",
-   "value": "32 trades",
-   "value_num": 32,
+   "value": "33 trades",
+   "value_num": 33,
    "when": "2021-",
    "holder": "Joe",
    "holders": [
@@ -65340,7 +65345,15 @@
    "notes": [],
    "evidence": [],
    "replay": null,
-   "previous": null,
+   "previous": {
+    "value": "32 trades",
+    "holder": "Joe",
+    "when": "2021-",
+    "team": "Lamport’s Revenge",
+    "evidence": [],
+    "replaced_on": "2026-11-17",
+    "replaced_by": "Joe"
+   },
    "ties": [],
    "locked": false,
    "status": "active",
@@ -65349,10 +65362,10 @@
    "needs_definition": null,
    "engine_gap": null,
    "definition": "Most trades made by one manager. Counts trades since 2021 (the first Sleeper season).",
-   "updated": "2026-11-02",
+   "updated": "2026-11-17",
    "leaderboard": [
     {
-     "value": "32 trades",
+     "value": "33 trades",
      "holder": "Joe",
      "when": "2021-",
      "replay": null,
@@ -65384,7 +65397,7 @@
      }
     },
     {
-     "value": "19 trades",
+     "value": "20 trades",
      "holder": "Ankit",
      "when": "2021-",
      "replay": null,
@@ -66314,6 +66327,30 @@
       "Ankit",
       1,
       1
+     ],
+     [
+      2026,
+      "Jake",
+      1,
+      1
+     ],
+     [
+      2026,
+      "Steven",
+      1,
+      1
+     ],
+     [
+      2026,
+      "Joe",
+      1,
+      1
+     ],
+     [
+      2026,
+      "Ankit",
+      1,
+      1
      ]
     ]
    }
@@ -66325,8 +66362,8 @@
    "source": "computed",
    "metric": "trades_partner",
    "direction": "max",
-   "value": "7 trades",
-   "value_num": 7,
+   "value": "8 trades",
+   "value_num": 8,
    "when": "2021-",
    "holder": "Ankit & Joe",
    "holders": [
@@ -66338,7 +66375,15 @@
    "notes": [],
    "evidence": [],
    "replay": null,
-   "previous": null,
+   "previous": {
+    "value": "7 trades",
+    "holder": "Ankit & Joe",
+    "when": "2021-",
+    "team": "",
+    "evidence": [],
+    "replaced_on": "2026-11-17",
+    "replaced_by": "Ankit & Joe"
+   },
    "ties": [],
    "locked": false,
    "status": "active",
@@ -66347,10 +66392,10 @@
    "needs_definition": null,
    "engine_gap": null,
    "definition": "Most trades between the same two managers. Counts trades since 2021 (the first Sleeper season).",
-   "updated": "2026-11-02",
+   "updated": "2026-11-17",
    "leaderboard": [
     {
-     "value": "7 trades",
+     "value": "8 trades",
      "holder": "Ankit & Joe",
      "when": "2021-",
      "replay": null
@@ -66432,9 +66477,9 @@
      }
     },
     {
-     "value": "+384.5 PAR",
+     "value": "+390.3 PAR",
      "holder": "Joe",
-     "when": "32 trades, 2021-",
+     "when": "33 trades, 2021-",
      "replay": null,
      "links": {
       "page": {
@@ -67310,19 +67355,19 @@
      [
       2026,
       "Ben",
-      -54.2,
+      -47.5,
       1
      ],
      [
       2026,
       "Alex",
-      77.5,
+      70.2,
       1
      ],
      [
       2026,
       "Joe",
-      -3.6,
+      2.2,
       1
      ],
      [
@@ -67334,7 +67379,7 @@
      [
       2026,
       "Ben",
-      -6.4,
+      -6.2,
       1
      ],
      [
@@ -67352,7 +67397,7 @@
      [
       2026,
       "Christian",
-      36.2,
+      53.1,
       1
      ],
      [
@@ -67378,6 +67423,18 @@
       "Ankit",
       2.6,
       1
+     ],
+     [
+      2026,
+      "Joe",
+      0.0,
+      1
+     ],
+     [
+      2026,
+      "Ankit",
+      0.0,
+      1
      ]
     ]
    }
@@ -67389,15 +67446,15 @@
    "source": "computed",
    "metric": "trader_worst",
    "direction": "min",
-   "value": "-134.8 PAR",
-   "value_num": -134.8,
-   "when": "10 trades, 2021-",
-   "holder": "Christian",
+   "value": "-118.9 PAR",
+   "value_num": -118.9,
+   "when": "17 trades, 2021-",
+   "holder": "Ben",
    "holders": [
-    "Christian"
+    "Ben"
    ],
    "league_level": false,
-   "team": "",
+   "team": "No Endz No Winz",
    "notes": [],
    "evidence": [],
    "replay": null,
@@ -67410,26 +67467,10 @@
    "needs_definition": null,
    "engine_gap": null,
    "definition": "Total PAR lost across every trade a manager has made (at least 3 trades). Counts trades since 2021 (the first Sleeper season).",
-   "updated": "2026-11-10",
+   "updated": "2026-11-17",
    "leaderboard": [
     {
-     "value": "-134.8 PAR",
-     "holder": "Christian",
-     "when": "10 trades, 2021-",
-     "replay": null,
-     "links": {
-      "page": {
-       "label": "Christian's trades · Trade Network",
-       "url": "https://namkurd.github.io/SleeperTradeNodes/?manager=Christian"
-      },
-      "row": {
-       "label": "Christian's trades · Trade Network",
-       "url": "https://namkurd.github.io/SleeperTradeNodes/?manager=Christian"
-      }
-     }
-    },
-    {
-     "value": "-125.8 PAR",
+     "value": "-118.9 PAR",
      "holder": "Ben",
      "when": "17 trades, 2021-",
      "replay": null,
@@ -67445,9 +67486,25 @@
      }
     },
     {
+     "value": "-117.9 PAR",
+     "holder": "Christian",
+     "when": "10 trades, 2021-",
+     "replay": null,
+     "links": {
+      "page": {
+       "label": "Christian's trades · Trade Network",
+       "url": "https://namkurd.github.io/SleeperTradeNodes/?manager=Christian"
+      },
+      "row": {
+       "label": "Christian's trades · Trade Network",
+       "url": "https://namkurd.github.io/SleeperTradeNodes/?manager=Christian"
+      }
+     }
+    },
+    {
      "value": "-74.4 PAR",
      "holder": "Ankit",
-     "when": "19 trades, 2021-",
+     "when": "20 trades, 2021-",
      "replay": null,
      "links": {
       "page": {
@@ -67461,7 +67518,7 @@
      }
     },
     {
-     "value": "-45.8 PAR",
+     "value": "-53.1 PAR",
      "holder": "Alex",
      "when": "21 trades, 2021-",
      "replay": null,
@@ -67497,12 +67554,12 @@
    "verified": true,
    "links": {
     "page": {
-     "label": "Christian's trades · Trade Network",
-     "url": "https://namkurd.github.io/SleeperTradeNodes/?manager=Christian"
+     "label": "Ben's trades · Trade Network",
+     "url": "https://namkurd.github.io/SleeperTradeNodes/?manager=Ben"
     },
     "row": {
-     "label": "Christian's trades · Trade Network",
-     "url": "https://namkurd.github.io/SleeperTradeNodes/?manager=Christian"
+     "label": "Ben's trades · Trade Network",
+     "url": "https://namkurd.github.io/SleeperTradeNodes/?manager=Ben"
     }
    },
    "by_season": [],
@@ -68307,19 +68364,19 @@
      [
       2026,
       "Ben",
-      -54.2,
+      -47.5,
       1
      ],
      [
       2026,
       "Alex",
-      77.5,
+      70.2,
       1
      ],
      [
       2026,
       "Joe",
-      -3.6,
+      2.2,
       1
      ],
      [
@@ -68331,7 +68388,7 @@
      [
       2026,
       "Ben",
-      -6.4,
+      -6.2,
       1
      ],
      [
@@ -68349,7 +68406,7 @@
      [
       2026,
       "Christian",
-      36.2,
+      53.1,
       1
      ],
      [
@@ -68374,6 +68431,18 @@
       2026,
       "Ankit",
       2.6,
+      1
+     ],
+     [
+      2026,
+      "Joe",
+      0.0,
+      1
+     ],
+     [
+      2026,
+      "Ankit",
+      0.0,
       1
      ]
     ]
@@ -72013,8 +72082,8 @@
    "by_season": [
     {
      "s": 2026,
-     "n": 62.6,
-     "value": "+62.6 PAR",
+     "n": 61.1,
+     "value": "+61.1 PAR",
      "holder": "Ryan — Kirk Cousins",
      "holders": [
       "Ryan"
@@ -72052,11 +72121,11 @@
          ],
          [
           "Points above replacement",
-          "+62.6 started · +78.5 rostered"
+          "+61.1 started · +75.9 rostered"
          ],
          [
           "Weeks started / benched",
-          "6 / 1"
+          "7 / 1"
          ],
          [
           "Outcome",
@@ -72658,21 +72727,21 @@
    "by_season": [
     {
      "s": 2026,
-     "n": 13.3,
-     "value": "+13.3 PAR",
-     "holder": "Alex — Shedeur Sanders",
+     "n": 28.5,
+     "value": "+28.5 PAR",
+     "holder": "Ben — Emmett Johnson",
      "holders": [
-      "Alex"
+      "Ben"
      ],
-     "when": "Week 9 - 2026",
+     "when": "Week 1 - 2026",
      "links": {
       "page": {
        "label": "This pickup in FAB Management",
-       "url": "https://namkurd.github.io/FAB-Management/?season=2026&pickup=2026.9.12524"
+       "url": "https://namkurd.github.io/FAB-Management/?season=2026&pickup=2026.1.13337"
       },
       "row": {
        "label": "This pickup in FAB Management",
-       "url": "https://namkurd.github.io/FAB-Management/?season=2026&pickup=2026.9.12524"
+       "url": "https://namkurd.github.io/FAB-Management/?season=2026&pickup=2026.1.13337"
       },
       "sheet": {
        "label": "All 2026 FAB pickups · FAB Management",
@@ -72681,15 +72750,15 @@
      },
      "detail": {
       "kind": "pickup",
-      "title": "Pickup · Week 9, 2026",
+      "title": "Pickup · Week 1, 2026",
       "blocks": [
        {
-        "head": "Alex",
+        "head": "Ben",
         "chip": null,
         "rows": [
          [
           "Pickup",
-          "Shedeur Sanders (QB)"
+          "Emmett Johnson (RB)"
          ],
          [
           "Winning bid",
@@ -72697,11 +72766,11 @@
          ],
          [
           "Points above replacement",
-          "+13.3 started · +13.3 rostered"
+          "+28.5 started · +42.8 rostered"
          ],
          [
           "Weeks started / benched",
-          "1 / 0"
+          "2 / 8"
          ],
          [
           "Outcome",
@@ -73185,11 +73254,11 @@
          ],
          [
           "Points above replacement",
-          "+52.3 started · +52.3 rostered"
+          "+53.2 started · +51.6 rostered"
          ],
          [
           "Weeks started / benched",
-          "6 / 0"
+          "6 / 1"
          ],
          [
           "Outcome",
@@ -73342,11 +73411,11 @@
          ],
          [
           "Points above replacement",
-          "+52.3 started · +52.3 rostered"
+          "+53.2 started · +51.6 rostered"
          ],
          [
           "Weeks started / benched",
-          "6 / 0"
+          "6 / 1"
          ],
          [
           "Outcome",
@@ -73948,8 +74017,8 @@
    "by_season": [
     {
      "s": 2026,
-     "n": -7.0,
-     "value": "-7.0 PAR",
+     "n": -6.6,
+     "value": "-6.6 PAR",
      "holder": "Ben — Denzel Boston",
      "holders": [
       "Ben"
@@ -73987,11 +74056,11 @@
          ],
          [
           "Points above replacement",
-          "-7.0 started · +1.8 rostered"
+          "-6.6 started · -3.0 rostered"
          ],
          [
           "Weeks started / benched",
-          "4 / 3"
+          "4 / 4"
          ],
          [
           "Outcome",
@@ -74387,6 +74456,58 @@
      }
     },
     {
+     "value": "3.58 PAR per $",
+     "holder": "Joe — Minnesota Vikings",
+     "when": "Week 2 - 2026",
+     "replay": null,
+     "links": {
+      "page": {
+       "label": "This pickup in FAB Management",
+       "url": "https://namkurd.github.io/FAB-Management/?season=2026&pickup=2026.2.MIN"
+      },
+      "row": {
+       "label": "This pickup in FAB Management",
+       "url": "https://namkurd.github.io/FAB-Management/?season=2026&pickup=2026.2.MIN"
+      },
+      "sheet": {
+       "label": "All 2026 FAB pickups · FAB Management",
+       "url": "https://namkurd.github.io/FAB-Management/?season=2026"
+      }
+     },
+     "detail": {
+      "kind": "pickup",
+      "title": "Pickup · Week 2, 2026",
+      "blocks": [
+       {
+        "head": "Joe",
+        "chip": null,
+        "rows": [
+         [
+          "Pickup",
+          "Minnesota Vikings (DEF)"
+         ],
+         [
+          "Winning bid",
+          "$11"
+         ],
+         [
+          "Points above replacement",
+          "+39.4 started · +56.8 rostered"
+         ],
+         [
+          "Weeks started / benched",
+          "6 / 2"
+         ],
+         [
+          "Outcome",
+          "active"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
      "value": "3.43 PAR per $",
      "holder": "Ben — Michael Wilson",
      "when": "Week 11 - 2025",
@@ -74432,58 +74553,6 @@
          [
           "Outcome",
           "Kept"
-         ]
-        ]
-       }
-      ]
-     }
-    },
-    {
-     "value": "2.98 PAR per $",
-     "holder": "Ryan — Kirk Cousins",
-     "when": "Week 2 - 2026",
-     "replay": null,
-     "links": {
-      "page": {
-       "label": "This pickup in FAB Management",
-       "url": "https://namkurd.github.io/FAB-Management/?season=2026&pickup=2026.2.1166"
-      },
-      "row": {
-       "label": "This pickup in FAB Management",
-       "url": "https://namkurd.github.io/FAB-Management/?season=2026&pickup=2026.2.1166"
-      },
-      "sheet": {
-       "label": "All 2026 FAB pickups · FAB Management",
-       "url": "https://namkurd.github.io/FAB-Management/?season=2026"
-      }
-     },
-     "detail": {
-      "kind": "pickup",
-      "title": "Pickup · Week 2, 2026",
-      "blocks": [
-       {
-        "head": "Ryan",
-        "chip": null,
-        "rows": [
-         [
-          "Pickup",
-          "Kirk Cousins (QB)"
-         ],
-         [
-          "Winning bid",
-          "$21"
-         ],
-         [
-          "Points above replacement",
-          "+62.6 started · +78.5 rostered"
-         ],
-         [
-          "Weeks started / benched",
-          "6 / 1"
-         ],
-         [
-          "Outcome",
-          "active"
          ]
         ]
        }
@@ -74593,21 +74662,21 @@
    "by_season": [
     {
      "s": 2026,
-     "n": 2.98,
-     "value": "2.98 PAR per $",
-     "holder": "Ryan — Kirk Cousins",
+     "n": 3.58,
+     "value": "3.58 PAR per $",
+     "holder": "Joe — Minnesota Vikings",
      "holders": [
-      "Ryan"
+      "Joe"
      ],
      "when": "Week 2 - 2026",
      "links": {
       "page": {
        "label": "This pickup in FAB Management",
-       "url": "https://namkurd.github.io/FAB-Management/?season=2026&pickup=2026.2.1166"
+       "url": "https://namkurd.github.io/FAB-Management/?season=2026&pickup=2026.2.MIN"
       },
       "row": {
        "label": "This pickup in FAB Management",
-       "url": "https://namkurd.github.io/FAB-Management/?season=2026&pickup=2026.2.1166"
+       "url": "https://namkurd.github.io/FAB-Management/?season=2026&pickup=2026.2.MIN"
       },
       "sheet": {
        "label": "All 2026 FAB pickups · FAB Management",
@@ -74619,24 +74688,24 @@
       "title": "Pickup · Week 2, 2026",
       "blocks": [
        {
-        "head": "Ryan",
+        "head": "Joe",
         "chip": null,
         "rows": [
          [
           "Pickup",
-          "Kirk Cousins (QB)"
+          "Minnesota Vikings (DEF)"
          ],
          [
           "Winning bid",
-          "$21"
+          "$11"
          ],
          [
           "Points above replacement",
-          "+62.6 started · +78.5 rostered"
+          "+39.4 started · +56.8 rostered"
          ],
          [
           "Weeks started / benched",
-          "6 / 1"
+          "6 / 2"
          ],
          [
           "Outcome",
@@ -76194,7 +76263,7 @@
      }
     },
     {
-     "value": "62.6 PAR",
+     "value": "61.1 PAR",
      "holder": "Jake — Kirk Cousins",
      "when": "Week 1 - 2026",
      "replay": null,
@@ -76226,7 +76295,7 @@
          ],
          [
           "Started PAR for others after the drop",
-          "+62.6"
+          "+61.1"
          ],
          [
           "Picked up by",
@@ -76280,8 +76349,8 @@
    "by_season": [
     {
      "s": 2026,
-     "n": 62.6,
-     "value": "62.6 PAR",
+     "n": 61.1,
+     "value": "61.1 PAR",
      "holder": "Jake — Kirk Cousins",
      "holders": [
       "Jake"
@@ -76315,7 +76384,7 @@
          ],
          [
           "Started PAR for others after the drop",
-          "+62.6"
+          "+61.1"
          ],
          [
           "Picked up by",
