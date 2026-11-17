@@ -97,6 +97,5 @@ for cat, n in zip(CATS, SIZES):
           "needs_definition": NEEDS_DEFINITION.get(name), "definition": DEFINITION.get(name), "engine_gap": SOURCE_HINT.get(name),
           "updated": "2026-11-02"})
 json.dump({"version": 1, "league": "DTF Club", "records": recs}, open("data/records.json", "w"), indent=1, ensure_ascii=False)
-open("data/changelog.jsonl", "w").write(json.dumps({"ts": "2026-11-02T00:00:00Z", "record": "*", "cause": "seed:sheet",
-  "note": "Imported 76 records from the hand-kept Record Book sheet."}) + "\n")
+open("data/changelog.jsonl", "w").write("")   # the change log holds only records broken
 print(len(recs), "records;", sum(1 for r in recs if r["metric"]), "have an engine metric")

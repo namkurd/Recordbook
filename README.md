@@ -3,7 +3,7 @@
 A living version of the hand-kept record book. Static page (GitHub Pages) + a weekly Python job.
 
 - **`index.html`** – the page. Filters by type, manager, source and "recently changed"; hover a mark to see the previous record; click a row for the top marks, ties, proof links and that record's history; **Change log** tab for everything that has moved. Filters are saved in the URL, so any view is shareable.
-- **`data/records.json`** – every record (76 at launch). **`data/changelog.jsonl`** – append-only history.
+- **`data/records.json`** – every record (76 at launch). **`data/changelog.jsonl`** – append-only log of records broken (ties, corrections and blocked changes are not logged). The default page banner lists every record broken in the last 14 days, or the 3 most recently broken, whichever is more.
 - **`engine/`** – recomputes records from the other league repos (`sleepersheet` season totals back to 2013; `SleeperLiveRumbles` weekly games from 2021 and the 2026 season so far) and updates the data files.
 - **`tools/seed.py`** + `tools/sheet.psv` – the one-time import of the old sheet. Don't re-run after go-live; it overwrites the data.
 - **`.github/workflows/update.yml`** – runs the engine Tuesday mornings (and on demand from the Actions tab).
