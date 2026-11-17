@@ -228,7 +228,8 @@ def main():
     if not DRY:
         json.dump(doc, open(f"{ROOT}/data/records.json", "w"), indent=1, ensure_ascii=False)
         with open(f"{ROOT}/data/changelog.jsonl", "a") as f:
-            for e in log: f.write(json.dumps(e, ensure_ascii=False) + "\n")
+            for e in log:   # the change log keeps only records broken (ties, corrections and blocked changes are not logged)
+                if e["cause"] == "auto:break": f.write(json.dumps(e, ensure_ascii=False) + "\n")
     for e in log: print(e["cause"], "|", e["name"], "|", (e.get("old") or {}).get("value"), (e.get("old") or {}).get("holder"), "->", e["new"].get("value"), e["new"].get("holder"), e["new"].get("when"))
     print(len(log), "change(s)", "(dry run)" if DRY else "")
 main()
