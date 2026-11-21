@@ -627,13 +627,13 @@
     },
     {
      "value": "1",
-     "holder": "Alex",
+     "holder": "Ryan",
      "when": "2011",
      "replay": null
     },
     {
      "value": "1",
-     "holder": "Ryan",
+     "holder": "Alex",
      "when": "2011",
      "replay": null
     }
@@ -77454,8 +77454,8 @@
    "source": "computed",
    "metric": "shot_league",
    "direction": "max",
-   "value": "31",
-   "value_num": 31,
+   "value": "29",
+   "value_num": 29,
    "when": "2022",
    "holder": "DTFClub",
    "holders": [
@@ -77467,12 +77467,12 @@
    "evidence": [],
    "replay": null,
    "previous": {
-    "value": "17",
+    "value": "31",
     "holder": "DTFClub",
-    "when": "2025",
+    "when": "2022",
     "team": "",
     "evidence": [],
-    "replaced_on": "2026-11-03",
+    "replaced_on": "2026-11-21",
     "replaced_by": "DTFClub",
     "reconciled": true
    },
@@ -77482,36 +77482,36 @@
    "era_pair": null,
    "size_sensitive": false,
    "needs_definition": null,
-   "definition": "A score of 0 or less from a non-defense starter who was not ruled out before the 2nd half, or ruled out but didn't play in the 2nd half.",
+   "definition": "A score of exactly 0.0 from a non-defense starter who was not ruled out before the 2nd half, or ruled out but didn't play in the 2nd half.",
    "engine_gap": null,
-   "updated": "2026-11-03",
+   "updated": "2026-11-21",
    "leaderboard": [
     {
-     "value": "31",
+     "value": "29",
      "holder": "DTFClub",
      "when": "2022",
      "replay": null
     },
     {
-     "value": "27",
+     "value": "25",
      "holder": "DTFClub",
      "when": "2023",
      "replay": null
     },
     {
-     "value": "25",
+     "value": "21",
      "holder": "DTFClub",
      "when": "2024",
      "replay": null
     },
     {
-     "value": "21",
+     "value": "16",
      "holder": "DTFClub",
      "when": "2021",
      "replay": null
     },
     {
-     "value": "17",
+     "value": "16",
      "holder": "DTFClub",
      "when": "2025",
      "replay": null
@@ -77521,8 +77521,8 @@
    "by_season": [
     {
      "s": 2025,
-     "n": 17,
-     "value": "17",
+     "n": 16,
+     "value": "16",
      "holder": "DTFClub",
      "holders": [
       "DTFClub"
@@ -77531,8 +77531,8 @@
     },
     {
      "s": 2024,
-     "n": 25,
-     "value": "25",
+     "n": 21,
+     "value": "21",
      "holder": "DTFClub",
      "holders": [
       "DTFClub"
@@ -77541,8 +77541,8 @@
     },
     {
      "s": 2023,
-     "n": 27,
-     "value": "27",
+     "n": 25,
+     "value": "25",
      "holder": "DTFClub",
      "holders": [
       "DTFClub"
@@ -77551,8 +77551,8 @@
     },
     {
      "s": 2022,
-     "n": 31,
-     "value": "31",
+     "n": 29,
+     "value": "29",
      "holder": "DTFClub",
      "holders": [
       "DTFClub"
@@ -77561,15 +77561,16 @@
     },
     {
      "s": 2021,
-     "n": 21,
-     "value": "21",
+     "n": 16,
+     "value": "16",
      "holder": "DTFClub",
      "holders": [
       "DTFClub"
      ],
      "when": "2021"
     }
-   ]
+   ],
+   "verified": true
   },
   {
    "id": "costliest-sit-start-miss",
@@ -85889,23 +85890,27 @@
    "source": "computed",
    "metric": "shot_week",
    "direction": "max",
-   "value": "3",
-   "value_num": 3,
-   "when": "Week 7 - 2024",
-   "holder": "Joe",
+   "value": "2",
+   "value_num": 2,
+   "when": "Week 14 - 2021; Week 5 - 2022; Week 7 - 2022; Week 15 - 2023; Week 16 - 2023; Week 17 - 2023; Week 6 - 2024; Week 7 - 2024; Week 17 - 2024; Week 8 - 2026",
+   "holder": "Haan; Tommy; Joe; Tommy; Tommy; Ryan; Christian; Joe; Christian; Haan",
    "holders": [
-    "Joe"
+    "Haan",
+    "Tommy",
+    "Joe",
+    "Ryan",
+    "Christian"
    ],
    "league_level": false,
-   "team": "TouchDune Messiah",
+   "team": "",
    "notes": [],
    "evidence": [],
    "replay": {
-    "season": 2024,
-    "week": 7,
-    "rid": 5,
-    "opp_rid": 2,
-    "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=7.5.2&season=2024"
+    "season": 2021,
+    "week": 14,
+    "rid": 4,
+    "opp_rid": 10,
+    "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=14.4.10&season=2021"
    },
    "previous": null,
    "ties": [],
@@ -85915,185 +85920,19 @@
    "size_sensitive": false,
    "needs_definition": null,
    "engine_gap": null,
-   "definition": "A Shotgun is a score of 0 or less from a non-defense starter who took the field and was not ruled out in the game (a QB whose backup's points the league credited, or any starter Sleeper marked Out, IR or PUP before the 2nd half of his game; tracked from 2026). The most for one team in one week. Counts games since 2021, when Rumble Central's records begin.",
-   "updated": "2026-11-03",
+   "definition": "A Shotgun is a score of exactly 0.0 from a non-defense starter who was not ruled out (a QB whose backup's points the league credited, or any starter the NFL's final injury report listed as Out, or Sleeper marked Out, IR or PUP before the 2nd half of his game). A starter who never took the field (a healthy scratch, a Questionable player who sat) still counts. The most for one team in one week. Counts games since 2021, when Rumble Central's records begin.",
+   "updated": "2026-11-21",
    "leaderboard": [
     {
-     "value": "3",
-     "holder": "Joe",
-     "when": "Week 7 - 2024",
-     "replay": {
-      "season": 2024,
-      "week": 7,
-      "rid": 5,
-      "opp_rid": 2,
-      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=7.5.2&season=2024"
-     }
-    },
-    {
      "value": "2",
-     "holder": "Steven",
-     "when": "Week 2 - 2022",
+     "holder": "Haan",
+     "when": "Week 14 - 2021",
      "replay": {
-      "season": 2022,
-      "week": 2,
-      "rid": 7,
+      "season": 2021,
+      "week": 14,
+      "rid": 4,
       "opp_rid": 10,
-      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=2.7.10&season=2022"
-     },
-     "detail": {
-      "kind": "facts",
-      "title": "Shotguns · Week 2, 2022",
-      "blocks": [
-       {
-        "head": "Steven",
-        "chip": null,
-        "rows": [
-         [
-          "DJ Chark",
-          "0.0 pts"
-         ],
-         [
-          "Darnell Mooney",
-          "-0.4 pts"
-         ]
-        ]
-       }
-      ]
-     },
-     "cards": {
-      "season": 2022,
-      "week": 2,
-      "teams": [
-       {
-        "rid": 7,
-        "name": "Steven",
-        "team": "The Goodell Boys Club",
-        "won": false,
-        "act": 110.96,
-        "rumbles": 2,
-        "vs_field": 2,
-        "season_rumbles": 2,
-        "w": 0,
-        "l": 2,
-        "players": [
-         {
-          "pos": "QB",
-          "name": "Aaron Rodgers",
-          "pts": 14.86
-         },
-         {
-          "pos": "RB",
-          "name": "Christian McCaffrey",
-          "pts": 16.8
-         },
-         {
-          "pos": "RB",
-          "name": "Darrell Henderson",
-          "pts": 10.7
-         },
-         {
-          "pos": "WR",
-          "name": "DJ Chark",
-          "pts": 0.0
-         },
-         {
-          "pos": "WR",
-          "name": "DJ Moore",
-          "pts": 12.3
-         },
-         {
-          "pos": "TE",
-          "name": "Tyler Higbee",
-          "pts": 14.1
-         },
-         {
-          "pos": "WR",
-          "name": "Darnell Mooney",
-          "pts": -0.4
-         },
-         {
-          "pos": "WR",
-          "name": "Drake London",
-          "pts": 24.6
-         },
-         {
-          "pos": "K",
-          "name": "Matt Gay",
-          "pts": 7.0
-         },
-         {
-          "pos": "DEF",
-          "name": "Los Angeles Rams",
-          "pts": 11.0
-         }
-        ]
-       },
-       {
-        "rid": 10,
-        "name": "Ryan",
-        "team": "Mixed Lamb Rogan Josh",
-        "won": true,
-        "act": 165.98,
-        "rumbles": 17,
-        "vs_field": 8,
-        "season_rumbles": 24,
-        "w": 1,
-        "l": 1,
-        "players": [
-         {
-          "pos": "QB",
-          "name": "Josh Allen",
-          "pts": 29.18
-         },
-         {
-          "pos": "RB",
-          "name": "Kareem Hunt",
-          "pts": 9.4
-         },
-         {
-          "pos": "RB",
-          "name": "D'Andre Swift",
-          "pts": 16.7
-         },
-         {
-          "pos": "WR",
-          "name": "Amon-Ra St. Brown",
-          "pts": 39.4
-         },
-         {
-          "pos": "WR",
-          "name": "Terry McLaurin",
-          "pts": 12.2
-         },
-         {
-          "pos": "TE",
-          "name": "Darren Waller",
-          "pts": 17.0
-         },
-         {
-          "pos": "RB",
-          "name": "Joe Mixon",
-          "pts": 11.3
-         },
-         {
-          "pos": "WR",
-          "name": "CeeDee Lamb",
-          "pts": 15.1
-         },
-         {
-          "pos": "K",
-          "name": "Daniel Carlson",
-          "pts": 13.7
-         },
-         {
-          "pos": "DEF",
-          "name": "Pittsburgh Steelers",
-          "pts": 2.0
-         }
-        ]
-       }
-      ]
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=14.4.10&season=2021"
      }
     },
     {
@@ -86430,30 +86269,30 @@
     },
     {
      "value": "2",
-     "holder": "Aidan",
-     "when": "Week 1 - 2023",
+     "holder": "Tommy",
+     "when": "Week 15 - 2023",
      "replay": {
       "season": 2023,
-      "week": 1,
-      "rid": 1,
-      "opp_rid": 10,
-      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=1.1.10&season=2023"
+      "week": 15,
+      "rid": 9,
+      "opp_rid": 8,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=15.9.8&season=2023"
      },
      "detail": {
       "kind": "facts",
-      "title": "Shotguns · Week 1, 2023",
+      "title": "Shotguns · Week 15, 2023",
       "blocks": [
        {
-        "head": "Aidan",
+        "head": "Tommy",
         "chip": null,
         "rows": [
          [
-          "Dallas Goedert",
+          "Chris Olave",
           "0.0 pts"
          ],
          [
-          "Graham Gano",
-          "-2.0 pts"
+          "Dalton Kincaid",
+          "0.0 pts"
          ]
         ]
        }
@@ -86461,133 +86300,299 @@
      },
      "cards": {
       "season": 2023,
-      "week": 1,
+      "week": 15,
       "teams": [
        {
-        "rid": 1,
-        "name": "Aidan",
-        "team": "Hyrule of Law",
+        "rid": 9,
+        "name": "Tommy",
+        "team": "To Be Or Not To Be…Back",
         "won": false,
-        "act": 100.44,
-        "rumbles": 2,
-        "vs_field": 2,
-        "season_rumbles": 2,
-        "w": 0,
-        "l": 1,
+        "act": 106.61,
+        "rumbles": 1,
+        "vs_field": 1,
+        "season_rumbles": 58,
+        "w": 2,
+        "l": 13,
         "players": [
          {
           "pos": "QB",
-          "name": "Jared Goff",
-          "pts": 13.52
+          "name": "Brock Purdy",
+          "pts": 25.68
          },
          {
           "pos": "RB",
-          "name": "Bijan Robinson",
-          "pts": 18.3
+          "name": "Zack Moss",
+          "pts": 12.3
          },
          {
           "pos": "RB",
-          "name": "Nick Chubb",
-          "pts": 15.7
+          "name": "Joe Mixon",
+          "pts": 15.1
          },
          {
           "pos": "WR",
-          "name": "Ja'Marr Chase",
-          "pts": 9.1
-         },
-         {
-          "pos": "WR",
-          "name": "DeVonta Smith",
-          "pts": 17.7
-         },
-         {
-          "pos": "TE",
-          "name": "Dallas Goedert",
+          "name": "Chris Olave",
           "pts": 0.0
          },
          {
           "pos": "WR",
-          "name": "Tyler Lockett",
-          "pts": 3.0
+          "name": "Tee Higgins",
+          "pts": 22.1
+         },
+         {
+          "pos": "TE",
+          "name": "Dalton Kincaid",
+          "pts": 0.0
+         },
+         {
+          "pos": "WR",
+          "name": "Calvin Ridley",
+          "pts": 7.9
          },
          {
           "pos": "QB",
-          "name": "Sam Howell",
-          "pts": 12.18
+          "name": "Trevor Lawrence",
+          "pts": 14.16
          },
          {
           "pos": "K",
-          "name": "Graham Gano",
-          "pts": -2.0
+          "name": "Wil Lutz",
+          "pts": 5.0
          },
          {
           "pos": "DEF",
-          "name": "Baltimore Ravens",
-          "pts": 12.94
+          "name": "Cincinnati Bengals",
+          "pts": 4.37
          }
         ]
        },
        {
-        "rid": 10,
-        "name": "Ryan",
-        "team": "Former & Future GOAT",
+        "rid": 8,
+        "name": "Ankit",
+        "team": "Fields of Dreams",
         "won": true,
-        "act": 122.59,
-        "rumbles": 14,
-        "vs_field": 5,
-        "season_rumbles": 14,
-        "w": 1,
-        "l": 0,
+        "act": 109.84,
+        "rumbles": 12,
+        "vs_field": 3,
+        "season_rumbles": 158,
+        "w": 9,
+        "l": 6,
         "players": [
          {
           "pos": "QB",
-          "name": "Joe Burrow",
-          "pts": 2.18
+          "name": "Jake Browning",
+          "pts": 16.96
          },
          {
           "pos": "RB",
-          "name": "Derrick Henry",
-          "pts": 13.9
+          "name": "Tony Pollard",
+          "pts": 7.7
          },
          {
           "pos": "RB",
-          "name": "David Montgomery",
-          "pts": 13.4
+          "name": "Kyren Williams",
+          "pts": 22.5
          },
          {
           "pos": "WR",
-          "name": "Tyreek Hill",
-          "pts": 43.5
+          "name": "DJ Moore",
+          "pts": 8.2
          },
          {
           "pos": "WR",
-          "name": "Brandin Cooks",
-          "pts": 4.2
+          "name": "Zay Flowers",
+          "pts": 1.7
          },
          {
           "pos": "TE",
-          "name": "Pat Freiermuth",
-          "pts": 7.3
+          "name": "Logan Thomas",
+          "pts": 1.7
          },
          {
-          "pos": "RB",
-          "name": "James Conner",
-          "pts": 9.0
+          "pos": "WR",
+          "name": "Amari Cooper",
+          "pts": 20.9
          },
          {
           "pos": "QB",
-          "name": "Russell Wilson",
-          "pts": 14.18
+          "name": "Justin Fields",
+          "pts": 7.14
          },
          {
           "pos": "K",
-          "name": "Harrison Butker",
-          "pts": 9.4
+          "name": "Justin Tucker",
+          "pts": 12.7
          },
          {
           "pos": "DEF",
-          "name": "Buffalo Bills",
-          "pts": 5.53
+          "name": "Kansas City Chiefs",
+          "pts": 10.34
+         }
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "value": "2",
+     "holder": "Tommy",
+     "when": "Week 16 - 2023",
+     "replay": {
+      "season": 2023,
+      "week": 16,
+      "rid": 9,
+      "opp_rid": 4,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=16.9.4&season=2023"
+     },
+     "detail": {
+      "kind": "facts",
+      "title": "Shotguns · Week 16, 2023",
+      "blocks": [
+       {
+        "head": "Tommy",
+        "chip": null,
+        "rows": [
+         [
+          "Zack Moss",
+          "0.0 pts"
+         ],
+         [
+          "Wil Lutz",
+          "0.0 pts"
+         ]
+        ]
+       }
+      ]
+     },
+     "cards": {
+      "season": 2023,
+      "week": 16,
+      "teams": [
+       {
+        "rid": 9,
+        "name": "Tommy",
+        "team": "To Be Or Not To Be…Back",
+        "won": false,
+        "act": 89.15,
+        "rumbles": 0,
+        "vs_field": 0,
+        "season_rumbles": 58,
+        "w": 2,
+        "l": 13,
+        "players": [
+         {
+          "pos": "QB",
+          "name": "Brock Purdy",
+          "pts": 1.4
+         },
+         {
+          "pos": "RB",
+          "name": "Zack Moss",
+          "pts": 0.0
+         },
+         {
+          "pos": "RB",
+          "name": "Joe Mixon",
+          "pts": 8.0
+         },
+         {
+          "pos": "WR",
+          "name": "Chris Olave",
+          "pts": 23.3
+         },
+         {
+          "pos": "WR",
+          "name": "Tee Higgins",
+          "pts": 25.0
+         },
+         {
+          "pos": "TE",
+          "name": "Dalton Kincaid",
+          "pts": 1.7
+         },
+         {
+          "pos": "WR",
+          "name": "Calvin Ridley",
+          "pts": 25.8
+         },
+         {
+          "pos": "QB",
+          "name": "Trevor Lawrence",
+          "pts": 7.34
+         },
+         {
+          "pos": "K",
+          "name": "Wil Lutz",
+          "pts": 0.0
+         },
+         {
+          "pos": "DEF",
+          "name": "Cincinnati Bengals",
+          "pts": -3.39
+         }
+        ]
+       },
+       {
+        "rid": 4,
+        "name": "Haan",
+        "team": "Let Haan Szimmer",
+        "won": true,
+        "act": 112.88,
+        "rumbles": 11,
+        "vs_field": 2,
+        "season_rumbles": 124,
+        "w": 7,
+        "l": 8,
+        "players": [
+         {
+          "pos": "QB",
+          "name": "Gardner Minshew II",
+          "pts": 6.14
+         },
+         {
+          "pos": "RB",
+          "name": "Ty Chandler",
+          "pts": 7.7
+         },
+         {
+          "pos": "RB",
+          "name": "Ezekiel Elliott",
+          "pts": 20.0
+         },
+         {
+          "pos": "WR",
+          "name": "Justin Jefferson",
+          "pts": 26.1
+         },
+         {
+          "pos": "WR",
+          "name": "Deebo Samuel Sr.",
+          "pts": 9.4
+         },
+         {
+          "pos": "TE",
+          "name": "Sam LaPorta",
+          "pts": 4.8
+         },
+         {
+          "pos": "WR",
+          "name": "A.J. Brown",
+          "pts": 14.0
+         },
+         {
+          "pos": "QB",
+          "name": "Joe Flacco",
+          "pts": 24.82
+         },
+         {
+          "pos": "K",
+          "name": "Riley Patterson",
+          "pts": 0.0
+         },
+         {
+          "pos": "DEF",
+          "name": "San Francisco 49ers",
+          "pts": -0.08
          }
         ]
        }
@@ -86597,22 +86602,18 @@
    ],
    "detail": {
     "kind": "facts",
-    "title": "Shotguns · Week 7, 2024",
+    "title": "Shotguns · Week 14, 2021",
     "blocks": [
      {
-      "head": "Joe",
+      "head": "Haan",
       "chip": null,
       "rows": [
        [
-        "DeVonta Smith",
-        "-0.2 pts"
-       ],
-       [
-        "Tank Dell",
+        "Adrian Peterson",
         "0.0 pts"
        ],
        [
-        "Deebo Samuel Sr.",
+        "Terry McLaurin",
         "0.0 pts"
        ]
       ]
@@ -86621,134 +86622,134 @@
    },
    "verified": true,
    "cards": {
-    "season": 2024,
-    "week": 7,
+    "season": 2021,
+    "week": 14,
     "teams": [
      {
-      "rid": 5,
-      "name": "Joe",
-      "team": "TouchDune Messiah",
+      "rid": 4,
+      "name": "Haan",
+      "team": "King Haan",
       "won": false,
-      "act": 93.35,
+      "act": 109.92,
       "rumbles": 3,
       "vs_field": 3,
-      "season_rumbles": 81,
+      "season_rumbles": 105,
       "w": 5,
-      "l": 2,
+      "l": 9,
       "players": [
        {
         "pos": "QB",
-        "name": "Jordan Love",
-        "pts": 16.05
+        "name": "Josh Allen",
+        "pts": 33.72
        },
        {
         "pos": "RB",
-        "name": "Tony Pollard",
-        "pts": 8.5
+        "name": "Latavius Murray",
+        "pts": 6.1
        },
        {
         "pos": "RB",
-        "name": "Kyren Williams",
-        "pts": 19.6
-       },
-       {
-        "pos": "WR",
-        "name": "DeVonta Smith",
-        "pts": -0.2
-       },
-       {
-        "pos": "WR",
-        "name": "Tank Dell",
+        "name": "Adrian Peterson",
         "pts": 0.0
-       },
-       {
-        "pos": "TE",
-        "name": "Sam LaPorta",
-        "pts": 3.5
        },
        {
         "pos": "WR",
         "name": "Deebo Samuel Sr.",
+        "pts": 12.4
+       },
+       {
+        "pos": "WR",
+        "name": "Terry McLaurin",
         "pts": 0.0
        },
        {
-        "pos": "QB",
-        "name": "Lamar Jackson",
-        "pts": 33.94
+        "pos": "TE",
+        "name": "Tyler Conklin",
+        "pts": 2.5
+       },
+       {
+        "pos": "WR",
+        "name": "Marquise Brown",
+        "pts": 5.6
+       },
+       {
+        "pos": "WR",
+        "name": "Stefon Diggs",
+        "pts": 9.9
        },
        {
         "pos": "K",
-        "name": "Younghoe Koo",
-        "pts": 1.0
+        "name": "Justin Tucker",
+        "pts": 15.7
        },
        {
         "pos": "DEF",
-        "name": "Pittsburgh Steelers",
-        "pts": 10.96
+        "name": "Dallas Cowboys",
+        "pts": 24.0
        }
       ]
      },
      {
-      "rid": 2,
-      "name": "Ben",
-      "team": "Resident Evil 🏆🏆😵☠️⚰️🪦🧟‍♂️🏆",
+      "rid": 10,
+      "name": "Ryan",
+      "team": "Winners At War",
       "won": true,
-      "act": 179.42,
-      "rumbles": 18,
-      "vs_field": 9,
-      "season_rumbles": 82,
-      "w": 4,
-      "l": 3,
+      "act": 140.74,
+      "rumbles": 17,
+      "vs_field": 8,
+      "season_rumbles": 173,
+      "w": 10,
+      "l": 4,
       "players": [
        {
         "pos": "QB",
-        "name": "Drake Maye",
-        "pts": 20.34
+        "name": "Aaron Rodgers",
+        "pts": 27.14
        },
        {
         "pos": "RB",
-        "name": "Saquon Barkley",
-        "pts": 26.7
+        "name": "Ezekiel Elliott",
+        "pts": 8.5
        },
        {
         "pos": "RB",
-        "name": "Alvin Kamara",
-        "pts": 7.4
-       },
-       {
-        "pos": "WR",
-        "name": "Ja'Marr Chase",
-        "pts": 17.6
+        "name": "D'Onta Foreman",
+        "pts": 12.7
        },
        {
         "pos": "WR",
         "name": "Justin Jefferson",
-        "pts": 21.4
-       },
-       {
-        "pos": "TE",
-        "name": "Evan Engram",
-        "pts": 8.5
+        "pts": 16.0
        },
        {
         "pos": "WR",
-        "name": "Amon-Ra St. Brown",
-        "pts": 25.2
+        "name": "DJ Moore",
+        "pts": 10.9
        },
        {
-        "pos": "RB",
-        "name": "James Conner",
-        "pts": 16.7
+        "pos": "TE",
+        "name": "Mark Andrews",
+        "pts": 20.75
+       },
+       {
+        "pos": "WR",
+        "name": "Tee Higgins",
+        "pts": 13.9
+       },
+       {
+        "pos": "WR",
+        "name": "Mike Williams",
+        "pts": 7.85
        },
        {
         "pos": "K",
-        "name": "Austin Seibert",
-        "pts": 18.0
+        "name": "Ryan Succop",
+        "pts": 9.0
        },
        {
         "pos": "DEF",
-        "name": "Los Angeles Rams",
-        "pts": 17.58
+        "name": "Green Bay Packers",
+        "pts": 14.0
        }
       ]
      }
@@ -86760,33 +86761,33 @@
      "s": 2026,
      "n": 2,
      "value": "2",
-     "holder": "Aidan",
+     "holder": "Haan",
      "holders": [
-      "Aidan"
+      "Haan"
      ],
      "when": "Week 8 - 2026",
      "replay": {
       "season": 2026,
       "week": 8,
-      "rid": 1,
-      "opp_rid": 5,
-      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=8.1.5"
+      "rid": 4,
+      "opp_rid": 6,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=8.4.6"
      },
      "detail": {
       "kind": "facts",
       "title": "Shotguns · Week 8, 2026",
       "blocks": [
        {
-        "head": "Aidan",
+        "head": "Haan",
         "chip": null,
         "rows": [
          [
-          "Omar Cooper Jr.",
+          "Chris Godwin Jr.",
           "0.0 pts"
          ],
          [
-          "Michael Penix Jr.",
-          "-1.4 pts"
+          "Will Reichard",
+          "0.0 pts"
          ]
         ]
        }
@@ -86797,130 +86798,130 @@
       "week": 8,
       "teams": [
        {
-        "rid": 1,
-        "name": "Aidan",
-        "team": "Hot Ones Time Machine",
-        "won": false,
-        "act": 84.15,
-        "rumbles": 0,
-        "vs_field": 0,
-        "season_rumbles": 31,
-        "w": 1,
-        "l": 7,
+        "rid": 4,
+        "name": "Haan",
+        "team": "Dear Jon(Taylors Version)",
+        "won": true,
+        "act": 150.6,
+        "rumbles": 15,
+        "vs_field": 6,
+        "season_rumbles": 72,
+        "w": 3,
+        "l": 5,
         "players": [
          {
           "pos": "RB",
-          "name": "Jordan Mason",
-          "pts": 3.0
+          "name": "Chuba Hubbard",
+          "pts": 27.4
          },
          {
           "pos": "RB",
-          "name": "Saquon Barkley",
-          "pts": 12.9
+          "name": "Jonathan Taylor",
+          "pts": 6.7
          },
          {
           "pos": "TE",
-          "name": "Hunter Henry",
-          "pts": 6.5
+          "name": "Dalton Kincaid",
+          "pts": 20.1
          },
          {
           "pos": "WR",
-          "name": "Ladd McConkey",
-          "pts": 12.6
+          "name": "Keenan Allen",
+          "pts": 16.2
          },
          {
           "pos": "WR",
-          "name": "Omar Cooper Jr.",
+          "name": "Chris Godwin Jr.",
           "pts": 0.0
          },
          {
           "pos": "WR",
-          "name": "Michael Wilson",
-          "pts": 29.3
+          "name": "Justin Jefferson",
+          "pts": 15.3
          },
          {
           "pos": "QB",
-          "name": "Michael Penix Jr.",
-          "pts": -1.4
+          "name": "Joe Burrow",
+          "pts": 42.13
          },
          {
           "pos": "QB",
-          "name": "Matthew Stafford",
-          "pts": 9.43
+          "name": "Dak Prescott",
+          "pts": 20.8
          },
          {
           "pos": "K",
-          "name": "Spencer Shrader",
-          "pts": 1.0
+          "name": "Will Reichard",
+          "pts": 0.0
          },
          {
           "pos": "DEF",
-          "name": "New England Patriots",
-          "pts": 10.82
+          "name": "Denver Broncos",
+          "pts": 1.97
          }
         ]
        },
        {
-        "rid": 5,
-        "name": "Joe",
-        "team": "Virtue Signal Caller",
-        "won": true,
-        "act": 132.17,
-        "rumbles": 12,
-        "vs_field": 3,
-        "season_rumbles": 67,
-        "w": 4,
-        "l": 4,
+        "rid": 6,
+        "name": "Alex",
+        "team": "Songs in the Key of Ball",
+        "won": false,
+        "act": 150.0,
+        "rumbles": 5,
+        "vs_field": 5,
+        "season_rumbles": 73,
+        "w": 3,
+        "l": 5,
         "players": [
          {
           "pos": "RB",
-          "name": "Derrick Henry",
-          "pts": 14.5
+          "name": "Kenneth Walker III",
+          "pts": 13.9
          },
          {
           "pos": "RB",
-          "name": "Blake Corum",
-          "pts": 14.3
+          "name": "James Cook III",
+          "pts": 21.1
          },
          {
           "pos": "TE",
-          "name": "Trey McBride",
-          "pts": 21.7
+          "name": "Dallas Goedert",
+          "pts": 8.2
+         },
+         {
+          "pos": "RB",
+          "name": "Rhamondre Stevenson",
+          "pts": 14.5
          },
          {
           "pos": "WR",
-          "name": "Ja'Kobi Lane",
-          "pts": 2.8
+          "name": "Matthew Golden",
+          "pts": 22.4
          },
          {
           "pos": "WR",
-          "name": "Rashee Rice",
-          "pts": 18.8
-         },
-         {
-          "pos": "WR",
-          "name": "Jameson Williams",
-          "pts": 18.0
+          "name": "Luther Burden III",
+          "pts": 20.1
          },
          {
           "pos": "QB",
-          "name": "Jordan Love",
-          "pts": 23.52
+          "name": "Caleb Williams",
+          "pts": 16.13
          },
          {
           "pos": "QB",
-          "name": "Aaron Rodgers",
-          "pts": 5.83
+          "name": "Kyler Murray",
+          "pts": 21.15
          },
          {
           "pos": "K",
-          "name": "Cam Little",
-          "pts": 6.0
+          "name": "Chad Ryland",
+          "pts": 10.57
          },
          {
           "pos": "DEF",
-          "name": "Minnesota Vikings",
-          "pts": 6.72
+          "name": "Kansas City Chiefs",
+          "pts": 1.95
          }
         ]
        }
@@ -87096,38 +87097,34 @@
     },
     {
      "s": 2024,
-     "n": 3,
-     "value": "3",
-     "holder": "Joe",
+     "n": 2,
+     "value": "2",
+     "holder": "Christian",
      "holders": [
-      "Joe"
+      "Christian"
      ],
-     "when": "Week 7 - 2024",
+     "when": "Week 6 - 2024",
      "replay": {
       "season": 2024,
-      "week": 7,
-      "rid": 5,
-      "opp_rid": 2,
-      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=7.5.2&season=2024"
+      "week": 6,
+      "rid": 9,
+      "opp_rid": 7,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=6.9.7&season=2024"
      },
      "detail": {
       "kind": "facts",
-      "title": "Shotguns · Week 7, 2024",
+      "title": "Shotguns · Week 6, 2024",
       "blocks": [
        {
-        "head": "Joe",
+        "head": "Christian",
         "chip": null,
         "rows": [
          [
-          "DeVonta Smith",
-          "-0.2 pts"
-         ],
-         [
-          "Tank Dell",
+          "James Cook III",
           "0.0 pts"
          ],
          [
-          "Deebo Samuel Sr.",
+          "Dallas Goedert",
           "0.0 pts"
          ]
         ]
@@ -87136,133 +87133,133 @@
      },
      "cards": {
       "season": 2024,
-      "week": 7,
+      "week": 6,
       "teams": [
        {
-        "rid": 5,
-        "name": "Joe",
-        "team": "TouchDune Messiah",
+        "rid": 9,
+        "name": "Christian",
+        "team": "Spider 2 Y Banana",
         "won": false,
-        "act": 93.35,
-        "rumbles": 3,
-        "vs_field": 3,
-        "season_rumbles": 81,
-        "w": 5,
-        "l": 2,
-        "players": [
-         {
-          "pos": "QB",
-          "name": "Jordan Love",
-          "pts": 16.05
-         },
-         {
-          "pos": "RB",
-          "name": "Tony Pollard",
-          "pts": 8.5
-         },
-         {
-          "pos": "RB",
-          "name": "Kyren Williams",
-          "pts": 19.6
-         },
-         {
-          "pos": "WR",
-          "name": "DeVonta Smith",
-          "pts": -0.2
-         },
-         {
-          "pos": "WR",
-          "name": "Tank Dell",
-          "pts": 0.0
-         },
-         {
-          "pos": "TE",
-          "name": "Sam LaPorta",
-          "pts": 3.5
-         },
-         {
-          "pos": "WR",
-          "name": "Deebo Samuel Sr.",
-          "pts": 0.0
-         },
-         {
-          "pos": "QB",
-          "name": "Lamar Jackson",
-          "pts": 33.94
-         },
-         {
-          "pos": "K",
-          "name": "Younghoe Koo",
-          "pts": 1.0
-         },
-         {
-          "pos": "DEF",
-          "name": "Pittsburgh Steelers",
-          "pts": 10.96
-         }
-        ]
-       },
-       {
-        "rid": 2,
-        "name": "Ben",
-        "team": "Resident Evil 🏆🏆😵☠️⚰️🪦🧟‍♂️🏆",
-        "won": true,
-        "act": 179.42,
-        "rumbles": 18,
-        "vs_field": 9,
-        "season_rumbles": 82,
-        "w": 4,
+        "act": 81.6,
+        "rumbles": 0,
+        "vs_field": 0,
+        "season_rumbles": 51,
+        "w": 3,
         "l": 3,
         "players": [
          {
           "pos": "QB",
-          "name": "Drake Maye",
-          "pts": 20.34
+          "name": "Josh Allen",
+          "pts": 23.4
          },
          {
           "pos": "RB",
-          "name": "Saquon Barkley",
-          "pts": 26.7
+          "name": "James Cook III",
+          "pts": 0.0
          },
          {
           "pos": "RB",
-          "name": "Alvin Kamara",
-          "pts": 7.4
+          "name": "Jerome Ford",
+          "pts": 1.4
          },
          {
           "pos": "WR",
-          "name": "Ja'Marr Chase",
-          "pts": 17.6
+          "name": "DJ Moore",
+          "pts": 5.0
          },
          {
           "pos": "WR",
-          "name": "Justin Jefferson",
-          "pts": 21.4
+          "name": "Brandon Aiyuk",
+          "pts": 5.7
          },
          {
           "pos": "TE",
-          "name": "Evan Engram",
-          "pts": 8.5
+          "name": "Dallas Goedert",
+          "pts": 0.0
          },
          {
           "pos": "WR",
-          "name": "Amon-Ra St. Brown",
-          "pts": 25.2
+          "name": "Jalen Tolbert",
+          "pts": 8.3
          },
          {
-          "pos": "RB",
-          "name": "James Conner",
-          "pts": 16.7
+          "pos": "QB",
+          "name": "Jalen Hurts",
+          "pts": 21.61
          },
          {
           "pos": "K",
-          "name": "Austin Seibert",
-          "pts": 18.0
+          "name": "Chase McLaughlin",
+          "pts": 9.0
          },
          {
           "pos": "DEF",
-          "name": "Los Angeles Rams",
-          "pts": 17.58
+          "name": "San Francisco 49ers",
+          "pts": 7.19
+         }
+        ]
+       },
+       {
+        "rid": 7,
+        "name": "Steven",
+        "team": "110 Week. Stop the Count.",
+        "won": true,
+        "act": 158.69,
+        "rumbles": 16,
+        "vs_field": 7,
+        "season_rumbles": 61,
+        "w": 4,
+        "l": 2,
+        "players": [
+         {
+          "pos": "QB",
+          "name": "Joe Burrow",
+          "pts": 18.82
+         },
+         {
+          "pos": "RB",
+          "name": "Kenneth Walker III",
+          "pts": 20.9
+         },
+         {
+          "pos": "RB",
+          "name": "Derrick Henry",
+          "pts": 25.2
+         },
+         {
+          "pos": "WR",
+          "name": "Stefon Diggs",
+          "pts": 19.7
+         },
+         {
+          "pos": "WR",
+          "name": "Jameson Williams",
+          "pts": 17.7
+         },
+         {
+          "pos": "TE",
+          "name": "Dalton Schultz",
+          "pts": 6.7
+         },
+         {
+          "pos": "WR",
+          "name": "Diontae Johnson",
+          "pts": 19.8
+         },
+         {
+          "pos": "QB",
+          "name": "Daniel Jones",
+          "pts": 11.3
+         },
+         {
+          "pos": "K",
+          "name": "Brayden Narveson",
+          "pts": 10.7
+         },
+         {
+          "pos": "DEF",
+          "name": "Los Angeles Chargers",
+          "pts": 7.87
          }
         ]
        }
@@ -87273,33 +87270,33 @@
      "s": 2023,
      "n": 2,
      "value": "2",
-     "holder": "Aidan",
+     "holder": "Tommy",
      "holders": [
-      "Aidan"
+      "Tommy"
      ],
-     "when": "Week 1 - 2023",
+     "when": "Week 15 - 2023",
      "replay": {
       "season": 2023,
-      "week": 1,
-      "rid": 1,
-      "opp_rid": 10,
-      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=1.1.10&season=2023"
+      "week": 15,
+      "rid": 9,
+      "opp_rid": 8,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=15.9.8&season=2023"
      },
      "detail": {
       "kind": "facts",
-      "title": "Shotguns · Week 1, 2023",
+      "title": "Shotguns · Week 15, 2023",
       "blocks": [
        {
-        "head": "Aidan",
+        "head": "Tommy",
         "chip": null,
         "rows": [
          [
-          "Dallas Goedert",
+          "Chris Olave",
           "0.0 pts"
          ],
          [
-          "Graham Gano",
-          "-2.0 pts"
+          "Dalton Kincaid",
+          "0.0 pts"
          ]
         ]
        }
@@ -87307,133 +87304,133 @@
      },
      "cards": {
       "season": 2023,
-      "week": 1,
+      "week": 15,
       "teams": [
        {
-        "rid": 1,
-        "name": "Aidan",
-        "team": "Hyrule of Law",
+        "rid": 9,
+        "name": "Tommy",
+        "team": "To Be Or Not To Be…Back",
         "won": false,
-        "act": 100.44,
-        "rumbles": 2,
-        "vs_field": 2,
-        "season_rumbles": 2,
-        "w": 0,
-        "l": 1,
+        "act": 106.61,
+        "rumbles": 1,
+        "vs_field": 1,
+        "season_rumbles": 58,
+        "w": 2,
+        "l": 13,
         "players": [
          {
           "pos": "QB",
-          "name": "Jared Goff",
-          "pts": 13.52
+          "name": "Brock Purdy",
+          "pts": 25.68
          },
          {
           "pos": "RB",
-          "name": "Bijan Robinson",
-          "pts": 18.3
+          "name": "Zack Moss",
+          "pts": 12.3
          },
          {
           "pos": "RB",
-          "name": "Nick Chubb",
-          "pts": 15.7
+          "name": "Joe Mixon",
+          "pts": 15.1
          },
          {
           "pos": "WR",
-          "name": "Ja'Marr Chase",
-          "pts": 9.1
-         },
-         {
-          "pos": "WR",
-          "name": "DeVonta Smith",
-          "pts": 17.7
-         },
-         {
-          "pos": "TE",
-          "name": "Dallas Goedert",
+          "name": "Chris Olave",
           "pts": 0.0
          },
          {
           "pos": "WR",
-          "name": "Tyler Lockett",
-          "pts": 3.0
+          "name": "Tee Higgins",
+          "pts": 22.1
+         },
+         {
+          "pos": "TE",
+          "name": "Dalton Kincaid",
+          "pts": 0.0
+         },
+         {
+          "pos": "WR",
+          "name": "Calvin Ridley",
+          "pts": 7.9
          },
          {
           "pos": "QB",
-          "name": "Sam Howell",
-          "pts": 12.18
+          "name": "Trevor Lawrence",
+          "pts": 14.16
          },
          {
           "pos": "K",
-          "name": "Graham Gano",
-          "pts": -2.0
+          "name": "Wil Lutz",
+          "pts": 5.0
          },
          {
           "pos": "DEF",
-          "name": "Baltimore Ravens",
-          "pts": 12.94
+          "name": "Cincinnati Bengals",
+          "pts": 4.37
          }
         ]
        },
        {
-        "rid": 10,
-        "name": "Ryan",
-        "team": "Former & Future GOAT",
+        "rid": 8,
+        "name": "Ankit",
+        "team": "Fields of Dreams",
         "won": true,
-        "act": 122.59,
-        "rumbles": 14,
-        "vs_field": 5,
-        "season_rumbles": 14,
-        "w": 1,
-        "l": 0,
+        "act": 109.84,
+        "rumbles": 12,
+        "vs_field": 3,
+        "season_rumbles": 158,
+        "w": 9,
+        "l": 6,
         "players": [
          {
           "pos": "QB",
-          "name": "Joe Burrow",
-          "pts": 2.18
+          "name": "Jake Browning",
+          "pts": 16.96
          },
          {
           "pos": "RB",
-          "name": "Derrick Henry",
-          "pts": 13.9
+          "name": "Tony Pollard",
+          "pts": 7.7
          },
          {
           "pos": "RB",
-          "name": "David Montgomery",
-          "pts": 13.4
+          "name": "Kyren Williams",
+          "pts": 22.5
          },
          {
           "pos": "WR",
-          "name": "Tyreek Hill",
-          "pts": 43.5
+          "name": "DJ Moore",
+          "pts": 8.2
          },
          {
           "pos": "WR",
-          "name": "Brandin Cooks",
-          "pts": 4.2
+          "name": "Zay Flowers",
+          "pts": 1.7
          },
          {
           "pos": "TE",
-          "name": "Pat Freiermuth",
-          "pts": 7.3
+          "name": "Logan Thomas",
+          "pts": 1.7
          },
          {
-          "pos": "RB",
-          "name": "James Conner",
-          "pts": 9.0
+          "pos": "WR",
+          "name": "Amari Cooper",
+          "pts": 20.9
          },
          {
           "pos": "QB",
-          "name": "Russell Wilson",
-          "pts": 14.18
+          "name": "Justin Fields",
+          "pts": 7.14
          },
          {
           "pos": "K",
-          "name": "Harrison Butker",
-          "pts": 9.4
+          "name": "Justin Tucker",
+          "pts": 12.7
          },
          {
           "pos": "DEF",
-          "name": "Buffalo Bills",
-          "pts": 5.53
+          "name": "Kansas City Chiefs",
+          "pts": 10.34
          }
         ]
        }
@@ -87444,33 +87441,33 @@
      "s": 2022,
      "n": 2,
      "value": "2",
-     "holder": "Steven",
+     "holder": "Tommy",
      "holders": [
-      "Steven"
+      "Tommy"
      ],
-     "when": "Week 2 - 2022",
+     "when": "Week 5 - 2022",
      "replay": {
       "season": 2022,
-      "week": 2,
-      "rid": 7,
-      "opp_rid": 10,
-      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=2.7.10&season=2022"
+      "week": 5,
+      "rid": 9,
+      "opp_rid": 4,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=5.9.4&season=2022"
      },
      "detail": {
       "kind": "facts",
-      "title": "Shotguns · Week 2, 2022",
+      "title": "Shotguns · Week 5, 2022",
       "blocks": [
        {
-        "head": "Steven",
+        "head": "Tommy",
         "chip": null,
         "rows": [
          [
-          "DJ Chark",
+          "Tyler Conklin",
           "0.0 pts"
          ],
          [
-          "Darnell Mooney",
-          "-0.4 pts"
+          "Tee Higgins",
+          "0.0 pts"
          ]
         ]
        }
@@ -87478,133 +87475,133 @@
      },
      "cards": {
       "season": 2022,
-      "week": 2,
+      "week": 5,
       "teams": [
        {
-        "rid": 7,
-        "name": "Steven",
-        "team": "The Goodell Boys Club",
+        "rid": 9,
+        "name": "Tommy",
+        "team": "Could Be Worse",
         "won": false,
-        "act": 110.96,
-        "rumbles": 2,
-        "vs_field": 2,
-        "season_rumbles": 2,
+        "act": 106.3,
+        "rumbles": 0,
+        "vs_field": 0,
+        "season_rumbles": 12,
         "w": 0,
-        "l": 2,
+        "l": 5,
         "players": [
          {
           "pos": "QB",
-          "name": "Aaron Rodgers",
-          "pts": 14.86
+          "name": "Kyler Murray",
+          "pts": 15.7
          },
          {
           "pos": "RB",
-          "name": "Christian McCaffrey",
-          "pts": 16.8
+          "name": "Najee Harris",
+          "pts": 6.6
          },
          {
           "pos": "RB",
-          "name": "Darrell Henderson",
-          "pts": 10.7
+          "name": "Miles Sanders",
+          "pts": 7.4
          },
          {
           "pos": "WR",
-          "name": "DJ Chark",
+          "name": "Curtis Samuel",
+          "pts": 12.2
+         },
+         {
+          "pos": "WR",
+          "name": "Tyler Lockett",
+          "pts": 27.4
+         },
+         {
+          "pos": "TE",
+          "name": "Tyler Conklin",
           "pts": 0.0
          },
          {
           "pos": "WR",
-          "name": "DJ Moore",
-          "pts": 12.3
-         },
-         {
-          "pos": "TE",
-          "name": "Tyler Higbee",
-          "pts": 14.1
+          "name": "Deebo Samuel Sr.",
+          "pts": 11.2
          },
          {
           "pos": "WR",
-          "name": "Darnell Mooney",
-          "pts": -0.4
-         },
-         {
-          "pos": "WR",
-          "name": "Drake London",
-          "pts": 24.6
+          "name": "Tee Higgins",
+          "pts": 0.0
          },
          {
           "pos": "K",
-          "name": "Matt Gay",
-          "pts": 7.0
+          "name": "Justin Tucker",
+          "pts": 17.8
          },
          {
           "pos": "DEF",
-          "name": "Los Angeles Rams",
-          "pts": 11.0
+          "name": "Baltimore Ravens",
+          "pts": 8.0
          }
         ]
        },
        {
-        "rid": 10,
-        "name": "Ryan",
-        "team": "Mixed Lamb Rogan Josh",
+        "rid": 4,
+        "name": "Haan",
+        "team": "Scrub Wars",
         "won": true,
-        "act": 165.98,
-        "rumbles": 17,
-        "vs_field": 8,
-        "season_rumbles": 24,
-        "w": 1,
+        "act": 138.44,
+        "rumbles": 15,
+        "vs_field": 6,
+        "season_rumbles": 66,
+        "w": 4,
         "l": 1,
         "players": [
          {
           "pos": "QB",
-          "name": "Josh Allen",
-          "pts": 29.18
+          "name": "Derek Carr",
+          "pts": 16.94
          },
          {
           "pos": "RB",
-          "name": "Kareem Hunt",
-          "pts": 9.4
+          "name": "Rex Burkhead",
+          "pts": 4.8
          },
          {
           "pos": "RB",
-          "name": "D'Andre Swift",
-          "pts": 16.7
+          "name": "Nick Chubb",
+          "pts": 25.4
          },
          {
           "pos": "WR",
-          "name": "Amon-Ra St. Brown",
-          "pts": 39.4
+          "name": "Stefon Diggs",
+          "pts": 23.2
          },
          {
           "pos": "WR",
-          "name": "Terry McLaurin",
-          "pts": 12.2
+          "name": "Tyler Boyd",
+          "pts": 5.7
          },
          {
           "pos": "TE",
-          "name": "Darren Waller",
-          "pts": 17.0
-         },
-         {
-          "pos": "RB",
-          "name": "Joe Mixon",
-          "pts": 11.3
+          "name": "Pat Freiermuth",
+          "pts": 3.2
          },
          {
           "pos": "WR",
-          "name": "CeeDee Lamb",
-          "pts": 15.1
+          "name": "Davante Adams",
+          "pts": 26.4
+         },
+         {
+          "pos": "TE",
+          "name": "Zach Ertz",
+          "pts": 10.8
          },
          {
           "pos": "K",
-          "name": "Daniel Carlson",
-          "pts": 13.7
+          "name": "Evan McPherson",
+          "pts": 6.0
          },
          {
           "pos": "DEF",
-          "name": "Pittsburgh Steelers",
-          "pts": 2.0
+          "name": "San Francisco 49ers",
+          "pts": 16.0
          }
         ]
        }
@@ -87613,30 +87610,34 @@
     },
     {
      "s": 2021,
-     "n": 1,
-     "value": "1",
-     "holder": "Aidan",
+     "n": 2,
+     "value": "2",
+     "holder": "Haan",
      "holders": [
-      "Aidan"
+      "Haan"
      ],
-     "when": "Week 1 - 2021",
+     "when": "Week 14 - 2021",
      "replay": {
       "season": 2021,
-      "week": 1,
-      "rid": 1,
-      "opp_rid": 2,
-      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=1.1.2&season=2021"
+      "week": 14,
+      "rid": 4,
+      "opp_rid": 10,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=14.4.10&season=2021"
      },
      "detail": {
       "kind": "facts",
-      "title": "Shotguns · Week 1, 2021",
+      "title": "Shotguns · Week 14, 2021",
       "blocks": [
        {
-        "head": "Aidan",
+        "head": "Haan",
         "chip": null,
         "rows": [
          [
-          "Brandon Aiyuk",
+          "Adrian Peterson",
+          "0.0 pts"
+         ],
+         [
+          "Terry McLaurin",
           "0.0 pts"
          ]
         ]
@@ -87645,133 +87646,133 @@
      },
      "cards": {
       "season": 2021,
-      "week": 1,
+      "week": 14,
       "teams": [
        {
-        "rid": 1,
-        "name": "Aidan",
-        "team": "Smashnose Offense",
+        "rid": 4,
+        "name": "Haan",
+        "team": "King Haan",
         "won": false,
-        "act": 53.28,
-        "rumbles": 0,
-        "vs_field": 0,
-        "season_rumbles": 0,
-        "w": 0,
-        "l": 1,
+        "act": 109.92,
+        "rumbles": 3,
+        "vs_field": 3,
+        "season_rumbles": 105,
+        "w": 5,
+        "l": 9,
         "players": [
          {
           "pos": "QB",
-          "name": "Ryan Tannehill",
-          "pts": 11.18
+          "name": "Josh Allen",
+          "pts": 33.72
          },
          {
           "pos": "RB",
-          "name": "Aaron Jones Sr.",
-          "pts": 2.7
+          "name": "Latavius Murray",
+          "pts": 6.1
          },
          {
           "pos": "RB",
-          "name": "Najee Harris",
-          "pts": 4.9
-         },
-         {
-          "pos": "WR",
-          "name": "Keenan Allen",
-          "pts": 12.5
-         },
-         {
-          "pos": "WR",
-          "name": "Julio Jones",
-          "pts": 4.15
-         },
-         {
-          "pos": "TE",
-          "name": "Kyle Pitts Sr.",
-          "pts": 4.1
-         },
-         {
-          "pos": "WR",
-          "name": "Brandon Aiyuk",
+          "name": "Adrian Peterson",
           "pts": 0.0
          },
          {
           "pos": "WR",
-          "name": "Allen Robinson",
-          "pts": 4.75
+          "name": "Deebo Samuel Sr.",
+          "pts": 12.4
+         },
+         {
+          "pos": "WR",
+          "name": "Terry McLaurin",
+          "pts": 0.0
+         },
+         {
+          "pos": "TE",
+          "name": "Tyler Conklin",
+          "pts": 2.5
+         },
+         {
+          "pos": "WR",
+          "name": "Marquise Brown",
+          "pts": 5.6
+         },
+         {
+          "pos": "WR",
+          "name": "Stefon Diggs",
+          "pts": 9.9
          },
          {
           "pos": "K",
-          "name": "Rodrigo Blankenship",
-          "pts": 4.0
+          "name": "Justin Tucker",
+          "pts": 15.7
          },
          {
           "pos": "DEF",
-          "name": "Buffalo Bills",
-          "pts": 5.0
+          "name": "Dallas Cowboys",
+          "pts": 24.0
          }
         ]
        },
        {
-        "rid": 2,
-        "name": "Ben",
-        "team": "No Endz No Winz",
+        "rid": 10,
+        "name": "Ryan",
+        "team": "Winners At War",
         "won": true,
-        "act": 137.21,
-        "rumbles": 15,
-        "vs_field": 6,
-        "season_rumbles": 15,
-        "w": 1,
-        "l": 0,
+        "act": 140.74,
+        "rumbles": 17,
+        "vs_field": 8,
+        "season_rumbles": 173,
+        "w": 10,
+        "l": 4,
         "players": [
          {
           "pos": "QB",
-          "name": "Kyler Murray",
-          "pts": 32.56
+          "name": "Aaron Rodgers",
+          "pts": 27.14
          },
          {
           "pos": "RB",
-          "name": "Chase Edmonds",
-          "pts": 11.1
+          "name": "Ezekiel Elliott",
+          "pts": 8.5
          },
          {
           "pos": "RB",
-          "name": "Clyde Edwards-Helaire",
-          "pts": 8.2
+          "name": "D'Onta Foreman",
+          "pts": 12.7
          },
          {
           "pos": "WR",
-          "name": "Mike Evans",
-          "pts": 3.4
+          "name": "Justin Jefferson",
+          "pts": 16.0
          },
          {
           "pos": "WR",
-          "name": "Adam Thielen",
-          "pts": 24.2
+          "name": "DJ Moore",
+          "pts": 10.9
          },
          {
           "pos": "TE",
-          "name": "George Kittle",
-          "pts": 9.55
+          "name": "Mark Andrews",
+          "pts": 20.75
          },
          {
-          "pos": "TE",
-          "name": "Travis Kelce",
-          "pts": 22.1
+          "pos": "WR",
+          "name": "Tee Higgins",
+          "pts": 13.9
          },
          {
-          "pos": "RB",
-          "name": "Darrell Henderson",
-          "pts": 15.2
+          "pos": "WR",
+          "name": "Mike Williams",
+          "pts": 7.85
          },
          {
           "pos": "K",
-          "name": "Daniel Carlson",
-          "pts": 11.9
+          "name": "Ryan Succop",
+          "pts": 9.0
          },
          {
           "pos": "DEF",
-          "name": "Baltimore Ravens",
-          "pts": -1.0
+          "name": "Green Bay Packers",
+          "pts": 14.0
          }
         ]
        }
@@ -87817,9 +87818,9 @@
      "replay": null
     },
     {
-     "value": "5",
-     "holder": "Haan",
-     "when": "2021",
+     "value": "7",
+     "holder": "Christian",
+     "when": "2024",
      "replay": null
     },
     {
@@ -87830,14 +87831,14 @@
     },
     {
      "value": "5",
-     "holder": "Joe",
-     "when": "2024",
+     "holder": "Haan",
+     "when": "2023",
      "replay": null
     },
     {
-     "value": "5",
-     "holder": "Christian",
-     "when": "2024",
+     "value": "4",
+     "holder": "Haan",
+     "when": "2021",
      "replay": null
     }
    ],
@@ -87847,21 +87848,21 @@
    "by_season": [
     {
      "s": 2025,
-     "n": 4,
-     "value": "4",
-     "holder": "Alex",
+     "n": 3,
+     "value": "3",
+     "holder": "Aidan",
      "holders": [
-      "Alex"
+      "Aidan"
      ],
      "when": "2025"
     },
     {
      "s": 2024,
-     "n": 5,
-     "value": "5",
-     "holder": "Joe",
+     "n": 7,
+     "value": "7",
+     "holder": "Christian",
      "holders": [
-      "Joe"
+      "Christian"
      ],
      "when": "2024"
     },
@@ -87887,8 +87888,8 @@
     },
     {
      "s": 2021,
-     "n": 5,
-     "value": "5",
+     "n": 4,
+     "value": "4",
      "holder": "Haan",
      "holders": [
       "Haan"

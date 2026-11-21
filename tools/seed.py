@@ -51,7 +51,7 @@ NEEDS_DEFINITION = {}
 DEFINITION = {
  "Most Composite Wins in a Season": "Each week a manager earns a win for winning their matchup and another for scoring in the top half of all scores that week (top 5 of 10 teams, top 6 of 12).",
  "Fewest Composite Wins in a Season": "Each week a manager earns a win for winning their matchup and another for scoring in the top half of all scores that week.",
- "Most Shotguns in a Season (League)": "A score of 0 or less from a non-defense starter who was not ruled out before the 2nd half, or ruled out but didn't play in the 2nd half.",
+ "Most Shotguns in a Season (League)": "A score of exactly 0.0 from a non-defense starter who was not ruled out before the 2nd half, or ruled out but didn't play in the 2nd half.",
  "Most Dominant Offensive Season": "PF+: a team's points scored as a % of that season's league average (100 = average), like OPS+.",
  "Most Futile Offensive Season": "PF+: a team's points scored as a % of that season's league average (100 = average).",
  "Most Dominant Defensive Season": "PA+: points against as a % of that season's league average. Lower is better.",

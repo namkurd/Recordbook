@@ -1,11 +1,12 @@
 """Per-team, per-week facts the archive doesn't hold, cached in data/cache/facts.json so each run only fetches new weeks.
   * Sleeper matchups  -> every rostered player's points (bench!), starters, zeros, top-player share
-  * Sleeper stats     -> who actually took the field (for Shotguns)
+  * NFL injury reports -> who was ruled Out (engine/shotguns.py: a Shotgun is a starter's exact 0.0 unless he was ruled Out)
   * Rumble Central wp_timeline -> play-by-play fantasy points on a real clock: leads, comebacks, Thursday/Saturday/Monday points, projections
 A week is only ingested once it is finished (it is in the Rumble Central archive); finished weeks are never refetched."""
 import collections, datetime, json, os, time, urllib.request
 from zoneinfo import ZoneInfo
 import cards as C
+import shotguns as SG
 from load import fetch
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -96,6 +97,8 @@ def ingest(d, budget_weeks=400):
         if key in cache["weeks"] or season not in lids or week > 17: continue
         if added >= budget_weeks: break
         rows = games[(season, week)]
+        SG.refresh([season], current=d.cur)
+        out_ids = set(SG.load().get(key, []))
         e = C.epa_file(season, d.cur)
         if not e: continue
         lu_raw = (e["lineups"].get(str(week)) or {})
@@ -118,7 +121,7 @@ def ingest(d, budget_weeks=400):
                 return bool(x.get("gp")) and (x.get("off_snp", 0) + x.get("def_snp", 0) + x.get("st_snp", 0)) > 0
             def pos(pid): return (e["names"].get(pid) or ["", ""])[1] if pid in e["names"] else ""
             zeros = [(p, v) for p, v in starters if v == 0]
-            shot = [(p, v) for p, v in starters if v <= 0 and not (len(p) <= 3 and p.isalpha()) and took_field(p)]   # DEF ids are team letters
+            shot = [(p, v) for p, v in SG.shot_list([p for p, _ in zeros], out_ids)]   # exactly 0.0, not a defense, not ruled OUT (engine/shotguns.py)
             top = max(starters, key=lambda x: x[1]) if starters else ("", 0); tot = sum(v for _, v in starters)
             teams[str(rid)] = {"bench": round(sum(v for _, v in bench), 2), "bench_top": [[k, v] for k, v in bench[:6]], "bench_all": [[k, v] for k, v in bench],
                                "zeros": [p for p, _ in zeros], "shot": [[p, v] for p, v in shot],
