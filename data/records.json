@@ -13979,7 +13979,7 @@
     {
      "s": 2026,
      "n": 219.0,
-     "value": "219.00 (149% of League Average)",
+     "value": "219.00 (150% of League Average)",
      "holder": "Ben",
      "holders": [
       "Ben"
@@ -15660,8 +15660,8 @@
    "by_season": [
     {
      "s": 2026,
-     "n": 149.4,
-     "value": "219.0 (149.40% of League Average)",
+     "n": 149.95,
+     "value": "219.0 (149.95% of League Average)",
      "holder": "Ben",
      "holders": [
       "Ben"
@@ -18152,7 +18152,7 @@
      }
     },
     {
-     "value": "71.59 (48.84% of League Average)",
+     "value": "71.59 (49.02% of League Average)",
      "holder": "Jake",
      "when": "Week 2 - 2026",
      "replay": {
@@ -18739,8 +18739,8 @@
    "by_season": [
     {
      "s": 2026,
-     "n": 48.84,
-     "value": "71.59 (48.84% of League Average)",
+     "n": 49.02,
+     "value": "71.59 (49.02% of League Average)",
      "holder": "Jake",
      "holders": [
       "Jake"
@@ -25487,6 +25487,152 @@
     },
     {
      "value": "0.02",
+     "holder": "Kaitlyn over Haan",
+     "when": "Week 11 - 2026",
+     "replay": {
+      "season": 2026,
+      "week": 11,
+      "rid": 11,
+      "opp_rid": 4,
+      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=11.11.4"
+     },
+     "cards": {
+      "season": 2026,
+      "week": 11,
+      "teams": [
+       {
+        "rid": 11,
+        "name": "Kaitlyn",
+        "team": "All-in on Allen",
+        "won": true,
+        "act": 154.5,
+        "rumbles": 17,
+        "vs_field": 8,
+        "season_rumbles": 108,
+        "w": 5,
+        "l": 6,
+        "players": [
+         {
+          "pos": "RB",
+          "name": "Ashton Jeanty",
+          "pts": 28.4
+         },
+         {
+          "pos": "RB",
+          "name": "Rachaad White",
+          "pts": 1.92
+         },
+         {
+          "pos": "TE",
+          "name": "Brenton Strange",
+          "pts": 5.1
+         },
+         {
+          "pos": "WR",
+          "name": "Khalil Shakir",
+          "pts": 16.8
+         },
+         {
+          "pos": "WR",
+          "name": "CeeDee Lamb",
+          "pts": 34.2
+         },
+         {
+          "pos": "WR",
+          "name": "Mike Evans",
+          "pts": 25.4
+         },
+         {
+          "pos": "QB",
+          "name": "Tyler Shough",
+          "pts": 15.78
+         },
+         {
+          "pos": "QB",
+          "name": "Josh Allen",
+          "pts": 14.41
+         },
+         {
+          "pos": "K",
+          "name": "Cairo Santos",
+          "pts": 8.27
+         },
+         {
+          "pos": "DEF",
+          "name": "Carolina Panthers",
+          "pts": 4.22
+         }
+        ]
+       },
+       {
+        "rid": 4,
+        "name": "Haan",
+        "team": "Dear Jon(Taylors Version)",
+        "won": false,
+        "act": 154.48,
+        "rumbles": 7,
+        "vs_field": 7,
+        "season_rumbles": 111,
+        "w": 5,
+        "l": 6,
+        "players": [
+         {
+          "pos": "RB",
+          "name": "Chuba Hubbard",
+          "pts": 29.0
+         },
+         {
+          "pos": "RB",
+          "name": "Jonathan Taylor",
+          "pts": 6.2
+         },
+         {
+          "pos": "TE",
+          "name": "Mark Andrews",
+          "pts": 3.4
+         },
+         {
+          "pos": "WR",
+          "name": "Deebo Samuel Sr.",
+          "pts": 10.48
+         },
+         {
+          "pos": "WR",
+          "name": "Keenan Allen",
+          "pts": 8.3
+         },
+         {
+          "pos": "WR",
+          "name": "Justin Jefferson",
+          "pts": 14.7
+         },
+         {
+          "pos": "QB",
+          "name": "Joe Burrow",
+          "pts": 21.75
+         },
+         {
+          "pos": "QB",
+          "name": "Dak Prescott",
+          "pts": 39.7
+         },
+         {
+          "pos": "K",
+          "name": "Will Reichard",
+          "pts": 3.8
+         },
+         {
+          "pos": "DEF",
+          "name": "Denver Broncos",
+          "pts": 17.15
+         }
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "value": "0.02",
      "holder": "Ben over Jake",
      "when": "Week 12 - 2021",
      "replay": {
@@ -25625,152 +25771,6 @@
           "pos": "DEF",
           "name": "Houston Texans",
           "pts": 9.0
-         }
-        ]
-       }
-      ]
-     }
-    },
-    {
-     "value": "0.03",
-     "holder": "Jake over Haan",
-     "when": "Week 15 - 2025",
-     "replay": {
-      "season": 2025,
-      "week": 15,
-      "rid": 3,
-      "opp_rid": 4,
-      "url": "https://namkurd.github.io/SleeperLiveRumbles/rumbles.html?wp=15.3.4&season=2025"
-     },
-     "cards": {
-      "season": 2025,
-      "week": 15,
-      "teams": [
-       {
-        "rid": 3,
-        "name": "Jake",
-        "team": "Ladds, it's the DTF club",
-        "won": true,
-        "act": 160.78,
-        "rumbles": 15,
-        "vs_field": 6,
-        "season_rumbles": 119,
-        "w": 7,
-        "l": 8,
-        "players": [
-         {
-          "pos": "QB",
-          "name": "Lamar Jackson",
-          "pts": 14.3
-         },
-         {
-          "pos": "RB",
-          "name": "Jaylen Warren",
-          "pts": 9.88
-         },
-         {
-          "pos": "RB",
-          "name": "Omarion Hampton",
-          "pts": 10.0
-         },
-         {
-          "pos": "TE",
-          "name": "Kyle Pitts Sr.",
-          "pts": 48.1
-         },
-         {
-          "pos": "WR",
-          "name": "Ladd McConkey",
-          "pts": 4.0
-         },
-         {
-          "pos": "WR",
-          "name": "Tetairoa McMillan",
-          "pts": 5.0
-         },
-         {
-          "pos": "WR",
-          "name": "Puka Nacua",
-          "pts": 31.9
-         },
-         {
-          "pos": "QB",
-          "name": "Sam Darnold",
-          "pts": 12.79
-         },
-         {
-          "pos": "K",
-          "name": "Jason Myers",
-          "pts": 26.3
-         },
-         {
-          "pos": "DEF",
-          "name": "Dallas Cowboys",
-          "pts": -1.49
-         }
-        ]
-       },
-       {
-        "rid": 4,
-        "name": "Haan",
-        "team": "The Kiran Tor",
-        "won": true,
-        "act": 160.75,
-        "rumbles": 14,
-        "vs_field": 5,
-        "season_rumbles": 139,
-        "w": 9,
-        "l": 6,
-        "players": [
-         {
-          "pos": "QB",
-          "name": "Baker Mayfield",
-          "pts": 20.73
-         },
-         {
-          "pos": "RB",
-          "name": "Breece Hall",
-          "pts": 6.2
-         },
-         {
-          "pos": "RB",
-          "name": "Derrick Henry",
-          "pts": 12.0
-         },
-         {
-          "pos": "TE",
-          "name": "George Kittle",
-          "pts": 23.8
-         },
-         {
-          "pos": "RB",
-          "name": "Tyrone Tracy Jr.",
-          "pts": 26.7
-         },
-         {
-          "pos": "WR",
-          "name": "Justin Jefferson",
-          "pts": 5.2
-         },
-         {
-          "pos": "WR",
-          "name": "Davante Adams",
-          "pts": 13.1
-         },
-         {
-          "pos": "QB",
-          "name": "Drake Maye",
-          "pts": 21.35
-         },
-         {
-          "pos": "K",
-          "name": "Cameron Dicker",
-          "pts": 13.8
-         },
-         {
-          "pos": "DEF",
-          "name": "Philadelphia Eagles",
-          "pts": 17.87
          }
         ]
        }
@@ -31775,13 +31775,13 @@
      "replay": null
     },
     {
-     "value": "156.1 (106.5% of League Average)",
+     "value": "156.1 (106.9% of League Average)",
      "holder": "DTFClub",
      "when": "Week 5 - 2026",
      "replay": null
     },
     {
-     "value": "156.1 (106.5% of League Average)",
+     "value": "156.1 (106.9% of League Average)",
      "holder": "DTFClub",
      "when": "Week 1 - 2026",
      "replay": null
@@ -31792,7 +31792,7 @@
     {
      "s": 2026,
      "n": 156.12,
-     "value": "156.1 (106.5% of League Average)",
+     "value": "156.1 (106.9% of League Average)",
      "holder": "DTFClub",
      "holders": [
       "DTFClub"
@@ -31916,8 +31916,8 @@
    "by_season": [
     {
      "s": 2026,
-     "n": 106.5,
-     "value": "106.5% of League Average",
+     "n": 106.9,
+     "value": "106.9% of League Average",
      "holder": "DTFClub",
      "holders": [
       "DTFClub"
@@ -32041,7 +32041,7 @@
     {
      "s": 2026,
      "n": 137.76,
-     "value": "137.8 (94.0% of League Average)",
+     "value": "137.8 (94.3% of League Average)",
      "holder": "DTFClub",
      "holders": [
       "DTFClub"
@@ -32164,8 +32164,8 @@
    "by_season": [
     {
      "s": 2026,
-     "n": 94.0,
-     "value": "94.0% of League Average",
+     "n": 94.3,
+     "value": "94.3% of League Average",
      "holder": "DTFClub",
      "holders": [
       "DTFClub"
@@ -51163,7 +51163,7 @@
     {
      "s": 2026,
      "n": 155.95,
-     "value": "155.95 (6% above league average score)",
+     "value": "155.95 (7% above league average score)",
      "holder": "Ben",
      "holders": [
       "Ben"
@@ -52852,8 +52852,8 @@
    "by_season": [
     {
      "s": 2026,
-     "n": 106.39,
-     "value": "155.95 (6% above league average score)",
+     "n": 106.78,
+     "value": "155.95 (7% above league average score)",
      "holder": "Ben",
      "holders": [
       "Ben"
@@ -60651,8 +60651,8 @@
    "by_season": [
     {
      "s": 2026,
-     "n": 117.7,
-     "value": "+117.7 PAR",
+     "n": 103.9,
+     "value": "+103.9 PAR",
      "holder": "Alex over Ben",
      "holders": [
       "Alex"
@@ -60694,7 +60694,7 @@
          ],
          [
           "PAR since",
-          "-47.5"
+          "-41.2"
          ]
         ]
        },
@@ -60716,7 +60716,7 @@
          ],
          [
           "PAR since",
-          "+70.2"
+          "+62.7"
          ]
         ]
        }
@@ -61356,69 +61356,69 @@
      }
     },
     {
-     "value": "+97.9 PAR",
-     "holder": "Aidan over Tommy",
-     "when": "Week 2 - 2022",
+     "value": "+100.0 PAR",
+     "holder": "Christian over Aidan",
+     "when": "Week 6 - 2026",
      "replay": null,
      "links": {
       "page": {
        "label": "This trade in Trade Network",
-       "url": "https://namkurd.github.io/SleeperTradeNodes/?season=2022&trade=876910958851858432"
+       "url": "https://namkurd.github.io/SleeperTradeNodes/?season=2026&trade=1417335988040089600"
       },
       "row": {
        "label": "This trade in Trade Network",
-       "url": "https://namkurd.github.io/SleeperTradeNodes/?season=2022&trade=876910958851858432"
+       "url": "https://namkurd.github.io/SleeperTradeNodes/?season=2026&trade=1417335988040089600"
       },
       "sheet": {
-       "label": "All 2022 trades · Trade Network",
-       "url": "https://namkurd.github.io/SleeperTradeNodes/?season=2022"
+       "label": "All 2026 trades · Trade Network",
+       "url": "https://namkurd.github.io/SleeperTradeNodes/?season=2026"
       }
      },
      "detail": {
       "kind": "trade",
-      "title": "Trade · Week 2, 2022",
+      "title": "Trade · Week 6, 2026",
       "blocks": [
        {
         "head": "Aidan",
-        "chip": "WON",
-        "rows": [
-         [
-          "Got",
-          "TE Dallas Goedert (12.2), WR Jaylen Waddle (16.7)"
-         ],
-         [
-          "Gave",
-          "WR Curtis Samuel (8.9), TE Kyle Pitts (22.2)"
-         ],
-         [
-          "Value in / out",
-          "28.9 / 31.1"
-         ],
-         [
-          "PAR since",
-          "+97.9"
-         ]
-        ]
-       },
-       {
-        "head": "Tommy",
         "chip": null,
         "rows": [
          [
           "Got",
-          "WR Curtis Samuel (8.9), TE Kyle Pitts (22.2)"
+          "WR Terry McLaurin (10.7), QB Jalen Hurts (33.0)"
          ],
          [
           "Gave",
-          "TE Dallas Goedert (12.2), WR Jaylen Waddle (16.7)"
+          "WR DJ Moore (12.9), QB Justin Herbert (26.0)"
          ],
          [
           "Value in / out",
-          "31.1 / 28.9"
+          "43.7 / 38.9"
          ],
          [
           "PAR since",
-          "-59.3"
+          "+0.0"
+         ]
+        ]
+       },
+       {
+        "head": "Christian",
+        "chip": "WON",
+        "rows": [
+         [
+          "Got",
+          "WR DJ Moore (12.9), QB Justin Herbert (26.0)"
+         ],
+         [
+          "Gave",
+          "WR Terry McLaurin (10.7), QB Jalen Hurts (33.0)"
+         ],
+         [
+          "Value in / out",
+          "38.9 / 43.7"
+         ],
+         [
+          "PAR since",
+          "+100.0"
          ]
         ]
        }
@@ -61494,21 +61494,21 @@
    "by_season": [
     {
      "s": 2026,
-     "n": 70.2,
-     "value": "+70.2 PAR",
-     "holder": "Alex over Ben",
+     "n": 100.0,
+     "value": "+100.0 PAR",
+     "holder": "Christian over Aidan",
      "holders": [
-      "Alex"
+      "Christian"
      ],
-     "when": "Week 4 - 2026",
+     "when": "Week 6 - 2026",
      "links": {
       "page": {
        "label": "This trade in Trade Network",
-       "url": "https://namkurd.github.io/SleeperTradeNodes/?season=2026&trade=1412110322529034240"
+       "url": "https://namkurd.github.io/SleeperTradeNodes/?season=2026&trade=1417335988040089600"
       },
       "row": {
        "label": "This trade in Trade Network",
-       "url": "https://namkurd.github.io/SleeperTradeNodes/?season=2026&trade=1412110322529034240"
+       "url": "https://namkurd.github.io/SleeperTradeNodes/?season=2026&trade=1417335988040089600"
       },
       "sheet": {
        "label": "All 2026 trades · Trade Network",
@@ -61517,49 +61517,49 @@
      },
      "detail": {
       "kind": "trade",
-      "title": "Trade · Week 4, 2026",
+      "title": "Trade · Week 6, 2026",
       "blocks": [
        {
-        "head": "Ben",
+        "head": "Aidan",
         "chip": null,
         "rows": [
          [
           "Got",
-          "RB Bhayshul Tuten (19.9)"
+          "WR Terry McLaurin (10.7), QB Jalen Hurts (33.0)"
          ],
          [
           "Gave",
-          "WR Matthew Golden (12.8), RB Rhamondre Stevenson (6.5)"
+          "WR DJ Moore (12.9), QB Justin Herbert (26.0)"
          ],
          [
           "Value in / out",
-          "19.9 / 19.3"
+          "43.7 / 38.9"
          ],
          [
           "PAR since",
-          "-47.5"
+          "+0.0"
          ]
         ]
        },
        {
-        "head": "Alex",
+        "head": "Christian",
         "chip": "WON",
         "rows": [
          [
           "Got",
-          "WR Matthew Golden (12.8), RB Rhamondre Stevenson (6.5)"
+          "WR DJ Moore (12.9), QB Justin Herbert (26.0)"
          ],
          [
           "Gave",
-          "RB Bhayshul Tuten (19.9)"
+          "WR Terry McLaurin (10.7), QB Jalen Hurts (33.0)"
          ],
          [
           "Value in / out",
-          "19.3 / 19.9"
+          "38.9 / 43.7"
          ],
          [
           "PAR since",
-          "+70.2"
+          "+100.0"
          ]
         ]
        }
@@ -62337,8 +62337,8 @@
    "by_season": [
     {
      "s": 2026,
-     "n": -47.5,
-     "value": "-47.5 PAR",
+     "n": -41.2,
+     "value": "-41.2 PAR",
      "holder": "Ben (vs Alex)",
      "holders": [
       "Ben"
@@ -62380,7 +62380,7 @@
          ],
          [
           "PAR since",
-          "-47.5"
+          "-41.2"
          ]
         ]
        },
@@ -62402,7 +62402,7 @@
          ],
          [
           "PAR since",
-          "+70.2"
+          "+62.7"
          ]
         ]
        }
@@ -63180,21 +63180,21 @@
    "by_season": [
     {
      "s": 2026,
-     "n": 9.4,
-     "value": "9.4 pts",
-     "holder": "Alex over Ankit",
+     "n": 13.6,
+     "value": "13.6 pts",
+     "holder": "Ankit over Aidan",
      "holders": [
-      "Alex"
+      "Ankit"
      ],
-     "when": "Week 8 - 2026",
+     "when": "Week 11 - 2026",
      "links": {
       "page": {
        "label": "This trade in Trade Network",
-       "url": "https://namkurd.github.io/SleeperTradeNodes/?season=2026&trade=1422256513308708864"
+       "url": "https://namkurd.github.io/SleeperTradeNodes/?season=2026&trade=1429908818338250752"
       },
       "row": {
        "label": "This trade in Trade Network",
-       "url": "https://namkurd.github.io/SleeperTradeNodes/?season=2026&trade=1422256513308708864"
+       "url": "https://namkurd.github.io/SleeperTradeNodes/?season=2026&trade=1429908818338250752"
       },
       "sheet": {
        "label": "All 2026 trades · Trade Network",
@@ -63203,49 +63203,49 @@
      },
      "detail": {
       "kind": "trade",
-      "title": "Trade · Week 8, 2026",
+      "title": "Trade · Week 11, 2026",
       "blocks": [
        {
-        "head": "Alex",
-        "chip": "WON",
+        "head": "Aidan",
+        "chip": null,
         "rows": [
          [
           "Got",
-          "WR Carnell Tate (11.2), TE Dallas Goedert (7.3)"
+          "RB Breece Hall (18.9)"
          ],
          [
           "Gave",
-          "WR Malik Washington (2.8), QB Malik Willis (6.3)"
+          "TE George Kittle (32.5)"
          ],
          [
           "Value in / out",
-          "18.5 / 9.1"
+          "18.9 / 32.5"
          ],
          [
           "PAR since",
-          "+1.4"
+          "+3.6"
          ]
         ]
        },
        {
         "head": "Ankit",
-        "chip": null,
+        "chip": "WON",
         "rows": [
          [
           "Got",
-          "WR Malik Washington (2.8), QB Malik Willis (6.3)"
+          "TE George Kittle (32.5)"
          ],
          [
           "Gave",
-          "WR Carnell Tate (11.2), TE Dallas Goedert (7.3)"
+          "RB Breece Hall (18.9)"
          ],
          [
           "Value in / out",
-          "9.1 / 18.5"
+          "32.5 / 18.9"
          ],
          [
           "PAR since",
-          "+2.6"
+          "-3.6"
          ]
         ]
        }
@@ -64068,7 +64068,7 @@
          ],
          [
           "PAR since",
-          "–"
+          "+30.0"
          ]
         ]
        },
@@ -64090,7 +64090,7 @@
          ],
          [
           "PAR since",
-          "–"
+          "-30.0"
          ]
         ]
        }
@@ -64942,7 +64942,7 @@
          ],
          [
           "PAR since",
-          "+53.1"
+          "+100.0"
          ]
         ]
        }
@@ -65381,7 +65381,7 @@
      }
     },
     {
-     "value": "21 trades",
+     "value": "22 trades",
      "holder": "Alex",
      "when": "2021-",
      "replay": null,
@@ -65397,7 +65397,7 @@
      }
     },
     {
-     "value": "20 trades",
+     "value": "21 trades",
      "holder": "Ankit",
      "when": "2021-",
      "replay": null,
@@ -65429,7 +65429,7 @@
      }
     },
     {
-     "value": "14 trades",
+     "value": "15 trades",
      "holder": "Aidan",
      "when": "2021-",
      "replay": null,
@@ -66351,6 +66351,30 @@
       "Ankit",
       1,
       1
+     ],
+     [
+      2026,
+      "Aidan",
+      1,
+      1
+     ],
+     [
+      2026,
+      "Ankit",
+      1,
+      1
+     ],
+     [
+      2026,
+      "Alex",
+      1,
+      1
+     ],
+     [
+      2026,
+      "Steven",
+      1,
+      1
      ]
     ]
    }
@@ -66437,9 +66461,9 @@
    "source": "computed",
    "metric": "trader_best",
    "direction": "max",
-   "value": "+593.0 PAR",
-   "value_num": 593,
-   "when": "14 trades, 2021-",
+   "value": "+596.6 PAR",
+   "value_num": 596.6,
+   "when": "15 trades, 2021-",
    "holder": "Aidan",
    "holders": [
     "Aidan"
@@ -66449,7 +66473,15 @@
    "notes": [],
    "evidence": [],
    "replay": null,
-   "previous": null,
+   "previous": {
+    "value": "+593.0 PAR",
+    "holder": "Aidan",
+    "when": "14 trades, 2021-",
+    "team": "Smashnose Offense",
+    "evidence": [],
+    "replaced_on": "2026-11-24",
+    "replaced_by": "Aidan"
+   },
    "ties": [],
    "locked": false,
    "status": "active",
@@ -66458,12 +66490,12 @@
    "needs_definition": null,
    "engine_gap": null,
    "definition": "Total PAR gained across every trade a manager has made (at least 3 trades). Counts trades since 2021 (the first Sleeper season).",
-   "updated": "2026-11-02",
+   "updated": "2026-11-24",
    "leaderboard": [
     {
-     "value": "+593.0 PAR",
+     "value": "+596.6 PAR",
      "holder": "Aidan",
-     "when": "14 trades, 2021-",
+     "when": "15 trades, 2021-",
      "replay": null,
      "links": {
       "page": {
@@ -66477,7 +66509,7 @@
      }
     },
     {
-     "value": "+390.3 PAR",
+     "value": "+389.5 PAR",
      "holder": "Joe",
      "when": "33 trades, 2021-",
      "replay": null,
@@ -66493,9 +66525,9 @@
      }
     },
     {
-     "value": "+257.1 PAR",
+     "value": "+227.1 PAR",
      "holder": "Steven",
-     "when": "13 trades, 2021-",
+     "when": "15 trades, 2021-",
      "replay": null,
      "links": {
       "page": {
@@ -66509,9 +66541,9 @@
      }
     },
     {
-     "value": "+47.8 PAR",
+     "value": "+77.8 PAR",
      "holder": "Jake",
-     "when": "8 trades, 2021-",
+     "when": "9 trades, 2021-",
      "replay": null,
      "links": {
       "page": {
@@ -67355,19 +67387,19 @@
      [
       2026,
       "Ben",
-      -47.5,
+      -41.2,
       1
      ],
      [
       2026,
       "Alex",
-      70.2,
+      62.7,
       1
      ],
      [
       2026,
       "Joe",
-      2.2,
+      15.9,
       1
      ],
      [
@@ -67397,7 +67429,7 @@
      [
       2026,
       "Christian",
-      53.1,
+      100.0,
       1
      ],
      [
@@ -67415,24 +67447,60 @@
      [
       2026,
       "Alex",
-      1.4,
+      5.6,
       1
      ],
      [
       2026,
       "Ankit",
-      2.6,
+      2.0,
+      1
+     ],
+     [
+      2026,
+      "Jake",
+      30.0,
+      1
+     ],
+     [
+      2026,
+      "Steven",
+      -30.0,
       1
      ],
      [
       2026,
       "Joe",
-      0.0,
+      -14.5,
       1
      ],
      [
       2026,
       "Ankit",
+      10.7,
+      1
+     ],
+     [
+      2026,
+      "Aidan",
+      3.6,
+      1
+     ],
+     [
+      2026,
+      "Ankit",
+      -3.6,
+      1
+     ],
+     [
+      2026,
+      "Alex",
+      1.8,
+      1
+     ],
+     [
+      2026,
+      "Steven",
       0.0,
       1
      ]
@@ -67446,8 +67514,8 @@
    "source": "computed",
    "metric": "trader_worst",
    "direction": "min",
-   "value": "-118.9 PAR",
-   "value_num": -118.9,
+   "value": "-112.6 PAR",
+   "value_num": -112.6,
    "when": "17 trades, 2021-",
    "holder": "Ben",
    "holders": [
@@ -67467,10 +67535,10 @@
    "needs_definition": null,
    "engine_gap": null,
    "definition": "Total PAR lost across every trade a manager has made (at least 3 trades). Counts trades since 2021 (the first Sleeper season).",
-   "updated": "2026-11-17",
+   "updated": "2026-11-24",
    "leaderboard": [
     {
-     "value": "-118.9 PAR",
+     "value": "-112.6 PAR",
      "holder": "Ben",
      "when": "17 trades, 2021-",
      "replay": null,
@@ -67486,7 +67554,7 @@
      }
     },
     {
-     "value": "-117.9 PAR",
+     "value": "-71.0 PAR",
      "holder": "Christian",
      "when": "10 trades, 2021-",
      "replay": null,
@@ -67502,9 +67570,9 @@
      }
     },
     {
-     "value": "-74.4 PAR",
+     "value": "-67.9 PAR",
      "holder": "Ankit",
-     "when": "20 trades, 2021-",
+     "when": "21 trades, 2021-",
      "replay": null,
      "links": {
       "page": {
@@ -67518,9 +67586,9 @@
      }
     },
     {
-     "value": "-53.1 PAR",
+     "value": "-54.6 PAR",
      "holder": "Alex",
-     "when": "21 trades, 2021-",
+     "when": "22 trades, 2021-",
      "replay": null,
      "links": {
       "page": {
@@ -68364,19 +68432,19 @@
      [
       2026,
       "Ben",
-      -47.5,
+      -41.2,
       1
      ],
      [
       2026,
       "Alex",
-      70.2,
+      62.7,
       1
      ],
      [
       2026,
       "Joe",
-      2.2,
+      15.9,
       1
      ],
      [
@@ -68406,7 +68474,7 @@
      [
       2026,
       "Christian",
-      53.1,
+      100.0,
       1
      ],
      [
@@ -68424,24 +68492,60 @@
      [
       2026,
       "Alex",
-      1.4,
+      5.6,
       1
      ],
      [
       2026,
       "Ankit",
-      2.6,
+      2.0,
+      1
+     ],
+     [
+      2026,
+      "Jake",
+      30.0,
+      1
+     ],
+     [
+      2026,
+      "Steven",
+      -30.0,
       1
      ],
      [
       2026,
       "Joe",
-      0.0,
+      -14.5,
       1
      ],
      [
       2026,
       "Ankit",
+      10.7,
+      1
+     ],
+     [
+      2026,
+      "Aidan",
+      3.6,
+      1
+     ],
+     [
+      2026,
+      "Ankit",
+      -3.6,
+      1
+     ],
+     [
+      2026,
+      "Alex",
+      1.8,
+      1
+     ],
+     [
+      2026,
+      "Steven",
       0.0,
       1
      ]
@@ -72082,8 +72186,8 @@
    "by_season": [
     {
      "s": 2026,
-     "n": 61.1,
-     "value": "+61.1 PAR",
+     "n": 60.7,
+     "value": "+60.7 PAR",
      "holder": "Ryan — Kirk Cousins",
      "holders": [
       "Ryan"
@@ -72121,11 +72225,11 @@
          ],
          [
           "Points above replacement",
-          "+61.1 started · +75.9 rostered"
+          "+60.7 started · +75.9 rostered"
          ],
          [
           "Weeks started / benched",
-          "7 / 1"
+          "8 / 1"
          ],
          [
           "Outcome",
@@ -72573,6 +72677,58 @@
      }
     },
     {
+     "value": "+47.1 PAR",
+     "holder": "Ben — Emmett Johnson",
+     "when": "Week 1 - 2026",
+     "replay": null,
+     "links": {
+      "page": {
+       "label": "This pickup in FAB Management",
+       "url": "https://namkurd.github.io/FAB-Management/?season=2026&pickup=2026.1.13337"
+      },
+      "row": {
+       "label": "This pickup in FAB Management",
+       "url": "https://namkurd.github.io/FAB-Management/?season=2026&pickup=2026.1.13337"
+      },
+      "sheet": {
+       "label": "All 2026 FAB pickups · FAB Management",
+       "url": "https://namkurd.github.io/FAB-Management/?season=2026"
+      }
+     },
+     "detail": {
+      "kind": "pickup",
+      "title": "Pickup · Week 1, 2026",
+      "blocks": [
+       {
+        "head": "Ben",
+        "chip": null,
+        "rows": [
+         [
+          "Pickup",
+          "Emmett Johnson (RB)"
+         ],
+         [
+          "Winning bid",
+          "$0"
+         ],
+         [
+          "Points above replacement",
+          "+47.1 started · +58.0 rostered"
+         ],
+         [
+          "Weeks started / benched",
+          "3 / 8"
+         ],
+         [
+          "Outcome",
+          "active"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
      "value": "+36.9 PAR",
      "holder": "Aidan — Sam Howell",
      "when": "Week 1 - 2023",
@@ -72614,58 +72770,6 @@
          [
           "Weeks started / benched",
           "6 / 9"
-         ],
-         [
-          "Outcome",
-          "Kept"
-         ]
-        ]
-       }
-      ]
-     }
-    },
-    {
-     "value": "+34.7 PAR",
-     "holder": "Jake — Zay Jones",
-     "when": "Week 9 - 2022",
-     "replay": null,
-     "links": {
-      "page": {
-       "label": "This pickup in FAB Management",
-       "url": "https://namkurd.github.io/FAB-Management/?season=2022&pickup=2022.9.4080"
-      },
-      "row": {
-       "label": "This pickup in FAB Management",
-       "url": "https://namkurd.github.io/FAB-Management/?season=2022&pickup=2022.9.4080"
-      },
-      "sheet": {
-       "label": "All 2022 FAB pickups · FAB Management",
-       "url": "https://namkurd.github.io/FAB-Management/?season=2022"
-      }
-     },
-     "detail": {
-      "kind": "pickup",
-      "title": "Pickup · Week 9, 2022",
-      "blocks": [
-       {
-        "head": "Jake",
-        "chip": null,
-        "rows": [
-         [
-          "Pickup",
-          "Zay Jones (WR)"
-         ],
-         [
-          "Winning bid",
-          "$0"
-         ],
-         [
-          "Points above replacement",
-          "+34.7 started · +52.1 rostered"
-         ],
-         [
-          "Weeks started / benched",
-          "4 / 2"
          ],
          [
           "Outcome",
@@ -72727,8 +72831,8 @@
    "by_season": [
     {
      "s": 2026,
-     "n": 28.5,
-     "value": "+28.5 PAR",
+     "n": 47.1,
+     "value": "+47.1 PAR",
      "holder": "Ben — Emmett Johnson",
      "holders": [
       "Ben"
@@ -72766,11 +72870,11 @@
          ],
          [
           "Points above replacement",
-          "+28.5 started · +42.8 rostered"
+          "+47.1 started · +58.0 rostered"
          ],
          [
           "Weeks started / benched",
-          "2 / 8"
+          "3 / 8"
          ],
          [
           "Outcome",
@@ -73254,11 +73358,11 @@
          ],
          [
           "Points above replacement",
-          "+53.2 started · +51.6 rostered"
+          "+50.4 started · +52.4 rostered"
          ],
          [
           "Weeks started / benched",
-          "6 / 1"
+          "6 / 2"
          ],
          [
           "Outcome",
@@ -73411,11 +73515,11 @@
          ],
          [
           "Points above replacement",
-          "+53.2 started · +51.6 rostered"
+          "+50.4 started · +52.4 rostered"
          ],
          [
           "Weeks started / benched",
-          "6 / 1"
+          "6 / 2"
          ],
          [
           "Outcome",
@@ -74017,8 +74121,8 @@
    "by_season": [
     {
      "s": 2026,
-     "n": -6.6,
-     "value": "-6.6 PAR",
+     "n": -5.7,
+     "value": "-5.7 PAR",
      "holder": "Ben — Denzel Boston",
      "holders": [
       "Ben"
@@ -74056,11 +74160,11 @@
          ],
          [
           "Points above replacement",
-          "-6.6 started · -3.0 rostered"
+          "-5.7 started · -1.3 rostered"
          ],
          [
           "Weeks started / benched",
-          "4 / 4"
+          "4 / 5"
          ],
          [
           "Outcome",
@@ -74456,58 +74560,6 @@
      }
     },
     {
-     "value": "3.58 PAR per $",
-     "holder": "Joe — Minnesota Vikings",
-     "when": "Week 2 - 2026",
-     "replay": null,
-     "links": {
-      "page": {
-       "label": "This pickup in FAB Management",
-       "url": "https://namkurd.github.io/FAB-Management/?season=2026&pickup=2026.2.MIN"
-      },
-      "row": {
-       "label": "This pickup in FAB Management",
-       "url": "https://namkurd.github.io/FAB-Management/?season=2026&pickup=2026.2.MIN"
-      },
-      "sheet": {
-       "label": "All 2026 FAB pickups · FAB Management",
-       "url": "https://namkurd.github.io/FAB-Management/?season=2026"
-      }
-     },
-     "detail": {
-      "kind": "pickup",
-      "title": "Pickup · Week 2, 2026",
-      "blocks": [
-       {
-        "head": "Joe",
-        "chip": null,
-        "rows": [
-         [
-          "Pickup",
-          "Minnesota Vikings (DEF)"
-         ],
-         [
-          "Winning bid",
-          "$11"
-         ],
-         [
-          "Points above replacement",
-          "+39.4 started · +56.8 rostered"
-         ],
-         [
-          "Weeks started / benched",
-          "6 / 2"
-         ],
-         [
-          "Outcome",
-          "active"
-         ]
-        ]
-       }
-      ]
-     }
-    },
-    {
      "value": "3.43 PAR per $",
      "holder": "Ben — Michael Wilson",
      "when": "Week 11 - 2025",
@@ -74553,6 +74605,58 @@
          [
           "Outcome",
           "Kept"
+         ]
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "value": "3.05 PAR per $",
+     "holder": "Joe — Minnesota Vikings",
+     "when": "Week 2 - 2026",
+     "replay": null,
+     "links": {
+      "page": {
+       "label": "This pickup in FAB Management",
+       "url": "https://namkurd.github.io/FAB-Management/?season=2026&pickup=2026.2.MIN"
+      },
+      "row": {
+       "label": "This pickup in FAB Management",
+       "url": "https://namkurd.github.io/FAB-Management/?season=2026&pickup=2026.2.MIN"
+      },
+      "sheet": {
+       "label": "All 2026 FAB pickups · FAB Management",
+       "url": "https://namkurd.github.io/FAB-Management/?season=2026"
+      }
+     },
+     "detail": {
+      "kind": "pickup",
+      "title": "Pickup · Week 2, 2026",
+      "blocks": [
+       {
+        "head": "Joe",
+        "chip": null,
+        "rows": [
+         [
+          "Pickup",
+          "Minnesota Vikings (DEF)"
+         ],
+         [
+          "Winning bid",
+          "$11"
+         ],
+         [
+          "Points above replacement",
+          "+33.6 started · +51.2 rostered"
+         ],
+         [
+          "Weeks started / benched",
+          "7 / 2"
+         ],
+         [
+          "Outcome",
+          "active"
          ]
         ]
        }
@@ -74662,8 +74766,8 @@
    "by_season": [
     {
      "s": 2026,
-     "n": 3.58,
-     "value": "3.58 PAR per $",
+     "n": 3.05,
+     "value": "3.05 PAR per $",
      "holder": "Joe — Minnesota Vikings",
      "holders": [
       "Joe"
@@ -74701,11 +74805,11 @@
          ],
          [
           "Points above replacement",
-          "+39.4 started · +56.8 rostered"
+          "+33.6 started · +51.2 rostered"
          ],
          [
           "Weeks started / benched",
-          "6 / 2"
+          "7 / 2"
          ],
          [
           "Outcome",
@@ -76263,7 +76367,7 @@
      }
     },
     {
-     "value": "61.1 PAR",
+     "value": "60.7 PAR",
      "holder": "Jake — Kirk Cousins",
      "when": "Week 1 - 2026",
      "replay": null,
@@ -76295,7 +76399,7 @@
          ],
          [
           "Started PAR for others after the drop",
-          "+61.1"
+          "+60.7"
          ],
          [
           "Picked up by",
@@ -76349,8 +76453,8 @@
    "by_season": [
     {
      "s": 2026,
-     "n": 61.1,
-     "value": "61.1 PAR",
+     "n": 60.7,
+     "value": "60.7 PAR",
      "holder": "Jake — Kirk Cousins",
      "holders": [
       "Jake"
@@ -76384,7 +76488,7 @@
          ],
          [
           "Started PAR for others after the drop",
-          "+61.1"
+          "+60.7"
          ],
          [
           "Picked up by",
@@ -89006,20 +89110,27 @@
    "source": "computed",
    "metric": "rivalry_streak",
    "direction": "max",
-   "value": "7 straight",
-   "value_num": 7,
-   "when": "Week 1 2022 - Week 11 2025; Week 15 2023 - Week 3 2026",
-   "holder": "Aidan over Alex; Steven over Jake",
+   "value": "8 straight",
+   "value_num": 8,
+   "when": "Week 1 2022 - Week 11 2026",
+   "holder": "Aidan over Alex",
    "holders": [
-    "Aidan",
-    "Steven"
+    "Aidan"
    ],
    "league_level": false,
    "team": "",
    "notes": [],
    "evidence": [],
    "replay": null,
-   "previous": null,
+   "previous": {
+    "value": "7 straight",
+    "holder": "Aidan over Alex; Steven over Jake",
+    "when": "Week 1 2022 - Week 11 2025; Week 15 2023 - Week 3 2026",
+    "team": "",
+    "evidence": [],
+    "replaced_on": "2026-11-24",
+    "replaced_by": "Aidan over Alex"
+   },
    "ties": [],
    "locked": false,
    "status": "active",
@@ -89028,12 +89139,12 @@
    "needs_definition": null,
    "engine_gap": null,
    "definition": "Most consecutive wins by one manager over the same opponent (regular season and playoffs). Counts games since 2021, when Rumble Central's records begin.",
-   "updated": "2026-11-03",
+   "updated": "2026-11-24",
    "leaderboard": [
     {
-     "value": "7 straight",
+     "value": "8 straight",
      "holder": "Aidan over Alex",
-     "when": "Week 1 2022 - Week 11 2025",
+     "when": "Week 1 2022 - Week 11 2026",
      "replay": null
     },
     {
@@ -89074,8 +89185,8 @@
    "source": "computed",
    "metric": "rivalry_onesided",
    "direction": "max",
-   "value": "7-0",
-   "value_num": 100.007,
+   "value": "8-0",
+   "value_num": 100.008,
    "when": "2021-",
    "holder": "Aidan vs Alex",
    "holders": [
@@ -89086,7 +89197,15 @@
    "notes": [],
    "evidence": [],
    "replay": null,
-   "previous": null,
+   "previous": {
+    "value": "7-0",
+    "holder": "Aidan vs Alex",
+    "when": "2021-",
+    "team": "Smashnose Offense",
+    "evidence": [],
+    "replaced_on": "2026-11-24",
+    "replaced_by": "Aidan vs Alex"
+   },
    "ties": [],
    "locked": false,
    "status": "active",
@@ -89095,10 +89214,10 @@
    "needs_definition": null,
    "engine_gap": null,
    "definition": "Best head-to-head record against one opponent, with at least 6 meetings. Counts games since 2021, when Rumble Central's records begin.",
-   "updated": "2026-11-03",
+   "updated": "2026-11-24",
    "leaderboard": [
     {
-     "value": "7-0",
+     "value": "8-0",
      "holder": "Aidan vs Alex",
      "when": "2021-",
      "replay": null
@@ -89122,8 +89241,8 @@
      "replay": null
     },
     {
-     "value": "6-2",
-     "holder": "Joe vs Tommy",
+     "value": "7-2",
+     "holder": "Ben vs Haan",
      "when": "2021-",
      "replay": null
     }
